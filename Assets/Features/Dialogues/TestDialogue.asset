@@ -1,0 +1,128 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1946feaec865d344dabf0419b1c94973, type: 3}
+  m_Name: TestDialogue
+  m_EditorClassIdentifier: 
+  AllowDialogueSave: 0
+  BlockingReopeningDialogue: 0
+  ResetSavedNodeOnChoice: 1
+  LimitChoiceOptionPerNode: 0
+  MaxChoiceOptionPerNode: 8
+  NodeLinkDatas:
+  - BaseNodeGuid: 1410bff5-b8e4-4395-b019-f9646230b9b3
+    TargetNodeGuid: 0e1c19b6-2f49-4a3b-bf8a-ed3fcec9e909
+  - BaseNodeGuid: c42c090c-ca9b-4087-ab91-2622d661f5b4
+    TargetNodeGuid: 4fc1ca78-f90e-4193-9f4a-9c737857fab8
+  - BaseNodeGuid: 0e1c19b6-2f49-4a3b-bf8a-ed3fcec9e909
+    TargetNodeGuid: c42c090c-ca9b-4087-ab91-2622d661f5b4
+  - BaseNodeGuid: 4fc1ca78-f90e-4193-9f4a-9c737857fab8
+    TargetNodeGuid: f2cf0140-361a-4f49-84ad-27148da1636a
+  - BaseNodeGuid: 4fc1ca78-f90e-4193-9f4a-9c737857fab8
+    TargetNodeGuid: f2cf0140-361a-4f49-84ad-27148da1636a
+  DialogueChoiceNodeDatas:
+  - NodeGuid: 4fc1ca78-f90e-4193-9f4a-9c737857fab8
+    Position: {x: 588, y: 206}
+    Character: {fileID: 11400000, guid: 660cc28a60ad0fa43a758359df2c1110, type: 2}
+    PortraitPosition: 0
+    Emotion: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: How are you doing?
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 5
+    DialogueNodePorts:
+    - PortGuid: 87e9998b-cc08-4a86-b5b3-287801ae3f73
+      InputGuid: f2cf0140-361a-4f49-84ad-27148da1636a
+      OutputGuid: 4fc1ca78-f90e-4193-9f4a-9c737857fab8
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: I'll leave you to it.
+      - languageEnum: 1
+        LanguageGenericType: Choice 01
+    - PortGuid: 917f5c3e-53ad-4d26-afae-f2d1d3806fae
+      InputGuid: f2cf0140-361a-4f49-84ad-27148da1636a
+      OutputGuid: 4fc1ca78-f90e-4193-9f4a-9c737857fab8
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Goodbye.
+      - languageEnum: 1
+        LanguageGenericType: Choice 02
+  DialogueNodeDatas:
+  - NodeGuid: c42c090c-ca9b-4087-ab91-2622d661f5b4
+    Position: {x: 333, y: 206}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    EventController: {fileID: 0}
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: ... Huh? What do you want? I'm taking a catnap here!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 0e1c19b6-2f49-4a3b-bf8a-ed3fcec9e909
+    Position: {x: 101, y: 206}
+    Character: {fileID: 11400000, guid: 660cc28a60ad0fa43a758359df2c1110, type: 2}
+    PortraitPosition: 0
+    Emotion: 
+    EventController: {fileID: 0}
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Zzzz...
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  TimerChoiceNodeDatas: []
+  EndNodeDatas:
+  - NodeGuid: f2cf0140-361a-4f49-84ad-27148da1636a
+    Position: {x: 969, y: 206}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  EventNodeDatas: []
+  StartNodeDatas:
+  - NodeGuid: 1410bff5-b8e4-4395-b019-f9646230b9b3
+    Position: {x: -101, y: 206}
+    startID: 
+  RandomNodeDatas: []
+  CommandNodeDatas: []
+  IfNodeDatas: []
+  AdvancedIFNodeDatas: []
+  AdvancedChoiceNodeDatas: []
+  AdvancedTimeChoiceNodeDatas: []
+  ResetSavedNodeDatas: []
+  MusicNodeDatas: []
