@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,21 +10,44 @@ public class DialogueChoiceController : MonoBehaviour
     public Text ChoiceText;
     public bool IsActive = false;
 
-    // Start is called before the first frame update
-    void Start()
+    //Spawn letters one by one
+    public bool IsBusySpawningLetters;
+    public float TimeBetweenEachLetterSpawn;
+    public float CurrentLetterSpawnTime;
+    public List<char> CurrentTextList; //reversed
+
+    void FixedUpdate()
     {
+        if (IsBusySpawningLetters)
+        {
+            if (CurrentLetterSpawnTime >= TimeBetweenEachLetterSpawn)
+            {
+                if (CurrentTextList.Count != 0)
+                {
+                    var currentLetter = CurrentTextList.Last();
+                    CurrentTextList.RemoveAt(CurrentTextList.Count - 1);
+                    ChoiceText.text += currentLetter;
 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+                    CurrentLetterSpawnTime = 0;
+                }
+                else
+                {
+                    IsBusySpawningLetters = false;
+                }
+            }
+            else
+            {
+                CurrentLetterSpawnTime += Time.deltaTime;
+            }
+        }
     }
 
     public void SetChoiceText(string text)
     {
-        ChoiceText.text = text;
+        ChoiceText.text = "";
+        CurrentTextList = text.ToCharArray().Reverse().ToList();
+        IsBusySpawningLetters = true;
+        CurrentLetterSpawnTime = 0;
     }
 
     public void SetAsActiveChoice()

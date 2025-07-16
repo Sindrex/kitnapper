@@ -26,19 +26,39 @@ public class DialogueController : MonoBehaviour
     {
         if (IsActive && CheckRequirements())
         {
-            if (RequireInteract && !Input.GetKeyDown(KeyCode.Space))
+            if (RequireInteract && !InputController.GetInput(InputPurpose.INTERACT))
             {
                 return;
             }
 
-            currentNode = GetNextNode(currentNode);
+            if (MyDialogueManager.Instance.IsBusySpawningLetters || MyDialogueManager.Instance.IsBusySpawningLettersDialogueChoices)
+            {
+                return;
+            }
+
+            //dialogue choice next node
+            if (MyDialogueManager.Instance.IsDialogueChoice)
+            {
+                var currentChoiceIndex = MyDialogueManager.Instance.CurrentDialogueChoice;
+                var dialogueChoiceNodeData = currentNode as DialogueChoiceNodeData;
+                var currentChoice = dialogueChoiceNodeData.DialogueNodePorts[currentChoiceIndex];
+                currentNode = GetNodeByGuid(currentChoice.InputGuid);
+            }
+            else
+            {
+                currentNode = GetNextNode(currentNode);
+            }
+
+            //Next node
             if (currentNode is DialogueNodeData dialogueNode)
             {
                 MyDialogueManager.Instance.SetText(dialogueNode.TextType[0].LanguageGenericType);
+                dialogueNode.EventController?.DoFinishRoutine();
             }
             else if (currentNode is EndNodeData endNode)
             {
                 MyDialogueManager.Instance.CloseDialogue();
+                currentNode = dialogueContainer.StartNodeDatas.FirstOrDefault();
             }
             else if (currentNode is DialogueChoiceNodeData choiceNodeData)
             {
@@ -127,7 +147,7 @@ public class DialogueController : MonoBehaviour
 
         if (matchingLinks.Count == 0)
         {
-            CLogger.Log("Found no matching links!");
+            CLogger.Log($"Found {matchingLinks.Count} matching links!");
             return null;
         }
 

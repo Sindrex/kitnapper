@@ -24,10 +24,14 @@ MonoBehaviour:
     TargetNodeGuid: 4fc1ca78-f90e-4193-9f4a-9c737857fab8
   - BaseNodeGuid: 0e1c19b6-2f49-4a3b-bf8a-ed3fcec9e909
     TargetNodeGuid: c42c090c-ca9b-4087-ab91-2622d661f5b4
-  - BaseNodeGuid: 4fc1ca78-f90e-4193-9f4a-9c737857fab8
+  - BaseNodeGuid: fa1d3316-891d-40fd-b5bb-c8dd350d795c
+    TargetNodeGuid: f2cf0140-361a-4f49-84ad-27148da1636a
+  - BaseNodeGuid: fa1db6b7-2f82-4c6f-a855-cb0e25be67b3
     TargetNodeGuid: f2cf0140-361a-4f49-84ad-27148da1636a
   - BaseNodeGuid: 4fc1ca78-f90e-4193-9f4a-9c737857fab8
-    TargetNodeGuid: f2cf0140-361a-4f49-84ad-27148da1636a
+    TargetNodeGuid: fa1d3316-891d-40fd-b5bb-c8dd350d795c
+  - BaseNodeGuid: 4fc1ca78-f90e-4193-9f4a-9c737857fab8
+    TargetNodeGuid: fa1db6b7-2f82-4c6f-a855-cb0e25be67b3
   DialogueChoiceNodeDatas:
   - NodeGuid: 4fc1ca78-f90e-4193-9f4a-9c737857fab8
     Position: {x: 588, y: 206}
@@ -44,13 +48,13 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: How are you doing?
+      LanguageGenericType: Spill it, beanbag!
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 5
     DialogueNodePorts:
     - PortGuid: 87e9998b-cc08-4a86-b5b3-287801ae3f73
-      InputGuid: f2cf0140-361a-4f49-84ad-27148da1636a
+      InputGuid: fa1d3316-891d-40fd-b5bb-c8dd350d795c
       OutputGuid: 4fc1ca78-f90e-4193-9f4a-9c737857fab8
       TextLanguage:
       - languageEnum: 0
@@ -58,11 +62,11 @@ MonoBehaviour:
       - languageEnum: 1
         LanguageGenericType: Choice 01
     - PortGuid: 917f5c3e-53ad-4d26-afae-f2d1d3806fae
-      InputGuid: f2cf0140-361a-4f49-84ad-27148da1636a
+      InputGuid: fa1db6b7-2f82-4c6f-a855-cb0e25be67b3
       OutputGuid: 4fc1ca78-f90e-4193-9f4a-9c737857fab8
       TextLanguage:
       - languageEnum: 0
-        LanguageGenericType: Goodbye.
+        LanguageGenericType: Can you move?
       - languageEnum: 1
         LanguageGenericType: Choice 02
   DialogueNodeDatas:
@@ -106,10 +110,50 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
+  - NodeGuid: fa1d3316-891d-40fd-b5bb-c8dd350d795c
+    Position: {x: 938, y: 206}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    EventController: {fileID: 0}
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Thanks... Zzzzz....
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: fa1db6b7-2f82-4c6f-a855-cb0e25be67b3
+    Position: {x: 938, y: 501}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    EventController: {fileID: 0}
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Gah! Fine...
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
   TimerChoiceNodeDatas: []
   EndNodeDatas:
   - NodeGuid: f2cf0140-361a-4f49-84ad-27148da1636a
-    Position: {x: 969, y: 206}
+    Position: {x: 1175, y: 217}
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 

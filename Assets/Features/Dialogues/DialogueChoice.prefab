@@ -144,6 +144,10 @@ MonoBehaviour:
   BorderText: {fileID: 3896931140307900574}
   ChoiceText: {fileID: 1329826089753207469}
   IsActive: 0
+  IsBusySpawningLetters: 0
+  TimeBetweenEachLetterSpawn: 0.03
+  CurrentLetterSpawnTime: 0
+  CurrentTextList: 
 --- !u!1 &4925271003262349618
 GameObject:
   m_ObjectHideFlags: 0

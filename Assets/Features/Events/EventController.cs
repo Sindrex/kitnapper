@@ -12,6 +12,7 @@ public class EventController : MonoBehaviour
 
     public Text InteractText;
     public bool RequireInteract;
+    public bool NotInteractable;
     public List<RequiredGameFlagCombo> RequiredFlags;
 
     public List<GameObject> TargetObjects;
@@ -30,9 +31,9 @@ public class EventController : MonoBehaviour
     {
         var passedRequirementsCheck = CheckRequirements();
         var isFinishableAndFinished = IsFinishable && IsFinished;
-        if (IsActive && !isFinishableAndFinished && passedRequirementsCheck)
+        if (IsActive && !isFinishableAndFinished && passedRequirementsCheck && !NotInteractable)
         {
-            if (RequireInteract && !Input.GetKeyDown(KeyCode.Space))
+            if (RequireInteract && !InputController.GetInput(InputPurpose.INTERACT))
             {
                 return;
             }

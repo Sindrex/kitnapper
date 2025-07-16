@@ -194,7 +194,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: space
+  m_Text: E
 --- !u!222 &47445152
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -274,7 +274,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: space
+  m_Text: E
 --- !u!222 &133658175
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -353,7 +353,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: space
+  m_Text: E
 --- !u!222 &149145610
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -572,12 +572,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DialogueParent: {fileID: 1442115095}
   DialogueText: {fileID: 692372972}
+  IsBusySpawningLetters: 0
+  TimeBetweenEachLetterSpawn: 0.03
+  CurrentLetterSpawnTime: 0
+  CurrentTextList: 
   DialogueChoiceContentParent: {fileID: 227901993}
   DialogueChoicePrefab: {fileID: 4156164468324873356, guid: 149ccc7f5c89dec4384e792411c0d56e,
     type: 3}
   ChoiceControllers: []
   CurrentDialogueChoice: 0
   IsDialogueChoice: 0
+  DialogueChoiceTexts: []
 --- !u!1 &227901993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1577,6 +1582,7 @@ MonoBehaviour:
   IsFinished: 0
   InteractText: {fileID: 133658174}
   RequireInteract: 1
+  NotInteractable: 0
   RequiredFlags:
   - Flag: 1
     BoolValue: 0
@@ -1867,7 +1873,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: space
+  m_Text: E
 --- !u!222 &630412151
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2625,7 +2631,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: space
+  m_Text: E
 --- !u!222 &864789495
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2855,6 +2861,7 @@ MonoBehaviour:
   IsFinished: 0
   InteractText: {fileID: 47445151}
   RequireInteract: 1
+  NotInteractable: 0
   RequiredFlags: []
   TargetObjects:
   - {fileID: 475888630}
@@ -3590,7 +3597,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: space
+  m_Text: E
 --- !u!222 &1414107204
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4114,9 +4121,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1522856773}
   - {fileID: 2085297748}
   - {fileID: 1560536428}
-  - {fileID: 1522856773}
   - {fileID: 204498741}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4273,8 +4280,9 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "\n\n   -------------------\n  |<color=Orange>The Color Kitnapper</color>|\n 
-    <color=Yellow>A Purrplexing Mystery</color>\n   -------------------\n   ESCAPE
-    =     QUIT\n   SPACE  = INTERACT\n   R      =    RESET"
+    <color=Yellow>A Purrplexing Mystery</color>\n   -------------------\n   Q     
+    =     QUIT\n   E      = INTERACT\n   R      =    RESET\n   ESCAPE =     MENU
+    (WIP)"
 --- !u!222 &1993776177
 CanvasRenderer:
   m_ObjectHideFlags: 0

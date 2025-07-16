@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using ASCII.Util;
 using MeetAndTalk;
 using UnityEngine;
@@ -10,12 +11,20 @@ public class MyDialogueManager : MonoBehaviour
     public GameObject DialogueParent;
     public Text DialogueText;
 
+    //Spawn letters one by one
+    public bool IsBusySpawningLettersDialogueChoices => ChoiceControllers.Any(e => e.IsBusySpawningLetters);
+    public bool IsBusySpawningLetters;
+    public float TimeBetweenEachLetterSpawn;
+    public float CurrentLetterSpawnTime;
+    public List<char> CurrentTextList; //reversed
+
     //Dialogue choice
     public GameObject DialogueChoiceContentParent;
     public GameObject DialogueChoicePrefab;
     public List<DialogueChoiceController> ChoiceControllers = new();
     public int CurrentDialogueChoice;
     public bool IsDialogueChoice;
+    public List<string> DialogueChoiceTexts;
 
     //singleton
     public static MyDialogueManager Instance { get; private set; }
@@ -41,7 +50,7 @@ public class MyDialogueManager : MonoBehaviour
         if (IsDialogueChoice)
         {
             var changed = CurrentDialogueChoice;
-            if (Input.GetKeyDown(KeyCode.S)) //list is backwards
+            if (InputController.GetInput(InputPurpose.DIALOGUE_CHOICE_DOWN)) //list is backwards
             {
                 CurrentDialogueChoice++;
                 if (CurrentDialogueChoice >= ChoiceControllers.Count)
@@ -49,7 +58,7 @@ public class MyDialogueManager : MonoBehaviour
                     CurrentDialogueChoice = ChoiceControllers.Count - 1;
                 }
             }
-            else if (Input.GetKeyDown(KeyCode.W))
+            else if (InputController.GetInput(InputPurpose.DIALOGUE_CHOICE_UP))
             {
                 CurrentDialogueChoice--;
                 if (CurrentDialogueChoice < 0)
@@ -69,11 +78,47 @@ public class MyDialogueManager : MonoBehaviour
         }
     }
 
+    void FixedUpdate()
+    {
+        if (IsBusySpawningLetters)
+        {
+            if (CurrentLetterSpawnTime >= TimeBetweenEachLetterSpawn)
+            {
+                if (CurrentTextList.Count != 0)
+                {
+                    var currentLetter = CurrentTextList.Last();
+                    CurrentTextList.RemoveAt(CurrentTextList.Count - 1);
+                    DialogueText.text += currentLetter;
+
+                    CurrentLetterSpawnTime = 0;
+                }
+                else
+                {
+                    IsBusySpawningLetters = false;
+                    if (IsDialogueChoice)
+                    {
+                        LoadCurrentChoiceDialogueChoices();
+                    }
+                }
+            }
+            else
+            {
+                CurrentLetterSpawnTime += Time.deltaTime;
+            }
+        }
+    }
+
     public void SetText(string text)
     {
         CameraController.Instance.CanMove = false;
+        DialogueChoiceContentParent.DestroyMyChildren();
+        IsDialogueChoice = false;
         DialogueParent.SetActive(true);
-        DialogueText.text = text;
+        DialogueText.text = "";
+
+        CurrentTextList = text.ToCharArray().Reverse().ToList();
+        IsBusySpawningLetters = true;
+        CurrentLetterSpawnTime = 0;
     }
 
     public void LoadChoiceDialogue(DialogueChoiceNodeData choiceNodeData)
@@ -84,15 +129,27 @@ public class MyDialogueManager : MonoBehaviour
         DialogueParent.SetActive(true);
         DialogueChoiceContentParent.DestroyMyChildren();
 
-        DialogueText.text = choiceNodeData.TextType[0].LanguageGenericType;
+        DialogueText.text = "";
+        var text = choiceNodeData.TextType[0].LanguageGenericType;
+        CurrentTextList = text.ToCharArray().Reverse().ToList();
+        IsBusySpawningLetters = true;
+        CurrentLetterSpawnTime = 0;
 
+        DialogueChoiceTexts = new List<string>();
+        foreach (var choice in choiceNodeData.DialogueNodePorts)
+        {
+            DialogueChoiceTexts.Add(choice.TextLanguage[0].LanguageGenericType);
+        }
+    }
+
+    private void LoadCurrentChoiceDialogueChoices()
+    {
         ChoiceControllers = new();
-        var choices = choiceNodeData.DialogueNodePorts;
-        foreach (var choice in choices)
+        foreach (var choice in DialogueChoiceTexts)
         {
             var gameObject = Instantiate(DialogueChoicePrefab, DialogueChoiceContentParent.transform);
             var choiceController = gameObject.GetComponent<DialogueChoiceController>();
-            choiceController.SetChoiceText(choice.TextLanguage[0].LanguageGenericType);
+            choiceController.SetChoiceText(choice);
             ChoiceControllers.Add(choiceController);
         }
 

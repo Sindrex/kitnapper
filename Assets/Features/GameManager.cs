@@ -44,6 +44,7 @@ public class GameManager : MonoBehaviour
 
         //Setup events
         var eventGameObjects = GameObject.FindGameObjectsWithTag("Event");
+        CLogger.Log($"Setting up {eventGameObjects.Length} events!");
         foreach (var gameObject in eventGameObjects)
         {
             var eventController = gameObject.GetComponent<EventController>();
@@ -51,12 +52,14 @@ public class GameManager : MonoBehaviour
             AddEvent(eventController);
         }
 
+        //Setup globals
+        InputController.InputEnabled = true;
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape)) Quit();
-        if(Input.GetKeyDown(KeyCode.R)) Reset();
+        if (InputController.GetInput(InputPurpose.QUIT)) Quit();
+        if (InputController.GetInput(InputPurpose.RESET)) Reset();
     }
 
     public void SetFlags(SetGameFlagCombo flagCombo)

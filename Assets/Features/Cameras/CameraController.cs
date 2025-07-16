@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 
 /// <summary>
@@ -61,19 +58,19 @@ public class CameraController : MonoBehaviour
     {
         var x = 0;
         var y = 0;
-        if (Input.GetKey(KeyCode.A))
+        if (InputController.GetInput(InputPurpose.MOVE_LEFT))
         {
             x--;
         }
-        if (Input.GetKey(KeyCode.D))
+        if (InputController.GetInput(InputPurpose.MOVE_RIGHT))
         {
             x++;
         }
-        if (Input.GetKey(KeyCode.S))
+        if (InputController.GetInput(InputPurpose.MOVE_DOWN))
         {
             y--;
         }
-        if (Input.GetKey(KeyCode.W))
+        if (InputController.GetInput(InputPurpose.MOVE_UP))
         {
             y++;
         }
