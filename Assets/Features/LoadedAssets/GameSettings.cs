@@ -59,5 +59,6 @@ public enum GameFlag
 {
     Default,
     HelloWorldFlag,
-    TestWorldFlag2
+    TestWorldFlag2,
+    SleepingCat
 }

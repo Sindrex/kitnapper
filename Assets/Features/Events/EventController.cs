@@ -1,10 +1,9 @@
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class EventController : MonoBehaviour
+public class EventController : EventBase
 {
     public bool IsActive;
     public bool IsFinishable;
@@ -13,7 +12,7 @@ public class EventController : MonoBehaviour
     public Text InteractText;
     public bool RequireInteract;
     public bool NotInteractable;
-    public List<RequiredGameFlagCombo> RequiredFlags;
+    public List<RequiredGameFlagCombo> RequiredFlags = new List<RequiredGameFlagCombo>();
 
     public List<GameObject> TargetObjects;
     public List<SetGameFlagCombo> SetFlags;
@@ -29,21 +28,27 @@ public class EventController : MonoBehaviour
 
     void Update()
     {
-        var passedRequirementsCheck = CheckRequirements();
         var isFinishableAndFinished = IsFinishable && IsFinished;
-        if (IsActive && !isFinishableAndFinished && passedRequirementsCheck && !NotInteractable)
+        if (IsActive && !isFinishableAndFinished && !NotInteractable)
         {
+            if (!CheckRequirements())
+            {
+                return;
+            }
+
             if (RequireInteract && !InputController.GetInput(InputPurpose.INTERACT))
             {
                 return;
             }
 
-            DoFinishRoutine();
+            Activate();
         }
     }
 
-    public void DoFinishRoutine()
+    public override void Activate()
     {
+        CLogger.Log($"Event {Id} activated!");
+        
         //turn on or off TargetObjects
         foreach (GameObject target in TargetObjects)
         {
@@ -74,29 +79,15 @@ public class EventController : MonoBehaviour
         if (requiresFlags)
         {
             var gameSettings = GameManager.Instance.CurrentGameSettings;
+            var results = new List<bool>();
             foreach (var requiredFlag in RequiredFlags)
             {
-                var currentFlag = gameSettings.GameFlags.FirstOrDefault(x => x.Flag == requiredFlag.Flag);
-                //In case the flag does not exist in settings, check against default values
-                currentFlag ??= new GameFlagCombo()
-                {
-                    Flag = requiredFlag.Flag
-                };
-
-                bool intValuePassed = false;
-                if (requiredFlag.LessThanIntValue               && currentFlag.IntValue < requiredFlag.IntValue) intValuePassed = true;
-                else if (requiredFlag.LessThanOrEqualIntValue   && currentFlag.IntValue <= requiredFlag.IntValue) intValuePassed = true;
-                else if (requiredFlag.MoreThanIntValue          && currentFlag.IntValue > requiredFlag.IntValue) intValuePassed = true;
-                else if (requiredFlag.MoreThanOrEqualIntValue   && currentFlag.IntValue >= requiredFlag.IntValue) intValuePassed = true;
-                else if (currentFlag.IntValue == requiredFlag.IntValue) intValuePassed = true;
-
-
-                if (currentFlag.BoolValue != requiredFlag.BoolValue
-                || currentFlag.StringValue != requiredFlag.StringValue
-                || !intValuePassed)
-                {
-                    passedRequirements = false;
-                }
+                results.Add(requiredFlag.Result());
+            }
+            
+            if (results.Any(e => e == false))
+            {
+                passedRequirements = false;
             }
         }
         return passedRequirements;

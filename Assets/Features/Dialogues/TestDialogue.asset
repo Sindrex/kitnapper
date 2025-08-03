@@ -14,20 +14,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AllowDialogueSave: 0
   BlockingReopeningDialogue: 0
-  ResetSavedNodeOnChoice: 1
+  ResetSavedNodeOnChoice: 0
   LimitChoiceOptionPerNode: 0
-  MaxChoiceOptionPerNode: 8
+  MaxChoiceOptionPerNode: 0
   NodeLinkDatas:
   - BaseNodeGuid: 1410bff5-b8e4-4395-b019-f9646230b9b3
     TargetNodeGuid: 0e1c19b6-2f49-4a3b-bf8a-ed3fcec9e909
   - BaseNodeGuid: c42c090c-ca9b-4087-ab91-2622d661f5b4
     TargetNodeGuid: 4fc1ca78-f90e-4193-9f4a-9c737857fab8
   - BaseNodeGuid: 0e1c19b6-2f49-4a3b-bf8a-ed3fcec9e909
-    TargetNodeGuid: c42c090c-ca9b-4087-ab91-2622d661f5b4
+    TargetNodeGuid: 9e0d0a8b-f460-4ed4-a083-7ee76fb11848
   - BaseNodeGuid: fa1d3316-891d-40fd-b5bb-c8dd350d795c
     TargetNodeGuid: f2cf0140-361a-4f49-84ad-27148da1636a
   - BaseNodeGuid: fa1db6b7-2f82-4c6f-a855-cb0e25be67b3
     TargetNodeGuid: f2cf0140-361a-4f49-84ad-27148da1636a
+  - BaseNodeGuid: f13b47f7-40c8-49c0-b193-53c7bf739495
+    TargetNodeGuid: f2cf0140-361a-4f49-84ad-27148da1636a
+  - BaseNodeGuid: 9e0d0a8b-f460-4ed4-a083-7ee76fb11848
+    TargetNodeGuid: c42c090c-ca9b-4087-ab91-2622d661f5b4
+  - BaseNodeGuid: 9e0d0a8b-f460-4ed4-a083-7ee76fb11848
+    TargetNodeGuid: f13b47f7-40c8-49c0-b193-53c7bf739495
   - BaseNodeGuid: 4fc1ca78-f90e-4193-9f4a-9c737857fab8
     TargetNodeGuid: fa1d3316-891d-40fd-b5bb-c8dd350d795c
   - BaseNodeGuid: 4fc1ca78-f90e-4193-9f4a-9c737857fab8
@@ -75,7 +81,7 @@ MonoBehaviour:
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
-    EventController: {fileID: 0}
+    Event: 
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
@@ -95,7 +101,7 @@ MonoBehaviour:
     Character: {fileID: 11400000, guid: 660cc28a60ad0fa43a758359df2c1110, type: 2}
     PortraitPosition: 0
     Emotion: 
-    EventController: {fileID: 0}
+    Event: 
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
@@ -115,7 +121,7 @@ MonoBehaviour:
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
-    EventController: {fileID: 0}
+    Event: 
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
@@ -135,7 +141,7 @@ MonoBehaviour:
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
-    EventController: {fileID: 0}
+    Event: MoveEvent
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
@@ -150,6 +156,31 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
+  - NodeGuid: f13b47f7-40c8-49c0-b193-53c7bf739495
+    Position: {x: 717, y: -79}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Leave me alone....
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  ConditionalNodeDatas:
+  - NodeGuid: 9e0d0a8b-f460-4ed4-a083-7ee76fb11848
+    Position: {x: 234, y: -11}
+    RequiredGameFlagCombo: {fileID: 11400000, guid: a48eb5a2eb5a2d34a8d73fa21e682412,
+      type: 2}
   TimerChoiceNodeDatas: []
   EndNodeDatas:
   - NodeGuid: f2cf0140-361a-4f49-84ad-27148da1636a

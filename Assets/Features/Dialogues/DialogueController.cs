@@ -24,8 +24,13 @@ public class DialogueController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (IsActive && CheckRequirements())
+        if (IsActive)
         {
+            if (!CheckRequirements())
+            {
+                return;
+            }
+
             if (RequireInteract && !InputController.GetInput(InputPurpose.INTERACT))
             {
                 return;
@@ -36,38 +41,69 @@ public class DialogueController : MonoBehaviour
                 return;
             }
 
-            //dialogue choice next node
-            if (MyDialogueManager.Instance.IsDialogueChoice)
-            {
-                var currentChoiceIndex = MyDialogueManager.Instance.CurrentDialogueChoice;
-                var dialogueChoiceNodeData = currentNode as DialogueChoiceNodeData;
-                var currentChoice = dialogueChoiceNodeData.DialogueNodePorts[currentChoiceIndex];
-                currentNode = GetNodeByGuid(currentChoice.InputGuid);
-            }
-            else
-            {
-                currentNode = GetNextNode(currentNode);
-            }
+            GetNextNode();
+            RunCurrentNode();
+        }
+    }
 
-            //Next node
-            if (currentNode is DialogueNodeData dialogueNode)
+    private void GetNextNode()
+    {
+        //dialogue choice next node
+        if (MyDialogueManager.Instance.IsDialogueChoice)
+        {
+            var currentChoiceIndex = MyDialogueManager.Instance.CurrentDialogueChoice;
+            var dialogueChoiceNodeData = currentNode as DialogueChoiceNodeData;
+            var currentChoice = dialogueChoiceNodeData.DialogueNodePorts[currentChoiceIndex];
+            currentNode = GetNodeByGuid(currentChoice.InputGuid);
+        }
+        else //other nodes
+        {
+            currentNode = GetNextNode(currentNode);
+        }
+    }
+
+    private void RunCurrentNode()
+    {
+        //Run whatever current node does
+        if (currentNode is DialogueNodeData dialogueNode)
+        {
+            MyDialogueManager.Instance.SetText(dialogueNode.TextType[0].LanguageGenericType);
+            GameManager.Instance.FindEvent(dialogueNode.Event)?.Activate();
+        }
+        else if (currentNode is EndNodeData endNode)
+        {
+            MyDialogueManager.Instance.CloseDialogue();
+            currentNode = dialogueContainer.StartNodeDatas.FirstOrDefault();
+        }
+        else if (currentNode is DialogueChoiceNodeData choiceNodeData)
+        {
+            MyDialogueManager.Instance.LoadChoiceDialogue(choiceNodeData);
+        }
+        else if (currentNode is ConditionalNodeData conditionalNodeData)
+        {
+            var matchingLinks = dialogueContainer.NodeLinkDatas
+                .Where(link => link.BaseNodeGuid == conditionalNodeData.NodeGuid)
+                .ToList();
+            var result = conditionalNodeData.RequiredGameFlagCombo.Result();
+            if (result)
             {
-                MyDialogueManager.Instance.SetText(dialogueNode.TextType[0].LanguageGenericType);
-                dialogueNode.EventController?.DoFinishRoutine();
-            }
-            else if (currentNode is EndNodeData endNode)
-            {
-                MyDialogueManager.Instance.CloseDialogue();
-                currentNode = dialogueContainer.StartNodeDatas.FirstOrDefault();
-            }
-            else if (currentNode is DialogueChoiceNodeData choiceNodeData)
-            {
-                MyDialogueManager.Instance.LoadChoiceDialogue(choiceNodeData);
+                var trueOutput = matchingLinks[0].TargetNodeGuid;
+                currentNode = GetNodeByGuid(trueOutput);
             }
             else
             {
-                CLogger.Log($"Found unknown node type: {currentNode.GetType().Name}");
+                var falseOutput = matchingLinks[1].TargetNodeGuid;
+                currentNode = GetNodeByGuid(falseOutput);
             }
+            RunCurrentNode(); //rerun new node
+        }
+        else if (currentNode is null)
+        {
+            CLogger.LogError($"currentNode is null!");
+        }
+        else
+        {
+            CLogger.Log($"Found unknown node type: {currentNode.GetType().Name}");
         }
     }
 
@@ -78,29 +114,15 @@ public class DialogueController : MonoBehaviour
         if (requiresFlags)
         {
             var gameSettings = GameManager.Instance.CurrentGameSettings;
+            var results = new List<bool>();
             foreach (var requiredFlag in RequiredFlags)
             {
-                var currentFlag = gameSettings.GameFlags.FirstOrDefault(x => x.Flag == requiredFlag.Flag);
-                //In case the flag does not exist in settings, check against default values
-                currentFlag ??= new GameFlagCombo()
-                {
-                    Flag = requiredFlag.Flag
-                };
+                results.Add(requiredFlag.Result());
+            }
 
-                bool intValuePassed = false;
-                if (requiredFlag.LessThanIntValue && currentFlag.IntValue < requiredFlag.IntValue) intValuePassed = true;
-                else if (requiredFlag.LessThanOrEqualIntValue && currentFlag.IntValue <= requiredFlag.IntValue) intValuePassed = true;
-                else if (requiredFlag.MoreThanIntValue && currentFlag.IntValue > requiredFlag.IntValue) intValuePassed = true;
-                else if (requiredFlag.MoreThanOrEqualIntValue && currentFlag.IntValue >= requiredFlag.IntValue) intValuePassed = true;
-                else if (currentFlag.IntValue == requiredFlag.IntValue) intValuePassed = true;
-
-
-                if (currentFlag.BoolValue != requiredFlag.BoolValue
-                || currentFlag.StringValue != requiredFlag.StringValue
-                || !intValuePassed)
-                {
-                    passedRequirements = false;
-                }
+            if (results.Any(e => e == false))
+            {
+                passedRequirements = false;
             }
         }
         return passedRequirements;

@@ -13,7 +13,6 @@ using System.IO;
 using System;
 #endif
 
-
 namespace MeetAndTalk
 {
     [CreateAssetMenu(menuName = "Dialogue/New Dialogue")]
@@ -31,6 +30,7 @@ namespace MeetAndTalk
 
         public List<DialogueChoiceNodeData> DialogueChoiceNodeDatas = new List<DialogueChoiceNodeData>();
         public List<DialogueNodeData> DialogueNodeDatas = new List<DialogueNodeData>();
+        public List<ConditionalNodeData> ConditionalNodeDatas = new List<ConditionalNodeData>();
         public List<TimerChoiceNodeData> TimerChoiceNodeDatas = new List<TimerChoiceNodeData>();
         public List<EndNodeData> EndNodeDatas = new List<EndNodeData>();
         public List<EventNodeData> EventNodeDatas = new List<EventNodeData>();
@@ -54,6 +54,7 @@ namespace MeetAndTalk
                 List<BaseNodeData> tmp = new List<BaseNodeData>();
                 tmp.AddRange(DialogueNodeDatas);
                 tmp.AddRange(DialogueChoiceNodeDatas);
+                tmp.AddRange(ConditionalNodeDatas);
                 tmp.AddRange(TimerChoiceNodeDatas);
                 tmp.AddRange(EndNodeDatas);
                 tmp.AddRange(EventNodeDatas);
@@ -71,7 +72,6 @@ namespace MeetAndTalk
             }
         }
     }
-
 
     [System.Serializable]
     public class NodeLinkData
@@ -108,6 +108,12 @@ namespace MeetAndTalk
         public float Duration;
 
         public List<DialogueNodePort> DialogueNodePorts;
+    }
+
+    [System.Serializable]
+    public class ConditionalNodeData : BaseNodeData
+    {
+        public RequiredGameFlagCombo RequiredGameFlagCombo;
     }
 
     [System.Serializable]
@@ -164,7 +170,7 @@ namespace MeetAndTalk
         public string Emotion;
 
         //Event
-        public EventController EventController;
+        public string Event;
 
         // Secound Character
         public DialogueCharacterSO SecoundCharacter;

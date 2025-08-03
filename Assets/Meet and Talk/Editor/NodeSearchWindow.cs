@@ -29,6 +29,7 @@ namespace MeetAndTalk.Editor
             AddNodeSearchToGroup("Start Node",new StartNode(),"Icon/NodeIcon/Start"),
             AddNodeSearchToGroup("Dialogue Node",new DialogueNode(),"Icon/NodeIcon/Dialogue"),
             AddNodeSearchToGroup("Dialogue Choice Node",new DialogueChoiceNode(),"Icon/NodeIcon/Choice"),
+            AddNodeSearchToGroup("Conditional Node",new ConditionalNode(),"Icon/NodeIcon/Branch"),
             AddNodeSearchToGroup("End Node",new EndNode(),"Icon/NodeIcon/End")
         };
 
@@ -82,6 +83,9 @@ namespace MeetAndTalk.Editor
                     return true;
                 case DialogueChoiceNode node:
                     graphView.AddElement(DialogueChoiceNode.CreateNewGraphNode(_pos, editorWindow, graphView));
+                    return true;
+                case ConditionalNode node:
+                    graphView.AddElement(ConditionalNode.CreateNewGraphNode(_pos, editorWindow, graphView));
                     return true;
                 case EndNode node:
                     graphView.AddElement(EndNode.CreateNewGraphNode(_pos, editorWindow, graphView));

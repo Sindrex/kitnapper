@@ -60,6 +60,7 @@ namespace MeetAndTalk.Editor
         private void SaveNodes(DialogueContainerSO _dialogueContainerSO)
         {
             _dialogueContainerSO.DialogueChoiceNodeDatas.Clear();
+            _dialogueContainerSO.ConditionalNodeDatas.Clear();
             _dialogueContainerSO.DialogueNodeDatas.Clear();
             _dialogueContainerSO.EndNodeDatas.Clear();
             _dialogueContainerSO.StartNodeDatas.Clear();
@@ -70,6 +71,9 @@ namespace MeetAndTalk.Editor
                 {
                     case DialogueChoiceNode dialogueChoiceNode:
                         _dialogueContainerSO.DialogueChoiceNodeDatas.Add(dialogueChoiceNode.SaveNodeData(edges));
+                        break;
+                    case ConditionalNode conditionalNode:
+                        _dialogueContainerSO.ConditionalNodeDatas.Add(conditionalNode.SaveNodeData());
                         break;
                     case DialogueNode dialogueNode:
                         _dialogueContainerSO.DialogueNodeDatas.Add(dialogueNode.SaveNodeData());
@@ -125,28 +129,32 @@ namespace MeetAndTalk.Editor
             {
                 graphView.AddElement(DialogueChoiceNode.GenerateNode(node, graphView.editorWindow, graphView));
             }
+
+            // Generate Conditional Node
+            foreach (ConditionalNodeData node in _dialogueContainer.ConditionalNodeDatas)
+            {
+                graphView.AddElement(ConditionalNode.GenerateNode(node, graphView.editorWindow, graphView));
+            }
         }
 
         private void ConnectNodes(DialogueContainerSO _dialogueContainer)
         {
-            for (int i = 0; i < nodes.Count; i++)
+            foreach(var node in nodes)
             {
-                List<NodeLinkData> connections = _dialogueContainer.NodeLinkDatas.Where(edge => edge.BaseNodeGuid == nodes[i].nodeGuid).ToList();
-
+                List<NodeLinkData> connections = _dialogueContainer.NodeLinkDatas.Where(edge => edge.BaseNodeGuid == node.nodeGuid).ToList();
                 for (int j = 0; j < connections.Count; j++)
                 {
                     string targetNodeGuid = connections[j].TargetNodeGuid;
                     BaseNode targetNode = nodes.First(node => node.nodeGuid == targetNodeGuid);
 
-                    if (!(nodes[i] is DialogueChoiceNode))
+                    if (node is not DialogueChoiceNode)
                     {
-                        LinkNodesTogether(nodes[i].outputContainer[j].Q<Port>(), (Port)targetNode.inputContainer[0]);
+                        LinkNodesTogether(node.outputContainer[j].Q<Port>(), (Port)targetNode.inputContainer[0]);
                     }
                 }
             }
 
-            // ?
-
+            // DialogueChoiceNode has multiple exits using dialogueNodePorts
             List<DialogueChoiceNode> dialogueNodes = nodes.FindAll(node => node is DialogueChoiceNode).Cast<DialogueChoiceNode>().ToList();
             foreach (DialogueChoiceNode dialogueNode in dialogueNodes)
             {
@@ -159,6 +167,21 @@ namespace MeetAndTalk.Editor
                     }
                 }
             }
+
+            //So does conditional
+            /*
+            List<ConditionalNode> conditionalNodes = nodes.FindAll(node => node is ConditionalNode).Cast<ConditionalNode>().ToList();
+            foreach (ConditionalNode node in conditionalNodes)
+            {
+                foreach (DialogueNodePort nodePort in node.dialogueNodePorts)
+                {
+                    if (nodePort.InputGuid != string.Empty)
+                    {
+                        BaseNode targetNode = nodes.First(Node => Node.nodeGuid == nodePort.InputGuid);
+                        LinkNodesTogether(nodePort.MyPort, (Port)targetNode.inputContainer[0]);
+                    }
+                }
+            }*/
         }
 
         private void LinkNodesTogether(Port _outputPort, Port _inputPort)

@@ -167,7 +167,7 @@ namespace MeetAndTalk.Nodes
             VisualElement labelContainer = new VisualElement();
             labelContainer.AddToClassList("label-container");
             Image icon = new Image();
-            icon.image = Resources.Load<Texture2D>("Icon/Editor/Translate"); // Œcie¿ka do pliku w Resources
+            icon.image = Resources.Load<Texture2D>("Icon/Editor/Translate"); // ï¿½cieï¿½ka do pliku w Resources
             icon.AddToClassList("icon");
             Label label_texts = new Label("Dialogue Content");
             label_texts.AddToClassList("label_texts");
@@ -277,7 +277,6 @@ namespace MeetAndTalk.Nodes
         {
             if ((editorWindow.currentDialogueContainer.LimitChoiceOptionPerNode && editorWindow.currentDialogueContainer.MaxChoiceOptionPerNode > dialogueNodePorts.Count) || !editorWindow.currentDialogueContainer.LimitChoiceOptionPerNode)
             {
-
                 Port port = GetPortInstance(Direction.Output, Port.Capacity.Single);
 
                 string outputPortName = "";
@@ -323,7 +322,7 @@ namespace MeetAndTalk.Nodes
                 port.contentContainer.Add(dialogueNodePort.TextField);
 
                 Image icon = new Image();
-                icon.image = Resources.Load<Texture2D>("Icon/Editor/Translate"); // Œcie¿ka do pliku w Resources
+                icon.image = Resources.Load<Texture2D>("Icon/Editor/Translate"); // ï¿½cieï¿½ka do pliku w Resources
                 icon.AddToClassList("icon");
                 icon.style.marginLeft = 0;
                 icon.style.marginRight = 0;
@@ -349,7 +348,7 @@ namespace MeetAndTalk.Nodes
                 _basenote.RefreshExpandedState();
 
 
-                // SprawdŸ czy Node ma maksymaln¹ iloœæ Choice
+                // Sprawdï¿½ czy Node ma maksymalnï¿½ iloï¿½ï¿½ Choice
                 if (editorWindow.currentDialogueContainer.LimitChoiceOptionPerNode && editorWindow.currentDialogueContainer.MaxChoiceOptionPerNode == dialogueNodePorts.Count) button.SetEnabled(false);
                 else button.SetEnabled(true);
                 button.text = UpdateButtonText();
@@ -382,7 +381,7 @@ namespace MeetAndTalk.Nodes
             _node.RefreshPorts();
             _node.RefreshExpandedState();
 
-            // SprawdŸ czy Node ma maksymaln¹ iloœæ Choice
+            // Sprawdï¿½ czy Node ma maksymalnï¿½ iloï¿½ï¿½ Choice
             if (editorWindow.currentDialogueContainer.LimitChoiceOptionPerNode && editorWindow.currentDialogueContainer.MaxChoiceOptionPerNode == dialogueNodePorts.Count) button.SetEnabled(false);
             else button.SetEnabled(true);
             button.text = UpdateButtonText();

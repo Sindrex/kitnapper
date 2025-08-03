@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -9,6 +8,7 @@ public class GameManager : MonoBehaviour
     public CameraController MainCamera;
     public GameSettings CurrentGameSettings;
     private List<EventController> Events = new List<EventController>();
+    private List<MoveEventController> MoveEvents = new List<MoveEventController>();
 
     //singleton
     public static GameManager Instance { get; private set; }
@@ -50,6 +50,16 @@ public class GameManager : MonoBehaviour
             var eventController = gameObject.GetComponent<EventController>();
             eventController.Setup();
             AddEvent(eventController);
+        }
+
+        //Setup events
+        var moveEventGameObjects = GameObject.FindGameObjectsWithTag("MoveEvent");
+        CLogger.Log($"Setting up {moveEventGameObjects.Length} move events!");
+        foreach (var gameObject in moveEventGameObjects)
+        {
+            var eventController = gameObject.GetComponent<MoveEventController>();
+            eventController.Setup();
+            AddMoveEvent(eventController); //Add to / load state
         }
 
         //Setup globals
@@ -96,7 +106,7 @@ public class GameManager : MonoBehaviour
         var eventState = CurrentGameSettings.EventStates.FirstOrDefault(x => x.Id == eventController.Id);
         if (eventState != null && eventState.IsFinished)
         {
-            eventController.DoFinishRoutine();
+            eventController.Activate();
         }
         if (eventState != null)
         {
@@ -115,6 +125,17 @@ public class GameManager : MonoBehaviour
         }
 
         Events.Add(eventController);
+    }
+
+    public void AddMoveEvent(MoveEventController moveEventController)
+    {
+        var eventState = CurrentGameSettings.EventStates.FirstOrDefault(x => x.Id == moveEventController.Id);
+        if (eventState != null && eventState.IsFinished)
+        {
+            moveEventController.DoFinishRoutine();
+        }
+
+        MoveEvents.Add(moveEventController);
     }
 
     public void SaveEventState(EventController eventController)
@@ -148,6 +169,42 @@ public class GameManager : MonoBehaviour
 
         //save CurrentGameSettings
         CurrentGameSettings.Save();
+    }
+
+    public void SaveMoveEventState(MoveEventController moveEventController)
+    {
+        var current = CurrentGameSettings.EventStates.FirstOrDefault(x => x.Id == moveEventController.Id);
+        if (current != null)
+        {
+            current.IsFinished = moveEventController.IsFinished;
+        }
+        else
+        {
+            CurrentGameSettings.EventStates.Add(new EventState
+            {
+                Id = moveEventController.Id,
+                IsFinished = moveEventController.IsFinished
+            });
+        }
+
+        //save CurrentGameSettings
+        CurrentGameSettings.Save();
+    }
+
+    public EventBase FindEvent(string id)
+    {
+        var eventController = Events.FirstOrDefault(x => x.Id == id);
+        var moveEventController = MoveEvents.FirstOrDefault(x => x.Id == id);
+
+        if (eventController != null && moveEventController != null)
+        {
+            CLogger.LogError($"FindEvent found both Event and MoveEvent searching for id \"{id}\"! Returning Event.");
+        }
+        if (eventController == null && moveEventController == null && !string.IsNullOrEmpty(id))
+        {
+            CLogger.LogError($"FindEvent found no matching event searching for id \"{id}\"!");
+        }
+        return (EventBase) eventController ?? moveEventController;
     }
 
     public void Reset()

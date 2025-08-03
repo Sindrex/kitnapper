@@ -49,15 +49,13 @@ namespace MeetAndTalk.Nodes
             inputContainer.Add(inputPort);
         }
 
-
-
-        public void AddOutputPort(string name, Port.Capacity capality) { AddOutputPort(name, "", capality, typeof(float)); }
+        public void AddOutputPort(string name, Port.Capacity capacity) { AddOutputPort(name, "", capacity, typeof(float)); }
         public void AddOutputPort(string name, string className, Port.Capacity capality) { AddOutputPort(name, className, capality, typeof(float)); }
-        public void AddOutputPort(string name, Port.Capacity capality, Type portType) { AddOutputPort(name, "", capality, portType); }
-        public void AddOutputPort(string name, string className, Port.Capacity capality, Type portType)
+        public void AddOutputPort(string name, Port.Capacity capacity, Type portType) { AddOutputPort(name, "", capacity, portType); }
+        public void AddOutputPort(string name, string className, Port.Capacity capacity, Type portType)
         {
             // Create New Port
-            Port inputPort = GetPortInstance(Direction.Output, capality, portType);
+            Port inputPort = GetPortInstance(Direction.Output, capacity, portType);
 
             // Set Port Name
             inputPort.portName = name;
@@ -69,9 +67,6 @@ namespace MeetAndTalk.Nodes
             outputContainer.Add(inputPort);
         }
 
-
-
-
         public Port GetPortInstance(Direction nodeDirection, Port.Capacity capacity)
         {
             return InstantiatePort(Orientation.Horizontal, nodeDirection, capacity, typeof(float));
@@ -80,9 +75,6 @@ namespace MeetAndTalk.Nodes
         {
             return InstantiatePort(Orientation.Horizontal, nodeDirection, capacity, portType);
         }
-
-
-
 
         #endregion
 
@@ -217,7 +209,7 @@ namespace MeetAndTalk.Nodes
         /// <summary>
         /// Function that changes the style of the nodes
         /// </summary>
-        /// <param name=“name”></param>
+        /// <param name=ï¿½nameï¿½></param>
         public void UpdateTheme(string name)
         {
             if (styleSheets[styleSheets.count - 1].name != "Node") styleSheets.Remove(styleSheets[styleSheets.count - 1]);

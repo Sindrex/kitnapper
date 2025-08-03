@@ -18,22 +18,22 @@ namespace MeetAndTalk.Nodes
         private List<LanguageGeneric<string>> texts = new List<LanguageGeneric<string>>();
         private float durationShow = 10;
         //public List<DialogueNodePort> dialogueNodePorts = new List<DialogueNodePort>();
-        private EventController eventController;
+        private string eventId;
 
         public List<LanguageGeneric<AudioClip>> AudioClip { get => audioClip; set => audioClip = value; }
         public List<LanguageGeneric<string>> Texts { get => texts; set => texts = value; }
         public float DurationShow { get => durationShow; set => durationShow = value; }
-        public EventController EventController { get => eventController; set => eventController = value; }
+        public string EventId { get => eventId; set => eventId = value; }
 
         // Node Field
         private ObjectField audioClips_Field;
         private TextField texts_Field;
         private FloatField duration_Field;
+        private TextField event_Field;
 
         // New Emotion System
         public DialogueCharacterSO character = ScriptableObject.CreateInstance<DialogueCharacterSO>();
         private ObjectField character_Field;
-        private ObjectField event_Field;
         public PortraitPosition PortraitPosition;
         public EnumField PortrainPositionField;
         public string Emotion;
@@ -101,18 +101,15 @@ namespace MeetAndTalk.Nodes
             character_Field.SetValueWithoutNotify(character);
             mainContainer.Add(character_Field);
 
-            // EventField
-            event_Field = new ObjectField("Event")
-            {
-                objectType = typeof(EventController),
-                allowSceneObjects = true,
-            };
+            // EventIdField
+            event_Field = new TextField("Event Id");
             event_Field.RegisterValueChangedCallback(value =>
             {
-                eventController = value.newValue as EventController;
-                //UpdatePortraits();
+                eventId = value.newValue;
             });
-            event_Field.SetValueWithoutNotify(eventController);
+            event_Field.SetValueWithoutNotify(eventId);
+
+            event_Field.AddToClassList("TextDuration");
             mainContainer.Add(event_Field);
 
             // PORTRAIT ENUM FIELD
@@ -137,8 +134,6 @@ namespace MeetAndTalk.Nodes
                 Emotion = value.newValue;
             });
             EmotionField.AddToClassList("Emotions");
-
-
 
             // CHARACTER FIELD
             secoundCharacter_Field = new ObjectField("Alt. Character")
@@ -179,8 +174,6 @@ namespace MeetAndTalk.Nodes
             });
             secoundEmotionField.AddToClassList("Emotions");
 
-
-
             /* TEXT BOX */
             VisualElement labelContainer = new VisualElement();
             labelContainer.AddToClassList("label-container");
@@ -216,7 +209,6 @@ namespace MeetAndTalk.Nodes
             });
             audioClips_Field.SetValueWithoutNotify(audioClip.Find(audioClips => audioClips.languageEnum == editorWindow.LanguageEnum).LanguageGenericType);
             mainContainer.Add(audioClips_Field);
-
 
             /* Character Label */
             Label settingsLabel = new Label("Display Settings");
@@ -270,7 +262,7 @@ namespace MeetAndTalk.Nodes
             character_Field.SetValueWithoutNotify(character);
             PortrainPositionField.SetValueWithoutNotify(PortraitPosition);
             EmotionField.SetValueWithoutNotify(Emotion);
-            event_Field.SetValueWithoutNotify(eventController);
+            event_Field.SetValueWithoutNotify(eventId);
 
             secoundCharacter_Field.SetValueWithoutNotify(secoundCharacter);
             secoundPortrainPositionField.SetValueWithoutNotify(secoundPortraitPosition);
@@ -316,6 +308,9 @@ namespace MeetAndTalk.Nodes
                 newNode.AudioClip.Find(language => language.languageEnum == languageGeneric.languageEnum).LanguageGenericType = languageGeneric.LanguageGenericType;
             }
 
+            //event
+            newNode.EventId = data.Event;
+
             // Load the restored values into the corresponding fields.
             newNode.LoadValueInToField();
 
@@ -336,7 +331,7 @@ namespace MeetAndTalk.Nodes
                 Emotion = Emotion,
 
                 //event
-                EventController = eventController,
+                Event = eventId,
 
                 // Secound Character
                 SecoundCharacter = secoundCharacter,
