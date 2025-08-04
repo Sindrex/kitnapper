@@ -3,22 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using MeetAndTalk;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class DialogueController : MonoBehaviour
 {
     public DialogueContainerSO dialogueContainer;
     public BaseNodeData currentNode;
     public bool IsActive = false;
-    public Text InteractText;
     public bool RequireInteract;
-    public List<RequiredGameFlagCombo> RequiredFlags;
+    public List<ReqFlag> RequiredFlags;
 
     // Start is called before the first frame update
     void Start()
     {
         currentNode = dialogueContainer.StartNodeDatas.FirstOrDefault();
-        InteractText.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -41,6 +38,7 @@ public class DialogueController : MonoBehaviour
                 return;
             }
 
+            PlayerController.Instance.StopShowInteractHint();
             GetNextNode();
             RunCurrentNode();
         }
@@ -135,7 +133,7 @@ public class DialogueController : MonoBehaviour
         if (CheckRequirements())
         {
             currentNode = dialogueContainer.StartNodeDatas.FirstOrDefault();
-            InteractText.gameObject.SetActive(true);
+            PlayerController.Instance.ShowInteractHint();
             IsActive = true;
         }
     }
@@ -145,7 +143,7 @@ public class DialogueController : MonoBehaviour
         //close for interact -> start dialogue
         if (!other.gameObject.CompareTag("Player")) return;
 
-        InteractText.gameObject.SetActive(false);
+        PlayerController.Instance.StopShowInteractHint();
         IsActive = false;
 
         MyDialogueManager.Instance.CloseDialogue();

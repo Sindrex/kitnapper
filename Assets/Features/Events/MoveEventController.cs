@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class MoveEventController : EventBase
@@ -11,6 +12,7 @@ public class MoveEventController : EventBase
     public bool Started;
     public bool IsFinished;
     public string Id;
+    public List<SetGameFlagCombo> SetFlags;
 
     // Start is called before the first frame update
     public void Setup()
@@ -57,9 +59,12 @@ public class MoveEventController : EventBase
 
         TargetAnimator.Play(NextAnimatorState);
 
-        //GameManager.Instance.SaveMoveEventState(this);
+        //set flags
+        foreach (var flag in SetFlags)
+        {
+            GameManager.Instance.SetFlags(flag);
+        }
 
-        //Save event state
-        //GameManager.Instance.SaveEventState(this);
+        GameManager.Instance.SaveMoveEventState(this);
     }
 }

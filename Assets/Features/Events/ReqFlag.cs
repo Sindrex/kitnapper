@@ -4,9 +4,9 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Kitnapper/RequiredGameFlagCombo")]
+[CreateAssetMenu(menuName = "Kitnapper/RequiredFlag")]
 [Serializable]
-public class RequiredGameFlagCombo : ScriptableObject
+public class ReqFlag : ScriptableObject
 {
     //cannot use { get; set; } pattern, that makes them invisible from inspector.
     [JsonConverter(typeof(StringEnumConverter))]

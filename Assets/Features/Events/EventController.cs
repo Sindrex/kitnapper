@@ -9,10 +9,9 @@ public class EventController : EventBase
     public bool IsFinishable;
     public bool IsFinished;
 
-    public Text InteractText;
     public bool RequireInteract;
     public bool NotInteractable;
-    public List<RequiredGameFlagCombo> RequiredFlags = new List<RequiredGameFlagCombo>();
+    public List<ReqFlag> RequiredFlags = new List<ReqFlag>();
 
     public List<GameObject> TargetObjects;
     public List<SetGameFlagCombo> SetFlags;
@@ -22,7 +21,6 @@ public class EventController : EventBase
     public void Setup()
     {
         IsFinished = false;
-        InteractText.gameObject.SetActive(false);
         Id = gameObject.name;
     }
 
@@ -47,7 +45,7 @@ public class EventController : EventBase
 
     public override void Activate()
     {
-        CLogger.Log($"Event {Id} activated!");
+        CLogger.Log($"Event \"{Id}\" activated!");
         
         //turn on or off TargetObjects
         foreach (GameObject target in TargetObjects)
@@ -64,7 +62,7 @@ public class EventController : EventBase
         if (IsFinishable)
         {
             IsFinished = true;
-            InteractText.gameObject.SetActive(false);
+            PlayerController.Instance.StopShowInteractHint();
             IsActive = false;
         }
 
@@ -100,7 +98,7 @@ public class EventController : EventBase
 
         if (CheckRequirements())
         {
-            InteractText.gameObject.SetActive(true);
+            PlayerController.Instance.ShowInteractHint();
             IsActive = true;
         }
     }
@@ -110,7 +108,7 @@ public class EventController : EventBase
         if (IsFinished) return;
         if (!other.gameObject.CompareTag("Player")) return;
 
-        InteractText.gameObject.SetActive(false);
+        PlayerController.Instance.StopShowInteractHint();
         IsActive = false;
     }
 }

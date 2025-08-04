@@ -204,6 +204,7 @@ namespace MeetAndTalk.Nodes
             Label settingsLabel = new Label("Display Settings");
             settingsLabel.AddToClassList("label_texts");
             settingsLabel.AddToClassList("Label");
+            settingsLabel.SetEnabled(false);
             mainContainer.Add(settingsLabel);
             /* Duration NAME */
             duration_Field = new FloatField("Display Time");
@@ -214,6 +215,7 @@ namespace MeetAndTalk.Nodes
             duration_Field.SetValueWithoutNotify(durationShow);
 
             duration_Field.AddToClassList("TextDuration");
+            duration_Field.SetEnabled(false);
             mainContainer.Add(duration_Field);
 
             button = new Button()
@@ -308,6 +310,8 @@ namespace MeetAndTalk.Nodes
                     {
                         dialogueNodePort.TextLanguage.Find(language => language.languageEnum == languageGeneric.languageEnum).LanguageGenericType = languageGeneric.LanguageGenericType;
                     }
+
+                    dialogueNodePort.RequiredFlag = _dialogueNodePort.RequiredFlag;
                 }
 
                 dialogueNodePort.TextField = new TextField();
@@ -328,12 +332,24 @@ namespace MeetAndTalk.Nodes
                 icon.style.marginRight = 0;
                 port.contentContainer.Add(icon);
 
-
                 Button deleteButton = new Button(() => DeleteButton(_basenote, port))
                 {
                     text = "X"
                 };
                 port.contentContainer.Add(deleteButton);
+
+                var requiredFlagsField = new ObjectField()
+                {
+                    objectType = typeof(ReqFlag),
+                    allowSceneObjects = false,
+                };
+                requiredFlagsField.RegisterValueChangedCallback(value =>
+                {
+                    dialogueNodePort.RequiredFlag = value.newValue as ReqFlag;
+                });
+                requiredFlagsField.SetValueWithoutNotify(dialogueNodePort.RequiredFlag);
+                requiredFlagsField.style.maxWidth = 60;
+                port.contentContainer.Add(requiredFlagsField);
 
 #if UNITY_EDITOR
                 dialogueNodePort.MyPort = port;

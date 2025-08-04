@@ -113,7 +113,7 @@ namespace MeetAndTalk
     [System.Serializable]
     public class ConditionalNodeData : BaseNodeData
     {
-        public RequiredGameFlagCombo RequiredGameFlagCombo;
+        public ReqFlag RequiredGameFlagCombo;
     }
 
     [System.Serializable]
@@ -269,6 +269,7 @@ namespace MeetAndTalk
 #endif
         public TextField TextField;
         public List<LanguageGeneric<string>> TextLanguage = new List<LanguageGeneric<string>>();
+        public ReqFlag RequiredFlag;
     }
 
     [System.Serializable]

@@ -25,6 +25,7 @@ public class MyDialogueManager : MonoBehaviour
     public int CurrentDialogueChoice;
     public bool IsDialogueChoice;
     public List<string> DialogueChoiceTexts;
+    public List<ReqFlag> DialogueChoiceRequiredFlags;
 
     //singleton
     public static MyDialogueManager Instance { get; private set; }
@@ -95,6 +96,7 @@ public class MyDialogueManager : MonoBehaviour
                 else
                 {
                     IsBusySpawningLetters = false;
+                    PlayerController.Instance.ShowInteractHint();
                     if (IsDialogueChoice)
                     {
                         LoadCurrentChoiceDialogueChoices();
@@ -136,21 +138,35 @@ public class MyDialogueManager : MonoBehaviour
         CurrentLetterSpawnTime = 0;
 
         DialogueChoiceTexts = new List<string>();
+        DialogueChoiceRequiredFlags = new List<ReqFlag>();
         foreach (var choice in choiceNodeData.DialogueNodePorts)
         {
             DialogueChoiceTexts.Add(choice.TextLanguage[0].LanguageGenericType);
+            DialogueChoiceRequiredFlags.Add(choice.RequiredFlag);
         }
     }
 
     private void LoadCurrentChoiceDialogueChoices()
     {
         ChoiceControllers = new();
-        foreach (var choice in DialogueChoiceTexts)
+        for (int i = 0; i < DialogueChoiceTexts.Count; i++)
         {
-            var gameObject = Instantiate(DialogueChoicePrefab, DialogueChoiceContentParent.transform);
-            var choiceController = gameObject.GetComponent<DialogueChoiceController>();
-            choiceController.SetChoiceText(choice);
-            ChoiceControllers.Add(choiceController);
+            if (DialogueChoiceRequiredFlags[i] != null && DialogueChoiceRequiredFlags[i].Result())
+            {
+                var choice = DialogueChoiceTexts[i];
+                var gameObject = Instantiate(DialogueChoicePrefab, DialogueChoiceContentParent.transform);
+                var choiceController = gameObject.GetComponent<DialogueChoiceController>();
+                choiceController.SetChoiceText(choice);
+                ChoiceControllers.Add(choiceController);
+            }
+            else if (DialogueChoiceRequiredFlags[i] == null) //no requirement for choice to show up
+            {
+                var choice = DialogueChoiceTexts[i];
+                var gameObject = Instantiate(DialogueChoicePrefab, DialogueChoiceContentParent.transform);
+                var choiceController = gameObject.GetComponent<DialogueChoiceController>();
+                choiceController.SetChoiceText(choice);
+                ChoiceControllers.Add(choiceController);
+            }
         }
 
         ChoiceControllers[0].SetAsActiveChoice();

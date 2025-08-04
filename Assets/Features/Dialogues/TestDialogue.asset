@@ -67,6 +67,7 @@ MonoBehaviour:
         LanguageGenericType: I'll leave you to it.
       - languageEnum: 1
         LanguageGenericType: Choice 01
+      RequiredFlag: {fileID: 0}
     - PortGuid: 917f5c3e-53ad-4d26-afae-f2d1d3806fae
       InputGuid: fa1db6b7-2f82-4c6f-a855-cb0e25be67b3
       OutputGuid: 4fc1ca78-f90e-4193-9f4a-9c737857fab8
@@ -75,6 +76,7 @@ MonoBehaviour:
         LanguageGenericType: Can you move?
       - languageEnum: 1
         LanguageGenericType: Choice 02
+      RequiredFlag: {fileID: 11400000, guid: d34a1c6aba80af941bdd8d0b5d674e18, type: 2}
   DialogueNodeDatas:
   - NodeGuid: c42c090c-ca9b-4087-ab91-2622d661f5b4
     Position: {x: 333, y: 206}
