@@ -148,7 +148,7 @@ public class DialogueController : MonoBehaviour
 
         MyDialogueManager.Instance.CloseDialogue();
     }
-    
+
     private BaseNodeData GetNodeByGuid(string _targetNodeGuid)
     {
         return dialogueContainer.AllNodes.Find(node => node.NodeGuid == _targetNodeGuid);
@@ -178,4 +178,12 @@ public class DialogueController : MonoBehaviour
 
         return GetNodeByGuid(selectedLink.TargetNodeGuid);
     }
+    
+#if UNITY_EDITOR
+    private void OnDrawGizmos()
+    {
+        string customName = "DialogueGizmo.png";
+        Gizmos.DrawIcon(transform.position, customName, true);
+    }
+#endif
 }

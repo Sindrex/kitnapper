@@ -46,7 +46,7 @@ public class EventController : EventBase
     public override void Activate()
     {
         CLogger.Log($"Event \"{Id}\" activated!");
-        
+
         //turn on or off TargetObjects
         foreach (GameObject target in TargetObjects)
         {
@@ -82,7 +82,7 @@ public class EventController : EventBase
             {
                 results.Add(requiredFlag.Result());
             }
-            
+
             if (results.Any(e => e == false))
             {
                 passedRequirements = false;
@@ -111,4 +111,12 @@ public class EventController : EventBase
         PlayerController.Instance.StopShowInteractHint();
         IsActive = false;
     }
+    
+#if UNITY_EDITOR
+    private void OnDrawGizmos()
+    {
+        string customName = "EventGizmo.png";
+        Gizmos.DrawIcon(transform.position, customName, true);
+    }
+#endif
 }

@@ -60,5 +60,6 @@ public enum GameFlag
     Default,
     HelloWorldFlag,
     TestWorldFlag2,
-    SleepingCat
+    SleepingCat,
+    PlayerHouseTelephoneMayor
 }
