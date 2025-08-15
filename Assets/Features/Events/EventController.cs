@@ -93,7 +93,7 @@ public class EventController : EventBase
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (IsFinished) return;
+        if (IsFinished || NotInteractable) return;
         if (!other.gameObject.CompareTag("Player")) return;
 
         if (CheckRequirements())
@@ -105,7 +105,7 @@ public class EventController : EventBase
 
     void OnTriggerExit2D(Collider2D other)
     {
-        if (IsFinished) return;
+        if (IsFinished || NotInteractable) return;
         if (!other.gameObject.CompareTag("Player")) return;
 
         PlayerController.Instance.StopShowInteractHint();

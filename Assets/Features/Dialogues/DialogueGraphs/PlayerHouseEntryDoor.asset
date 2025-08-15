@@ -10,26 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1946feaec865d344dabf0419b1c94973, type: 3}
-  m_Name: PlayerHouseFuton
+  m_Name: PlayerHouseEntryDoor
   m_EditorClassIdentifier: 
   AllowDialogueSave: 0
   BlockingReopeningDialogue: 0
-  ResetSavedNodeOnChoice: 1
+  ResetSavedNodeOnChoice: 0
   LimitChoiceOptionPerNode: 0
-  MaxChoiceOptionPerNode: 8
+  MaxChoiceOptionPerNode: 0
   NodeLinkDatas:
-  - BaseNodeGuid: 1410bff5-b8e4-4395-b019-f9646230b9b3
-    TargetNodeGuid: f13b47f7-40c8-49c0-b193-53c7bf739495
   - BaseNodeGuid: f13b47f7-40c8-49c0-b193-53c7bf739495
     TargetNodeGuid: f2cf0140-361a-4f49-84ad-27148da1636a
-  - BaseNodeGuid: 12611948-860f-44ca-83ec-c39c7282715d
-    TargetNodeGuid: 890351a3-5b42-4f01-a09b-391e06ac02c5
-  - BaseNodeGuid: 890351a3-5b42-4f01-a09b-391e06ac02c5
-    TargetNodeGuid: da49e726-778e-4d7d-b479-ca0ac80b554f
+  - BaseNodeGuid: 1410bff5-b8e4-4395-b019-f9646230b9b3
+    TargetNodeGuid: f13b47f7-40c8-49c0-b193-53c7bf739495
   DialogueChoiceNodeDatas: []
   DialogueNodeDatas:
-  - NodeGuid: 890351a3-5b42-4f01-a09b-391e06ac02c5
-    Position: {x: 416, y: 220}
+  - NodeGuid: f13b47f7-40c8-49c0-b193-53c7bf739495
+    Position: {x: 337, y: 206}
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
@@ -44,22 +40,22 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: This is my bed. So fluffy!
+      LanguageGenericType: I should take the phone before heading out!
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
   ConditionalNodeDatas: []
   TimerChoiceNodeDatas: []
   EndNodeDatas:
-  - NodeGuid: da49e726-778e-4d7d-b479-ca0ac80b554f
-    Position: {x: 715, y: 208}
+  - NodeGuid: f2cf0140-361a-4f49-84ad-27148da1636a
+    Position: {x: 825, y: 206}
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 
   EventNodeDatas: []
   StartNodeDatas:
-  - NodeGuid: 12611948-860f-44ca-83ec-c39c7282715d
-    Position: {x: 177, y: 220}
+  - NodeGuid: 1410bff5-b8e4-4395-b019-f9646230b9b3
+    Position: {x: -101, y: 206}
     startID: 
   RandomNodeDatas: []
   CommandNodeDatas: []

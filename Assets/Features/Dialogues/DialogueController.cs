@@ -23,11 +23,6 @@ public class DialogueController : MonoBehaviour
     {
         if (IsActive)
         {
-            if (!CheckRequirements())
-            {
-                return;
-            }
-
             if (RequireInteract && !InputController.GetInput(InputPurpose.INTERACT))
             {
                 return;

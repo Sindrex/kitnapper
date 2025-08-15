@@ -41,7 +41,7 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator<WaitForSeconds> StartInteractHint()
     {
-        CLogger.Log("Started StartInteractHint!");
+        //CLogger.Log("Started StartInteractHint!");
         var frame1 = InteractAnimationFrames[0];
         var frame2 = InteractAnimationFrames[1];
         var frame3 = InteractAnimationFrames[2];

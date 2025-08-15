@@ -37,8 +37,12 @@ public class ReqFlag : ScriptableObject
         else if (MoreThanOrEqualIntValue && currentFlag.IntValue >= IntValue) intValuePassed = true;
         else if (currentFlag.IntValue == IntValue) intValuePassed = true;
 
+        var stringValuePassed = false;
+        if(string.IsNullOrEmpty(currentFlag.StringValue) && string.IsNullOrEmpty(StringValue)) stringValuePassed = true;
+        else if(currentFlag.StringValue == StringValue) stringValuePassed = true;
+
         if (currentFlag.BoolValue != BoolValue
-        || currentFlag.StringValue != StringValue
+        || !stringValuePassed
         || !intValuePassed)
         {
             return false;
