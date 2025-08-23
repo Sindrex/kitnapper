@@ -1,0 +1,241 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1946feaec865d344dabf0419b1c94973, type: 3}
+  m_Name: MayorDialogue1
+  m_EditorClassIdentifier: 
+  AllowDialogueSave: 0
+  BlockingReopeningDialogue: 0
+  ResetSavedNodeOnChoice: 0
+  LimitChoiceOptionPerNode: 0
+  MaxChoiceOptionPerNode: 0
+  NodeLinkDatas:
+  - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
+    TargetNodeGuid: 4fd61db1-a71e-4295-8ec8-fb495f167954
+  - BaseNodeGuid: 2fc2f56d-375d-4a2d-926a-fa8163a1d583
+    TargetNodeGuid: 8f05f8ea-704c-4b21-9cad-ceec3f556e1a
+  - BaseNodeGuid: 693cdb95-ab3f-467c-925f-101923b65cad
+    TargetNodeGuid: 1a0f9043-9955-4957-9e53-0fa16f11de69
+  - BaseNodeGuid: cdc1b14a-235e-4338-b578-91110baad130
+    TargetNodeGuid: 693cdb95-ab3f-467c-925f-101923b65cad
+  - BaseNodeGuid: 0c0d56e6-039a-4ca4-a36e-187bbd7e0e42
+    TargetNodeGuid: 8f05f8ea-704c-4b21-9cad-ceec3f556e1a
+  - BaseNodeGuid: 1a0f9043-9955-4957-9e53-0fa16f11de69
+    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
+  - BaseNodeGuid: 49ae51f3-417b-497e-aa96-38a1ec91b121
+    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
+  - BaseNodeGuid: 8f05f8ea-704c-4b21-9cad-ceec3f556e1a
+    TargetNodeGuid: 49ae51f3-417b-497e-aa96-38a1ec91b121
+  - BaseNodeGuid: 8f05f8ea-704c-4b21-9cad-ceec3f556e1a
+    TargetNodeGuid: cf257311-7fa9-4c48-a855-85cb9d555300
+  - BaseNodeGuid: 4fd61db1-a71e-4295-8ec8-fb495f167954
+    TargetNodeGuid: 2fc2f56d-375d-4a2d-926a-fa8163a1d583
+  - BaseNodeGuid: 4fd61db1-a71e-4295-8ec8-fb495f167954
+    TargetNodeGuid: 0c0d56e6-039a-4ca4-a36e-187bbd7e0e42
+  - BaseNodeGuid: cf257311-7fa9-4c48-a855-85cb9d555300
+    TargetNodeGuid: 138b667b-51b1-4ff3-90d1-4a2a0205e3c3
+  - BaseNodeGuid: 138b667b-51b1-4ff3-90d1-4a2a0205e3c3
+    TargetNodeGuid: cdc1b14a-235e-4338-b578-91110baad130
+  DialogueChoiceNodeDatas: []
+  DialogueNodeDatas:
+  - NodeGuid: 2fc2f56d-375d-4a2d-926a-fa8163a1d583
+    Position: {x: 1023, y: -149}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: There you are, humr humr.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 693cdb95-ab3f-467c-925f-101923b65cad
+    Position: {x: 2018, y: 196}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: We don't have any leads yet, so go question our resident
+        scientist down at the university, humr humr.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: cdc1b14a-235e-4338-b578-91110baad130
+    Position: {x: 1782, y: 196}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Milo must have neglected security, humr humr.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 0c0d56e6-039a-4ca4-a36e-187bbd7e0e42
+    Position: {x: 1023, y: 410}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Are you a mind reader? I was about to call you, humr humr.
+        Anyways...
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 1a0f9043-9955-4957-9e53-0fa16f11de69
+    Position: {x: 2259, y: 196}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: TownHallMayorInitialDialogueEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: That will be all, humr humr.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 49ae51f3-417b-497e-aa96-38a1ec91b121
+    Position: {x: 1537, y: -149}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Return to me when you have found the culprit, humr humr.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: cf257311-7fa9-4c48-a855-85cb9d555300
+    Position: {x: 1537, y: 196}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: So, to get right in topic, we are suspecting that someone
+        kitnapped all the town's colors, humr humr.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 138b667b-51b1-4ff3-90d1-4a2a0205e3c3
+    Position: {x: 1682, y: 593}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: The audacity! Now the town is all bleak and depressing.
+        And so is my collection, humr humr.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  ConditionalNodeDatas:
+  - NodeGuid: 8f05f8ea-704c-4b21-9cad-ceec3f556e1a
+    Position: {x: 1172, y: 196}
+    RequiredGameFlagCombo: {fileID: 11400000, guid: de9eac2e0a950a34691d000eb8b356a5,
+      type: 2}
+  - NodeGuid: 4fd61db1-a71e-4295-8ec8-fb495f167954
+    Position: {x: 865, y: 196}
+    RequiredGameFlagCombo: {fileID: 11400000, guid: 696c863693f74614cb884cff365fad63,
+      type: 2}
+  TimerChoiceNodeDatas: []
+  EndNodeDatas:
+  - NodeGuid: 7838e825-39c1-416f-8753-1589000d7155
+    Position: {x: 2549, y: 196}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  EventNodeDatas: []
+  StartNodeDatas:
+  - NodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
+    Position: {x: 612, y: 196}
+    startID: 
+  RandomNodeDatas: []
+  CommandNodeDatas: []
+  IfNodeDatas: []
+  AdvancedIFNodeDatas: []
+  AdvancedChoiceNodeDatas: []
+  AdvancedTimeChoiceNodeDatas: []
+  ResetSavedNodeDatas: []
+  MusicNodeDatas: []

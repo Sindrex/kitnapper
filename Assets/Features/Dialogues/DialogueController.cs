@@ -173,7 +173,7 @@ public class DialogueController : MonoBehaviour
 
         return GetNodeByGuid(selectedLink.TargetNodeGuid);
     }
-    
+        
 #if UNITY_EDITOR
     private void OnDrawGizmos()
     {
