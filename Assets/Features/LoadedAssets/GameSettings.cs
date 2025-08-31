@@ -62,5 +62,7 @@ public enum GameFlag
     TestWorldFlag2,
     SleepingCat,
     PlayerHouseTelephoneMayor,
-    MayorInitialDialogue
+    MayorInitialDialogue,
+    ScientistInitialDialogue,
+    ScientistButterflyEvent1
 }

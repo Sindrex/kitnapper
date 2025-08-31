@@ -340,12 +340,12 @@ namespace MeetAndTalk.Nodes
 
                 var requiredFlagsField = new ObjectField()
                 {
-                    objectType = typeof(ReqFlag),
+                    objectType = typeof(ReqFlagBase),
                     allowSceneObjects = false,
                 };
                 requiredFlagsField.RegisterValueChangedCallback(value =>
                 {
-                    dialogueNodePort.RequiredFlag = value.newValue as ReqFlag;
+                    dialogueNodePort.RequiredFlag = value.newValue as ReqFlagBase;
                 });
                 requiredFlagsField.SetValueWithoutNotify(dialogueNodePort.RequiredFlag);
                 requiredFlagsField.style.maxWidth = 60;

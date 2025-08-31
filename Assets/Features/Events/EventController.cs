@@ -11,7 +11,7 @@ public class EventController : EventBase
 
     public bool RequireInteract;
     public bool NotInteractable;
-    public List<ReqFlag> RequiredFlags = new List<ReqFlag>();
+    public List<ReqFlagBase> RequiredFlags = new List<ReqFlagBase>();
 
     public List<GameObject> TargetObjects;
     public List<SetGameFlagCombo> SetFlags;
@@ -73,7 +73,7 @@ public class EventController : EventBase
     private bool CheckRequirements()
     {
         var passedRequirements = true;
-        var requiresFlags = RequiredFlags.Any(x => x.Flag != GameFlag.Default);
+        var requiresFlags = RequiredFlags.Any(x => x.GetFlag() != GameFlag.Default);
         if (requiresFlags)
         {
             var gameSettings = GameManager.Instance.CurrentGameSettings;

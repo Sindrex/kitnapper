@@ -1,0 +1,302 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1946feaec865d344dabf0419b1c94973, type: 3}
+  m_Name: ScientistDialogue1
+  m_EditorClassIdentifier: 
+  AllowDialogueSave: 0
+  BlockingReopeningDialogue: 0
+  ResetSavedNodeOnChoice: 0
+  LimitChoiceOptionPerNode: 0
+  MaxChoiceOptionPerNode: 0
+  NodeLinkDatas:
+  - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
+    TargetNodeGuid: c6c3837b-2101-484d-bd1d-3c2c9ded6e96
+  - BaseNodeGuid: 36e5585f-26b3-4f86-9381-52bed6e531f9
+    TargetNodeGuid: c04934b4-9cb2-473a-985f-a71fc0917891
+  - BaseNodeGuid: c04934b4-9cb2-473a-985f-a71fc0917891
+    TargetNodeGuid: a83ce882-8e47-45da-b2d4-22bd46cb89b9
+  - BaseNodeGuid: a83ce882-8e47-45da-b2d4-22bd46cb89b9
+    TargetNodeGuid: 393997dd-3ca5-430e-a9db-fa177baa90a4
+  - BaseNodeGuid: 393997dd-3ca5-430e-a9db-fa177baa90a4
+    TargetNodeGuid: 1a0f9043-9955-4957-9e53-0fa16f11de69
+  - BaseNodeGuid: 1a0f9043-9955-4957-9e53-0fa16f11de69
+    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
+  - BaseNodeGuid: 28862d3b-26b1-4d63-a7dc-14a5ca3edd62
+    TargetNodeGuid: 93fa5800-b33a-47b7-84fd-a4e46038b6d9
+  - BaseNodeGuid: 93fa5800-b33a-47b7-84fd-a4e46038b6d9
+    TargetNodeGuid: cd16ef0d-5c14-4865-95bd-b7dd5a838aec
+  - BaseNodeGuid: cd16ef0d-5c14-4865-95bd-b7dd5a838aec
+    TargetNodeGuid: f81eb944-b2d4-4354-b300-3f8bd1aa2669
+  - BaseNodeGuid: f81eb944-b2d4-4354-b300-3f8bd1aa2669
+    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
+  - BaseNodeGuid: c6c3837b-2101-484d-bd1d-3c2c9ded6e96
+    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
+  - BaseNodeGuid: c6c3837b-2101-484d-bd1d-3c2c9ded6e96
+    TargetNodeGuid: 36e5585f-26b3-4f86-9381-52bed6e531f9
+  - BaseNodeGuid: c6c3837b-2101-484d-bd1d-3c2c9ded6e96
+    TargetNodeGuid: 28862d3b-26b1-4d63-a7dc-14a5ca3edd62
+  DialogueChoiceNodeDatas:
+  - NodeGuid: c6c3837b-2101-484d-bd1d-3c2c9ded6e96
+    Position: {x: 570, y: 227}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Dr. Milo: Hey there Mr. Detective! What can I do for
+        you?'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 5
+    DialogueNodePorts:
+    - PortGuid: d6326b74-8266-4953-a849-05c08ff47bbc
+      InputGuid: 7838e825-39c1-416f-8753-1589000d7155
+      OutputGuid: c6c3837b-2101-484d-bd1d-3c2c9ded6e96
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Goodbye
+      - languageEnum: 1
+        LanguageGenericType: Choice 01
+      RequiredFlag: {fileID: 0}
+    - PortGuid: 0b934065-ce77-4657-83c5-982d5f5eed3d
+      InputGuid: 36e5585f-26b3-4f86-9381-52bed6e531f9
+      OutputGuid: c6c3837b-2101-484d-bd1d-3c2c9ded6e96
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Question
+      - languageEnum: 1
+        LanguageGenericType: Choice 02
+      RequiredFlag: {fileID: 11400000, guid: 6750800202cae504991f2b4a13d206b1, type: 2}
+    - PortGuid: 6845e98b-cde7-4b92-b5f1-7c05c51ee6e7
+      InputGuid: 28862d3b-26b1-4d63-a7dc-14a5ca3edd62
+      OutputGuid: c6c3837b-2101-484d-bd1d-3c2c9ded6e96
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Butterfly
+      - languageEnum: 1
+        LanguageGenericType: Choice 03
+      RequiredFlag: {fileID: 11400000, guid: 85f95c9dbd55c2a40abf34b43bf2bb8c, type: 2}
+  DialogueNodeDatas:
+  - NodeGuid: 36e5585f-26b3-4f86-9381-52bed6e531f9
+    Position: {x: 949, y: 334}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Ah, yes. Now that you are here, I'd like to report a stolen
+        item!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: c04934b4-9cb2-473a-985f-a71fc0917891
+    Position: {x: 1214, y: 334}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: You see, I was working on a new invention, the Color Extractor!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: a83ce882-8e47-45da-b2d4-22bd46cb89b9
+    Position: {x: 1475, y: 334}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'But when I came into the lab this morning, the invention
+        was stolen! '
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 393997dd-3ca5-430e-a9db-fa177baa90a4
+    Position: {x: 1707, y: 334}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: I never should have taken that grant...
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 1a0f9043-9955-4957-9e53-0fa16f11de69
+    Position: {x: 1948, y: 334}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: ScientistInitialDialogueEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Anyways, maybe you should look for clues around the university?
+        The culprit may have left behind something.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 28862d3b-26b1-4d63-a7dc-14a5ca3edd62
+    Position: {x: 969, y: -65}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: What is this? A butterfly? Wait a minute...
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: cd16ef0d-5c14-4865-95bd-b7dd5a838aec
+    Position: {x: 1590, y: -65}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: You should speak to Poppy, you know, at the Nepeta Florist.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: f81eb944-b2d4-4354-b300-3f8bd1aa2669
+    Position: {x: 1884, y: -65}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: If there's anything more I can help with, don't hesistate
+        to ask!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 93fa5800-b33a-47b7-84fd-a4e46038b6d9
+    Position: {x: 1275, y: -65}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: This is no cat-of-the-mill butterfly. No, this rare type
+        is only attracted to a single flower species!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  ConditionalNodeDatas: []
+  TimerChoiceNodeDatas: []
+  EndNodeDatas:
+  - NodeGuid: 7838e825-39c1-416f-8753-1589000d7155
+    Position: {x: 2196, y: 227}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  EventNodeDatas: []
+  StartNodeDatas:
+  - NodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
+    Position: {x: 347, y: 227}
+    startID: 
+  RandomNodeDatas: []
+  CommandNodeDatas: []
+  IfNodeDatas: []
+  AdvancedIFNodeDatas: []
+  AdvancedChoiceNodeDatas: []
+  AdvancedTimeChoiceNodeDatas: []
+  ResetSavedNodeDatas: []
+  MusicNodeDatas: []

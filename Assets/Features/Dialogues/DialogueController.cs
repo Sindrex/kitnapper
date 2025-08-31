@@ -10,7 +10,7 @@ public class DialogueController : MonoBehaviour
     public BaseNodeData currentNode;
     public bool IsActive = false;
     public bool RequireInteract;
-    public List<ReqFlag> RequiredFlags;
+    public List<ReqFlagBase> RequiredFlags;
 
     // Start is called before the first frame update
     void Start()
@@ -46,7 +46,12 @@ public class DialogueController : MonoBehaviour
         {
             var currentChoiceIndex = MyDialogueManager.Instance.CurrentDialogueChoice;
             var dialogueChoiceNodeData = currentNode as DialogueChoiceNodeData;
-            var currentChoice = dialogueChoiceNodeData.DialogueNodePorts[currentChoiceIndex];
+            //this has to take into account that sometimes not all choices are displayed due to requirements
+            var activeDialogueNodePorts = dialogueChoiceNodeData.DialogueNodePorts.Where(e =>
+                e.RequiredFlag == null ||
+                (e.RequiredFlag != null && e.RequiredFlag.Result())
+            ).ToList();
+            var currentChoice = activeDialogueNodePorts[currentChoiceIndex];
             currentNode = GetNodeByGuid(currentChoice.InputGuid);
         }
         else //other nodes
@@ -103,7 +108,7 @@ public class DialogueController : MonoBehaviour
     private bool CheckRequirements()
     {
         var passedRequirements = true;
-        var requiresFlags = RequiredFlags.Any(x => x.Flag != GameFlag.Default);
+        var requiresFlags = RequiredFlags.Any(x => x.GetFlag() != GameFlag.Default);
         if (requiresFlags)
         {
             var gameSettings = GameManager.Instance.CurrentGameSettings;

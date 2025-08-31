@@ -11,8 +11,8 @@ namespace MeetAndTalk.Nodes
     [System.Serializable]
     public class ConditionalNode : BaseNode
     {
-        private ReqFlag requiredFlags;
-        public ReqFlag RequiredFlags { get => requiredFlags; set => requiredFlags = value; }
+        private ReqFlagBase requiredFlags;
+        public ReqFlagBase RequiredFlags { get => requiredFlags; set => requiredFlags = value; }
         private ObjectField requiredFlags_Field;
 
         public List<DialogueNodePort> dialogueNodePorts = new List<DialogueNodePort>();
@@ -39,13 +39,12 @@ namespace MeetAndTalk.Nodes
             // RequiredFlags
             requiredFlags_Field = new ObjectField("Required Flags")
             {
-                objectType = typeof(ReqFlag),
+                objectType = typeof(ReqFlagBase),
                 allowSceneObjects = true,
             };
             requiredFlags_Field.RegisterValueChangedCallback(value =>
             {
-                requiredFlags = value.newValue as ReqFlag;
-                //UpdatePortraits();
+                requiredFlags = value.newValue as ReqFlagBase;
             });
             requiredFlags_Field.SetValueWithoutNotify(requiredFlags);
             mainContainer.Add(requiredFlags_Field);

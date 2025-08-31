@@ -32,6 +32,10 @@ MonoBehaviour:
     TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
   - BaseNodeGuid: 49ae51f3-417b-497e-aa96-38a1ec91b121
     TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
+  - BaseNodeGuid: cf257311-7fa9-4c48-a855-85cb9d555300
+    TargetNodeGuid: 138b667b-51b1-4ff3-90d1-4a2a0205e3c3
+  - BaseNodeGuid: 138b667b-51b1-4ff3-90d1-4a2a0205e3c3
+    TargetNodeGuid: cdc1b14a-235e-4338-b578-91110baad130
   - BaseNodeGuid: 8f05f8ea-704c-4b21-9cad-ceec3f556e1a
     TargetNodeGuid: 49ae51f3-417b-497e-aa96-38a1ec91b121
   - BaseNodeGuid: 8f05f8ea-704c-4b21-9cad-ceec3f556e1a
@@ -40,10 +44,6 @@ MonoBehaviour:
     TargetNodeGuid: 2fc2f56d-375d-4a2d-926a-fa8163a1d583
   - BaseNodeGuid: 4fd61db1-a71e-4295-8ec8-fb495f167954
     TargetNodeGuid: 0c0d56e6-039a-4ca4-a36e-187bbd7e0e42
-  - BaseNodeGuid: cf257311-7fa9-4c48-a855-85cb9d555300
-    TargetNodeGuid: 138b667b-51b1-4ff3-90d1-4a2a0205e3c3
-  - BaseNodeGuid: 138b667b-51b1-4ff3-90d1-4a2a0205e3c3
-    TargetNodeGuid: cdc1b14a-235e-4338-b578-91110baad130
   DialogueChoiceNodeDatas: []
   DialogueNodeDatas:
   - NodeGuid: 2fc2f56d-375d-4a2d-926a-fa8163a1d583
@@ -62,7 +62,7 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: There you are, humr humr.
+      LanguageGenericType: 'Mayor: There you are, humr humr.'
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
@@ -123,8 +123,8 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: Are you a mind reader? I was about to call you, humr humr.
-        Anyways...
+      LanguageGenericType: 'Mayor: Are you a mind reader? I was about to call you,
+        humr humr. Anyways...'
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10

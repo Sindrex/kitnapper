@@ -4,9 +4,15 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using UnityEngine;
 
+public abstract class ReqFlagBase : ScriptableObject
+{
+    public abstract GameFlag GetFlag();
+    public abstract bool Result();
+}
+
 [CreateAssetMenu(menuName = "Kitnapper/RequiredFlag")]
 [Serializable]
-public class ReqFlag : ScriptableObject
+public class ReqFlag : ReqFlagBase
 {
     //cannot use { get; set; } pattern, that makes them invisible from inspector.
     [JsonConverter(typeof(StringEnumConverter))]
@@ -20,7 +26,9 @@ public class ReqFlag : ScriptableObject
     public bool MoreThanIntValue;
     public bool MoreThanOrEqualIntValue;
 
-    public bool Result()
+    public override GameFlag GetFlag() => Flag;
+
+    public override bool Result()
     {
         var gameSettings = GameManager.Instance.CurrentGameSettings;
         var currentFlag = gameSettings.GameFlags.FirstOrDefault(x => x.Flag == Flag);
@@ -38,8 +46,8 @@ public class ReqFlag : ScriptableObject
         else if (currentFlag.IntValue == IntValue) intValuePassed = true;
 
         var stringValuePassed = false;
-        if(string.IsNullOrEmpty(currentFlag.StringValue) && string.IsNullOrEmpty(StringValue)) stringValuePassed = true;
-        else if(currentFlag.StringValue == StringValue) stringValuePassed = true;
+        if (string.IsNullOrEmpty(currentFlag.StringValue) && string.IsNullOrEmpty(StringValue)) stringValuePassed = true;
+        else if (currentFlag.StringValue == StringValue) stringValuePassed = true;
 
         if (currentFlag.BoolValue != BoolValue
         || !stringValuePassed

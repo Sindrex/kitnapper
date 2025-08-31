@@ -25,7 +25,7 @@ public class MyDialogueManager : MonoBehaviour
     public int CurrentDialogueChoice;
     public bool IsDialogueChoice;
     public List<string> DialogueChoiceTexts;
-    public List<ReqFlag> DialogueChoiceRequiredFlags;
+    public List<ReqFlagBase> DialogueChoiceRequiredFlags;
 
     //singleton
     public static MyDialogueManager Instance { get; private set; }
@@ -138,7 +138,7 @@ public class MyDialogueManager : MonoBehaviour
         CurrentLetterSpawnTime = 0;
 
         DialogueChoiceTexts = new List<string>();
-        DialogueChoiceRequiredFlags = new List<ReqFlag>();
+        DialogueChoiceRequiredFlags = new List<ReqFlagBase>();
         foreach (var choice in choiceNodeData.DialogueNodePorts)
         {
             DialogueChoiceTexts.Add(choice.TextLanguage[0].LanguageGenericType);
