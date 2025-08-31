@@ -1,13 +1,13 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UIElements;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class CommandManager : MonoBehaviour
 {
     public GameObject CommandParent;
-    public TextField CommandTextField;
+    public InputField CommandInputField;
+    public bool IsCommandTexting;
 
     //singleton
     public static CommandManager Instance { get; private set; }
@@ -30,14 +30,22 @@ public class CommandManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (InputController.GetInput(InputPurpose.COMMAND_OPEN))
+        if (InputController.GetInput(InputPurpose.COMMAND_OPEN) && !IsCommandTexting)
         {
-            CommandParent.SetActive(!CommandParent.activeSelf);
+            CameraController.Instance.CanMove = false;
+            CommandParent.SetActive(true);
+            EventSystem.current.SetSelectedGameObject(CommandInputField.gameObject, null);
+            //CommandInputField.OnPointerClick(null);
+            CommandInputField.ActivateInputField();
+            IsCommandTexting = true;
         }
-
-        if (InputController.GetInput(InputPurpose.COMMAND_ENTER))
+        else if (InputController.GetInput(InputPurpose.COMMAND_ENTER))
         {
-            ParseCommand(CommandTextField.text);
+            ParseCommand(CommandInputField.text);
+            CameraController.Instance.CanMove = true;
+            IsCommandTexting = false;
+            CommandInputField.text = "";
+            CommandParent.SetActive(false);
         }
     }
 
@@ -46,35 +54,61 @@ public class CommandManager : MonoBehaviour
         if (string.IsNullOrEmpty(command)) return;
 
         var parsed = command.Split(" ");
-        if (parsed.Length < 2) return;
+        if (parsed.Length < 2)
+        {
+            CLogger.Log("Command length less than 2.");
+            return;
+        }
 
         var flagName = parsed[0];
-        var BoolValue = parsed[1];
+        var boolValue = parsed[1];
 
         var gameFlags = Enum.GetNames(typeof(GameFlag));
         var gameFlagValues = (GameFlag[])Enum.GetValues(typeof(GameFlag));
         var setFlag = new SetGameFlagCombo();
         foreach (var flag in gameFlags)
         {
-            if (flag.ToLower().Equals(parsed[0].ToLower()))
+            if (flag.ToLower().Equals(flagName.ToLower()))
             {
                 setFlag.Flag = gameFlagValues[Array.IndexOf(gameFlags, flag)];
-                if (parsed[1].ToLower().Equals("true"))
-                {
-                    setFlag.BoolValue = true;
-                    GameManager.Instance.SetFlags(setFlag);
-                }
-                else
-                {
-                    setFlag.BoolValue = false;
-                }
+                CLogger.Log($"Command: Flag found {setFlag.Flag}");
             }
         }
 
-        if (parsed.Length < 3) return;
-        var intValue = parsed[2];
+        if (boolValue.ToLower().Equals("true"))
+        {
+            setFlag.BoolValue = true;
+        }
 
-        if (parsed.Length < 4) return;
-        var stringValue = parsed[3];
+        if (parsed.Length > 3)
+        {
+            var stringValue = parsed[2];
+            setFlag.StringValue = stringValue;
+        }
+
+        if (parsed.Length > 4)
+        {
+            var intValueString = parsed[3];
+            if (int.TryParse(intValueString, out var intValue))
+            {
+                setFlag.SetIntValueHasValue = true;
+                setFlag.SetIntValue = intValue;
+            }
+        }
+
+        if (parsed.Length > 5)
+        {
+            var addIntValueString = parsed[4];
+            if (int.TryParse(addIntValueString, out var intValue))
+            {
+                setFlag.AddIntValueHasValue = true;
+                setFlag.AddIntValue = intValue;
+            }
+        }
+
+        CLogger.Log($"Command: Setting flag values: " +
+            $"BoolValue: {setFlag.BoolValue}, StringValue: {setFlag.StringValue}, " +
+            $"SetIntValue: {setFlag.SetIntValue}, AddIntValue: {setFlag.AddIntValue}");
+        GameManager.Instance.SetFlags(setFlag);
     }
 }

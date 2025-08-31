@@ -42932,6 +42932,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CommandParent: {fileID: 1160474425}
+  CommandInputField: {fileID: 925930499}
+  IsCommandTexting: 0
 --- !u!1 &263191179
 GameObject:
   m_ObjectHideFlags: 0
