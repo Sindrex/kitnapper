@@ -1,0 +1,325 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1946feaec865d344dabf0419b1c94973, type: 3}
+  m_Name: FloristDialogue1
+  m_EditorClassIdentifier: 
+  AllowDialogueSave: 0
+  BlockingReopeningDialogue: 0
+  ResetSavedNodeOnChoice: 0
+  LimitChoiceOptionPerNode: 0
+  MaxChoiceOptionPerNode: 0
+  NodeLinkDatas:
+  - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
+    TargetNodeGuid: 33b2a2cc-3b68-48bd-84a3-d0a5ec308388
+  - BaseNodeGuid: 49ae51f3-417b-497e-aa96-38a1ec91b121
+    TargetNodeGuid: 97e9dce1-b6ec-420a-bfcf-8a2ac7b582ff
+  - BaseNodeGuid: 97e9dce1-b6ec-420a-bfcf-8a2ac7b582ff
+    TargetNodeGuid: b03e87cb-d2b2-43a9-9e14-dafc995a3a48
+  - BaseNodeGuid: b03e87cb-d2b2-43a9-9e14-dafc995a3a48
+    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
+  - BaseNodeGuid: cf257311-7fa9-4c48-a855-85cb9d555300
+    TargetNodeGuid: 138b667b-51b1-4ff3-90d1-4a2a0205e3c3
+  - BaseNodeGuid: 138b667b-51b1-4ff3-90d1-4a2a0205e3c3
+    TargetNodeGuid: cdc1b14a-235e-4338-b578-91110baad130
+  - BaseNodeGuid: cdc1b14a-235e-4338-b578-91110baad130
+    TargetNodeGuid: 693cdb95-ab3f-467c-925f-101923b65cad
+  - BaseNodeGuid: 693cdb95-ab3f-467c-925f-101923b65cad
+    TargetNodeGuid: 1a0f9043-9955-4957-9e53-0fa16f11de69
+  - BaseNodeGuid: 1a0f9043-9955-4957-9e53-0fa16f11de69
+    TargetNodeGuid: 57d79352-3fe4-4018-a7f7-33da7eb00fd0
+  - BaseNodeGuid: 57d79352-3fe4-4018-a7f7-33da7eb00fd0
+    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
+  - BaseNodeGuid: 33b2a2cc-3b68-48bd-84a3-d0a5ec308388
+    TargetNodeGuid: 49ae51f3-417b-497e-aa96-38a1ec91b121
+  - BaseNodeGuid: 33b2a2cc-3b68-48bd-84a3-d0a5ec308388
+    TargetNodeGuid: cf257311-7fa9-4c48-a855-85cb9d555300
+  - BaseNodeGuid: 33b2a2cc-3b68-48bd-84a3-d0a5ec308388
+    TargetNodeGuid: f9369be4-9522-4660-9151-707050186286
+  - BaseNodeGuid: f9369be4-9522-4660-9151-707050186286
+    TargetNodeGuid: 57d79352-3fe4-4018-a7f7-33da7eb00fd0
+  DialogueChoiceNodeDatas:
+  - NodeGuid: 33b2a2cc-3b68-48bd-84a3-d0a5ec308388
+    Position: {x: 598, y: 196}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Poppy: Hi there Detective! Quite the pawcle we''re in.
+        Are you on the case?'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 5
+    DialogueNodePorts:
+    - PortGuid: 27858000-18bd-43fa-83d0-ebd299d7a841
+      InputGuid: 49ae51f3-417b-497e-aa96-38a1ec91b121
+      OutputGuid: 33b2a2cc-3b68-48bd-84a3-d0a5ec308388
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: How are you doing?
+      - languageEnum: 1
+        LanguageGenericType: Choice 01
+      RequiredFlag: {fileID: 0}
+    - PortGuid: 03eb6ea6-48c5-4292-98ee-79af51c3e5b1
+      InputGuid: cf257311-7fa9-4c48-a855-85cb9d555300
+      OutputGuid: 33b2a2cc-3b68-48bd-84a3-d0a5ec308388
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Butterfly
+      - languageEnum: 1
+        LanguageGenericType: Choice 02
+      RequiredFlag: {fileID: 11400000, guid: 68f701e069d992640b8209ea0cfec4fe, type: 2}
+    - PortGuid: c41b8f18-ec5e-40ee-a941-270eefedb742
+      InputGuid: f9369be4-9522-4660-9151-707050186286
+      OutputGuid: 33b2a2cc-3b68-48bd-84a3-d0a5ec308388
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Remind me
+      - languageEnum: 1
+        LanguageGenericType: Choice 03
+      RequiredFlag: {fileID: 11400000, guid: fb3630378891f194fa7749c02b26b18c, type: 2}
+  DialogueNodeDatas:
+  - NodeGuid: 49ae51f3-417b-497e-aa96-38a1ec91b121
+    Position: {x: 1025, y: -103}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: I am worried I will not be able to sell my beautiful flowers.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 97e9dce1-b6ec-420a-bfcf-8a2ac7b582ff
+    Position: {x: 1317, y: -121}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'My shop is, well - used to be, filled to the brim with
+        catorful flowers and plants. '
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: b03e87cb-d2b2-43a9-9e14-dafc995a3a48
+    Position: {x: 1600, y: -121}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Le sigh...
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: cf257311-7fa9-4c48-a855-85cb9d555300
+    Position: {x: 1143, y: 196}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: What have you got your paws on there?
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 138b667b-51b1-4ff3-90d1-4a2a0205e3c3
+    Position: {x: 1469, y: 196}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: A Midnight Butterfly! This rare species only drink nectar
+        from the Midnight Rose, which only blooms during summer nights.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: cdc1b14a-235e-4338-b578-91110baad130
+    Position: {x: 1782, y: 196}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: I sell Midnight Roses here in my shop. I can find out
+        whom I have sold it to, just give me a moment...
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 693cdb95-ab3f-467c-925f-101923b65cad
+    Position: {x: 2018, y: 196}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: I swear I put the records somewhere around here...
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 1a0f9043-9955-4957-9e53-0fa16f11de69
+    Position: {x: 2259, y: 196}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: TownHallMayorInitialDialogueEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Ah, yes! Here it is. Recently, Luna and Richard both
+        bought one of these flowers. '
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 57d79352-3fe4-4018-a7f7-33da7eb00fd0
+    Position: {x: 2512, y: 196}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: FloristInitialDialogueEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Luna is likely at home, given the disability. Richard,
+        on the other paw, is no doubt at the office still. Quite the workaholic that
+        cat.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: f9369be4-9522-4660-9151-707050186286
+    Position: {x: 1807, y: 707}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Sure, Detective!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  ConditionalNodeDatas: []
+  TimerChoiceNodeDatas: []
+  EndNodeDatas:
+  - NodeGuid: 7838e825-39c1-416f-8753-1589000d7155
+    Position: {x: 2792, y: 196}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  EventNodeDatas: []
+  StartNodeDatas:
+  - NodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
+    Position: {x: 321, y: 196}
+    startID: 
+  RandomNodeDatas: []
+  CommandNodeDatas: []
+  IfNodeDatas: []
+  AdvancedIFNodeDatas: []
+  AdvancedChoiceNodeDatas: []
+  AdvancedTimeChoiceNodeDatas: []
+  ResetSavedNodeDatas: []
+  MusicNodeDatas: []

@@ -64,5 +64,6 @@ public enum GameFlag
     PlayerHouseTelephoneMayor,
     MayorInitialDialogue,
     ScientistInitialDialogue,
-    ScientistButterflyEvent1
+    ScientistButterflyEvent1,
+    FloristInitialDialogue,
 }
