@@ -193,6 +193,11 @@ public class GameManager : MonoBehaviour
 
     public EventBase FindEvent(string id)
     {
+        if (string.IsNullOrEmpty(id))
+        {
+            return null;
+        }
+
         var eventController = Events.FirstOrDefault(x => x.Id == id);
         var moveEventController = MoveEvents.FirstOrDefault(x => x.Id == id);
 
@@ -200,9 +205,10 @@ public class GameManager : MonoBehaviour
         {
             CLogger.LogError($"FindEvent found both Event and MoveEvent searching for id \"{id}\"! Returning Event.");
         }
-        if (eventController == null && moveEventController == null && !string.IsNullOrEmpty(id))
+        if (eventController == null && moveEventController == null)
         {
             CLogger.LogError($"FindEvent found no matching event searching for id \"{id}\"!");
+            return null;
         }
         return (EventBase) eventController ?? moveEventController;
     }

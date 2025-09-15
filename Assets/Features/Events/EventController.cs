@@ -15,6 +15,7 @@ public class EventController : EventBase
 
     public List<GameObject> TargetObjects;
     public List<SetGameFlagCombo> SetFlags;
+    public string NextEvent; //note that this bypasses any requirements
     public string Id;
 
     // Start is called before the first frame update
@@ -68,6 +69,9 @@ public class EventController : EventBase
 
         //Save event state
         GameManager.Instance.SaveEventState(this);
+
+        //Activate next event
+        GameManager.Instance.FindEvent(NextEvent)?.Activate();
     }
 
     private bool CheckRequirements()

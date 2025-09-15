@@ -13,6 +13,8 @@ public class MoveEventController : EventBase
     public bool IsFinished;
     public string Id;
     public List<SetGameFlagCombo> SetFlags;
+    public string NextEvent; //note that this bypasses any requirements
+
 
     // Start is called before the first frame update
     public void Setup()
@@ -31,7 +33,7 @@ public class MoveEventController : EventBase
             var endTriggerIsOn = EndTriggerObject.activeSelf;
             if (!endTriggerIsOn)
             {
-                CLogger.Log($"MoveEvent \"{Id}\" endTrigger is not on!");
+                //CLogger.Log($"MoveEvent \"{Id}\" endTrigger is not on!");
                 return;
             }
             DoFinishRoutine();
@@ -45,6 +47,9 @@ public class MoveEventController : EventBase
 
         Started = true;
         IsFinished = false;
+
+        //Activate next event
+        GameManager.Instance.FindEvent(NextEvent)?.Activate();
     }
 
     public void DoFinishRoutine()
@@ -67,4 +72,12 @@ public class MoveEventController : EventBase
 
         GameManager.Instance.SaveMoveEventState(this);
     }
+    
+#if UNITY_EDITOR
+    private void OnDrawGizmos()
+    {
+        string customName = "MoveGizmo.png";
+        Gizmos.DrawIcon(transform.position, customName, true);
+    }
+#endif
 }

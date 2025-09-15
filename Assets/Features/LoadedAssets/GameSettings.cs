@@ -66,4 +66,5 @@ public enum GameFlag
     ScientistInitialDialogue,
     ScientistButterflyEvent1,
     FloristInitialDialogue,
+    LunaMidnightRoseDialogue1
 }

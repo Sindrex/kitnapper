@@ -1,0 +1,283 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1946feaec865d344dabf0419b1c94973, type: 3}
+  m_Name: LunaDialogue1
+  m_EditorClassIdentifier: 
+  AllowDialogueSave: 0
+  BlockingReopeningDialogue: 0
+  ResetSavedNodeOnChoice: 1
+  LimitChoiceOptionPerNode: 0
+  MaxChoiceOptionPerNode: 8
+  NodeLinkDatas:
+  - BaseNodeGuid: 9d3dfb4b-96e2-4a83-9201-ccb71cbe0e1f
+    TargetNodeGuid: 0fb8e009-758b-4302-ad61-4c516ffc1003
+  - BaseNodeGuid: 387c6883-214b-4792-9fb7-a702668501be
+    TargetNodeGuid: 8d0cae8d-9955-47cf-b917-3245bf1fe72c
+  - BaseNodeGuid: 8d0cae8d-9955-47cf-b917-3245bf1fe72c
+    TargetNodeGuid: f751c2b0-46cc-4a63-9344-a68b4e784977
+  - BaseNodeGuid: 25f936bd-798f-4c3d-9d5c-65cb7e771398
+    TargetNodeGuid: ae8a2701-2e80-4873-ba39-079ac4d8c439
+  - BaseNodeGuid: ae8a2701-2e80-4873-ba39-079ac4d8c439
+    TargetNodeGuid: e56d670a-166a-458b-bcea-972ad496a64c
+  - BaseNodeGuid: e56d670a-166a-458b-bcea-972ad496a64c
+    TargetNodeGuid: 5757ab72-f78b-45f8-aadd-e6227dd0051c
+  - BaseNodeGuid: 5757ab72-f78b-45f8-aadd-e6227dd0051c
+    TargetNodeGuid: bcbb99da-e3f9-4ffb-a3a9-d2b4923d23bc
+  - BaseNodeGuid: 0fb8e009-758b-4302-ad61-4c516ffc1003
+    TargetNodeGuid: bcbb99da-e3f9-4ffb-a3a9-d2b4923d23bc
+  - BaseNodeGuid: 0fb8e009-758b-4302-ad61-4c516ffc1003
+    TargetNodeGuid: 387c6883-214b-4792-9fb7-a702668501be
+  - BaseNodeGuid: 0fb8e009-758b-4302-ad61-4c516ffc1003
+    TargetNodeGuid: 25f936bd-798f-4c3d-9d5c-65cb7e771398
+  - BaseNodeGuid: f751c2b0-46cc-4a63-9344-a68b4e784977
+    TargetNodeGuid: c0f3351b-9180-4a81-93fa-f89a8a29ccd6
+  - BaseNodeGuid: c0f3351b-9180-4a81-93fa-f89a8a29ccd6
+    TargetNodeGuid: bcbb99da-e3f9-4ffb-a3a9-d2b4923d23bc
+  DialogueChoiceNodeDatas:
+  - NodeGuid: 0fb8e009-758b-4302-ad61-4c516ffc1003
+    Position: {x: 469, y: 306}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Luna: Hi, Mr. Detective! People seem to be agitated today.
+        How are you doing darling?'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 5
+    DialogueNodePorts:
+    - PortGuid: 90a46b8e-2102-4adb-8348-e3c2eee75f98
+      InputGuid: bcbb99da-e3f9-4ffb-a3a9-d2b4923d23bc
+      OutputGuid: 0fb8e009-758b-4302-ad61-4c516ffc1003
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Goodbye
+      - languageEnum: 1
+        LanguageGenericType: Choice 01
+      RequiredFlag: {fileID: 0}
+    - PortGuid: c741502e-c717-4486-a1dd-eb542d216047
+      InputGuid: 387c6883-214b-4792-9fb7-a702668501be
+      OutputGuid: 0fb8e009-758b-4302-ad61-4c516ffc1003
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Question
+      - languageEnum: 1
+        LanguageGenericType: Choice 02
+      RequiredFlag: {fileID: 11400000, guid: de9eac2e0a950a34691d000eb8b356a5, type: 2}
+    - PortGuid: 41c1634f-c652-4f6d-9b4b-b4cc4010b3e5
+      InputGuid: 25f936bd-798f-4c3d-9d5c-65cb7e771398
+      OutputGuid: 0fb8e009-758b-4302-ad61-4c516ffc1003
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Midnight Rose
+      - languageEnum: 1
+        LanguageGenericType: Choice 03
+      RequiredFlag: {fileID: 11400000, guid: fb3630378891f194fa7749c02b26b18c, type: 2}
+  DialogueNodeDatas:
+  - NodeGuid: 387c6883-214b-4792-9fb7-a702668501be
+    Position: {x: 840, y: 404}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: The colors are gone!? I did not know! Makes sense why
+        people are so upset today then. I am sure you will find the culprit soon
+        enough darling.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 25f936bd-798f-4c3d-9d5c-65cb7e771398
+    Position: {x: 840, y: 812}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'The Midnight Rose? Yes, I bought one just this week from
+        sweet, sweet Poppy. It is the most beautiful flower darling. '
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: ae8a2701-2e80-4873-ba39-079ac4d8c439
+    Position: {x: 1105, y: 812}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Where was I last night? Oh, hihi. I think the Mayor can
+        vouche for me.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: f751c2b0-46cc-4a63-9344-a68b4e784977
+    Position: {x: 1351, y: 404}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Oh, how I have wondered how my life would be if I could
+        see colors like everyone else... Excuse me darling.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 5757ab72-f78b-45f8-aadd-e6227dd0051c
+    Position: {x: 1620, y: 812}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: LunaMidnightRoseDialogueEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Let's go cheer Poppy up! Meet me there darling.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 8d0cae8d-9955-47cf-b917-3245bf1fe72c
+    Position: {x: 1105, y: 404}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'You know? Sometimes my disability makes it harder for
+        me to connect with other people. '
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: c0f3351b-9180-4a81-93fa-f89a8a29ccd6
+    Position: {x: 1601, y: 404}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Sniff, sniff.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: e56d670a-166a-458b-bcea-972ad496a64c
+    Position: {x: 1351, y: 812}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: By the way, do you know how Poppy is doing? I am sure
+        this ordeal must be taxing. Poppy has always been so fond of the colors of
+        all the flowers.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  ConditionalNodeDatas: []
+  TimerChoiceNodeDatas: []
+  EndNodeDatas:
+  - NodeGuid: bcbb99da-e3f9-4ffb-a3a9-d2b4923d23bc
+    Position: {x: 1899, y: 297}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  EventNodeDatas: []
+  StartNodeDatas:
+  - NodeGuid: 9d3dfb4b-96e2-4a83-9201-ccb71cbe0e1f
+    Position: {x: 201, y: 306}
+    startID: 
+  RandomNodeDatas: []
+  CommandNodeDatas: []
+  IfNodeDatas: []
+  AdvancedIFNodeDatas: []
+  AdvancedChoiceNodeDatas: []
+  AdvancedTimeChoiceNodeDatas: []
+  ResetSavedNodeDatas: []
+  MusicNodeDatas: []
