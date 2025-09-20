@@ -1,0 +1,446 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1946feaec865d344dabf0419b1c94973, type: 3}
+  m_Name: LunaFloristMomentDialogue
+  m_EditorClassIdentifier: 
+  AllowDialogueSave: 0
+  BlockingReopeningDialogue: 0
+  ResetSavedNodeOnChoice: 1
+  LimitChoiceOptionPerNode: 0
+  MaxChoiceOptionPerNode: 8
+  NodeLinkDatas:
+  - BaseNodeGuid: 6487d12b-7b97-443b-90db-96f1953b8035
+    TargetNodeGuid: b952acbf-c301-4c7d-a86e-6833f43ef895
+  - BaseNodeGuid: d79a95d4-fe48-4c17-9e4c-73378ebb6152
+    TargetNodeGuid: e11b356d-ad74-46ce-9a94-146619b18147
+  - BaseNodeGuid: e11b356d-ad74-46ce-9a94-146619b18147
+    TargetNodeGuid: 1fd3d7f6-501d-42fb-977e-66104ecd2e81
+  - BaseNodeGuid: 1ffda9d4-b3c5-42a8-a417-35c05a40c2eb
+    TargetNodeGuid: 3ce8cf6a-b9da-4229-b539-e6b0e020f4a8
+  - BaseNodeGuid: 1fd3d7f6-501d-42fb-977e-66104ecd2e81
+    TargetNodeGuid: a7af81e4-3d98-4a5e-95c4-3d7650ddbd75
+  - BaseNodeGuid: 9065b488-e6ad-4e97-b892-7b4b159bf037
+    TargetNodeGuid: 996f52a6-4c7c-4b58-bc58-430fe7772b10
+  - BaseNodeGuid: 3ce8cf6a-b9da-4229-b539-e6b0e020f4a8
+    TargetNodeGuid: 9065b488-e6ad-4e97-b892-7b4b159bf037
+  - BaseNodeGuid: b952acbf-c301-4c7d-a86e-6833f43ef895
+    TargetNodeGuid: d79a95d4-fe48-4c17-9e4c-73378ebb6152
+  - BaseNodeGuid: a7af81e4-3d98-4a5e-95c4-3d7650ddbd75
+    TargetNodeGuid: 1ffda9d4-b3c5-42a8-a417-35c05a40c2eb
+  - BaseNodeGuid: 996f52a6-4c7c-4b58-bc58-430fe7772b10
+    TargetNodeGuid: a3b31be8-cbc1-43d8-8adb-ee34b3096385
+  - BaseNodeGuid: a3b31be8-cbc1-43d8-8adb-ee34b3096385
+    TargetNodeGuid: 435226c3-b094-43ca-98e2-9e3be49be921
+  - BaseNodeGuid: 435226c3-b094-43ca-98e2-9e3be49be921
+    TargetNodeGuid: 5a3d5602-0572-486d-a5a3-73a44e04e6f4
+  - BaseNodeGuid: 5a3d5602-0572-486d-a5a3-73a44e04e6f4
+    TargetNodeGuid: 265bbd44-e859-4c2b-b39d-a30b925e6f57
+  - BaseNodeGuid: 265bbd44-e859-4c2b-b39d-a30b925e6f57
+    TargetNodeGuid: 1fe8df59-8293-49e6-b705-b7f4431b0945
+  - BaseNodeGuid: 1fe8df59-8293-49e6-b705-b7f4431b0945
+    TargetNodeGuid: ae097847-51ff-45e6-a710-0a3d7f60c45d
+  - BaseNodeGuid: ae097847-51ff-45e6-a710-0a3d7f60c45d
+    TargetNodeGuid: a088c052-37ff-411f-b11e-018fc3168447
+  - BaseNodeGuid: a088c052-37ff-411f-b11e-018fc3168447
+    TargetNodeGuid: ed8e838d-b20d-4037-8bdd-9e72bfe20b2e
+  - BaseNodeGuid: ed8e838d-b20d-4037-8bdd-9e72bfe20b2e
+    TargetNodeGuid: e15c0f1f-ca52-4565-b0fc-6e5fb21203b3
+  - BaseNodeGuid: e15c0f1f-ca52-4565-b0fc-6e5fb21203b3
+    TargetNodeGuid: 1437f839-3556-4cb9-91d9-dc0e8aaa6e0d
+  DialogueChoiceNodeDatas: []
+  DialogueNodeDatas:
+  - NodeGuid: d79a95d4-fe48-4c17-9e4c-73378ebb6152
+    Position: {x: 446, y: 206}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Poppy: Sob Sob.'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: e11b356d-ad74-46ce-9a94-146619b18147
+    Position: {x: 715, y: 206}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: I run a flower shop for cat's sake! Who will buy my flowers
+        now that their colors are gone?
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 1ffda9d4-b3c5-42a8-a417-35c05a40c2eb
+    Position: {x: 1487, y: 206}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: I understand you very well.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 1fd3d7f6-501d-42fb-977e-66104ecd2e81
+    Position: {x: 974, y: 206}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Sob sob.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 9065b488-e6ad-4e97-b892-7b4b159bf037
+    Position: {x: 446, y: 630}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'But I still bought your flowers, did I not? '
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 3ce8cf6a-b9da-4229-b539-e6b0e020f4a8
+    Position: {x: 202, y: 630}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'The flowers still look the same to me after all. '
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: b952acbf-c301-4c7d-a86e-6833f43ef895
+    Position: {x: 202, y: 206}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Luna: Poppy, there you are darling!'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: a7af81e4-3d98-4a5e-95c4-3d7650ddbd75
+    Position: {x: 1244, y: 206}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Luna: Poppy, darling, listen...'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 996f52a6-4c7c-4b58-bc58-430fe7772b10
+    Position: {x: 685, y: 630}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: And I did not buy them out of pity, or as a joke. No...
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: a3b31be8-cbc1-43d8-8adb-ee34b3096385
+    Position: {x: 931, y: 630}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: The curves, the shapes, the texture and, god, the smell
+        darling! Flowers are amazing, with or without their colors!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 435226c3-b094-43ca-98e2-9e3be49be921
+    Position: {x: 1184, y: 630}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Poppy: I understand what you are saying. And I appreciate
+        the sentiment Luna, I really do, but...'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 5a3d5602-0572-486d-a5a3-73a44e04e6f4
+    Position: {x: 1444, y: 630}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: I just really loved their colors, you know?
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 265bbd44-e859-4c2b-b39d-a30b925e6f57
+    Position: {x: 1687, y: 630}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Sob sob.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 1fe8df59-8293-49e6-b705-b7f4431b0945
+    Position: {x: 1929, y: 630}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: FloristLunaMomentMoveEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Luna: I know darling. '
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: ae097847-51ff-45e6-a710-0a3d7f60c45d
+    Position: {x: 2185, y: 630}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: But maybe while we wait for the Detective to bring their
+        colors back, there's something to learn here.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: a088c052-37ff-411f-b11e-018fc3168447
+    Position: {x: 2446, y: 630}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: To appreciate the whole flower, darling. And do not worry
+        about your shop. I am sure it will be all right.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: ed8e838d-b20d-4037-8bdd-9e72bfe20b2e
+    Position: {x: 2715, y: 630}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Poppy: I guess you''re right Luna...'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: e15c0f1f-ca52-4565-b0fc-6e5fb21203b3
+    Position: {x: 2970, y: 630}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: FloristLunaMomentDialogueEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Thanks Luna.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  ConditionalNodeDatas: []
+  TimerChoiceNodeDatas: []
+  EndNodeDatas:
+  - NodeGuid: 1437f839-3556-4cb9-91d9-dc0e8aaa6e0d
+    Position: {x: 3239, y: 630}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  EventNodeDatas: []
+  StartNodeDatas:
+  - NodeGuid: 6487d12b-7b97-443b-90db-96f1953b8035
+    Position: {x: 14, y: 206}
+    startID: 
+  RandomNodeDatas: []
+  CommandNodeDatas: []
+  IfNodeDatas: []
+  AdvancedIFNodeDatas: []
+  AdvancedChoiceNodeDatas: []
+  AdvancedTimeChoiceNodeDatas: []
+  ResetSavedNodeDatas: []
+  MusicNodeDatas: []

@@ -9,8 +9,10 @@ public class DialogueController : MonoBehaviour
     public DialogueContainerSO dialogueContainer;
     public BaseNodeData currentNode;
     public bool IsActive = false;
-    public bool RequireInteract;
+    public bool RequireInteract = false;
     public List<ReqFlagBase> RequiredFlags;
+
+    private bool isSecondNode;
 
     // Start is called before the first frame update
     void Start()
@@ -23,7 +25,7 @@ public class DialogueController : MonoBehaviour
     {
         if (IsActive)
         {
-            if (RequireInteract && !InputController.GetInput(InputPurpose.INTERACT))
+            if ((RequireInteract || isSecondNode) && !InputController.GetInput(InputPurpose.INTERACT))
             {
                 return;
             }
@@ -36,6 +38,7 @@ public class DialogueController : MonoBehaviour
             PlayerController.Instance.StopShowInteractHint();
             GetNextNode();
             RunCurrentNode();
+            isSecondNode = true;
         }
     }
 
@@ -135,6 +138,7 @@ public class DialogueController : MonoBehaviour
             currentNode = dialogueContainer.StartNodeDatas.FirstOrDefault();
             PlayerController.Instance.ShowInteractHint();
             IsActive = true;
+            isSecondNode = false;
         }
     }
 
