@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1946feaec865d344dabf0419b1c94973, type: 3}
-  m_Name: MilkcatDialogue1
+  m_Name: FindusDialogue1
   m_EditorClassIdentifier: 
   AllowDialogueSave: 0
   BlockingReopeningDialogue: 0
@@ -18,18 +18,10 @@ MonoBehaviour:
   LimitChoiceOptionPerNode: 0
   MaxChoiceOptionPerNode: 0
   NodeLinkDatas:
-  - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
-    TargetNodeGuid: 4c2bbdeb-643d-4fae-8ea6-0b98c276dd30
-  - BaseNodeGuid: 4c2bbdeb-643d-4fae-8ea6-0b98c276dd30
-    TargetNodeGuid: 9a178bc8-2dbf-46e1-a47c-3bd248a2fd85
-  - BaseNodeGuid: 56f84788-d2af-401c-8ddf-e9fc66a9511a
-    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
-  - BaseNodeGuid: cf257311-7fa9-4c48-a855-85cb9d555300
-    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
-  - BaseNodeGuid: 9a178bc8-2dbf-46e1-a47c-3bd248a2fd85
-    TargetNodeGuid: 56f84788-d2af-401c-8ddf-e9fc66a9511a
-  - BaseNodeGuid: 9a178bc8-2dbf-46e1-a47c-3bd248a2fd85
-    TargetNodeGuid: cf257311-7fa9-4c48-a855-85cb9d555300
+  - BaseNodeGuid: 368d0761-52c3-43e5-b334-09b019812615
+    TargetNodeGuid: d1e73e03-4885-4d9f-82e9-30d36422fca0
+  - BaseNodeGuid: d1e73e03-4885-4d9f-82e9-30d36422fca0
+    TargetNodeGuid: ea1cfc03-3adf-4590-a1c9-73f4eb161bc8
   - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
     TargetNodeGuid: 4c2bbdeb-643d-4fae-8ea6-0b98c276dd30
   - BaseNodeGuid: 4c2bbdeb-643d-4fae-8ea6-0b98c276dd30
@@ -83,6 +75,27 @@ MonoBehaviour:
         LanguageGenericType: Choice 02
       RequiredFlag: {fileID: 0}
   DialogueNodeDatas:
+  - NodeGuid: 4c2bbdeb-643d-4fae-8ea6-0b98c276dd30
+    Position: {x: 576, y: 196}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: How are you doing, Chief? Fancy a glass of milk? Guess
+        it'll be hard to know if it really is, with what's going on. Heh heh.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
   - NodeGuid: 56f84788-d2af-401c-8ddf-e9fc66a9511a
     Position: {x: 1147, y: -88}
     Character: {fileID: 0}
@@ -121,28 +134,6 @@ MonoBehaviour:
     - languageEnum: 0
       LanguageGenericType: That's alright. If you change your mind, you know where
         to find me.
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
-  - NodeGuid: 4c2bbdeb-643d-4fae-8ea6-0b98c276dd30
-    Position: {x: 576, y: 196}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: 'Catender:  How are you doing, Chief? Fancy a glass of
-        milk? Guess it''ll be hard to know if it really is, with what''s going on.
-        Heh heh.'
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10

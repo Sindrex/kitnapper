@@ -78,27 +78,6 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
-  - NodeGuid: e11b356d-ad74-46ce-9a94-146619b18147
-    Position: {x: 715, y: 206}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: I run a flower shop for cat's sake! Who will buy my flowers
-        now that their colors are gone?
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
   - NodeGuid: 1ffda9d4-b3c5-42a8-a417-35c05a40c2eb
     Position: {x: 1487, y: 206}
     Character: {fileID: 0}
@@ -399,7 +378,7 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: 'Poppy: I guess you''re right Luna...'
+      LanguageGenericType: 'Poppy: I guess you''re right...'
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
@@ -420,6 +399,27 @@ MonoBehaviour:
     TextType:
     - languageEnum: 0
       LanguageGenericType: Thanks Luna.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: e11b356d-ad74-46ce-9a94-146619b18147
+    Position: {x: 714, y: 206}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: I run a flower shop for cat's sake! Who will buy my flowers
+        now that their colors are all  gone!?
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10

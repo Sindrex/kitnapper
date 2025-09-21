@@ -18,6 +18,10 @@ MonoBehaviour:
   LimitChoiceOptionPerNode: 0
   MaxChoiceOptionPerNode: 0
   NodeLinkDatas:
+  - BaseNodeGuid: 368d0761-52c3-43e5-b334-09b019812615
+    TargetNodeGuid: d1e73e03-4885-4d9f-82e9-30d36422fca0
+  - BaseNodeGuid: d1e73e03-4885-4d9f-82e9-30d36422fca0
+    TargetNodeGuid: ea1cfc03-3adf-4590-a1c9-73f4eb161bc8
   - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
     TargetNodeGuid: 4fd61db1-a71e-4295-8ec8-fb495f167954
   - BaseNodeGuid: 2fc2f56d-375d-4a2d-926a-fa8163a1d583
@@ -184,7 +188,7 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: So, to get right in topic, we are suspecting that someone
+      LanguageGenericType: So, to get right on topic, we are suspecting that someone
         kitnapped all the town's colors, humr humr.
     - languageEnum: 1
       LanguageGenericType: 

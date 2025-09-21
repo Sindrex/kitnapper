@@ -20,18 +20,14 @@ MonoBehaviour:
   NodeLinkDatas:
   - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
     TargetNodeGuid: 33b2a2cc-3b68-48bd-84a3-d0a5ec308388
-  - BaseNodeGuid: 33b2a2cc-3b68-48bd-84a3-d0a5ec308388
-    TargetNodeGuid: 49ae51f3-417b-497e-aa96-38a1ec91b121
-  - BaseNodeGuid: 33b2a2cc-3b68-48bd-84a3-d0a5ec308388
-    TargetNodeGuid: cf257311-7fa9-4c48-a855-85cb9d555300
-  - BaseNodeGuid: 33b2a2cc-3b68-48bd-84a3-d0a5ec308388
-    TargetNodeGuid: f9369be4-9522-4660-9151-707050186286
   - BaseNodeGuid: 49ae51f3-417b-497e-aa96-38a1ec91b121
     TargetNodeGuid: 97e9dce1-b6ec-420a-bfcf-8a2ac7b582ff
-  - BaseNodeGuid: cf257311-7fa9-4c48-a855-85cb9d555300
-    TargetNodeGuid: 138b667b-51b1-4ff3-90d1-4a2a0205e3c3
   - BaseNodeGuid: 97e9dce1-b6ec-420a-bfcf-8a2ac7b582ff
     TargetNodeGuid: b03e87cb-d2b2-43a9-9e14-dafc995a3a48
+  - BaseNodeGuid: b03e87cb-d2b2-43a9-9e14-dafc995a3a48
+    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
+  - BaseNodeGuid: cf257311-7fa9-4c48-a855-85cb9d555300
+    TargetNodeGuid: 138b667b-51b1-4ff3-90d1-4a2a0205e3c3
   - BaseNodeGuid: 138b667b-51b1-4ff3-90d1-4a2a0205e3c3
     TargetNodeGuid: cdc1b14a-235e-4338-b578-91110baad130
   - BaseNodeGuid: cdc1b14a-235e-4338-b578-91110baad130
@@ -40,12 +36,16 @@ MonoBehaviour:
     TargetNodeGuid: 1a0f9043-9955-4957-9e53-0fa16f11de69
   - BaseNodeGuid: 1a0f9043-9955-4957-9e53-0fa16f11de69
     TargetNodeGuid: 57d79352-3fe4-4018-a7f7-33da7eb00fd0
-  - BaseNodeGuid: b03e87cb-d2b2-43a9-9e14-dafc995a3a48
-    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
   - BaseNodeGuid: 57d79352-3fe4-4018-a7f7-33da7eb00fd0
     TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
+  - BaseNodeGuid: 33b2a2cc-3b68-48bd-84a3-d0a5ec308388
+    TargetNodeGuid: 49ae51f3-417b-497e-aa96-38a1ec91b121
+  - BaseNodeGuid: 33b2a2cc-3b68-48bd-84a3-d0a5ec308388
+    TargetNodeGuid: cf257311-7fa9-4c48-a855-85cb9d555300
+  - BaseNodeGuid: 33b2a2cc-3b68-48bd-84a3-d0a5ec308388
+    TargetNodeGuid: f9369be4-9522-4660-9151-707050186286
   - BaseNodeGuid: f9369be4-9522-4660-9151-707050186286
-    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
+    TargetNodeGuid: 57d79352-3fe4-4018-a7f7-33da7eb00fd0
   DialogueChoiceNodeDatas:
   - NodeGuid: 33b2a2cc-3b68-48bd-84a3-d0a5ec308388
     Position: {x: 598, y: 196}
@@ -198,27 +198,6 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
-  - NodeGuid: cdc1b14a-235e-4338-b578-91110baad130
-    Position: {x: 1782, y: 196}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: I sell Midnight Roses here in my shop. I can find out
-        whom I have sold it to, just give me a moment...
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
   - NodeGuid: 693cdb95-ab3f-467c-925f-101923b65cad
     Position: {x: 2018, y: 196}
     Character: {fileID: 0}
@@ -299,6 +278,27 @@ MonoBehaviour:
       LanguageGenericType: Luna is often seen over at the Cattelatte, right? Richard,
         on the other paw, is no doubt at the office still. Quite the workaholic that
         cat.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: cdc1b14a-235e-4338-b578-91110baad130
+    Position: {x: 1782, y: 196}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: I sell Midnight Roses here in my shop. I can find out
+        whom I have sold it to recently, just give me a moment...
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10

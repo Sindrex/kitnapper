@@ -152,7 +152,7 @@ MonoBehaviour:
     TextType:
     - languageEnum: 0
       LanguageGenericType: Where was I last night? Oh, hihi. I think the Mayor can
-        vouche for me.
+        vouch for me.
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10

@@ -37,6 +37,9 @@ public class MoveEventController : EventBase
                 return;
             }
             DoFinishRoutine();
+            
+            //Activate next event
+            GameManager.Instance.FindEvent(NextEvent)?.Activate();
         }
     }
 
@@ -47,9 +50,6 @@ public class MoveEventController : EventBase
 
         Started = true;
         IsFinished = false;
-
-        //Activate next event
-        GameManager.Instance.FindEvent(NextEvent)?.Activate();
     }
 
     public void DoFinishRoutine()

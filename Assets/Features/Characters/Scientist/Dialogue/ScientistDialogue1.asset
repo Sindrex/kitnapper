@@ -32,12 +32,12 @@ MonoBehaviour:
     TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
   - BaseNodeGuid: 28862d3b-26b1-4d63-a7dc-14a5ca3edd62
     TargetNodeGuid: 93fa5800-b33a-47b7-84fd-a4e46038b6d9
-  - BaseNodeGuid: 93fa5800-b33a-47b7-84fd-a4e46038b6d9
-    TargetNodeGuid: cd16ef0d-5c14-4865-95bd-b7dd5a838aec
   - BaseNodeGuid: cd16ef0d-5c14-4865-95bd-b7dd5a838aec
     TargetNodeGuid: f81eb944-b2d4-4354-b300-3f8bd1aa2669
   - BaseNodeGuid: f81eb944-b2d4-4354-b300-3f8bd1aa2669
     TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
+  - BaseNodeGuid: 93fa5800-b33a-47b7-84fd-a4e46038b6d9
+    TargetNodeGuid: cd16ef0d-5c14-4865-95bd-b7dd5a838aec
   - BaseNodeGuid: c6c3837b-2101-484d-bd1d-3c2c9ded6e96
     TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
   - BaseNodeGuid: c6c3837b-2101-484d-bd1d-3c2c9ded6e96
@@ -253,7 +253,7 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: If there's anything more I can help with, don't hesistate
+      LanguageGenericType: If there's anything I can help you with, don't hesistate
         to ask!
     - languageEnum: 1
       LanguageGenericType: 

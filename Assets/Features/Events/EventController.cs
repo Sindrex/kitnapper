@@ -41,6 +41,9 @@ public class EventController : EventBase
             }
 
             Activate();
+            
+            //Activate next event
+            GameManager.Instance.FindEvent(NextEvent)?.Activate();
         }
     }
 
@@ -69,9 +72,6 @@ public class EventController : EventBase
 
         //Save event state
         GameManager.Instance.SaveEventState(this);
-
-        //Activate next event
-        GameManager.Instance.FindEvent(NextEvent)?.Activate();
     }
 
     private bool CheckRequirements()
