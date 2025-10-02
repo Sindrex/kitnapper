@@ -22,6 +22,26 @@ MonoBehaviour:
     TargetNodeGuid: 6efc1a03-016a-44af-84aa-30bb646b8e22
   - BaseNodeGuid: 6efc1a03-016a-44af-84aa-30bb646b8e22
     TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
+  - BaseNodeGuid: 6efc1a03-016a-44af-84aa-30bb646b8e22
+    TargetNodeGuid: 081f99f7-e4f9-44b2-bda2-6c6b0c3dd158
+  - BaseNodeGuid: 081f99f7-e4f9-44b2-bda2-6c6b0c3dd158
+    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
+  - BaseNodeGuid: 081f99f7-e4f9-44b2-bda2-6c6b0c3dd158
+    TargetNodeGuid: c60b8bee-fa21-4f10-9cf0-5a85d88462da
+  - BaseNodeGuid: f609914e-cfce-45c1-afd9-5476fc837d69
+    TargetNodeGuid: ddc99ea3-8ef6-41f3-8158-d8b1752e3ac0
+  - BaseNodeGuid: 9e39dd12-dc74-4845-829b-3bb3fe91f8ec
+    TargetNodeGuid: e3ca37dd-bbd2-464d-852f-54e97e64c3e6
+  - BaseNodeGuid: c60b8bee-fa21-4f10-9cf0-5a85d88462da
+    TargetNodeGuid: f609914e-cfce-45c1-afd9-5476fc837d69
+  - BaseNodeGuid: ddc99ea3-8ef6-41f3-8158-d8b1752e3ac0
+    TargetNodeGuid: 9e39dd12-dc74-4845-829b-3bb3fe91f8ec
+  - BaseNodeGuid: e3ca37dd-bbd2-464d-852f-54e97e64c3e6
+    TargetNodeGuid: 75c07bf1-543e-413e-91d5-081a0b8e2c71
+  - BaseNodeGuid: 75c07bf1-543e-413e-91d5-081a0b8e2c71
+    TargetNodeGuid: 7d44017b-4954-4f6c-b63e-cf698ab909a2
+  - BaseNodeGuid: 7d44017b-4954-4f6c-b63e-cf698ab909a2
+    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
   DialogueChoiceNodeDatas:
   - NodeGuid: 6efc1a03-016a-44af-84aa-30bb646b8e22
     Position: {x: 546, y: 196}
@@ -52,12 +72,220 @@ MonoBehaviour:
       - languageEnum: 1
         LanguageGenericType: Choice 01
       RequiredFlag: {fileID: 0}
-  DialogueNodeDatas: []
+    - PortGuid: 1ed813d6-8354-4223-afa1-f19b323c38a1
+      InputGuid: 081f99f7-e4f9-44b2-bda2-6c6b0c3dd158
+      OutputGuid: 6efc1a03-016a-44af-84aa-30bb646b8e22
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Question
+      - languageEnum: 1
+        LanguageGenericType: Choice 02
+      RequiredFlag: {fileID: 0}
+  - NodeGuid: 081f99f7-e4f9-44b2-bda2-6c6b0c3dd158
+    Position: {x: 912, y: -134}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: What's on your mind sunshine?
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 5
+    DialogueNodePorts:
+    - PortGuid: 0011c70e-d316-47e3-a6c9-bad3d8e6c3dd
+      InputGuid: 7838e825-39c1-416f-8753-1589000d7155
+      OutputGuid: 081f99f7-e4f9-44b2-bda2-6c6b0c3dd158
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Goodbye
+      - languageEnum: 1
+        LanguageGenericType: Choice 01
+      RequiredFlag: {fileID: 0}
+    - PortGuid: b074ce16-43ca-42ec-bf2f-93c2b6077d8c
+      InputGuid: c60b8bee-fa21-4f10-9cf0-5a85d88462da
+      OutputGuid: 081f99f7-e4f9-44b2-bda2-6c6b0c3dd158
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Richard's Flower
+      - languageEnum: 1
+        LanguageGenericType: Choice 02
+      RequiredFlag: {fileID: 11400000, guid: 28f295a3ae666734ebe8d71254761229, type: 2}
+  - NodeGuid: f609914e-cfce-45c1-afd9-5476fc837d69
+    Position: {x: 1603, y: -134}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: No, I didn't. Is there anything else, or can I drink my
+        milk in peace?
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 5
+    DialogueNodePorts:
+    - PortGuid: a713f673-ea6b-4d21-aa41-1fb6b10c721c
+      InputGuid: ddc99ea3-8ef6-41f3-8158-d8b1752e3ac0
+      OutputGuid: f609914e-cfce-45c1-afd9-5476fc837d69
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Gray fur
+      - languageEnum: 1
+        LanguageGenericType: Choice 01
+      RequiredFlag: {fileID: 0}
+  - NodeGuid: 9e39dd12-dc74-4845-829b-3bb3fe91f8ec
+    Position: {x: 2220, y: -134}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: That's not mine. There's more than one gray cat in this
+        town, you know? Especially given the situation.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 5
+    DialogueNodePorts:
+    - PortGuid: 86c8e15c-9671-407c-bcfd-286af3131238
+      InputGuid: e3ca37dd-bbd2-464d-852f-54e97e64c3e6
+      OutputGuid: 9e39dd12-dc74-4845-829b-3bb3fe91f8ec
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Let's find out
+      - languageEnum: 1
+        LanguageGenericType: Choice 01
+      RequiredFlag: {fileID: 0}
+  DialogueNodeDatas:
+  - NodeGuid: c60b8bee-fa21-4f10-9cf0-5a85d88462da
+    Position: {x: 1356, y: -134}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Did I steal that orange menance's stupid flower?
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: ddc99ea3-8ef6-41f3-8158-d8b1752e3ac0
+    Position: {x: 1932, y: -134}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: ...
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: e3ca37dd-bbd2-464d-852f-54e97e64c3e6
+    Position: {x: 2604, y: -134}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: ...
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 75c07bf1-543e-413e-91d5-081a0b8e2c71
+    Position: {x: 2906, y: -134}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: You want to do a DNA test down at the University?
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 7d44017b-4954-4f6c-b63e-cf698ab909a2
+    Position: {x: 3179, y: -134}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: FindusInitialDialogueEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Fine! If that can get you off my back! I will meet you
+        there.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
   ConditionalNodeDatas: []
   TimerChoiceNodeDatas: []
   EndNodeDatas:
   - NodeGuid: 7838e825-39c1-416f-8753-1589000d7155
-    Position: {x: 1455, y: 196}
+    Position: {x: 3685, y: 196}
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 

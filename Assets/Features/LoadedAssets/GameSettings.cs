@@ -69,5 +69,7 @@ public enum GameFlag
     LunaMidnightRoseDialogue1,
     LunaFloristMomentDialogue1,
     RichardMidnightRoseDialogue1,
-    RichardInitialDialogue
+    RichardInitialDialogue,
+    FindusInitialDialogue,
+    FindusMiloDialogue
 }

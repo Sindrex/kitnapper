@@ -41,9 +41,21 @@ MonoBehaviour:
   - BaseNodeGuid: c6c3837b-2101-484d-bd1d-3c2c9ded6e96
     TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
   - BaseNodeGuid: c6c3837b-2101-484d-bd1d-3c2c9ded6e96
-    TargetNodeGuid: 36e5585f-26b3-4f86-9381-52bed6e531f9
-  - BaseNodeGuid: c6c3837b-2101-484d-bd1d-3c2c9ded6e96
     TargetNodeGuid: 28862d3b-26b1-4d63-a7dc-14a5ca3edd62
+  - BaseNodeGuid: c6c3837b-2101-484d-bd1d-3c2c9ded6e96
+    TargetNodeGuid: 6653c225-65fa-4982-979c-936bfd14e80b
+  - BaseNodeGuid: 6653c225-65fa-4982-979c-936bfd14e80b
+    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
+  - BaseNodeGuid: 6653c225-65fa-4982-979c-936bfd14e80b
+    TargetNodeGuid: 36e5585f-26b3-4f86-9381-52bed6e531f9
+  - BaseNodeGuid: 6653c225-65fa-4982-979c-936bfd14e80b
+    TargetNodeGuid: 150be6be-4ba0-478b-8a0b-2753f8c4dc20
+  - BaseNodeGuid: 150be6be-4ba0-478b-8a0b-2753f8c4dc20
+    TargetNodeGuid: ef0d4e39-8f73-4ca8-a7d0-8b6359ebb2c7
+  - BaseNodeGuid: ef0d4e39-8f73-4ca8-a7d0-8b6359ebb2c7
+    TargetNodeGuid: f59f15b4-5373-416a-88dd-aa4d28b7f659
+  - BaseNodeGuid: f59f15b4-5373-416a-88dd-aa4d28b7f659
+    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
   DialogueChoiceNodeDatas:
   - NodeGuid: c6c3837b-2101-484d-bd1d-3c2c9ded6e96
     Position: {x: 570, y: 227}
@@ -76,14 +88,14 @@ MonoBehaviour:
         LanguageGenericType: Choice 01
       RequiredFlag: {fileID: 0}
     - PortGuid: 0b934065-ce77-4657-83c5-982d5f5eed3d
-      InputGuid: 36e5585f-26b3-4f86-9381-52bed6e531f9
+      InputGuid: 6653c225-65fa-4982-979c-936bfd14e80b
       OutputGuid: c6c3837b-2101-484d-bd1d-3c2c9ded6e96
       TextLanguage:
       - languageEnum: 0
         LanguageGenericType: Question
       - languageEnum: 1
         LanguageGenericType: Choice 02
-      RequiredFlag: {fileID: 11400000, guid: 6750800202cae504991f2b4a13d206b1, type: 2}
+      RequiredFlag: {fileID: 0}
     - PortGuid: 6845e98b-cde7-4b92-b5f1-7c05c51ee6e7
       InputGuid: 28862d3b-26b1-4d63-a7dc-14a5ca3edd62
       OutputGuid: c6c3837b-2101-484d-bd1d-3c2c9ded6e96
@@ -93,6 +105,53 @@ MonoBehaviour:
       - languageEnum: 1
         LanguageGenericType: Choice 03
       RequiredFlag: {fileID: 11400000, guid: 85f95c9dbd55c2a40abf34b43bf2bb8c, type: 2}
+  - NodeGuid: 6653c225-65fa-4982-979c-936bfd14e80b
+    Position: {x: 570, y: 624}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 5
+    DialogueNodePorts:
+    - PortGuid: b063a1be-9641-4460-b5ca-d45fba294676
+      InputGuid: 7838e825-39c1-416f-8753-1589000d7155
+      OutputGuid: 6653c225-65fa-4982-979c-936bfd14e80b
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Goodbye
+      - languageEnum: 1
+        LanguageGenericType: Choice 01
+      RequiredFlag: {fileID: 0}
+    - PortGuid: 45e59124-95f3-4976-97fc-d2d430f4c2f9
+      InputGuid: 36e5585f-26b3-4f86-9381-52bed6e531f9
+      OutputGuid: 6653c225-65fa-4982-979c-936bfd14e80b
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Invention?
+      - languageEnum: 1
+        LanguageGenericType: Choice 02
+      RequiredFlag: {fileID: 11400000, guid: 6750800202cae504991f2b4a13d206b1, type: 2}
+    - PortGuid: 47971116-b241-4830-a85b-ef6498593e0f
+      InputGuid: 150be6be-4ba0-478b-8a0b-2753f8c4dc20
+      OutputGuid: 6653c225-65fa-4982-979c-936bfd14e80b
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Findus
+      - languageEnum: 1
+        LanguageGenericType: Choice 03
+      RequiredFlag: {fileID: 11400000, guid: f169c9261349aad4d883f6afceb45b21, type: 2}
   DialogueNodeDatas:
   - NodeGuid: 36e5585f-26b3-4f86-9381-52bed6e531f9
     Position: {x: 949, y: 334}
@@ -276,6 +335,69 @@ MonoBehaviour:
     - languageEnum: 0
       LanguageGenericType: This is no cat-of-the-mill butterfly. No, this rare type
         is only attracted to a single flower species!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 150be6be-4ba0-478b-8a0b-2753f8c4dc20
+    Position: {x: 949, y: 690}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Dr. Milo: Findus is an odd fellow indeed. But he is good
+        at heart, that I know.'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: ef0d4e39-8f73-4ca8-a7d0-8b6359ebb2c7
+    Position: {x: 1214, y: 691}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: I grew up with him. We were not always the best of friends,
+        but he always stood up for the little guys.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: f59f15b4-5373-416a-88dd-aa4d28b7f659
+    Position: {x: 1475, y: 691}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: I wish he and, and I'm assuming, Richard could figure
+        things out. I'm sure they could be good friends...
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10

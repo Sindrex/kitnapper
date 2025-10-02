@@ -1,0 +1,514 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1946feaec865d344dabf0419b1c94973, type: 3}
+  m_Name: FindusMiloDialogue
+  m_EditorClassIdentifier: 
+  AllowDialogueSave: 0
+  BlockingReopeningDialogue: 0
+  ResetSavedNodeOnChoice: 0
+  LimitChoiceOptionPerNode: 0
+  MaxChoiceOptionPerNode: 0
+  NodeLinkDatas:
+  - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
+    TargetNodeGuid: 6efc1a03-016a-44af-84aa-30bb646b8e22
+  - BaseNodeGuid: 6efc1a03-016a-44af-84aa-30bb646b8e22
+    TargetNodeGuid: c60b8bee-fa21-4f10-9cf0-5a85d88462da
+  - BaseNodeGuid: c60b8bee-fa21-4f10-9cf0-5a85d88462da
+    TargetNodeGuid: ddc99ea3-8ef6-41f3-8158-d8b1752e3ac0
+  - BaseNodeGuid: ddc99ea3-8ef6-41f3-8158-d8b1752e3ac0
+    TargetNodeGuid: e3ca37dd-bbd2-464d-852f-54e97e64c3e6
+  - BaseNodeGuid: e3ca37dd-bbd2-464d-852f-54e97e64c3e6
+    TargetNodeGuid: 75c07bf1-543e-413e-91d5-081a0b8e2c71
+  - BaseNodeGuid: 75c07bf1-543e-413e-91d5-081a0b8e2c71
+    TargetNodeGuid: 7d44017b-4954-4f6c-b63e-cf698ab909a2
+  - BaseNodeGuid: 7d44017b-4954-4f6c-b63e-cf698ab909a2
+    TargetNodeGuid: a77bcccb-1486-4c3b-9bca-fb68d66fca5d
+  - BaseNodeGuid: a77bcccb-1486-4c3b-9bca-fb68d66fca5d
+    TargetNodeGuid: 61490f64-8019-4fc7-b6d3-e1fc567e19a2
+  - BaseNodeGuid: 61490f64-8019-4fc7-b6d3-e1fc567e19a2
+    TargetNodeGuid: ccb2dc1f-4639-4e01-8435-2504d6a8ecda
+  - BaseNodeGuid: ccb2dc1f-4639-4e01-8435-2504d6a8ecda
+    TargetNodeGuid: 0a75e823-f5d9-4f8c-bb77-74f906cad200
+  - BaseNodeGuid: 0a75e823-f5d9-4f8c-bb77-74f906cad200
+    TargetNodeGuid: 920aa638-5dd5-4594-b0a5-00c4f4dab7d2
+  - BaseNodeGuid: 920aa638-5dd5-4594-b0a5-00c4f4dab7d2
+    TargetNodeGuid: 2f69dc8d-6744-4fb8-9cd8-8d925e6d5ee3
+  - BaseNodeGuid: 2f69dc8d-6744-4fb8-9cd8-8d925e6d5ee3
+    TargetNodeGuid: 1ec5d9d6-2122-4d97-a9a3-7f457fc4c961
+  - BaseNodeGuid: 1ec5d9d6-2122-4d97-a9a3-7f457fc4c961
+    TargetNodeGuid: 2d32b667-db15-4a1c-8264-c741ebf205b7
+  - BaseNodeGuid: 2d32b667-db15-4a1c-8264-c741ebf205b7
+    TargetNodeGuid: 08c69361-8395-498d-9c9f-7aefe5c3b11a
+  - BaseNodeGuid: 08c69361-8395-498d-9c9f-7aefe5c3b11a
+    TargetNodeGuid: c4324a8e-98b3-4f8a-8c51-cd5ec2d87c3b
+  - BaseNodeGuid: c4324a8e-98b3-4f8a-8c51-cd5ec2d87c3b
+    TargetNodeGuid: f7269a0e-a126-4f38-a14f-ac983946e736
+  - BaseNodeGuid: f7269a0e-a126-4f38-a14f-ac983946e736
+    TargetNodeGuid: 6d228e2b-2248-439d-b8cf-ad07f87c43ed
+  - BaseNodeGuid: 6d228e2b-2248-439d-b8cf-ad07f87c43ed
+    TargetNodeGuid: 878519c4-1d72-4930-bb25-715a15143d0e
+  - BaseNodeGuid: 878519c4-1d72-4930-bb25-715a15143d0e
+    TargetNodeGuid: 9fbeedaf-cba7-4617-a759-260f0aaeb8ac
+  - BaseNodeGuid: 9fbeedaf-cba7-4617-a759-260f0aaeb8ac
+    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
+  DialogueChoiceNodeDatas:
+  - NodeGuid: 6d228e2b-2248-439d-b8cf-ad07f87c43ed
+    Position: {x: 2168, y: 911}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Did you have any more questions for me?
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 5
+    DialogueNodePorts:
+    - PortGuid: 73457b23-a058-40b1-b331-7c0e4ad869dc
+      InputGuid: 878519c4-1d72-4930-bb25-715a15143d0e
+      OutputGuid: 6d228e2b-2248-439d-b8cf-ad07f87c43ed
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Last night?
+      - languageEnum: 1
+        LanguageGenericType: Choice 01
+      RequiredFlag: {fileID: 0}
+  - NodeGuid: 6efc1a03-016a-44af-84aa-30bb646b8e22
+    Position: {x: 546, y: 196}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Findus: Okay Milo, let''s do this already.'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 5
+    DialogueNodePorts:
+    - PortGuid: 65bfde64-973c-4e21-a181-efe94a6ab8d1
+      InputGuid: c60b8bee-fa21-4f10-9cf0-5a85d88462da
+      OutputGuid: 6efc1a03-016a-44af-84aa-30bb646b8e22
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Start
+      - languageEnum: 1
+        LanguageGenericType: Choice 01
+      RequiredFlag: {fileID: 0}
+  DialogueNodeDatas:
+  - NodeGuid: c60b8bee-fa21-4f10-9cf0-5a85d88462da
+    Position: {x: 884, y: 196}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Dr. Milo: Alright, so I will do a quick DNA analysis
+        of the Detective''s evidence and your fur Findus.'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: ddc99ea3-8ef6-41f3-8158-d8b1752e3ac0
+    Position: {x: 1145, y: 196}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Findus: Yeah, yeah. Here you go.'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: e3ca37dd-bbd2-464d-852f-54e97e64c3e6
+    Position: {x: 1403, y: 196}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Dr. Milo: Just a moment...'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 75c07bf1-543e-413e-91d5-081a0b8e2c71
+    Position: {x: 1652, y: 196}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: ...
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 7d44017b-4954-4f6c-b63e-cf698ab909a2
+    Position: {x: 1911, y: 196}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: FindusInitialDialogueEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: ...
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: a77bcccb-1486-4c3b-9bca-fb68d66fca5d
+    Position: {x: 2160, y: 196}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Dr. Milo: Almost done...'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 61490f64-8019-4fc7-b6d3-e1fc567e19a2
+    Position: {x: 884, y: 592}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: ...
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: ccb2dc1f-4639-4e01-8435-2504d6a8ecda
+    Position: {x: 1145, y: 592}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: ...
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 0a75e823-f5d9-4f8c-bb77-74f906cad200
+    Position: {x: 1403, y: 592}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Dr. Milo: The results are in! Let''s see...'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 920aa638-5dd5-4594-b0a5-00c4f4dab7d2
+    Position: {x: 1652, y: 592}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Ding ding ding! We have an unmistakable match!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 2f69dc8d-6744-4fb8-9cd8-8d925e6d5ee3
+    Position: {x: 1911, y: 592}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Findus: Gah! Technology these days is getting too good.
+        Guess the gig is up...'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 1ec5d9d6-2122-4d97-a9a3-7f457fc4c961
+    Position: {x: 884, y: 911}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Yes, I did steal his stupid flower. Someone had to teach
+        that cat a lesson! '
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 2d32b667-db15-4a1c-8264-c741ebf205b7
+    Position: {x: 1145, y: 911}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'He deserved it and then some!
+
+        He and his band
+        of orange misfits came waltzing into this town thinking they own the place!'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 08c69361-8395-498d-9c9f-7aefe5c3b11a
+    Position: {x: 1403, y: 911}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: And now they are going after our jobs! I own a farm not
+        far from here, and I hear their company is going to undercut our market with
+        cheap importeds!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: c4324a8e-98b3-4f8a-8c51-cd5ec2d87c3b
+    Position: {x: 1652, y: 911}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Those orange cats, they are different. They are not from
+        here. They don't think like us. I say we kick them out for good.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: f7269a0e-a126-4f38-a14f-ac983946e736
+    Position: {x: 1911, y: 911}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Sorry for the yapping Detective. I just want things to
+        go back to what it was...
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 878519c4-1d72-4930-bb25-715a15143d0e
+    Position: {x: 2515, y: 911}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Where was I last night? Back home at my farm. Can't be
+        gone too long, you know. Lots of work to be done after all!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 9fbeedaf-cba7-4617-a759-260f0aaeb8ac
+    Position: {x: 2772, y: 911}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: FindusMiloDialogueEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: If there's anything more, you'll find me back in the Cattelatte.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  ConditionalNodeDatas: []
+  TimerChoiceNodeDatas: []
+  EndNodeDatas:
+  - NodeGuid: 7838e825-39c1-416f-8753-1589000d7155
+    Position: {x: 3063, y: 911}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  EventNodeDatas: []
+  StartNodeDatas:
+  - NodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
+    Position: {x: 321, y: 196}
+    startID: 
+  RandomNodeDatas: []
+  CommandNodeDatas: []
+  IfNodeDatas: []
+  AdvancedIFNodeDatas: []
+  AdvancedChoiceNodeDatas: []
+  AdvancedTimeChoiceNodeDatas: []
+  ResetSavedNodeDatas: []
+  MusicNodeDatas: []
