@@ -20,8 +20,6 @@ MonoBehaviour:
   NodeLinkDatas:
   - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
     TargetNodeGuid: 6efc1a03-016a-44af-84aa-30bb646b8e22
-  - BaseNodeGuid: 6efc1a03-016a-44af-84aa-30bb646b8e22
-    TargetNodeGuid: c60b8bee-fa21-4f10-9cf0-5a85d88462da
   - BaseNodeGuid: c60b8bee-fa21-4f10-9cf0-5a85d88462da
     TargetNodeGuid: ddc99ea3-8ef6-41f3-8158-d8b1752e3ac0
   - BaseNodeGuid: ddc99ea3-8ef6-41f3-8158-d8b1752e3ac0
@@ -50,16 +48,20 @@ MonoBehaviour:
     TargetNodeGuid: 08c69361-8395-498d-9c9f-7aefe5c3b11a
   - BaseNodeGuid: 08c69361-8395-498d-9c9f-7aefe5c3b11a
     TargetNodeGuid: c4324a8e-98b3-4f8a-8c51-cd5ec2d87c3b
-  - BaseNodeGuid: c4324a8e-98b3-4f8a-8c51-cd5ec2d87c3b
-    TargetNodeGuid: f7269a0e-a126-4f38-a14f-ac983946e736
   - BaseNodeGuid: f7269a0e-a126-4f38-a14f-ac983946e736
     TargetNodeGuid: 6d228e2b-2248-439d-b8cf-ad07f87c43ed
-  - BaseNodeGuid: 6d228e2b-2248-439d-b8cf-ad07f87c43ed
-    TargetNodeGuid: 878519c4-1d72-4930-bb25-715a15143d0e
   - BaseNodeGuid: 878519c4-1d72-4930-bb25-715a15143d0e
     TargetNodeGuid: 9fbeedaf-cba7-4617-a759-260f0aaeb8ac
   - BaseNodeGuid: 9fbeedaf-cba7-4617-a759-260f0aaeb8ac
     TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
+  - BaseNodeGuid: 6d228e2b-2248-439d-b8cf-ad07f87c43ed
+    TargetNodeGuid: 878519c4-1d72-4930-bb25-715a15143d0e
+  - BaseNodeGuid: 6efc1a03-016a-44af-84aa-30bb646b8e22
+    TargetNodeGuid: c60b8bee-fa21-4f10-9cf0-5a85d88462da
+  - BaseNodeGuid: c4324a8e-98b3-4f8a-8c51-cd5ec2d87c3b
+    TargetNodeGuid: 02e72912-89ec-4314-9a25-ffd8f0a483a8
+  - BaseNodeGuid: 02e72912-89ec-4314-9a25-ffd8f0a483a8
+    TargetNodeGuid: f7269a0e-a126-4f38-a14f-ac983946e736
   DialogueChoiceNodeDatas:
   - NodeGuid: 6d228e2b-2248-439d-b8cf-ad07f87c43ed
     Position: {x: 2168, y: 911}
@@ -358,8 +360,8 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: 'Yes, I did steal his stupid flower. Someone had to teach
-        that cat a lesson! '
+      LanguageGenericType: 'Yes! Yes, I did steal his stupid flower. Someone had
+        to teach that cat a lesson! '
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
@@ -488,6 +490,27 @@ MonoBehaviour:
     TextType:
     - languageEnum: 0
       LanguageGenericType: If there's anything more, you'll find me back in the Cattelatte.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 02e72912-89ec-4314-9a25-ffd8f0a483a8
+    Position: {x: 1911, y: 1308}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: And you want to know the worst part? My toy ball was STOLEN
+        the other day! I'm sure it was Richard, that smug cat...
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10

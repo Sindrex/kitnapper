@@ -71,5 +71,7 @@ public enum GameFlag
     RichardMidnightRoseDialogue1,
     RichardInitialDialogue,
     FindusInitialDialogue,
-    FindusMiloDialogue
+    FindusMiloDialogue,
+    FindusSinbadDialogue1,
+    SinbadInitialDialogue
 }

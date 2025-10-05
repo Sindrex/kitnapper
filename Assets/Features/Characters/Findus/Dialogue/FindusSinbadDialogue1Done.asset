@@ -9,9 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b80661980d05ba49b2fd68873ef6c9a, type: 3}
-  m_Name: FindusInitialDialogueReq
+  m_Script: {fileID: 11500000, guid: 9e31cdbf612b7e241bb10ba658b87114, type: 3}
+  m_Name: FindusSinbadDialogue1Done
   m_EditorClassIdentifier: 
-  ReqFlags:
-  - {fileID: 11400000, guid: 244ee895a3fc8034d9579ab88311e393, type: 2}
-  - {fileID: 11400000, guid: 4aa3286d878f75746859f52bc2d8e580, type: 2}
+  Flag: 15
+  BoolValue: 1
+  StringValue: 
+  IntValue: 0
+  LessThanIntValue: 0
+  LessThanOrEqualIntValue: 0
+  MoreThanIntValue: 0
+  MoreThanOrEqualIntValue: 0
