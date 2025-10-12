@@ -1,0 +1,280 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1946feaec865d344dabf0419b1c94973, type: 3}
+  m_Name: FindusRichardMomentDialogue
+  m_EditorClassIdentifier: 
+  AllowDialogueSave: 0
+  BlockingReopeningDialogue: 0
+  ResetSavedNodeOnChoice: 1
+  LimitChoiceOptionPerNode: 0
+  MaxChoiceOptionPerNode: 8
+  NodeLinkDatas:
+  - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
+    TargetNodeGuid: 8966de77-5a76-4407-859c-66a12fd6d87d
+  - BaseNodeGuid: 50fa173f-59ad-48bd-b437-3412bb9de720
+    TargetNodeGuid: 133e5b20-f6b2-4f1a-a512-bc396be1d70b
+  - BaseNodeGuid: 133e5b20-f6b2-4f1a-a512-bc396be1d70b
+    TargetNodeGuid: 7f4205a1-75ad-42c8-aa7f-15930e1547b5
+  - BaseNodeGuid: 7f4205a1-75ad-42c8-aa7f-15930e1547b5
+    TargetNodeGuid: 08e231c3-8adf-40c6-961e-8c4a6b5ea717
+  - BaseNodeGuid: 08e231c3-8adf-40c6-961e-8c4a6b5ea717
+    TargetNodeGuid: f207f76c-87d2-4079-abd8-95b3dfa18406
+  - BaseNodeGuid: f207f76c-87d2-4079-abd8-95b3dfa18406
+    TargetNodeGuid: 8b307dca-950d-4338-b292-09f85b8a1587
+  - BaseNodeGuid: 8b307dca-950d-4338-b292-09f85b8a1587
+    TargetNodeGuid: cd3a1386-9eb0-448f-9dde-947117b2878b
+  - BaseNodeGuid: cd3a1386-9eb0-448f-9dde-947117b2878b
+    TargetNodeGuid: 5e523523-d6a7-40fa-84b0-392f1bba6f08
+  - BaseNodeGuid: 5e523523-d6a7-40fa-84b0-392f1bba6f08
+    TargetNodeGuid: b1fd77fc-3098-41ea-99bf-9ddc6c03543d
+  - BaseNodeGuid: b1fd77fc-3098-41ea-99bf-9ddc6c03543d
+    TargetNodeGuid: a3a77130-602d-48f6-b071-10b1df237a03
+  - BaseNodeGuid: a3a77130-602d-48f6-b071-10b1df237a03
+    TargetNodeGuid: e851f17f-2efb-4dfe-8212-97396ba0de3e
+  - BaseNodeGuid: 8966de77-5a76-4407-859c-66a12fd6d87d
+    TargetNodeGuid: b1fd77fc-3098-41ea-99bf-9ddc6c03543d
+  - BaseNodeGuid: 8966de77-5a76-4407-859c-66a12fd6d87d
+    TargetNodeGuid: 50fa173f-59ad-48bd-b437-3412bb9de720
+  DialogueChoiceNodeDatas: []
+  DialogueNodeDatas:
+  - NodeGuid: 50fa173f-59ad-48bd-b437-3412bb9de720
+    Position: {x: 199, y: 308}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Findus: Hey there Richard. I''ve come to apologise. I
+        realise I have been a fool.'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 133e5b20-f6b2-4f1a-a512-bc396be1d70b
+    Position: {x: 471, y: 308}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Sinbad, a new cat in town, made me realise you orange
+        cats are just like us after all.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 7f4205a1-75ad-42c8-aa7f-15930e1547b5
+    Position: {x: 753, y: 308}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: I was just angry you guys came here and threatened my
+        living with your cheap imports.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 08e231c3-8adf-40c6-961e-8c4a6b5ea717
+    Position: {x: 1012, y: 308}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Richard: I see...'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: f207f76c-87d2-4079-abd8-95b3dfa18406
+    Position: {x: 1291, y: 308}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: I'm sorry too. We never meant to anger you. It was just
+        buisness, you know?
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 8b307dca-950d-4338-b292-09f85b8a1587
+    Position: {x: 1542, y: 308}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: But I understand now. I am sure we can come to a mutually
+        beneficial agreement between us.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: cd3a1386-9eb0-448f-9dde-947117b2878b
+    Position: {x: 1788, y: 308}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Findus: Win-win, as they say?'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 5e523523-d6a7-40fa-84b0-392f1bba6f08
+    Position: {x: 2020, y: 308}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: FindusRichardMomentDialogueEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Richard: Exactly!'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: b1fd77fc-3098-41ea-99bf-9ddc6c03543d
+    Position: {x: 199, y: -68}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Findus: Detective, I need to speak to my new friend here
+        a little more. We need to discuss business.'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: a3a77130-602d-48f6-b071-10b1df237a03
+    Position: {x: 471, y: -68}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Richard: Yes. Detective, you should go check on the Mayor.
+        I heard he is interested in hearing how you are progressing on the case.'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  ConditionalNodeDatas:
+  - NodeGuid: 8966de77-5a76-4407-859c-66a12fd6d87d
+    Position: {x: -99, y: 196}
+    RequiredGameFlagCombo: {fileID: 11400000, guid: 69e08a7b5f74d20478a7676013ea8e57,
+      type: 2}
+  TimerChoiceNodeDatas: []
+  EndNodeDatas:
+  - NodeGuid: e851f17f-2efb-4dfe-8212-97396ba0de3e
+    Position: {x: 753, y: -68}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  EventNodeDatas: []
+  StartNodeDatas:
+  - NodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
+    Position: {x: -352, y: 196}
+    startID: 
+  RandomNodeDatas: []
+  CommandNodeDatas: []
+  IfNodeDatas: []
+  AdvancedIFNodeDatas: []
+  AdvancedChoiceNodeDatas: []
+  AdvancedTimeChoiceNodeDatas: []
+  ResetSavedNodeDatas: []
+  MusicNodeDatas: []

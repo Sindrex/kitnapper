@@ -18,8 +18,8 @@ MonoBehaviour:
   LimitChoiceOptionPerNode: 0
   MaxChoiceOptionPerNode: 8
   NodeLinkDatas:
-  - BaseNodeGuid: 9d3dfb4b-96e2-4a83-9201-ccb71cbe0e1f
-    TargetNodeGuid: 0fb8e009-758b-4302-ad61-4c516ffc1003
+  - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
+    TargetNodeGuid: 6efc1a03-016a-44af-84aa-30bb646b8e22
   - BaseNodeGuid: 387c6883-214b-4792-9fb7-a702668501be
     TargetNodeGuid: 8d0cae8d-9955-47cf-b917-3245bf1fe72c
   - BaseNodeGuid: 25f936bd-798f-4c3d-9d5c-65cb7e771398
@@ -28,20 +28,32 @@ MonoBehaviour:
     TargetNodeGuid: e56d670a-166a-458b-bcea-972ad496a64c
   - BaseNodeGuid: f751c2b0-46cc-4a63-9344-a68b4e784977
     TargetNodeGuid: c0f3351b-9180-4a81-93fa-f89a8a29ccd6
-  - BaseNodeGuid: 5757ab72-f78b-45f8-aadd-e6227dd0051c
-    TargetNodeGuid: bcbb99da-e3f9-4ffb-a3a9-d2b4923d23bc
   - BaseNodeGuid: 8d0cae8d-9955-47cf-b917-3245bf1fe72c
     TargetNodeGuid: f751c2b0-46cc-4a63-9344-a68b4e784977
-  - BaseNodeGuid: c0f3351b-9180-4a81-93fa-f89a8a29ccd6
-    TargetNodeGuid: bcbb99da-e3f9-4ffb-a3a9-d2b4923d23bc
   - BaseNodeGuid: e56d670a-166a-458b-bcea-972ad496a64c
     TargetNodeGuid: 5757ab72-f78b-45f8-aadd-e6227dd0051c
   - BaseNodeGuid: 0fb8e009-758b-4302-ad61-4c516ffc1003
     TargetNodeGuid: bcbb99da-e3f9-4ffb-a3a9-d2b4923d23bc
   - BaseNodeGuid: 0fb8e009-758b-4302-ad61-4c516ffc1003
-    TargetNodeGuid: 387c6883-214b-4792-9fb7-a702668501be
-  - BaseNodeGuid: 0fb8e009-758b-4302-ad61-4c516ffc1003
     TargetNodeGuid: 25f936bd-798f-4c3d-9d5c-65cb7e771398
+  - BaseNodeGuid: 5757ab72-f78b-45f8-aadd-e6227dd0051c
+    TargetNodeGuid: dfb4d9a0-65a8-449d-a9e3-0fda2530effc
+  - BaseNodeGuid: c0f3351b-9180-4a81-93fa-f89a8a29ccd6
+    TargetNodeGuid: 072e67fa-7875-4d9f-ad19-ac3cd72f4bf7
+  - BaseNodeGuid: 0fb8e009-758b-4302-ad61-4c516ffc1003
+    TargetNodeGuid: dcd8d6f3-4bcf-4ce1-926e-1f153f04d853
+  - BaseNodeGuid: dcd8d6f3-4bcf-4ce1-926e-1f153f04d853
+    TargetNodeGuid: 387c6883-214b-4792-9fb7-a702668501be
+  - BaseNodeGuid: dcd8d6f3-4bcf-4ce1-926e-1f153f04d853
+    TargetNodeGuid: f54103a2-0822-4f0b-b378-f40ff488464c
+  - BaseNodeGuid: 9d3dfb4b-96e2-4a83-9201-ccb71cbe0e1f
+    TargetNodeGuid: fd8a58c2-d5b8-40a6-bb0c-e1c4d639783d
+  - BaseNodeGuid: fd8a58c2-d5b8-40a6-bb0c-e1c4d639783d
+    TargetNodeGuid: 90a3ed62-c327-4eb8-88e5-56d86f1e2a4f
+  - BaseNodeGuid: fd8a58c2-d5b8-40a6-bb0c-e1c4d639783d
+    TargetNodeGuid: 0fb8e009-758b-4302-ad61-4c516ffc1003
+  - BaseNodeGuid: 90a3ed62-c327-4eb8-88e5-56d86f1e2a4f
+    TargetNodeGuid: bcbb99da-e3f9-4ffb-a3a9-d2b4923d23bc
   DialogueChoiceNodeDatas:
   - NodeGuid: 0fb8e009-758b-4302-ad61-4c516ffc1003
     Position: {x: 469, y: 306}
@@ -74,7 +86,7 @@ MonoBehaviour:
         LanguageGenericType: Choice 01
       RequiredFlag: {fileID: 0}
     - PortGuid: c741502e-c717-4486-a1dd-eb542d216047
-      InputGuid: 387c6883-214b-4792-9fb7-a702668501be
+      InputGuid: dcd8d6f3-4bcf-4ce1-926e-1f153f04d853
       OutputGuid: 0fb8e009-758b-4302-ad61-4c516ffc1003
       TextLanguage:
       - languageEnum: 0
@@ -90,14 +102,12 @@ MonoBehaviour:
         LanguageGenericType: Midnight Rose
       - languageEnum: 1
         LanguageGenericType: Choice 03
-      RequiredFlag: {fileID: 11400000, guid: fb3630378891f194fa7749c02b26b18c, type: 2}
-  DialogueNodeDatas:
-  - NodeGuid: 387c6883-214b-4792-9fb7-a702668501be
-    Position: {x: 840, y: 404}
+      RequiredFlag: {fileID: 11400000, guid: 815276e54b0dbbe41aa1d7e8a40b1c08, type: 2}
+  - NodeGuid: dcd8d6f3-4bcf-4ce1-926e-1f153f04d853
+    Position: {x: 840, y: -112}
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
-    Event: 
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
@@ -108,12 +118,30 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: The colors are gone!? I did not know! Makes sense why
-        people are so upset today then. I am sure you will find the culprit soon
-        enough darling.
+      LanguageGenericType: What's on your mind darling?
     - languageEnum: 1
       LanguageGenericType: 
-    Duration: 10
+    Duration: 5
+    DialogueNodePorts:
+    - PortGuid: 473d2106-f9d6-47b6-9721-10030156c5d6
+      InputGuid: f54103a2-0822-4f0b-b378-f40ff488464c
+      OutputGuid: dcd8d6f3-4bcf-4ce1-926e-1f153f04d853
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Gopodbye
+      - languageEnum: 1
+        LanguageGenericType: Choice 01
+      RequiredFlag: {fileID: 0}
+    - PortGuid: fe20528b-c95d-4306-8243-314244698ae5
+      InputGuid: 387c6883-214b-4792-9fb7-a702668501be
+      OutputGuid: dcd8d6f3-4bcf-4ce1-926e-1f153f04d853
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Colors
+      - languageEnum: 1
+        LanguageGenericType: Choice 02
+      RequiredFlag: {fileID: 0}
+  DialogueNodeDatas:
   - NodeGuid: 25f936bd-798f-4c3d-9d5c-65cb7e771398
     Position: {x: 840, y: 812}
     Character: {fileID: 0}
@@ -156,27 +184,6 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
-  - NodeGuid: f751c2b0-46cc-4a63-9344-a68b4e784977
-    Position: {x: 1351, y: 404}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: Oh, how I have wondered how my life would be if I could
-        see colors like everyone else... Excuse me darling.
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
   - NodeGuid: 5757ab72-f78b-45f8-aadd-e6227dd0051c
     Position: {x: 1620, y: 812}
     Character: {fileID: 0}
@@ -194,47 +201,6 @@ MonoBehaviour:
     TextType:
     - languageEnum: 0
       LanguageGenericType: Let's go cheer Poppy up! Meet me there darling.
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
-  - NodeGuid: 8d0cae8d-9955-47cf-b917-3245bf1fe72c
-    Position: {x: 1105, y: 404}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: 'You know? Sometimes my disability makes it harder for
-        me to connect with other people. '
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
-  - NodeGuid: c0f3351b-9180-4a81-93fa-f89a8a29ccd6
-    Position: {x: 1601, y: 404}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: Sniff, sniff.
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
@@ -260,18 +226,141 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
-  ConditionalNodeDatas: []
+  - NodeGuid: 387c6883-214b-4792-9fb7-a702668501be
+    Position: {x: 1173, y: -14}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: The colors are gone!? I did not know! Makes sense why
+        people are so upset today then. I am sure you will find the culprit soon
+        enough darling.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 8d0cae8d-9955-47cf-b917-3245bf1fe72c
+    Position: {x: 1401, y: -14}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'You know? Sometimes my disability makes it harder for
+        me to connect with other people. '
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: f751c2b0-46cc-4a63-9344-a68b4e784977
+    Position: {x: 1625, y: -14}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Oh, how I have wondered how my life would be if I could
+        see colors like everyone else... Excuse me darling.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: c0f3351b-9180-4a81-93fa-f89a8a29ccd6
+    Position: {x: 1849, y: -14}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Sniff, sniff.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 90a3ed62-c327-4eb8-88e5-56d86f1e2a4f
+    Position: {x: 469, y: -75}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Luna: Let''s go check up on Poppy. I will meet you there.'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  ConditionalNodeDatas:
+  - NodeGuid: fd8a58c2-d5b8-40a6-bb0c-e1c4d639783d
+    Position: {x: 141, y: 306}
+    RequiredGameFlagCombo: {fileID: 11400000, guid: ca3d3e8f1504ee446bcee357a7fd2a34,
+      type: 2}
   TimerChoiceNodeDatas: []
   EndNodeDatas:
+  - NodeGuid: dfb4d9a0-65a8-449d-a9e3-0fda2530effc
+    Position: {x: 1899, y: 812}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
   - NodeGuid: bcbb99da-e3f9-4ffb-a3a9-d2b4923d23bc
-    Position: {x: 1899, y: 297}
+    Position: {x: 840, y: 287}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: f54103a2-0822-4f0b-b378-f40ff488464c
+    Position: {x: 1173, y: -149}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: 072e67fa-7875-4d9f-ad19-ac3cd72f4bf7
+    Position: {x: 2092, y: -14}
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 
   EventNodeDatas: []
   StartNodeDatas:
   - NodeGuid: 9d3dfb4b-96e2-4a83-9201-ccb71cbe0e1f
-    Position: {x: 201, y: 306}
+    Position: {x: -107, y: 306}
     startID: 
   RandomNodeDatas: []
   CommandNodeDatas: []

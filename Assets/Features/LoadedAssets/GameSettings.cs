@@ -73,5 +73,8 @@ public enum GameFlag
     FindusInitialDialogue,
     FindusMiloDialogue,
     FindusSinbadDialogue1,
-    SinbadInitialDialogue
+    SinbadInitialDialogue,
+    SinbadFindusMomentToyFoundEvent,
+    SinbadFindusMomentDialogue1,
+    FindusRichardMomentDialogue1
 }

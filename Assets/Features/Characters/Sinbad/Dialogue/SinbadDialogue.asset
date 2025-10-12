@@ -1,0 +1,336 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1946feaec865d344dabf0419b1c94973, type: 3}
+  m_Name: SinbadDialogue
+  m_EditorClassIdentifier: 
+  AllowDialogueSave: 0
+  BlockingReopeningDialogue: 0
+  ResetSavedNodeOnChoice: 1
+  LimitChoiceOptionPerNode: 0
+  MaxChoiceOptionPerNode: 8
+  NodeLinkDatas:
+  - BaseNodeGuid: 7296a665-fc20-41ab-bd53-1dedba9fdd32
+    TargetNodeGuid: a6fb76de-e97f-44ec-b860-c843d0103035
+  - BaseNodeGuid: 8392f854-d495-45cb-b7e0-26550dea3efc
+    TargetNodeGuid: 972f7792-bab5-4888-a929-56a4a72f0c9a
+  - BaseNodeGuid: 707ffdbb-3be0-40c6-b8b6-84be7faac9c0
+    TargetNodeGuid: 5219e840-1c49-460f-b77c-006ad2b6f3ec
+  - BaseNodeGuid: 6a292970-2633-4c96-a1ce-7bdfcc3853cb
+    TargetNodeGuid: 342611f3-f33d-446f-9f60-813418011077
+  - BaseNodeGuid: bae9baee-8c09-4e68-a814-204339e011f7
+    TargetNodeGuid: 707ffdbb-3be0-40c6-b8b6-84be7faac9c0
+  - BaseNodeGuid: 972f7792-bab5-4888-a929-56a4a72f0c9a
+    TargetNodeGuid: ade34491-e228-444e-b30b-a9e195b70063
+  - BaseNodeGuid: c03585cc-9875-4b69-b035-ab0bbd12357c
+    TargetNodeGuid: adf4f629-c7c3-46ec-bbdd-f3e5a4f6464d
+  - BaseNodeGuid: 342611f3-f33d-446f-9f60-813418011077
+    TargetNodeGuid: 3e194af8-c1fb-42a9-b789-f65d9b5a07de
+  - BaseNodeGuid: a6fb76de-e97f-44ec-b860-c843d0103035
+    TargetNodeGuid: bae9baee-8c09-4e68-a814-204339e011f7
+  - BaseNodeGuid: a6fb76de-e97f-44ec-b860-c843d0103035
+    TargetNodeGuid: 5219e840-1c49-460f-b77c-006ad2b6f3ec
+  - BaseNodeGuid: 674e888a-f637-45e7-9ba5-3f02f1f027b3
+    TargetNodeGuid: c03585cc-9875-4b69-b035-ab0bbd12357c
+  - BaseNodeGuid: 674e888a-f637-45e7-9ba5-3f02f1f027b3
+    TargetNodeGuid: 8392f854-d495-45cb-b7e0-26550dea3efc
+  - BaseNodeGuid: 5219e840-1c49-460f-b77c-006ad2b6f3ec
+    TargetNodeGuid: cd2c5f6e-de40-41ed-b82e-2274af1d3ddd
+  - BaseNodeGuid: 5219e840-1c49-460f-b77c-006ad2b6f3ec
+    TargetNodeGuid: 06b3c5d4-bfa3-4701-8e2b-a0a480d63836
+  - BaseNodeGuid: 5219e840-1c49-460f-b77c-006ad2b6f3ec
+    TargetNodeGuid: 674e888a-f637-45e7-9ba5-3f02f1f027b3
+  - BaseNodeGuid: 06b3c5d4-bfa3-4701-8e2b-a0a480d63836
+    TargetNodeGuid: b0aeeb87-9f1f-4be8-9849-b2f09f449ac5
+  - BaseNodeGuid: 06b3c5d4-bfa3-4701-8e2b-a0a480d63836
+    TargetNodeGuid: 6a292970-2633-4c96-a1ce-7bdfcc3853cb
+  DialogueChoiceNodeDatas:
+  - NodeGuid: 5219e840-1c49-460f-b77c-006ad2b6f3ec
+    Position: {x: 499, y: 200}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'SINBAD: WHAT?'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 5
+    DialogueNodePorts:
+    - PortGuid: 93f021fe-bfd1-4d80-b58f-c54de712f007
+      InputGuid: cd2c5f6e-de40-41ed-b82e-2274af1d3ddd
+      OutputGuid: 5219e840-1c49-460f-b77c-006ad2b6f3ec
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Goodbye
+      - languageEnum: 1
+        LanguageGenericType: Choice 01
+      RequiredFlag: {fileID: 0}
+    - PortGuid: 23e80279-842e-4831-ae93-be1fee8213d4
+      InputGuid: 06b3c5d4-bfa3-4701-8e2b-a0a480d63836
+      OutputGuid: 5219e840-1c49-460f-b77c-006ad2b6f3ec
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Question
+      - languageEnum: 1
+        LanguageGenericType: Choice 02
+      RequiredFlag: {fileID: 0}
+    - PortGuid: ab17362e-777e-4631-bb58-160bfaeddd1e
+      InputGuid: 674e888a-f637-45e7-9ba5-3f02f1f027b3
+      OutputGuid: 5219e840-1c49-460f-b77c-006ad2b6f3ec
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Findus' toy
+      - languageEnum: 1
+        LanguageGenericType: Choice 03
+      RequiredFlag: {fileID: 11400000, guid: 319395625b87ad7449b3af0d0c5e3d30, type: 2}
+  - NodeGuid: 06b3c5d4-bfa3-4701-8e2b-a0a480d63836
+    Position: {x: 499, y: -297}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: I TRY TO ANSWER BEST I CAN.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 5
+    DialogueNodePorts:
+    - PortGuid: a4f732bd-a1f3-4634-a3fe-a3d3c88e72b4
+      InputGuid: b0aeeb87-9f1f-4be8-9849-b2f09f449ac5
+      OutputGuid: 06b3c5d4-bfa3-4701-8e2b-a0a480d63836
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Goodbye
+      - languageEnum: 1
+        LanguageGenericType: Choice 01
+      RequiredFlag: {fileID: 0}
+    - PortGuid: 21583077-60d2-49a2-b5cb-afa1bd9a2ae7
+      InputGuid: 6a292970-2633-4c96-a1ce-7bdfcc3853cb
+      OutputGuid: 06b3c5d4-bfa3-4701-8e2b-a0a480d63836
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Last night
+      - languageEnum: 1
+        LanguageGenericType: Choice 02
+      RequiredFlag: {fileID: 0}
+  DialogueNodeDatas:
+  - NodeGuid: 8392f854-d495-45cb-b7e0-26550dea3efc
+    Position: {x: 1144, y: 450}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: FINDUS LOST TOY? THAT MUST BE WHY ANGRY! LETS FIND AND
+        MAKE HAPPY!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 707ffdbb-3be0-40c6-b8b6-84be7faac9c0
+    Position: {x: 126, y: -50}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: SinbadInitialDialogueEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'SINBAD: THAT CAT IN THERE ANGRY WITH ME! NOT KNOW WHY...
+        CAN I MAKE HAPPY?'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 6a292970-2633-4c96-a1ce-7bdfcc3853cb
+    Position: {x: 900, y: -175}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: LAST NIGHT? I JUST ARRIVED. SLEPT IN PARK. WOKE UP- BAM!
+        BLACK AND WHITE!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: bae9baee-8c09-4e68-a814-204339e011f7
+    Position: {x: -111, y: -50}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: '???: HEY AGAIN! I SINBAD. NOT FROM HERE. I TRAVEL LONG
+        LONG ROAD BY MYSELF. YOU POLICECAT?'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 972f7792-bab5-4888-a929-56a4a72f0c9a
+    Position: {x: 1373, y: 450}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'I SEARCH HERE. YOU KNOW TOWN BETTER. GO OTHER PLACES.
+        MAYBE ASK PEOPLE. YOU POLICECAT NO? '
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: c03585cc-9875-4b69-b035-ab0bbd12357c
+    Position: {x: 1144, y: 115}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: YOU FIND IT! GOOD WORK! LETS GO INSIDE AND MAKE HAPPY!
+        YOU GO FIRST.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 342611f3-f33d-446f-9f60-813418011077
+    Position: {x: 1144, y: -175}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: BLACK WHITE GRAY ORANGE. ALL THE SAME. I STILL WORK.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  ConditionalNodeDatas:
+  - NodeGuid: a6fb76de-e97f-44ec-b860-c843d0103035
+    Position: {x: -349, y: 200}
+    RequiredGameFlagCombo: {fileID: 11400000, guid: 1885b8a5bb7c2f9409ade7cfeb9f29ac,
+      type: 2}
+  - NodeGuid: 674e888a-f637-45e7-9ba5-3f02f1f027b3
+    Position: {x: 882, y: 354}
+    RequiredGameFlagCombo: {fileID: 11400000, guid: dd0373660b6437444982658434bbbb50,
+      type: 2}
+  TimerChoiceNodeDatas: []
+  EndNodeDatas:
+  - NodeGuid: cd2c5f6e-de40-41ed-b82e-2274af1d3ddd
+    Position: {x: 915, y: 200}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: b0aeeb87-9f1f-4be8-9849-b2f09f449ac5
+    Position: {x: 900, y: -297}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: 3e194af8-c1fb-42a9-b789-f65d9b5a07de
+    Position: {x: 1373, y: -175}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: ade34491-e228-444e-b30b-a9e195b70063
+    Position: {x: 1644, y: 450}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: adf4f629-c7c3-46ec-bbdd-f3e5a4f6464d
+    Position: {x: 1373, y: 115}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  EventNodeDatas: []
+  StartNodeDatas:
+  - NodeGuid: 7296a665-fc20-41ab-bd53-1dedba9fdd32
+    Position: {x: -547, y: 200}
+    startID: 
+  RandomNodeDatas: []
+  CommandNodeDatas: []
+  IfNodeDatas: []
+  AdvancedIFNodeDatas: []
+  AdvancedChoiceNodeDatas: []
+  AdvancedTimeChoiceNodeDatas: []
+  ResetSavedNodeDatas: []
+  MusicNodeDatas: []

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e31cdbf612b7e241bb10ba658b87114, type: 3}
   m_Name: RichardInitialDialogueNotDone
   m_EditorClassIdentifier: 
-  Flag: 0
+  Flag: 12
   BoolValue: 0
   StringValue: 
   IntValue: 0

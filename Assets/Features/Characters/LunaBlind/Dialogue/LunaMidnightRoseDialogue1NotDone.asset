@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9e31cdbf612b7e241bb10ba658b87114, type: 3}
-  m_Name: FindusInitialDialogueDone
+  m_Name: LunaMidnightRoseDialogue1NotDone
   m_EditorClassIdentifier: 
-  Flag: 13
-  BoolValue: 1
+  Flag: 9
+  BoolValue: 0
   StringValue: 
   IntValue: 0
   LessThanIntValue: 0

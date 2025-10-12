@@ -43,23 +43,54 @@ public class GameManager : MonoBehaviour
         MainCamera.transform.position = CurrentGameSettings.PlayerPosition.ToVector3();
 
         //Setup events
-        var eventGameObjects = GameObject.FindGameObjectsWithTag("Event");
-        CLogger.Log($"Setting up {eventGameObjects.Length} events!");
-        foreach (var gameObject in eventGameObjects)
+        CLogger.Log($"Setting up {CurrentGameSettings.EventStates.Count} events from EventStates!");
+        foreach (var eventState in CurrentGameSettings.EventStates)
         {
+            if (string.IsNullOrEmpty(eventState.Id))
+            {
+                CLogger.LogError("Invalid EventState id.");
+                continue;
+            }
+
+            var gameObject = GameObject.Find(eventState.Id);
             var eventController = gameObject.GetComponent<EventController>();
-            eventController.Setup();
-            AddEvent(eventController);
+            if (eventController != null)
+            {
+                eventController.Setup();
+                AddEvent(eventController);
+            }
+            var moveEventController = gameObject.GetComponent<MoveEventController>();
+            if(moveEventController != null)
+            {
+                moveEventController.Setup();
+                AddMoveEvent(moveEventController); //Add to / load state
+            }
         }
 
-        //Setup events
+        var allEventGameObjects = GameObject.FindGameObjectsWithTag("Event");
+        CLogger.Log($"Checking all {allEventGameObjects.Length} events!");
+        foreach (var gameObject in allEventGameObjects)
+        {
+            var eventController = gameObject.GetComponent<EventController>();
+            if (!Events.Contains(eventController))
+            {
+                eventController.Setup();
+                AddEvent(eventController);
+            }
+        }
+
+        //Setup move events
         var moveEventGameObjects = GameObject.FindGameObjectsWithTag("MoveEvent");
-        CLogger.Log($"Setting up {moveEventGameObjects.Length} move events!");
+        CLogger.Log($"Checking all {moveEventGameObjects.Length} move events!");
+        var retries = new List<MoveEventController>();
         foreach (var gameObject in moveEventGameObjects)
         {
             var eventController = gameObject.GetComponent<MoveEventController>();
-            eventController.Setup();
-            AddMoveEvent(eventController); //Add to / load state
+            if (!MoveEvents.Contains(eventController))
+            {
+                eventController.Setup();
+                AddMoveEvent(eventController);
+            }
         }
 
         //Setup globals

@@ -20,42 +20,20 @@ MonoBehaviour:
   NodeLinkDatas:
   - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
     TargetNodeGuid: 8966de77-5a76-4407-859c-66a12fd6d87d
-  - BaseNodeGuid: 8966de77-5a76-4407-859c-66a12fd6d87d
-    TargetNodeGuid: 4c2bbdeb-643d-4fae-8ea6-0b98c276dd30
-  - BaseNodeGuid: 8966de77-5a76-4407-859c-66a12fd6d87d
+  - BaseNodeGuid: c2734396-3245-4da4-a5c7-f6649dc8804f
+    TargetNodeGuid: 300ad88f-4b3e-4d84-b1ac-bed255b02acf
+  - BaseNodeGuid: 300ad88f-4b3e-4d84-b1ac-bed255b02acf
+    TargetNodeGuid: 3bc8a010-d4c5-4e58-8393-b0208119683e
+  - BaseNodeGuid: 37513e69-06ff-4ca0-bae5-3d4f20ba0cde
     TargetNodeGuid: 9a178bc8-2dbf-46e1-a47c-3bd248a2fd85
   - BaseNodeGuid: 4c2bbdeb-643d-4fae-8ea6-0b98c276dd30
     TargetNodeGuid: 1fd00fdd-1ea4-470a-95c1-1dc095a6a412
   - BaseNodeGuid: 1fd00fdd-1ea4-470a-95c1-1dc095a6a412
     TargetNodeGuid: c2734396-3245-4da4-a5c7-f6649dc8804f
-  - BaseNodeGuid: c2734396-3245-4da4-a5c7-f6649dc8804f
-    TargetNodeGuid: 300ad88f-4b3e-4d84-b1ac-bed255b02acf
-  - BaseNodeGuid: 300ad88f-4b3e-4d84-b1ac-bed255b02acf
-    TargetNodeGuid: 3bc8a010-d4c5-4e58-8393-b0208119683e
   - BaseNodeGuid: 3bc8a010-d4c5-4e58-8393-b0208119683e
     TargetNodeGuid: 37513e69-06ff-4ca0-bae5-3d4f20ba0cde
-  - BaseNodeGuid: 37513e69-06ff-4ca0-bae5-3d4f20ba0cde
-    TargetNodeGuid: 9a178bc8-2dbf-46e1-a47c-3bd248a2fd85
-  - BaseNodeGuid: 9a178bc8-2dbf-46e1-a47c-3bd248a2fd85
-    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
-  - BaseNodeGuid: 9dbc9f59-7f3d-4bb4-81c0-1a716492122b
-    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
-  - BaseNodeGuid: 9a178bc8-2dbf-46e1-a47c-3bd248a2fd85
-    TargetNodeGuid: 9dbc9f59-7f3d-4bb4-81c0-1a716492122b
-  - BaseNodeGuid: 9dbc9f59-7f3d-4bb4-81c0-1a716492122b
-    TargetNodeGuid: 5bb69ed3-28eb-4aef-aa51-25b5cf940284
-  - BaseNodeGuid: 5bb69ed3-28eb-4aef-aa51-25b5cf940284
-    TargetNodeGuid: c6ac20db-28c4-4c59-9208-956485c6039d
   - BaseNodeGuid: c6ac20db-28c4-4c59-9208-956485c6039d
     TargetNodeGuid: fecf48a2-bf24-480d-ad0c-469905f2adc0
-  - BaseNodeGuid: fecf48a2-bf24-480d-ad0c-469905f2adc0
-    TargetNodeGuid: fe6767e8-424f-4f59-a34c-1426f30ad6ff
-  - BaseNodeGuid: fecf48a2-bf24-480d-ad0c-469905f2adc0
-    TargetNodeGuid: aae6a4d1-77e3-44de-a01a-7485bb16d0bd
-  - BaseNodeGuid: fecf48a2-bf24-480d-ad0c-469905f2adc0
-    TargetNodeGuid: aae6a4d1-77e3-44de-a01a-7485bb16d0bd
-  - BaseNodeGuid: fecf48a2-bf24-480d-ad0c-469905f2adc0
-    TargetNodeGuid: aae6a4d1-77e3-44de-a01a-7485bb16d0bd
   - BaseNodeGuid: fe6767e8-424f-4f59-a34c-1426f30ad6ff
     TargetNodeGuid: 6002bf60-9f00-4d05-817c-474c1f8c8c54
   - BaseNodeGuid: 6002bf60-9f00-4d05-817c-474c1f8c8c54
@@ -64,10 +42,32 @@ MonoBehaviour:
     TargetNodeGuid: fd348aba-4d56-4759-8f25-de02afac8d0e
   - BaseNodeGuid: fd348aba-4d56-4759-8f25-de02afac8d0e
     TargetNodeGuid: 38cafc9e-a802-4f30-bb28-f35ef2debc2c
-  - BaseNodeGuid: 38cafc9e-a802-4f30-bb28-f35ef2debc2c
-    TargetNodeGuid: 30a00c0b-5934-4472-8f30-5df2f112fe3a
   - BaseNodeGuid: 30a00c0b-5934-4472-8f30-5df2f112fe3a
     TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
+  - BaseNodeGuid: 38cafc9e-a802-4f30-bb28-f35ef2debc2c
+    TargetNodeGuid: 30a00c0b-5934-4472-8f30-5df2f112fe3a
+  - BaseNodeGuid: 5bb69ed3-28eb-4aef-aa51-25b5cf940284
+    TargetNodeGuid: c6ac20db-28c4-4c59-9208-956485c6039d
+  - BaseNodeGuid: 8966de77-5a76-4407-859c-66a12fd6d87d
+    TargetNodeGuid: 9a178bc8-2dbf-46e1-a47c-3bd248a2fd85
+  - BaseNodeGuid: 8966de77-5a76-4407-859c-66a12fd6d87d
+    TargetNodeGuid: 4c2bbdeb-643d-4fae-8ea6-0b98c276dd30
+  - BaseNodeGuid: 9a178bc8-2dbf-46e1-a47c-3bd248a2fd85
+    TargetNodeGuid: 9dbc9f59-7f3d-4bb4-81c0-1a716492122b
+  - BaseNodeGuid: 9dbc9f59-7f3d-4bb4-81c0-1a716492122b
+    TargetNodeGuid: 5bb69ed3-28eb-4aef-aa51-25b5cf940284
+  - BaseNodeGuid: fecf48a2-bf24-480d-ad0c-469905f2adc0
+    TargetNodeGuid: aae6a4d1-77e3-44de-a01a-7485bb16d0bd
+  - BaseNodeGuid: fecf48a2-bf24-480d-ad0c-469905f2adc0
+    TargetNodeGuid: fe6767e8-424f-4f59-a34c-1426f30ad6ff
+  - BaseNodeGuid: fecf48a2-bf24-480d-ad0c-469905f2adc0
+    TargetNodeGuid: aae6a4d1-77e3-44de-a01a-7485bb16d0bd
+  - BaseNodeGuid: fecf48a2-bf24-480d-ad0c-469905f2adc0
+    TargetNodeGuid: aae6a4d1-77e3-44de-a01a-7485bb16d0bd
+  - BaseNodeGuid: 9a178bc8-2dbf-46e1-a47c-3bd248a2fd85
+    TargetNodeGuid: 383552af-c25c-4c61-b709-699d2cb3340f
+  - BaseNodeGuid: 9dbc9f59-7f3d-4bb4-81c0-1a716492122b
+    TargetNodeGuid: 383552af-c25c-4c61-b709-699d2cb3340f
   DialogueChoiceNodeDatas:
   - NodeGuid: 9a178bc8-2dbf-46e1-a47c-3bd248a2fd85
     Position: {x: 1019, y: 40}
@@ -84,13 +84,13 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: Speak quickly will you? I am a busy cat.
+      LanguageGenericType: 'Richard: Speak quickly will you? I am a busy cat.'
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 5
     DialogueNodePorts:
     - PortGuid: 30d5acc7-ec28-4570-acee-12eda5492f78
-      InputGuid: 7838e825-39c1-416f-8753-1589000d7155
+      InputGuid: 383552af-c25c-4c61-b709-699d2cb3340f
       OutputGuid: 9a178bc8-2dbf-46e1-a47c-3bd248a2fd85
       TextLanguage:
       - languageEnum: 0
@@ -128,7 +128,7 @@ MonoBehaviour:
     Duration: 5
     DialogueNodePorts:
     - PortGuid: ec7f9f6d-d40d-4ab1-9bd4-1d284af87917
-      InputGuid: 7838e825-39c1-416f-8753-1589000d7155
+      InputGuid: 383552af-c25c-4c61-b709-699d2cb3340f
       OutputGuid: 9dbc9f59-7f3d-4bb4-81c0-1a716492122b
       TextLanguage:
       - languageEnum: 0
@@ -144,7 +144,7 @@ MonoBehaviour:
         LanguageGenericType: Midnight Rose
       - languageEnum: 1
         LanguageGenericType: Choice 02
-      RequiredFlag: {fileID: 11400000, guid: fb3630378891f194fa7749c02b26b18c, type: 2}
+      RequiredFlag: {fileID: 11400000, guid: e377a04b1a0c77d419b0eeed0af99c38, type: 2}
   - NodeGuid: fecf48a2-bf24-480d-ad0c-469905f2adc0
     Position: {x: 2706, y: -196}
     Character: {fileID: 0}
@@ -160,7 +160,7 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: Why the way Detective, what is your fur color?
+      LanguageGenericType: By the way Detective, what is your fur color?
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 5
@@ -219,7 +219,7 @@ MonoBehaviour:
     TextType:
     - languageEnum: 0
       LanguageGenericType: 'We are expanding into imports in this region, and I have
-        personally cultivated a good business relationship with the local goverment. '
+        personally cultivated a good business relationship with the local government. '
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
@@ -280,8 +280,7 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: 'Richard: Welcome to CIT! I don''t think we''ve met yet,
-        Detective.'
+      LanguageGenericType: '???: Welcome to CIT! I don''t think we''ve met yet, Detective.'
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
@@ -321,30 +320,8 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: Oh listen to me! You will have to excuse me Detective.
+      LanguageGenericType: Oh, listen to me! You will have to excuse me Detective.
         When I start the corporate talk, it all comes spilling out of me.
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
-  - NodeGuid: 5bb69ed3-28eb-4aef-aa51-25b5cf940284
-    Position: {x: 1856, y: -196}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: 'The Midnight Rose? Yes, I bought one recently for an
-        office party. Great party by the way! I will make sure to  invite you next
-        time. '
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
@@ -486,7 +463,28 @@ MonoBehaviour:
     TextType:
     - languageEnum: 0
       LanguageGenericType: Since I arrived I have been harassed by a bunch of gray
-        bumpkin cats! Some of them are regulars over at the Cattelatte.
+        bumpkin cats! One of them are regulars over at the Cattelatte.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 5bb69ed3-28eb-4aef-aa51-25b5cf940284
+    Position: {x: 1856, y: -196}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: The Midnight Rose? Yes, I bought one recently for an office
+        party. Great party by the way! I will make sure to  invite you next time!
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
@@ -497,8 +495,13 @@ MonoBehaviour:
       type: 2}
   TimerChoiceNodeDatas: []
   EndNodeDatas:
+  - NodeGuid: 383552af-c25c-4c61-b709-699d2cb3340f
+    Position: {x: 1553, y: 134}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
   - NodeGuid: 7838e825-39c1-416f-8753-1589000d7155
-    Position: {x: 4289, y: 292}
+    Position: {x: 4192, y: 2}
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 

@@ -1,0 +1,269 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1946feaec865d344dabf0419b1c94973, type: 3}
+  m_Name: SinbadFindusDialogue
+  m_EditorClassIdentifier: 
+  AllowDialogueSave: 0
+  BlockingReopeningDialogue: 0
+  ResetSavedNodeOnChoice: 1
+  LimitChoiceOptionPerNode: 0
+  MaxChoiceOptionPerNode: 8
+  NodeLinkDatas:
+  - BaseNodeGuid: cad625a7-3210-49cf-bc23-5f545f43f8aa
+    TargetNodeGuid: a567e4dd-14f8-4294-8b4d-98e1ba8007f6
+  - BaseNodeGuid: a567e4dd-14f8-4294-8b4d-98e1ba8007f6
+    TargetNodeGuid: d5bd5831-5e42-4150-a9de-ee3a535fd9f7
+  - BaseNodeGuid: d5bd5831-5e42-4150-a9de-ee3a535fd9f7
+    TargetNodeGuid: c7e5ef6d-381f-4fee-b455-306acb4cbc23
+  - BaseNodeGuid: c7e5ef6d-381f-4fee-b455-306acb4cbc23
+    TargetNodeGuid: 617a2df2-7f44-4544-b9c6-609f83e8e99c
+  - BaseNodeGuid: 617a2df2-7f44-4544-b9c6-609f83e8e99c
+    TargetNodeGuid: 6be53321-3747-42cf-bcf9-28a97ff5f2fd
+  - BaseNodeGuid: 6be53321-3747-42cf-bcf9-28a97ff5f2fd
+    TargetNodeGuid: 8c0bf37e-7540-462e-9eef-ccf82ef56604
+  - BaseNodeGuid: 8c0bf37e-7540-462e-9eef-ccf82ef56604
+    TargetNodeGuid: a44bf928-6af9-45fb-a5bb-c554e68df5ff
+  - BaseNodeGuid: a44bf928-6af9-45fb-a5bb-c554e68df5ff
+    TargetNodeGuid: d5eddb0e-4840-474f-8fdb-ac410237ec78
+  - BaseNodeGuid: 66b797bb-fa8b-48c9-8fa4-d75a6c6264f5
+    TargetNodeGuid: 4c89cde8-8a75-475d-8596-5028462e3c0e
+  - BaseNodeGuid: d5eddb0e-4840-474f-8fdb-ac410237ec78
+    TargetNodeGuid: 66b797bb-fa8b-48c9-8fa4-d75a6c6264f5
+  - BaseNodeGuid: 4c89cde8-8a75-475d-8596-5028462e3c0e
+    TargetNodeGuid: 029c4ab9-4e03-44e2-a1dc-2a616821c337
+  DialogueChoiceNodeDatas: []
+  DialogueNodeDatas:
+  - NodeGuid: a567e4dd-14f8-4294-8b4d-98e1ba8007f6
+    Position: {x: 642, y: 200}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: SinbadFindusMomentMoveEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Findus: How''s it going pal? Found any clues yet?'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: d5bd5831-5e42-4150-a9de-ee3a535fd9f7
+    Position: {x: 909, y: 200}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Not again! I told you-
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: c7e5ef6d-381f-4fee-b455-306acb4cbc23
+    Position: {x: 1177, y: 200}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'SINBAD: WE FOUND TOY! YOURS?'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 617a2df2-7f44-4544-b9c6-609f83e8e99c
+    Position: {x: 1450, y: 200}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Findus: You- You found my ball toy? I have looked everywhere
+        for that!'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 6be53321-3747-42cf-bcf9-28a97ff5f2fd
+    Position: {x: 1728, y: 200}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Tha- Thank you.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 8c0bf37e-7540-462e-9eef-ccf82ef56604
+    Position: {x: 642, y: 536}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: What's your name, sunshine?
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: a44bf928-6af9-45fb-a5bb-c554e68df5ff
+    Position: {x: 909, y: 536}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'SINBAD: ME SINBAD.'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 66b797bb-fa8b-48c9-8fa4-d75a6c6264f5
+    Position: {x: 1450, y: 536}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: I should apologise to Richard too. He didn't steal my
+        toy ball after all.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: d5eddb0e-4840-474f-8fdb-ac410237ec78
+    Position: {x: 1192, y: 536}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Findus: Sorry for how rude I was, Sinbad. Guess you orange
+        cats ain''t that bad after all.'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 4c89cde8-8a75-475d-8596-5028462e3c0e
+    Position: {x: 1728, y: 536}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: SinbadFindusMomentDialogueEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: I will show you the way to C.I.T. Sinbad. Detective, meet
+        us there.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  ConditionalNodeDatas: []
+  TimerChoiceNodeDatas: []
+  EndNodeDatas:
+  - NodeGuid: 029c4ab9-4e03-44e2-a1dc-2a616821c337
+    Position: {x: 1995, y: 536}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  EventNodeDatas: []
+  StartNodeDatas:
+  - NodeGuid: cad625a7-3210-49cf-bc23-5f545f43f8aa
+    Position: {x: 403, y: 200}
+    startID: 
+  RandomNodeDatas: []
+  CommandNodeDatas: []
+  IfNodeDatas: []
+  AdvancedIFNodeDatas: []
+  AdvancedChoiceNodeDatas: []
+  AdvancedTimeChoiceNodeDatas: []
+  ResetSavedNodeDatas: []
+  MusicNodeDatas: []

@@ -15,8 +15,12 @@ public class MoveEventController : EventBase
     public List<SetGameFlagCombo> SetFlags;
     public string NextEvent; //note that this bypasses any requirements
 
-
     // Start is called before the first frame update
+    public void Start()
+    {
+        Id = gameObject.name;
+    }
+
     public void Setup()
     {
         Started = false;

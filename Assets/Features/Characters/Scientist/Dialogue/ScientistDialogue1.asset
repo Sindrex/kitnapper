@@ -35,27 +35,27 @@ MonoBehaviour:
   - BaseNodeGuid: cd16ef0d-5c14-4865-95bd-b7dd5a838aec
     TargetNodeGuid: f81eb944-b2d4-4354-b300-3f8bd1aa2669
   - BaseNodeGuid: f81eb944-b2d4-4354-b300-3f8bd1aa2669
-    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
+    TargetNodeGuid: d2adfdd5-8370-49aa-ab32-b577971ce5d5
   - BaseNodeGuid: 93fa5800-b33a-47b7-84fd-a4e46038b6d9
     TargetNodeGuid: cd16ef0d-5c14-4865-95bd-b7dd5a838aec
-  - BaseNodeGuid: c6c3837b-2101-484d-bd1d-3c2c9ded6e96
-    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
-  - BaseNodeGuid: c6c3837b-2101-484d-bd1d-3c2c9ded6e96
-    TargetNodeGuid: 28862d3b-26b1-4d63-a7dc-14a5ca3edd62
-  - BaseNodeGuid: c6c3837b-2101-484d-bd1d-3c2c9ded6e96
-    TargetNodeGuid: 6653c225-65fa-4982-979c-936bfd14e80b
-  - BaseNodeGuid: 6653c225-65fa-4982-979c-936bfd14e80b
-    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
-  - BaseNodeGuid: 6653c225-65fa-4982-979c-936bfd14e80b
-    TargetNodeGuid: 36e5585f-26b3-4f86-9381-52bed6e531f9
-  - BaseNodeGuid: 6653c225-65fa-4982-979c-936bfd14e80b
-    TargetNodeGuid: 150be6be-4ba0-478b-8a0b-2753f8c4dc20
   - BaseNodeGuid: 150be6be-4ba0-478b-8a0b-2753f8c4dc20
     TargetNodeGuid: ef0d4e39-8f73-4ca8-a7d0-8b6359ebb2c7
   - BaseNodeGuid: ef0d4e39-8f73-4ca8-a7d0-8b6359ebb2c7
     TargetNodeGuid: f59f15b4-5373-416a-88dd-aa4d28b7f659
   - BaseNodeGuid: f59f15b4-5373-416a-88dd-aa4d28b7f659
-    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
+    TargetNodeGuid: c0c92ce6-0d74-43ef-83f9-f5decc5ac795
+  - BaseNodeGuid: c6c3837b-2101-484d-bd1d-3c2c9ded6e96
+    TargetNodeGuid: 1e2468d4-365b-4e6c-bb71-f94fb4e63063
+  - BaseNodeGuid: c6c3837b-2101-484d-bd1d-3c2c9ded6e96
+    TargetNodeGuid: 6653c225-65fa-4982-979c-936bfd14e80b
+  - BaseNodeGuid: c6c3837b-2101-484d-bd1d-3c2c9ded6e96
+    TargetNodeGuid: 28862d3b-26b1-4d63-a7dc-14a5ca3edd62
+  - BaseNodeGuid: 6653c225-65fa-4982-979c-936bfd14e80b
+    TargetNodeGuid: 82f17e9b-026d-452b-b76d-50a4dc93cbf3
+  - BaseNodeGuid: 6653c225-65fa-4982-979c-936bfd14e80b
+    TargetNodeGuid: 36e5585f-26b3-4f86-9381-52bed6e531f9
+  - BaseNodeGuid: 6653c225-65fa-4982-979c-936bfd14e80b
+    TargetNodeGuid: 150be6be-4ba0-478b-8a0b-2753f8c4dc20
   DialogueChoiceNodeDatas:
   - NodeGuid: c6c3837b-2101-484d-bd1d-3c2c9ded6e96
     Position: {x: 570, y: 227}
@@ -79,7 +79,7 @@ MonoBehaviour:
     Duration: 5
     DialogueNodePorts:
     - PortGuid: d6326b74-8266-4953-a849-05c08ff47bbc
-      InputGuid: 7838e825-39c1-416f-8753-1589000d7155
+      InputGuid: 1e2468d4-365b-4e6c-bb71-f94fb4e63063
       OutputGuid: c6c3837b-2101-484d-bd1d-3c2c9ded6e96
       TextLanguage:
       - languageEnum: 0
@@ -120,13 +120,13 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: 
+      LanguageGenericType: What are you seeking information about?
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 5
     DialogueNodePorts:
     - PortGuid: b063a1be-9641-4460-b5ca-d45fba294676
-      InputGuid: 7838e825-39c1-416f-8753-1589000d7155
+      InputGuid: 82f17e9b-026d-452b-b76d-50a4dc93cbf3
       OutputGuid: 6653c225-65fa-4982-979c-936bfd14e80b
       TextLanguage:
       - languageEnum: 0
@@ -396,16 +396,36 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: I wish he and, and I'm assuming, Richard could figure
-        things out. I'm sure they could be good friends...
+      LanguageGenericType: I wish he and  Richard could figure things out. I'm sure
+        they could be good friends...
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
   ConditionalNodeDatas: []
   TimerChoiceNodeDatas: []
   EndNodeDatas:
+  - NodeGuid: c0c92ce6-0d74-43ef-83f9-f5decc5ac795
+    Position: {x: 1715, y: 691}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: 1e2468d4-365b-4e6c-bb71-f94fb4e63063
+    Position: {x: 680, y: 47}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: d2adfdd5-8370-49aa-ab32-b577971ce5d5
+    Position: {x: 2180, y: -65}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
   - NodeGuid: 7838e825-39c1-416f-8753-1589000d7155
-    Position: {x: 2196, y: 227}
+    Position: {x: 2191, y: 334}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: 82f17e9b-026d-452b-b76d-50a4dc93cbf3
+    Position: {x: 720, y: 995}
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 
