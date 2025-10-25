@@ -69,7 +69,7 @@ public class DialogueController : MonoBehaviour
         if (currentNode is DialogueNodeData dialogueNode)
         {
             MyDialogueManager.Instance.SetText(dialogueNode.TextType[0].LanguageGenericType);
-            GameManager.Instance.FindEvent(dialogueNode.Event)?.Activate();
+            GameManager.Instance.FindEvent(dialogueNode.Event)?.Activate(true);
         }
         else if (currentNode is EndNodeData endNode)
         {

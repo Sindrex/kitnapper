@@ -40,14 +40,11 @@ public class EventController : EventBase
                 return;
             }
 
-            Activate();
-            
-            //Activate next event
-            GameManager.Instance.FindEvent(NextEvent)?.Activate();
+            Activate(true);
         }
     }
 
-    public override void Activate()
+    public override void Activate(bool activateNextEvent)
     {
         CLogger.Log($"Event \"{Id}\" activated!");
 
@@ -72,9 +69,19 @@ public class EventController : EventBase
 
         //Save event state
         GameManager.Instance.SaveEventState(this);
+
+        if (activateNextEvent)
+        {
+            //Activate next event
+            var nextEvent = GameManager.Instance.FindEvent(NextEvent);
+            if(nextEvent != null && nextEvent.CheckRequirements())
+            {
+                nextEvent.Activate(true);
+            }
+        }
     }
 
-    private bool CheckRequirements()
+    public override bool CheckRequirements()
     {
         var passedRequirements = true;
         var requiresFlags = RequiredFlags.Any(x => x.GetFlag() != GameFlag.Default);

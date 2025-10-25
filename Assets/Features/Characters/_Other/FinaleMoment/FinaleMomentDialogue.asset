@@ -1,0 +1,642 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1946feaec865d344dabf0419b1c94973, type: 3}
+  m_Name: FinaleMomentDialogue
+  m_EditorClassIdentifier: 
+  AllowDialogueSave: 0
+  BlockingReopeningDialogue: 0
+  ResetSavedNodeOnChoice: 0
+  LimitChoiceOptionPerNode: 0
+  MaxChoiceOptionPerNode: 0
+  NodeLinkDatas:
+  - BaseNodeGuid: 03d06ef8-f5b3-44d3-a589-c09d4ed41497
+    TargetNodeGuid: 6682db5a-c926-4ec1-a784-d936b7510b67
+  - BaseNodeGuid: 6682db5a-c926-4ec1-a784-d936b7510b67
+    TargetNodeGuid: 64833162-5a15-4c48-a174-bc967ef25088
+  - BaseNodeGuid: 64833162-5a15-4c48-a174-bc967ef25088
+    TargetNodeGuid: feb6638d-ba99-4fe9-96c1-7042493b1c74
+  - BaseNodeGuid: c99e5fff-d34e-453f-ae59-5d7838aca3cb
+    TargetNodeGuid: 61a10ca1-9256-4cea-8e11-ad4d3b0a6b4d
+  - BaseNodeGuid: 61a10ca1-9256-4cea-8e11-ad4d3b0a6b4d
+    TargetNodeGuid: de03f9fa-be4a-476e-bf2f-271301c05d25
+  - BaseNodeGuid: de03f9fa-be4a-476e-bf2f-271301c05d25
+    TargetNodeGuid: 1f614805-624f-4e85-a599-cd7f041c6250
+  - BaseNodeGuid: 1f614805-624f-4e85-a599-cd7f041c6250
+    TargetNodeGuid: 58c228fb-3476-4802-95b8-92c1ff480128
+  - BaseNodeGuid: 58c228fb-3476-4802-95b8-92c1ff480128
+    TargetNodeGuid: b260ccd2-e8a7-4ebf-b930-46077a7c802c
+  - BaseNodeGuid: b260ccd2-e8a7-4ebf-b930-46077a7c802c
+    TargetNodeGuid: 4736c8e2-77f1-4efb-9ee5-3f6305eca7c4
+  - BaseNodeGuid: 4736c8e2-77f1-4efb-9ee5-3f6305eca7c4
+    TargetNodeGuid: 18330393-37ef-46cd-b433-040ca6b927be
+  - BaseNodeGuid: 18330393-37ef-46cd-b433-040ca6b927be
+    TargetNodeGuid: da467f11-0197-406f-9ab6-053cb7aeda19
+  - BaseNodeGuid: da467f11-0197-406f-9ab6-053cb7aeda19
+    TargetNodeGuid: 439f4f6e-1f47-485e-9964-aa54e35d45d4
+  - BaseNodeGuid: 439f4f6e-1f47-485e-9964-aa54e35d45d4
+    TargetNodeGuid: c0f5e7a6-a1e9-400a-8fe7-db582534ea0a
+  - BaseNodeGuid: c0f5e7a6-a1e9-400a-8fe7-db582534ea0a
+    TargetNodeGuid: 2dfc0a24-b4a2-4466-8589-dd1cf5f97e72
+  - BaseNodeGuid: 2dfc0a24-b4a2-4466-8589-dd1cf5f97e72
+    TargetNodeGuid: e821cad2-c7d4-4b8c-af98-1373ed8a1383
+  - BaseNodeGuid: bbb6b90f-03ee-481f-9002-cfa6a6cf3d06
+    TargetNodeGuid: 9a071f9e-7812-4a7c-a6e7-c9721266a226
+  - BaseNodeGuid: feb6638d-ba99-4fe9-96c1-7042493b1c74
+    TargetNodeGuid: f0493546-043c-484c-8707-c3e8fa894f29
+  - BaseNodeGuid: feb6638d-ba99-4fe9-96c1-7042493b1c74
+    TargetNodeGuid: 3c2d70a4-cae0-4369-8d01-7c7e11997593
+  - BaseNodeGuid: feb6638d-ba99-4fe9-96c1-7042493b1c74
+    TargetNodeGuid: 3c2d70a4-cae0-4369-8d01-7c7e11997593
+  - BaseNodeGuid: feb6638d-ba99-4fe9-96c1-7042493b1c74
+    TargetNodeGuid: 3c2d70a4-cae0-4369-8d01-7c7e11997593
+  - BaseNodeGuid: feb6638d-ba99-4fe9-96c1-7042493b1c74
+    TargetNodeGuid: 3c2d70a4-cae0-4369-8d01-7c7e11997593
+  - BaseNodeGuid: feb6638d-ba99-4fe9-96c1-7042493b1c74
+    TargetNodeGuid: 3c2d70a4-cae0-4369-8d01-7c7e11997593
+  - BaseNodeGuid: feb6638d-ba99-4fe9-96c1-7042493b1c74
+    TargetNodeGuid: 3c2d70a4-cae0-4369-8d01-7c7e11997593
+  - BaseNodeGuid: 3c2d70a4-cae0-4369-8d01-7c7e11997593
+    TargetNodeGuid: 595c5530-8b92-4103-9af8-64d2f87d5bf0
+  - BaseNodeGuid: 595c5530-8b92-4103-9af8-64d2f87d5bf0
+    TargetNodeGuid: f534e37a-bd81-4158-a171-fb1ff887f34a
+  - BaseNodeGuid: f534e37a-bd81-4158-a171-fb1ff887f34a
+    TargetNodeGuid: c99e5fff-d34e-453f-ae59-5d7838aca3cb
+  - BaseNodeGuid: f0493546-043c-484c-8707-c3e8fa894f29
+    TargetNodeGuid: 595c5530-8b92-4103-9af8-64d2f87d5bf0
+  - BaseNodeGuid: e821cad2-c7d4-4b8c-af98-1373ed8a1383
+    TargetNodeGuid: bbb6b90f-03ee-481f-9002-cfa6a6cf3d06
+  DialogueChoiceNodeDatas:
+  - NodeGuid: feb6638d-ba99-4fe9-96c1-7042493b1c74
+    Position: {x: 3344, y: 999}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Who is the Color Kitnapper, humr humr?
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 5
+    DialogueNodePorts:
+    - PortGuid: ada26668-bd18-4f41-8dc4-3e8a4e6bdf43
+      InputGuid: f0493546-043c-484c-8707-c3e8fa894f29
+      OutputGuid: feb6638d-ba99-4fe9-96c1-7042493b1c74
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: The Mayor
+      - languageEnum: 1
+        LanguageGenericType: Choice 01
+      RequiredFlag: {fileID: 0}
+    - PortGuid: 658a22fe-097f-424f-8d56-e0982fb6222c
+      InputGuid: 3c2d70a4-cae0-4369-8d01-7c7e11997593
+      OutputGuid: feb6638d-ba99-4fe9-96c1-7042493b1c74
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Poppy
+      - languageEnum: 1
+        LanguageGenericType: Choice 02
+      RequiredFlag: {fileID: 0}
+    - PortGuid: 74ef61b8-2adb-4f1f-b6f9-1a712b275457
+      InputGuid: 3c2d70a4-cae0-4369-8d01-7c7e11997593
+      OutputGuid: feb6638d-ba99-4fe9-96c1-7042493b1c74
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Luna
+      - languageEnum: 1
+        LanguageGenericType: Choice 03
+      RequiredFlag: {fileID: 0}
+    - PortGuid: b939efa5-094b-4b32-a88d-397a4a10cbfd
+      InputGuid: 3c2d70a4-cae0-4369-8d01-7c7e11997593
+      OutputGuid: feb6638d-ba99-4fe9-96c1-7042493b1c74
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Findus
+      - languageEnum: 1
+        LanguageGenericType: Choice 04
+      RequiredFlag: {fileID: 0}
+    - PortGuid: e12f98d6-0dad-417d-859b-50863fb0e4fd
+      InputGuid: 3c2d70a4-cae0-4369-8d01-7c7e11997593
+      OutputGuid: feb6638d-ba99-4fe9-96c1-7042493b1c74
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Richard
+      - languageEnum: 1
+        LanguageGenericType: Choice 05
+      RequiredFlag: {fileID: 0}
+    - PortGuid: 4e36d14a-603a-4976-8431-e5cdaedd9c8d
+      InputGuid: 3c2d70a4-cae0-4369-8d01-7c7e11997593
+      OutputGuid: feb6638d-ba99-4fe9-96c1-7042493b1c74
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Dr. Milo
+      - languageEnum: 1
+        LanguageGenericType: Choice 06
+      RequiredFlag: {fileID: 0}
+    - PortGuid: 2dbcacd2-0ac0-48f5-b3c6-89a6d0eca4f6
+      InputGuid: 3c2d70a4-cae0-4369-8d01-7c7e11997593
+      OutputGuid: feb6638d-ba99-4fe9-96c1-7042493b1c74
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Sinbad
+      - languageEnum: 1
+        LanguageGenericType: Choice 07
+      RequiredFlag: {fileID: 0}
+  - NodeGuid: 3c2d70a4-cae0-4369-8d01-7c7e11997593
+    Position: {x: 3718, y: 999}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Are you sure, humr humr?
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 5
+    DialogueNodePorts:
+    - PortGuid: 647ad6af-afbb-4da2-b83c-d28447ce7b20
+      InputGuid: 595c5530-8b92-4103-9af8-64d2f87d5bf0
+      OutputGuid: 3c2d70a4-cae0-4369-8d01-7c7e11997593
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: No, actually
+      - languageEnum: 1
+        LanguageGenericType: Choice 01
+      RequiredFlag: {fileID: 0}
+  - NodeGuid: 595c5530-8b92-4103-9af8-64d2f87d5bf0
+    Position: {x: 4065, y: 999}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Who is it then, humr humr?
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 5
+    DialogueNodePorts:
+    - PortGuid: 15829ab2-eabb-4d01-afda-f2471b3128f9
+      InputGuid: f534e37a-bd81-4158-a171-fb1ff887f34a
+      OutputGuid: 595c5530-8b92-4103-9af8-64d2f87d5bf0
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: It was me!
+      - languageEnum: 1
+        LanguageGenericType: Choice 01
+      RequiredFlag: {fileID: 0}
+  - NodeGuid: f534e37a-bd81-4158-a171-fb1ff887f34a
+    Position: {x: 4414, y: 999}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: WHAT! Why would you do such a thing, humr humr?
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 5
+    DialogueNodePorts:
+    - PortGuid: 0bbe1647-da3d-4c58-99b6-53419c9d1d62
+      InputGuid: c99e5fff-d34e-453f-ae59-5d7838aca3cb
+      OutputGuid: f534e37a-bd81-4158-a171-fb1ff887f34a
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Teach a lesson
+      - languageEnum: 1
+        LanguageGenericType: Choice 01
+      RequiredFlag: {fileID: 0}
+  - NodeGuid: f0493546-043c-484c-8707-c3e8fa894f29
+    Position: {x: 3718, y: 730}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Me, humr humr!?
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 5
+    DialogueNodePorts:
+    - PortGuid: 9f889d05-8a94-4e5a-9fdf-be77decfbefe
+      InputGuid: 595c5530-8b92-4103-9af8-64d2f87d5bf0
+      OutputGuid: f0493546-043c-484c-8707-c3e8fa894f29
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: No, actually
+      - languageEnum: 1
+        LanguageGenericType: Choice 01
+      RequiredFlag: {fileID: 0}
+  - NodeGuid: e821cad2-c7d4-4b8c-af98-1373ed8a1383
+    Position: {x: 7609, y: 999}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Mr. Detective, would you kindly, humr humr?
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 5
+    DialogueNodePorts:
+    - PortGuid: f1719b81-0c1b-4e43-a6a8-ab1e22e56d30
+      InputGuid: bbb6b90f-03ee-481f-9002-cfa6a6cf3d06
+      OutputGuid: e821cad2-c7d4-4b8c-af98-1373ed8a1383
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Give back colors
+      - languageEnum: 1
+        LanguageGenericType: Choice 01
+      RequiredFlag: {fileID: 0}
+  DialogueNodeDatas:
+  - NodeGuid: 6682db5a-c926-4ec1-a784-d936b7510b67
+    Position: {x: 2801, y: 999}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Mayor: Finally, we are all gathered here, humr humr.'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 64833162-5a15-4c48-a174-bc967ef25088
+    Position: {x: 3076, y: 999}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: So without further catdo, Mr. Detective, if you would,
+        humr humr.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: c99e5fff-d34e-453f-ae59-5d7838aca3cb
+    Position: {x: 4771, y: 999}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: I am not sure I understand, humr humr...
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 61a10ca1-9256-4cea-8e11-ad4d3b0a6b4d
+    Position: {x: 5009, y: 999}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Findus: But I do! What sunshine here was trying to do
+        was to teach us that differences in fur color doesn''t make us different.'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: de03f9fa-be4a-476e-bf2f-271301c05d25
+    Position: {x: 5233, y: 999}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Richard: And even those you did not appreciate at first
+        glance, can become valuable partners if you just talk to them!'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 1f614805-624f-4e85-a599-cd7f041c6250
+    Position: {x: 5467, y: 999}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Poppy: I certainly learned a thing or two as well! It''s
+        not just the colors of plants or cats that are pretty. So many things combine
+        to make us all beautiful.'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 58c228fb-3476-4802-95b8-92c1ff480128
+    Position: {x: 5701, y: 999}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Mayor: I understand, humr humr.'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: b260ccd2-e8a7-4ebf-b930-46077a7c802c
+    Position: {x: 5958, y: 999}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Everyone, I'm sorry. I put Dr. Milo up make this color-extractor-device
+        for my own gain, humr humr.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 4736c8e2-77f1-4efb-9ee5-3f6305eca7c4
+    Position: {x: 6181, y: 999}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: I'm happy something good came out of it, but also sorry
+        that I broke your trust, humr humr.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 18330393-37ef-46cd-b433-040ca6b927be
+    Position: {x: 6423, y: 999}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: I hope you can find it in your hearts to forgive me, humr
+        humr.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: da467f11-0197-406f-9ab6-053cb7aeda19
+    Position: {x: 6654, y: 999}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Milkcat: Of course we can Mayor! It''s all kittens under
+        the bridge now.'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 439f4f6e-1f47-485e-9964-aa54e35d45d4
+    Position: {x: 6874, y: 999}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Poppy: Yeah!
+
+        Luna: We all make mistakes, darling.
+
+        SINBAD:
+        YES!'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: c0f5e7a6-a1e9-400a-8fe7-db582534ea0a
+    Position: {x: 7108, y: 999}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Mayor: Everyone, snif snif.'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 2dfc0a24-b4a2-4466-8589-dd1cf5f97e72
+    Position: {x: 7361, y: 999}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: But, maybe it's time to turn back. I think we have all
+        learned a lot, humr humr.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: bbb6b90f-03ee-481f-9002-cfa6a6cf3d06
+    Position: {x: 7921, y: 999}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: FinaleMomentFlagEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: ...!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  ConditionalNodeDatas: []
+  TimerChoiceNodeDatas: []
+  EndNodeDatas:
+  - NodeGuid: 9a071f9e-7812-4a7c-a6e7-c9721266a226
+    Position: {x: 8152, y: 999}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  EventNodeDatas: []
+  StartNodeDatas:
+  - NodeGuid: 03d06ef8-f5b3-44d3-a589-c09d4ed41497
+    Position: {x: 2575, y: 999}
+    startID: 
+  RandomNodeDatas: []
+  CommandNodeDatas: []
+  IfNodeDatas: []
+  AdvancedIFNodeDatas: []
+  AdvancedChoiceNodeDatas: []
+  AdvancedTimeChoiceNodeDatas: []
+  ResetSavedNodeDatas: []
+  MusicNodeDatas: []

@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b80661980d05ba49b2fd68873ef6c9a, type: 3}
+  m_Name: MayorShrineActivateReq
+  m_EditorClassIdentifier: 
+  ReqFlags:
+  - {fileID: 11400000, guid: 69e08a7b5f74d20478a7676013ea8e57, type: 2}
+  - {fileID: 11400000, guid: 21d2042566e67144e87a44a328c8cfe1, type: 2}
+  - {fileID: 11400000, guid: cea6140f7f9d114478dafde23f9f1f00, type: 2}

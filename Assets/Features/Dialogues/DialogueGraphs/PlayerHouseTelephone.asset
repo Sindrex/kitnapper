@@ -24,12 +24,12 @@ MonoBehaviour:
     TargetNodeGuid: cdc1b14a-235e-4338-b578-91110baad130
   - BaseNodeGuid: cdc1b14a-235e-4338-b578-91110baad130
     TargetNodeGuid: 693cdb95-ab3f-467c-925f-101923b65cad
-  - BaseNodeGuid: 693cdb95-ab3f-467c-925f-101923b65cad
-    TargetNodeGuid: 1a0f9043-9955-4957-9e53-0fa16f11de69
-  - BaseNodeGuid: 1a0f9043-9955-4957-9e53-0fa16f11de69
-    TargetNodeGuid: 1de6e121-9770-4785-ab14-d7b8f9fd2bd1
   - BaseNodeGuid: 1de6e121-9770-4785-ab14-d7b8f9fd2bd1
     TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
+  - BaseNodeGuid: 1a0f9043-9955-4957-9e53-0fa16f11de69
+    TargetNodeGuid: 1de6e121-9770-4785-ab14-d7b8f9fd2bd1
+  - BaseNodeGuid: 693cdb95-ab3f-467c-925f-101923b65cad
+    TargetNodeGuid: 1a0f9043-9955-4957-9e53-0fa16f11de69
   DialogueChoiceNodeDatas: []
   DialogueNodeDatas:
   - NodeGuid: cf257311-7fa9-4c48-a855-85cb9d555300
@@ -72,7 +72,7 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: ... Hello?
+      LanguageGenericType: '???: ... Hello?'
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
@@ -116,8 +116,8 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: Please come to the Town Hall immediately. That is all,
-        humr humr.
+      LanguageGenericType: 'Mayor: Please come to the Town Hall immediately. That
+        is all, humr humr.'
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
@@ -137,8 +137,8 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: Mr. Detective, this is the Mayor Speaking. As you may
-        have noticed, everything has turned black and white, humr humr.
+      LanguageGenericType: '???: Mr. Detective, this is the Mayor Speaking. As you
+        may have noticed, everything has turned black and white, humr humr.'
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10

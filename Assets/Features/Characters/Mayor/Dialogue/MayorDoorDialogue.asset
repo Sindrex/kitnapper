@@ -1,0 +1,147 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1946feaec865d344dabf0419b1c94973, type: 3}
+  m_Name: MayorDoorDialogue
+  m_EditorClassIdentifier: 
+  AllowDialogueSave: 0
+  BlockingReopeningDialogue: 0
+  ResetSavedNodeOnChoice: 1
+  LimitChoiceOptionPerNode: 0
+  MaxChoiceOptionPerNode: 8
+  NodeLinkDatas:
+  - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
+    TargetNodeGuid: b471fcdc-e10b-4f88-8889-2b71d34184d6
+  - BaseNodeGuid: c60b8bee-fa21-4f10-9cf0-5a85d88462da
+    TargetNodeGuid: f609914e-cfce-45c1-afd9-5476fc837d69
+  - BaseNodeGuid: ddc99ea3-8ef6-41f3-8158-d8b1752e3ac0
+    TargetNodeGuid: 9e39dd12-dc74-4845-829b-3bb3fe91f8ec
+  - BaseNodeGuid: e3ca37dd-bbd2-464d-852f-54e97e64c3e6
+    TargetNodeGuid: 75c07bf1-543e-413e-91d5-081a0b8e2c71
+  - BaseNodeGuid: 75c07bf1-543e-413e-91d5-081a0b8e2c71
+    TargetNodeGuid: 7d44017b-4954-4f6c-b63e-cf698ab909a2
+  - BaseNodeGuid: 7d44017b-4954-4f6c-b63e-cf698ab909a2
+    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
+  - BaseNodeGuid: 20d89102-4239-401f-bf5b-1dab305343fd
+    TargetNodeGuid: b300b8c4-7ac8-42a1-b583-275fea08e3fb
+  - BaseNodeGuid: 9f7a8ca9-2b49-4741-83eb-b363fed70311
+    TargetNodeGuid: 20d89102-4239-401f-bf5b-1dab305343fd
+  - BaseNodeGuid: 85d97171-32b6-43ae-87f6-befd946cd55c
+    TargetNodeGuid: 81809372-2788-4396-bce1-647bc035fb32
+  - BaseNodeGuid: 9508a601-3f86-48b9-871e-b9a6911d8247
+    TargetNodeGuid: 85d97171-32b6-43ae-87f6-befd946cd55c
+  - BaseNodeGuid: 81809372-2788-4396-bce1-647bc035fb32
+    TargetNodeGuid: 49073fdf-0007-462c-917e-656145b39a98
+  - BaseNodeGuid: 49073fdf-0007-462c-917e-656145b39a98
+    TargetNodeGuid: 9ba852c1-2ff6-455e-8ce6-6022d7661da2
+  - BaseNodeGuid: 9ba852c1-2ff6-455e-8ce6-6022d7661da2
+    TargetNodeGuid: 8f88fe8c-4587-45e8-b71d-325d26c368c5
+  - BaseNodeGuid: 3aa5d2db-f611-40fc-b72b-35cd55a7a5fa
+    TargetNodeGuid: d6f4e8ca-f68c-4cfc-b0d9-16923b585907
+  - BaseNodeGuid: d6f4e8ca-f68c-4cfc-b0d9-16923b585907
+    TargetNodeGuid: 89d06e6a-e4eb-43d2-a9eb-af2249b995da
+  - BaseNodeGuid: 89d06e6a-e4eb-43d2-a9eb-af2249b995da
+    TargetNodeGuid: 0afa1f32-c070-4dff-9caf-1dc1844a3f3d
+  - BaseNodeGuid: b300b8c4-7ac8-42a1-b583-275fea08e3fb
+    TargetNodeGuid: 9508a601-3f86-48b9-871e-b9a6911d8247
+  - BaseNodeGuid: 8f88fe8c-4587-45e8-b71d-325d26c368c5
+    TargetNodeGuid: 3aa5d2db-f611-40fc-b72b-35cd55a7a5fa
+  - BaseNodeGuid: 00caaf76-57f7-43af-82e9-53ad5445ab52
+    TargetNodeGuid: 120a1a78-1ae0-4721-9814-179b37b7a1ca
+  - BaseNodeGuid: b471fcdc-e10b-4f88-8889-2b71d34184d6
+    TargetNodeGuid: 00caaf76-57f7-43af-82e9-53ad5445ab52
+  - BaseNodeGuid: b471fcdc-e10b-4f88-8889-2b71d34184d6
+    TargetNodeGuid: 6efc1a03-016a-44af-84aa-30bb646b8e22
+  - BaseNodeGuid: 081f99f7-e4f9-44b2-bda2-6c6b0c3dd158
+    TargetNodeGuid: dc500d0f-c5bd-4ddd-8995-9d49d66c850d
+  - BaseNodeGuid: 081f99f7-e4f9-44b2-bda2-6c6b0c3dd158
+    TargetNodeGuid: c60b8bee-fa21-4f10-9cf0-5a85d88462da
+  - BaseNodeGuid: 081f99f7-e4f9-44b2-bda2-6c6b0c3dd158
+    TargetNodeGuid: 9f7a8ca9-2b49-4741-83eb-b363fed70311
+  - BaseNodeGuid: f609914e-cfce-45c1-afd9-5476fc837d69
+    TargetNodeGuid: ddc99ea3-8ef6-41f3-8158-d8b1752e3ac0
+  - BaseNodeGuid: 9e39dd12-dc74-4845-829b-3bb3fe91f8ec
+    TargetNodeGuid: e3ca37dd-bbd2-464d-852f-54e97e64c3e6
+  - BaseNodeGuid: 6efc1a03-016a-44af-84aa-30bb646b8e22
+    TargetNodeGuid: c4c5eb1b-6fa8-4118-b681-4babbcadabf7
+  - BaseNodeGuid: 6efc1a03-016a-44af-84aa-30bb646b8e22
+    TargetNodeGuid: 081f99f7-e4f9-44b2-bda2-6c6b0c3dd158
+  - BaseNodeGuid: d3f28323-91ad-4487-ac8f-6b6bff8086bc
+    TargetNodeGuid: 9280f9ee-4f5a-4d7d-843a-cd8707b47309
+  - BaseNodeGuid: 9280f9ee-4f5a-4d7d-843a-cd8707b47309
+    TargetNodeGuid: c3d3b22f-c6a7-4eb9-a8ad-7185b83d7eaa
+  - BaseNodeGuid: c3d3b22f-c6a7-4eb9-a8ad-7185b83d7eaa
+    TargetNodeGuid: 4261c762-28df-47b0-8786-be295e1dc5da
+  DialogueChoiceNodeDatas: []
+  DialogueNodeDatas:
+  - NodeGuid: 9280f9ee-4f5a-4d7d-843a-cd8707b47309
+    Position: {x: 329, y: 265}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'The door is locked. There is a note taped to the door.
+        It says:'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: c3d3b22f-c6a7-4eb9-a8ad-7185b83d7eaa
+    Position: {x: 571, y: 265}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: I am out for a walk in the park. I will not be back in
+        a while, humr humr.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  ConditionalNodeDatas: []
+  TimerChoiceNodeDatas: []
+  EndNodeDatas:
+  - NodeGuid: 4261c762-28df-47b0-8786-be295e1dc5da
+    Position: {x: 813, y: 265}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  EventNodeDatas: []
+  StartNodeDatas:
+  - NodeGuid: d3f28323-91ad-4487-ac8f-6b6bff8086bc
+    Position: {x: 86, y: 265}
+    startID: 
+  RandomNodeDatas: []
+  CommandNodeDatas: []
+  IfNodeDatas: []
+  AdvancedIFNodeDatas: []
+  AdvancedChoiceNodeDatas: []
+  AdvancedTimeChoiceNodeDatas: []
+  ResetSavedNodeDatas: []
+  MusicNodeDatas: []

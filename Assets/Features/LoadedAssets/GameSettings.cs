@@ -76,5 +76,9 @@ public enum GameFlag
     SinbadInitialDialogue,
     SinbadFindusMomentToyFoundEvent,
     SinbadFindusMomentDialogue1,
-    FindusRichardMomentDialogue1
+    FindusRichardMomentDialogue1,
+    MayorShrineActivated,
+    MayorShrineDialogue1,
+    FinaleMomentDialogue,
+    FinaleMoment
 }

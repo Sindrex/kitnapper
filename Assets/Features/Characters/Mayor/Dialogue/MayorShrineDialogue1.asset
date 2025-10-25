@@ -18,47 +18,33 @@ MonoBehaviour:
   LimitChoiceOptionPerNode: 0
   MaxChoiceOptionPerNode: 0
   NodeLinkDatas:
-  - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
-    TargetNodeGuid: 4fd61db1-a71e-4295-8ec8-fb495f167954
-  - BaseNodeGuid: 4fd61db1-a71e-4295-8ec8-fb495f167954
-    TargetNodeGuid: 2fc2f56d-375d-4a2d-926a-fa8163a1d583
-  - BaseNodeGuid: 2fc2f56d-375d-4a2d-926a-fa8163a1d583
-    TargetNodeGuid: 8f05f8ea-704c-4b21-9cad-ceec3f556e1a
-  - BaseNodeGuid: 4fd61db1-a71e-4295-8ec8-fb495f167954
-    TargetNodeGuid: 0c0d56e6-039a-4ca4-a36e-187bbd7e0e42
-  - BaseNodeGuid: 0c0d56e6-039a-4ca4-a36e-187bbd7e0e42
-    TargetNodeGuid: 8f05f8ea-704c-4b21-9cad-ceec3f556e1a
-  - BaseNodeGuid: 8f05f8ea-704c-4b21-9cad-ceec3f556e1a
-    TargetNodeGuid: 7efaf9ba-97e4-4424-810f-c620df1c7368
-  - BaseNodeGuid: 8f05f8ea-704c-4b21-9cad-ceec3f556e1a
-    TargetNodeGuid: cf257311-7fa9-4c48-a855-85cb9d555300
-  - BaseNodeGuid: 7efaf9ba-97e4-4424-810f-c620df1c7368
-    TargetNodeGuid: 49ae51f3-417b-497e-aa96-38a1ec91b121
-  - BaseNodeGuid: 7efaf9ba-97e4-4424-810f-c620df1c7368
-    TargetNodeGuid: 889621fc-4b51-470f-a7cc-25216ec1e25c
-  - BaseNodeGuid: 889621fc-4b51-470f-a7cc-25216ec1e25c
-    TargetNodeGuid: 49ae51f3-417b-497e-aa96-38a1ec91b121
-  - BaseNodeGuid: 889621fc-4b51-470f-a7cc-25216ec1e25c
-    TargetNodeGuid: 332bfb8d-9043-4f00-80aa-06d8acf1cfa8
-  - BaseNodeGuid: 332bfb8d-9043-4f00-80aa-06d8acf1cfa8
-    TargetNodeGuid: 7435f5be-4fd6-4c70-aa1b-a2ff9c5dce29
-  - BaseNodeGuid: 7435f5be-4fd6-4c70-aa1b-a2ff9c5dce29
-    TargetNodeGuid: d53fa7bb-6867-4bf8-ba8b-9b5ab3a6ebac
-  - BaseNodeGuid: 49ae51f3-417b-497e-aa96-38a1ec91b121
-    TargetNodeGuid: dfdb6f86-9419-4200-a790-511060dfc225
-  - BaseNodeGuid: cf257311-7fa9-4c48-a855-85cb9d555300
-    TargetNodeGuid: 138b667b-51b1-4ff3-90d1-4a2a0205e3c3
-  - BaseNodeGuid: 138b667b-51b1-4ff3-90d1-4a2a0205e3c3
-    TargetNodeGuid: cdc1b14a-235e-4338-b578-91110baad130
-  - BaseNodeGuid: cdc1b14a-235e-4338-b578-91110baad130
-    TargetNodeGuid: 693cdb95-ab3f-467c-925f-101923b65cad
-  - BaseNodeGuid: 693cdb95-ab3f-467c-925f-101923b65cad
-    TargetNodeGuid: 1a0f9043-9955-4957-9e53-0fa16f11de69
-  - BaseNodeGuid: 1a0f9043-9955-4957-9e53-0fa16f11de69
-    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
+  - BaseNodeGuid: ab8109d7-526d-427b-8fc5-432554261caf
+    TargetNodeGuid: 5a09c406-ebed-4fa7-abb0-a07bfe1dce79
+  - BaseNodeGuid: 5a09c406-ebed-4fa7-abb0-a07bfe1dce79
+    TargetNodeGuid: 7d804a35-839a-4bf6-8c47-97c247beec44
+  - BaseNodeGuid: 5a09c406-ebed-4fa7-abb0-a07bfe1dce79
+    TargetNodeGuid: 68583a04-5f47-4a2d-a939-7325bd397e63
+  - BaseNodeGuid: 7d804a35-839a-4bf6-8c47-97c247beec44
+    TargetNodeGuid: 527a583c-b9fc-4cb6-9bf3-83c1bee2c00c
+  - BaseNodeGuid: 527a583c-b9fc-4cb6-9bf3-83c1bee2c00c
+    TargetNodeGuid: 4c1b796f-ce81-44d2-9f18-d856643ebaee
+  - BaseNodeGuid: 4c1b796f-ce81-44d2-9f18-d856643ebaee
+    TargetNodeGuid: ddb8042e-448d-4712-8e6b-10e14263bee8
+  - BaseNodeGuid: ddb8042e-448d-4712-8e6b-10e14263bee8
+    TargetNodeGuid: 12441980-46db-471f-b394-d9ed8ebf9a30
+  - BaseNodeGuid: 12441980-46db-471f-b394-d9ed8ebf9a30
+    TargetNodeGuid: bd68af0e-26ee-4343-bd54-4f8fa4aab1eb
+  - BaseNodeGuid: 68583a04-5f47-4a2d-a939-7325bd397e63
+    TargetNodeGuid: b8bbda71-045b-434e-944f-deaa5ad3a240
+  - BaseNodeGuid: bd68af0e-26ee-4343-bd54-4f8fa4aab1eb
+    TargetNodeGuid: aa1a1ff7-001c-4104-99d7-861b6794179a
+  - BaseNodeGuid: aa1a1ff7-001c-4104-99d7-861b6794179a
+    TargetNodeGuid: ec522457-a47d-4527-96db-0d0a10a57fc2
+  - BaseNodeGuid: ec522457-a47d-4527-96db-0d0a10a57fc2
+    TargetNodeGuid: 390ea3cc-4886-46ab-b890-3ad9f3dfd532
   DialogueChoiceNodeDatas:
-  - NodeGuid: 7efaf9ba-97e4-4424-810f-c620df1c7368
-    Position: {x: 1537, y: -136}
+  - NodeGuid: aa1a1ff7-001c-4104-99d7-861b6794179a
+    Position: {x: 4566, y: 573}
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
@@ -72,70 +58,23 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: Have you found the culprit yet, humr humr?
+      LanguageGenericType: But Mr. Detective, have you found the culprit, humr humr?
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 5
     DialogueNodePorts:
-    - PortGuid: 274a4585-d733-4d65-927a-2ce6b82f40f6
-      InputGuid: 49ae51f3-417b-497e-aa96-38a1ec91b121
-      OutputGuid: 7efaf9ba-97e4-4424-810f-c620df1c7368
+    - PortGuid: 54e5b010-dd48-40aa-8457-fa0ed86a449b
+      InputGuid: ec522457-a47d-4527-96db-0d0a10a57fc2
+      OutputGuid: aa1a1ff7-001c-4104-99d7-861b6794179a
       TextLanguage:
       - languageEnum: 0
-        LanguageGenericType: Goodbye
+        LanguageGenericType: Yes
       - languageEnum: 1
         LanguageGenericType: Choice 01
       RequiredFlag: {fileID: 0}
-    - PortGuid: f5aabbc1-4c9c-4e55-9a6c-cdc9c6316914
-      InputGuid: 889621fc-4b51-470f-a7cc-25216ec1e25c
-      OutputGuid: 7efaf9ba-97e4-4424-810f-c620df1c7368
-      TextLanguage:
-      - languageEnum: 0
-        LanguageGenericType: Question
-      - languageEnum: 1
-        LanguageGenericType: Choice 02
-      RequiredFlag: {fileID: 0}
-  - NodeGuid: 889621fc-4b51-470f-a7cc-25216ec1e25c
-    Position: {x: 1918, y: -503}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: What do you want to know, humr humr?
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 5
-    DialogueNodePorts:
-    - PortGuid: 061fabe6-316c-4a32-87a6-27025dc926b4
-      InputGuid: 49ae51f3-417b-497e-aa96-38a1ec91b121
-      OutputGuid: 889621fc-4b51-470f-a7cc-25216ec1e25c
-      TextLanguage:
-      - languageEnum: 0
-        LanguageGenericType: Goodbye
-      - languageEnum: 1
-        LanguageGenericType: Choice 01
-      RequiredFlag: {fileID: 0}
-    - PortGuid: 3157c73b-f261-4cd9-b179-e9f2f15c8b23
-      InputGuid: 332bfb8d-9043-4f00-80aa-06d8acf1cfa8
-      OutputGuid: 889621fc-4b51-470f-a7cc-25216ec1e25c
-      TextLanguage:
-      - languageEnum: 0
-        LanguageGenericType: Luna
-      - languageEnum: 1
-        LanguageGenericType: Choice 02
-      RequiredFlag: {fileID: 11400000, guid: 1967063c06ae88a4aa987bcee92cc5ab, type: 2}
   DialogueNodeDatas:
-  - NodeGuid: 2fc2f56d-375d-4a2d-926a-fa8163a1d583
-    Position: {x: 1023, y: -149}
+  - NodeGuid: 68583a04-5f47-4a2d-a939-7325bd397e63
+    Position: {x: 2976, y: 910}
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
@@ -150,12 +89,12 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: 'Mayor: There you are, humr humr.'
+      LanguageGenericType: 'Mayor: I will meet you back at my office, humr humr.'
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
-  - NodeGuid: 693cdb95-ab3f-467c-925f-101923b65cad
-    Position: {x: 2018, y: 196}
+  - NodeGuid: 7d804a35-839a-4bf6-8c47-97c247beec44
+    Position: {x: 2976, y: 573}
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
@@ -170,13 +109,13 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: We don't have any leads yet, so go question our resident
-        scientist down at the university, humr humr.
+      LanguageGenericType: 'Mayor: So you found me, Mr. Detective. You never fail
+        to impress, humr humr.'
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
-  - NodeGuid: cdc1b14a-235e-4338-b578-91110baad130
-    Position: {x: 1782, y: 196}
+  - NodeGuid: 527a583c-b9fc-4cb6-9bf3-83c1bee2c00c
+    Position: {x: 3270, y: 573}
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
@@ -191,184 +130,136 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: Milo must have neglected security, humr humr.
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
-  - NodeGuid: 0c0d56e6-039a-4ca4-a36e-187bbd7e0e42
-    Position: {x: 1023, y: 410}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: 'Mayor: Are you a mind reader? I was about to call you,
-        humr humr. Anyways...'
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
-  - NodeGuid: 1a0f9043-9955-4957-9e53-0fa16f11de69
-    Position: {x: 2259, y: 196}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: TownHallMayorInitialDialogueEvent
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: That will be all, humr humr.
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
-  - NodeGuid: cf257311-7fa9-4c48-a855-85cb9d555300
-    Position: {x: 1537, y: 196}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: So, to get right on topic, we are suspecting that someone
-        kitnapped all the town's colors, humr humr.
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
-  - NodeGuid: 138b667b-51b1-4ff3-90d1-4a2a0205e3c3
-    Position: {x: 1682, y: 593}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: The audacity! Now the town is all bleak and depressing.
-        And so is my collection, humr humr.
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
-  - NodeGuid: 49ae51f3-417b-497e-aa96-38a1ec91b121
-    Position: {x: 2259, y: -122}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: Return to me when you have found the culprit, humr humr.
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
-  - NodeGuid: 332bfb8d-9043-4f00-80aa-06d8acf1cfa8
-    Position: {x: 2359, y: -503}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: Oh, Luna said that, humr humr?
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
-  - NodeGuid: 7435f5be-4fd6-4c70-aa1b-a2ff9c5dce29
-    Position: {x: 2642, y: -503}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: What's between Luna and me is a private matter Mr. Detective,
+      LanguageGenericType: You know, it has been years since I last visited this
+        shrine. But in this situation we find ourselves in, I felt compelled by it,
         humr humr.
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
+  - NodeGuid: 4c1b796f-ce81-44d2-9f18-d856643ebaee
+    Position: {x: 3550, y: 573}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: I am by no means religious, but...
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: ddb8042e-448d-4712-8e6b-10e14263bee8
+    Position: {x: 3824, y: 573}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Maybe I wished for catsolution by the higher powers nontheless,
+        humr humr.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: bd68af0e-26ee-4343-bd54-4f8fa4aab1eb
+    Position: {x: 4283, y: 573}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: I never should have comissioned that tool. I was a fool,
+        humr humr.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 12441980-46db-471f-b394-d9ed8ebf9a30
+    Position: {x: 4052, y: 573}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Sigh...
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: ec522457-a47d-4527-96db-0d0a10a57fc2
+    Position: {x: 4944, y: 573}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: ShrineMayorDialogueEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Good. I will call all the townscats to my office. Meet
+        me there, humr humr.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
   ConditionalNodeDatas:
-  - NodeGuid: 8f05f8ea-704c-4b21-9cad-ceec3f556e1a
-    Position: {x: 1172, y: 196}
-    RequiredGameFlagCombo: {fileID: 11400000, guid: de9eac2e0a950a34691d000eb8b356a5,
-      type: 2}
-  - NodeGuid: 4fd61db1-a71e-4295-8ec8-fb495f167954
-    Position: {x: 865, y: 196}
-    RequiredGameFlagCombo: {fileID: 11400000, guid: 696c863693f74614cb884cff365fad63,
+  - NodeGuid: 5a09c406-ebed-4fa7-abb0-a07bfe1dce79
+    Position: {x: 2724, y: 798}
+    RequiredGameFlagCombo: {fileID: 11400000, guid: b6790a538f1887640986af36bc925e74,
       type: 2}
   TimerChoiceNodeDatas: []
   EndNodeDatas:
-  - NodeGuid: dfdb6f86-9419-4200-a790-511060dfc225
-    Position: {x: 2508, y: -122}
+  - NodeGuid: b8bbda71-045b-434e-944f-deaa5ad3a240
+    Position: {x: 3270, y: 992}
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 
-  - NodeGuid: d53fa7bb-6867-4bf8-ba8b-9b5ab3a6ebac
-    Position: {x: 2882, y: -503}
-    EndNodeType: 0
-    Dialogue: {fileID: 0}
-    startID: 
-  - NodeGuid: 7838e825-39c1-416f-8753-1589000d7155
-    Position: {x: 2508, y: 196}
+  - NodeGuid: 390ea3cc-4886-46ab-b890-3ad9f3dfd532
+    Position: {x: 5200, y: 573}
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 
   EventNodeDatas: []
   StartNodeDatas:
-  - NodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
-    Position: {x: 612, y: 196}
+  - NodeGuid: ab8109d7-526d-427b-8fc5-432554261caf
+    Position: {x: 2523, y: 798}
     startID: 
   RandomNodeDatas: []
   CommandNodeDatas: []

@@ -40,14 +40,11 @@ public class MoveEventController : EventBase
                 //CLogger.Log($"MoveEvent \"{Id}\" endTrigger is not on!");
                 return;
             }
-            DoFinishRoutine();
-            
-            //Activate next event
-            GameManager.Instance.FindEvent(NextEvent)?.Activate();
+            DoFinishRoutine(true);
         }
     }
 
-    public override void Activate()
+    public override void Activate(bool activateNextEvent)
     {
         CLogger.Log($"MoveEvent \"{Id}\" activated!");
         TargetAnimator.Play(TargetAnimatorState);
@@ -56,7 +53,7 @@ public class MoveEventController : EventBase
         IsFinished = false;
     }
 
-    public void DoFinishRoutine()
+    public void DoFinishRoutine(bool activateNextEvent)
     {
         CLogger.Log($"MoveEvent \"{Id}\" doing Finish Routine!");
         Started = false;
@@ -75,6 +72,13 @@ public class MoveEventController : EventBase
         }
 
         GameManager.Instance.SaveMoveEventState(this);
+
+        //Activate next event
+        var nextEvent = GameManager.Instance.FindEvent(NextEvent);
+        if(nextEvent != null && nextEvent.CheckRequirements())
+        {
+            nextEvent.Activate(true);
+        }
     }
     
 #if UNITY_EDITOR

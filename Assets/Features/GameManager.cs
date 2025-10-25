@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 {
     public CameraController MainCamera;
     public GameSettings CurrentGameSettings;
+    public FinaleMomentEventController FinaleMomentEvent;
     private List<EventController> Events = new List<EventController>();
     private List<MoveEventController> MoveEvents = new List<MoveEventController>();
 
@@ -93,6 +94,9 @@ public class GameManager : MonoBehaviour
             }
         }
 
+        //setup finale event
+        FinaleMomentEvent.Setup();
+
         //Setup globals
         InputController.InputEnabled = true;
     }
@@ -137,7 +141,7 @@ public class GameManager : MonoBehaviour
         var eventState = CurrentGameSettings.EventStates.FirstOrDefault(x => x.Id == eventController.Id);
         if (eventState != null && eventState.IsFinished)
         {
-            eventController.Activate();
+            eventController.Activate(false);
         }
         if (eventState != null)
         {
@@ -163,7 +167,7 @@ public class GameManager : MonoBehaviour
         var eventState = CurrentGameSettings.EventStates.FirstOrDefault(x => x.Id == moveEventController.Id);
         if (eventState != null && eventState.IsFinished)
         {
-            moveEventController.DoFinishRoutine();
+            moveEventController.DoFinishRoutine(false);
         }
 
         MoveEvents.Add(moveEventController);
@@ -235,6 +239,10 @@ public class GameManager : MonoBehaviour
         if (eventController != null && moveEventController != null)
         {
             CLogger.LogError($"FindEvent found both Event and MoveEvent searching for id \"{id}\"! Returning Event.");
+        }
+        if(FinaleMomentEvent.Id == id)
+        {
+            return FinaleMomentEvent;
         }
         if (eventController == null && moveEventController == null)
         {

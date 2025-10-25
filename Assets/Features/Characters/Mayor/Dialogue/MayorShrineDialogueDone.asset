@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e31cdbf612b7e241bb10ba658b87114, type: 3}
   m_Name: MayorShrineDialogueDone
   m_EditorClassIdentifier: 
-  Flag: 5
+  Flag: 21
   BoolValue: 1
   StringValue: 
   IntValue: 0
