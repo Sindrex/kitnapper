@@ -73,11 +73,14 @@ public class MoveEventController : EventBase
 
         GameManager.Instance.SaveMoveEventState(this);
 
-        //Activate next event
-        var nextEvent = GameManager.Instance.FindEvent(NextEvent);
-        if(nextEvent != null && nextEvent.CheckRequirements())
+        if (activateNextEvent)
         {
-            nextEvent.Activate(true);
+            //Activate next event
+            var nextEvent = GameManager.Instance.FindEvent(NextEvent);
+            if(nextEvent != null && nextEvent.CheckRequirements())
+            {
+                nextEvent.Activate(true);
+            }
         }
     }
     
