@@ -9,7 +9,8 @@ public enum InputPurpose
     DIALOGUE_CHOICE_DOWN,
     ANY,
     QUIT, RESET,
-    COMMAND_OPEN, COMMAND_ENTER
+    COMMAND_OPEN, COMMAND_ENTER,
+    CLOSE_EXCEPTION
 }
 
 public static class InputController
@@ -51,6 +52,8 @@ public static class InputController
                 return Input.GetKeyDown(KeyCode.Return);
             case InputPurpose.COMMAND_ENTER:
                 return Input.GetKeyDown(KeyCode.Return);
+            case InputPurpose.CLOSE_EXCEPTION:
+                return Input.GetKeyDown(KeyCode.E);
         }
         return false;
     }

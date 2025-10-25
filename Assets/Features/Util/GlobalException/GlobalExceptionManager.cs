@@ -1,12 +1,13 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Assets.Features.Util.GlobalException
 {
     public class GlobalExceptionManager : MonoBehaviour
     {
         public GameObject ExceptionWindow;
-        public TMP_Text ExceptionText;
+        public Text ExceptionText;
 
         //Singleton pattern
         public static GlobalExceptionManager Instance;
@@ -27,7 +28,7 @@ namespace Assets.Features.Util.GlobalException
         {
             if (type == LogType.Exception)
             {
-                Debug.Log($"Type: {type}, logString: {logString}, stackTrace: {stackTrace}");
+                CLogger.LogError($"Type: {type}, logString: {logString}, stackTrace: {stackTrace}");
                 ExceptionText.text = logString + "\r\n" + stackTrace;
                 ExceptionWindow.SetActive(true);
             }

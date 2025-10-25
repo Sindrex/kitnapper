@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using Assets.Features.Util.GlobalException;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -105,6 +106,7 @@ public class GameManager : MonoBehaviour
     {
         if (InputController.GetInput(InputPurpose.QUIT)) Quit();
         if (InputController.GetInput(InputPurpose.RESET)) Reset();
+        if (InputController.GetInput(InputPurpose.CLOSE_EXCEPTION)) GlobalExceptionManager.Instance.CloseWindow();
     }
 
     public void SetFlags(SetGameFlagCombo flagCombo)
