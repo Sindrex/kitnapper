@@ -16,6 +16,7 @@ public class MyDialogueManager : MonoBehaviour
     public bool IsBusySpawningLetters;
     public float TimeBetweenEachLetterSpawn;
     public float CurrentLetterSpawnTime;
+    public string CurrentText;
     public List<char> CurrentTextList; //reversed
 
     //Dialogue choice
@@ -108,6 +109,12 @@ public class MyDialogueManager : MonoBehaviour
                 CurrentLetterSpawnTime += Time.deltaTime;
             }
         }
+
+        if (IsBusySpawningLetters && DialogueText.text.Length > 0 && InputController.GetInput(InputPurpose.INTERACT))
+        {
+            DialogueText.text = CurrentText;
+            CurrentTextList = new List<char>();
+        }
     }
 
     public void SetText(string text)
@@ -118,6 +125,7 @@ public class MyDialogueManager : MonoBehaviour
         DialogueParent.SetActive(true);
         DialogueText.text = "";
 
+        CurrentText = text;
         CurrentTextList = text.ToCharArray().Reverse().ToList();
         IsBusySpawningLetters = true;
         CurrentLetterSpawnTime = 0;
@@ -133,6 +141,7 @@ public class MyDialogueManager : MonoBehaviour
 
         DialogueText.text = "";
         var text = choiceNodeData.TextType[0].LanguageGenericType;
+        CurrentText = text;
         CurrentTextList = text.ToCharArray().Reverse().ToList();
         IsBusySpawningLetters = true;
         CurrentLetterSpawnTime = 0;

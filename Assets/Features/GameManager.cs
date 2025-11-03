@@ -105,7 +105,6 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         if (InputController.GetInput(InputPurpose.QUIT)) Quit();
-        if (InputController.GetInput(InputPurpose.RESET)) Reset();
         if (InputController.GetInput(InputPurpose.CLOSE_EXCEPTION)) GlobalExceptionManager.Instance.CloseWindow();
     }
 
@@ -254,20 +253,9 @@ public class GameManager : MonoBehaviour
         return (EventBase) eventController ?? moveEventController;
     }
 
-    public void Reset()
-    {
-        CurrentGameSettings.ResetGame();
-        SceneManager.LoadScene(0);
-    }
-
     public void Quit()
     {
         CurrentGameSettings.Save();
-
-#if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false;
-#else
-        Application.Quit();
-#endif
+        SceneManager.LoadScene(0); //Menu
     }
 }

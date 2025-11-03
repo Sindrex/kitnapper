@@ -6,13 +6,17 @@ using UnityEngine;
 public class CameraController : MonoBehaviour
 {
     public float Speed = 20.0f;
-    public int MaxZoom = 30;
-    public int MinZoom = 3;
 
     //Flags
     public bool CanMove = true;
 
     public Vector2 Position => new Vector2(this.transform.position.x, this.transform.position.y);
+
+    public Animator PlayerAnimator;
+    public string IdleAnimatorState;
+    public string MoveAnimatorState;
+    public bool IsMoving;
+    public bool MoveAnimPlaying;
 
     //singleton
     public static CameraController Instance { get; private set; }
@@ -26,7 +30,7 @@ public class CameraController : MonoBehaviour
         Destroy(this.gameObject);
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (!CanMove) return;
 
@@ -42,6 +46,22 @@ public class CameraController : MonoBehaviour
         movementVector -= modifierVector;
         movementVector = Flatten(movementVector);
         transform.Translate(movementVector.x * Speed * Time.deltaTime, movementVector.y * Speed * Time.deltaTime, 0.0f);
+
+        if (movementVector.x != 0 || movementVector.y != 0)
+        {
+            IsMoving = true;
+            if (!MoveAnimPlaying)
+            {
+                PlayerAnimator.Play(MoveAnimatorState);
+                MoveAnimPlaying = true;
+            }
+        }
+        else
+        {
+            PlayerAnimator.Play(IdleAnimatorState);
+            IsMoving = false;
+            MoveAnimPlaying = false;
+        }
     }
 
     public static Vector2 Flatten(Vector2 vector2)

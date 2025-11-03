@@ -25,6 +25,11 @@ public class GameSettings
         GameSettingsLoader.Save(this);
     }
 
+    public void SaveFromMenu()
+    {
+        GameSettingsLoader.Save(this);
+    }
+
     public void ResetGame()
     {
         GameFlags = new List<GameFlagCombo>();

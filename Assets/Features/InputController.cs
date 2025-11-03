@@ -10,7 +10,8 @@ public enum InputPurpose
     ANY,
     QUIT, RESET,
     COMMAND_OPEN, COMMAND_ENTER,
-    CLOSE_EXCEPTION
+    CLOSE_EXCEPTION,
+    MENU_CHOICE_UP, MENU_CHOICE_DOWN, MENU_CHOICE_LEFT, MENU_CHOICE_RIGHT
 }
 
 public static class InputController
@@ -45,7 +46,7 @@ public static class InputController
             case InputPurpose.ANY:
                 return Input.anyKeyDown;
             case InputPurpose.QUIT:
-                return Input.GetKeyDown(KeyCode.Q);
+                return Input.GetKeyDown(KeyCode.Escape);
             case InputPurpose.RESET:
                 return Input.GetKeyDown(KeyCode.R);
             case InputPurpose.COMMAND_OPEN:
@@ -54,6 +55,15 @@ public static class InputController
                 return Input.GetKeyDown(KeyCode.Return);
             case InputPurpose.CLOSE_EXCEPTION:
                 return Input.GetKeyDown(KeyCode.E);
+            case InputPurpose.MENU_CHOICE_UP:
+                return Input.GetKeyDown(KeyCode.W);
+            case InputPurpose.MENU_CHOICE_DOWN:
+                return Input.GetKeyDown(KeyCode.S);
+            case InputPurpose.MENU_CHOICE_LEFT:
+                return Input.GetKeyDown(KeyCode.A);
+            case InputPurpose.MENU_CHOICE_RIGHT:
+                return Input.GetKeyDown(KeyCode.D);
+            
         }
         return false;
     }
