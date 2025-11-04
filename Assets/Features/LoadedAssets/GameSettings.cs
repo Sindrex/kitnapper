@@ -8,7 +8,7 @@ using Newtonsoft.Json.Converters;
 public class GameSettings
 {
     public FullScreenMode FullScreenMode { get; set; } = FullScreenMode.FullScreenWindow;
-    public float MasterVolume { get; set; } = 100;
+    public int MasterVolumeIndex { get; set; }
     public List<GameFlagCombo> GameFlags { get; set; } = new List<GameFlagCombo>();
     public List<EventState> EventStates { get; set; } = new List<EventState>();
     public GamePosition PlayerPosition { get; set; } = new GamePosition();

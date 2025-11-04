@@ -50,6 +50,17 @@ public class MenuManager : MonoBehaviour
 
     //Settings
     public Text FullScreenModeText;
+    public GameObject SoundSliderParent;
+    public GameObject SoundSliderKnob;
+    public List<Vector3> SoundSliderKnobSettings = new List<Vector3>()
+    {
+        new Vector3(-54, 0, 0),
+        new Vector3(-27, 0, 0),
+        new Vector3(0, 0, 0),
+        new Vector3(27, 0, 0),
+        new Vector3(54, 0, 0)
+    };
+    public int CurrentIndex;
 
     // Start is called before the first frame update
     void Start()
@@ -70,6 +81,8 @@ public class MenuManager : MonoBehaviour
         NewGameOverwrite.SetActive(false);
         MainButtons.SetActive(false);
         IntroKeys.SetActive(true);
+        SoundSliderParent.SetActive(false);
+
         Screen.SetResolution(1920, 1080, FullScreenMode.FullScreenWindow);
         FullScreenModeText.text = "FullScreenWindow";
 
@@ -86,6 +99,8 @@ public class MenuManager : MonoBehaviour
             CurrentGameSettings = GameSettingsLoader.Load();
             Screen.fullScreenMode = CurrentGameSettings.FullScreenMode;
             FullScreenModeText.text = GetFullScreenModeName(Screen.fullScreenMode);
+            CurrentIndex = CurrentGameSettings.MasterVolumeIndex;
+            SoundSliderKnob.transform.localPosition = SoundSliderKnobSettings[CurrentIndex];
         }
 
         InputController.InputEnabled = true;
@@ -111,65 +126,65 @@ public class MenuManager : MonoBehaviour
     public void UpdateIntroKeys()
     {
         if (InputController.GetInput(InputPurpose.QUIT))
+        {
+            if (EscapeText.fontStyle != FontStyle.Bold)
             {
-                if (EscapeText.fontStyle != FontStyle.Bold)
-                {
-                    EscapeText.fontStyle = FontStyle.Bold;
-                    EscapeText.text = $"<color=\"Green\">{EscapeText.text}</color>";
-                    KeysClicked++;
-                }
+                EscapeText.fontStyle = FontStyle.Bold;
+                EscapeText.text = $"<color=\"Green\">{EscapeText.text}</color>";
+                KeysClicked++;
             }
-            if (InputController.GetInput(InputPurpose.MOVE_UP))
+        }
+        if (InputController.GetInput(InputPurpose.MOVE_UP))
+        {
+            if (WText.fontStyle != FontStyle.Bold)
             {
-                if (WText.fontStyle != FontStyle.Bold)
-                {
-                    WText.fontStyle = FontStyle.Bold;
-                    WText.text = $"<color=\"Green\">{WText.text}</color>";
-                    KeysClicked++;
-                }
+                WText.fontStyle = FontStyle.Bold;
+                WText.text = $"<color=\"Green\">{WText.text}</color>";
+                KeysClicked++;
             }
-            if (InputController.GetInput(InputPurpose.MOVE_DOWN))
+        }
+        if (InputController.GetInput(InputPurpose.MOVE_DOWN))
+        {
+            if (SText.fontStyle != FontStyle.Bold)
             {
-                if (SText.fontStyle != FontStyle.Bold)
-                {
-                    SText.fontStyle = FontStyle.Bold;
-                    SText.text = $"<color=\"Green\">{SText.text}</color>";
-                    KeysClicked++;
-                }
+                SText.fontStyle = FontStyle.Bold;
+                SText.text = $"<color=\"Green\">{SText.text}</color>";
+                KeysClicked++;
             }
-            if (InputController.GetInput(InputPurpose.MOVE_LEFT))
+        }
+        if (InputController.GetInput(InputPurpose.MOVE_LEFT))
+        {
+            if (AText.fontStyle != FontStyle.Bold)
             {
-                if (AText.fontStyle != FontStyle.Bold)
-                {
-                    AText.fontStyle = FontStyle.Bold;
-                    AText.text = $"<color=\"Green\">{AText.text}</color>";
-                    KeysClicked++;
-                }
+                AText.fontStyle = FontStyle.Bold;
+                AText.text = $"<color=\"Green\">{AText.text}</color>";
+                KeysClicked++;
             }
-            if (InputController.GetInput(InputPurpose.MOVE_RIGHT))
+        }
+        if (InputController.GetInput(InputPurpose.MOVE_RIGHT))
+        {
+            if (DText.fontStyle != FontStyle.Bold)
             {
-                if (DText.fontStyle != FontStyle.Bold)
-                {
-                    DText.fontStyle = FontStyle.Bold;
-                    DText.text = $"<color=\"Green\">{DText.text}</color>";
-                    KeysClicked++;
-                }
+                DText.fontStyle = FontStyle.Bold;
+                DText.text = $"<color=\"Green\">{DText.text}</color>";
+                KeysClicked++;
             }
-            if (InputController.GetInput(InputPurpose.INTERACT))
+        }
+        if (InputController.GetInput(InputPurpose.INTERACT))
+        {
+            if (EText.fontStyle != FontStyle.Bold)
             {
-                if (EText.fontStyle != FontStyle.Bold)
-                {
-                    EText.fontStyle = FontStyle.Bold;
-                    EText.text = $"<color=\"Green\">{EText.text}</color>";
-                    KeysClicked++;
-                }
+                EText.fontStyle = FontStyle.Bold;
+                EText.text = $"<color=\"Green\">{EText.text}</color>";
+                KeysClicked++;
             }
-            
-            if(KeysClicked == 6)
-            {
-                MainButtons.SetActive(true);
-                IntroKeys.SetActive(false);
-            }
+        }
+
+        if (KeysClicked == 6)
+        {
+            MainButtons.SetActive(true);
+            IntroKeys.SetActive(false);
+        }
     }
 
     public void UpdateNewGameOverwriteButtons()
@@ -201,6 +216,12 @@ public class MenuManager : MonoBehaviour
 
     public void UpdateMainButtons()
     {
+        if (SoundSliderParent.activeSelf)
+        {
+            SetSoundSetting();
+            return;
+        }
+
         if (InputController.GetInput(InputPurpose.MENU_CHOICE_UP))
         {
             SelectedRowButton--;
@@ -294,11 +315,11 @@ public class MenuManager : MonoBehaviour
     public void Quit()
     {
         CLogger.Log("Quitting game!");
-        #if UNITY_EDITOR
+#if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
-        #else
+#else
         Application.Quit();
-        #endif
+#endif
     }
 
     public void Credits()
@@ -323,7 +344,7 @@ public class MenuManager : MonoBehaviour
             FullScreenModeText.text = GetFullScreenModeName(FullScreenMode.FullScreenWindow);
         }
     }
-    
+
     private string GetFullScreenModeName(FullScreenMode mode)
     {
         switch (mode)
@@ -338,14 +359,64 @@ public class MenuManager : MonoBehaviour
 
     public void SoundSetting()
     {
-        CLogger.LogError("SoundSetting button not implemented!");
+        SoundSliderParent.SetActive(true);
+    }
+
+    public void SetSoundSetting()
+    {
+        if (InputController.GetInput(InputPurpose.MENU_CHOICE_LEFT))
+        {
+            CurrentIndex--;
+            if (CurrentIndex < 0)
+            {
+                CurrentIndex++;
+            }
+            SoundSliderKnob.transform.localPosition = SoundSliderKnobSettings[CurrentIndex];
+            var volume = CurrentIndex / (SoundSliderKnobSettings.Count - 1);
+            CurrentGameSettings.MasterVolumeIndex = CurrentIndex;
+            CurrentGameSettings.SaveFromMenu();
+            var masterVolume = VolumeFunction(volume);
+            //AudioManager.Instance.AudioMixer.SetFloat(MasterVolumeParameter, masterVolume);
+        }
+        else if (InputController.GetInput(InputPurpose.MENU_CHOICE_RIGHT))
+        {
+            CurrentIndex++;
+            if (CurrentIndex > SoundSliderKnobSettings.Count - 1)
+            {
+                CurrentIndex--;
+            }
+            SoundSliderKnob.transform.localPosition = SoundSliderKnobSettings[CurrentIndex];
+            var volume = CurrentIndex / (SoundSliderKnobSettings.Count - 1);
+            CurrentGameSettings.MasterVolumeIndex = CurrentIndex;
+            CurrentGameSettings.SaveFromMenu();
+            var masterVolume = VolumeFunction(volume);
+            //AudioManager.Instance.AudioMixer.SetFloat(MasterVolumeParameter, masterVolume);
+        }
+        else if (InputController.GetInput(InputPurpose.INTERACT))
+        {
+            SoundSliderParent.SetActive(false);
+        }
+    }
+
+    //Assumes 0.0001 < x < 1
+    private static float VolumeFunction(float x)
+    {
+        if (x <= 0)
+        {
+            x = 0.0001f;
+        }
+        else if (x > 1)
+        {
+            x = 1;
+        }
+        return Mathf.Log10(x) * 20;
     }
 
     public void MusicCredits()
     {
         CLogger.LogError("MusicCredits button not implemented!");
     }
-    
+
     public void Version()
     {
         CLogger.LogError("Version button not implemented!");
@@ -396,6 +467,6 @@ public class MenuManager : MonoBehaviour
         {
             return AllTexts.FirstOrDefault(e => e.Key.Equals(VersionText));
         }
-        return AllTexts.FirstOrDefault(e => e.Key.Equals(QuitText));;
+        return AllTexts.FirstOrDefault(e => e.Key.Equals(QuitText)); ;
     }
 }
