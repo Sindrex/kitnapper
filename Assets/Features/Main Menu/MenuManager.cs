@@ -47,6 +47,7 @@ public class MenuManager : MonoBehaviour
     public Text DText;
     public Text EText;
     public int KeysClicked = 0;
+    public float IntroKeysWaitForSeconds = 1;
 
     //Settings
     public Text FullScreenModeText;
@@ -119,7 +120,15 @@ public class MenuManager : MonoBehaviour
         }
         else if (IntroKeys.activeSelf)
         {
-            UpdateIntroKeys();
+            if (CurrentGameSettings.FirstTimeBoot)
+            {
+                UpdateIntroKeys();
+            }
+            else
+            {
+                MainButtons.SetActive(true);
+                IntroKeys.SetActive(false);
+            }
         }
     }
 
@@ -182,9 +191,17 @@ public class MenuManager : MonoBehaviour
 
         if (KeysClicked == 6)
         {
-            MainButtons.SetActive(true);
-            IntroKeys.SetActive(false);
+            StartCoroutine("WaitForIntroKeysFinished");
         }
+    }
+
+    IEnumerator WaitForIntroKeysFinished()
+    {
+        yield return new WaitForSeconds(IntroKeysWaitForSeconds);
+        MainButtons.SetActive(true);
+        IntroKeys.SetActive(false);
+        CurrentGameSettings.FirstTimeBoot = false;
+        CurrentGameSettings.SaveFromMenu();
     }
 
     public void UpdateNewGameOverwriteButtons()

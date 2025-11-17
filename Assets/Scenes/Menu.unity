@@ -715,6 +715,7 @@ MonoBehaviour:
   DText: {fileID: 530051603}
   EText: {fileID: 1014298337}
   KeysClicked: 0
+  IntroKeysWaitForSeconds: 0.3
   FullScreenModeText: {fileID: 50861721}
   SoundSliderParent: {fileID: 495774735}
   SoundSliderKnob: {fileID: 1608263983}

@@ -12,6 +12,7 @@ public class GameSettings
     public List<GameFlagCombo> GameFlags { get; set; } = new List<GameFlagCombo>();
     public List<EventState> EventStates { get; set; } = new List<EventState>();
     public GamePosition PlayerPosition { get; set; } = new GamePosition();
+    public bool FirstTimeBoot { get; set; } = true;
 
     private GamePosition GetPlayerPosition() => new GamePosition
     {

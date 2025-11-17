@@ -87,7 +87,6 @@ public class EventController : EventBase
         var requiresFlags = RequiredFlags.Any(x => x.GetFlag() != GameFlag.Default);
         if (requiresFlags)
         {
-            var gameSettings = GameManager.Instance.CurrentGameSettings;
             var results = new List<bool>();
             foreach (var requiredFlag in RequiredFlags)
             {
