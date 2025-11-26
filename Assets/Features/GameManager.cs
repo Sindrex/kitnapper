@@ -100,6 +100,9 @@ public class GameManager : MonoBehaviour
 
         //Setup globals
         InputController.InputEnabled = true;
+
+        //Start fade in
+        CameraController.Instance.FadeIn();
     }
 
     void Update()

@@ -52,16 +52,15 @@ public class MenuManager : MonoBehaviour
     //Settings
     public Text FullScreenModeText;
     public GameObject SoundSliderParent;
-    public GameObject SoundSliderKnob;
-    public List<Vector3> SoundSliderKnobSettings = new List<Vector3>()
-    {
-        new Vector3(-54, 0, 0),
-        new Vector3(-27, 0, 0),
-        new Vector3(0, 0, 0),
-        new Vector3(27, 0, 0),
-        new Vector3(54, 0, 0)
-    };
+    public int MaxIndex = 9;
+    public int MinIndex = 0;
+    public string Prefix = "[";
+    public string Postfix = "]";
+    public string SoundLetter = "+";
+    public string FillLetter = "¨";
+    public Text SoundSliderText;
     public int CurrentIndex;
+    private const string MasterVolumeParameterName = "MasterVolume";
 
     // Start is called before the first frame update
     void Start()
@@ -101,10 +100,17 @@ public class MenuManager : MonoBehaviour
             Screen.fullScreenMode = CurrentGameSettings.FullScreenMode;
             FullScreenModeText.text = GetFullScreenModeName(Screen.fullScreenMode);
             CurrentIndex = CurrentGameSettings.MasterVolumeIndex;
-            SoundSliderKnob.transform.localPosition = SoundSliderKnobSettings[CurrentIndex];
+            SetVolumeSlider(false);
         }
 
         InputController.InputEnabled = true;
+
+        //cursor
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+
+        //menu music
+        AudioManager.Instance.PlayMusicClip(AudioLabel.MenuMusic);
     }
 
     // Update is called once per frame
@@ -297,6 +303,8 @@ public class MenuManager : MonoBehaviour
         //check if player has gamesettings
         //if not, this is disabled
         //else start game
+
+        AudioManager.Instance.PlaySFXClip(AudioLabel.ClickSFX);
         CLogger.Log("Continuing game!");
         if (CurrentGameSettings != null)
         {
@@ -314,6 +322,7 @@ public class MenuManager : MonoBehaviour
         //if yes, open overwrite pane
         //else start game
 
+        AudioManager.Instance.PlaySFXClip(AudioLabel.ClickSFX);
         CLogger.Log("Starting new game!");
         if (CurrentGameSettings != null)
         {
@@ -341,11 +350,13 @@ public class MenuManager : MonoBehaviour
 
     public void Credits()
     {
+        AudioManager.Instance.PlaySFXClip(AudioLabel.ClickSFX);
         CLogger.LogError("Credits button not implemented!");
     }
 
     public void WindowedSetting()
     {
+        AudioManager.Instance.PlaySFXClip(AudioLabel.ClickSFX);
         if (CurrentGameSettings.FullScreenMode == FullScreenMode.FullScreenWindow)
         {
             Screen.fullScreenMode = FullScreenMode.Windowed;
@@ -376,6 +387,7 @@ public class MenuManager : MonoBehaviour
 
     public void SoundSetting()
     {
+        AudioManager.Instance.PlaySFXClip(AudioLabel.ClickSFX);
         SoundSliderParent.SetActive(true);
     }
 
@@ -384,35 +396,56 @@ public class MenuManager : MonoBehaviour
         if (InputController.GetInput(InputPurpose.MENU_CHOICE_LEFT))
         {
             CurrentIndex--;
-            if (CurrentIndex < 0)
+            if (CurrentIndex < MinIndex)
             {
                 CurrentIndex++;
             }
-            SoundSliderKnob.transform.localPosition = SoundSliderKnobSettings[CurrentIndex];
-            var volume = CurrentIndex / (SoundSliderKnobSettings.Count - 1);
-            CurrentGameSettings.MasterVolumeIndex = CurrentIndex;
-            CurrentGameSettings.SaveFromMenu();
-            var masterVolume = VolumeFunction(volume);
-            //AudioManager.Instance.AudioMixer.SetFloat(MasterVolumeParameter, masterVolume);
+            SetVolumeSlider(true);
+            AudioManager.Instance.PlaySFXClip(AudioLabel.ClickSFX);
         }
         else if (InputController.GetInput(InputPurpose.MENU_CHOICE_RIGHT))
         {
             CurrentIndex++;
-            if (CurrentIndex > SoundSliderKnobSettings.Count - 1)
+            if (CurrentIndex > MaxIndex)
             {
                 CurrentIndex--;
             }
-            SoundSliderKnob.transform.localPosition = SoundSliderKnobSettings[CurrentIndex];
-            var volume = CurrentIndex / (SoundSliderKnobSettings.Count - 1);
-            CurrentGameSettings.MasterVolumeIndex = CurrentIndex;
-            CurrentGameSettings.SaveFromMenu();
-            var masterVolume = VolumeFunction(volume);
-            //AudioManager.Instance.AudioMixer.SetFloat(MasterVolumeParameter, masterVolume);
+            SetVolumeSlider(true);
+            AudioManager.Instance.PlaySFXClip(AudioLabel.ClickSFX);
         }
         else if (InputController.GetInput(InputPurpose.INTERACT))
         {
             SoundSliderParent.SetActive(false);
+            AudioManager.Instance.PlaySFXClip(AudioLabel.ClickSFX);
         }
+    }
+
+    private void SetVolumeSlider(bool withSave)
+    {
+        if (withSave)
+        {
+            CurrentGameSettings.MasterVolumeIndex = CurrentIndex;
+            CurrentGameSettings.SaveFromMenu();
+        }
+
+        //visuals
+        var soundSliderText = "[";
+        for (int i = 0; i < CurrentIndex; i++)
+        {
+            soundSliderText += SoundLetter;
+        }
+        for (int i = CurrentIndex; i < MaxIndex; i++)
+        {
+            soundSliderText += FillLetter;
+        }
+        soundSliderText += "]";
+        SoundSliderText.text = soundSliderText;
+
+        //Volume
+        var volume = (float) CurrentIndex / MaxIndex;
+        var masterVolume = VolumeFunction(volume);
+        AudioManager.Instance.AudioMixer.SetFloat(MasterVolumeParameterName, masterVolume);
+        CLogger.Log($"Sound set: CurrentIndex={CurrentIndex}, volume={volume}, masterVolume={masterVolume}, MaxIndex={MaxIndex}");
     }
 
     //Assumes 0.0001 < x < 1
@@ -431,11 +464,13 @@ public class MenuManager : MonoBehaviour
 
     public void MusicCredits()
     {
+        AudioManager.Instance.PlaySFXClip(AudioLabel.ClickSFX);
         CLogger.LogError("MusicCredits button not implemented!");
     }
 
     public void Version()
     {
+        AudioManager.Instance.PlaySFXClip(AudioLabel.ClickSFX);
         CLogger.LogError("Version button not implemented!");
     }
 

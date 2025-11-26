@@ -18,6 +18,54 @@ MonoBehaviour:
   LimitChoiceOptionPerNode: 0
   MaxChoiceOptionPerNode: 0
   NodeLinkDatas:
+  - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
+    TargetNodeGuid: 6efc1a03-016a-44af-84aa-30bb646b8e22
+  - BaseNodeGuid: c60b8bee-fa21-4f10-9cf0-5a85d88462da
+    TargetNodeGuid: ddc99ea3-8ef6-41f3-8158-d8b1752e3ac0
+  - BaseNodeGuid: ddc99ea3-8ef6-41f3-8158-d8b1752e3ac0
+    TargetNodeGuid: e3ca37dd-bbd2-464d-852f-54e97e64c3e6
+  - BaseNodeGuid: e3ca37dd-bbd2-464d-852f-54e97e64c3e6
+    TargetNodeGuid: 75c07bf1-543e-413e-91d5-081a0b8e2c71
+  - BaseNodeGuid: 75c07bf1-543e-413e-91d5-081a0b8e2c71
+    TargetNodeGuid: 7d44017b-4954-4f6c-b63e-cf698ab909a2
+  - BaseNodeGuid: a77bcccb-1486-4c3b-9bca-fb68d66fca5d
+    TargetNodeGuid: 61490f64-8019-4fc7-b6d3-e1fc567e19a2
+  - BaseNodeGuid: 61490f64-8019-4fc7-b6d3-e1fc567e19a2
+    TargetNodeGuid: ccb2dc1f-4639-4e01-8435-2504d6a8ecda
+  - BaseNodeGuid: ccb2dc1f-4639-4e01-8435-2504d6a8ecda
+    TargetNodeGuid: 0a75e823-f5d9-4f8c-bb77-74f906cad200
+  - BaseNodeGuid: 0a75e823-f5d9-4f8c-bb77-74f906cad200
+    TargetNodeGuid: 920aa638-5dd5-4594-b0a5-00c4f4dab7d2
+  - BaseNodeGuid: 920aa638-5dd5-4594-b0a5-00c4f4dab7d2
+    TargetNodeGuid: 2f69dc8d-6744-4fb8-9cd8-8d925e6d5ee3
+  - BaseNodeGuid: 1ec5d9d6-2122-4d97-a9a3-7f457fc4c961
+    TargetNodeGuid: 2d32b667-db15-4a1c-8264-c741ebf205b7
+  - BaseNodeGuid: 2d32b667-db15-4a1c-8264-c741ebf205b7
+    TargetNodeGuid: 08c69361-8395-498d-9c9f-7aefe5c3b11a
+  - BaseNodeGuid: 08c69361-8395-498d-9c9f-7aefe5c3b11a
+    TargetNodeGuid: c4324a8e-98b3-4f8a-8c51-cd5ec2d87c3b
+  - BaseNodeGuid: c4324a8e-98b3-4f8a-8c51-cd5ec2d87c3b
+    TargetNodeGuid: 02e72912-89ec-4314-9a25-ffd8f0a483a8
+  - BaseNodeGuid: 878519c4-1d72-4930-bb25-715a15143d0e
+    TargetNodeGuid: 9fbeedaf-cba7-4617-a759-260f0aaeb8ac
+  - BaseNodeGuid: 9fbeedaf-cba7-4617-a759-260f0aaeb8ac
+    TargetNodeGuid: a24fe831-e04a-4db4-b4ab-a0d3c76d1aec
+  - BaseNodeGuid: 7d44017b-4954-4f6c-b63e-cf698ab909a2
+    TargetNodeGuid: a77bcccb-1486-4c3b-9bca-fb68d66fca5d
+  - BaseNodeGuid: a24fe831-e04a-4db4-b4ab-a0d3c76d1aec
+    TargetNodeGuid: 08fc895c-4b8b-4836-b922-0df3a4967121
+  - BaseNodeGuid: 08fc895c-4b8b-4836-b922-0df3a4967121
+    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
+  - BaseNodeGuid: 2f69dc8d-6744-4fb8-9cd8-8d925e6d5ee3
+    TargetNodeGuid: 1ec5d9d6-2122-4d97-a9a3-7f457fc4c961
+  - BaseNodeGuid: f7269a0e-a126-4f38-a14f-ac983946e736
+    TargetNodeGuid: 6d228e2b-2248-439d-b8cf-ad07f87c43ed
+  - BaseNodeGuid: 02e72912-89ec-4314-9a25-ffd8f0a483a8
+    TargetNodeGuid: f7269a0e-a126-4f38-a14f-ac983946e736
+  - BaseNodeGuid: 6d228e2b-2248-439d-b8cf-ad07f87c43ed
+    TargetNodeGuid: 878519c4-1d72-4930-bb25-715a15143d0e
+  - BaseNodeGuid: 6efc1a03-016a-44af-84aa-30bb646b8e22
+    TargetNodeGuid: c60b8bee-fa21-4f10-9cf0-5a85d88462da
   - BaseNodeGuid: 03d06ef8-f5b3-44d3-a589-c09d4ed41497
     TargetNodeGuid: 6682db5a-c926-4ec1-a784-d936b7510b67
   - BaseNodeGuid: 6682db5a-c926-4ec1-a784-d936b7510b67
@@ -48,8 +96,6 @@ MonoBehaviour:
     TargetNodeGuid: 2dfc0a24-b4a2-4466-8589-dd1cf5f97e72
   - BaseNodeGuid: 2dfc0a24-b4a2-4466-8589-dd1cf5f97e72
     TargetNodeGuid: e821cad2-c7d4-4b8c-af98-1373ed8a1383
-  - BaseNodeGuid: bbb6b90f-03ee-481f-9002-cfa6a6cf3d06
-    TargetNodeGuid: 9a071f9e-7812-4a7c-a6e7-c9721266a226
   - BaseNodeGuid: feb6638d-ba99-4fe9-96c1-7042493b1c74
     TargetNodeGuid: f0493546-043c-484c-8707-c3e8fa894f29
   - BaseNodeGuid: feb6638d-ba99-4fe9-96c1-7042493b1c74
@@ -74,6 +120,16 @@ MonoBehaviour:
     TargetNodeGuid: 595c5530-8b92-4103-9af8-64d2f87d5bf0
   - BaseNodeGuid: e821cad2-c7d4-4b8c-af98-1373ed8a1383
     TargetNodeGuid: bbb6b90f-03ee-481f-9002-cfa6a6cf3d06
+  - BaseNodeGuid: bbb6b90f-03ee-481f-9002-cfa6a6cf3d06
+    TargetNodeGuid: aed3eece-565b-4712-81cf-89e017bf4fc7
+  - BaseNodeGuid: aed3eece-565b-4712-81cf-89e017bf4fc7
+    TargetNodeGuid: e8e4fcb5-0b21-4d81-bac4-52a0dcb9ff38
+  - BaseNodeGuid: e8e4fcb5-0b21-4d81-bac4-52a0dcb9ff38
+    TargetNodeGuid: f026e697-df90-413f-9675-66457df5c29f
+  - BaseNodeGuid: f026e697-df90-413f-9675-66457df5c29f
+    TargetNodeGuid: b786d6d8-053e-47c6-91bd-7d55189bc7b8
+  - BaseNodeGuid: b786d6d8-053e-47c6-91bd-7d55189bc7b8
+    TargetNodeGuid: 9a071f9e-7812-4a7c-a6e7-c9721266a226
   DialogueChoiceNodeDatas:
   - NodeGuid: feb6638d-ba99-4fe9-96c1-7042493b1c74
     Position: {x: 3344, y: 999}
@@ -299,7 +355,36 @@ MonoBehaviour:
       OutputGuid: e821cad2-c7d4-4b8c-af98-1373ed8a1383
       TextLanguage:
       - languageEnum: 0
-        LanguageGenericType: Give back colors
+        LanguageGenericType: Turn on the machine
+      - languageEnum: 1
+        LanguageGenericType: Choice 01
+      RequiredFlag: {fileID: 0}
+  - NodeGuid: aed3eece-565b-4712-81cf-89e017bf4fc7
+    Position: {x: 8153, y: 999}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 5
+    DialogueNodePorts:
+    - PortGuid: f6d0977c-ed1d-42b0-bb1d-13a7e35bc9a1
+      InputGuid: e8e4fcb5-0b21-4d81-bac4-52a0dcb9ff38
+      OutputGuid: aed3eece-565b-4712-81cf-89e017bf4fc7
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: It's not working
       - languageEnum: 1
         LanguageGenericType: Choice 01
       RequiredFlag: {fileID: 0}
@@ -528,7 +613,7 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: 'Milkcat: Of course we can Mayor! It''s all kittens under
+      LanguageGenericType: 'Milkcat: Of course we can Mayor! It''s all milk under
         the bridge now.'
     - languageEnum: 1
       LanguageGenericType: 
@@ -579,7 +664,7 @@ MonoBehaviour:
       LanguageGenericType: 
     Duration: 10
   - NodeGuid: 2dfc0a24-b4a2-4466-8589-dd1cf5f97e72
-    Position: {x: 7361, y: 999}
+    Position: {x: 7360, y: 999}
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
@@ -594,8 +679,8 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: But, maybe it's time to turn back. I think we have all
-        learned a lot, humr humr.
+      LanguageGenericType: But, maybe it's time for us to get back our colors, humr
+        humr.
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
@@ -604,7 +689,7 @@ MonoBehaviour:
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
-    Event: FinaleMomentFlagEvent
+    Event: 
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
@@ -619,11 +704,73 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
+  - NodeGuid: e8e4fcb5-0b21-4d81-bac4-52a0dcb9ff38
+    Position: {x: 8509, y: 999}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Dr. Milo: You see Mayor, I never got to complete the
+        invention. The reversal feature is still a work-in-progress.'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: b786d6d8-053e-47c6-91bd-7d55189bc7b8
+    Position: {x: 9021, y: 999}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: FinaleMomentFlagEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: ...
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: f026e697-df90-413f-9675-66457df5c29f
+    Position: {x: 8771, y: 999}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Mayor: Haha! I guess we are stuck like this for a little
+        while longer, humr humr.'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
   ConditionalNodeDatas: []
   TimerChoiceNodeDatas: []
   EndNodeDatas:
   - NodeGuid: 9a071f9e-7812-4a7c-a6e7-c9721266a226
-    Position: {x: 8152, y: 999}
+    Position: {x: 9294, y: 999}
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 

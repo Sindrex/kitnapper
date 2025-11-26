@@ -18,6 +18,11 @@ public class CameraController : MonoBehaviour
     public bool IsMoving;
     public bool MoveAnimPlaying;
 
+    public GameObject Player;
+    public Animator FadeAnimator;
+    public string FadeInAnimation;
+    public string FadeOutAnimation;
+
     //singleton
     public static CameraController Instance { get; private set; }
     void Awake()
@@ -95,5 +100,15 @@ public class CameraController : MonoBehaviour
             y++;
         }
         return new Vector2(x, y);
+    }
+
+    public void FadeIn()
+    {
+        FadeAnimator.Play(FadeInAnimation);
+    }
+
+    public void FadeOut()
+    {
+        FadeAnimator.Play(FadeOutAnimation);
     }
 }
