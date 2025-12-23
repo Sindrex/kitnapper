@@ -62,6 +62,11 @@ public class MenuManager : MonoBehaviour
     public int CurrentIndex;
     private const string MasterVolumeParameterName = "MasterVolume";
 
+    //paw
+    public GameObject Paw;
+    public Vector3 PawPosition;
+    public List<Vector3> PawPositions;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -228,12 +233,14 @@ public class MenuManager : MonoBehaviour
             IsOnYes = true;
             YesText.fontStyle = FontStyle.Bold;
             NoText.fontStyle = FontStyle.Normal;
+            Paw.transform.localPosition = YesText.transform.localPosition + PawPosition;
         }
         else if (InputController.GetInput(InputPurpose.MENU_CHOICE_DOWN))
         {
             IsOnYes = false;
             YesText.fontStyle = FontStyle.Normal;
             NoText.fontStyle = FontStyle.Bold;
+            Paw.transform.localPosition = NoText.transform.localPosition + PawPosition;
         }
     }
 
@@ -331,6 +338,7 @@ public class MenuManager : MonoBehaviour
             MainButtons.SetActive(false);
             IsOnYes = false;
             NoText.fontStyle = FontStyle.Bold;
+            Paw.transform.localPosition = NoText.transform.localPosition + PawPosition;
         }
         else
         {
@@ -483,6 +491,11 @@ public class MenuManager : MonoBehaviour
 
         var selectedText = GetSelectedText();
         selectedText.Key.fontStyle = FontStyle.Bold;
+
+        if(!NewGameOverwrite.activeSelf)
+        {
+            Paw.transform.localPosition = selectedText.Key.transform.localPosition + PawPosition;
+        }
     }
 
     private KeyValuePair<Text, Action> GetSelectedText()

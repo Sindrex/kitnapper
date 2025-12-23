@@ -9,50 +9,33 @@ Goes for many, but should add relevant questioning:
 * Midnight Rose (After Florist explains)
 * What do you think about the color situation? (always)
 
-Sinbad move:
-	-474+703, -609+663 -> 229, 54
-	-742+973, -309+362
+* Signs
+* secondary characters
+ * Catsune Miku -> cafe
+ * Catnip Dealer -> Behind the office, between trees, you get speedy (but you have to do him a favour first)
+ * Manekineko japanese cat -> Shrine
+ * Kira diva cat -> Cafe
+ * Padagast (archeology proffesor) -> University
+ * Saruman (archeology student) -> University
+ * Pusur (old outside cat) -> Park
+ * Sindrex developer cat -> Offices
+ * Trond music cat
+ * CF piano cat
+ * Onyx hidden cat (florist desk)
+ * Marri -> Florist customer
 
-Telephone 
-* should have ring animation
-* Should have ??? and Mayor name plates.
+ Other names that can be used:
+ * Sadaharu (Gintama) -> 
+ * Kuro (Blue Exorcist) ->
+ * Turbo Granny
+ * Junji ito cats
+ * Bakko (kaiju 8)
+ * Kuraha (Noragami)
+ * Jiji (Kiki)
+ * Kyo (Fruit basket)
 
-Butterfly
-* Should have fly animation
-
-Florist:
-* Should have Question conditonal like everyone
-* Drinks
-* FloristInitialDialogueEvent shouldnt be triggered twice. Maybe finishable?
-* Move Florist after Moment to inspect flowers. New dialogue
-
-Luna:
-* Maybe add conditional for "Last night?"
-* Maybe new dialogue for Locked door.
-* Luna Florist Moment double space?
-* Luna Florist Moment collider issue still
-* Possibly move Luna to Flower shop after Moment. New dialogue
-
-Cattender:
-* Double space at start?
-
-Richard:
-* Welcome to C.I.T.
-* one of them IS* a regular
-
-Milo
-* Dialogue for when looking for butterfly
-* Should only ask about butterfly once?
-
-Milo Findus:
-* Richard or whatever his name was "who did it"
-* anything else*
-* Move is running a few times before stopping.
-* Milo after: Double space and ... Richard?
-
-Findus Sinbad
-* Slightly later on "who are you?"
-* Ongoing dialogue for searching for toy for Sinbad
-* After find toy, something wrong with anim in.
-* toy ball -> ball toy
-* Collider overlap sinbad and moment
+* Crumbled path down to Shrine
+* Garves behind shrine -> Homages to own games and creations: 
+ * Games: Boolean, Snake Challenge, Eusford Mansion
+ * Stories: Saiko + Shuujin, Aiden (+ Erin), Jake/Nick/Kim, Maclein/Nasha, Joshua/Kay, Vanessa/Keera Skye, Crowley/Rania
+ * 
