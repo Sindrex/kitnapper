@@ -5,7 +5,7 @@ using UnityEngine;
 /// </summary>
 public class CameraController : MonoBehaviour
 {
-    public float Speed = 20.0f;
+    public float Speed = 5f; //default 5
 
     //Flags
     public bool CanMove = true;

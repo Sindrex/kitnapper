@@ -12,12 +12,10 @@ Goes for many, but should add relevant questioning:
 * Signs
 * secondary characters
  * Catsune Miku -> cafe
- * Catnip Dealer -> Behind the office, between trees, you get speedy (but you have to do him a favour first)
- * Manekineko japanese cat -> Shrine
+ * Catnip Dealer () -> Behind the office, between trees, you get speedy (but you have to do him a favour first)
  * Kira diva cat -> Cafe
  * Padagast (archeology proffesor) -> University
  * Saruman (archeology student) -> University
- * Pusur (old outside cat) -> Park
  * Sindrex developer cat -> Offices
  * Trond music cat
  * CF piano cat
@@ -27,15 +25,10 @@ Goes for many, but should add relevant questioning:
  Other names that can be used:
  * Sadaharu (Gintama) -> 
  * Kuro (Blue Exorcist) ->
- * Turbo Granny
+ * Turbo Granny (ghost in graveyard? After talking to all graves?)
  * Junji ito cats
  * Bakko (kaiju 8)
  * Kuraha (Noragami)
  * Jiji (Kiki)
  * Kyo (Fruit basket)
-
-* Crumbled path down to Shrine
-* Garves behind shrine -> Homages to own games and creations: 
- * Games: Boolean, Snake Challenge, Eusford Mansion
- * Stories: Saiko + Shuujin, Aiden (+ Erin), Jake/Nick/Kim, Maclein/Nasha, Joshua/Kay, Vanessa/Keera Skye, Crowley/Rania
- * 
+ 

@@ -10,6 +10,8 @@ public enum AudioLabel
 {
     MenuMusic,
     ClickSFX
+    //music trond: Menu/Player House, Forest, Town, Cattelatte, (Shrine, University, Credits)
+    //music cf: FloristMoment
 }
 
 [Serializable]

@@ -15,7 +15,8 @@ public class EventController : EventBase
 
     public List<GameObject> TargetObjects;
     public List<SetGameFlagCombo> SetFlags;
-    public string NextEvent; //note that this bypasses any requirements
+    public string NextEvent;
+    public EventBase NextEventBase; //activate custom events (without state)
     public string Id;
 
     // Start is called before the first frame update
@@ -77,6 +78,12 @@ public class EventController : EventBase
             if(nextEvent != null && nextEvent.CheckRequirements())
             {
                 nextEvent.Activate(true);
+            }
+
+            if(NextEventBase != null && NextEventBase.CheckRequirements())
+            {
+                CLogger.Log("Activating NextEventBase");
+                NextEventBase.Activate(true);
             }
         }
     }
