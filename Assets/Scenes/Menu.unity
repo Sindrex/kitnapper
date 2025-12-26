@@ -2339,6 +2339,8 @@ MonoBehaviour:
     Clip: {fileID: 8300000, guid: 2305825ca4df2e940a0e8efbd501dec4, type: 3}
   - Label: 1
     Clip: {fileID: 8300000, guid: 9706b94fe49eefd4f8a368c60c009eda, type: 3}
+  - Label: 2
+    Clip: {fileID: 8300000, guid: 7f727920712ab0d4389cdd292b97e3bb, type: 3}
 --- !u!4 &1425641847
 Transform:
   m_ObjectHideFlags: 0

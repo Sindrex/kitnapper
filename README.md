@@ -11,15 +11,12 @@ Goes for many, but should add relevant questioning:
 
 * Signs
 * secondary characters
- * Catsune Miku -> cafe
- * Catnip Dealer () -> Behind the office, between trees, you get speedy (but you have to do him a favour first)
- * Kira diva cat -> Cafe
+ * Kira diva cat -> Town Hall
  * Padagast (archeology proffesor) -> University
  * Saruman (archeology student) -> University
  * Sindrex developer cat -> Offices
  * Trond music cat
  * CF piano cat
- * Onyx hidden cat (florist desk)
  * Marri -> Florist customer
 
  Other names that can be used:

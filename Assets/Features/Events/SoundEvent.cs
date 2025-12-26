@@ -2,17 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SoundEvent : MonoBehaviour
+public class SoundEvent : EventBase
 {
-    // Start is called before the first frame update
-    void Start()
+    public AudioLabel AudioLabelToPlay;
+    public bool IsMusic;
+    public override void Activate(bool activateNextEvent)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        CLogger.Log("SoundEvent activated!");
+        if (IsMusic)
+        {
+            AudioManager.Instance.PlayMusicClip(AudioLabelToPlay);
+        }
+        else
+        {
+            AudioManager.Instance.PlaySFXClip(AudioLabelToPlay);
+        }
     }
 }

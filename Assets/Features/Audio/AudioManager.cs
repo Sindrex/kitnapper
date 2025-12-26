@@ -9,7 +9,8 @@ using UnityEngine.Audio;
 public enum AudioLabel
 {
     MenuMusic,
-    ClickSFX
+    ClickSFX,
+    FloristMoment
     //music trond: Menu/Player House, Forest, Town, Cattelatte, (Shrine, University, Credits)
     //music cf: FloristMoment
 }

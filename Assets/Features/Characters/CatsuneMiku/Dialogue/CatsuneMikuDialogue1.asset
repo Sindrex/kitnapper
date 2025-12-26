@@ -1,0 +1,185 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1946feaec865d344dabf0419b1c94973, type: 3}
+  m_Name: CatsuneMikuDialogue1
+  m_EditorClassIdentifier: 
+  AllowDialogueSave: 0
+  BlockingReopeningDialogue: 0
+  ResetSavedNodeOnChoice: 1
+  LimitChoiceOptionPerNode: 0
+  MaxChoiceOptionPerNode: 8
+  NodeLinkDatas:
+  - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
+    TargetNodeGuid: bc211093-b3a3-47ee-9e87-636deeaee570
+  - BaseNodeGuid: 1ad5ce1b-198e-4471-b727-2d7a7fce402a
+    TargetNodeGuid: 11b94d13-bb8b-4cf1-92c1-83e4a7830788
+  - BaseNodeGuid: 11b94d13-bb8b-4cf1-92c1-83e4a7830788
+    TargetNodeGuid: c9143c93-35f8-4488-8cc7-36138285f85c
+  - BaseNodeGuid: bc211093-b3a3-47ee-9e87-636deeaee570
+    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
+  - BaseNodeGuid: bc211093-b3a3-47ee-9e87-636deeaee570
+    TargetNodeGuid: 25b3ff0f-3d91-49ce-9b1c-79911ab3832f
+  - BaseNodeGuid: 25b3ff0f-3d91-49ce-9b1c-79911ab3832f
+    TargetNodeGuid: e412d63d-e2c4-4260-8992-4809493e463a
+  - BaseNodeGuid: 25b3ff0f-3d91-49ce-9b1c-79911ab3832f
+    TargetNodeGuid: 1ad5ce1b-198e-4471-b727-2d7a7fce402a
+  DialogueChoiceNodeDatas:
+  - NodeGuid: bc211093-b3a3-47ee-9e87-636deeaee570
+    Position: {x: 686, y: 196}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Catsune Miku: Detective! The world is all scary black
+        and white! You are working on it right?'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 5
+    DialogueNodePorts:
+    - PortGuid: 5b7f370e-7ceb-4156-9a8b-d71505f12221
+      InputGuid: 7838e825-39c1-416f-8753-1589000d7155
+      OutputGuid: bc211093-b3a3-47ee-9e87-636deeaee570
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Goodbye
+      - languageEnum: 1
+        LanguageGenericType: Choice 01
+      RequiredFlag: {fileID: 0}
+    - PortGuid: 835b1d25-b2f7-43b6-b736-d55ac360808e
+      InputGuid: 25b3ff0f-3d91-49ce-9b1c-79911ab3832f
+      OutputGuid: bc211093-b3a3-47ee-9e87-636deeaee570
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Question
+      - languageEnum: 1
+        LanguageGenericType: Choice 02
+      RequiredFlag: {fileID: 0}
+  - NodeGuid: 25b3ff0f-3d91-49ce-9b1c-79911ab3832f
+    Position: {x: 1088, y: 374}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Ask me anything!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 5
+    DialogueNodePorts:
+    - PortGuid: ee0d8d7b-6b0b-4c5d-8043-3af356c7218a
+      InputGuid: e412d63d-e2c4-4260-8992-4809493e463a
+      OutputGuid: 25b3ff0f-3d91-49ce-9b1c-79911ab3832f
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Goodbye
+      - languageEnum: 1
+        LanguageGenericType: Choice 01
+      RequiredFlag: {fileID: 0}
+    - PortGuid: 0f63b787-bd5e-4759-b5a4-ea17c43bb7a4
+      InputGuid: 1ad5ce1b-198e-4471-b727-2d7a7fce402a
+      OutputGuid: 25b3ff0f-3d91-49ce-9b1c-79911ab3832f
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Last night
+      - languageEnum: 1
+        LanguageGenericType: Choice 02
+      RequiredFlag: {fileID: 0}
+  DialogueNodeDatas:
+  - NodeGuid: 1ad5ce1b-198e-4471-b727-2d7a7fce402a
+    Position: {x: 1489, y: 374}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Last night? I was out of town at a wrestling event.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 11b94d13-bb8b-4cf1-92c1-83e4a7830788
+    Position: {x: 1741, y: 374}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: I tackled my opponent with an Angel Suplex! I'm sure they'll
+        be alright... Eventually.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  ConditionalNodeDatas: []
+  TimerChoiceNodeDatas: []
+  EndNodeDatas:
+  - NodeGuid: 7838e825-39c1-416f-8753-1589000d7155
+    Position: {x: 1098, y: 196}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: c9143c93-35f8-4488-8cc7-36138285f85c
+    Position: {x: 2014, y: 374}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: e412d63d-e2c4-4260-8992-4809493e463a
+    Position: {x: 1475, y: 257}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  EventNodeDatas: []
+  StartNodeDatas:
+  - NodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
+    Position: {x: 321, y: 196}
+    startID: 
+  RandomNodeDatas: []
+  CommandNodeDatas: []
+  IfNodeDatas: []
+  AdvancedIFNodeDatas: []
+  AdvancedChoiceNodeDatas: []
+  AdvancedTimeChoiceNodeDatas: []
+  ResetSavedNodeDatas: []
+  MusicNodeDatas: []
