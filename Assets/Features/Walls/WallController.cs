@@ -8,18 +8,7 @@ public class WallController : MonoBehaviour
     public Vector2 CollisionVector = new Vector2();
     public bool IsXWall;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
+    /*
     void OnTriggerEnter2D(Collider2D other)
     {
         CollisionVector = CameraController.GetMovementVector();
@@ -40,5 +29,5 @@ public class WallController : MonoBehaviour
         //Debug.Log($"Wall OnTriggerExit2D Triggered: Removing {CollisionVector}");
         CollisionVectors.Remove(CollisionVector);
         CollisionVector = new Vector2();
-    }
+    }*/
 }

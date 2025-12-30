@@ -10,11 +10,9 @@ Repository for the game project The Color Kitnapper
   * What do you think about the color situation? (always)
 * secondary characters
   * Trond music cat -> Outside Town Hall
-  * CF piano cat -> Town hall
   * Marri -> Florist customer
 * Cat norris once cought a cold… with his own paws!
 * Jukebox in the cafe
-* 
 
 Other names that can be used:
 * Sadaharu (Gintama) -> 

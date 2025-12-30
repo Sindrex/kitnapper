@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Runtime.Serialization.Formatters;
 using UnityEngine;
 
 /// <summary>
@@ -6,8 +7,20 @@ using UnityEngine;
 /// </summary>
 public class PlayerController : MonoBehaviour
 {
+    public Vector2 Position => new Vector2(this.transform.position.x, this.transform.position.y);
+
     public List<GameObject> InteractAnimationFrames;
     public float InteractAnimationTick;
+
+    //movement
+    public bool CanMove = true;
+    public Rigidbody2D PlayerRigidbody;
+    public float Speed = 300f;
+    public Animator PlayerAnimator;
+    public string IdleAnimatorState;
+    public string MoveAnimatorState;
+    public bool IsMoving;
+    public bool MoveAnimPlaying;
 
     //singleton
     public static PlayerController Instance { get; private set; }
@@ -23,6 +36,51 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
+    }
+
+    void FixedUpdate()
+    {
+        if (!CanMove) return;
+        var movementVector = GetMovementVector();
+        if(movementVector.x != 0 || movementVector.y != 0)
+        {
+            IsMoving = true;
+            if (!MoveAnimPlaying)
+            {
+                PlayerAnimator.Play(MoveAnimatorState);
+                MoveAnimPlaying = true;
+            }
+        }
+        else
+        {
+            PlayerAnimator.Play(IdleAnimatorState);
+            IsMoving = false;
+            MoveAnimPlaying = false;
+        }
+        PlayerRigidbody.velocity = movementVector * Speed * Time.deltaTime;
+    }
+
+    public static Vector2 GetMovementVector()
+    {
+        var x = 0;
+        var y = 0;
+        if (InputController.GetInput(InputPurpose.MOVE_LEFT))
+        {
+            x--;
+        }
+        if (InputController.GetInput(InputPurpose.MOVE_RIGHT))
+        {
+            x++;
+        }
+        if (InputController.GetInput(InputPurpose.MOVE_DOWN))
+        {
+            y--;
+        }
+        if (InputController.GetInput(InputPurpose.MOVE_UP))
+        {
+            y++;
+        }
+        return new Vector2(x, y);
     }
 
     public void ShowInteractHint()

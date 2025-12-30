@@ -35,7 +35,7 @@ public class FinaleMomentEventController : EventBase
         CameraController.Instance.FadeOut();
         yield return new WaitForSeconds(FadeWaitSeconds);
         CameraController.Instance.FadeIn();
-        CameraController.Instance.CanMove = false;
+        PlayerController.Instance.CanMove = false;
         var newPos = PlayerTeleportPosition.transform.position;
         CameraController.Instance.gameObject.transform.position = new Vector3(newPos.x, newPos.y, -10);
         CameraController.Instance.Player.SetActive(false);
@@ -44,7 +44,7 @@ public class FinaleMomentEventController : EventBase
         CameraController.Instance.FadeOut();
         yield return new WaitForSeconds(FadeWaitSeconds);
         CameraController.Instance.FadeIn();
-        CameraController.Instance.CanMove = true;
+        PlayerController.Instance.CanMove = true;
         CameraController.Instance.gameObject.transform.localPosition = PlayerStartPosition;
         CameraController.Instance.Player.SetActive(true);
     }

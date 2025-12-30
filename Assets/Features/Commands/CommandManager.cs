@@ -32,7 +32,7 @@ public class CommandManager : MonoBehaviour
     {
         if (InputController.GetInput(InputPurpose.COMMAND_OPEN) && !IsCommandTexting)
         {
-            CameraController.Instance.CanMove = false;
+            PlayerController.Instance.CanMove = false;
             CommandParent.SetActive(true);
             EventSystem.current.SetSelectedGameObject(CommandInputField.gameObject, null);
             //CommandInputField.OnPointerClick(null);
@@ -42,7 +42,7 @@ public class CommandManager : MonoBehaviour
         else if (InputController.GetInput(InputPurpose.COMMAND_ENTER))
         {
             ParseCommand(CommandInputField.text);
-            CameraController.Instance.CanMove = true;
+            PlayerController.Instance.CanMove = true;
             IsCommandTexting = false;
             CommandInputField.text = "";
             CommandParent.SetActive(false);

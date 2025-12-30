@@ -16,8 +16,8 @@ public class GameSettings
 
     private GamePosition GetPlayerPosition() => new GamePosition
     {
-        X = CameraController.Instance.Position.x,
-        Y = CameraController.Instance.Position.y
+        X = PlayerController.Instance.Position.x,
+        Y = PlayerController.Instance.Position.y
     };
 
     public void Save()
@@ -44,7 +44,7 @@ public class GamePosition
 {
     public float X { get; set; } = 0;
     public float Y { get; set; } = 0;
-    public float Z { get; set; } = -10;
+    public float Z { get; set; } = 0;
 
     public Vector3 ToVector3() => new Vector3(X, Y, Z);
 }

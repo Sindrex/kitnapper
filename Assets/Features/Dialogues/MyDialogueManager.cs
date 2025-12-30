@@ -119,7 +119,7 @@ public class MyDialogueManager : MonoBehaviour
 
     public void SetText(string text)
     {
-        CameraController.Instance.CanMove = false;
+        PlayerController.Instance.CanMove = false;
         DialogueChoiceContentParent.DestroyMyChildren();
         IsDialogueChoice = false;
         DialogueParent.SetActive(true);
@@ -133,7 +133,7 @@ public class MyDialogueManager : MonoBehaviour
 
     public void LoadChoiceDialogue(DialogueChoiceNodeData choiceNodeData)
     {
-        CameraController.Instance.CanMove = false;
+        PlayerController.Instance.CanMove = false;
         CurrentDialogueChoice = 0;
         IsDialogueChoice = true;
         DialogueParent.SetActive(true);
@@ -186,6 +186,6 @@ public class MyDialogueManager : MonoBehaviour
         DialogueParent.SetActive(false);
         DialogueChoiceContentParent.DestroyMyChildren();
         IsDialogueChoice = false;
-        CameraController.Instance.CanMove = true;
+        PlayerController.Instance.CanMove = true;
     }
 }

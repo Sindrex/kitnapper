@@ -41,8 +41,8 @@ public class GameManager : MonoBehaviour
         }
 
         //setup camera (BEFORE events)
-        CLogger.Log($"Setting up MainCamera at ({CurrentGameSettings.PlayerPosition.X}, {CurrentGameSettings.PlayerPosition.Y}, {CurrentGameSettings.PlayerPosition.Z}).");
-        MainCamera.transform.position = CurrentGameSettings.PlayerPosition.ToVector3();
+        CLogger.Log($"Setting up Player at ({CurrentGameSettings.PlayerPosition.X}, {CurrentGameSettings.PlayerPosition.Y}, {CurrentGameSettings.PlayerPosition.Z}).");
+        PlayerController.Instance.transform.position = CurrentGameSettings.PlayerPosition.ToVector3();
 
         //Setup events
         CLogger.Log($"Setting up {CurrentGameSettings.EventStates.Count} events from EventStates!");
