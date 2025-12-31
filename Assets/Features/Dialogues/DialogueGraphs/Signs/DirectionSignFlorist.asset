@@ -47,7 +47,7 @@ MonoBehaviour:
         ^-- Nepeta Florist
 
         <--
-        Shrine'
+        Park'
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
@@ -67,7 +67,7 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: 'Cattelatte -->
+      LanguageGenericType: 'CIT Offices -->
 
         University -->
 
