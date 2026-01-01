@@ -1,16 +1,15 @@
 # kitnapper
 Repository for the game project The Color Kitnapper
 
-# Notes and TODO:
-* Goes for many, but should add relevant questioning:
+# TODO:
+* Add relevant questioning to all characters:
   * Last night (always)
   * What do you think about the color situation? (always)
   * Have you seen Poppy? (before FloristLunaMoment)
   * Have you seen Findus Ball Toy? (before SinbadFindusMoment)
   * Midnight Rose (After Florist explains)
-* Cat norris once cought a cold… with his own paws!
-* Jukebox in the cafe
-  * Play unlocked songs. Song is unlocked after hearing it once, including Moment songs.
+* Playtest build and find dialogue that is too long:
+  * Example 1
 
 Other names that can be used:
 * Sadaharu (Gintama) -> 
@@ -33,7 +32,10 @@ Easter eggs:
 * Have both ups and downs with catnip -> Catnip dealer
 
 Achivs:
-* Finish the main story / the game
+* Finish the main story / the game: "Catch the Color Kitnapper"
 * Talk to every character
 * Find all Easter eggs
 * 
+
+Other:
+* "Cat norris once cought a cold… with his own paws!"

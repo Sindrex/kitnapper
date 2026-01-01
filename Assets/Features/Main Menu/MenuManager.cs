@@ -46,8 +46,10 @@ public class MenuManager : MonoBehaviour
     public Text SText;
     public Text DText;
     public Text EText;
+    public Text RText;
     public int KeysClicked = 0;
     public float IntroKeysWaitForSeconds = 1;
+    public GameObject MainView;
 
     //Settings
     public Text FullScreenModeText;
@@ -67,6 +69,18 @@ public class MenuManager : MonoBehaviour
     public Vector3 PawPosition;
     public List<Vector3> PawPositions;
 
+    //singleton
+    public static MenuManager Instance { get; private set; }
+    void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            return;
+        }
+        Destroy(this.gameObject);
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -85,6 +99,8 @@ public class MenuManager : MonoBehaviour
         //Setup
         NewGameOverwrite.SetActive(false);
         MainButtons.SetActive(false);
+        MainView.SetActive(false);
+        Paw.SetActive(false);
         IntroKeys.SetActive(true);
         SoundSliderParent.SetActive(false);
 
@@ -115,6 +131,7 @@ public class MenuManager : MonoBehaviour
         Cursor.visible = false;
 
         //menu music
+        AudioManager.Instance.PlayMusicClip(AudioLabel.FloristMoment);
         AudioManager.Instance.PlayMusicClip(AudioLabel.MenuMusic);
     }
 
@@ -138,6 +155,8 @@ public class MenuManager : MonoBehaviour
             else
             {
                 MainButtons.SetActive(true);
+                MainView.SetActive(true);
+                Paw.SetActive(true);
                 IntroKeys.SetActive(false);
             }
         }
@@ -199,17 +218,28 @@ public class MenuManager : MonoBehaviour
                 KeysClicked++;
             }
         }
-
-        if (KeysClicked == 6)
+        if (InputController.GetInput(InputPurpose.DIALOGUE_LOG_OPEN))
         {
-            StartCoroutine("WaitForIntroKeysFinished");
+            if (RText.fontStyle != FontStyle.Bold)
+            {
+                RText.fontStyle = FontStyle.Bold;
+                RText.text = $"<color=\"Green\">{RText.text}</color>";
+                KeysClicked++;
+            }
+        }
+
+        if (KeysClicked == 7)
+        {
+            StartCoroutine(WaitForIntroKeysFinished());
         }
     }
 
     IEnumerator WaitForIntroKeysFinished()
     {
         yield return new WaitForSeconds(IntroKeysWaitForSeconds);
+        MainView.SetActive(true);
         MainButtons.SetActive(true);
+        Paw.SetActive(true);
         IntroKeys.SetActive(false);
         CurrentGameSettings.FirstTimeBoot = false;
         CurrentGameSettings.SaveFromMenu();

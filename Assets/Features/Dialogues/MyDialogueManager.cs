@@ -129,6 +129,10 @@ public class MyDialogueManager : MonoBehaviour
         CurrentTextList = text.ToCharArray().Reverse().ToList();
         IsBusySpawningLetters = true;
         CurrentLetterSpawnTime = 0;
+
+        //save in GameSettings
+        GameManager.Instance.CurrentGameSettings.DialogueLog.Add(text);
+        GameManager.Instance.CurrentGameSettings.Save();
     }
 
     public void LoadChoiceDialogue(DialogueChoiceNodeData choiceNodeData)
@@ -153,6 +157,10 @@ public class MyDialogueManager : MonoBehaviour
             DialogueChoiceTexts.Add(choice.TextLanguage[0].LanguageGenericType);
             DialogueChoiceRequiredFlags.Add(choice.RequiredFlag);
         }
+
+        //save in GameSettings
+        GameManager.Instance.CurrentGameSettings.DialogueLog.Add(text);
+        GameManager.Instance.CurrentGameSettings.Save();
     }
 
     private void LoadCurrentChoiceDialogueChoices()

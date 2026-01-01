@@ -14,7 +14,7 @@ public class CatnipEvent : EventBase
         CLogger.Log("CatnipEvent activated!");
         var gameSettings = GameManager.Instance.CurrentGameSettings;
         var sum = gameSettings.GameFlags.Count;
-        var evenSum = sum % 2 == 0;
+        var evenSum = sum % 2 == 0; //Pseudo-random
         OldSpeed = PlayerController.Instance.Speed;
         if (evenSum)
         {

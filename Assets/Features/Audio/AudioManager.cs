@@ -66,6 +66,22 @@ public class AudioManager : MonoBehaviour
         var audioClip = AudioClips.FirstOrDefault(e => e.Label == audioLabel).Clip;
         MusicSource.clip = audioClip;
         MusicSource.Play(); //loops
+
+        //add to unlocked songs from game or manu
+        var gameSettingsGame = GameManager.Instance?.CurrentGameSettings;
+        var gameSettignsMenu = MenuManager.Instance?.CurrentGameSettings;
+        if (gameSettingsGame != null && !gameSettingsGame.UnlockedSongs.Contains(audioLabel))
+        {
+            CLogger.Log($"Adding {audioLabel} to UnlockedSongs from game");
+            gameSettingsGame.UnlockedSongs.Add(audioLabel);
+            gameSettingsGame.SaveFromMenu();
+        }
+        if (gameSettignsMenu != null && !gameSettignsMenu.UnlockedSongs.Contains(audioLabel))
+        {
+            CLogger.Log($"Adding {audioLabel} to UnlockedSongs from menu");
+            gameSettignsMenu.UnlockedSongs.Add(audioLabel);
+            gameSettignsMenu.SaveFromMenu();
+        }
     }
 
     public void FixedUpdate()
