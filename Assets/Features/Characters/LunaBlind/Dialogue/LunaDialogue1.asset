@@ -18,91 +18,53 @@ MonoBehaviour:
   LimitChoiceOptionPerNode: 0
   MaxChoiceOptionPerNode: 8
   NodeLinkDatas:
-  - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
-    TargetNodeGuid: 6efc1a03-016a-44af-84aa-30bb646b8e22
-  - BaseNodeGuid: 387c6883-214b-4792-9fb7-a702668501be
-    TargetNodeGuid: 8d0cae8d-9955-47cf-b917-3245bf1fe72c
+  - BaseNodeGuid: 9d3dfb4b-96e2-4a83-9201-ccb71cbe0e1f
+    TargetNodeGuid: 25917b06-a018-4050-b9bf-a96a1563bc19
   - BaseNodeGuid: 25f936bd-798f-4c3d-9d5c-65cb7e771398
     TargetNodeGuid: ae8a2701-2e80-4873-ba39-079ac4d8c439
   - BaseNodeGuid: ae8a2701-2e80-4873-ba39-079ac4d8c439
     TargetNodeGuid: e56d670a-166a-458b-bcea-972ad496a64c
-  - BaseNodeGuid: f751c2b0-46cc-4a63-9344-a68b4e784977
-    TargetNodeGuid: c0f3351b-9180-4a81-93fa-f89a8a29ccd6
-  - BaseNodeGuid: 8d0cae8d-9955-47cf-b917-3245bf1fe72c
-    TargetNodeGuid: f751c2b0-46cc-4a63-9344-a68b4e784977
-  - BaseNodeGuid: e56d670a-166a-458b-bcea-972ad496a64c
-    TargetNodeGuid: 5757ab72-f78b-45f8-aadd-e6227dd0051c
-  - BaseNodeGuid: 0fb8e009-758b-4302-ad61-4c516ffc1003
-    TargetNodeGuid: bcbb99da-e3f9-4ffb-a3a9-d2b4923d23bc
-  - BaseNodeGuid: 0fb8e009-758b-4302-ad61-4c516ffc1003
-    TargetNodeGuid: 25f936bd-798f-4c3d-9d5c-65cb7e771398
   - BaseNodeGuid: 5757ab72-f78b-45f8-aadd-e6227dd0051c
     TargetNodeGuid: dfb4d9a0-65a8-449d-a9e3-0fda2530effc
+  - BaseNodeGuid: e56d670a-166a-458b-bcea-972ad496a64c
+    TargetNodeGuid: 5757ab72-f78b-45f8-aadd-e6227dd0051c
+  - BaseNodeGuid: 387c6883-214b-4792-9fb7-a702668501be
+    TargetNodeGuid: 8d0cae8d-9955-47cf-b917-3245bf1fe72c
+  - BaseNodeGuid: 8d0cae8d-9955-47cf-b917-3245bf1fe72c
+    TargetNodeGuid: f751c2b0-46cc-4a63-9344-a68b4e784977
+  - BaseNodeGuid: f751c2b0-46cc-4a63-9344-a68b4e784977
+    TargetNodeGuid: c0f3351b-9180-4a81-93fa-f89a8a29ccd6
   - BaseNodeGuid: c0f3351b-9180-4a81-93fa-f89a8a29ccd6
     TargetNodeGuid: 072e67fa-7875-4d9f-ad19-ac3cd72f4bf7
-  - BaseNodeGuid: 0fb8e009-758b-4302-ad61-4c516ffc1003
-    TargetNodeGuid: dcd8d6f3-4bcf-4ce1-926e-1f153f04d853
-  - BaseNodeGuid: dcd8d6f3-4bcf-4ce1-926e-1f153f04d853
-    TargetNodeGuid: 387c6883-214b-4792-9fb7-a702668501be
-  - BaseNodeGuid: dcd8d6f3-4bcf-4ce1-926e-1f153f04d853
-    TargetNodeGuid: f54103a2-0822-4f0b-b378-f40ff488464c
-  - BaseNodeGuid: 9d3dfb4b-96e2-4a83-9201-ccb71cbe0e1f
-    TargetNodeGuid: fd8a58c2-d5b8-40a6-bb0c-e1c4d639783d
+  - BaseNodeGuid: 90a3ed62-c327-4eb8-88e5-56d86f1e2a4f
+    TargetNodeGuid: bcbb99da-e3f9-4ffb-a3a9-d2b4923d23bc
+  - BaseNodeGuid: 50b5b237-035e-4ed4-8040-69b1c907eb64
+    TargetNodeGuid: 3f9e918f-20f5-4ae4-91b4-2d7371e10dac
+  - BaseNodeGuid: 3f9e918f-20f5-4ae4-91b4-2d7371e10dac
+    TargetNodeGuid: 81445492-9c47-4306-84b9-ae969a88b889
+  - BaseNodeGuid: 293bfb13-3e46-475b-93d3-0e1dfd011d74
+    TargetNodeGuid: c27c8dd6-b804-4772-953a-25e7bafa2848
   - BaseNodeGuid: fd8a58c2-d5b8-40a6-bb0c-e1c4d639783d
     TargetNodeGuid: 90a3ed62-c327-4eb8-88e5-56d86f1e2a4f
   - BaseNodeGuid: fd8a58c2-d5b8-40a6-bb0c-e1c4d639783d
     TargetNodeGuid: 0fb8e009-758b-4302-ad61-4c516ffc1003
-  - BaseNodeGuid: 90a3ed62-c327-4eb8-88e5-56d86f1e2a4f
+  - BaseNodeGuid: 25917b06-a018-4050-b9bf-a96a1563bc19
+    TargetNodeGuid: 50b5b237-035e-4ed4-8040-69b1c907eb64
+  - BaseNodeGuid: 25917b06-a018-4050-b9bf-a96a1563bc19
+    TargetNodeGuid: fd8a58c2-d5b8-40a6-bb0c-e1c4d639783d
+  - BaseNodeGuid: dcd8d6f3-4bcf-4ce1-926e-1f153f04d853
+    TargetNodeGuid: f54103a2-0822-4f0b-b378-f40ff488464c
+  - BaseNodeGuid: dcd8d6f3-4bcf-4ce1-926e-1f153f04d853
+    TargetNodeGuid: 387c6883-214b-4792-9fb7-a702668501be
+  - BaseNodeGuid: dcd8d6f3-4bcf-4ce1-926e-1f153f04d853
+    TargetNodeGuid: 293bfb13-3e46-475b-93d3-0e1dfd011d74
+  - BaseNodeGuid: 0fb8e009-758b-4302-ad61-4c516ffc1003
     TargetNodeGuid: bcbb99da-e3f9-4ffb-a3a9-d2b4923d23bc
+  - BaseNodeGuid: 0fb8e009-758b-4302-ad61-4c516ffc1003
+    TargetNodeGuid: dcd8d6f3-4bcf-4ce1-926e-1f153f04d853
+  - BaseNodeGuid: dcd8d6f3-4bcf-4ce1-926e-1f153f04d853
+    TargetNodeGuid: 25f936bd-798f-4c3d-9d5c-65cb7e771398
   DialogueChoiceNodeDatas:
-  - NodeGuid: 0fb8e009-758b-4302-ad61-4c516ffc1003
-    Position: {x: 469, y: 306}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: 'Luna: Hi, Mr. Detective! People seem to be agitated today.
-        How are you doing darling?'
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 5
-    DialogueNodePorts:
-    - PortGuid: 90a46b8e-2102-4adb-8348-e3c2eee75f98
-      InputGuid: bcbb99da-e3f9-4ffb-a3a9-d2b4923d23bc
-      OutputGuid: 0fb8e009-758b-4302-ad61-4c516ffc1003
-      TextLanguage:
-      - languageEnum: 0
-        LanguageGenericType: Goodbye
-      - languageEnum: 1
-        LanguageGenericType: Choice 01
-      RequiredFlag: {fileID: 0}
-    - PortGuid: c741502e-c717-4486-a1dd-eb542d216047
-      InputGuid: dcd8d6f3-4bcf-4ce1-926e-1f153f04d853
-      OutputGuid: 0fb8e009-758b-4302-ad61-4c516ffc1003
-      TextLanguage:
-      - languageEnum: 0
-        LanguageGenericType: Question
-      - languageEnum: 1
-        LanguageGenericType: Choice 02
-      RequiredFlag: {fileID: 11400000, guid: de9eac2e0a950a34691d000eb8b356a5, type: 2}
-    - PortGuid: 41c1634f-c652-4f6d-9b4b-b4cc4010b3e5
-      InputGuid: 25f936bd-798f-4c3d-9d5c-65cb7e771398
-      OutputGuid: 0fb8e009-758b-4302-ad61-4c516ffc1003
-      TextLanguage:
-      - languageEnum: 0
-        LanguageGenericType: Midnight Rose
-      - languageEnum: 1
-        LanguageGenericType: Choice 03
-      RequiredFlag: {fileID: 11400000, guid: 815276e54b0dbbe41aa1d7e8a40b1c08, type: 2}
   - NodeGuid: dcd8d6f3-4bcf-4ce1-926e-1f153f04d853
     Position: {x: 840, y: -112}
     Character: {fileID: 0}
@@ -118,7 +80,7 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: What's on your mind darling?
+      LanguageGenericType: What's on your mind, darling?
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 5
@@ -141,6 +103,63 @@ MonoBehaviour:
       - languageEnum: 1
         LanguageGenericType: Choice 02
       RequiredFlag: {fileID: 0}
+    - PortGuid: b54753ab-8740-493a-8d63-356afe3055c3
+      InputGuid: 293bfb13-3e46-475b-93d3-0e1dfd011d74
+      OutputGuid: dcd8d6f3-4bcf-4ce1-926e-1f153f04d853
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Findus' ball toy
+      - languageEnum: 1
+        LanguageGenericType: Choice 04
+      RequiredFlag: {fileID: 0}
+    - PortGuid: 2e3efdb2-5032-4258-afb8-c8cb9851fdba
+      InputGuid: 25f936bd-798f-4c3d-9d5c-65cb7e771398
+      OutputGuid: dcd8d6f3-4bcf-4ce1-926e-1f153f04d853
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Midnight Rose
+      - languageEnum: 1
+        LanguageGenericType: Choice 04
+      RequiredFlag: {fileID: 11400000, guid: 815276e54b0dbbe41aa1d7e8a40b1c08, type: 2}
+  - NodeGuid: 0fb8e009-758b-4302-ad61-4c516ffc1003
+    Position: {x: 469, y: 306}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Luna: Hi, Mr. Detective! People seem to be agitated today.
+        How are you doing, darling?'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 5
+    DialogueNodePorts:
+    - PortGuid: 90a46b8e-2102-4adb-8348-e3c2eee75f98
+      InputGuid: bcbb99da-e3f9-4ffb-a3a9-d2b4923d23bc
+      OutputGuid: 0fb8e009-758b-4302-ad61-4c516ffc1003
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Goodbye
+      - languageEnum: 1
+        LanguageGenericType: Choice 01
+      RequiredFlag: {fileID: 0}
+    - PortGuid: c741502e-c717-4486-a1dd-eb542d216047
+      InputGuid: dcd8d6f3-4bcf-4ce1-926e-1f153f04d853
+      OutputGuid: 0fb8e009-758b-4302-ad61-4c516ffc1003
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Question
+      - languageEnum: 1
+        LanguageGenericType: Choice 02
+      RequiredFlag: {fileID: 11400000, guid: de9eac2e0a950a34691d000eb8b356a5, type: 2}
   DialogueNodeDatas:
   - NodeGuid: 25f936bd-798f-4c3d-9d5c-65cb7e771398
     Position: {x: 840, y: 812}
@@ -159,7 +178,7 @@ MonoBehaviour:
     TextType:
     - languageEnum: 0
       LanguageGenericType: 'The Midnight Rose? Yes, I bought one just this week from
-        sweet, sweet Poppy. It is the most beautiful flower darling. '
+        sweet, sweet Poppy. It is the most beautiful flower, darling. '
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
@@ -200,7 +219,7 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: Let's go cheer Poppy up! Meet me there darling.
+      LanguageGenericType: Let's go cheer Poppy up! Meet me there, darling.
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
@@ -244,7 +263,7 @@ MonoBehaviour:
     - languageEnum: 0
       LanguageGenericType: The colors are gone!? I did not know! Makes sense why
         people are so upset today then. I am sure you will find the culprit soon
-        enough darling.
+        enough, darling.
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
@@ -286,7 +305,7 @@ MonoBehaviour:
     TextType:
     - languageEnum: 0
       LanguageGenericType: Oh, how I have wondered how my life would be if I could
-        see colors like everyone else... Excuse me darling.
+        see colors like everyone else... Excuse me, darling.
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
@@ -330,11 +349,75 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
+  - NodeGuid: 50b5b237-035e-4ed4-8040-69b1c907eb64
+    Position: {x: -135, y: -75}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Luna: If it isn''t the Color Kitnapper himself! I think
+        the townscats really learned something this past day. '
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 3f9e918f-20f5-4ae4-91b4-2d7371e10dac
+    Position: {x: 141, y: -75}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Good work, darling.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 293bfb13-3e46-475b-93d3-0e1dfd011d74
+    Position: {x: 1173, y: 404}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: His ball toy is missing? I have not seen it, darling.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
   ConditionalNodeDatas:
   - NodeGuid: fd8a58c2-d5b8-40a6-bb0c-e1c4d639783d
     Position: {x: 141, y: 306}
     RequiredGameFlagCombo: {fileID: 11400000, guid: ca3d3e8f1504ee446bcee357a7fd2a34,
       type: 2}
+  - NodeGuid: 25917b06-a018-4050-b9bf-a96a1563bc19
+    Position: {x: -180, y: 306}
+    RequiredGameFlagCombo: {fileID: 0}
   TimerChoiceNodeDatas: []
   EndNodeDatas:
   - NodeGuid: dfb4d9a0-65a8-449d-a9e3-0fda2530effc
@@ -357,10 +440,20 @@ MonoBehaviour:
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 
+  - NodeGuid: 81445492-9c47-4306-84b9-ae969a88b889
+    Position: {x: 469, y: -239}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: c27c8dd6-b804-4772-953a-25e7bafa2848
+    Position: {x: 1451, y: 404}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
   EventNodeDatas: []
   StartNodeDatas:
   - NodeGuid: 9d3dfb4b-96e2-4a83-9201-ccb71cbe0e1f
-    Position: {x: -107, y: 306}
+    Position: {x: -411, y: 306}
     startID: 
   RandomNodeDatas: []
   CommandNodeDatas: []

@@ -19,7 +19,7 @@ MonoBehaviour:
   MaxChoiceOptionPerNode: 0
   NodeLinkDatas:
   - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
-    TargetNodeGuid: c6c3837b-2101-484d-bd1d-3c2c9ded6e96
+    TargetNodeGuid: fa8378b2-5d44-4fc4-9895-b35e1cd5044d
   - BaseNodeGuid: 36e5585f-26b3-4f86-9381-52bed6e531f9
     TargetNodeGuid: c04934b4-9cb2-473a-985f-a71fc0917891
   - BaseNodeGuid: c04934b4-9cb2-473a-985f-a71fc0917891
@@ -44,18 +44,28 @@ MonoBehaviour:
     TargetNodeGuid: f59f15b4-5373-416a-88dd-aa4d28b7f659
   - BaseNodeGuid: f59f15b4-5373-416a-88dd-aa4d28b7f659
     TargetNodeGuid: c0c92ce6-0d74-43ef-83f9-f5decc5ac795
+  - BaseNodeGuid: 6de4584e-f8e5-4e59-ad37-531d5e3a54bd
+    TargetNodeGuid: 42f5448e-7977-4972-ada7-79ead76f61d7
+  - BaseNodeGuid: 817f0f85-2d9b-4e31-a934-426cd0c05775
+    TargetNodeGuid: 52e3ee85-ce88-4cf4-8d5e-c6dc7c20448e
+  - BaseNodeGuid: fa8378b2-5d44-4fc4-9895-b35e1cd5044d
+    TargetNodeGuid: 6de4584e-f8e5-4e59-ad37-531d5e3a54bd
+  - BaseNodeGuid: fa8378b2-5d44-4fc4-9895-b35e1cd5044d
+    TargetNodeGuid: c6c3837b-2101-484d-bd1d-3c2c9ded6e96
   - BaseNodeGuid: c6c3837b-2101-484d-bd1d-3c2c9ded6e96
     TargetNodeGuid: 1e2468d4-365b-4e6c-bb71-f94fb4e63063
   - BaseNodeGuid: c6c3837b-2101-484d-bd1d-3c2c9ded6e96
     TargetNodeGuid: 6653c225-65fa-4982-979c-936bfd14e80b
-  - BaseNodeGuid: c6c3837b-2101-484d-bd1d-3c2c9ded6e96
-    TargetNodeGuid: 28862d3b-26b1-4d63-a7dc-14a5ca3edd62
   - BaseNodeGuid: 6653c225-65fa-4982-979c-936bfd14e80b
     TargetNodeGuid: 82f17e9b-026d-452b-b76d-50a4dc93cbf3
   - BaseNodeGuid: 6653c225-65fa-4982-979c-936bfd14e80b
     TargetNodeGuid: 36e5585f-26b3-4f86-9381-52bed6e531f9
   - BaseNodeGuid: 6653c225-65fa-4982-979c-936bfd14e80b
     TargetNodeGuid: 150be6be-4ba0-478b-8a0b-2753f8c4dc20
+  - BaseNodeGuid: 42f5448e-7977-4972-ada7-79ead76f61d7
+    TargetNodeGuid: 817f0f85-2d9b-4e31-a934-426cd0c05775
+  - BaseNodeGuid: 6653c225-65fa-4982-979c-936bfd14e80b
+    TargetNodeGuid: 28862d3b-26b1-4d63-a7dc-14a5ca3edd62
   DialogueChoiceNodeDatas:
   - NodeGuid: c6c3837b-2101-484d-bd1d-3c2c9ded6e96
     Position: {x: 570, y: 227}
@@ -96,15 +106,6 @@ MonoBehaviour:
       - languageEnum: 1
         LanguageGenericType: Choice 02
       RequiredFlag: {fileID: 0}
-    - PortGuid: 6845e98b-cde7-4b92-b5f1-7c05c51ee6e7
-      InputGuid: 28862d3b-26b1-4d63-a7dc-14a5ca3edd62
-      OutputGuid: c6c3837b-2101-484d-bd1d-3c2c9ded6e96
-      TextLanguage:
-      - languageEnum: 0
-        LanguageGenericType: Butterfly
-      - languageEnum: 1
-        LanguageGenericType: Choice 03
-      RequiredFlag: {fileID: 11400000, guid: 85f95c9dbd55c2a40abf34b43bf2bb8c, type: 2}
   - NodeGuid: 6653c225-65fa-4982-979c-936bfd14e80b
     Position: {x: 570, y: 624}
     Character: {fileID: 0}
@@ -152,6 +153,44 @@ MonoBehaviour:
       - languageEnum: 1
         LanguageGenericType: Choice 03
       RequiredFlag: {fileID: 11400000, guid: f169c9261349aad4d883f6afceb45b21, type: 2}
+    - PortGuid: d2c20d1a-0a3a-412e-a772-ec3545c931a5
+      InputGuid: 28862d3b-26b1-4d63-a7dc-14a5ca3edd62
+      OutputGuid: 6653c225-65fa-4982-979c-936bfd14e80b
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Butterfly
+      - languageEnum: 1
+        LanguageGenericType: Choice 04
+      RequiredFlag: {fileID: 11400000, guid: 85f95c9dbd55c2a40abf34b43bf2bb8c, type: 2}
+  - NodeGuid: 42f5448e-7977-4972-ada7-79ead76f61d7
+    Position: {x: 704, y: -440}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 5
+    DialogueNodePorts:
+    - PortGuid: 1ddc0d13-35b5-465e-af8a-a889336b42a2
+      InputGuid: 817f0f85-2d9b-4e31-a934-426cd0c05775
+      OutputGuid: 42f5448e-7977-4972-ada7-79ead76f61d7
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: It's a secret
+      - languageEnum: 1
+        LanguageGenericType: Choice 01
+      RequiredFlag: {fileID: 0}
   DialogueNodeDatas:
   - NodeGuid: 36e5585f-26b3-4f86-9381-52bed6e531f9
     Position: {x: 949, y: 334}
@@ -339,7 +378,7 @@ MonoBehaviour:
       LanguageGenericType: 
     Duration: 10
   - NodeGuid: 150be6be-4ba0-478b-8a0b-2753f8c4dc20
-    Position: {x: 949, y: 690}
+    Position: {x: 949, y: 812}
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
@@ -354,13 +393,13 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: 'Dr. Milo: Findus is an odd fellow indeed. But he is good
-        at heart, that I know.'
+      LanguageGenericType: Findus is an odd fellow indeed. But he is good at heart,
+        that I know.
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
   - NodeGuid: ef0d4e39-8f73-4ca8-a7d0-8b6359ebb2c7
-    Position: {x: 1214, y: 691}
+    Position: {x: 1214, y: 812}
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
@@ -381,7 +420,7 @@ MonoBehaviour:
       LanguageGenericType: 
     Duration: 10
   - NodeGuid: f59f15b4-5373-416a-88dd-aa4d28b7f659
-    Position: {x: 1475, y: 691}
+    Position: {x: 1475, y: 812}
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
@@ -401,19 +440,55 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
-  ConditionalNodeDatas: []
+  - NodeGuid: 6de4584e-f8e5-4e59-ad37-531d5e3a54bd
+    Position: {x: 470, y: -187}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Dr. Milo: You had me baffled Mr. Detective! How did you
+        sneak here anyways? I was sure I locked the doors...'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 817f0f85-2d9b-4e31-a934-426cd0c05775
+    Position: {x: 1069, y: -440}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Haha! I guess a Kitnapper never reveals his tricks! Anyways,
+        I am working on the purrfect solution, but it will take some time.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  ConditionalNodeDatas:
+  - NodeGuid: fa8378b2-5d44-4fc4-9895-b35e1cd5044d
+    Position: {x: 243, y: 227}
+    RequiredGameFlagCombo: {fileID: 11400000, guid: d280d0c262e2fca41b46ae301e91ac3f,
+      type: 2}
   TimerChoiceNodeDatas: []
   EndNodeDatas:
-  - NodeGuid: c0c92ce6-0d74-43ef-83f9-f5decc5ac795
-    Position: {x: 1715, y: 691}
-    EndNodeType: 0
-    Dialogue: {fileID: 0}
-    startID: 
-  - NodeGuid: 1e2468d4-365b-4e6c-bb71-f94fb4e63063
-    Position: {x: 680, y: 47}
-    EndNodeType: 0
-    Dialogue: {fileID: 0}
-    startID: 
   - NodeGuid: d2adfdd5-8370-49aa-ab32-b577971ce5d5
     Position: {x: 2180, y: -65}
     EndNodeType: 0
@@ -424,15 +499,30 @@ MonoBehaviour:
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 
+  - NodeGuid: 1e2468d4-365b-4e6c-bb71-f94fb4e63063
+    Position: {x: 949, y: 212}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: c0c92ce6-0d74-43ef-83f9-f5decc5ac795
+    Position: {x: 1707, y: 812}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
   - NodeGuid: 82f17e9b-026d-452b-b76d-50a4dc93cbf3
-    Position: {x: 720, y: 995}
+    Position: {x: 949, y: 657}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: 52e3ee85-ce88-4cf4-8d5e-c6dc7c20448e
+    Position: {x: 1305, y: -440}
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 
   EventNodeDatas: []
   StartNodeDatas:
   - NodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
-    Position: {x: 347, y: 227}
+    Position: {x: 12, y: 227}
     startID: 
   RandomNodeDatas: []
   CommandNodeDatas: []

@@ -19,21 +19,13 @@ MonoBehaviour:
   MaxChoiceOptionPerNode: 8
   NodeLinkDatas:
   - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
-    TargetNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
-  - BaseNodeGuid: 0849757c-49d3-4bd0-8983-4cd50af6415f
-    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
-  - BaseNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
-    TargetNodeGuid: 0849757c-49d3-4bd0-8983-4cd50af6415f
-  - BaseNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
-    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
-  - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
     TargetNodeGuid: 4c2bbdeb-643d-4fae-8ea6-0b98c276dd30
   - BaseNodeGuid: 4c2bbdeb-643d-4fae-8ea6-0b98c276dd30
     TargetNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
-  - BaseNodeGuid: 0849757c-49d3-4bd0-8983-4cd50af6415f
-    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
   - BaseNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
     TargetNodeGuid: 0849757c-49d3-4bd0-8983-4cd50af6415f
+  - BaseNodeGuid: 0849757c-49d3-4bd0-8983-4cd50af6415f
+    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
   DialogueChoiceNodeDatas:
   - NodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
     Position: {x: 808, y: 196}

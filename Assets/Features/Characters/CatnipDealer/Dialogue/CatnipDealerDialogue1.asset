@@ -19,16 +19,32 @@ MonoBehaviour:
   MaxChoiceOptionPerNode: 8
   NodeLinkDatas:
   - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
-    TargetNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
+    TargetNodeGuid: ab6c800a-4101-4ecc-8ccd-b6657ac28d40
   - BaseNodeGuid: 0849757c-49d3-4bd0-8983-4cd50af6415f
     TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
-  - BaseNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
+  - BaseNodeGuid: 5a2830f4-9dec-4250-9cd3-6df9ca145746
+    TargetNodeGuid: e8f2f618-2cb8-4411-86d6-d614d394ea5a
+  - BaseNodeGuid: 58d6cc84-2ad2-42e2-a267-845c7f0c641c
+    TargetNodeGuid: 052dafb8-7650-4b42-a383-6cc677b69dfe
+  - BaseNodeGuid: bda9f068-e5fb-4e20-a000-044b02d54764
+    TargetNodeGuid: 08b1ebfe-ea03-4f0b-b26a-713029c05942
+  - BaseNodeGuid: ab6c800a-4101-4ecc-8ccd-b6657ac28d40
+    TargetNodeGuid: 8359068e-0140-45c0-aa80-7dd2403e87bc
+  - BaseNodeGuid: ab6c800a-4101-4ecc-8ccd-b6657ac28d40
+    TargetNodeGuid: cd710cbb-11ee-4488-bd05-3e446eae55c6
+  - BaseNodeGuid: ab6c800a-4101-4ecc-8ccd-b6657ac28d40
     TargetNodeGuid: 0849757c-49d3-4bd0-8983-4cd50af6415f
-  - BaseNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
-    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
+  - BaseNodeGuid: cd710cbb-11ee-4488-bd05-3e446eae55c6
+    TargetNodeGuid: e33fe215-6264-45a8-9f6d-85cd28cb6a05
+  - BaseNodeGuid: cd710cbb-11ee-4488-bd05-3e446eae55c6
+    TargetNodeGuid: 5a2830f4-9dec-4250-9cd3-6df9ca145746
+  - BaseNodeGuid: cd710cbb-11ee-4488-bd05-3e446eae55c6
+    TargetNodeGuid: 58d6cc84-2ad2-42e2-a267-845c7f0c641c
+  - BaseNodeGuid: cd710cbb-11ee-4488-bd05-3e446eae55c6
+    TargetNodeGuid: bda9f068-e5fb-4e20-a000-044b02d54764
   DialogueChoiceNodeDatas:
-  - NodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
-    Position: {x: 808, y: 196}
+  - NodeGuid: ab6c800a-4101-4ecc-8ccd-b6657ac28d40
+    Position: {x: 358, y: 196}
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
@@ -42,33 +58,98 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: '???: Hey there Detective. Your job must be very stressfull.
+      LanguageGenericType: 'Sada Haru: Hey there sir. Your job must be very stressful.
         Want something to calm the nerves?'
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 5
     DialogueNodePorts:
-    - PortGuid: c8327510-aecf-4e7a-8a0c-f4d1f8b17b5f
-      InputGuid: 0849757c-49d3-4bd0-8983-4cd50af6415f
-      OutputGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
+    - PortGuid: 1b29c42d-5434-4f1c-bed2-53317b8b0b20
+      InputGuid: 8359068e-0140-45c0-aa80-7dd2403e87bc
+      OutputGuid: ab6c800a-4101-4ecc-8ccd-b6657ac28d40
       TextLanguage:
       - languageEnum: 0
-        LanguageGenericType: Yes
+        LanguageGenericType: Goodbye
       - languageEnum: 1
         LanguageGenericType: Choice 01
       RequiredFlag: {fileID: 0}
-    - PortGuid: 44a0e1e0-1e08-487d-ba83-59785149b2e2
-      InputGuid: 7838e825-39c1-416f-8753-1589000d7155
-      OutputGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
+    - PortGuid: 4adff19b-7304-4444-b0de-046a0dd83e3f
+      InputGuid: cd710cbb-11ee-4488-bd05-3e446eae55c6
+      OutputGuid: ab6c800a-4101-4ecc-8ccd-b6657ac28d40
       TextLanguage:
       - languageEnum: 0
-        LanguageGenericType: No
+        LanguageGenericType: Question
       - languageEnum: 1
         LanguageGenericType: Choice 02
+      RequiredFlag: {fileID: 11400000, guid: 7ef7f2573d7d8f0428a21be5828e4f8b, type: 2}
+    - PortGuid: 7c21e790-1df7-48ac-913e-bb28ecd74496
+      InputGuid: 0849757c-49d3-4bd0-8983-4cd50af6415f
+      OutputGuid: ab6c800a-4101-4ecc-8ccd-b6657ac28d40
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Catnip
+      - languageEnum: 1
+        LanguageGenericType: Choice 03
       RequiredFlag: {fileID: 0}
+  - NodeGuid: cd710cbb-11ee-4488-bd05-3e446eae55c6
+    Position: {x: 746, y: -163}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Fire away sir!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 5
+    DialogueNodePorts:
+    - PortGuid: 99ad19f8-0bb6-474a-89e0-62332e79cdbe
+      InputGuid: e33fe215-6264-45a8-9f6d-85cd28cb6a05
+      OutputGuid: cd710cbb-11ee-4488-bd05-3e446eae55c6
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Goodbye
+      - languageEnum: 1
+        LanguageGenericType: Choice 01
+      RequiredFlag: {fileID: 0}
+    - PortGuid: d4756b15-1e5a-4e8c-9955-9307d360694d
+      InputGuid: 5a2830f4-9dec-4250-9cd3-6df9ca145746
+      OutputGuid: cd710cbb-11ee-4488-bd05-3e446eae55c6
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Last night
+      - languageEnum: 1
+        LanguageGenericType: Choice 03
+      RequiredFlag: {fileID: 0}
+    - PortGuid: cf37e0c5-a520-40fd-9543-40e899db4cbe
+      InputGuid: 58d6cc84-2ad2-42e2-a267-845c7f0c641c
+      OutputGuid: cd710cbb-11ee-4488-bd05-3e446eae55c6
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Seen Poppy?
+      - languageEnum: 1
+        LanguageGenericType: Choice 03
+      RequiredFlag: {fileID: 11400000, guid: ca3d3e8f1504ee446bcee357a7fd2a34, type: 2}
+    - PortGuid: c6c9f873-15fe-4e90-89ca-a9c7f2851e7f
+      InputGuid: bda9f068-e5fb-4e20-a000-044b02d54764
+      OutputGuid: cd710cbb-11ee-4488-bd05-3e446eae55c6
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Findus' ball toy
+      - languageEnum: 1
+        LanguageGenericType: Choice 04
+      RequiredFlag: {fileID: 11400000, guid: 929c64ba1c19bb14382fcc3fd5781a99, type: 2}
   DialogueNodeDatas:
   - NodeGuid: 0849757c-49d3-4bd0-8983-4cd50af6415f
-    Position: {x: 1139, y: -116}
+    Position: {x: 722, y: 359}
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
@@ -83,8 +164,71 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: Here you go, the finest catnip this side of town! If you
-        need any more, you know where to find me.
+      LanguageGenericType: Here you go sir, the finest catnip this side of town!
+        If you need any more, you know where to find me.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 5a2830f4-9dec-4250-9cd3-6df9ca145746
+    Position: {x: 1148, y: -334}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Last night I was sleeping out in the woods, as usual.
+        Nothing to report there sir!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 58d6cc84-2ad2-42e2-a267-845c7f0c641c
+    Position: {x: 1148, y: 10}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Poppy? I have not sir. But I am sure Poppy would prefer
+        being surrounded by nature if distressed.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: bda9f068-e5fb-4e20-a000-044b02d54764
+    Position: {x: 1148, y: 375}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Findus lost his ball toy? That's sad to hear, it was dear
+        to him. Maybe check places he would go?
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
@@ -92,14 +236,39 @@ MonoBehaviour:
   TimerChoiceNodeDatas: []
   EndNodeDatas:
   - NodeGuid: 7838e825-39c1-416f-8753-1589000d7155
-    Position: {x: 1369, y: 185}
+    Position: {x: 972, y: 359}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: 8359068e-0140-45c0-aa80-7dd2403e87bc
+    Position: {x: 746, y: 196}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: e33fe215-6264-45a8-9f6d-85cd28cb6a05
+    Position: {x: 1148, y: -455}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: e8f2f618-2cb8-4411-86d6-d614d394ea5a
+    Position: {x: 1446, y: -334}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: 052dafb8-7650-4b42-a383-6cc677b69dfe
+    Position: {x: 1470, y: 10}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: 08b1ebfe-ea03-4f0b-b26a-713029c05942
+    Position: {x: 1470, y: 375}
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 
   EventNodeDatas: []
   StartNodeDatas:
   - NodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
-    Position: {x: 592, y: 196}
+    Position: {x: 105, y: 196}
     startID: 
   RandomNodeDatas: []
   CommandNodeDatas: []

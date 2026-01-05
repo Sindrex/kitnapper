@@ -18,65 +18,35 @@ MonoBehaviour:
   LimitChoiceOptionPerNode: 0
   MaxChoiceOptionPerNode: 8
   NodeLinkDatas:
-  - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
-    TargetNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
-  - BaseNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
-    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
   - BaseNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
     TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
   - BaseNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
     TargetNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
   - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
+    TargetNodeGuid: fff2f843-710c-4ecd-9441-07aa06e65594
+  - BaseNodeGuid: fff2f843-710c-4ecd-9441-07aa06e65594
+    TargetNodeGuid: fa511039-c664-4a15-81cc-c3b69be66531
+  - BaseNodeGuid: fa511039-c664-4a15-81cc-c3b69be66531
+    TargetNodeGuid: 058a3e17-7db0-413d-afc1-bed3f73cd4fc
+  - BaseNodeGuid: fff2f843-710c-4ecd-9441-07aa06e65594
     TargetNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
   - BaseNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
-    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
-  - BaseNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
-    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
-  - BaseNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
-    TargetNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
+    TargetNodeGuid: a0d1f4c5-0baf-4746-ae27-0027a63510da
+  - BaseNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
+    TargetNodeGuid: ad746aed-95f1-4d07-9b3b-5513e8cf0fee
+  - BaseNodeGuid: ad746aed-95f1-4d07-9b3b-5513e8cf0fee
+    TargetNodeGuid: 31796dd1-d696-4576-9f96-ec4bb0b8aff3
+  - BaseNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
+    TargetNodeGuid: f86d0c1f-6bc2-4db7-8334-9514ff3990cc
+  - BaseNodeGuid: f86d0c1f-6bc2-4db7-8334-9514ff3990cc
+    TargetNodeGuid: 973af6f2-296c-4ba0-9b31-9da5f50a3acc
+  - BaseNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
+    TargetNodeGuid: 6d9c6783-f411-4406-b1d4-9d6b234fb02e
+  - BaseNodeGuid: 6d9c6783-f411-4406-b1d4-9d6b234fb02e
+    TargetNodeGuid: a54ba4ee-1172-4807-b2ed-db6b106ff238
   DialogueChoiceNodeDatas:
-  - NodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
-    Position: {x: 800, y: 196}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: 'Padagast: Hi there Mr. Detective! Busy day huh? We are
-        trying to continue our archeologic studies, but the situation is working
-        against us...'
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 5
-    DialogueNodePorts:
-    - PortGuid: c8327510-aecf-4e7a-8a0c-f4d1f8b17b5f
-      InputGuid: 7838e825-39c1-416f-8753-1589000d7155
-      OutputGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
-      TextLanguage:
-      - languageEnum: 0
-        LanguageGenericType: Goodbye
-      - languageEnum: 1
-        LanguageGenericType: Choice 01
-      RequiredFlag: {fileID: 0}
-    - PortGuid: 44a0e1e0-1e08-487d-ba83-59785149b2e2
-      InputGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
-      OutputGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
-      TextLanguage:
-      - languageEnum: 0
-        LanguageGenericType: Querstion
-      - languageEnum: 1
-        LanguageGenericType: Choice 02
-      RequiredFlag: {fileID: 0}
   - NodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
-    Position: {x: 1128, y: -143}
+    Position: {x: 1129, y: -196}
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
@@ -96,7 +66,7 @@ MonoBehaviour:
     Duration: 5
     DialogueNodePorts:
     - PortGuid: 3a00748f-9519-4f4b-81e2-1f8d5b705a9d
-      InputGuid: 7838e825-39c1-416f-8753-1589000d7155
+      InputGuid: a0d1f4c5-0baf-4746-ae27-0027a63510da
       OutputGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
       TextLanguage:
       - languageEnum: 0
@@ -104,19 +74,198 @@ MonoBehaviour:
       - languageEnum: 1
         LanguageGenericType: Choice 01
       RequiredFlag: {fileID: 0}
-  DialogueNodeDatas: []
-  ConditionalNodeDatas: []
+    - PortGuid: 1bab674c-89b3-4f8f-84fc-af6117bde574
+      InputGuid: ad746aed-95f1-4d07-9b3b-5513e8cf0fee
+      OutputGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Last night
+      - languageEnum: 1
+        LanguageGenericType: Choice 02
+      RequiredFlag: {fileID: 0}
+    - PortGuid: a8811080-2009-4a38-89ab-5cb685907ae8
+      InputGuid: f86d0c1f-6bc2-4db7-8334-9514ff3990cc
+      OutputGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Seen Poppy?
+      - languageEnum: 1
+        LanguageGenericType: Choice 03
+      RequiredFlag: {fileID: 11400000, guid: ca3d3e8f1504ee446bcee357a7fd2a34, type: 2}
+    - PortGuid: c91044e9-6c1c-455e-8512-b9d086a5239d
+      InputGuid: 6d9c6783-f411-4406-b1d4-9d6b234fb02e
+      OutputGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Findus' ball toy
+      - languageEnum: 1
+        LanguageGenericType: Choice 04
+      RequiredFlag: {fileID: 11400000, guid: 929c64ba1c19bb14382fcc3fd5781a99, type: 2}
+  - NodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
+    Position: {x: 800, y: 196}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Padagast: Hi there Mr. Detective! Busy day huh? We are
+        trying to continue our archeologic work, despite the situation!'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 5
+    DialogueNodePorts:
+    - PortGuid: c8327510-aecf-4e7a-8a0c-f4d1f8b17b5f
+      InputGuid: 7838e825-39c1-416f-8753-1589000d7155
+      OutputGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Goodbye
+      - languageEnum: 1
+        LanguageGenericType: Choice 01
+      RequiredFlag: {fileID: 0}
+    - PortGuid: 44a0e1e0-1e08-487d-ba83-59785149b2e2
+      InputGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
+      OutputGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Question
+      - languageEnum: 1
+        LanguageGenericType: Choice 02
+      RequiredFlag: {fileID: 0}
+  DialogueNodeDatas:
+  - NodeGuid: ad746aed-95f1-4d07-9b3b-5513e8cf0fee
+    Position: {x: 1505, y: -347}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: We were up quite late trying to clean off these rocks
+        here, and promtly fell asleep right here!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: f86d0c1f-6bc2-4db7-8334-9514ff3990cc
+    Position: {x: 1505, y: 29}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: I don't think Poppy has been at the University for quite
+        some time.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 6d9c6783-f411-4406-b1d4-9d6b234fb02e
+    Position: {x: 1505, y: 385}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Findus don't often come over here. Not the type really.
+        I don't think he lost his toy here.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: fa511039-c664-4a15-81cc-c3b69be66531
+    Position: {x: 600, y: -196}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: So in the end, you were the Color Kitnapper! Clever! If
+        only you would use your wits for archeology!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  ConditionalNodeDatas:
+  - NodeGuid: fff2f843-710c-4ecd-9441-07aa06e65594
+    Position: {x: 377, y: 200}
+    RequiredGameFlagCombo: {fileID: 11400000, guid: d280d0c262e2fca41b46ae301e91ac3f,
+      type: 2}
   TimerChoiceNodeDatas: []
   EndNodeDatas:
   - NodeGuid: 7838e825-39c1-416f-8753-1589000d7155
-    Position: {x: 1446, y: 196}
+    Position: {x: 1150, y: 196}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: a0d1f4c5-0baf-4746-ae27-0027a63510da
+    Position: {x: 1505, y: -482}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: 31796dd1-d696-4576-9f96-ec4bb0b8aff3
+    Position: {x: 1759, y: -347}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: 973af6f2-296c-4ba0-9b31-9da5f50a3acc
+    Position: {x: 1782, y: 29}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: a54ba4ee-1172-4807-b2ed-db6b106ff238
+    Position: {x: 1782, y: 385}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: 058a3e17-7db0-413d-afc1-bed3f73cd4fc
+    Position: {x: 850, y: -196}
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 
   EventNodeDatas: []
   StartNodeDatas:
   - NodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
-    Position: {x: 592, y: 196}
+    Position: {x: 175, y: 200}
     startID: 
   RandomNodeDatas: []
   CommandNodeDatas: []

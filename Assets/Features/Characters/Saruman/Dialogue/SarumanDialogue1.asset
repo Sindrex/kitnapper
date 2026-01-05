@@ -18,14 +18,30 @@ MonoBehaviour:
   LimitChoiceOptionPerNode: 0
   MaxChoiceOptionPerNode: 8
   NodeLinkDatas:
-  - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
-    TargetNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
   - BaseNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
     TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
   - BaseNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
     TargetNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
   - BaseNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
-    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
+    TargetNodeGuid: 9f3406fb-1ccb-4bb0-bffd-c820358e6387
+  - BaseNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
+    TargetNodeGuid: c413b41c-a5da-426f-966e-c0b6bea39d17
+  - BaseNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
+    TargetNodeGuid: ae4ca718-c309-442a-8c44-6a299b93df48
+  - BaseNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
+    TargetNodeGuid: 161a45b1-d5c5-466c-bfd8-feb8ca9ce6a2
+  - BaseNodeGuid: ae4ca718-c309-442a-8c44-6a299b93df48
+    TargetNodeGuid: 54b3ad19-cc85-4f61-b733-b6762fa5234e
+  - BaseNodeGuid: c413b41c-a5da-426f-966e-c0b6bea39d17
+    TargetNodeGuid: f570dd04-052b-4193-9736-701c18b7e5cd
+  - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
+    TargetNodeGuid: 9010f38e-39b6-4ba0-957f-3b7f065a4952
+  - BaseNodeGuid: 9010f38e-39b6-4ba0-957f-3b7f065a4952
+    TargetNodeGuid: 0a4949c4-2c43-433d-9167-fec8b7f84deb
+  - BaseNodeGuid: 9010f38e-39b6-4ba0-957f-3b7f065a4952
+    TargetNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
+  - BaseNodeGuid: 0a4949c4-2c43-433d-9167-fec8b7f84deb
+    TargetNodeGuid: 8b7c48b1-70f4-4fc3-a83a-04d14ba5894e
   DialogueChoiceNodeDatas:
   - NodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
     Position: {x: 800, y: 196}
@@ -81,14 +97,14 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: I have learnt a lot so far, so fire any questions you
-        may have!
+      LanguageGenericType: I have learnt a lot so far, so fire away with any questions
+        you may have!
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 5
     DialogueNodePorts:
     - PortGuid: 3a00748f-9519-4f4b-81e2-1f8d5b705a9d
-      InputGuid: 7838e825-39c1-416f-8753-1589000d7155
+      InputGuid: 9f3406fb-1ccb-4bb0-bffd-c820358e6387
       OutputGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
       TextLanguage:
       - languageEnum: 0
@@ -96,19 +112,154 @@ MonoBehaviour:
       - languageEnum: 1
         LanguageGenericType: Choice 01
       RequiredFlag: {fileID: 0}
-  DialogueNodeDatas: []
-  ConditionalNodeDatas: []
+    - PortGuid: e645ea35-9157-4692-827f-37eaabef5c2f
+      InputGuid: c413b41c-a5da-426f-966e-c0b6bea39d17
+      OutputGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Last night
+      - languageEnum: 1
+        LanguageGenericType: Choice 02
+      RequiredFlag: {fileID: 0}
+    - PortGuid: e63cf52e-acf2-4c54-8770-c548bcb3ef81
+      InputGuid: ae4ca718-c309-442a-8c44-6a299b93df48
+      OutputGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Seen Poppy?
+      - languageEnum: 1
+        LanguageGenericType: Choice 03
+      RequiredFlag: {fileID: 11400000, guid: ca3d3e8f1504ee446bcee357a7fd2a34, type: 2}
+    - PortGuid: 9525ec5d-e796-4b01-9f58-06fca640a728
+      InputGuid: 161a45b1-d5c5-466c-bfd8-feb8ca9ce6a2
+      OutputGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Findus' ball toy
+      - languageEnum: 1
+        LanguageGenericType: Choice 04
+      RequiredFlag: {fileID: 11400000, guid: 929c64ba1c19bb14382fcc3fd5781a99, type: 2}
+  DialogueNodeDatas:
+  - NodeGuid: c413b41c-a5da-426f-966e-c0b6bea39d17
+    Position: {x: 1501, y: -274}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Last night was sooo fun! We were up late working on lots
+        of things! Super interesting!!!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: ae4ca718-c309-442a-8c44-6a299b93df48
+    Position: {x: 1501, y: 78}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Poppy-pi? No, I don't think I have today. Poppy tends
+        to be out and about in nature when feline down.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 161a45b1-d5c5-466c-bfd8-feb8ca9ce6a2
+    Position: {x: 1501, y: 441}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Findus has a ball toy!? Aaaah, wish I had one too!!! I
+        hope you find it, so I can borrow it, hihi!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 0a4949c4-2c43-433d-9167-fec8b7f84deb
+    Position: {x: 677, y: -182}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Saru: Are you fur real? It was you Detective who kitnapped
+        the colors! Color me surpurrised!'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  ConditionalNodeDatas:
+  - NodeGuid: 9010f38e-39b6-4ba0-957f-3b7f065a4952
+    Position: {x: 448, y: 196}
+    RequiredGameFlagCombo: {fileID: 11400000, guid: d280d0c262e2fca41b46ae301e91ac3f,
+      type: 2}
   TimerChoiceNodeDatas: []
   EndNodeDatas:
+  - NodeGuid: 9f3406fb-1ccb-4bb0-bffd-c820358e6387
+    Position: {x: 1501, y: -413}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
   - NodeGuid: 7838e825-39c1-416f-8753-1589000d7155
-    Position: {x: 1446, y: 196}
+    Position: {x: 1128, y: 255}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: 54b3ad19-cc85-4f61-b733-b6762fa5234e
+    Position: {x: 1745, y: 78}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: f570dd04-052b-4193-9736-701c18b7e5cd
+    Position: {x: 1745, y: -274}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: 8b7c48b1-70f4-4fc3-a83a-04d14ba5894e
+    Position: {x: 916, y: -182}
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 
   EventNodeDatas: []
   StartNodeDatas:
   - NodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
-    Position: {x: 592, y: 196}
+    Position: {x: 249, y: 196}
     startID: 
   RandomNodeDatas: []
   CommandNodeDatas: []

@@ -9,6 +9,7 @@ public class CameraController : MonoBehaviour
     public Animator FadeAnimator;
     public string FadeInAnimation;
     public string FadeOutAnimation;
+    public bool FollowPlayer = true;
 
     //singleton
     public static CameraController Instance { get; private set; }
@@ -24,7 +25,10 @@ public class CameraController : MonoBehaviour
 
     private void Update()
     {
-        this.transform.position = new Vector3(Player.transform.position.x, Player.transform.position.y, -10);
+        if (FollowPlayer)
+        {
+            this.transform.position = new Vector3(Player.transform.position.x, Player.transform.position.y, -10);        
+        }
     }
 
     public void FadeIn()

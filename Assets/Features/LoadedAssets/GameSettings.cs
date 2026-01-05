@@ -88,5 +88,7 @@ public enum GameFlag
     MayorShrineActivated,
     MayorShrineDialogue1,
     FinaleMomentDialogue,
-    FinaleMoment
+    FinaleMoment,
+    SindrexNameChange,
+    SindrexFeedbackYes
 }

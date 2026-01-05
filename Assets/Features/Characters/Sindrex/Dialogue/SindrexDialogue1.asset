@@ -19,43 +19,52 @@ MonoBehaviour:
   MaxChoiceOptionPerNode: 8
   NodeLinkDatas:
   - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
+    TargetNodeGuid: c229490e-ee7a-44ee-82e0-8857bbc80c6f
+  - BaseNodeGuid: b4831758-6717-4037-83d4-27232c43c2a0
+    TargetNodeGuid: 5cf75908-dc72-4df7-be09-b6cc33f65051
+  - BaseNodeGuid: 75079989-0afc-4b0e-865b-62c72588f23a
+    TargetNodeGuid: 80722d2f-a329-4faa-956a-d9747a91d154
+  - BaseNodeGuid: e5b3a978-b5f8-4810-a74c-7c961dbbbda6
+    TargetNodeGuid: 538911d7-1563-4046-bf0b-8be6d73d6d1b
+  - BaseNodeGuid: a8b5e475-58fa-484c-8070-4ec735204553
+    TargetNodeGuid: 8915872f-c73f-40bb-bf08-ba1fed0720fa
+  - BaseNodeGuid: daf9f604-1305-4b35-8f42-66ab2f960cf3
+    TargetNodeGuid: 6902789f-02ca-49d7-bb57-dd9b3ed4166a
+  - BaseNodeGuid: 2edf9b08-5e52-4feb-9fdf-6ec62dc364b2
+    TargetNodeGuid: 53ce36b4-e3cd-41fe-8b72-e1ffe5c4c845
+  - BaseNodeGuid: 8915872f-c73f-40bb-bf08-ba1fed0720fa
+    TargetNodeGuid: 5373b8c2-45db-4209-8f51-93a3667e4891
+  - BaseNodeGuid: 254d0d1b-d6c9-4175-b6ff-cdf289fc7b6a
+    TargetNodeGuid: 3d446f93-3318-407d-a17c-ec092961248a
+  - BaseNodeGuid: c229490e-ee7a-44ee-82e0-8857bbc80c6f
     TargetNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
-  - BaseNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
-    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
+  - BaseNodeGuid: c229490e-ee7a-44ee-82e0-8857bbc80c6f
+    TargetNodeGuid: f5e7667f-2556-4a0d-8912-eaa25d1a14ee
+  - BaseNodeGuid: f5e7667f-2556-4a0d-8912-eaa25d1a14ee
+    TargetNodeGuid: a8b5e475-58fa-484c-8070-4ec735204553
+  - BaseNodeGuid: f5e7667f-2556-4a0d-8912-eaa25d1a14ee
+    TargetNodeGuid: 5373b8c2-45db-4209-8f51-93a3667e4891
+  - BaseNodeGuid: 942e9cce-7b8f-44dc-b0d7-80bd0bc58a77
+    TargetNodeGuid: daf9f604-1305-4b35-8f42-66ab2f960cf3
+  - BaseNodeGuid: 942e9cce-7b8f-44dc-b0d7-80bd0bc58a77
+    TargetNodeGuid: 254d0d1b-d6c9-4175-b6ff-cdf289fc7b6a
   - BaseNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
     TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
   - BaseNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
     TargetNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
+  - BaseNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
+    TargetNodeGuid: 8deb0860-cfc7-42f0-a8cc-11151584e680
+  - BaseNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
+    TargetNodeGuid: b4831758-6717-4037-83d4-27232c43c2a0
+  - BaseNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
+    TargetNodeGuid: 75079989-0afc-4b0e-865b-62c72588f23a
+  - BaseNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
+    TargetNodeGuid: e5b3a978-b5f8-4810-a74c-7c961dbbbda6
+  - BaseNodeGuid: 5373b8c2-45db-4209-8f51-93a3667e4891
+    TargetNodeGuid: 2edf9b08-5e52-4feb-9fdf-6ec62dc364b2
+  - BaseNodeGuid: 5373b8c2-45db-4209-8f51-93a3667e4891
+    TargetNodeGuid: 942e9cce-7b8f-44dc-b0d7-80bd0bc58a77
   DialogueChoiceNodeDatas:
-  - NodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
-    Position: {x: 1128, y: -143}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: I'm happy to help, but - mind you - I will not spoil anything!
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 5
-    DialogueNodePorts:
-    - PortGuid: 3a00748f-9519-4f4b-81e2-1f8d5b705a9d
-      InputGuid: 7838e825-39c1-416f-8753-1589000d7155
-      OutputGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
-      TextLanguage:
-      - languageEnum: 0
-        LanguageGenericType: Goodbye
-      - languageEnum: 1
-        LanguageGenericType: Choice 01
-      RequiredFlag: {fileID: 0}
   - NodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
     Position: {x: 800, y: 196}
     Character: {fileID: 0}
@@ -71,8 +80,8 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: '???: Herro? Who are you? Oh, right. You must excuse me,
-        I seem to have turned into a cat!'
+      LanguageGenericType: '???: Herro? Who are you? Oh, right, you. You must excuse
+        me, I seem to have turned into a cat!'
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 5
@@ -95,19 +104,327 @@ MonoBehaviour:
       - languageEnum: 1
         LanguageGenericType: Choice 02
       RequiredFlag: {fileID: 0}
-  DialogueNodeDatas: []
-  ConditionalNodeDatas: []
+  - NodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
+    Position: {x: 1147, y: 302}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Feel free to ask me questions, but I always keep the information
+        close to my chest.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 5
+    DialogueNodePorts:
+    - PortGuid: 3a00748f-9519-4f4b-81e2-1f8d5b705a9d
+      InputGuid: 8deb0860-cfc7-42f0-a8cc-11151584e680
+      OutputGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Goodbye
+      - languageEnum: 1
+        LanguageGenericType: Choice 01
+      RequiredFlag: {fileID: 0}
+    - PortGuid: c002bc21-7a21-412a-9f69-d3156f48a3fe
+      InputGuid: b4831758-6717-4037-83d4-27232c43c2a0
+      OutputGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Last night
+      - languageEnum: 1
+        LanguageGenericType: Choice 02
+      RequiredFlag: {fileID: 0}
+    - PortGuid: 48902460-7c7c-4630-b1c1-8e8b5c99edb4
+      InputGuid: 75079989-0afc-4b0e-865b-62c72588f23a
+      OutputGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Seen Poppy?
+      - languageEnum: 1
+        LanguageGenericType: Choice 03
+      RequiredFlag: {fileID: 11400000, guid: ca3d3e8f1504ee446bcee357a7fd2a34, type: 2}
+    - PortGuid: 511817a1-e9b1-4441-9c2f-5fcf2705f6b1
+      InputGuid: e5b3a978-b5f8-4810-a74c-7c961dbbbda6
+      OutputGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Findus' ball toy
+      - languageEnum: 1
+        LanguageGenericType: Choice 04
+      RequiredFlag: {fileID: 11400000, guid: 929c64ba1c19bb14382fcc3fd5781a99, type: 2}
+  - NodeGuid: 5373b8c2-45db-4209-8f51-93a3667e4891
+    Position: {x: 1047, y: -539}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Sindrex: So, did you like the game?'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 5
+    DialogueNodePorts:
+    - PortGuid: f01e63b1-519e-459e-b39d-1ad8776f2403
+      InputGuid: 2edf9b08-5e52-4feb-9fdf-6ec62dc364b2
+      OutputGuid: 5373b8c2-45db-4209-8f51-93a3667e4891
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Yes
+      - languageEnum: 1
+        LanguageGenericType: Choice 01
+      RequiredFlag: {fileID: 0}
+    - PortGuid: 40ca5fea-9f7f-4d89-b5c6-31627459aca6
+      InputGuid: 942e9cce-7b8f-44dc-b0d7-80bd0bc58a77
+      OutputGuid: 5373b8c2-45db-4209-8f51-93a3667e4891
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: No
+      - languageEnum: 1
+        LanguageGenericType: Choice 02
+      RequiredFlag: {fileID: 0}
+  DialogueNodeDatas:
+  - NodeGuid: b4831758-6717-4037-83d4-27232c43c2a0
+    Position: {x: 1497, y: 218}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Well, I was working on project with cute cats- Uh, you
+        heard nothing...
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 75079989-0afc-4b0e-865b-62c72588f23a
+    Position: {x: 1497, y: 572}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Poppy? At this stage, maybe around- Wait a minute! You
+        have to find out for yourself!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: e5b3a978-b5f8-4810-a74c-7c961dbbbda6
+    Position: {x: 1497, y: 921}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Ah, the good old ball toy. My muzzle is sealed this time.
+        Good luck, Detective.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: a8b5e475-58fa-484c-8070-4ec735204553
+    Position: {x: 1047, y: -214}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: '???: So for the big reveal. Drumrolls please!'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: daf9f604-1305-4b35-8f42-66ab2f960cf3
+    Position: {x: 1677, y: -737}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Hey! No takebacks!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 2edf9b08-5e52-4feb-9fdf-6ec62dc364b2
+    Position: {x: 1420, y: -911}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: SindrexFeedbackDialogueEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Great! I'm happy you are feline that way. Be sure to await
+        my next invention!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 8915872f-c73f-40bb-bf08-ba1fed0720fa
+    Position: {x: 1297, y: -214}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: SindrexNameChangeDialogueEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: '???: It''s me! Sindrex! The developer of the game! I
+        bet you never would have guessed that or what?'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 254d0d1b-d6c9-4175-b6ff-cdf289fc7b6a
+    Position: {x: 1677, y: -479}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Sad to hear. But purrhaps my next invention  entice you!
+        I look forward to the challenge! '
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  ConditionalNodeDatas:
+  - NodeGuid: c229490e-ee7a-44ee-82e0-8857bbc80c6f
+    Position: {x: 511, y: 196}
+    RequiredGameFlagCombo: {fileID: 11400000, guid: d280d0c262e2fca41b46ae301e91ac3f,
+      type: 2}
+  - NodeGuid: f5e7667f-2556-4a0d-8912-eaa25d1a14ee
+    Position: {x: 748, y: -108}
+    RequiredGameFlagCombo: {fileID: 11400000, guid: 1f9de555e001b8f4bb7087b442fff47a,
+      type: 2}
+  - NodeGuid: 942e9cce-7b8f-44dc-b0d7-80bd0bc58a77
+    Position: {x: 1422, y: -479}
+    RequiredGameFlagCombo: {fileID: 11400000, guid: 9c5e8b41d53795141b64f9a9da80c2bb,
+      type: 2}
   TimerChoiceNodeDatas: []
   EndNodeDatas:
+  - NodeGuid: 8deb0860-cfc7-42f0-a8cc-11151584e680
+    Position: {x: 1497, y: 90}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: 5cf75908-dc72-4df7-be09-b6cc33f65051
+    Position: {x: 1749, y: 218}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: 80722d2f-a329-4faa-956a-d9747a91d154
+    Position: {x: 1749, y: 572}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: 538911d7-1563-4046-bf0b-8be6d73d6d1b
+    Position: {x: 1749, y: 921}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: 6902789f-02ca-49d7-bb57-dd9b3ed4166a
+    Position: {x: 1915, y: -737}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: 3d446f93-3318-407d-a17c-ec092961248a
+    Position: {x: 1915, y: -479}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: 53ce36b4-e3cd-41fe-8b72-e1ffe5c4c845
+    Position: {x: 1677, y: -911}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
   - NodeGuid: 7838e825-39c1-416f-8753-1589000d7155
-    Position: {x: 1446, y: 196}
+    Position: {x: 1147, y: 165}
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 
   EventNodeDatas: []
   StartNodeDatas:
   - NodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
-    Position: {x: 592, y: 196}
+    Position: {x: 305, y: 196}
     startID: 
   RandomNodeDatas: []
   CommandNodeDatas: []

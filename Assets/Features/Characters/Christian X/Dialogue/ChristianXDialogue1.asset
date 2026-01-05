@@ -19,14 +19,88 @@ MonoBehaviour:
   MaxChoiceOptionPerNode: 8
   NodeLinkDatas:
   - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
+    TargetNodeGuid: 3f95f4d3-f6e8-495f-b05a-8e686443e691
+  - BaseNodeGuid: a271c2bc-26a9-4bd1-9c7a-7f4a180ece72
+    TargetNodeGuid: f39fea85-bb90-4356-96d5-6bc9ef608c9d
+  - BaseNodeGuid: 67e0ad07-466d-452a-be5c-fab3c566187f
+    TargetNodeGuid: 2d1e40dc-f103-4d24-8e57-b9a6cd847f0d
+  - BaseNodeGuid: dada1321-21e8-4a91-927f-92111fa6b47d
+    TargetNodeGuid: 4a556b64-221f-4517-b45b-b1178e1e5cf2
+  - BaseNodeGuid: 2673d62b-675d-4f00-bcf7-99066b1701af
+    TargetNodeGuid: 1269b788-c779-42ad-b337-bd76a65bb1c5
+  - BaseNodeGuid: 3f95f4d3-f6e8-495f-b05a-8e686443e691
+    TargetNodeGuid: a271c2bc-26a9-4bd1-9c7a-7f4a180ece72
+  - BaseNodeGuid: 3f95f4d3-f6e8-495f-b05a-8e686443e691
     TargetNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
   - BaseNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
-    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
+    TargetNodeGuid: ed70343b-5ec7-4e6e-90cf-ace8d9339ce0
+  - BaseNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
+    TargetNodeGuid: 67e0ad07-466d-452a-be5c-fab3c566187f
+  - BaseNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
+    TargetNodeGuid: dada1321-21e8-4a91-927f-92111fa6b47d
+  - BaseNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
+    TargetNodeGuid: 2673d62b-675d-4f00-bcf7-99066b1701af
   - BaseNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
     TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
   - BaseNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
     TargetNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
   DialogueChoiceNodeDatas:
+  - NodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
+    Position: {x: 1128, y: -143}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: What questions do you have?
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 5
+    DialogueNodePorts:
+    - PortGuid: 3a00748f-9519-4f4b-81e2-1f8d5b705a9d
+      InputGuid: ed70343b-5ec7-4e6e-90cf-ace8d9339ce0
+      OutputGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Goodbye
+      - languageEnum: 1
+        LanguageGenericType: Choice 01
+      RequiredFlag: {fileID: 0}
+    - PortGuid: 2e32e997-4f9b-4443-8ae4-ae70b2852334
+      InputGuid: 67e0ad07-466d-452a-be5c-fab3c566187f
+      OutputGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Last night
+      - languageEnum: 1
+        LanguageGenericType: Choice 02
+      RequiredFlag: {fileID: 0}
+    - PortGuid: 967eb2f8-8019-487b-a4f3-d71fa0a8b43c
+      InputGuid: dada1321-21e8-4a91-927f-92111fa6b47d
+      OutputGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Seen Poppy
+      - languageEnum: 1
+        LanguageGenericType: Choice 03
+      RequiredFlag: {fileID: 11400000, guid: ca3d3e8f1504ee446bcee357a7fd2a34, type: 2}
+    - PortGuid: 22c7e8ce-1095-46c9-bbd6-7d4f1b6212d7
+      InputGuid: 2673d62b-675d-4f00-bcf7-99066b1701af
+      OutputGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Findus' ball toy
+      - languageEnum: 1
+        LanguageGenericType: Choice 04
+      RequiredFlag: {fileID: 11400000, guid: 929c64ba1c19bb14382fcc3fd5781a99, type: 2}
   - NodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
     Position: {x: 801, y: 196}
     Character: {fileID: 0}
@@ -66,11 +140,13 @@ MonoBehaviour:
       - languageEnum: 1
         LanguageGenericType: Choice 02
       RequiredFlag: {fileID: 0}
-  - NodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
-    Position: {x: 1128, y: -143}
+  DialogueNodeDatas:
+  - NodeGuid: a271c2bc-26a9-4bd1-9c7a-7f4a180ece72
+    Position: {x: 712, y: -155}
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
+    Event: 
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
@@ -81,33 +157,112 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: What questions do you have?
+      LanguageGenericType: 'Christian X: You had us in the first half, haha!'
     - languageEnum: 1
       LanguageGenericType: 
-    Duration: 5
-    DialogueNodePorts:
-    - PortGuid: 3a00748f-9519-4f4b-81e2-1f8d5b705a9d
-      InputGuid: 7838e825-39c1-416f-8753-1589000d7155
-      OutputGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
-      TextLanguage:
-      - languageEnum: 0
-        LanguageGenericType: Goodbye
-      - languageEnum: 1
-        LanguageGenericType: Choice 01
-      RequiredFlag: {fileID: 0}
-  DialogueNodeDatas: []
-  ConditionalNodeDatas: []
+    Duration: 10
+  - NodeGuid: 67e0ad07-466d-452a-be5c-fab3c566187f
+    Position: {x: 1472, y: -143}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Why would you ask me that? I'm innocent!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: dada1321-21e8-4a91-927f-92111fa6b47d
+    Position: {x: 1472, y: 157}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: I have not. Is Poppy missing? I do hope you find Poppy.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 2673d62b-675d-4f00-bcf7-99066b1701af
+    Position: {x: 1472, y: 451}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: I think I saw him with his Ball Toy here inside the Town
+        Hall. Maybe you should look around?
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  ConditionalNodeDatas:
+  - NodeGuid: 3f95f4d3-f6e8-495f-b05a-8e686443e691
+    Position: {x: 465, y: 196}
+    RequiredGameFlagCombo: {fileID: 11400000, guid: d280d0c262e2fca41b46ae301e91ac3f,
+      type: 2}
   TimerChoiceNodeDatas: []
   EndNodeDatas:
   - NodeGuid: 7838e825-39c1-416f-8753-1589000d7155
-    Position: {x: 1446, y: 196}
+    Position: {x: 1159, y: 196}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: f39fea85-bb90-4356-96d5-6bc9ef608c9d
+    Position: {x: 951, y: -155}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: ed70343b-5ec7-4e6e-90cf-ace8d9339ce0
+    Position: {x: 1472, y: -357}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: 2d1e40dc-f103-4d24-8e57-b9a6cd847f0d
+    Position: {x: 1763, y: -143}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: 4a556b64-221f-4517-b45b-b1178e1e5cf2
+    Position: {x: 1763, y: 157}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: 1269b788-c779-42ad-b337-bd76a65bb1c5
+    Position: {x: 1763, y: 447}
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 
   EventNodeDatas: []
   StartNodeDatas:
   - NodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
-    Position: {x: 592, y: 196}
+    Position: {x: 262, y: 196}
     startID: 
   RandomNodeDatas: []
   CommandNodeDatas: []

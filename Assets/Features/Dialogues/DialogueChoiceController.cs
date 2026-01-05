@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class DialogueChoiceController : MonoBehaviour
 {
     public Text BorderText;
-    public Text ChoiceText;
+    public Text ChoiceText; //max 2 linjes of 10 characters
     public bool IsActive = false;
 
     //Spawn letters one by one

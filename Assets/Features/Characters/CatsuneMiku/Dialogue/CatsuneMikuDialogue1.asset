@@ -19,11 +19,21 @@ MonoBehaviour:
   MaxChoiceOptionPerNode: 8
   NodeLinkDatas:
   - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
-    TargetNodeGuid: bc211093-b3a3-47ee-9e87-636deeaee570
+    TargetNodeGuid: ef70ee78-365c-4584-89f5-6f18d5168a8e
   - BaseNodeGuid: 1ad5ce1b-198e-4471-b727-2d7a7fce402a
     TargetNodeGuid: 11b94d13-bb8b-4cf1-92c1-83e4a7830788
   - BaseNodeGuid: 11b94d13-bb8b-4cf1-92c1-83e4a7830788
     TargetNodeGuid: c9143c93-35f8-4488-8cc7-36138285f85c
+  - BaseNodeGuid: 135e8d2c-7855-464a-98cc-de466ef05991
+    TargetNodeGuid: c9ebf32e-b98f-46e7-97e7-2e7188d41acd
+  - BaseNodeGuid: 2af2eafc-1cd0-47b0-8308-3f93053dfe8c
+    TargetNodeGuid: 8ef14e53-abb3-494a-8f56-d1ee731b5763
+  - BaseNodeGuid: 96942ed6-ed7a-4bd2-903b-357e2be3b31c
+    TargetNodeGuid: 7c64222f-19c6-4dcc-9847-d735e65d1291
+  - BaseNodeGuid: ef70ee78-365c-4584-89f5-6f18d5168a8e
+    TargetNodeGuid: bc211093-b3a3-47ee-9e87-636deeaee570
+  - BaseNodeGuid: ef70ee78-365c-4584-89f5-6f18d5168a8e
+    TargetNodeGuid: 135e8d2c-7855-464a-98cc-de466ef05991
   - BaseNodeGuid: bc211093-b3a3-47ee-9e87-636deeaee570
     TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
   - BaseNodeGuid: bc211093-b3a3-47ee-9e87-636deeaee570
@@ -32,6 +42,10 @@ MonoBehaviour:
     TargetNodeGuid: e412d63d-e2c4-4260-8992-4809493e463a
   - BaseNodeGuid: 25b3ff0f-3d91-49ce-9b1c-79911ab3832f
     TargetNodeGuid: 1ad5ce1b-198e-4471-b727-2d7a7fce402a
+  - BaseNodeGuid: 25b3ff0f-3d91-49ce-9b1c-79911ab3832f
+    TargetNodeGuid: 96942ed6-ed7a-4bd2-903b-357e2be3b31c
+  - BaseNodeGuid: 25b3ff0f-3d91-49ce-9b1c-79911ab3832f
+    TargetNodeGuid: 2af2eafc-1cd0-47b0-8308-3f93053dfe8c
   DialogueChoiceNodeDatas:
   - NodeGuid: bc211093-b3a3-47ee-9e87-636deeaee570
     Position: {x: 686, y: 196}
@@ -110,6 +124,24 @@ MonoBehaviour:
       - languageEnum: 1
         LanguageGenericType: Choice 02
       RequiredFlag: {fileID: 0}
+    - PortGuid: 813c9072-5fcd-4986-8dd8-6c5e9a499eb6
+      InputGuid: 96942ed6-ed7a-4bd2-903b-357e2be3b31c
+      OutputGuid: 25b3ff0f-3d91-49ce-9b1c-79911ab3832f
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Seen Poppy?
+      - languageEnum: 1
+        LanguageGenericType: Choice 03
+      RequiredFlag: {fileID: 11400000, guid: ca3d3e8f1504ee446bcee357a7fd2a34, type: 2}
+    - PortGuid: 1b7394e2-3224-44b6-9a73-9ea72e46d18b
+      InputGuid: 2af2eafc-1cd0-47b0-8308-3f93053dfe8c
+      OutputGuid: 25b3ff0f-3d91-49ce-9b1c-79911ab3832f
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Findus' ball toy
+      - languageEnum: 1
+        LanguageGenericType: Choice 04
+      RequiredFlag: {fileID: 11400000, guid: 929c64ba1c19bb14382fcc3fd5781a99, type: 2}
   DialogueNodeDatas:
   - NodeGuid: 1ad5ce1b-198e-4471-b727-2d7a7fce402a
     Position: {x: 1489, y: 374}
@@ -152,7 +184,74 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
-  ConditionalNodeDatas: []
+  - NodeGuid: 135e8d2c-7855-464a-98cc-de466ef05991
+    Position: {x: 686, y: -181}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Catsune Miku: I would not have guessed YOU were the Color
+        Kitnapper! Maybe you deserve a suplex...'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 2af2eafc-1cd0-47b0-8308-3f93053dfe8c
+    Position: {x: 1489, y: 1083}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Poor old Findus finally lost his ball bearings, huh? Oh,
+        you meant his Ball Toy? I have not seen it sadly :(
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 96942ed6-ed7a-4bd2-903b-357e2be3b31c
+    Position: {x: 1489, y: 716}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Is Poppy-pun missing!? No I have not seen Poppy-pun all
+        day, but I know Poppy-pun likes to take walks in the forest!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  ConditionalNodeDatas:
+  - NodeGuid: ef70ee78-365c-4584-89f5-6f18d5168a8e
+    Position: {x: 412, y: 190}
+    RequiredGameFlagCombo: {fileID: 11400000, guid: d280d0c262e2fca41b46ae301e91ac3f,
+      type: 2}
   TimerChoiceNodeDatas: []
   EndNodeDatas:
   - NodeGuid: 7838e825-39c1-416f-8753-1589000d7155
@@ -170,10 +269,25 @@ MonoBehaviour:
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 
+  - NodeGuid: c9ebf32e-b98f-46e7-97e7-2e7188d41acd
+    Position: {x: 961, y: -181}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: 7c64222f-19c6-4dcc-9847-d735e65d1291
+    Position: {x: 1741, y: 716}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: 8ef14e53-abb3-494a-8f56-d1ee731b5763
+    Position: {x: 1741, y: 1083}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
   EventNodeDatas: []
   StartNodeDatas:
   - NodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
-    Position: {x: 321, y: 196}
+    Position: {x: 186, y: 190}
     startID: 
   RandomNodeDatas: []
   CommandNodeDatas: []

@@ -18,14 +18,16 @@ MonoBehaviour:
   LimitChoiceOptionPerNode: 0
   MaxChoiceOptionPerNode: 8
   NodeLinkDatas:
-  - BaseNodeGuid: 12611948-860f-44ca-83ec-c39c7282715d
-    TargetNodeGuid: 890351a3-5b42-4f01-a09b-391e06ac02c5
-  - BaseNodeGuid: 890351a3-5b42-4f01-a09b-391e06ac02c5
-    TargetNodeGuid: da49e726-778e-4d7d-b479-ca0ac80b554f
-  - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
-    TargetNodeGuid: 4c2bbdeb-643d-4fae-8ea6-0b98c276dd30
   - BaseNodeGuid: 4c2bbdeb-643d-4fae-8ea6-0b98c276dd30
     TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
+  - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
+    TargetNodeGuid: 1fbda504-7e0d-442c-bf6f-7f06da2dc678
+  - BaseNodeGuid: 1fbda504-7e0d-442c-bf6f-7f06da2dc678
+    TargetNodeGuid: 6d603c86-1a5e-4a8a-9206-7b5959035871
+  - BaseNodeGuid: 6d603c86-1a5e-4a8a-9206-7b5959035871
+    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
+  - BaseNodeGuid: 1fbda504-7e0d-442c-bf6f-7f06da2dc678
+    TargetNodeGuid: 4c2bbdeb-643d-4fae-8ea6-0b98c276dd30
   DialogueChoiceNodeDatas: []
   DialogueNodeDatas:
   - NodeGuid: 4c2bbdeb-643d-4fae-8ea6-0b98c276dd30
@@ -48,7 +50,32 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
-  ConditionalNodeDatas: []
+  - NodeGuid: 6d603c86-1a5e-4a8a-9206-7b5959035871
+    Position: {x: 576, y: -196}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Pusur: I heard you did it. Well color me surprised, I
+        didn''t think you had it in you. Anyways, I still haven''t caught that mouse...'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  ConditionalNodeDatas:
+  - NodeGuid: 1fbda504-7e0d-442c-bf6f-7f06da2dc678
+    Position: {x: 285, y: 196}
+    RequiredGameFlagCombo: {fileID: 11400000, guid: d280d0c262e2fca41b46ae301e91ac3f,
+      type: 2}
   TimerChoiceNodeDatas: []
   EndNodeDatas:
   - NodeGuid: 7838e825-39c1-416f-8753-1589000d7155
@@ -59,7 +86,7 @@ MonoBehaviour:
   EventNodeDatas: []
   StartNodeDatas:
   - NodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
-    Position: {x: 321, y: 196}
+    Position: {x: 85, y: 196}
     startID: 
   RandomNodeDatas: []
   CommandNodeDatas: []

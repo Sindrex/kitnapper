@@ -18,20 +18,34 @@ MonoBehaviour:
   LimitChoiceOptionPerNode: 0
   MaxChoiceOptionPerNode: 0
   NodeLinkDatas:
-  - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
-    TargetNodeGuid: 4fd61db1-a71e-4295-8ec8-fb495f167954
-  - BaseNodeGuid: 4fd61db1-a71e-4295-8ec8-fb495f167954
-    TargetNodeGuid: 2fc2f56d-375d-4a2d-926a-fa8163a1d583
   - BaseNodeGuid: 2fc2f56d-375d-4a2d-926a-fa8163a1d583
     TargetNodeGuid: 8f05f8ea-704c-4b21-9cad-ceec3f556e1a
-  - BaseNodeGuid: 4fd61db1-a71e-4295-8ec8-fb495f167954
-    TargetNodeGuid: 0c0d56e6-039a-4ca4-a36e-187bbd7e0e42
+  - BaseNodeGuid: 693cdb95-ab3f-467c-925f-101923b65cad
+    TargetNodeGuid: 1a0f9043-9955-4957-9e53-0fa16f11de69
+  - BaseNodeGuid: cdc1b14a-235e-4338-b578-91110baad130
+    TargetNodeGuid: 693cdb95-ab3f-467c-925f-101923b65cad
   - BaseNodeGuid: 0c0d56e6-039a-4ca4-a36e-187bbd7e0e42
     TargetNodeGuid: 8f05f8ea-704c-4b21-9cad-ceec3f556e1a
+  - BaseNodeGuid: 1a0f9043-9955-4957-9e53-0fa16f11de69
+    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
+  - BaseNodeGuid: cf257311-7fa9-4c48-a855-85cb9d555300
+    TargetNodeGuid: 138b667b-51b1-4ff3-90d1-4a2a0205e3c3
+  - BaseNodeGuid: 138b667b-51b1-4ff3-90d1-4a2a0205e3c3
+    TargetNodeGuid: cdc1b14a-235e-4338-b578-91110baad130
+  - BaseNodeGuid: 49ae51f3-417b-497e-aa96-38a1ec91b121
+    TargetNodeGuid: dfdb6f86-9419-4200-a790-511060dfc225
+  - BaseNodeGuid: 332bfb8d-9043-4f00-80aa-06d8acf1cfa8
+    TargetNodeGuid: 7435f5be-4fd6-4c70-aa1b-a2ff9c5dce29
+  - BaseNodeGuid: 7435f5be-4fd6-4c70-aa1b-a2ff9c5dce29
+    TargetNodeGuid: d53fa7bb-6867-4bf8-ba8b-9b5ab3a6ebac
   - BaseNodeGuid: 8f05f8ea-704c-4b21-9cad-ceec3f556e1a
     TargetNodeGuid: 7efaf9ba-97e4-4424-810f-c620df1c7368
   - BaseNodeGuid: 8f05f8ea-704c-4b21-9cad-ceec3f556e1a
     TargetNodeGuid: cf257311-7fa9-4c48-a855-85cb9d555300
+  - BaseNodeGuid: 4fd61db1-a71e-4295-8ec8-fb495f167954
+    TargetNodeGuid: 2fc2f56d-375d-4a2d-926a-fa8163a1d583
+  - BaseNodeGuid: 4fd61db1-a71e-4295-8ec8-fb495f167954
+    TargetNodeGuid: 0c0d56e6-039a-4ca4-a36e-187bbd7e0e42
   - BaseNodeGuid: 7efaf9ba-97e4-4424-810f-c620df1c7368
     TargetNodeGuid: 49ae51f3-417b-497e-aa96-38a1ec91b121
   - BaseNodeGuid: 7efaf9ba-97e4-4424-810f-c620df1c7368
@@ -40,22 +54,22 @@ MonoBehaviour:
     TargetNodeGuid: 49ae51f3-417b-497e-aa96-38a1ec91b121
   - BaseNodeGuid: 889621fc-4b51-470f-a7cc-25216ec1e25c
     TargetNodeGuid: 332bfb8d-9043-4f00-80aa-06d8acf1cfa8
-  - BaseNodeGuid: 332bfb8d-9043-4f00-80aa-06d8acf1cfa8
-    TargetNodeGuid: 7435f5be-4fd6-4c70-aa1b-a2ff9c5dce29
-  - BaseNodeGuid: 7435f5be-4fd6-4c70-aa1b-a2ff9c5dce29
-    TargetNodeGuid: d53fa7bb-6867-4bf8-ba8b-9b5ab3a6ebac
-  - BaseNodeGuid: 49ae51f3-417b-497e-aa96-38a1ec91b121
-    TargetNodeGuid: dfdb6f86-9419-4200-a790-511060dfc225
-  - BaseNodeGuid: cf257311-7fa9-4c48-a855-85cb9d555300
-    TargetNodeGuid: 138b667b-51b1-4ff3-90d1-4a2a0205e3c3
-  - BaseNodeGuid: 138b667b-51b1-4ff3-90d1-4a2a0205e3c3
-    TargetNodeGuid: cdc1b14a-235e-4338-b578-91110baad130
-  - BaseNodeGuid: cdc1b14a-235e-4338-b578-91110baad130
-    TargetNodeGuid: 693cdb95-ab3f-467c-925f-101923b65cad
-  - BaseNodeGuid: 693cdb95-ab3f-467c-925f-101923b65cad
-    TargetNodeGuid: 1a0f9043-9955-4957-9e53-0fa16f11de69
-  - BaseNodeGuid: 1a0f9043-9955-4957-9e53-0fa16f11de69
-    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
+  - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
+    TargetNodeGuid: 22294a8c-0eb2-446f-9829-495e67b5a8a7
+  - BaseNodeGuid: 22294a8c-0eb2-446f-9829-495e67b5a8a7
+    TargetNodeGuid: 08a994b5-bd56-4f99-9387-45d43406c157
+  - BaseNodeGuid: 08a994b5-bd56-4f99-9387-45d43406c157
+    TargetNodeGuid: 9a4a56d3-b4ef-4155-8523-0d532fb9c727
+  - BaseNodeGuid: 22294a8c-0eb2-446f-9829-495e67b5a8a7
+    TargetNodeGuid: 4fd61db1-a71e-4295-8ec8-fb495f167954
+  - BaseNodeGuid: 889621fc-4b51-470f-a7cc-25216ec1e25c
+    TargetNodeGuid: 22f51342-4318-4877-93d0-bd695020e50a
+  - BaseNodeGuid: 22f51342-4318-4877-93d0-bd695020e50a
+    TargetNodeGuid: 49ae51f3-417b-497e-aa96-38a1ec91b121
+  - BaseNodeGuid: 889621fc-4b51-470f-a7cc-25216ec1e25c
+    TargetNodeGuid: 44f46695-f28c-49dc-b365-42b599e965f7
+  - BaseNodeGuid: 44f46695-f28c-49dc-b365-42b599e965f7
+    TargetNodeGuid: 49ae51f3-417b-497e-aa96-38a1ec91b121
   DialogueChoiceNodeDatas:
   - NodeGuid: 7efaf9ba-97e4-4424-810f-c620df1c7368
     Position: {x: 1537, y: -136}
@@ -133,6 +147,24 @@ MonoBehaviour:
       - languageEnum: 1
         LanguageGenericType: Choice 02
       RequiredFlag: {fileID: 11400000, guid: 1967063c06ae88a4aa987bcee92cc5ab, type: 2}
+    - PortGuid: 1df23809-4d68-4f48-8a09-a50222069d31
+      InputGuid: 22f51342-4318-4877-93d0-bd695020e50a
+      OutputGuid: 889621fc-4b51-470f-a7cc-25216ec1e25c
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Seen Poppy?
+      - languageEnum: 1
+        LanguageGenericType: Choice 03
+      RequiredFlag: {fileID: 11400000, guid: ca3d3e8f1504ee446bcee357a7fd2a34, type: 2}
+    - PortGuid: df4217dd-49d0-4be9-9e8b-cdc6a7df93f9
+      InputGuid: 44f46695-f28c-49dc-b365-42b599e965f7
+      OutputGuid: 889621fc-4b51-470f-a7cc-25216ec1e25c
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Findus' ball toy
+      - languageEnum: 1
+        LanguageGenericType: Choice 04
+      RequiredFlag: {fileID: 11400000, guid: 929c64ba1c19bb14382fcc3fd5781a99, type: 2}
   DialogueNodeDatas:
   - NodeGuid: 2fc2f56d-375d-4a2d-926a-fa8163a1d583
     Position: {x: 1023, y: -149}
@@ -298,8 +330,29 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
+  - NodeGuid: 08a994b5-bd56-4f99-9387-45d43406c157
+    Position: {x: 555, y: -149}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Mayor: Detective. Though painful, I think we all learned
+        something this past day. Thank you.'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
   - NodeGuid: 332bfb8d-9043-4f00-80aa-06d8acf1cfa8
-    Position: {x: 2359, y: -503}
+    Position: {x: 2359, y: -897}
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
@@ -319,7 +372,7 @@ MonoBehaviour:
       LanguageGenericType: 
     Duration: 10
   - NodeGuid: 7435f5be-4fd6-4c70-aa1b-a2ff9c5dce29
-    Position: {x: 2642, y: -503}
+    Position: {x: 2616, y: -897}
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
@@ -339,6 +392,47 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
+  - NodeGuid: 22f51342-4318-4877-93d0-bd695020e50a
+    Position: {x: 2359, y: -566}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Poppy? No, cannot say I have, humr humr.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 44f46695-f28c-49dc-b365-42b599e965f7
+    Position: {x: 2631, y: -461}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Findus' toy is missing? He did bring it here on occasion,
+        humr humr.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
   ConditionalNodeDatas:
   - NodeGuid: 8f05f8ea-704c-4b21-9cad-ceec3f556e1a
     Position: {x: 1172, y: 196}
@@ -348,15 +442,14 @@ MonoBehaviour:
     Position: {x: 865, y: 196}
     RequiredGameFlagCombo: {fileID: 11400000, guid: 696c863693f74614cb884cff365fad63,
       type: 2}
+  - NodeGuid: 22294a8c-0eb2-446f-9829-495e67b5a8a7
+    Position: {x: 522, y: 196}
+    RequiredGameFlagCombo: {fileID: 11400000, guid: d280d0c262e2fca41b46ae301e91ac3f,
+      type: 2}
   TimerChoiceNodeDatas: []
   EndNodeDatas:
   - NodeGuid: dfdb6f86-9419-4200-a790-511060dfc225
     Position: {x: 2508, y: -122}
-    EndNodeType: 0
-    Dialogue: {fileID: 0}
-    startID: 
-  - NodeGuid: d53fa7bb-6867-4bf8-ba8b-9b5ab3a6ebac
-    Position: {x: 2882, y: -503}
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 
@@ -365,10 +458,20 @@ MonoBehaviour:
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 
+  - NodeGuid: 9a4a56d3-b4ef-4155-8523-0d532fb9c727
+    Position: {x: 804, y: -149}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: d53fa7bb-6867-4bf8-ba8b-9b5ab3a6ebac
+    Position: {x: 2853, y: -897}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
   EventNodeDatas: []
   StartNodeDatas:
   - NodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
-    Position: {x: 612, y: 196}
+    Position: {x: 317, y: 196}
     startID: 
   RandomNodeDatas: []
   CommandNodeDatas: []

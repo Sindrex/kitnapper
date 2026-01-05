@@ -18,90 +18,49 @@ MonoBehaviour:
   LimitChoiceOptionPerNode: 0
   MaxChoiceOptionPerNode: 8
   NodeLinkDatas:
-  - BaseNodeGuid: 7296a665-fc20-41ab-bd53-1dedba9fdd32
-    TargetNodeGuid: a6fb76de-e97f-44ec-b860-c843d0103035
   - BaseNodeGuid: 8392f854-d495-45cb-b7e0-26550dea3efc
     TargetNodeGuid: 972f7792-bab5-4888-a929-56a4a72f0c9a
-  - BaseNodeGuid: 707ffdbb-3be0-40c6-b8b6-84be7faac9c0
-    TargetNodeGuid: 5219e840-1c49-460f-b77c-006ad2b6f3ec
   - BaseNodeGuid: 6a292970-2633-4c96-a1ce-7bdfcc3853cb
     TargetNodeGuid: 342611f3-f33d-446f-9f60-813418011077
-  - BaseNodeGuid: bae9baee-8c09-4e68-a814-204339e011f7
-    TargetNodeGuid: 707ffdbb-3be0-40c6-b8b6-84be7faac9c0
   - BaseNodeGuid: 972f7792-bab5-4888-a929-56a4a72f0c9a
     TargetNodeGuid: ade34491-e228-444e-b30b-a9e195b70063
   - BaseNodeGuid: c03585cc-9875-4b69-b035-ab0bbd12357c
     TargetNodeGuid: adf4f629-c7c3-46ec-bbdd-f3e5a4f6464d
   - BaseNodeGuid: 342611f3-f33d-446f-9f60-813418011077
     TargetNodeGuid: 3e194af8-c1fb-42a9-b789-f65d9b5a07de
-  - BaseNodeGuid: a6fb76de-e97f-44ec-b860-c843d0103035
-    TargetNodeGuid: bae9baee-8c09-4e68-a814-204339e011f7
-  - BaseNodeGuid: a6fb76de-e97f-44ec-b860-c843d0103035
+  - BaseNodeGuid: 707ffdbb-3be0-40c6-b8b6-84be7faac9c0
     TargetNodeGuid: 5219e840-1c49-460f-b77c-006ad2b6f3ec
+  - BaseNodeGuid: bae9baee-8c09-4e68-a814-204339e011f7
+    TargetNodeGuid: 707ffdbb-3be0-40c6-b8b6-84be7faac9c0
   - BaseNodeGuid: 674e888a-f637-45e7-9ba5-3f02f1f027b3
     TargetNodeGuid: c03585cc-9875-4b69-b035-ab0bbd12357c
   - BaseNodeGuid: 674e888a-f637-45e7-9ba5-3f02f1f027b3
     TargetNodeGuid: 8392f854-d495-45cb-b7e0-26550dea3efc
-  - BaseNodeGuid: 5219e840-1c49-460f-b77c-006ad2b6f3ec
-    TargetNodeGuid: cd2c5f6e-de40-41ed-b82e-2274af1d3ddd
-  - BaseNodeGuid: 5219e840-1c49-460f-b77c-006ad2b6f3ec
-    TargetNodeGuid: 06b3c5d4-bfa3-4701-8e2b-a0a480d63836
-  - BaseNodeGuid: 5219e840-1c49-460f-b77c-006ad2b6f3ec
-    TargetNodeGuid: 674e888a-f637-45e7-9ba5-3f02f1f027b3
+  - BaseNodeGuid: a6fb76de-e97f-44ec-b860-c843d0103035
+    TargetNodeGuid: bae9baee-8c09-4e68-a814-204339e011f7
+  - BaseNodeGuid: a6fb76de-e97f-44ec-b860-c843d0103035
+    TargetNodeGuid: 5219e840-1c49-460f-b77c-006ad2b6f3ec
   - BaseNodeGuid: 06b3c5d4-bfa3-4701-8e2b-a0a480d63836
     TargetNodeGuid: b0aeeb87-9f1f-4be8-9849-b2f09f449ac5
   - BaseNodeGuid: 06b3c5d4-bfa3-4701-8e2b-a0a480d63836
     TargetNodeGuid: 6a292970-2633-4c96-a1ce-7bdfcc3853cb
+  - BaseNodeGuid: 06b3c5d4-bfa3-4701-8e2b-a0a480d63836
+    TargetNodeGuid: 674e888a-f637-45e7-9ba5-3f02f1f027b3
+  - BaseNodeGuid: 5219e840-1c49-460f-b77c-006ad2b6f3ec
+    TargetNodeGuid: cd2c5f6e-de40-41ed-b82e-2274af1d3ddd
+  - BaseNodeGuid: 5219e840-1c49-460f-b77c-006ad2b6f3ec
+    TargetNodeGuid: 06b3c5d4-bfa3-4701-8e2b-a0a480d63836
+  - BaseNodeGuid: 7296a665-fc20-41ab-bd53-1dedba9fdd32
+    TargetNodeGuid: 9f6f05d3-0f42-4038-a4d9-660f7a8f96ec
+  - BaseNodeGuid: c91e403a-8a80-42cc-b702-efdcc416abc0
+    TargetNodeGuid: 895fd863-1b0b-4550-83e0-538a566e070a
+  - BaseNodeGuid: 9f6f05d3-0f42-4038-a4d9-660f7a8f96ec
+    TargetNodeGuid: c91e403a-8a80-42cc-b702-efdcc416abc0
+  - BaseNodeGuid: 9f6f05d3-0f42-4038-a4d9-660f7a8f96ec
+    TargetNodeGuid: a6fb76de-e97f-44ec-b860-c843d0103035
   DialogueChoiceNodeDatas:
-  - NodeGuid: 5219e840-1c49-460f-b77c-006ad2b6f3ec
-    Position: {x: 499, y: 200}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: 'SINBAD: WHAT?'
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 5
-    DialogueNodePorts:
-    - PortGuid: 93f021fe-bfd1-4d80-b58f-c54de712f007
-      InputGuid: cd2c5f6e-de40-41ed-b82e-2274af1d3ddd
-      OutputGuid: 5219e840-1c49-460f-b77c-006ad2b6f3ec
-      TextLanguage:
-      - languageEnum: 0
-        LanguageGenericType: Goodbye
-      - languageEnum: 1
-        LanguageGenericType: Choice 01
-      RequiredFlag: {fileID: 0}
-    - PortGuid: 23e80279-842e-4831-ae93-be1fee8213d4
-      InputGuid: 06b3c5d4-bfa3-4701-8e2b-a0a480d63836
-      OutputGuid: 5219e840-1c49-460f-b77c-006ad2b6f3ec
-      TextLanguage:
-      - languageEnum: 0
-        LanguageGenericType: Question
-      - languageEnum: 1
-        LanguageGenericType: Choice 02
-      RequiredFlag: {fileID: 0}
-    - PortGuid: ab17362e-777e-4631-bb58-160bfaeddd1e
-      InputGuid: 674e888a-f637-45e7-9ba5-3f02f1f027b3
-      OutputGuid: 5219e840-1c49-460f-b77c-006ad2b6f3ec
-      TextLanguage:
-      - languageEnum: 0
-        LanguageGenericType: Findus' toy
-      - languageEnum: 1
-        LanguageGenericType: Choice 03
-      RequiredFlag: {fileID: 11400000, guid: 319395625b87ad7449b3af0d0c5e3d30, type: 2}
   - NodeGuid: 06b3c5d4-bfa3-4701-8e2b-a0a480d63836
-    Position: {x: 499, y: -297}
+    Position: {x: 504, y: 75}
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
@@ -138,6 +97,53 @@ MonoBehaviour:
       - languageEnum: 1
         LanguageGenericType: Choice 02
       RequiredFlag: {fileID: 0}
+    - PortGuid: faa22d4a-c025-4d29-aee3-94533377b648
+      InputGuid: 674e888a-f637-45e7-9ba5-3f02f1f027b3
+      OutputGuid: 06b3c5d4-bfa3-4701-8e2b-a0a480d63836
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Findus' ball toy
+      - languageEnum: 1
+        LanguageGenericType: Choice 03
+      RequiredFlag: {fileID: 11400000, guid: 319395625b87ad7449b3af0d0c5e3d30, type: 2}
+  - NodeGuid: 5219e840-1c49-460f-b77c-006ad2b6f3ec
+    Position: {x: 120, y: 73}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'SINBAD: WHAT?'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 5
+    DialogueNodePorts:
+    - PortGuid: 93f021fe-bfd1-4d80-b58f-c54de712f007
+      InputGuid: cd2c5f6e-de40-41ed-b82e-2274af1d3ddd
+      OutputGuid: 5219e840-1c49-460f-b77c-006ad2b6f3ec
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Goodbye
+      - languageEnum: 1
+        LanguageGenericType: Choice 01
+      RequiredFlag: {fileID: 0}
+    - PortGuid: 23e80279-842e-4831-ae93-be1fee8213d4
+      InputGuid: 06b3c5d4-bfa3-4701-8e2b-a0a480d63836
+      OutputGuid: 5219e840-1c49-460f-b77c-006ad2b6f3ec
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Question
+      - languageEnum: 1
+        LanguageGenericType: Choice 02
+      RequiredFlag: {fileID: 0}
   DialogueNodeDatas:
   - NodeGuid: 8392f854-d495-45cb-b7e0-26550dea3efc
     Position: {x: 1144, y: 450}
@@ -160,27 +166,6 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
-  - NodeGuid: 707ffdbb-3be0-40c6-b8b6-84be7faac9c0
-    Position: {x: 126, y: -50}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: SinbadInitialDialogueEvent
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: 'SINBAD: THAT CAT IN THERE ANGRY WITH ME! NOT KNOW WHY...
-        CAN I MAKE HAPPY?'
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
   - NodeGuid: 6a292970-2633-4c96-a1ce-7bdfcc3853cb
     Position: {x: 900, y: -175}
     Character: {fileID: 0}
@@ -199,27 +184,6 @@ MonoBehaviour:
     - languageEnum: 0
       LanguageGenericType: LAST NIGHT? I JUST ARRIVED. SLEPT IN PARK. WOKE UP- BAM!
         BLACK AND WHITE!
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
-  - NodeGuid: bae9baee-8c09-4e68-a814-204339e011f7
-    Position: {x: -111, y: -50}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: '???: HEY AGAIN! I SINBAD. NOT FROM HERE. I TRAVEL LONG
-        LONG ROAD BY MYSELF. YOU POLICECAT?'
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
@@ -285,22 +249,84 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
+  - NodeGuid: 707ffdbb-3be0-40c6-b8b6-84be7faac9c0
+    Position: {x: -119, y: -191}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: SinbadInitialDialogueEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'SINBAD: THAT CAT IN THERE ANGRY WITH ME! NOT KNOW WHY...
+        CAN I MAKE HAPPY?'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: bae9baee-8c09-4e68-a814-204339e011f7
+    Position: {x: -356, y: -191}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: '???: HEY AGAIN! I SINBAD. NOT FROM HERE. I TRAVEL LONG
+        LONG ROAD BY MYSELF. YOU POLICECAT?'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: c91e403a-8a80-42cc-b702-efdcc416abc0
+    Position: {x: -646, y: -201}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'SINBAD: ITS POLICECAT! YOU- YOU VERY FURMIDABLE! I KEEP
+        IN LINE DONT WORRY HAHA!'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
   ConditionalNodeDatas:
-  - NodeGuid: a6fb76de-e97f-44ec-b860-c843d0103035
-    Position: {x: -349, y: 200}
-    RequiredGameFlagCombo: {fileID: 11400000, guid: 1885b8a5bb7c2f9409ade7cfeb9f29ac,
-      type: 2}
   - NodeGuid: 674e888a-f637-45e7-9ba5-3f02f1f027b3
     Position: {x: 882, y: 354}
     RequiredGameFlagCombo: {fileID: 11400000, guid: dd0373660b6437444982658434bbbb50,
       type: 2}
+  - NodeGuid: a6fb76de-e97f-44ec-b860-c843d0103035
+    Position: {x: -646, y: 200}
+    RequiredGameFlagCombo: {fileID: 11400000, guid: 1885b8a5bb7c2f9409ade7cfeb9f29ac,
+      type: 2}
+  - NodeGuid: 9f6f05d3-0f42-4038-a4d9-660f7a8f96ec
+    Position: {x: -893, y: 200}
+    RequiredGameFlagCombo: {fileID: 11400000, guid: d280d0c262e2fca41b46ae301e91ac3f,
+      type: 2}
   TimerChoiceNodeDatas: []
   EndNodeDatas:
-  - NodeGuid: cd2c5f6e-de40-41ed-b82e-2274af1d3ddd
-    Position: {x: 915, y: 200}
-    EndNodeType: 0
-    Dialogue: {fileID: 0}
-    startID: 
   - NodeGuid: b0aeeb87-9f1f-4be8-9849-b2f09f449ac5
     Position: {x: 900, y: -297}
     EndNodeType: 0
@@ -321,10 +347,20 @@ MonoBehaviour:
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 
+  - NodeGuid: cd2c5f6e-de40-41ed-b82e-2274af1d3ddd
+    Position: {x: 504, y: -69}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: 895fd863-1b0b-4550-83e0-538a566e070a
+    Position: {x: -356, y: -325}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
   EventNodeDatas: []
   StartNodeDatas:
   - NodeGuid: 7296a665-fc20-41ab-bd53-1dedba9fdd32
-    Position: {x: -547, y: 200}
+    Position: {x: -1076, y: 200}
     startID: 
   RandomNodeDatas: []
   CommandNodeDatas: []

@@ -35,6 +35,7 @@ public class FinaleMomentEventController : EventBase
         CameraController.Instance.FadeOut();
         yield return new WaitForSeconds(FadeWaitSeconds);
         CameraController.Instance.FadeIn();
+        CameraController.Instance.FollowPlayer = false;
         PlayerController.Instance.CanMove = false;
         var newPos = PlayerTeleportPosition.transform.position;
         CameraController.Instance.gameObject.transform.position = new Vector3(newPos.x, newPos.y, -10);
@@ -44,9 +45,17 @@ public class FinaleMomentEventController : EventBase
         CameraController.Instance.FadeOut();
         yield return new WaitForSeconds(FadeWaitSeconds);
         CameraController.Instance.FadeIn();
+        CameraController.Instance.FollowPlayer = true;
         PlayerController.Instance.CanMove = true;
-        CameraController.Instance.gameObject.transform.localPosition = PlayerStartPosition;
+        PlayerController.Instance.gameObject.transform.localPosition = PlayerStartPosition;
         CameraController.Instance.Player.SetActive(true);
+
+        //set flag
+        GameManager.Instance.SetFlags(new SetGameFlagCombo
+        {
+            Flag = GameFlag.FinaleMoment,
+            BoolValue = true
+        });
     }
     
 #if UNITY_EDITOR

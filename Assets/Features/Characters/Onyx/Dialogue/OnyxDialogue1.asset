@@ -21,11 +21,17 @@ MonoBehaviour:
   - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
     TargetNodeGuid: 649b7e3b-5844-4d06-b321-367c47f191d6
   - BaseNodeGuid: 649b7e3b-5844-4d06-b321-367c47f191d6
+    TargetNodeGuid: cf412acb-35e2-4834-88e5-a0717cf23a35
+  - BaseNodeGuid: cf412acb-35e2-4834-88e5-a0717cf23a35
+    TargetNodeGuid: ba1a1de0-4260-48f0-a4f4-cec4c34162bf
+  - BaseNodeGuid: cf412acb-35e2-4834-88e5-a0717cf23a35
+    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
+  - BaseNodeGuid: ba1a1de0-4260-48f0-a4f4-cec4c34162bf
     TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
   DialogueChoiceNodeDatas: []
   DialogueNodeDatas:
   - NodeGuid: 649b7e3b-5844-4d06-b321-367c47f191d6
-    Position: {x: 719, y: 196}
+    Position: {x: 538, y: 196}
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
@@ -40,15 +46,39 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: '???: Eek!'
+      LanguageGenericType: 'Onyx: Eek!'
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
-  ConditionalNodeDatas: []
+  - NodeGuid: ba1a1de0-4260-48f0-a4f4-cec4c34162bf
+    Position: {x: 1004, y: -41}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: I knew it was you! Eek!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  ConditionalNodeDatas:
+  - NodeGuid: cf412acb-35e2-4834-88e5-a0717cf23a35
+    Position: {x: 777, y: 196}
+    RequiredGameFlagCombo: {fileID: 11400000, guid: d280d0c262e2fca41b46ae301e91ac3f,
+      type: 2}
   TimerChoiceNodeDatas: []
   EndNodeDatas:
   - NodeGuid: 7838e825-39c1-416f-8753-1589000d7155
-    Position: {x: 1098, y: 196}
+    Position: {x: 1241, y: 196}
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 

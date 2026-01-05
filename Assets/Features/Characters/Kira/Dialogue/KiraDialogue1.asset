@@ -23,39 +23,10 @@ MonoBehaviour:
   - BaseNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
     TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
   - BaseNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
-    TargetNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
-  - BaseNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
+    TargetNodeGuid: 97cec329-1837-403a-9c57-82df0b7ba8e6
+  - BaseNodeGuid: 97cec329-1837-403a-9c57-82df0b7ba8e6
     TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
   DialogueChoiceNodeDatas:
-  - NodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
-    Position: {x: 1128, y: -142}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: I don't have time for this. What is it?
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 5
-    DialogueNodePorts:
-    - PortGuid: 3a00748f-9519-4f4b-81e2-1f8d5b705a9d
-      InputGuid: 7838e825-39c1-416f-8753-1589000d7155
-      OutputGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
-      TextLanguage:
-      - languageEnum: 0
-        LanguageGenericType: Goodbye
-      - languageEnum: 1
-        LanguageGenericType: Choice 01
-      RequiredFlag: {fileID: 0}
   - NodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
     Position: {x: 800, y: 196}
     Character: {fileID: 0}
@@ -71,7 +42,7 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: 'Kirapus: I''m a little busy here Mister!'
+      LanguageGenericType: 'Kirapus: You dare interrupt the Queen in her beauty sleep?'
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 5
@@ -86,7 +57,7 @@ MonoBehaviour:
         LanguageGenericType: Choice 01
       RequiredFlag: {fileID: 0}
     - PortGuid: 44a0e1e0-1e08-487d-ba83-59785149b2e2
-      InputGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
+      InputGuid: 97cec329-1837-403a-9c57-82df0b7ba8e6
       OutputGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
       TextLanguage:
       - languageEnum: 0
@@ -94,7 +65,27 @@ MonoBehaviour:
       - languageEnum: 1
         LanguageGenericType: Choice 02
       RequiredFlag: {fileID: 0}
-  DialogueNodeDatas: []
+  DialogueNodeDatas:
+  - NodeGuid: 97cec329-1837-403a-9c57-82df0b7ba8e6
+    Position: {x: 1168, y: 302}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: I don't have time for this. Leave me!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
   ConditionalNodeDatas: []
   TimerChoiceNodeDatas: []
   EndNodeDatas:

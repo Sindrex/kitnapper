@@ -18,8 +18,6 @@ MonoBehaviour:
   LimitChoiceOptionPerNode: 0
   MaxChoiceOptionPerNode: 8
   NodeLinkDatas:
-  - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
-    TargetNodeGuid: 8966de77-5a76-4407-859c-66a12fd6d87d
   - BaseNodeGuid: c2734396-3245-4da4-a5c7-f6649dc8804f
     TargetNodeGuid: 300ad88f-4b3e-4d84-b1ac-bed255b02acf
   - BaseNodeGuid: 300ad88f-4b3e-4d84-b1ac-bed255b02acf
@@ -53,9 +51,9 @@ MonoBehaviour:
   - BaseNodeGuid: 8966de77-5a76-4407-859c-66a12fd6d87d
     TargetNodeGuid: 4c2bbdeb-643d-4fae-8ea6-0b98c276dd30
   - BaseNodeGuid: 9a178bc8-2dbf-46e1-a47c-3bd248a2fd85
+    TargetNodeGuid: 383552af-c25c-4c61-b709-699d2cb3340f
+  - BaseNodeGuid: 9a178bc8-2dbf-46e1-a47c-3bd248a2fd85
     TargetNodeGuid: 9dbc9f59-7f3d-4bb4-81c0-1a716492122b
-  - BaseNodeGuid: 9dbc9f59-7f3d-4bb4-81c0-1a716492122b
-    TargetNodeGuid: 5bb69ed3-28eb-4aef-aa51-25b5cf940284
   - BaseNodeGuid: fecf48a2-bf24-480d-ad0c-469905f2adc0
     TargetNodeGuid: aae6a4d1-77e3-44de-a01a-7485bb16d0bd
   - BaseNodeGuid: fecf48a2-bf24-480d-ad0c-469905f2adc0
@@ -64,10 +62,28 @@ MonoBehaviour:
     TargetNodeGuid: aae6a4d1-77e3-44de-a01a-7485bb16d0bd
   - BaseNodeGuid: fecf48a2-bf24-480d-ad0c-469905f2adc0
     TargetNodeGuid: aae6a4d1-77e3-44de-a01a-7485bb16d0bd
-  - BaseNodeGuid: 9a178bc8-2dbf-46e1-a47c-3bd248a2fd85
-    TargetNodeGuid: 383552af-c25c-4c61-b709-699d2cb3340f
   - BaseNodeGuid: 9dbc9f59-7f3d-4bb4-81c0-1a716492122b
-    TargetNodeGuid: 383552af-c25c-4c61-b709-699d2cb3340f
+    TargetNodeGuid: 402c0e4f-3589-4cdf-9015-de8d18613da2
+  - BaseNodeGuid: 9dbc9f59-7f3d-4bb4-81c0-1a716492122b
+    TargetNodeGuid: 94cfc014-32ce-459f-8087-a0e3141a17fe
+  - BaseNodeGuid: 9dbc9f59-7f3d-4bb4-81c0-1a716492122b
+    TargetNodeGuid: b85e8ffa-f857-4aea-834e-803ea01ccebf
+  - BaseNodeGuid: b85e8ffa-f857-4aea-834e-803ea01ccebf
+    TargetNodeGuid: e15a994f-6e27-4a42-b576-770a845463a9
+  - BaseNodeGuid: 94cfc014-32ce-459f-8087-a0e3141a17fe
+    TargetNodeGuid: 23bff266-e6e3-491f-8f78-08ffd2ceaadb
+  - BaseNodeGuid: 23bff266-e6e3-491f-8f78-08ffd2ceaadb
+    TargetNodeGuid: cc551a7a-1db3-4879-a30e-de568881f49c
+  - BaseNodeGuid: 9dbc9f59-7f3d-4bb4-81c0-1a716492122b
+    TargetNodeGuid: 5bb69ed3-28eb-4aef-aa51-25b5cf940284
+  - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
+    TargetNodeGuid: bf8cbeb5-2ae9-4417-8b89-66987df0ae79
+  - BaseNodeGuid: bf8cbeb5-2ae9-4417-8b89-66987df0ae79
+    TargetNodeGuid: 47e41c03-211b-4f46-911c-ba2ee22c300c
+  - BaseNodeGuid: bf8cbeb5-2ae9-4417-8b89-66987df0ae79
+    TargetNodeGuid: 8966de77-5a76-4407-859c-66a12fd6d87d
+  - BaseNodeGuid: 47e41c03-211b-4f46-911c-ba2ee22c300c
+    TargetNodeGuid: f903400b-49c4-4292-95ae-f065440c4571
   DialogueChoiceNodeDatas:
   - NodeGuid: 9a178bc8-2dbf-46e1-a47c-3bd248a2fd85
     Position: {x: 1019, y: 40}
@@ -107,44 +123,6 @@ MonoBehaviour:
       - languageEnum: 1
         LanguageGenericType: Choice 02
       RequiredFlag: {fileID: 0}
-  - NodeGuid: 9dbc9f59-7f3d-4bb4-81c0-1a716492122b
-    Position: {x: 1403, y: -196}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: What do you need to know?
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 5
-    DialogueNodePorts:
-    - PortGuid: ec7f9f6d-d40d-4ab1-9bd4-1d284af87917
-      InputGuid: 383552af-c25c-4c61-b709-699d2cb3340f
-      OutputGuid: 9dbc9f59-7f3d-4bb4-81c0-1a716492122b
-      TextLanguage:
-      - languageEnum: 0
-        LanguageGenericType: Goodbye
-      - languageEnum: 1
-        LanguageGenericType: Choice 01
-      RequiredFlag: {fileID: 0}
-    - PortGuid: e660fb25-b23d-4c45-8c68-2280ae4068fa
-      InputGuid: 5bb69ed3-28eb-4aef-aa51-25b5cf940284
-      OutputGuid: 9dbc9f59-7f3d-4bb4-81c0-1a716492122b
-      TextLanguage:
-      - languageEnum: 0
-        LanguageGenericType: Midnight Rose
-      - languageEnum: 1
-        LanguageGenericType: Choice 02
-      RequiredFlag: {fileID: 11400000, guid: e377a04b1a0c77d419b0eeed0af99c38, type: 2}
   - NodeGuid: fecf48a2-bf24-480d-ad0c-469905f2adc0
     Position: {x: 2706, y: -196}
     Character: {fileID: 0}
@@ -201,6 +179,62 @@ MonoBehaviour:
       - languageEnum: 1
         LanguageGenericType: Choice 04
       RequiredFlag: {fileID: 0}
+  - NodeGuid: 9dbc9f59-7f3d-4bb4-81c0-1a716492122b
+    Position: {x: 1378, y: -209}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: What do you need to know?
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 5
+    DialogueNodePorts:
+    - PortGuid: ec7f9f6d-d40d-4ab1-9bd4-1d284af87917
+      InputGuid: 402c0e4f-3589-4cdf-9015-de8d18613da2
+      OutputGuid: 9dbc9f59-7f3d-4bb4-81c0-1a716492122b
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Goodbye
+      - languageEnum: 1
+        LanguageGenericType: Choice 01
+      RequiredFlag: {fileID: 0}
+    - PortGuid: 97d6d252-19ba-4b51-afdc-902f3b701335
+      InputGuid: 94cfc014-32ce-459f-8087-a0e3141a17fe
+      OutputGuid: 9dbc9f59-7f3d-4bb4-81c0-1a716492122b
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Last night
+      - languageEnum: 1
+        LanguageGenericType: Choice 03
+      RequiredFlag: {fileID: 0}
+    - PortGuid: 87455c16-8731-4622-bf2c-0de53f8830e9
+      InputGuid: b85e8ffa-f857-4aea-834e-803ea01ccebf
+      OutputGuid: 9dbc9f59-7f3d-4bb4-81c0-1a716492122b
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Findus' ball toy
+      - languageEnum: 1
+        LanguageGenericType: Choice 04
+      RequiredFlag: {fileID: 11400000, guid: 929c64ba1c19bb14382fcc3fd5781a99, type: 2}
+    - PortGuid: e4ded672-0c60-4927-8483-edbcad0a623e
+      InputGuid: 5bb69ed3-28eb-4aef-aa51-25b5cf940284
+      OutputGuid: 9dbc9f59-7f3d-4bb4-81c0-1a716492122b
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Midnight Rose
+      - languageEnum: 1
+        LanguageGenericType: Choice 04
+      RequiredFlag: {fileID: 11400000, guid: e377a04b1a0c77d419b0eeed0af99c38, type: 2}
   DialogueNodeDatas:
   - NodeGuid: c2734396-3245-4da4-a5c7-f6649dc8804f
     Position: {x: 778, y: 308}
@@ -488,27 +522,135 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
+  - NodeGuid: b85e8ffa-f857-4aea-834e-803ea01ccebf
+    Position: {x: 1856, y: 581}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Is that one of the orange cats? I don't think I've seen
+        the toy before. If you'll excuse me, Detective.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 94cfc014-32ce-459f-8087-a0e3141a17fe
+    Position: {x: 1856, y: 217}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: I was working all night. Sadly all my coworkers have taken
+        vacation, so it was only me!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 23bff266-e6e3-491f-8f78-08ffd2ceaadb
+    Position: {x: 2121, y: 217}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: The moment all the colors vanished really shocked me!
+        Like BAM! and they were gone!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 47e41c03-211b-4f46-911c-ba2ee22c300c
+    Position: {x: -99, y: -172}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Detective! I was cattergasted that YOU stole all the colors!
+        But, I understand. I really learned a lession.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
   ConditionalNodeDatas:
   - NodeGuid: 8966de77-5a76-4407-859c-66a12fd6d87d
     Position: {x: -99, y: 196}
     RequiredGameFlagCombo: {fileID: 11400000, guid: 729adf6722452ca49916305fdc9ec25e,
       type: 2}
+  - NodeGuid: bf8cbeb5-2ae9-4417-8b89-66987df0ae79
+    Position: {x: -372, y: 196}
+    RequiredGameFlagCombo: {fileID: 11400000, guid: d280d0c262e2fca41b46ae301e91ac3f,
+      type: 2}
   TimerChoiceNodeDatas: []
   EndNodeDatas:
-  - NodeGuid: 383552af-c25c-4c61-b709-699d2cb3340f
-    Position: {x: 1553, y: 134}
+  - NodeGuid: 7838e825-39c1-416f-8753-1589000d7155
+    Position: {x: 4192, y: 2}
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 
-  - NodeGuid: 7838e825-39c1-416f-8753-1589000d7155
-    Position: {x: 4192, y: 2}
+  - NodeGuid: 402c0e4f-3589-4cdf-9015-de8d18613da2
+    Position: {x: 1729, y: -315}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: 383552af-c25c-4c61-b709-699d2cb3340f
+    Position: {x: 1378, y: 134}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: cc551a7a-1db3-4879-a30e-de568881f49c
+    Position: {x: 2377, y: 216}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: e15a994f-6e27-4a42-b576-770a845463a9
+    Position: {x: 2121, y: 581}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: f903400b-49c4-4292-95ae-f065440c4571
+    Position: {x: 155, y: -172}
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 
   EventNodeDatas: []
   StartNodeDatas:
   - NodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
-    Position: {x: -352, y: 196}
+    Position: {x: -569, y: 196}
     startID: 
   RandomNodeDatas: []
   CommandNodeDatas: []
