@@ -18,10 +18,22 @@ MonoBehaviour:
   LimitChoiceOptionPerNode: 0
   MaxChoiceOptionPerNode: 8
   NodeLinkDatas:
-  - BaseNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
+  - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
+    TargetNodeGuid: 14035631-6d01-4f71-8f7a-6662866a8859
+  - BaseNodeGuid: 7f7ad163-bbee-4eef-8c91-a4ff0ab5b850
+    TargetNodeGuid: 0c2d5df3-e68e-45e3-9d09-110ec2a2cff8
+  - BaseNodeGuid: c40bc420-d446-4b14-87fd-1b0ac64d7642
+    TargetNodeGuid: 500bbf90-23c2-42c8-8935-1db4a3f925ba
+  - BaseNodeGuid: b7642d97-893e-4a01-9038-5e24b0224dd8
+    TargetNodeGuid: 77c70f8d-de04-4fbd-8ddf-626b37f6a0c7
+  - BaseNodeGuid: 80a01f71-cd3e-4c5f-84fb-e0a4c0f3d6f7
     TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
-  - BaseNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
-    TargetNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
+  - BaseNodeGuid: 16055f9e-87e4-44d5-a847-76060e78b953
+    TargetNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
+  - BaseNodeGuid: 14035631-6d01-4f71-8f7a-6662866a8859
+    TargetNodeGuid: 80a01f71-cd3e-4c5f-84fb-e0a4c0f3d6f7
+  - BaseNodeGuid: 14035631-6d01-4f71-8f7a-6662866a8859
+    TargetNodeGuid: 16055f9e-87e4-44d5-a847-76060e78b953
   - BaseNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
     TargetNodeGuid: e275c36a-c7c3-4815-9488-a7f8dcdef58d
   - BaseNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
@@ -30,20 +42,10 @@ MonoBehaviour:
     TargetNodeGuid: c40bc420-d446-4b14-87fd-1b0ac64d7642
   - BaseNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
     TargetNodeGuid: b7642d97-893e-4a01-9038-5e24b0224dd8
-  - BaseNodeGuid: b7642d97-893e-4a01-9038-5e24b0224dd8
-    TargetNodeGuid: 77c70f8d-de04-4fbd-8ddf-626b37f6a0c7
-  - BaseNodeGuid: c40bc420-d446-4b14-87fd-1b0ac64d7642
-    TargetNodeGuid: 500bbf90-23c2-42c8-8935-1db4a3f925ba
-  - BaseNodeGuid: 7f7ad163-bbee-4eef-8c91-a4ff0ab5b850
-    TargetNodeGuid: 0c2d5df3-e68e-45e3-9d09-110ec2a2cff8
-  - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
-    TargetNodeGuid: 14035631-6d01-4f71-8f7a-6662866a8859
-  - BaseNodeGuid: 14035631-6d01-4f71-8f7a-6662866a8859
-    TargetNodeGuid: 80a01f71-cd3e-4c5f-84fb-e0a4c0f3d6f7
-  - BaseNodeGuid: 14035631-6d01-4f71-8f7a-6662866a8859
-    TargetNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
-  - BaseNodeGuid: 80a01f71-cd3e-4c5f-84fb-e0a4c0f3d6f7
+  - BaseNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
     TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
+  - BaseNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
+    TargetNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
   DialogueChoiceNodeDatas:
   - NodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
     Position: {x: 1146, y: 270}
@@ -116,8 +118,7 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: 'Trond X: Greetings Detective! What doth transpire with
-        the weather this day?'
+      LanguageGenericType: What doth transpire with the weather this day?
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 5
@@ -208,7 +209,7 @@ MonoBehaviour:
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
-    Event: 
+    Event: TrondXDialogueEvent
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
@@ -224,9 +225,29 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
+  - NodeGuid: 16055f9e-87e4-44d5-a847-76060e78b953
+    Position: {x: 537, y: 196}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: TrondXDialogueEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Trond X: Greetings Detective!'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
   ConditionalNodeDatas:
   - NodeGuid: 14035631-6d01-4f71-8f7a-6662866a8859
-    Position: {x: 453, y: 196}
+    Position: {x: 248, y: 196}
     RequiredGameFlagCombo: {fileID: 11400000, guid: d280d0c262e2fca41b46ae301e91ac3f,
       type: 2}
   TimerChoiceNodeDatas: []
@@ -259,7 +280,7 @@ MonoBehaviour:
   EventNodeDatas: []
   StartNodeDatas:
   - NodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
-    Position: {x: 203, y: 196}
+    Position: {x: 44, y: 196}
     startID: 
   RandomNodeDatas: []
   CommandNodeDatas: []

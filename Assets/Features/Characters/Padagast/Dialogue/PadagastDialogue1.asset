@@ -18,32 +18,34 @@ MonoBehaviour:
   LimitChoiceOptionPerNode: 0
   MaxChoiceOptionPerNode: 8
   NodeLinkDatas:
-  - BaseNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
-    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
-  - BaseNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
-    TargetNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
   - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
     TargetNodeGuid: fff2f843-710c-4ecd-9441-07aa06e65594
-  - BaseNodeGuid: fff2f843-710c-4ecd-9441-07aa06e65594
-    TargetNodeGuid: fa511039-c664-4a15-81cc-c3b69be66531
+  - BaseNodeGuid: ad746aed-95f1-4d07-9b3b-5513e8cf0fee
+    TargetNodeGuid: 31796dd1-d696-4576-9f96-ec4bb0b8aff3
+  - BaseNodeGuid: f86d0c1f-6bc2-4db7-8334-9514ff3990cc
+    TargetNodeGuid: 973af6f2-296c-4ba0-9b31-9da5f50a3acc
+  - BaseNodeGuid: 6d9c6783-f411-4406-b1d4-9d6b234fb02e
+    TargetNodeGuid: a54ba4ee-1172-4807-b2ed-db6b106ff238
   - BaseNodeGuid: fa511039-c664-4a15-81cc-c3b69be66531
     TargetNodeGuid: 058a3e17-7db0-413d-afc1-bed3f73cd4fc
-  - BaseNodeGuid: fff2f843-710c-4ecd-9441-07aa06e65594
+  - BaseNodeGuid: f7816a7a-be4d-412c-8546-5aaf5e5afcae
     TargetNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
+  - BaseNodeGuid: fff2f843-710c-4ecd-9441-07aa06e65594
+    TargetNodeGuid: fa511039-c664-4a15-81cc-c3b69be66531
+  - BaseNodeGuid: fff2f843-710c-4ecd-9441-07aa06e65594
+    TargetNodeGuid: f7816a7a-be4d-412c-8546-5aaf5e5afcae
   - BaseNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
     TargetNodeGuid: a0d1f4c5-0baf-4746-ae27-0027a63510da
   - BaseNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
     TargetNodeGuid: ad746aed-95f1-4d07-9b3b-5513e8cf0fee
-  - BaseNodeGuid: ad746aed-95f1-4d07-9b3b-5513e8cf0fee
-    TargetNodeGuid: 31796dd1-d696-4576-9f96-ec4bb0b8aff3
   - BaseNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
     TargetNodeGuid: f86d0c1f-6bc2-4db7-8334-9514ff3990cc
-  - BaseNodeGuid: f86d0c1f-6bc2-4db7-8334-9514ff3990cc
-    TargetNodeGuid: 973af6f2-296c-4ba0-9b31-9da5f50a3acc
   - BaseNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
     TargetNodeGuid: 6d9c6783-f411-4406-b1d4-9d6b234fb02e
-  - BaseNodeGuid: 6d9c6783-f411-4406-b1d4-9d6b234fb02e
-    TargetNodeGuid: a54ba4ee-1172-4807-b2ed-db6b106ff238
+  - BaseNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
+    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
+  - BaseNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
+    TargetNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
   DialogueChoiceNodeDatas:
   - NodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
     Position: {x: 1129, y: -196}
@@ -102,7 +104,7 @@ MonoBehaviour:
         LanguageGenericType: Choice 04
       RequiredFlag: {fileID: 11400000, guid: 929c64ba1c19bb14382fcc3fd5781a99, type: 2}
   - NodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
-    Position: {x: 800, y: 196}
+    Position: {x: 800, y: 194}
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
@@ -116,8 +118,8 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: 'Padagast: Hi there Mr. Detective! Busy day huh? We are
-        trying to continue our archeologic work, despite the situation!'
+      LanguageGenericType: Oh, hi there Mr. Detective! Busy day huh? We are trying
+        to continue our archeologic work, despite the situation!
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 5
@@ -209,7 +211,7 @@ MonoBehaviour:
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
-    Event: 
+    Event: PadagastDialogueEvent
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
@@ -220,14 +222,34 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: So in the end, you were the Color Kitnapper! Clever! If
-        only you would use your wits for archeology!
+      LanguageGenericType: 'Padagast: So in the end, you were the Color Kitnapper!
+        Clawer! If only you would use your wits for archeology!'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: f7816a7a-be4d-412c-8546-5aaf5e5afcae
+    Position: {x: 547, y: 194}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: PadagastDialogueEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Padagast: Hmm?'
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
   ConditionalNodeDatas:
   - NodeGuid: fff2f843-710c-4ecd-9441-07aa06e65594
-    Position: {x: 377, y: 200}
+    Position: {x: 187, y: 200}
     RequiredGameFlagCombo: {fileID: 11400000, guid: d280d0c262e2fca41b46ae301e91ac3f,
       type: 2}
   TimerChoiceNodeDatas: []
@@ -265,7 +287,7 @@ MonoBehaviour:
   EventNodeDatas: []
   StartNodeDatas:
   - NodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
-    Position: {x: 175, y: 200}
+    Position: {x: -77, y: 200}
     startID: 
   RandomNodeDatas: []
   CommandNodeDatas: []

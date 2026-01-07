@@ -22,11 +22,11 @@ MonoBehaviour:
     TargetNodeGuid: 649b7e3b-5844-4d06-b321-367c47f191d6
   - BaseNodeGuid: 649b7e3b-5844-4d06-b321-367c47f191d6
     TargetNodeGuid: cf412acb-35e2-4834-88e5-a0717cf23a35
+  - BaseNodeGuid: ba1a1de0-4260-48f0-a4f4-cec4c34162bf
+    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
   - BaseNodeGuid: cf412acb-35e2-4834-88e5-a0717cf23a35
     TargetNodeGuid: ba1a1de0-4260-48f0-a4f4-cec4c34162bf
   - BaseNodeGuid: cf412acb-35e2-4834-88e5-a0717cf23a35
-    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
-  - BaseNodeGuid: ba1a1de0-4260-48f0-a4f4-cec4c34162bf
     TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
   DialogueChoiceNodeDatas: []
   DialogueNodeDatas:
@@ -35,7 +35,7 @@ MonoBehaviour:
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
-    Event: 
+    Event: OnyxDialogueEvent
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 

@@ -31,7 +31,7 @@ MonoBehaviour:
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
-    Event: 
+    Event: MilkcatGuardDialogueEvent
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
@@ -42,8 +42,8 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: By orders from the government this road has been shut
-        down.
+      LanguageGenericType: 'Guard: By orders from the government this road has been
+        shut down.'
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10

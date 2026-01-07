@@ -18,28 +18,30 @@ MonoBehaviour:
   LimitChoiceOptionPerNode: 0
   MaxChoiceOptionPerNode: 8
   NodeLinkDatas:
+  - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
+    TargetNodeGuid: 27534d34-bbd8-48e4-a970-f0a6220bb55d
+  - BaseNodeGuid: 4cae5df0-6fd3-4afc-8752-c6286fcefa9d
+    TargetNodeGuid: 5038d4ef-6495-4b58-9dbc-d4408649093f
+  - BaseNodeGuid: e319848e-b068-4a4d-8de3-7c7c356d6cc0
+    TargetNodeGuid: 65eb6607-4f52-44b4-8266-92bc5bb79890
+  - BaseNodeGuid: be49f061-b53c-43fa-9632-548272fd1711
+    TargetNodeGuid: 66f7e2dd-fcb3-4632-a91f-570394062820
+  - BaseNodeGuid: c98f4161-553e-42c1-bae4-3e8d816ae27b
+    TargetNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
+  - BaseNodeGuid: 27534d34-bbd8-48e4-a970-f0a6220bb55d
+    TargetNodeGuid: 4cae5df0-6fd3-4afc-8752-c6286fcefa9d
+  - BaseNodeGuid: 27534d34-bbd8-48e4-a970-f0a6220bb55d
+    TargetNodeGuid: c98f4161-553e-42c1-bae4-3e8d816ae27b
   - BaseNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
     TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
   - BaseNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
     TargetNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
-  - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
-    TargetNodeGuid: 27534d34-bbd8-48e4-a970-f0a6220bb55d
-  - BaseNodeGuid: 27534d34-bbd8-48e4-a970-f0a6220bb55d
-    TargetNodeGuid: 4cae5df0-6fd3-4afc-8752-c6286fcefa9d
-  - BaseNodeGuid: 27534d34-bbd8-48e4-a970-f0a6220bb55d
-    TargetNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
-  - BaseNodeGuid: 4cae5df0-6fd3-4afc-8752-c6286fcefa9d
-    TargetNodeGuid: 5038d4ef-6495-4b58-9dbc-d4408649093f
   - BaseNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
     TargetNodeGuid: e1fc15cb-926e-43db-a470-1289bcd183d1
   - BaseNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
     TargetNodeGuid: be49f061-b53c-43fa-9632-548272fd1711
   - BaseNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
     TargetNodeGuid: e319848e-b068-4a4d-8de3-7c7c356d6cc0
-  - BaseNodeGuid: be49f061-b53c-43fa-9632-548272fd1711
-    TargetNodeGuid: 66f7e2dd-fcb3-4632-a91f-570394062820
-  - BaseNodeGuid: e319848e-b068-4a4d-8de3-7c7c356d6cc0
-    TargetNodeGuid: 65eb6607-4f52-44b4-8266-92bc5bb79890
   DialogueChoiceNodeDatas:
   - NodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
     Position: {x: 801, y: 196}
@@ -56,8 +58,7 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: 'Marri: Hi Mr. Detective! I''m just sniffing the flowers
-        today!'
+      LanguageGenericType: Do you like flowers Mr. Detective?
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 5
@@ -133,7 +134,7 @@ MonoBehaviour:
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
-    Event: 
+    Event: MarriDialogueEvent
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
@@ -190,9 +191,30 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
+  - NodeGuid: c98f4161-553e-42c1-bae4-3e8d816ae27b
+    Position: {x: 558, y: 196}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: MarriDialogueEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Marri: Hi Mr. Detective! I''m just sniffing the flowers
+        today!'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
   ConditionalNodeDatas:
   - NodeGuid: 27534d34-bbd8-48e4-a970-f0a6220bb55d
-    Position: {x: 443, y: 196}
+    Position: {x: 273, y: 196}
     RequiredGameFlagCombo: {fileID: 11400000, guid: d280d0c262e2fca41b46ae301e91ac3f,
       type: 2}
   TimerChoiceNodeDatas: []
@@ -225,7 +247,7 @@ MonoBehaviour:
   EventNodeDatas: []
   StartNodeDatas:
   - NodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
-    Position: {x: 216, y: 196}
+    Position: {x: 84, y: 196}
     startID: 
   RandomNodeDatas: []
   CommandNodeDatas: []

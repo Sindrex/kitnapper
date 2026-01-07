@@ -30,14 +30,12 @@ MonoBehaviour:
     TargetNodeGuid: 8ef14e53-abb3-494a-8f56-d1ee731b5763
   - BaseNodeGuid: 96942ed6-ed7a-4bd2-903b-357e2be3b31c
     TargetNodeGuid: 7c64222f-19c6-4dcc-9847-d735e65d1291
-  - BaseNodeGuid: ef70ee78-365c-4584-89f5-6f18d5168a8e
+  - BaseNodeGuid: 5f0bdba8-9d8e-4dd6-9be8-148a0515ed82
     TargetNodeGuid: bc211093-b3a3-47ee-9e87-636deeaee570
   - BaseNodeGuid: ef70ee78-365c-4584-89f5-6f18d5168a8e
     TargetNodeGuid: 135e8d2c-7855-464a-98cc-de466ef05991
-  - BaseNodeGuid: bc211093-b3a3-47ee-9e87-636deeaee570
-    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
-  - BaseNodeGuid: bc211093-b3a3-47ee-9e87-636deeaee570
-    TargetNodeGuid: 25b3ff0f-3d91-49ce-9b1c-79911ab3832f
+  - BaseNodeGuid: ef70ee78-365c-4584-89f5-6f18d5168a8e
+    TargetNodeGuid: 5f0bdba8-9d8e-4dd6-9be8-148a0515ed82
   - BaseNodeGuid: 25b3ff0f-3d91-49ce-9b1c-79911ab3832f
     TargetNodeGuid: e412d63d-e2c4-4260-8992-4809493e463a
   - BaseNodeGuid: 25b3ff0f-3d91-49ce-9b1c-79911ab3832f
@@ -46,46 +44,11 @@ MonoBehaviour:
     TargetNodeGuid: 96942ed6-ed7a-4bd2-903b-357e2be3b31c
   - BaseNodeGuid: 25b3ff0f-3d91-49ce-9b1c-79911ab3832f
     TargetNodeGuid: 2af2eafc-1cd0-47b0-8308-3f93053dfe8c
+  - BaseNodeGuid: bc211093-b3a3-47ee-9e87-636deeaee570
+    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
+  - BaseNodeGuid: bc211093-b3a3-47ee-9e87-636deeaee570
+    TargetNodeGuid: 25b3ff0f-3d91-49ce-9b1c-79911ab3832f
   DialogueChoiceNodeDatas:
-  - NodeGuid: bc211093-b3a3-47ee-9e87-636deeaee570
-    Position: {x: 686, y: 196}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: 'Catsune Miku: Detective! The world is all scary black
-        and white! You are working on it right?'
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 5
-    DialogueNodePorts:
-    - PortGuid: 5b7f370e-7ceb-4156-9a8b-d71505f12221
-      InputGuid: 7838e825-39c1-416f-8753-1589000d7155
-      OutputGuid: bc211093-b3a3-47ee-9e87-636deeaee570
-      TextLanguage:
-      - languageEnum: 0
-        LanguageGenericType: Goodbye
-      - languageEnum: 1
-        LanguageGenericType: Choice 01
-      RequiredFlag: {fileID: 0}
-    - PortGuid: 835b1d25-b2f7-43b6-b736-d55ac360808e
-      InputGuid: 25b3ff0f-3d91-49ce-9b1c-79911ab3832f
-      OutputGuid: bc211093-b3a3-47ee-9e87-636deeaee570
-      TextLanguage:
-      - languageEnum: 0
-        LanguageGenericType: Question
-      - languageEnum: 1
-        LanguageGenericType: Choice 02
-      RequiredFlag: {fileID: 0}
   - NodeGuid: 25b3ff0f-3d91-49ce-9b1c-79911ab3832f
     Position: {x: 1088, y: 374}
     Character: {fileID: 0}
@@ -142,6 +105,44 @@ MonoBehaviour:
       - languageEnum: 1
         LanguageGenericType: Choice 04
       RequiredFlag: {fileID: 11400000, guid: 929c64ba1c19bb14382fcc3fd5781a99, type: 2}
+  - NodeGuid: bc211093-b3a3-47ee-9e87-636deeaee570
+    Position: {x: 686, y: 196}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: You are working on it right?
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 5
+    DialogueNodePorts:
+    - PortGuid: 5b7f370e-7ceb-4156-9a8b-d71505f12221
+      InputGuid: 7838e825-39c1-416f-8753-1589000d7155
+      OutputGuid: bc211093-b3a3-47ee-9e87-636deeaee570
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Goodbye
+      - languageEnum: 1
+        LanguageGenericType: Choice 01
+      RequiredFlag: {fileID: 0}
+    - PortGuid: 835b1d25-b2f7-43b6-b736-d55ac360808e
+      InputGuid: 25b3ff0f-3d91-49ce-9b1c-79911ab3832f
+      OutputGuid: bc211093-b3a3-47ee-9e87-636deeaee570
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Question
+      - languageEnum: 1
+        LanguageGenericType: Choice 02
+      RequiredFlag: {fileID: 0}
   DialogueNodeDatas:
   - NodeGuid: 1ad5ce1b-198e-4471-b727-2d7a7fce402a
     Position: {x: 1489, y: 374}
@@ -189,7 +190,7 @@ MonoBehaviour:
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
-    Event: 
+    Event: CatsuneMikuDialogueEvent
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
@@ -247,9 +248,30 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
+  - NodeGuid: 5f0bdba8-9d8e-4dd6-9be8-148a0515ed82
+    Position: {x: 401, y: 196}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: CatsuneMikuDialogueEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Catsune Miku: Detective! The world is all scary black
+        and white!'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
   ConditionalNodeDatas:
   - NodeGuid: ef70ee78-365c-4584-89f5-6f18d5168a8e
-    Position: {x: 412, y: 190}
+    Position: {x: 105, y: 196}
     RequiredGameFlagCombo: {fileID: 11400000, guid: d280d0c262e2fca41b46ae301e91ac3f,
       type: 2}
   TimerChoiceNodeDatas: []
@@ -287,7 +309,7 @@ MonoBehaviour:
   EventNodeDatas: []
   StartNodeDatas:
   - NodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
-    Position: {x: 186, y: 190}
+    Position: {x: -84, y: 196}
     startID: 
   RandomNodeDatas: []
   CommandNodeDatas: []

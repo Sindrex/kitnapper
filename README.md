@@ -6,18 +6,11 @@ Repository for the game project The Color Kitnapper
 * Choices: Max 10 + 10 chars
 
 # TODO:
-* Add characters with names to credits.
 * Playtest build issues:
-  * Fade in stutters at the end
   * Player house butterfly returns to original spot after flying.
-  * Player animation is out of phase with other animations
   * Something's up with skipping text animation. Every other? skips without showing text. Did I forget to reset any variables?
-  * MilkcatGuard needs "Guard:".
   * Luna: "Goodbye" option is misspelled
   * Kirapus: "Question" is misspelled, as for Saru
-  * Sindrex: ??? -> Sindrex (after main story)
-  * Catnip dealer should have a name -> Sadaharu?
-  * Padagast anim -> too high neck
   * Luna text midnight rose also too long
   * Marri in florist should be away when florist is locked
   * FloristMoment change the wording a little for Luna's "I understand you very well"
@@ -34,6 +27,8 @@ Repository for the game project The Color Kitnapper
   * Who is color kitnapper too many options. Max 4
   * FinaleMoment Poppy too long. cuts at "make". Mayor forgets to humr humr when he snifs "maybe it is* time for" "little while longer then"
   * Can you exit during dialogue? Should maybe disallow that.
+  * Should have a way to roll the credits again, in house
+  * Should have a book or note or something in Player House with controls dialogue.
 * Missing doodads:
   * Player House: Item for controls hint, telephone animation
   * Florist: Plants, both inside and out. Furniture for extra room.

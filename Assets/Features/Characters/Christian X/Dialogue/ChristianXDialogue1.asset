@@ -28,10 +28,12 @@ MonoBehaviour:
     TargetNodeGuid: 4a556b64-221f-4517-b45b-b1178e1e5cf2
   - BaseNodeGuid: 2673d62b-675d-4f00-bcf7-99066b1701af
     TargetNodeGuid: 1269b788-c779-42ad-b337-bd76a65bb1c5
+  - BaseNodeGuid: 59458af2-6646-47e4-8819-b9c273fd08b5
+    TargetNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
   - BaseNodeGuid: 3f95f4d3-f6e8-495f-b05a-8e686443e691
     TargetNodeGuid: a271c2bc-26a9-4bd1-9c7a-7f4a180ece72
   - BaseNodeGuid: 3f95f4d3-f6e8-495f-b05a-8e686443e691
-    TargetNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
+    TargetNodeGuid: 59458af2-6646-47e4-8819-b9c273fd08b5
   - BaseNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
     TargetNodeGuid: ed70343b-5ec7-4e6e-90cf-ace8d9339ce0
   - BaseNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
@@ -116,8 +118,7 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: 'Christian X: Hello there! I was just working on my music
-        score. What''s going on?'
+      LanguageGenericType: What's going on?
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 5
@@ -146,7 +147,7 @@ MonoBehaviour:
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
-    Event: 
+    Event: ChristianXDialogueEvent
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
@@ -222,9 +223,30 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
+  - NodeGuid: 59458af2-6646-47e4-8819-b9c273fd08b5
+    Position: {x: 541, y: 196}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: ChristianXDialogueEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Christian X: Hello there! I was just working on my music
+        score.'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
   ConditionalNodeDatas:
   - NodeGuid: 3f95f4d3-f6e8-495f-b05a-8e686443e691
-    Position: {x: 465, y: 196}
+    Position: {x: 272, y: 196}
     RequiredGameFlagCombo: {fileID: 11400000, guid: d280d0c262e2fca41b46ae301e91ac3f,
       type: 2}
   TimerChoiceNodeDatas: []
@@ -262,7 +284,7 @@ MonoBehaviour:
   EventNodeDatas: []
   StartNodeDatas:
   - NodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
-    Position: {x: 262, y: 196}
+    Position: {x: 78, y: 196}
     startID: 
   RandomNodeDatas: []
   CommandNodeDatas: []

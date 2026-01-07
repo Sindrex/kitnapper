@@ -18,14 +18,16 @@ MonoBehaviour:
   LimitChoiceOptionPerNode: 0
   MaxChoiceOptionPerNode: 8
   NodeLinkDatas:
-  - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
-    TargetNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
+  - BaseNodeGuid: 97cec329-1837-403a-9c57-82df0b7ba8e6
+    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
   - BaseNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
     TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
   - BaseNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
     TargetNodeGuid: 97cec329-1837-403a-9c57-82df0b7ba8e6
-  - BaseNodeGuid: 97cec329-1837-403a-9c57-82df0b7ba8e6
-    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
+  - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
+    TargetNodeGuid: 2c3ddbbb-e9e4-4158-bcfd-b1b9430c708f
+  - BaseNodeGuid: 2c3ddbbb-e9e4-4158-bcfd-b1b9430c708f
+    TargetNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
   DialogueChoiceNodeDatas:
   - NodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
     Position: {x: 800, y: 196}
@@ -42,7 +44,7 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: 'Kirapus: You dare interrupt the Queen in her beauty sleep?'
+      LanguageGenericType: Hmph!
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 5
@@ -61,7 +63,7 @@ MonoBehaviour:
       OutputGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
       TextLanguage:
       - languageEnum: 0
-        LanguageGenericType: Querstion
+        LanguageGenericType: Question
       - languageEnum: 1
         LanguageGenericType: Choice 02
       RequiredFlag: {fileID: 0}
@@ -86,6 +88,26 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
+  - NodeGuid: 2c3ddbbb-e9e4-4158-bcfd-b1b9430c708f
+    Position: {x: 564, y: 196}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: KiraDialogueEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Kirapus: You dare interrupt the Queen in her beauty sleep?'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
   ConditionalNodeDatas: []
   TimerChoiceNodeDatas: []
   EndNodeDatas:
@@ -97,7 +119,7 @@ MonoBehaviour:
   EventNodeDatas: []
   StartNodeDatas:
   - NodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
-    Position: {x: 592, y: 196}
+    Position: {x: 369, y: 196}
     startID: 
   RandomNodeDatas: []
   CommandNodeDatas: []

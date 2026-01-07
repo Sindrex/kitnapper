@@ -10,11 +10,11 @@ public class GameSettings
     public FullScreenMode FullScreenMode { get; set; } = FullScreenMode.FullScreenWindow;
     public int MasterVolumeIndex { get; set; }
     public bool FirstTimeBoot { get; set; } = true;
+    public GamePosition PlayerPosition { get; set; } = new GamePosition();
     public List<GameFlagCombo> GameFlags { get; set; } = new List<GameFlagCombo>();
     public List<EventState> EventStates { get; set; } = new List<EventState>();
     public List<AudioLabel> UnlockedSongs { get; set; } = new List<AudioLabel>();
     public List<string> DialogueLog { get; set; } = new List<string>();
-    public GamePosition PlayerPosition { get; set; } = new GamePosition();
 
     private GamePosition GetPlayerPosition() => new GamePosition
     {
@@ -90,5 +90,7 @@ public enum GameFlag
     FinaleMomentDialogue,
     FinaleMoment,
     SindrexNameChange,
-    SindrexFeedbackYes
+    SindrexFeedbackYes,
+    MilkcatNameKnown, KiraNameKnown, PusurNameKnown, PadagastNameKnown, SarumanNameKnown, MarriNameKnown, OnyxNameKnown, CatnipDealerNameKnown, CatsuneMikuNameKnown,
+    ManekinekoNameKnown, MilkcatGuardNameKnown, Musician1NameKnown, Musician2NameKnown
 }

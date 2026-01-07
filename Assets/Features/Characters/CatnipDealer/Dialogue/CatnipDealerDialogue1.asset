@@ -18,8 +18,6 @@ MonoBehaviour:
   LimitChoiceOptionPerNode: 0
   MaxChoiceOptionPerNode: 8
   NodeLinkDatas:
-  - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
-    TargetNodeGuid: ab6c800a-4101-4ecc-8ccd-b6657ac28d40
   - BaseNodeGuid: 0849757c-49d3-4bd0-8983-4cd50af6415f
     TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
   - BaseNodeGuid: 5a2830f4-9dec-4250-9cd3-6df9ca145746
@@ -42,55 +40,11 @@ MonoBehaviour:
     TargetNodeGuid: 58d6cc84-2ad2-42e2-a267-845c7f0c641c
   - BaseNodeGuid: cd710cbb-11ee-4488-bd05-3e446eae55c6
     TargetNodeGuid: bda9f068-e5fb-4e20-a000-044b02d54764
+  - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
+    TargetNodeGuid: 7d2e1021-304d-4b8d-b89a-1af5296a1605
+  - BaseNodeGuid: 7d2e1021-304d-4b8d-b89a-1af5296a1605
+    TargetNodeGuid: ab6c800a-4101-4ecc-8ccd-b6657ac28d40
   DialogueChoiceNodeDatas:
-  - NodeGuid: ab6c800a-4101-4ecc-8ccd-b6657ac28d40
-    Position: {x: 358, y: 196}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: 'Sada Haru: Hey there sir. Your job must be very stressful.
-        Want something to calm the nerves?'
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 5
-    DialogueNodePorts:
-    - PortGuid: 1b29c42d-5434-4f1c-bed2-53317b8b0b20
-      InputGuid: 8359068e-0140-45c0-aa80-7dd2403e87bc
-      OutputGuid: ab6c800a-4101-4ecc-8ccd-b6657ac28d40
-      TextLanguage:
-      - languageEnum: 0
-        LanguageGenericType: Goodbye
-      - languageEnum: 1
-        LanguageGenericType: Choice 01
-      RequiredFlag: {fileID: 0}
-    - PortGuid: 4adff19b-7304-4444-b0de-046a0dd83e3f
-      InputGuid: cd710cbb-11ee-4488-bd05-3e446eae55c6
-      OutputGuid: ab6c800a-4101-4ecc-8ccd-b6657ac28d40
-      TextLanguage:
-      - languageEnum: 0
-        LanguageGenericType: Question
-      - languageEnum: 1
-        LanguageGenericType: Choice 02
-      RequiredFlag: {fileID: 11400000, guid: 7ef7f2573d7d8f0428a21be5828e4f8b, type: 2}
-    - PortGuid: 7c21e790-1df7-48ac-913e-bb28ecd74496
-      InputGuid: 0849757c-49d3-4bd0-8983-4cd50af6415f
-      OutputGuid: ab6c800a-4101-4ecc-8ccd-b6657ac28d40
-      TextLanguage:
-      - languageEnum: 0
-        LanguageGenericType: Catnip
-      - languageEnum: 1
-        LanguageGenericType: Choice 03
-      RequiredFlag: {fileID: 0}
   - NodeGuid: cd710cbb-11ee-4488-bd05-3e446eae55c6
     Position: {x: 746, y: -163}
     Character: {fileID: 0}
@@ -147,6 +101,53 @@ MonoBehaviour:
       - languageEnum: 1
         LanguageGenericType: Choice 04
       RequiredFlag: {fileID: 11400000, guid: 929c64ba1c19bb14382fcc3fd5781a99, type: 2}
+  - NodeGuid: ab6c800a-4101-4ecc-8ccd-b6657ac28d40
+    Position: {x: 367, y: 196}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Something to calm the nerves?
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 5
+    DialogueNodePorts:
+    - PortGuid: 1b29c42d-5434-4f1c-bed2-53317b8b0b20
+      InputGuid: 8359068e-0140-45c0-aa80-7dd2403e87bc
+      OutputGuid: ab6c800a-4101-4ecc-8ccd-b6657ac28d40
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Goodbye
+      - languageEnum: 1
+        LanguageGenericType: Choice 01
+      RequiredFlag: {fileID: 0}
+    - PortGuid: 4adff19b-7304-4444-b0de-046a0dd83e3f
+      InputGuid: cd710cbb-11ee-4488-bd05-3e446eae55c6
+      OutputGuid: ab6c800a-4101-4ecc-8ccd-b6657ac28d40
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Question
+      - languageEnum: 1
+        LanguageGenericType: Choice 02
+      RequiredFlag: {fileID: 11400000, guid: 7ef7f2573d7d8f0428a21be5828e4f8b, type: 2}
+    - PortGuid: 7c21e790-1df7-48ac-913e-bb28ecd74496
+      InputGuid: 0849757c-49d3-4bd0-8983-4cd50af6415f
+      OutputGuid: ab6c800a-4101-4ecc-8ccd-b6657ac28d40
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Catnip
+      - languageEnum: 1
+        LanguageGenericType: Choice 03
+      RequiredFlag: {fileID: 0}
   DialogueNodeDatas:
   - NodeGuid: 0849757c-49d3-4bd0-8983-4cd50af6415f
     Position: {x: 722, y: 359}
@@ -232,6 +233,26 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
+  - NodeGuid: 7d2e1021-304d-4b8d-b89a-1af5296a1605
+    Position: {x: 104, y: 196}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: CatnipDealerDialogueEvent2
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Sada Haru: Hey there sir!'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
   ConditionalNodeDatas: []
   TimerChoiceNodeDatas: []
   EndNodeDatas:
@@ -268,7 +289,7 @@ MonoBehaviour:
   EventNodeDatas: []
   StartNodeDatas:
   - NodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
-    Position: {x: 105, y: 196}
+    Position: {x: -134, y: 196}
     startID: 
   RandomNodeDatas: []
   CommandNodeDatas: []

@@ -18,10 +18,20 @@ MonoBehaviour:
   LimitChoiceOptionPerNode: 0
   MaxChoiceOptionPerNode: 8
   NodeLinkDatas:
-  - BaseNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
-    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
-  - BaseNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
-    TargetNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
+  - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
+    TargetNodeGuid: 9010f38e-39b6-4ba0-957f-3b7f065a4952
+  - BaseNodeGuid: c413b41c-a5da-426f-966e-c0b6bea39d17
+    TargetNodeGuid: f570dd04-052b-4193-9736-701c18b7e5cd
+  - BaseNodeGuid: ae4ca718-c309-442a-8c44-6a299b93df48
+    TargetNodeGuid: 54b3ad19-cc85-4f61-b733-b6762fa5234e
+  - BaseNodeGuid: 0a4949c4-2c43-433d-9167-fec8b7f84deb
+    TargetNodeGuid: 8b7c48b1-70f4-4fc3-a83a-04d14ba5894e
+  - BaseNodeGuid: 9a755bde-ef94-48d7-a86c-2e577b3d9c18
+    TargetNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
+  - BaseNodeGuid: 9010f38e-39b6-4ba0-957f-3b7f065a4952
+    TargetNodeGuid: 0a4949c4-2c43-433d-9167-fec8b7f84deb
+  - BaseNodeGuid: 9010f38e-39b6-4ba0-957f-3b7f065a4952
+    TargetNodeGuid: 9a755bde-ef94-48d7-a86c-2e577b3d9c18
   - BaseNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
     TargetNodeGuid: 9f3406fb-1ccb-4bb0-bffd-c820358e6387
   - BaseNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
@@ -30,58 +40,11 @@ MonoBehaviour:
     TargetNodeGuid: ae4ca718-c309-442a-8c44-6a299b93df48
   - BaseNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
     TargetNodeGuid: 161a45b1-d5c5-466c-bfd8-feb8ca9ce6a2
-  - BaseNodeGuid: ae4ca718-c309-442a-8c44-6a299b93df48
-    TargetNodeGuid: 54b3ad19-cc85-4f61-b733-b6762fa5234e
-  - BaseNodeGuid: c413b41c-a5da-426f-966e-c0b6bea39d17
-    TargetNodeGuid: f570dd04-052b-4193-9736-701c18b7e5cd
-  - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
-    TargetNodeGuid: 9010f38e-39b6-4ba0-957f-3b7f065a4952
-  - BaseNodeGuid: 9010f38e-39b6-4ba0-957f-3b7f065a4952
-    TargetNodeGuid: 0a4949c4-2c43-433d-9167-fec8b7f84deb
-  - BaseNodeGuid: 9010f38e-39b6-4ba0-957f-3b7f065a4952
-    TargetNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
-  - BaseNodeGuid: 0a4949c4-2c43-433d-9167-fec8b7f84deb
-    TargetNodeGuid: 8b7c48b1-70f4-4fc3-a83a-04d14ba5894e
+  - BaseNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
+    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
+  - BaseNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
+    TargetNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
   DialogueChoiceNodeDatas:
-  - NodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
-    Position: {x: 800, y: 196}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: 'Saru: Detective! I have begun my apprenticeship with
-        the great Padagast! From now on you may call me ''Science Saru''!'
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 5
-    DialogueNodePorts:
-    - PortGuid: c8327510-aecf-4e7a-8a0c-f4d1f8b17b5f
-      InputGuid: 7838e825-39c1-416f-8753-1589000d7155
-      OutputGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
-      TextLanguage:
-      - languageEnum: 0
-        LanguageGenericType: Goodbye
-      - languageEnum: 1
-        LanguageGenericType: Choice 01
-      RequiredFlag: {fileID: 0}
-    - PortGuid: 44a0e1e0-1e08-487d-ba83-59785149b2e2
-      InputGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
-      OutputGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
-      TextLanguage:
-      - languageEnum: 0
-        LanguageGenericType: Querstion
-      - languageEnum: 1
-        LanguageGenericType: Choice 02
-      RequiredFlag: {fileID: 0}
   - NodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
     Position: {x: 1128, y: -143}
     Character: {fileID: 0}
@@ -139,6 +102,44 @@ MonoBehaviour:
       - languageEnum: 1
         LanguageGenericType: Choice 04
       RequiredFlag: {fileID: 11400000, guid: 929c64ba1c19bb14382fcc3fd5781a99, type: 2}
+  - NodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
+    Position: {x: 800, y: 196}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: From now on you may call me 'Science Saru'!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 5
+    DialogueNodePorts:
+    - PortGuid: c8327510-aecf-4e7a-8a0c-f4d1f8b17b5f
+      InputGuid: 7838e825-39c1-416f-8753-1589000d7155
+      OutputGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Goodbye
+      - languageEnum: 1
+        LanguageGenericType: Choice 01
+      RequiredFlag: {fileID: 0}
+    - PortGuid: 44a0e1e0-1e08-487d-ba83-59785149b2e2
+      InputGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
+      OutputGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Querstion
+      - languageEnum: 1
+        LanguageGenericType: Choice 02
+      RequiredFlag: {fileID: 0}
   DialogueNodeDatas:
   - NodeGuid: c413b41c-a5da-426f-966e-c0b6bea39d17
     Position: {x: 1501, y: -274}
@@ -208,7 +209,7 @@ MonoBehaviour:
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
-    Event: 
+    Event: SarumanDialogueEvent
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
@@ -224,9 +225,30 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
+  - NodeGuid: 9a755bde-ef94-48d7-a86c-2e577b3d9c18
+    Position: {x: 532, y: 196}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: SarumanDialogueEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Saru: Detective! I have begun my apprenticeship with
+        the great Padagast!'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
   ConditionalNodeDatas:
   - NodeGuid: 9010f38e-39b6-4ba0-957f-3b7f065a4952
-    Position: {x: 448, y: 196}
+    Position: {x: 191, y: 196}
     RequiredGameFlagCombo: {fileID: 11400000, guid: d280d0c262e2fca41b46ae301e91ac3f,
       type: 2}
   TimerChoiceNodeDatas: []
@@ -259,7 +281,7 @@ MonoBehaviour:
   EventNodeDatas: []
   StartNodeDatas:
   - NodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
-    Position: {x: 249, y: 196}
+    Position: {x: 3, y: 196}
     startID: 
   RandomNodeDatas: []
   CommandNodeDatas: []
