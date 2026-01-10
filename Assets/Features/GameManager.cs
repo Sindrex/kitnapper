@@ -258,6 +258,12 @@ public class GameManager : MonoBehaviour
 
     public void Quit()
     {
+        //Cannot exit during dialogue, to ensure valid savestate
+        if (MyDialogueManager.Instance.IsDialogue)
+        {
+            return;
+        }
+
         CurrentGameSettings.Save();
         SceneManager.LoadScene(0); //Menu
     }

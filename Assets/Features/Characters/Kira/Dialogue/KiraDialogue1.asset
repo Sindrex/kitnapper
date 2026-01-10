@@ -18,19 +18,23 @@ MonoBehaviour:
   LimitChoiceOptionPerNode: 0
   MaxChoiceOptionPerNode: 8
   NodeLinkDatas:
+  - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
+    TargetNodeGuid: 2c3ddbbb-e9e4-4158-bcfd-b1b9430c708f
   - BaseNodeGuid: 97cec329-1837-403a-9c57-82df0b7ba8e6
     TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
   - BaseNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
     TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
   - BaseNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
     TargetNodeGuid: 97cec329-1837-403a-9c57-82df0b7ba8e6
-  - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
-    TargetNodeGuid: 2c3ddbbb-e9e4-4158-bcfd-b1b9430c708f
   - BaseNodeGuid: 2c3ddbbb-e9e4-4158-bcfd-b1b9430c708f
+    TargetNodeGuid: b47d7949-b168-481d-8549-99ac074b7299
+  - BaseNodeGuid: b47d7949-b168-481d-8549-99ac074b7299
     TargetNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
+  - BaseNodeGuid: b47d7949-b168-481d-8549-99ac074b7299
+    TargetNodeGuid: 97cec329-1837-403a-9c57-82df0b7ba8e6
   DialogueChoiceNodeDatas:
   - NodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
-    Position: {x: 800, y: 196}
+    Position: {x: 800, y: 302}
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
@@ -108,7 +112,11 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
-  ConditionalNodeDatas: []
+  ConditionalNodeDatas:
+  - NodeGuid: b47d7949-b168-481d-8549-99ac074b7299
+    Position: {x: 800, y: 66}
+    RequiredGameFlagCombo: {fileID: 11400000, guid: d280d0c262e2fca41b46ae301e91ac3f,
+      type: 2}
   TimerChoiceNodeDatas: []
   EndNodeDatas:
   - NodeGuid: 7838e825-39c1-416f-8753-1589000d7155

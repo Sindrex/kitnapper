@@ -22,8 +22,6 @@ MonoBehaviour:
     TargetNodeGuid: b952acbf-c301-4c7d-a86e-6833f43ef895
   - BaseNodeGuid: d79a95d4-fe48-4c17-9e4c-73378ebb6152
     TargetNodeGuid: e11b356d-ad74-46ce-9a94-146619b18147
-  - BaseNodeGuid: e11b356d-ad74-46ce-9a94-146619b18147
-    TargetNodeGuid: 1fd3d7f6-501d-42fb-977e-66104ecd2e81
   - BaseNodeGuid: 1ffda9d4-b3c5-42a8-a417-35c05a40c2eb
     TargetNodeGuid: 3ce8cf6a-b9da-4229-b539-e6b0e020f4a8
   - BaseNodeGuid: 1fd3d7f6-501d-42fb-977e-66104ecd2e81
@@ -56,6 +54,8 @@ MonoBehaviour:
     TargetNodeGuid: e15c0f1f-ca52-4565-b0fc-6e5fb21203b3
   - BaseNodeGuid: e15c0f1f-ca52-4565-b0fc-6e5fb21203b3
     TargetNodeGuid: 1437f839-3556-4cb9-91d9-dc0e8aaa6e0d
+  - BaseNodeGuid: e11b356d-ad74-46ce-9a94-146619b18147
+    TargetNodeGuid: 1fd3d7f6-501d-42fb-977e-66104ecd2e81
   DialogueChoiceNodeDatas: []
   DialogueNodeDatas:
   - NodeGuid: d79a95d4-fe48-4c17-9e4c-73378ebb6152
@@ -75,26 +75,6 @@ MonoBehaviour:
     TextType:
     - languageEnum: 0
       LanguageGenericType: 'Poppy: Sob Sob.'
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
-  - NodeGuid: 1ffda9d4-b3c5-42a8-a417-35c05a40c2eb
-    Position: {x: 1487, y: 206}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: I understand you very well.
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
@@ -118,66 +98,6 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
-  - NodeGuid: 9065b488-e6ad-4e97-b892-7b4b159bf037
-    Position: {x: 446, y: 630}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: 'But I still bought your flowers, did I not? '
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
-  - NodeGuid: 3ce8cf6a-b9da-4229-b539-e6b0e020f4a8
-    Position: {x: 202, y: 630}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: 'The flowers still look the same to me after all. '
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
-  - NodeGuid: b952acbf-c301-4c7d-a86e-6833f43ef895
-    Position: {x: 202, y: 206}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: 'Luna: Poppy, there you are darling!'
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
   - NodeGuid: a7af81e4-3d98-4a5e-95c4-3d7650ddbd75
     Position: {x: 1244, y: 206}
     Character: {fileID: 0}
@@ -198,26 +118,6 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
-  - NodeGuid: 996f52a6-4c7c-4b58-bc58-430fe7772b10
-    Position: {x: 685, y: 630}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: And I did not buy them out of pity, or as a joke. No...
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
   - NodeGuid: a3b31be8-cbc1-43d8-8adb-ee34b3096385
     Position: {x: 931, y: 630}
     Character: {fileID: 0}
@@ -234,8 +134,8 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: The curves, the shapes, the texture and, god, the smell
-        darling! Flowers are amazing, with or without their colors!
+      LanguageGenericType: It is the curves, the shapes, the texture and, god, the
+        smell, darling! Flowers are amazing, with or without their colors!
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
@@ -316,7 +216,7 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: 'Luna: I know darling. '
+      LanguageGenericType: 'Luna: I know, darling. '
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
@@ -419,7 +319,108 @@ MonoBehaviour:
     TextType:
     - languageEnum: 0
       LanguageGenericType: I run a flower shop for cat's sake! Who will buy my flowers
-        now that their colors are all  gone!?
+        now that they are all black and white!?
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 1ffda9d4-b3c5-42a8-a417-35c05a40c2eb
+    Position: {x: 1487, y: 206}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Does your fur color define you?
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 9065b488-e6ad-4e97-b892-7b4b159bf037
+    Position: {x: 446, y: 630}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'I still bought your flowers, did I not? '
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 996f52a6-4c7c-4b58-bc58-430fe7772b10
+    Position: {x: 685, y: 630}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: If not for their color, then why? I will tell you.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 3ce8cf6a-b9da-4229-b539-e6b0e020f4a8
+    Position: {x: 213, y: 630}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: No. And neither does it for the flowers, darling. To me
+        the flowers look all the same. But even so-
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: b952acbf-c301-4c7d-a86e-6833f43ef895
+    Position: {x: 202, y: 206}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Luna: Poppy, there you are, darling!'
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10

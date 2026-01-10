@@ -18,6 +18,16 @@ MonoBehaviour:
   LimitChoiceOptionPerNode: 0
   MaxChoiceOptionPerNode: 0
   NodeLinkDatas:
+  - BaseNodeGuid: 12611948-860f-44ca-83ec-c39c7282715d
+    TargetNodeGuid: 890351a3-5b42-4f01-a09b-391e06ac02c5
+  - BaseNodeGuid: 890351a3-5b42-4f01-a09b-391e06ac02c5
+    TargetNodeGuid: da49e726-778e-4d7d-b479-ca0ac80b554f
+  - BaseNodeGuid: d92e6f1d-7c81-4293-adfa-86d5a2ac3e64
+    TargetNodeGuid: 411a5285-f6fb-4a03-a8f8-3f65f9748932
+  - BaseNodeGuid: 411a5285-f6fb-4a03-a8f8-3f65f9748932
+    TargetNodeGuid: da49e726-778e-4d7d-b479-ca0ac80b554f
+  - BaseNodeGuid: 932338f3-85ae-4445-8cb0-9261877f9df9
+    TargetNodeGuid: d92e6f1d-7c81-4293-adfa-86d5a2ac3e64
   - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
     TargetNodeGuid: 6efc1a03-016a-44af-84aa-30bb646b8e22
   - BaseNodeGuid: c60b8bee-fa21-4f10-9cf0-5a85d88462da
@@ -46,10 +56,6 @@ MonoBehaviour:
     TargetNodeGuid: c4324a8e-98b3-4f8a-8c51-cd5ec2d87c3b
   - BaseNodeGuid: c4324a8e-98b3-4f8a-8c51-cd5ec2d87c3b
     TargetNodeGuid: 02e72912-89ec-4314-9a25-ffd8f0a483a8
-  - BaseNodeGuid: 878519c4-1d72-4930-bb25-715a15143d0e
-    TargetNodeGuid: 9fbeedaf-cba7-4617-a759-260f0aaeb8ac
-  - BaseNodeGuid: 9fbeedaf-cba7-4617-a759-260f0aaeb8ac
-    TargetNodeGuid: a24fe831-e04a-4db4-b4ab-a0d3c76d1aec
   - BaseNodeGuid: 7d44017b-4954-4f6c-b63e-cf698ab909a2
     TargetNodeGuid: a77bcccb-1486-4c3b-9bca-fb68d66fca5d
   - BaseNodeGuid: a24fe831-e04a-4db4-b4ab-a0d3c76d1aec
@@ -66,36 +72,9 @@ MonoBehaviour:
     TargetNodeGuid: 878519c4-1d72-4930-bb25-715a15143d0e
   - BaseNodeGuid: 6efc1a03-016a-44af-84aa-30bb646b8e22
     TargetNodeGuid: c60b8bee-fa21-4f10-9cf0-5a85d88462da
+  - BaseNodeGuid: 878519c4-1d72-4930-bb25-715a15143d0e
+    TargetNodeGuid: a24fe831-e04a-4db4-b4ab-a0d3c76d1aec
   DialogueChoiceNodeDatas:
-  - NodeGuid: 6d228e2b-2248-439d-b8cf-ad07f87c43ed
-    Position: {x: 2168, y: 911}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: Do you have any more questions for me?
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 5
-    DialogueNodePorts:
-    - PortGuid: 73457b23-a058-40b1-b331-7c0e4ad869dc
-      InputGuid: 878519c4-1d72-4930-bb25-715a15143d0e
-      OutputGuid: 6d228e2b-2248-439d-b8cf-ad07f87c43ed
-      TextLanguage:
-      - languageEnum: 0
-        LanguageGenericType: Last night?
-      - languageEnum: 1
-        LanguageGenericType: Choice 01
-      RequiredFlag: {fileID: 0}
   - NodeGuid: 6efc1a03-016a-44af-84aa-30bb646b8e22
     Position: {x: 546, y: 196}
     Character: {fileID: 0}
@@ -122,6 +101,35 @@ MonoBehaviour:
       TextLanguage:
       - languageEnum: 0
         LanguageGenericType: Start
+      - languageEnum: 1
+        LanguageGenericType: Choice 01
+      RequiredFlag: {fileID: 0}
+  - NodeGuid: 6d228e2b-2248-439d-b8cf-ad07f87c43ed
+    Position: {x: 2168, y: 911}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: ... What?
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 5
+    DialogueNodePorts:
+    - PortGuid: 73457b23-a058-40b1-b331-7c0e4ad869dc
+      InputGuid: 878519c4-1d72-4930-bb25-715a15143d0e
+      OutputGuid: 6d228e2b-2248-439d-b8cf-ad07f87c43ed
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Last night?
       - languageEnum: 1
         LanguageGenericType: Choice 01
       RequiredFlag: {fileID: 0}
@@ -307,72 +315,6 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
-  - NodeGuid: 1ec5d9d6-2122-4d97-a9a3-7f457fc4c961
-    Position: {x: 884, y: 911}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: 'Yes! Yes, I did steal his stupid flower. Someone had
-        to teach that cat a lesson! '
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
-  - NodeGuid: 2d32b667-db15-4a1c-8264-c741ebf205b7
-    Position: {x: 1145, y: 911}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: 'He deserved it and then some!
-
-        He and his band
-        of orange misfits came waltzing into this town thinking they own the place!'
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
-  - NodeGuid: 08c69361-8395-498d-9c9f-7aefe5c3b11a
-    Position: {x: 1403, y: 911}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: And now they are going after our jobs! I own a farm not
-        far from here, and I hear their company is going to undercut our market with
-        cheap imports!
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
   - NodeGuid: c4324a8e-98b3-4f8a-8c51-cd5ec2d87c3b
     Position: {x: 1652, y: 911}
     Character: {fileID: 0}
@@ -394,89 +336,8 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
-  - NodeGuid: 878519c4-1d72-4930-bb25-715a15143d0e
-    Position: {x: 2515, y: 911}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: Where was I last night? Back home at my farm. Can't be
-        gone too long, you know. Lots of work to be done after all!
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
-  - NodeGuid: 9fbeedaf-cba7-4617-a759-260f0aaeb8ac
-    Position: {x: 2772, y: 911}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: If there's anything more, you'll find me back at the Cattelatte.
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
   - NodeGuid: 7d44017b-4954-4f6c-b63e-cf698ab909a2
     Position: {x: 1911, y: 196}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: ...
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
-  - NodeGuid: a24fe831-e04a-4db4-b4ab-a0d3c76d1aec
-    Position: {x: 3008, y: 911}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: FindusMiloMoveEvent
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: ...
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
-  - NodeGuid: 08fc895c-4b8b-4836-b922-0df3a4967121
-    Position: {x: 3240, y: 951}
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
@@ -558,11 +419,154 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
+  - NodeGuid: 1ec5d9d6-2122-4d97-a9a3-7f457fc4c961
+    Position: {x: 657, y: 911}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Yes! Yes, I did steal his stupid flower. Someone had
+        to teach that cat a lesson! '
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 2d32b667-db15-4a1c-8264-c741ebf205b7
+    Position: {x: 884, y: 911}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: He deserved it and then some! He and his band of orange
+        misfits came waltzing into this town thinking they own the place!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 08c69361-8395-498d-9c9f-7aefe5c3b11a
+    Position: {x: 1145, y: 911}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: And now they are going after our jobs!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 069791ee-6086-4a3b-8151-74951de6a400
+    Position: {x: 1403, y: 911}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: You see, I own a farm not far from here, and I hear their
+        company is going to undercut our market with cheap imports!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 878519c4-1d72-4930-bb25-715a15143d0e
+    Position: {x: 2515, y: 911}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: If you want to talk, meet me back at the Cafelatte.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: a24fe831-e04a-4db4-b4ab-a0d3c76d1aec
+    Position: {x: 2749, y: 911}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: FindusMiloMoveEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: ...
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 08fc895c-4b8b-4836-b922-0df3a4967121
+    Position: {x: 3014, y: 911}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Dr. Milo: Oh Findus, you old fool...'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
   ConditionalNodeDatas: []
   TimerChoiceNodeDatas: []
   EndNodeDatas:
   - NodeGuid: 7838e825-39c1-416f-8753-1589000d7155
-    Position: {x: 3478, y: 911}
+    Position: {x: 3284, y: 911}
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 

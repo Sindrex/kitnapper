@@ -26,8 +26,6 @@ MonoBehaviour:
     TargetNodeGuid: e56d670a-166a-458b-bcea-972ad496a64c
   - BaseNodeGuid: 5757ab72-f78b-45f8-aadd-e6227dd0051c
     TargetNodeGuid: dfb4d9a0-65a8-449d-a9e3-0fda2530effc
-  - BaseNodeGuid: e56d670a-166a-458b-bcea-972ad496a64c
-    TargetNodeGuid: 5757ab72-f78b-45f8-aadd-e6227dd0051c
   - BaseNodeGuid: 387c6883-214b-4792-9fb7-a702668501be
     TargetNodeGuid: 8d0cae8d-9955-47cf-b917-3245bf1fe72c
   - BaseNodeGuid: 8d0cae8d-9955-47cf-b917-3245bf1fe72c
@@ -36,14 +34,14 @@ MonoBehaviour:
     TargetNodeGuid: c0f3351b-9180-4a81-93fa-f89a8a29ccd6
   - BaseNodeGuid: c0f3351b-9180-4a81-93fa-f89a8a29ccd6
     TargetNodeGuid: 072e67fa-7875-4d9f-ad19-ac3cd72f4bf7
-  - BaseNodeGuid: 90a3ed62-c327-4eb8-88e5-56d86f1e2a4f
-    TargetNodeGuid: bcbb99da-e3f9-4ffb-a3a9-d2b4923d23bc
   - BaseNodeGuid: 50b5b237-035e-4ed4-8040-69b1c907eb64
     TargetNodeGuid: 3f9e918f-20f5-4ae4-91b4-2d7371e10dac
   - BaseNodeGuid: 3f9e918f-20f5-4ae4-91b4-2d7371e10dac
     TargetNodeGuid: 81445492-9c47-4306-84b9-ae969a88b889
   - BaseNodeGuid: 293bfb13-3e46-475b-93d3-0e1dfd011d74
     TargetNodeGuid: c27c8dd6-b804-4772-953a-25e7bafa2848
+  - BaseNodeGuid: 90a3ed62-c327-4eb8-88e5-56d86f1e2a4f
+    TargetNodeGuid: cf5925e7-6da4-48db-96a1-35affdc4c5ae
   - BaseNodeGuid: fd8a58c2-d5b8-40a6-bb0c-e1c4d639783d
     TargetNodeGuid: 90a3ed62-c327-4eb8-88e5-56d86f1e2a4f
   - BaseNodeGuid: fd8a58c2-d5b8-40a6-bb0c-e1c4d639783d
@@ -55,15 +53,21 @@ MonoBehaviour:
   - BaseNodeGuid: dcd8d6f3-4bcf-4ce1-926e-1f153f04d853
     TargetNodeGuid: f54103a2-0822-4f0b-b378-f40ff488464c
   - BaseNodeGuid: dcd8d6f3-4bcf-4ce1-926e-1f153f04d853
-    TargetNodeGuid: 387c6883-214b-4792-9fb7-a702668501be
-  - BaseNodeGuid: dcd8d6f3-4bcf-4ce1-926e-1f153f04d853
     TargetNodeGuid: 293bfb13-3e46-475b-93d3-0e1dfd011d74
+  - BaseNodeGuid: dcd8d6f3-4bcf-4ce1-926e-1f153f04d853
+    TargetNodeGuid: 25f936bd-798f-4c3d-9d5c-65cb7e771398
   - BaseNodeGuid: 0fb8e009-758b-4302-ad61-4c516ffc1003
     TargetNodeGuid: bcbb99da-e3f9-4ffb-a3a9-d2b4923d23bc
   - BaseNodeGuid: 0fb8e009-758b-4302-ad61-4c516ffc1003
     TargetNodeGuid: dcd8d6f3-4bcf-4ce1-926e-1f153f04d853
   - BaseNodeGuid: dcd8d6f3-4bcf-4ce1-926e-1f153f04d853
-    TargetNodeGuid: 25f936bd-798f-4c3d-9d5c-65cb7e771398
+    TargetNodeGuid: c8dc9352-e132-4608-b9d6-252744a60cb3
+  - BaseNodeGuid: c8dc9352-e132-4608-b9d6-252744a60cb3
+    TargetNodeGuid: 387c6883-214b-4792-9fb7-a702668501be
+  - BaseNodeGuid: e56d670a-166a-458b-bcea-972ad496a64c
+    TargetNodeGuid: ed38842d-5801-4d33-a912-3cdb8cc22c81
+  - BaseNodeGuid: ed38842d-5801-4d33-a912-3cdb8cc22c81
+    TargetNodeGuid: 5757ab72-f78b-45f8-aadd-e6227dd0051c
   DialogueChoiceNodeDatas:
   - NodeGuid: dcd8d6f3-4bcf-4ce1-926e-1f153f04d853
     Position: {x: 840, y: -112}
@@ -90,12 +94,12 @@ MonoBehaviour:
       OutputGuid: dcd8d6f3-4bcf-4ce1-926e-1f153f04d853
       TextLanguage:
       - languageEnum: 0
-        LanguageGenericType: Gopodbye
+        LanguageGenericType: Goodbye
       - languageEnum: 1
         LanguageGenericType: Choice 01
       RequiredFlag: {fileID: 0}
     - PortGuid: fe20528b-c95d-4306-8243-314244698ae5
-      InputGuid: 387c6883-214b-4792-9fb7-a702668501be
+      InputGuid: c8dc9352-e132-4608-b9d6-252744a60cb3
       OutputGuid: dcd8d6f3-4bcf-4ce1-926e-1f153f04d853
       TextLanguage:
       - languageEnum: 0
@@ -111,7 +115,7 @@ MonoBehaviour:
         LanguageGenericType: Findus' ball toy
       - languageEnum: 1
         LanguageGenericType: Choice 04
-      RequiredFlag: {fileID: 0}
+      RequiredFlag: {fileID: 11400000, guid: 929c64ba1c19bb14382fcc3fd5781a99, type: 2}
     - PortGuid: 2e3efdb2-5032-4258-afb8-c8cb9851fdba
       InputGuid: 25f936bd-798f-4c3d-9d5c-65cb7e771398
       OutputGuid: dcd8d6f3-4bcf-4ce1-926e-1f153f04d853
@@ -161,27 +165,6 @@ MonoBehaviour:
         LanguageGenericType: Choice 02
       RequiredFlag: {fileID: 11400000, guid: de9eac2e0a950a34691d000eb8b356a5, type: 2}
   DialogueNodeDatas:
-  - NodeGuid: 25f936bd-798f-4c3d-9d5c-65cb7e771398
-    Position: {x: 840, y: 812}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: 'The Midnight Rose? Yes, I bought one just this week from
-        sweet, sweet Poppy. It is the most beautiful flower, darling. '
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
   - NodeGuid: ae8a2701-2e80-4873-ba39-079ac4d8c439
     Position: {x: 1105, y: 812}
     Character: {fileID: 0}
@@ -200,152 +183,6 @@ MonoBehaviour:
     - languageEnum: 0
       LanguageGenericType: Where was I last night? Oh, hihi. I think the Mayor can
         vouch for me.
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
-  - NodeGuid: 5757ab72-f78b-45f8-aadd-e6227dd0051c
-    Position: {x: 1620, y: 812}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: LunaMidnightRoseDialogueEvent
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: Let's go cheer Poppy up! Meet me there, darling.
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
-  - NodeGuid: e56d670a-166a-458b-bcea-972ad496a64c
-    Position: {x: 1351, y: 812}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: By the way, do you know how Poppy is doing? I am sure
-        this ordeal must be taxing. Poppy has always been so fond of the colors of
-        all the flowers.
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
-  - NodeGuid: 387c6883-214b-4792-9fb7-a702668501be
-    Position: {x: 1173, y: -14}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: The colors are gone!? I did not know! Makes sense why
-        people are so upset today then. I am sure you will find the culprit soon
-        enough, darling.
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
-  - NodeGuid: 8d0cae8d-9955-47cf-b917-3245bf1fe72c
-    Position: {x: 1401, y: -14}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: 'You know? Sometimes my disability makes it harder for
-        me to connect with other people. '
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
-  - NodeGuid: f751c2b0-46cc-4a63-9344-a68b4e784977
-    Position: {x: 1625, y: -14}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: Oh, how I have wondered how my life would be if I could
-        see colors like everyone else... Excuse me, darling.
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
-  - NodeGuid: c0f3351b-9180-4a81-93fa-f89a8a29ccd6
-    Position: {x: 1849, y: -14}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: Sniff, sniff.
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
-  - NodeGuid: 90a3ed62-c327-4eb8-88e5-56d86f1e2a4f
-    Position: {x: 469, y: -75}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: 'Luna: Let''s go check up on Poppy. I will meet you there.'
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
@@ -410,6 +247,212 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
+  - NodeGuid: 90a3ed62-c327-4eb8-88e5-56d86f1e2a4f
+    Position: {x: 419, y: -75}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Luna: Let''s go check up on Poppy. I will meet you there.'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: c0f3351b-9180-4a81-93fa-f89a8a29ccd6
+    Position: {x: 2089, y: -14}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Sniff, sniff.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: f751c2b0-46cc-4a63-9344-a68b4e784977
+    Position: {x: 1866, y: -14}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Oh, how I have wondered how my life would be if I could
+        see colors like everyone else... Excuse me, darling.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 8d0cae8d-9955-47cf-b917-3245bf1fe72c
+    Position: {x: 1638, y: -14}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'You know? Sometimes my disability makes it harder for
+        me to connect with other people. '
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 387c6883-214b-4792-9fb7-a702668501be
+    Position: {x: 1401, y: -14}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Makes sense why people are so upset today then. I am sure
+        you will find the culprit soon enough, darling.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: c8dc9352-e132-4608-b9d6-252744a60cb3
+    Position: {x: 1185, y: -14}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: The colors are gone!? I did not know!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 25f936bd-798f-4c3d-9d5c-65cb7e771398
+    Position: {x: 840, y: 812}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'The Midnight Rose? Yes, I bought one just this week from
+        sweet, sweet Poppy. It is the most beautiful flower, darling. '
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 5757ab72-f78b-45f8-aadd-e6227dd0051c
+    Position: {x: 1834, y: 812}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: LunaMidnightRoseDialogueEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Let's go cheer Poppy up! Meet me there, darling.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: ed38842d-5801-4d33-a912-3cdb8cc22c81
+    Position: {x: 1595, y: 812}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Poppy has always been so fond of the colors of all the
+        flowers.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: e56d670a-166a-458b-bcea-972ad496a64c
+    Position: {x: 1353, y: 812}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: By the way, do you know how Poppy is doing? I am sure
+        this ordeal must be taxing.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
   ConditionalNodeDatas:
   - NodeGuid: fd8a58c2-d5b8-40a6-bb0c-e1c4d639783d
     Position: {x: 141, y: 306}
@@ -417,26 +460,12 @@ MonoBehaviour:
       type: 2}
   - NodeGuid: 25917b06-a018-4050-b9bf-a96a1563bc19
     Position: {x: -180, y: 306}
-    RequiredGameFlagCombo: {fileID: 0}
+    RequiredGameFlagCombo: {fileID: 11400000, guid: d280d0c262e2fca41b46ae301e91ac3f,
+      type: 2}
   TimerChoiceNodeDatas: []
   EndNodeDatas:
-  - NodeGuid: dfb4d9a0-65a8-449d-a9e3-0fda2530effc
-    Position: {x: 1899, y: 812}
-    EndNodeType: 0
-    Dialogue: {fileID: 0}
-    startID: 
-  - NodeGuid: bcbb99da-e3f9-4ffb-a3a9-d2b4923d23bc
-    Position: {x: 840, y: 287}
-    EndNodeType: 0
-    Dialogue: {fileID: 0}
-    startID: 
   - NodeGuid: f54103a2-0822-4f0b-b378-f40ff488464c
     Position: {x: 1173, y: -149}
-    EndNodeType: 0
-    Dialogue: {fileID: 0}
-    startID: 
-  - NodeGuid: 072e67fa-7875-4d9f-ad19-ac3cd72f4bf7
-    Position: {x: 2092, y: -14}
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 
@@ -447,6 +476,26 @@ MonoBehaviour:
     startID: 
   - NodeGuid: c27c8dd6-b804-4772-953a-25e7bafa2848
     Position: {x: 1451, y: 404}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: cf5925e7-6da4-48db-96a1-35affdc4c5ae
+    Position: {x: 655, y: -75}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: bcbb99da-e3f9-4ffb-a3a9-d2b4923d23bc
+    Position: {x: 840, y: 298}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: 072e67fa-7875-4d9f-ad19-ac3cd72f4bf7
+    Position: {x: 2323, y: -14}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: dfb4d9a0-65a8-449d-a9e3-0fda2530effc
+    Position: {x: 2054, y: 812}
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 

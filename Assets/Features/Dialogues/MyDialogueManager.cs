@@ -10,6 +10,7 @@ public class MyDialogueManager : MonoBehaviour
 {
     public GameObject DialogueParent;
     public Text DialogueText;
+    public bool IsDialogue;
 
     //Spawn letters one by one
     public bool IsBusySpawningLettersDialogueChoices => ChoiceControllers.Any(e => e.IsBusySpawningLetters);
@@ -44,12 +45,13 @@ public class MyDialogueManager : MonoBehaviour
     void Start()
     {
         DialogueParent.SetActive(false);
+        IsDialogue = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (IsDialogueChoice)
+        if (IsDialogueChoice && !IsBusySpawningLetters)
         {
             var changed = CurrentDialogueChoice;
             if (InputController.GetInput(InputPurpose.DIALOGUE_CHOICE_DOWN)) //list is backwards
@@ -109,16 +111,18 @@ public class MyDialogueManager : MonoBehaviour
                 CurrentLetterSpawnTime += Time.deltaTime;
             }
         }
+    }
 
-        if (IsBusySpawningLetters && DialogueText.text.Length > 0 && InputController.GetInput(InputPurpose.INTERACT))
-        {
-            DialogueText.text = CurrentText;
-            CurrentTextList = new List<char>();
-        }
+    public void SkipTextAnimation()
+    {
+        DialogueText.text = CurrentText;
+        CurrentTextList = new List<char>();       
     }
 
     public void SetText(string text)
     {
+        CLogger.Log("Setting text");
+        IsDialogue = true;
         PlayerController.Instance.CanMove = false;
         DialogueChoiceContentParent.DestroyMyChildren();
         IsDialogueChoice = false;
@@ -137,6 +141,8 @@ public class MyDialogueManager : MonoBehaviour
 
     public void LoadChoiceDialogue(DialogueChoiceNodeData choiceNodeData)
     {
+        CLogger.Log("Loading Choice Dialogue");
+        IsDialogue = true;
         PlayerController.Instance.CanMove = false;
         CurrentDialogueChoice = 0;
         IsDialogueChoice = true;
@@ -191,9 +197,12 @@ public class MyDialogueManager : MonoBehaviour
 
     public void CloseDialogue()
     {
+        CLogger.Log("Closing Dialogue");
+        IsDialogue = false;
         DialogueParent.SetActive(false);
         DialogueChoiceContentParent.DestroyMyChildren();
         IsDialogueChoice = false;
         PlayerController.Instance.CanMove = true;
+        CameraController.Instance.FollowPlayer = true;
     }
 }

@@ -18,6 +18,8 @@ MonoBehaviour:
   LimitChoiceOptionPerNode: 0
   MaxChoiceOptionPerNode: 0
   NodeLinkDatas:
+  - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
+    TargetNodeGuid: 361e3b57-d398-49e2-b883-f128f3a31f06
   - BaseNodeGuid: c60b8bee-fa21-4f10-9cf0-5a85d88462da
     TargetNodeGuid: f609914e-cfce-45c1-afd9-5476fc837d69
   - BaseNodeGuid: ddc99ea3-8ef6-41f3-8158-d8b1752e3ac0
@@ -54,16 +56,24 @@ MonoBehaviour:
     TargetNodeGuid: 3aa5d2db-f611-40fc-b72b-35cd55a7a5fa
   - BaseNodeGuid: 00caaf76-57f7-43af-82e9-53ad5445ab52
     TargetNodeGuid: 120a1a78-1ae0-4721-9814-179b37b7a1ca
+  - BaseNodeGuid: 68719722-3239-4b9f-b568-f85d00c15154
+    TargetNodeGuid: 1cf869c2-211d-46b0-a368-e45f24151b82
+  - BaseNodeGuid: 8b0c0cbc-078a-46ad-ab26-c9e9447fc49d
+    TargetNodeGuid: 881de606-8f9e-4392-a67c-94217f04eb1a
   - BaseNodeGuid: b471fcdc-e10b-4f88-8889-2b71d34184d6
     TargetNodeGuid: 00caaf76-57f7-43af-82e9-53ad5445ab52
   - BaseNodeGuid: b471fcdc-e10b-4f88-8889-2b71d34184d6
     TargetNodeGuid: 6efc1a03-016a-44af-84aa-30bb646b8e22
+  - BaseNodeGuid: 361e3b57-d398-49e2-b883-f128f3a31f06
+    TargetNodeGuid: 8b0c0cbc-078a-46ad-ab26-c9e9447fc49d
+  - BaseNodeGuid: 361e3b57-d398-49e2-b883-f128f3a31f06
+    TargetNodeGuid: b471fcdc-e10b-4f88-8889-2b71d34184d6
   - BaseNodeGuid: 081f99f7-e4f9-44b2-bda2-6c6b0c3dd158
     TargetNodeGuid: dc500d0f-c5bd-4ddd-8995-9d49d66c850d
   - BaseNodeGuid: 081f99f7-e4f9-44b2-bda2-6c6b0c3dd158
     TargetNodeGuid: c60b8bee-fa21-4f10-9cf0-5a85d88462da
   - BaseNodeGuid: 081f99f7-e4f9-44b2-bda2-6c6b0c3dd158
-    TargetNodeGuid: 9f7a8ca9-2b49-4741-83eb-b363fed70311
+    TargetNodeGuid: 68719722-3239-4b9f-b568-f85d00c15154
   - BaseNodeGuid: f609914e-cfce-45c1-afd9-5476fc837d69
     TargetNodeGuid: ddc99ea3-8ef6-41f3-8158-d8b1752e3ac0
   - BaseNodeGuid: 9e39dd12-dc74-4845-829b-3bb3fe91f8ec
@@ -72,18 +82,10 @@ MonoBehaviour:
     TargetNodeGuid: c4c5eb1b-6fa8-4118-b681-4babbcadabf7
   - BaseNodeGuid: 6efc1a03-016a-44af-84aa-30bb646b8e22
     TargetNodeGuid: 081f99f7-e4f9-44b2-bda2-6c6b0c3dd158
+  - BaseNodeGuid: 00a51208-7701-4825-b8f3-3015eb09ff3a
+    TargetNodeGuid: 9f7a8ca9-2b49-4741-83eb-b363fed70311
   - BaseNodeGuid: 081f99f7-e4f9-44b2-bda2-6c6b0c3dd158
-    TargetNodeGuid: 68719722-3239-4b9f-b568-f85d00c15154
-  - BaseNodeGuid: 68719722-3239-4b9f-b568-f85d00c15154
-    TargetNodeGuid: 1cf869c2-211d-46b0-a368-e45f24151b82
-  - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
-    TargetNodeGuid: 361e3b57-d398-49e2-b883-f128f3a31f06
-  - BaseNodeGuid: 361e3b57-d398-49e2-b883-f128f3a31f06
-    TargetNodeGuid: 8b0c0cbc-078a-46ad-ab26-c9e9447fc49d
-  - BaseNodeGuid: 361e3b57-d398-49e2-b883-f128f3a31f06
-    TargetNodeGuid: b471fcdc-e10b-4f88-8889-2b71d34184d6
-  - BaseNodeGuid: 8b0c0cbc-078a-46ad-ab26-c9e9447fc49d
-    TargetNodeGuid: 881de606-8f9e-4392-a67c-94217f04eb1a
+    TargetNodeGuid: 00a51208-7701-4825-b8f3-3015eb09ff3a
   DialogueChoiceNodeDatas:
   - NodeGuid: 081f99f7-e4f9-44b2-bda2-6c6b0c3dd158
     Position: {x: 912, y: -134}
@@ -124,11 +126,11 @@ MonoBehaviour:
         LanguageGenericType: Choice 02
       RequiredFlag: {fileID: 11400000, guid: 28f295a3ae666734ebe8d71254761229, type: 2}
     - PortGuid: d1033131-8561-4cff-9389-4e958349f951
-      InputGuid: 9f7a8ca9-2b49-4741-83eb-b363fed70311
+      InputGuid: 00a51208-7701-4825-b8f3-3015eb09ff3a
       OutputGuid: 081f99f7-e4f9-44b2-bda2-6c6b0c3dd158
       TextLanguage:
       - languageEnum: 0
-        LanguageGenericType: Orange cats
+        LanguageGenericType: Last night
       - languageEnum: 1
         LanguageGenericType: Choice 03
       RequiredFlag: {fileID: 11400000, guid: bc8d0cb6481737642b7074771e51bad3, type: 2}
@@ -239,6 +241,36 @@ MonoBehaviour:
       - languageEnum: 1
         LanguageGenericType: Choice 02
       RequiredFlag: {fileID: 0}
+  - NodeGuid: 00a51208-7701-4825-b8f3-3015eb09ff3a
+    Position: {x: 1603, y: 230}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Where was I last night? Back home at my farm. Can't be
+        gone too long, you know. Lots of work to be done after all! For now anyways...
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 5
+    DialogueNodePorts:
+    - PortGuid: 0d410aaf-4277-4731-be2f-0dcb44e32745
+      InputGuid: 9f7a8ca9-2b49-4741-83eb-b363fed70311
+      OutputGuid: 00a51208-7701-4825-b8f3-3015eb09ff3a
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Orange cats
+      - languageEnum: 1
+        LanguageGenericType: Choice 01
+      RequiredFlag: {fileID: 0}
   DialogueNodeDatas:
   - NodeGuid: c60b8bee-fa21-4f10-9cf0-5a85d88462da
     Position: {x: 1356, y: -134}
@@ -341,149 +373,6 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
-  - NodeGuid: 20d89102-4239-401f-bf5b-1dab305343fd
-    Position: {x: 1603, y: 230}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: FindusSinbadDialogueEvent0
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: If I see another one, I might just lose it...
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
-  - NodeGuid: 9f7a8ca9-2b49-4741-83eb-b363fed70311
-    Position: {x: 1356, y: 230}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: As you now understand, I'm not very fond of the orange
-        cats.
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
-  - NodeGuid: 85d97171-32b6-43ae-87f6-befd946cd55c
-    Position: {x: 2479, y: 230}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: 'Findus: Quiet down will you? Why would you want to go
-        to those offices...? Wait, what color are you?'
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
-  - NodeGuid: 9508a601-3f86-48b9-871e-b9a6911d8247
-    Position: {x: 2199, y: 230}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: '???: HI THERE, I NEW HERE! WHERE IS C.I.T. OFFICES?'
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
-  - NodeGuid: 81809372-2788-4396-bce1-647bc035fb32
-    Position: {x: 2720, y: 230}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: '???: I ORANGE CAT! WHY?'
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
-  - NodeGuid: 49073fdf-0007-462c-917e-656145b39a98
-    Position: {x: 3006, y: 230}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: 'Findus: I swear... '
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
-  - NodeGuid: 9ba852c1-2ff6-455e-8ce6-6022d7661da2
-    Position: {x: 3256, y: 230}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: Are you here to steal my toys again? Get out of here!
-        We don't want your kind here!
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
   - NodeGuid: 3aa5d2db-f611-40fc-b72b-35cd55a7a5fa
     Position: {x: 2720, y: 627}
     Character: {fileID: 0}
@@ -544,50 +433,6 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
-  - NodeGuid: b300b8c4-7ac8-42a1-b583-275fea08e3fb
-    Position: {x: 1903, y: 230}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: FindusSinbadMoveEvent1
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: '...
-
-        ...
-
-        Who are you?'
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
-  - NodeGuid: 8f88fe8c-4587-45e8-b71d-325d26c368c5
-    Position: {x: 3528, y: 230}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: '???: WHAT, WHY... OK OK I GO.'
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
   - NodeGuid: 00caaf76-57f7-43af-82e9-53ad5445ab52
     Position: {x: 416, y: -164}
     Character: {fileID: 0}
@@ -605,26 +450,6 @@ MonoBehaviour:
     TextType:
     - languageEnum: 0
       LanguageGenericType: 'Findus: Meet me at the University then!'
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
-  - NodeGuid: 68719722-3239-4b9f-b568-f85d00c15154
-    Position: {x: 1356, y: 577}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: Poppy? No, I haven't. Not at the florist then?
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
@@ -649,6 +474,213 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
+  - NodeGuid: 68719722-3239-4b9f-b568-f85d00c15154
+    Position: {x: 1356, y: 730}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Poppy? No, I haven't. Not at the florist then?
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 8f88fe8c-4587-45e8-b71d-325d26c368c5
+    Position: {x: 2479, y: 627}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: '???: WHAT, WHY... OK OK I GO.'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 9ba852c1-2ff6-455e-8ce6-6022d7661da2
+    Position: {x: 2220, y: 627}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Are you here to steal my toys again? Get out of here!
+        We don't want your kind here!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 49073fdf-0007-462c-917e-656145b39a98
+    Position: {x: 3528, y: 230}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Findus: I swear... '
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 81809372-2788-4396-bce1-647bc035fb32
+    Position: {x: 3256, y: 230}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: '???: I ORANGE CAT! WHY?'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 85d97171-32b6-43ae-87f6-befd946cd55c
+    Position: {x: 3006, y: 230}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Findus: Quiet down will you? Why would you want to go
+        to those offices...? Wait, what color are you?'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 9508a601-3f86-48b9-871e-b9a6911d8247
+    Position: {x: 2720, y: 230}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: '???: HI THERE, I NEW HERE! WHERE IS C.I.T. OFFICES?'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: b300b8c4-7ac8-42a1-b583-275fea08e3fb
+    Position: {x: 2479, y: 230}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: FindusSinbadMoveEvent1
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: '...
+
+        ...
+
+        Who are you?'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 20d89102-4239-401f-bf5b-1dab305343fd
+    Position: {x: 2220, y: 230}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: FindusSinbadDialogueEvent0
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: If I see another one, I might just lose it...
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 9f7a8ca9-2b49-4741-83eb-b363fed70311
+    Position: {x: 1932, y: 230}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: As you now understand, I'm not very fond of the orange
+        cats.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
   ConditionalNodeDatas:
   - NodeGuid: b471fcdc-e10b-4f88-8889-2b71d34184d6
     Position: {x: 186, y: 196}
@@ -660,11 +692,6 @@ MonoBehaviour:
       type: 2}
   TimerChoiceNodeDatas: []
   EndNodeDatas:
-  - NodeGuid: c4c5eb1b-6fa8-4118-b681-4babbcadabf7
-    Position: {x: 912, y: 230}
-    EndNodeType: 0
-    Dialogue: {fileID: 0}
-    startID: 
   - NodeGuid: 7838e825-39c1-416f-8753-1589000d7155
     Position: {x: 3437, y: -134}
     EndNodeType: 0
@@ -685,13 +712,18 @@ MonoBehaviour:
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 
-  - NodeGuid: 1cf869c2-211d-46b0-a368-e45f24151b82
-    Position: {x: 1617, y: 577}
+  - NodeGuid: 881de606-8f9e-4392-a67c-94217f04eb1a
+    Position: {x: 416, y: -315}
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 
-  - NodeGuid: 881de606-8f9e-4392-a67c-94217f04eb1a
-    Position: {x: 416, y: -315}
+  - NodeGuid: 1cf869c2-211d-46b0-a368-e45f24151b82
+    Position: {x: 1603, y: 730}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: c4c5eb1b-6fa8-4118-b681-4babbcadabf7
+    Position: {x: 912, y: 230}
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 

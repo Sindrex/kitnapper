@@ -40,8 +40,7 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (!CanMove) return;
-        var movementVector = GetMovementVector();
+        var movementVector = GetMovementVector(CanMove);
         if(movementVector.x != 0 || movementVector.y != 0)
         {
             IsMoving = true;
@@ -60,8 +59,13 @@ public class PlayerController : MonoBehaviour
         PlayerRigidbody.velocity = movementVector * Speed * Time.deltaTime;
     }
 
-    public static Vector2 GetMovementVector()
+    public static Vector2 GetMovementVector(bool canMove)
     {
+        if (!canMove)
+        {
+            return new Vector2(0, 0);
+        }
+
         var x = 0;
         var y = 0;
         if (InputController.GetInput(InputPurpose.MOVE_LEFT))

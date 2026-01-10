@@ -11,6 +11,7 @@ public class DialogueController : MonoBehaviour
     public bool IsActive = false;
     public bool RequireInteract = false;
     public List<ReqFlagBase> RequiredFlags;
+    public GameObject CameraTarget;
 
     private bool isSecondNode;
 
@@ -30,7 +31,20 @@ public class DialogueController : MonoBehaviour
                 return;
             }
 
-            if (MyDialogueManager.Instance.IsBusySpawningLetters || MyDialogueManager.Instance.IsBusySpawningLettersDialogueChoices)
+            //first node interacted with
+            if (!isSecondNode && CameraTarget != null)
+            {
+                CameraController.Instance.SetPosition(CameraTarget.transform.position, true);
+            }
+
+            //skip text animation
+            if (MyDialogueManager.Instance.IsBusySpawningLetters && MyDialogueManager.Instance.DialogueText.text.Length > 0)
+            {
+                MyDialogueManager.Instance.SkipTextAnimation();
+                return;
+            }
+
+            if (MyDialogueManager.Instance.IsBusySpawningLettersDialogueChoices)
             {
                 return;
             }
@@ -135,6 +149,13 @@ public class DialogueController : MonoBehaviour
         if (!other.gameObject.CompareTag("Player")) return;
         if (CheckRequirements())
         {
+            CLogger.Log("Setting Dialogue to Active");
+            if (!RequireInteract)
+            {
+                CLogger.Log("Stopping player");
+                PlayerController.Instance.CanMove = false;
+            }
+
             currentNode = dialogueContainer.StartNodeDatas.FirstOrDefault();
             PlayerController.Instance.ShowInteractHint();
             IsActive = true;
@@ -149,8 +170,6 @@ public class DialogueController : MonoBehaviour
 
         PlayerController.Instance.StopShowInteractHint();
         IsActive = false;
-
-        MyDialogueManager.Instance.CloseDialogue();
     }
 
     private BaseNodeData GetNodeByGuid(string _targetNodeGuid)

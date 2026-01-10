@@ -11,11 +11,11 @@ public class SoundEvent : EventBase
         CLogger.Log("SoundEvent activated!");
         if (IsMusic)
         {
-            AudioManager.Instance.PlayMusicClip(AudioLabelToPlay);
+            AudioManager.Instance?.PlayMusicClip(AudioLabelToPlay);
         }
         else
         {
-            AudioManager.Instance.PlaySFXClip(AudioLabelToPlay);
+            AudioManager.Instance?.PlaySFXClip(AudioLabelToPlay);
         }
     }
 }

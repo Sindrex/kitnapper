@@ -38,6 +38,8 @@ public class GameSettings
         GameFlags = new List<GameFlagCombo>();
         EventStates = new List<EventState>();
         PlayerPosition = new GamePosition();
+        UnlockedSongs = new List<AudioLabel>();
+        DialogueLog = new List<string>();
         GameSettingsLoader.Save(this);
     }
 }

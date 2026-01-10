@@ -19,7 +19,7 @@ MonoBehaviour:
   MaxChoiceOptionPerNode: 8
   NodeLinkDatas:
   - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
-    TargetNodeGuid: b471fcdc-e10b-4f88-8889-2b71d34184d6
+    TargetNodeGuid: 361e3b57-d398-49e2-b883-f128f3a31f06
   - BaseNodeGuid: c60b8bee-fa21-4f10-9cf0-5a85d88462da
     TargetNodeGuid: f609914e-cfce-45c1-afd9-5476fc837d69
   - BaseNodeGuid: ddc99ea3-8ef6-41f3-8158-d8b1752e3ac0
@@ -30,42 +30,52 @@ MonoBehaviour:
     TargetNodeGuid: 7d44017b-4954-4f6c-b63e-cf698ab909a2
   - BaseNodeGuid: 7d44017b-4954-4f6c-b63e-cf698ab909a2
     TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
-  - BaseNodeGuid: 20d89102-4239-401f-bf5b-1dab305343fd
-    TargetNodeGuid: b300b8c4-7ac8-42a1-b583-275fea08e3fb
-  - BaseNodeGuid: 9f7a8ca9-2b49-4741-83eb-b363fed70311
-    TargetNodeGuid: 20d89102-4239-401f-bf5b-1dab305343fd
-  - BaseNodeGuid: 85d97171-32b6-43ae-87f6-befd946cd55c
-    TargetNodeGuid: 81809372-2788-4396-bce1-647bc035fb32
-  - BaseNodeGuid: 9508a601-3f86-48b9-871e-b9a6911d8247
-    TargetNodeGuid: 85d97171-32b6-43ae-87f6-befd946cd55c
-  - BaseNodeGuid: 81809372-2788-4396-bce1-647bc035fb32
-    TargetNodeGuid: 49073fdf-0007-462c-917e-656145b39a98
-  - BaseNodeGuid: 49073fdf-0007-462c-917e-656145b39a98
-    TargetNodeGuid: 9ba852c1-2ff6-455e-8ce6-6022d7661da2
-  - BaseNodeGuid: 9ba852c1-2ff6-455e-8ce6-6022d7661da2
-    TargetNodeGuid: 8f88fe8c-4587-45e8-b71d-325d26c368c5
   - BaseNodeGuid: 3aa5d2db-f611-40fc-b72b-35cd55a7a5fa
     TargetNodeGuid: d6f4e8ca-f68c-4cfc-b0d9-16923b585907
   - BaseNodeGuid: d6f4e8ca-f68c-4cfc-b0d9-16923b585907
     TargetNodeGuid: 89d06e6a-e4eb-43d2-a9eb-af2249b995da
   - BaseNodeGuid: 89d06e6a-e4eb-43d2-a9eb-af2249b995da
     TargetNodeGuid: 0afa1f32-c070-4dff-9caf-1dc1844a3f3d
-  - BaseNodeGuid: b300b8c4-7ac8-42a1-b583-275fea08e3fb
-    TargetNodeGuid: 9508a601-3f86-48b9-871e-b9a6911d8247
-  - BaseNodeGuid: 8f88fe8c-4587-45e8-b71d-325d26c368c5
-    TargetNodeGuid: 3aa5d2db-f611-40fc-b72b-35cd55a7a5fa
   - BaseNodeGuid: 00caaf76-57f7-43af-82e9-53ad5445ab52
     TargetNodeGuid: 120a1a78-1ae0-4721-9814-179b37b7a1ca
+  - BaseNodeGuid: 8b0c0cbc-078a-46ad-ab26-c9e9447fc49d
+    TargetNodeGuid: 881de606-8f9e-4392-a67c-94217f04eb1a
+  - BaseNodeGuid: 68719722-3239-4b9f-b568-f85d00c15154
+    TargetNodeGuid: 1cf869c2-211d-46b0-a368-e45f24151b82
+  - BaseNodeGuid: 8f88fe8c-4587-45e8-b71d-325d26c368c5
+    TargetNodeGuid: 3aa5d2db-f611-40fc-b72b-35cd55a7a5fa
+  - BaseNodeGuid: 9ba852c1-2ff6-455e-8ce6-6022d7661da2
+    TargetNodeGuid: 8f88fe8c-4587-45e8-b71d-325d26c368c5
+  - BaseNodeGuid: 49073fdf-0007-462c-917e-656145b39a98
+    TargetNodeGuid: 9ba852c1-2ff6-455e-8ce6-6022d7661da2
+  - BaseNodeGuid: 81809372-2788-4396-bce1-647bc035fb32
+    TargetNodeGuid: 49073fdf-0007-462c-917e-656145b39a98
+  - BaseNodeGuid: 85d97171-32b6-43ae-87f6-befd946cd55c
+    TargetNodeGuid: 81809372-2788-4396-bce1-647bc035fb32
+  - BaseNodeGuid: 9508a601-3f86-48b9-871e-b9a6911d8247
+    TargetNodeGuid: 85d97171-32b6-43ae-87f6-befd946cd55c
+  - BaseNodeGuid: b300b8c4-7ac8-42a1-b583-275fea08e3fb
+    TargetNodeGuid: 9508a601-3f86-48b9-871e-b9a6911d8247
+  - BaseNodeGuid: 20d89102-4239-401f-bf5b-1dab305343fd
+    TargetNodeGuid: b300b8c4-7ac8-42a1-b583-275fea08e3fb
+  - BaseNodeGuid: 9f7a8ca9-2b49-4741-83eb-b363fed70311
+    TargetNodeGuid: 20d89102-4239-401f-bf5b-1dab305343fd
   - BaseNodeGuid: b471fcdc-e10b-4f88-8889-2b71d34184d6
     TargetNodeGuid: 00caaf76-57f7-43af-82e9-53ad5445ab52
   - BaseNodeGuid: b471fcdc-e10b-4f88-8889-2b71d34184d6
     TargetNodeGuid: 6efc1a03-016a-44af-84aa-30bb646b8e22
+  - BaseNodeGuid: 361e3b57-d398-49e2-b883-f128f3a31f06
+    TargetNodeGuid: 8b0c0cbc-078a-46ad-ab26-c9e9447fc49d
+  - BaseNodeGuid: 361e3b57-d398-49e2-b883-f128f3a31f06
+    TargetNodeGuid: b471fcdc-e10b-4f88-8889-2b71d34184d6
   - BaseNodeGuid: 081f99f7-e4f9-44b2-bda2-6c6b0c3dd158
     TargetNodeGuid: dc500d0f-c5bd-4ddd-8995-9d49d66c850d
   - BaseNodeGuid: 081f99f7-e4f9-44b2-bda2-6c6b0c3dd158
     TargetNodeGuid: c60b8bee-fa21-4f10-9cf0-5a85d88462da
   - BaseNodeGuid: 081f99f7-e4f9-44b2-bda2-6c6b0c3dd158
-    TargetNodeGuid: 9f7a8ca9-2b49-4741-83eb-b363fed70311
+    TargetNodeGuid: 00a51208-7701-4825-b8f3-3015eb09ff3a
+  - BaseNodeGuid: 081f99f7-e4f9-44b2-bda2-6c6b0c3dd158
+    TargetNodeGuid: 68719722-3239-4b9f-b568-f85d00c15154
   - BaseNodeGuid: f609914e-cfce-45c1-afd9-5476fc837d69
     TargetNodeGuid: ddc99ea3-8ef6-41f3-8158-d8b1752e3ac0
   - BaseNodeGuid: 9e39dd12-dc74-4845-829b-3bb3fe91f8ec
@@ -74,6 +84,8 @@ MonoBehaviour:
     TargetNodeGuid: c4c5eb1b-6fa8-4118-b681-4babbcadabf7
   - BaseNodeGuid: 6efc1a03-016a-44af-84aa-30bb646b8e22
     TargetNodeGuid: 081f99f7-e4f9-44b2-bda2-6c6b0c3dd158
+  - BaseNodeGuid: 00a51208-7701-4825-b8f3-3015eb09ff3a
+    TargetNodeGuid: 9f7a8ca9-2b49-4741-83eb-b363fed70311
   - BaseNodeGuid: d3f28323-91ad-4487-ac8f-6b6bff8086bc
     TargetNodeGuid: 9280f9ee-4f5a-4d7d-843a-cd8707b47309
   - BaseNodeGuid: 9280f9ee-4f5a-4d7d-843a-cd8707b47309
@@ -119,8 +131,8 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: I am out for a walk in the park. I will not be back in
-        a while, humr humr.
+      LanguageGenericType: '"I am out for a walk in the park. I will not be back
+        in a while, humr humr."'
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10

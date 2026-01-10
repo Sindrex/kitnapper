@@ -9,11 +9,12 @@ public class MoveEventController : EventBase
     public string TargetAnimatorState;
     public string NextAnimatorState;
     public GameObject EndTriggerObject;
+    public bool AnimationFinished;
     public bool Started;
     public bool IsFinished;
     public string Id;
     public List<SetGameFlagCombo> SetFlags;
-    public string NextEvent; //note that this bypasses any requirements
+    public string NextEvent;
 
     // Start is called before the first frame update
     public void Start()
@@ -34,10 +35,8 @@ public class MoveEventController : EventBase
     {
         if (Started)
         {
-            var endTriggerIsOn = EndTriggerObject.activeSelf;
-            if (!endTriggerIsOn)
+            if (!AnimationFinished)
             {
-                //CLogger.Log($"MoveEvent \"{Id}\" endTrigger is not on!");
                 return;
             }
             DoFinishRoutine(true);
@@ -51,6 +50,7 @@ public class MoveEventController : EventBase
 
         Started = true;
         IsFinished = false;
+        AnimationFinished = false;
     }
 
     public void DoFinishRoutine(bool activateNextEvent)
@@ -62,7 +62,7 @@ public class MoveEventController : EventBase
 
         Target.transform.localPosition = TargetPosition;
         CLogger.Log($"MoveEvent \"{Id}\" moved target to Position: {Target.transform.localPosition}");
-
+        
         TargetAnimator.Play(NextAnimatorState);
 
         //set flags

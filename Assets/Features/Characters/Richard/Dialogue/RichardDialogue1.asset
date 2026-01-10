@@ -18,8 +18,8 @@ MonoBehaviour:
   LimitChoiceOptionPerNode: 0
   MaxChoiceOptionPerNode: 8
   NodeLinkDatas:
-  - BaseNodeGuid: c2734396-3245-4da4-a5c7-f6649dc8804f
-    TargetNodeGuid: 300ad88f-4b3e-4d84-b1ac-bed255b02acf
+  - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
+    TargetNodeGuid: bf8cbeb5-2ae9-4417-8b89-66987df0ae79
   - BaseNodeGuid: 300ad88f-4b3e-4d84-b1ac-bed255b02acf
     TargetNodeGuid: 3bc8a010-d4c5-4e58-8393-b0208119683e
   - BaseNodeGuid: 37513e69-06ff-4ca0-bae5-3d4f20ba0cde
@@ -28,8 +28,6 @@ MonoBehaviour:
     TargetNodeGuid: 1fd00fdd-1ea4-470a-95c1-1dc095a6a412
   - BaseNodeGuid: 1fd00fdd-1ea4-470a-95c1-1dc095a6a412
     TargetNodeGuid: c2734396-3245-4da4-a5c7-f6649dc8804f
-  - BaseNodeGuid: 3bc8a010-d4c5-4e58-8393-b0208119683e
-    TargetNodeGuid: 37513e69-06ff-4ca0-bae5-3d4f20ba0cde
   - BaseNodeGuid: c6ac20db-28c4-4c59-9208-956485c6039d
     TargetNodeGuid: fecf48a2-bf24-480d-ad0c-469905f2adc0
   - BaseNodeGuid: fe6767e8-424f-4f59-a34c-1426f30ad6ff
@@ -46,10 +44,26 @@ MonoBehaviour:
     TargetNodeGuid: 30a00c0b-5934-4472-8f30-5df2f112fe3a
   - BaseNodeGuid: 5bb69ed3-28eb-4aef-aa51-25b5cf940284
     TargetNodeGuid: c6ac20db-28c4-4c59-9208-956485c6039d
+  - BaseNodeGuid: b85e8ffa-f857-4aea-834e-803ea01ccebf
+    TargetNodeGuid: e15a994f-6e27-4a42-b576-770a845463a9
+  - BaseNodeGuid: 94cfc014-32ce-459f-8087-a0e3141a17fe
+    TargetNodeGuid: 23bff266-e6e3-491f-8f78-08ffd2ceaadb
+  - BaseNodeGuid: 23bff266-e6e3-491f-8f78-08ffd2ceaadb
+    TargetNodeGuid: cc551a7a-1db3-4879-a30e-de568881f49c
+  - BaseNodeGuid: 47e41c03-211b-4f46-911c-ba2ee22c300c
+    TargetNodeGuid: f903400b-49c4-4292-95ae-f065440c4571
+  - BaseNodeGuid: c2734396-3245-4da4-a5c7-f6649dc8804f
+    TargetNodeGuid: 300ad88f-4b3e-4d84-b1ac-bed255b02acf
+  - BaseNodeGuid: 3bc8a010-d4c5-4e58-8393-b0208119683e
+    TargetNodeGuid: 37513e69-06ff-4ca0-bae5-3d4f20ba0cde
   - BaseNodeGuid: 8966de77-5a76-4407-859c-66a12fd6d87d
     TargetNodeGuid: 9a178bc8-2dbf-46e1-a47c-3bd248a2fd85
   - BaseNodeGuid: 8966de77-5a76-4407-859c-66a12fd6d87d
     TargetNodeGuid: 4c2bbdeb-643d-4fae-8ea6-0b98c276dd30
+  - BaseNodeGuid: bf8cbeb5-2ae9-4417-8b89-66987df0ae79
+    TargetNodeGuid: 47e41c03-211b-4f46-911c-ba2ee22c300c
+  - BaseNodeGuid: bf8cbeb5-2ae9-4417-8b89-66987df0ae79
+    TargetNodeGuid: 8966de77-5a76-4407-859c-66a12fd6d87d
   - BaseNodeGuid: 9a178bc8-2dbf-46e1-a47c-3bd248a2fd85
     TargetNodeGuid: 383552af-c25c-4c61-b709-699d2cb3340f
   - BaseNodeGuid: 9a178bc8-2dbf-46e1-a47c-3bd248a2fd85
@@ -68,22 +82,8 @@ MonoBehaviour:
     TargetNodeGuid: 94cfc014-32ce-459f-8087-a0e3141a17fe
   - BaseNodeGuid: 9dbc9f59-7f3d-4bb4-81c0-1a716492122b
     TargetNodeGuid: b85e8ffa-f857-4aea-834e-803ea01ccebf
-  - BaseNodeGuid: b85e8ffa-f857-4aea-834e-803ea01ccebf
-    TargetNodeGuid: e15a994f-6e27-4a42-b576-770a845463a9
-  - BaseNodeGuid: 94cfc014-32ce-459f-8087-a0e3141a17fe
-    TargetNodeGuid: 23bff266-e6e3-491f-8f78-08ffd2ceaadb
-  - BaseNodeGuid: 23bff266-e6e3-491f-8f78-08ffd2ceaadb
-    TargetNodeGuid: cc551a7a-1db3-4879-a30e-de568881f49c
   - BaseNodeGuid: 9dbc9f59-7f3d-4bb4-81c0-1a716492122b
     TargetNodeGuid: 5bb69ed3-28eb-4aef-aa51-25b5cf940284
-  - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
-    TargetNodeGuid: bf8cbeb5-2ae9-4417-8b89-66987df0ae79
-  - BaseNodeGuid: bf8cbeb5-2ae9-4417-8b89-66987df0ae79
-    TargetNodeGuid: 47e41c03-211b-4f46-911c-ba2ee22c300c
-  - BaseNodeGuid: bf8cbeb5-2ae9-4417-8b89-66987df0ae79
-    TargetNodeGuid: 8966de77-5a76-4407-859c-66a12fd6d87d
-  - BaseNodeGuid: 47e41c03-211b-4f46-911c-ba2ee22c300c
-    TargetNodeGuid: f903400b-49c4-4292-95ae-f065440c4571
   DialogueChoiceNodeDatas:
   - NodeGuid: 9a178bc8-2dbf-46e1-a47c-3bd248a2fd85
     Position: {x: 1019, y: 40}
@@ -236,27 +236,6 @@ MonoBehaviour:
         LanguageGenericType: Choice 04
       RequiredFlag: {fileID: 11400000, guid: e377a04b1a0c77d419b0eeed0af99c38, type: 2}
   DialogueNodeDatas:
-  - NodeGuid: c2734396-3245-4da4-a5c7-f6649dc8804f
-    Position: {x: 778, y: 308}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: 'We are expanding into imports in this region, and I have
-        personally cultivated a good business relationship with the local government. '
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
   - NodeGuid: 300ad88f-4b3e-4d84-b1ac-bed255b02acf
     Position: {x: 214, y: 789}
     Character: {fileID: 0}
@@ -314,7 +293,8 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: '???: Welcome to CIT! I don''t think we''ve met yet, Detective.'
+      LanguageGenericType: '???: Welcome to C.I.T.! I don''t think we''ve met yet,
+        Detective.'
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
@@ -335,27 +315,6 @@ MonoBehaviour:
     TextType:
     - languageEnum: 0
       LanguageGenericType: I'm Richard, Regional Director of this office.
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
-  - NodeGuid: 3bc8a010-d4c5-4e58-8393-b0208119683e
-    Position: {x: 498, y: 789}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: Oh, listen to me! You will have to excuse me Detective.
-        When I start the corporate talk, it all comes spilling out of me.
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
@@ -476,7 +435,7 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: I trust you will find the correct culprit, Detective.
+      LanguageGenericType: I trust you will find and apprehend the culprit, Detective.
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
@@ -497,7 +456,7 @@ MonoBehaviour:
     TextType:
     - languageEnum: 0
       LanguageGenericType: Since I arrived I have been harassed by a bunch of gray
-        bumpkin cats! One of them are regulars over at the Cattelatte.
+        bumpkin cats! One of them is a  regular over at the Cattelatte.
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
@@ -539,7 +498,7 @@ MonoBehaviour:
     TextType:
     - languageEnum: 0
       LanguageGenericType: Is that one of the orange cats? I don't think I've seen
-        the toy before. If you'll excuse me, Detective.
+        the toy before. Now, if you'll excuse me, Detective.
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
@@ -606,6 +565,48 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
+  - NodeGuid: c2734396-3245-4da4-a5c7-f6649dc8804f
+    Position: {x: 778, y: 308}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'We are expanding into imports in this region, and I have
+        personally cultivated a good business relationship with the local government. '
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 3bc8a010-d4c5-4e58-8393-b0208119683e
+    Position: {x: 498, y: 789}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Oh, listen to me! You will have to excuse me Detective.
+        When I start the corporate talk, it all comes spilling out of me.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
   ConditionalNodeDatas:
   - NodeGuid: 8966de77-5a76-4407-859c-66a12fd6d87d
     Position: {x: -99, y: 196}
@@ -627,11 +628,6 @@ MonoBehaviour:
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 
-  - NodeGuid: 383552af-c25c-4c61-b709-699d2cb3340f
-    Position: {x: 1378, y: 134}
-    EndNodeType: 0
-    Dialogue: {fileID: 0}
-    startID: 
   - NodeGuid: cc551a7a-1db3-4879-a30e-de568881f49c
     Position: {x: 2377, y: 216}
     EndNodeType: 0
@@ -644,6 +640,11 @@ MonoBehaviour:
     startID: 
   - NodeGuid: f903400b-49c4-4292-95ae-f065440c4571
     Position: {x: 155, y: -172}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: 383552af-c25c-4c61-b709-699d2cb3340f
+    Position: {x: 1378, y: 134}
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 

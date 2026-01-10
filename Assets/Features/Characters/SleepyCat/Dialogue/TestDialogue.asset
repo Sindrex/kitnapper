@@ -18,26 +18,48 @@ MonoBehaviour:
   LimitChoiceOptionPerNode: 0
   MaxChoiceOptionPerNode: 0
   NodeLinkDatas:
+  - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
+    TargetNodeGuid: 14035631-6d01-4f71-8f7a-6662866a8859
+  - BaseNodeGuid: 7f7ad163-bbee-4eef-8c91-a4ff0ab5b850
+    TargetNodeGuid: 0c2d5df3-e68e-45e3-9d09-110ec2a2cff8
+  - BaseNodeGuid: c40bc420-d446-4b14-87fd-1b0ac64d7642
+    TargetNodeGuid: 500bbf90-23c2-42c8-8935-1db4a3f925ba
+  - BaseNodeGuid: b7642d97-893e-4a01-9038-5e24b0224dd8
+    TargetNodeGuid: 77c70f8d-de04-4fbd-8ddf-626b37f6a0c7
+  - BaseNodeGuid: 80a01f71-cd3e-4c5f-84fb-e0a4c0f3d6f7
+    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
+  - BaseNodeGuid: 16055f9e-87e4-44d5-a847-76060e78b953
+    TargetNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
+  - BaseNodeGuid: 14035631-6d01-4f71-8f7a-6662866a8859
+    TargetNodeGuid: 80a01f71-cd3e-4c5f-84fb-e0a4c0f3d6f7
+  - BaseNodeGuid: 14035631-6d01-4f71-8f7a-6662866a8859
+    TargetNodeGuid: 16055f9e-87e4-44d5-a847-76060e78b953
+  - BaseNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
+    TargetNodeGuid: e275c36a-c7c3-4815-9488-a7f8dcdef58d
+  - BaseNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
+    TargetNodeGuid: 7f7ad163-bbee-4eef-8c91-a4ff0ab5b850
+  - BaseNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
+    TargetNodeGuid: c40bc420-d446-4b14-87fd-1b0ac64d7642
+  - BaseNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
+    TargetNodeGuid: b7642d97-893e-4a01-9038-5e24b0224dd8
+  - BaseNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
+    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
+  - BaseNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
+    TargetNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
   - BaseNodeGuid: 1410bff5-b8e4-4395-b019-f9646230b9b3
     TargetNodeGuid: 0e1c19b6-2f49-4a3b-bf8a-ed3fcec9e909
-  - BaseNodeGuid: 0e1c19b6-2f49-4a3b-bf8a-ed3fcec9e909
-    TargetNodeGuid: 9e0d0a8b-f460-4ed4-a083-7ee76fb11848
-  - BaseNodeGuid: 9e0d0a8b-f460-4ed4-a083-7ee76fb11848
-    TargetNodeGuid: c42c090c-ca9b-4087-ab91-2622d661f5b4
-  - BaseNodeGuid: 9e0d0a8b-f460-4ed4-a083-7ee76fb11848
-    TargetNodeGuid: f13b47f7-40c8-49c0-b193-53c7bf739495
   - BaseNodeGuid: c42c090c-ca9b-4087-ab91-2622d661f5b4
     TargetNodeGuid: 4fc1ca78-f90e-4193-9f4a-9c737857fab8
-  - BaseNodeGuid: 4fc1ca78-f90e-4193-9f4a-9c737857fab8
-    TargetNodeGuid: fa1d3316-891d-40fd-b5bb-c8dd350d795c
-  - BaseNodeGuid: 4fc1ca78-f90e-4193-9f4a-9c737857fab8
-    TargetNodeGuid: fa1db6b7-2f82-4c6f-a855-cb0e25be67b3
   - BaseNodeGuid: fa1d3316-891d-40fd-b5bb-c8dd350d795c
     TargetNodeGuid: f2cf0140-361a-4f49-84ad-27148da1636a
   - BaseNodeGuid: fa1db6b7-2f82-4c6f-a855-cb0e25be67b3
     TargetNodeGuid: f2cf0140-361a-4f49-84ad-27148da1636a
-  - BaseNodeGuid: f13b47f7-40c8-49c0-b193-53c7bf739495
-    TargetNodeGuid: f2cf0140-361a-4f49-84ad-27148da1636a
+  - BaseNodeGuid: 4fc1ca78-f90e-4193-9f4a-9c737857fab8
+    TargetNodeGuid: fa1d3316-891d-40fd-b5bb-c8dd350d795c
+  - BaseNodeGuid: 4fc1ca78-f90e-4193-9f4a-9c737857fab8
+    TargetNodeGuid: fa1db6b7-2f82-4c6f-a855-cb0e25be67b3
+  - BaseNodeGuid: 0e1c19b6-2f49-4a3b-bf8a-ed3fcec9e909
+    TargetNodeGuid: c42c090c-ca9b-4087-ab91-2622d661f5b4
   DialogueChoiceNodeDatas:
   - NodeGuid: 4fc1ca78-f90e-4193-9f4a-9c737857fab8
     Position: {x: 588, y: 206}
@@ -78,26 +100,6 @@ MonoBehaviour:
         LanguageGenericType: Choice 02
       RequiredFlag: {fileID: 11400000, guid: d34a1c6aba80af941bdd8d0b5d674e18, type: 2}
   DialogueNodeDatas:
-  - NodeGuid: c42c090c-ca9b-4087-ab91-2622d661f5b4
-    Position: {x: 333, y: 206}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: ... Huh? What do you want? I'm taking a catnap here!
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
   - NodeGuid: fa1d3316-891d-40fd-b5bb-c8dd350d795c
     Position: {x: 938, y: 206}
     Character: {fileID: 0}
@@ -138,26 +140,6 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
-  - NodeGuid: f13b47f7-40c8-49c0-b193-53c7bf739495
-    Position: {x: 717, y: -79}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: Leave me alone....
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
   - NodeGuid: 0e1c19b6-2f49-4a3b-bf8a-ed3fcec9e909
     Position: {x: 101, y: 206}
     Character: {fileID: 0}
@@ -178,11 +160,28 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
-  ConditionalNodeDatas:
-  - NodeGuid: 9e0d0a8b-f460-4ed4-a083-7ee76fb11848
-    Position: {x: 234, y: -11}
-    RequiredGameFlagCombo: {fileID: 11400000, guid: a48eb5a2eb5a2d34a8d73fa21e682412,
-      type: 2}
+  - NodeGuid: c42c090c-ca9b-4087-ab91-2622d661f5b4
+    Position: {x: 333, y: 206}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: ... Huh? What do you want? I'm taking a catnap here! How'd
+        you even get here!?
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  ConditionalNodeDatas: []
   TimerChoiceNodeDatas: []
   EndNodeDatas:
   - NodeGuid: f2cf0140-361a-4f49-84ad-27148da1636a

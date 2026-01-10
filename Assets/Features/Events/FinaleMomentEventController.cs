@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using MeetAndTalk;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -59,13 +60,13 @@ public class FinaleMomentEventController : EventBase
 
     IEnumerator<WaitForSeconds> StartCreditsAnimation()
     {
+        MyDialogueManager.Instance.CloseDialogue();
         CameraController.Instance.FadeOut();
+        PlayerController.Instance.CanMove = false;
         yield return new WaitForSeconds(FadeWaitSeconds);
         CameraController.Instance.FadeIn();
-        CameraController.Instance.FollowPlayer = false;
-        PlayerController.Instance.CanMove = false;
         var newPos = PlayerTeleportPosition.transform.position;
-        CameraController.Instance.gameObject.transform.position = new Vector3(newPos.x, newPos.y, -10);
+        CameraController.Instance.SetPosition(newPos);
         CameraController.Instance.Player.SetActive(false);
         CreditsAnimator.Play(CreditsAnimation);
         yield return new WaitForSeconds(CreditsSeconds);

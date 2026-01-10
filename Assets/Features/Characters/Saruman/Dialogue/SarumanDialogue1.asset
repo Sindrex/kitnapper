@@ -136,7 +136,7 @@ MonoBehaviour:
       OutputGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
       TextLanguage:
       - languageEnum: 0
-        LanguageGenericType: Querstion
+        LanguageGenericType: Question
       - languageEnum: 1
         LanguageGenericType: Choice 02
       RequiredFlag: {fileID: 0}
