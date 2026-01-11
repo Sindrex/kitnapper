@@ -1,0 +1,149 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1946feaec865d344dabf0419b1c94973, type: 3}
+  m_Name: PlayerHouseBall
+  m_EditorClassIdentifier: 
+  AllowDialogueSave: 0
+  BlockingReopeningDialogue: 0
+  ResetSavedNodeOnChoice: 1
+  LimitChoiceOptionPerNode: 0
+  MaxChoiceOptionPerNode: 8
+  NodeLinkDatas:
+  - BaseNodeGuid: 12611948-860f-44ca-83ec-c39c7282715d
+    TargetNodeGuid: f85aface-b71d-465d-bff6-9edb08fd4f7d
+  - BaseNodeGuid: 27a3695a-24c2-485b-82a7-9e004e120f4f
+    TargetNodeGuid: b8a0953e-9182-4595-8319-0c2ee7ce208b
+  - BaseNodeGuid: 446d886d-272d-48f7-8412-37361369da11
+    TargetNodeGuid: da49e726-778e-4d7d-b479-ca0ac80b554f
+  - BaseNodeGuid: 1d83695b-e349-4637-93f4-1f5e39dea683
+    TargetNodeGuid: 27a3695a-24c2-485b-82a7-9e004e120f4f
+  - BaseNodeGuid: 1d83695b-e349-4637-93f4-1f5e39dea683
+    TargetNodeGuid: 446d886d-272d-48f7-8412-37361369da11
+  - BaseNodeGuid: f85aface-b71d-465d-bff6-9edb08fd4f7d
+    TargetNodeGuid: 1d83695b-e349-4637-93f4-1f5e39dea683
+  - BaseNodeGuid: f85aface-b71d-465d-bff6-9edb08fd4f7d
+    TargetNodeGuid: 744071b9-b49c-4200-864d-52c132a4f238
+  DialogueChoiceNodeDatas:
+  - NodeGuid: f85aface-b71d-465d-bff6-9edb08fd4f7d
+    Position: {x: 375, y: 220}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Jiggle the Kudos Ball?
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 5
+    DialogueNodePorts:
+    - PortGuid: fe65f3eb-32fd-40e7-bb64-d7541ce7c0a4
+      InputGuid: 1d83695b-e349-4637-93f4-1f5e39dea683
+      OutputGuid: f85aface-b71d-465d-bff6-9edb08fd4f7d
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Yes
+      - languageEnum: 1
+        LanguageGenericType: Choice 01
+      RequiredFlag: {fileID: 0}
+    - PortGuid: 6bd1bfb5-9f3d-499f-89fb-f76a8854afd0
+      InputGuid: 744071b9-b49c-4200-864d-52c132a4f238
+      OutputGuid: f85aface-b71d-465d-bff6-9edb08fd4f7d
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: No
+      - languageEnum: 1
+        LanguageGenericType: Choice 02
+      RequiredFlag: {fileID: 0}
+  DialogueNodeDatas:
+  - NodeGuid: 446d886d-272d-48f7-8412-37361369da11
+    Position: {x: 1049, y: 234}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Nothing happened.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 27a3695a-24c2-485b-82a7-9e004e120f4f
+    Position: {x: 1049, y: -48}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: RerunCreditsEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: ...
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  ConditionalNodeDatas:
+  - NodeGuid: 1d83695b-e349-4637-93f4-1f5e39dea683
+    Position: {x: 724, y: 220}
+    RequiredGameFlagCombo: {fileID: 11400000, guid: d280d0c262e2fca41b46ae301e91ac3f,
+      type: 2}
+  TimerChoiceNodeDatas: []
+  EndNodeDatas:
+  - NodeGuid: b8a0953e-9182-4595-8319-0c2ee7ce208b
+    Position: {x: 1307, y: -48}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: 744071b9-b49c-4200-864d-52c132a4f238
+    Position: {x: 724, y: 347}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: da49e726-778e-4d7d-b479-ca0ac80b554f
+    Position: {x: 1307, y: 234}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  EventNodeDatas: []
+  StartNodeDatas:
+  - NodeGuid: 12611948-860f-44ca-83ec-c39c7282715d
+    Position: {x: 116, y: 220}
+    startID: 
+  RandomNodeDatas: []
+  CommandNodeDatas: []
+  IfNodeDatas: []
+  AdvancedIFNodeDatas: []
+  AdvancedChoiceNodeDatas: []
+  AdvancedTimeChoiceNodeDatas: []
+  ResetSavedNodeDatas: []
+  MusicNodeDatas: []

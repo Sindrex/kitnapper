@@ -9,6 +9,7 @@ public class MoveEventController : EventBase
     public string TargetAnimatorState;
     public string NextAnimatorState;
     public GameObject EndTriggerObject;
+    public bool AnimationChangeOnly;
     public bool AnimationFinished;
     public bool Started;
     public bool IsFinished;
@@ -26,7 +27,7 @@ public class MoveEventController : EventBase
     {
         Started = false;
         IsFinished = false;
-        EndTriggerObject.SetActive(false);
+        if(EndTriggerObject != null) EndTriggerObject.SetActive(false);
         Id = gameObject.name;
         CLogger.Log($"MoveEvent \"{Id}\" setting up!");
     }
@@ -48,6 +49,8 @@ public class MoveEventController : EventBase
         CLogger.Log($"MoveEvent \"{Id}\" activated!");
         TargetAnimator.Play(TargetAnimatorState);
 
+        if(AnimationChangeOnly) return;
+        
         Started = true;
         IsFinished = false;
         AnimationFinished = false;
@@ -58,7 +61,7 @@ public class MoveEventController : EventBase
         CLogger.Log($"MoveEvent \"{Id}\" doing Finish Routine!");
         Started = false;
         IsFinished = true;
-        EndTriggerObject.SetActive(false);
+        if(EndTriggerObject != null) EndTriggerObject.SetActive(false);
 
         Target.transform.localPosition = TargetPosition;
         CLogger.Log($"MoveEvent \"{Id}\" moved target to Position: {Target.transform.localPosition}");

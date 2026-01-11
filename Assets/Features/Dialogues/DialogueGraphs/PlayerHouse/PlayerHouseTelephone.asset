@@ -1,0 +1,191 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1946feaec865d344dabf0419b1c94973, type: 3}
+  m_Name: PlayerHouseTelephone
+  m_EditorClassIdentifier: 
+  AllowDialogueSave: 0
+  BlockingReopeningDialogue: 0
+  ResetSavedNodeOnChoice: 1
+  LimitChoiceOptionPerNode: 0
+  MaxChoiceOptionPerNode: 8
+  NodeLinkDatas:
+  - BaseNodeGuid: 1410bff5-b8e4-4395-b019-f9646230b9b3
+    TargetNodeGuid: 0e1c19b6-2f49-4a3b-bf8a-ed3fcec9e909
+  - BaseNodeGuid: 0e1c19b6-2f49-4a3b-bf8a-ed3fcec9e909
+    TargetNodeGuid: cdd5ba12-3a48-43f5-9c79-3a3efb3da95f
+  - BaseNodeGuid: 4468d082-fed7-491f-8bd2-64516f1baccd
+    TargetNodeGuid: 568938d4-5d61-4d8f-8341-82fa2330ed58
+  - BaseNodeGuid: 0ace4256-c57c-4d8c-aff6-920bae3779da
+    TargetNodeGuid: 872ea136-bfba-4a0d-bab4-12dfd5079129
+  - BaseNodeGuid: a79ff333-8ac8-49aa-9501-4175167df796
+    TargetNodeGuid: d64855da-203e-4053-bddd-05173835f12c
+  - BaseNodeGuid: d64855da-203e-4053-bddd-05173835f12c
+    TargetNodeGuid: 51fc55e1-3765-4f60-9f69-2a45f60ad3bf
+  - BaseNodeGuid: 51fc55e1-3765-4f60-9f69-2a45f60ad3bf
+    TargetNodeGuid: 13e7a087-3e27-4467-a46a-1f45fec5856e
+  - BaseNodeGuid: e1462e4a-0484-4db6-81ca-98622ba15481
+    TargetNodeGuid: f2cf0140-361a-4f49-84ad-27148da1636a
+  - BaseNodeGuid: 13e7a087-3e27-4467-a46a-1f45fec5856e
+    TargetNodeGuid: e1462e4a-0484-4db6-81ca-98622ba15481
+  - BaseNodeGuid: 872ea136-bfba-4a0d-bab4-12dfd5079129
+    TargetNodeGuid: a79ff333-8ac8-49aa-9501-4175167df796
+  - BaseNodeGuid: cdd5ba12-3a48-43f5-9c79-3a3efb3da95f
+    TargetNodeGuid: c42c090c-ca9b-4087-ab91-2622d661f5b4
+  - BaseNodeGuid: cdd5ba12-3a48-43f5-9c79-3a3efb3da95f
+    TargetNodeGuid: 4468d082-fed7-491f-8bd2-64516f1baccd
+  - BaseNodeGuid: d4580fce-01ba-46a0-b953-6136536cbfdf
+    TargetNodeGuid: 0ace4256-c57c-4d8c-aff6-920bae3779da
+  - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
+    TargetNodeGuid: cf257311-7fa9-4c48-a855-85cb9d555300
+  - BaseNodeGuid: cf257311-7fa9-4c48-a855-85cb9d555300
+    TargetNodeGuid: cdc1b14a-235e-4338-b578-91110baad130
+  - BaseNodeGuid: cdc1b14a-235e-4338-b578-91110baad130
+    TargetNodeGuid: 693cdb95-ab3f-467c-925f-101923b65cad
+  - BaseNodeGuid: 1de6e121-9770-4785-ab14-d7b8f9fd2bd1
+    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
+  - BaseNodeGuid: 1a0f9043-9955-4957-9e53-0fa16f11de69
+    TargetNodeGuid: 1de6e121-9770-4785-ab14-d7b8f9fd2bd1
+  - BaseNodeGuid: 693cdb95-ab3f-467c-925f-101923b65cad
+    TargetNodeGuid: 1a0f9043-9955-4957-9e53-0fa16f11de69
+  DialogueChoiceNodeDatas: []
+  DialogueNodeDatas:
+  - NodeGuid: cf257311-7fa9-4c48-a855-85cb9d555300
+    Position: {x: 1537, y: 192}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: TelephoneStopRingingEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Brrring!
+
+        Brrring!
+
+        Brrring!'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: cdc1b14a-235e-4338-b578-91110baad130
+    Position: {x: 1780, y: 192}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: '???: ... Hello?'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 1de6e121-9770-4785-ab14-d7b8f9fd2bd1
+    Position: {x: 2542, y: 192}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: PlayerHouseTelephoneMayorEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Bip.
+
+        Bip.
+
+        Bip.'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 1a0f9043-9955-4957-9e53-0fa16f11de69
+    Position: {x: 2267, y: 192}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Mayor: Please come to the Town Hall immediately. That
+        is all, humr humr.'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 693cdb95-ab3f-467c-925f-101923b65cad
+    Position: {x: 2022, y: 192}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: '???: Mr. Detective, this is the Mayor Speaking. As you
+        may have noticed, everything has turned black and white, humr humr.'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  ConditionalNodeDatas: []
+  TimerChoiceNodeDatas: []
+  EndNodeDatas:
+  - NodeGuid: 7838e825-39c1-416f-8753-1589000d7155
+    Position: {x: 2839, y: 192}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  EventNodeDatas: []
+  StartNodeDatas:
+  - NodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
+    Position: {x: 1304, y: 192}
+    startID: 
+  RandomNodeDatas: []
+  CommandNodeDatas: []
+  IfNodeDatas: []
+  AdvancedIFNodeDatas: []
+  AdvancedChoiceNodeDatas: []
+  AdvancedTimeChoiceNodeDatas: []
+  ResetSavedNodeDatas: []
+  MusicNodeDatas: []
