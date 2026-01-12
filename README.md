@@ -10,8 +10,6 @@ If I change name of events, or replace events with new ones, it will break exist
 
 # TODO:
 * Missing doodads:
-  * Forest clearing: Mushroom
-  * Florist: Plants, both inside and outside. Furniture for extra room.
   * Cattelatte: Minor doodads like boxes, glasses etc. Benches or something outside.
   * Town hall: Furniture. Some closed rooms.
   * Offices: Furniture. closed doors.
@@ -38,6 +36,7 @@ Achivs / Easter eggs:
 * Talk to every character / Find all the names
 * Have both ups and downs with catnip -> Catnip dealer
 * Find all 3 pokeballs (hidden around) -> Behind florist, inside University, behind house
+* Find the hidden Forest Rave with stickmen (use Where's waldo sim music (own voice))
 * Find Turbo Baba -> talk to all graves
 * Listen to all jokes by Turbo Baba (5? picked randomly)
   * "Cat norris once cought a cold… with his own paws!"
