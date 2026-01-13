@@ -10,7 +10,6 @@ If I change name of events, or replace events with new ones, it will break exist
 
 # TODO:
 * Missing doodads:
-  * Cattelatte: Minor doodads like boxes, glasses etc. Benches or something outside.
   * Town hall: Furniture. Some closed rooms.
   * Offices: Furniture. closed doors.
   * Shrine: Benches, pillars, holy objects
