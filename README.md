@@ -10,9 +10,6 @@ If I change name of events, or replace events with new ones, it will break exist
 
 # TODO:
 * Missing doodads:
-  * Town hall: Furniture. Some closed rooms.
-  * Offices: Furniture. closed doors.
-  * Shrine: Benches, pillars, holy objects
   * University: Furniture, sciency stuff, closed doors.
   * Forest: Scattered trees between univ and offices, 
 

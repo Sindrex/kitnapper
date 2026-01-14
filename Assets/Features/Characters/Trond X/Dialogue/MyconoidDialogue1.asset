@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1946feaec865d344dabf0419b1c94973, type: 3}
-  m_Name: TrondXDialogue1
+  m_Name: MyconoidDialogue1
   m_EditorClassIdentifier: 
   AllowDialogueSave: 0
   BlockingReopeningDialogue: 0
@@ -220,8 +220,8 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: "Trond X: So \u2019twas thee who didst conjure the wondrous
-        weather! But how, art thou a sorcerer?"
+      LanguageGenericType: "Mr. Myconoid: So \u2019twas thee who didst conjure the
+        wondrous weather! But how, art thou a sorcerer?"
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
@@ -241,7 +241,7 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: 'Trond X: Greetings Detective!'
+      LanguageGenericType: 'Mr. Myconoid: Greetings Detective!'
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
