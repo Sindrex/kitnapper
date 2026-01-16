@@ -25,7 +25,7 @@ MonoBehaviour:
   DialogueChoiceNodeDatas: []
   DialogueNodeDatas:
   - NodeGuid: 890351a3-5b42-4f01-a09b-391e06ac02c5
-    Position: {x: 415, y: 220}
+    Position: {x: 442, y: 220}
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
@@ -40,7 +40,7 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: Road closed due to ongoing catstruction.
+      LanguageGenericType: Road closed due to ongoing obstruction.
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10

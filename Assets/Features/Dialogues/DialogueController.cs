@@ -168,8 +168,11 @@ public class DialogueController : MonoBehaviour
         //close for interact -> start dialogue
         if (!other.gameObject.CompareTag("Player")) return;
 
-        PlayerController.Instance.StopShowInteractHint();
-        IsActive = false;
+        if (IsActive)
+        {
+            PlayerController.Instance.StopShowInteractHint();
+            IsActive = false;
+        }
     }
 
     private BaseNodeData GetNodeByGuid(string _targetNodeGuid)

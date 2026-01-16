@@ -9,9 +9,11 @@ If I change name of events, or replace events with new ones, it will break exist
 * Choices: Max 10 + 10 chars
 
 # TODO:
-* Missing doodads:
-  * University: Furniture, sciency stuff, closed doors.
-  * Forest: Scattered trees between univ and offices, 
+* Add sound effects
+* Add steam achievements
+  * Finish the main story / the game: "Catch the Color Kitnapper"
+  * Talk to every character / Find all the names
+  * Have both ups and downs with catnip -> Catnip dealer
 
 Other names that can be used:
 * Kuro (Blue Exorcist) ->
