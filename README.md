@@ -8,12 +8,27 @@ If I change name of events, or replace events with new ones, it will break exist
 * Dialogue: Max 135 chars
 * Choices: Max 10 + 10 chars
 
+# SFX rules
+* Max amplitude:-8.1Db
+
 # TODO:
 * Add sound effects
+  * Click (menu, dialogue choice) x
+  * Open door x
+  * Door locked? x
+  * Swap menu select, dialogue choice select
+  * Dialogue murmur typing sound. Possibly one per major character, plus generic?
+    * Started with one generic, with 2 random sounds
+  * Pickup sfx (butterfly, toy)
+  * Milo Findus Science sfx (bubbling or machine noise/beeps)
+  * Forest leafs rustling
+  * Cat meows
+  * Cat purrs
 * Add steam achievements
   * Finish the main story / the game: "Catch the Color Kitnapper"
-  * Talk to every character / Find all the names
+  * Talk to every character / Find all the namesno
   * Have both ups and downs with catnip -> Catnip dealer
+* Add more cat puns to dialogue
 
 Other names that can be used:
 * Kuro (Blue Exorcist) ->

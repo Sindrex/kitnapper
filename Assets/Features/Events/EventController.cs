@@ -17,6 +17,7 @@ public class EventController : EventBase
     public List<SetGameFlagCombo> SetFlags;
     public string NextEvent;
     public EventBase NextEventBase; //activate ad-hoc events (without state)
+    public List<EventBase> NextEventBases; //activate ad-hoc events (without state)
     public string Id;
 
     // Start is called before the first frame update
@@ -85,6 +86,14 @@ public class EventController : EventBase
             {
                 CLogger.Log("Activating NextEventBase");
                 NextEventBase.Activate(true);
+            }
+            foreach(var nextEventBase in NextEventBases)
+            {
+                if (nextEventBase.CheckRequirements())
+                {
+                    CLogger.Log("Activating NextEventBase");
+                    NextEventBase.Activate(true);
+                }
             }
         }
     }

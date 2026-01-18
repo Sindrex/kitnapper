@@ -69,6 +69,11 @@ public class MenuManager : MonoBehaviour
     public Vector3 PawPosition;
     public List<Vector3> PawPositions;
 
+    //Load game anim
+    public Text TitleText;
+    public List<string> TitleAnimTexts;
+    public float TitleAnimWaitSeconds;
+
     //singleton
     public static MenuManager Instance { get; private set; }
     void Awake()
@@ -294,6 +299,7 @@ public class MenuManager : MonoBehaviour
             {
                 SelectedRowButton = MinSelectedRowButton;
             }
+            AudioManager.Instance.PlaySFXClip(AudioLabel.SwapSelectSFX);
         }
         else if (InputController.GetInput(InputPurpose.MENU_CHOICE_DOWN))
         {
@@ -303,6 +309,7 @@ public class MenuManager : MonoBehaviour
             {
                 SelectedRowButton = MaxSelectedRowButton;
             }
+            AudioManager.Instance.PlaySFXClip(AudioLabel.SwapSelectSFX);
         }
         else if (InputController.GetInput(InputPurpose.MENU_CHOICE_LEFT))
         {
@@ -313,6 +320,7 @@ public class MenuManager : MonoBehaviour
                 {
                     SelectedColumnButton = MinSelectedColumnButton;
                 }
+                AudioManager.Instance.PlaySFXClip(AudioLabel.SwapSelectSFX);
             }
         }
         else if (InputController.GetInput(InputPurpose.MENU_CHOICE_RIGHT))
@@ -324,6 +332,7 @@ public class MenuManager : MonoBehaviour
                 {
                     SelectedColumnButton = MaxSelectedColumnButton;
                 }
+                AudioManager.Instance.PlaySFXClip(AudioLabel.SwapSelectSFX);
             }
         }
         else if (InputController.GetInput(InputPurpose.INTERACT))
@@ -345,7 +354,7 @@ public class MenuManager : MonoBehaviour
         CLogger.Log("Continuing game!");
         if (CurrentGameSettings != null)
         {
-            SceneManager.LoadScene(1); //Game
+            StartCoroutine(StartGame());
         }
         else
         {
@@ -372,8 +381,19 @@ public class MenuManager : MonoBehaviour
         }
         else
         {
-            SceneManager.LoadScene(1); //Game
+            StartCoroutine(StartGame());
         }
+    }
+
+    IEnumerator StartGame()
+    {
+        //load game animation
+        foreach(var text in TitleAnimTexts)
+        {
+            TitleText.text = text;
+            yield return new WaitForSeconds(TitleAnimWaitSeconds);
+        }
+        SceneManager.LoadScene(1); //Game
     }
 
     public void Quit()

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,6 +29,12 @@ public class MyDialogueManager : MonoBehaviour
     public bool IsDialogueChoice;
     public List<string> DialogueChoiceTexts;
     public List<ReqFlagBase> DialogueChoiceRequiredFlags;
+
+    //SFX
+    private readonly List<AudioLabel> DialogueSFX = new List<AudioLabel>()
+    {
+        AudioLabel.DialogueSFX1, AudioLabel.DialogueSFX2
+    };
 
     //singleton
     public static MyDialogueManager Instance { get; private set; }
@@ -93,8 +100,12 @@ public class MyDialogueManager : MonoBehaviour
                     var currentLetter = CurrentTextList.Last();
                     CurrentTextList.RemoveAt(CurrentTextList.Count - 1);
                     DialogueText.text += currentLetter;
-
                     CurrentLetterSpawnTime = 0;
+
+                    //SFX
+                    var randomNumber = new System.Random().Next(0, DialogueSFX.Count - 1);
+                    var sfxClip = DialogueSFX[randomNumber];
+                    AudioManager.Instance?.PlaySFXClip(sfxClip);
                 }
                 else
                 {

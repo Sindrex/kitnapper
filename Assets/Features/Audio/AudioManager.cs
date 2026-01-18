@@ -10,7 +10,16 @@ public enum AudioLabel
 {
     MenuMusic,
     ClickSFX,
-    FloristMoment
+    FloristMoment,
+    DialogueSFX1, DialogueSFX2,
+    TelephoneSFX,
+    DoorOpenSFX, DoorLockedSFX,
+    SwapSelectSFX,
+    PickupSFX, 
+    ScienceSFX,
+    ForestRustle1, ForestRustle2, ForestRustle3,
+    CatMeow1, CatMeow2, CatMeow3,
+    CatPurr1, CatPurr2, CatPurr3
     //music trond: Menu/Player House, Forest, Town, Cattelatte, (Shrine, University, Credits)
     //music cf: FloristMoment
 }
