@@ -85,6 +85,7 @@ public class MyDialogueManager : MonoBehaviour
                     choice.SetAsNotActiveChoice();
                 }
                 ChoiceControllers[CurrentDialogueChoice].SetAsActiveChoice();
+                AudioManager.Instance.PlaySFXClip(AudioLabel.SwapSelectSFX);
             }
         }
     }
@@ -102,7 +103,7 @@ public class MyDialogueManager : MonoBehaviour
                     DialogueText.text += currentLetter;
                     CurrentLetterSpawnTime = 0;
 
-                    //SFX
+                    //Dialogue SFX
                     var randomNumber = new System.Random().Next(0, DialogueSFX.Count - 1);
                     var sfxClip = DialogueSFX[randomNumber];
                     AudioManager.Instance?.PlaySFXClip(sfxClip);

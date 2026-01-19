@@ -13,14 +13,7 @@ If I change name of events, or replace events with new ones, it will break exist
 
 # TODO:
 * Add sound effects
-  * Click (menu, dialogue choice) x
-  * Open door x
-  * Door locked? x
-  * Swap menu select, dialogue choice select
-  * Dialogue murmur typing sound. Possibly one per major character, plus generic?
-    * Started with one generic, with 2 random sounds
   * Pickup sfx (butterfly, toy)
-  * Milo Findus Science sfx (bubbling or machine noise/beeps)
   * Forest leafs rustling
   * Cat meows
   * Cat purrs

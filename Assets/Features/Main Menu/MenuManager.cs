@@ -409,7 +409,7 @@ public class MenuManager : MonoBehaviour
     public void Credits()
     {
         AudioManager.Instance.PlaySFXClip(AudioLabel.ClickSFX);
-        CLogger.LogError("Credits button not implemented!");
+        Application.OpenURL("https://sindrex.com/");
     }
 
     public void WindowedSetting()

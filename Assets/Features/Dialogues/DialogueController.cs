@@ -70,6 +70,7 @@ public class DialogueController : MonoBehaviour
             ).ToList();
             var currentChoice = activeDialogueNodePorts[currentChoiceIndex];
             currentNode = GetNodeByGuid(currentChoice.InputGuid);
+            AudioManager.Instance.PlaySFXClip(AudioLabel.ClickSFX);
         }
         else //other nodes
         {
