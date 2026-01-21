@@ -255,7 +255,7 @@ public class MenuManager : MonoBehaviour
         if (IsOnYes && InputController.GetInput(InputPurpose.INTERACT))
         {
             CurrentGameSettings.ResetGame();
-            SceneManager.LoadScene(1); //Game
+            StartCoroutine(StartGame());
         }
         else if (!IsOnYes && InputController.GetInput(InputPurpose.INTERACT))
         {
@@ -269,6 +269,7 @@ public class MenuManager : MonoBehaviour
             YesText.fontStyle = FontStyle.Bold;
             NoText.fontStyle = FontStyle.Normal;
             Paw.transform.localPosition = YesText.transform.localPosition + PawPosition;
+            AudioManager.Instance.PlaySFXClip(AudioLabel.SwapSelectSFX);
         }
         else if (InputController.GetInput(InputPurpose.MENU_CHOICE_DOWN))
         {
@@ -276,6 +277,7 @@ public class MenuManager : MonoBehaviour
             YesText.fontStyle = FontStyle.Normal;
             NoText.fontStyle = FontStyle.Bold;
             Paw.transform.localPosition = NoText.transform.localPosition + PawPosition;
+            AudioManager.Instance.PlaySFXClip(AudioLabel.SwapSelectSFX);
         }
     }
 

@@ -6,6 +6,8 @@ public class SoundEvent : EventBase
 {
     public AudioLabel AudioLabelToPlay;
     public bool IsMusic;
+    public bool DestroySFX;
+
     public override void Activate(bool activateNextEvent)
     {
         CLogger.Log("SoundEvent activated!");
@@ -15,7 +17,22 @@ public class SoundEvent : EventBase
         }
         else
         {
-            AudioManager.Instance?.PlaySFXClip(AudioLabelToPlay);
+            if (DestroySFX)
+            {
+                AudioManager.Instance?.DestroySFXClips(AudioLabelToPlay);
+            }
+            else
+            {
+                AudioManager.Instance?.PlaySFXClip(AudioLabelToPlay);
+            }
         }
     }
+
+#if UNITY_EDITOR
+    private void OnDrawGizmos()
+    {
+        string customName = "SoundEventGizmo.png";
+        Gizmos.DrawIcon(transform.position, customName, true);
+    }
+#endif
 }

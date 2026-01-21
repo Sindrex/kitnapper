@@ -13,10 +13,10 @@ If I change name of events, or replace events with new ones, it will break exist
 
 # TODO:
 * Add sound effects
-  * Pickup sfx (butterfly, toy)
-  * Forest leafs rustling
-  * Cat meows
-  * Cat purrs
+  * Forest leafs rustling?
+  * Cat sounds florist
+  * Typing sounds office
+  * Writing sounds Mayor office?
 * Add steam achievements
   * Finish the main story / the game: "Catch the Color Kitnapper"
   * Talk to every character / Find all the namesno

@@ -22,6 +22,12 @@ public class PlayerController : MonoBehaviour
     public bool IsMoving;
     public bool MoveAnimPlaying;
 
+    //SFX
+    public List<AudioLabel> WalkSFX = new List<AudioLabel> 
+    { 
+        AudioLabel.Walk1, AudioLabel.Walk2, AudioLabel.Walk3 
+    };
+
     //singleton
     public static PlayerController Instance { get; private set; }
     void Awake()
@@ -32,10 +38,6 @@ public class PlayerController : MonoBehaviour
             return;
         }
         Destroy(this.gameObject);
-    }
-
-    void Start()
-    {
     }
 
     void FixedUpdate()
@@ -99,6 +101,13 @@ public class PlayerController : MonoBehaviour
         {
             frame.SetActive(false);
         }
+    }
+
+    public void PlayWalkSFX()
+    {
+        var randomNumber = new System.Random().Next(0, WalkSFX.Count - 1);
+        var sfxClip = WalkSFX[randomNumber];
+        AudioManager.Instance?.PlaySFXClip(sfxClip);
     }
 
     IEnumerator<WaitForSeconds> StartInteractHint()
