@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -53,21 +54,29 @@ public class MenuManager : MonoBehaviour
 
     //Settings
     public Text FullScreenModeText;
-    public GameObject SoundSliderParent;
+    public GameObject MusicSliderParent;
+    public GameObject SFXSliderParent;
     public int MaxIndex = 9;
     public int MinIndex = 0;
     public string Prefix = "[";
     public string Postfix = "]";
     public string SoundLetter = "+";
     public string FillLetter = "¨";
-    public Text SoundSliderText;
-    public int CurrentIndex;
-    private const string MasterVolumeParameterName = "MasterVolume";
+    public Text MusicSliderText;
+    public Text MusicSliderLabel;
+    public Text SFXSliderText;
+    public Text SFXSliderLabel;
+    public int MusicCurrentIndex;
+    public int SFXCurrentIndex;
+    public bool MusicSelected;
+    public Vector3 MusicPawPosition;
+    public Vector3 SFXPawPosition;
+    private const string MusicVolumeParameterName = "MusicVolume";
+    private const string SFXVolumeParameterName = "SFXVolume";
 
     //paw
     public GameObject Paw;
     public Vector3 PawPosition;
-    public List<Vector3> PawPositions;
 
     //Load game anim
     public Text TitleText;
@@ -107,7 +116,8 @@ public class MenuManager : MonoBehaviour
         MainView.SetActive(false);
         Paw.SetActive(false);
         IntroKeys.SetActive(true);
-        SoundSliderParent.SetActive(false);
+        MusicSliderParent.SetActive(false);
+        SFXSliderParent.SetActive(false);
 
         Screen.SetResolution(1920, 1080, FullScreenMode.FullScreenWindow);
         FullScreenModeText.text = "FullScreenWindow";
@@ -125,8 +135,10 @@ public class MenuManager : MonoBehaviour
             CurrentGameSettings = GameSettingsLoader.Load();
             Screen.fullScreenMode = CurrentGameSettings.FullScreenMode;
             FullScreenModeText.text = GetFullScreenModeName(Screen.fullScreenMode);
-            CurrentIndex = CurrentGameSettings.MasterVolumeIndex;
-            SetVolumeSlider(false);
+            MusicCurrentIndex = CurrentGameSettings.MusicVolumeIndex;
+            SFXCurrentIndex = CurrentGameSettings.MusicVolumeIndex;
+            SetMusicVolumeSlider(false);
+            SetSFXVolumeSlider(false);
         }
 
         InputController.InputEnabled = true;
@@ -136,8 +148,7 @@ public class MenuManager : MonoBehaviour
         Cursor.visible = false;
 
         //menu music
-        AudioManager.Instance.PlayMusicClip(AudioLabel.FloristMoment);
-        AudioManager.Instance.PlayMusicClip(AudioLabel.MenuMusic);
+        AudioManager.Instance.PlayMusicClip(AudioLabel.MenuMusic, false, false);
     }
 
     // Update is called once per frame
@@ -283,7 +294,7 @@ public class MenuManager : MonoBehaviour
 
     public void UpdateMainButtons()
     {
-        if (SoundSliderParent.activeSelf)
+        if (MusicSliderParent.activeSelf || SFXSliderParent.activeSelf) //always on together but whatever
         {
             SetSoundSetting();
             return;
@@ -341,6 +352,7 @@ public class MenuManager : MonoBehaviour
         {
             var selectedText = GetSelectedText();
             selectedText.Value();
+            return;
         }
 
         UpdateSelectedButton();
@@ -448,84 +460,154 @@ public class MenuManager : MonoBehaviour
     public void SoundSetting()
     {
         AudioManager.Instance.PlaySFXClip(AudioLabel.ClickSFX);
-        SoundSliderParent.SetActive(true);
+        MusicSliderParent.SetActive(true);
+        SFXSliderParent.SetActive(true);
+        MusicSelected = true;
+        Paw.transform.localPosition = MusicPawPosition;
+        MusicSliderText.fontStyle = FontStyle.Bold;
+        MusicSliderLabel.fontStyle = FontStyle.Bold;
+        SFXSliderText.fontStyle = FontStyle.Normal;
+        SFXSliderLabel.fontStyle = FontStyle.Normal;
     }
 
     public void SetSoundSetting()
     {
-        if (InputController.GetInput(InputPurpose.MENU_CHOICE_LEFT))
+        if (MusicSelected)
         {
-            CurrentIndex--;
-            if (CurrentIndex < MinIndex)
+            if (InputController.GetInput(InputPurpose.MENU_CHOICE_LEFT))
             {
-                CurrentIndex++;
+                MusicCurrentIndex--;
+                if (MusicCurrentIndex < MinIndex)
+                {
+                    MusicCurrentIndex++;
+                }
+                SetMusicVolumeSlider(true);
+                AudioManager.Instance.PlaySFXClip(AudioLabel.ClickSFX);
             }
-            SetVolumeSlider(true);
-            AudioManager.Instance.PlaySFXClip(AudioLabel.ClickSFX);
-        }
-        else if (InputController.GetInput(InputPurpose.MENU_CHOICE_RIGHT))
-        {
-            CurrentIndex++;
-            if (CurrentIndex > MaxIndex)
+            else if (InputController.GetInput(InputPurpose.MENU_CHOICE_RIGHT))
             {
-                CurrentIndex--;
+                MusicCurrentIndex++;
+                if (MusicCurrentIndex > MaxIndex)
+                {
+                    MusicCurrentIndex--;
+                }
+                SetMusicVolumeSlider(true);
+                AudioManager.Instance.PlaySFXClip(AudioLabel.ClickSFX);
             }
-            SetVolumeSlider(true);
-            AudioManager.Instance.PlaySFXClip(AudioLabel.ClickSFX);
+            else if (InputController.GetInput(InputPurpose.MENU_CHOICE_UP))
+            {
+                MusicSelected = false;
+                Paw.transform.localPosition = SFXPawPosition;
+                MusicSliderText.fontStyle = FontStyle.Normal;
+                MusicSliderLabel.fontStyle = FontStyle.Normal;
+                SFXSliderText.fontStyle = FontStyle.Bold;
+                SFXSliderLabel.fontStyle = FontStyle.Bold;
+                AudioManager.Instance.PlaySFXClip(AudioLabel.SwapSelectSFX);
+            }
         }
-        else if (InputController.GetInput(InputPurpose.INTERACT))
+        else if (!MusicSelected)
         {
-            SoundSliderParent.SetActive(false);
+            if (InputController.GetInput(InputPurpose.MENU_CHOICE_LEFT))
+            {
+                SFXCurrentIndex--;
+                if (SFXCurrentIndex < MinIndex)
+                {
+                    SFXCurrentIndex++;
+                }
+                SetSFXVolumeSlider(true);
+                AudioManager.Instance.PlaySFXClip(AudioLabel.ClickSFX);
+            }
+            else if (InputController.GetInput(InputPurpose.MENU_CHOICE_RIGHT))
+            {
+                SFXCurrentIndex++;
+                if (SFXCurrentIndex > MaxIndex)
+                {
+                    SFXCurrentIndex--;
+                }
+                SetSFXVolumeSlider(true);
+                AudioManager.Instance.PlaySFXClip(AudioLabel.ClickSFX);
+            }
+            else if (InputController.GetInput(InputPurpose.MENU_CHOICE_DOWN))
+            {
+                MusicSelected = true;
+                Paw.transform.localPosition = MusicPawPosition;
+                MusicSliderText.fontStyle = FontStyle.Bold;
+                MusicSliderLabel.fontStyle = FontStyle.Bold;
+                SFXSliderText.fontStyle = FontStyle.Normal;
+                SFXSliderLabel.fontStyle = FontStyle.Normal;
+                AudioManager.Instance.PlaySFXClip(AudioLabel.SwapSelectSFX);
+            }
+        }
+        
+        if (InputController.GetInput(InputPurpose.INTERACT))
+        {
+            MusicSliderParent.SetActive(false);
+            SFXSliderParent.SetActive(false);
             AudioManager.Instance.PlaySFXClip(AudioLabel.ClickSFX);
         }
     }
 
-    private void SetVolumeSlider(bool withSave)
+    private void SetMusicVolumeSlider(bool withSave)
     {
         if (withSave)
         {
-            CurrentGameSettings.MasterVolumeIndex = CurrentIndex;
+            CurrentGameSettings.MusicVolumeIndex = MusicCurrentIndex;
             CurrentGameSettings.SaveFromMenu();
         }
 
         //visuals
         var soundSliderText = "[";
-        for (int i = 0; i < CurrentIndex; i++)
+        for (int i = 0; i < MusicCurrentIndex; i++)
         {
             soundSliderText += SoundLetter;
         }
-        for (int i = CurrentIndex; i < MaxIndex; i++)
+        for (int i = MusicCurrentIndex; i < MaxIndex; i++)
         {
             soundSliderText += FillLetter;
         }
         soundSliderText += "]";
-        SoundSliderText.text = soundSliderText;
+        MusicSliderText.text = soundSliderText;
 
         //Volume
-        var volume = (float) CurrentIndex / MaxIndex;
-        var masterVolume = VolumeFunction(volume);
-        AudioManager.Instance.AudioMixer.SetFloat(MasterVolumeParameterName, masterVolume);
-        CLogger.Log($"Sound set: CurrentIndex={CurrentIndex}, volume={volume}, masterVolume={masterVolume}, MaxIndex={MaxIndex}");
+        var volume = (float) MusicCurrentIndex / MaxIndex;
+        var musicVolume = AudioManager.VolumeFunction(volume);
+        AudioManager.Instance.MainMixer.SetFloat(MusicVolumeParameterName, musicVolume);
+        CLogger.Log($"Music set: MusicCurrentIndex={MusicCurrentIndex}, volumeStep={volume}, musicVolume={musicVolume}, MaxIndex={MaxIndex}");
     }
 
-    //Assumes 0.0001 < x < 1
-    private static float VolumeFunction(float x)
+    private void SetSFXVolumeSlider(bool withSave)
     {
-        if (x <= 0)
+        if (withSave)
         {
-            x = 0.0001f;
+            CurrentGameSettings.SFXVolumeIndex = SFXCurrentIndex;
+            CurrentGameSettings.SaveFromMenu();
         }
-        else if (x > 1)
+
+        //visuals
+        var soundSliderText = "[";
+        for (int i = 0; i < SFXCurrentIndex; i++)
         {
-            x = 1;
+            soundSliderText += SoundLetter;
         }
-        return Mathf.Log10(x) * 20;
+        for (int i = SFXCurrentIndex; i < MaxIndex; i++)
+        {
+            soundSliderText += FillLetter;
+        }
+        soundSliderText += "]";
+        SFXSliderText.text = soundSliderText;
+
+        //Volume
+        var volume = (float) SFXCurrentIndex / MaxIndex;
+        var sfxVolume = AudioManager.VolumeFunction(volume);
+        AudioManager.Instance.MainMixer.SetFloat(SFXVolumeParameterName, sfxVolume);
+        CLogger.Log($"SFX set: SFXCurrentIndex={SFXCurrentIndex}, volumeStep={volume}, sfxVolume={sfxVolume}, MaxIndex={MaxIndex}");
     }
 
     public void MusicCredits()
     {
         AudioManager.Instance.PlaySFXClip(AudioLabel.ClickSFX);
         CLogger.LogError("MusicCredits button not implemented!");
+        AudioManager.Instance.PlayMusicClip(AudioLabel.FloristMoment, false, true);
     }
 
     public void Version()

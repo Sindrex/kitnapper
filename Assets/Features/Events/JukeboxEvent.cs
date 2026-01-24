@@ -14,7 +14,7 @@ public class JukeboxEvent : EventBase
         //find unlocked songs for jukebox
         var unlockedSongs = gameSettings.UnlockedSongs;
         var selectedSong = unlockedSongs[Index];
-        AudioManager.Instance.PlayMusicClip(selectedSong);
+        AudioManager.Instance.PlayMusicClip(selectedSong, true, false);
         AudioManager.Instance.PlaySFXClip(AudioLabel.ClickSFX);
 
         //increment Index and check if too big

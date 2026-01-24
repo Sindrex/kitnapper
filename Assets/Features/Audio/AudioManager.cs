@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -35,7 +36,7 @@ public class AudioClipMapping
 
 public class AudioManager : MonoBehaviour
 {
-    public AudioMixer AudioMixer;
+    public AudioMixer MainMixer;
     public AudioSource MusicSource;
     public GameObject SFXSourceParent;
     public GameObject SFXSourcePrefab;
@@ -46,6 +47,17 @@ public class AudioManager : MonoBehaviour
 
     //Singleton pattern
     public static AudioManager Instance;
+
+    //music fade in
+    public float MusicFadeStepSeconds;
+    public int MusicFadeSteps;
+    public float MusicFadeMinVolumeDb;
+    public int VolumeMaxIndex;
+    private const string MusicVolumeParameterName = "MusicVolume";
+    private const string SFXVolumeParameterName = "SFXVolume";
+
+    //Queue
+    private List<AudioLabel> MusicQueue = new List<AudioLabel>();
 
     private async void Awake()
     {
@@ -92,27 +104,80 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    public void PlayMusicClip(AudioLabel audioLabel)
+    public void PlayMusicClip(AudioLabel audioLabel, bool fadeIn, bool queue)
     {
+        if(fadeIn && queue)
+        {
+            CLogger.LogWarning("Both fadeIn and queue is true. This is not supported. Defaults to fadeIn only.");
+        }
+
+        if (fadeIn)
+        {
+            StartCoroutine(FadeMusicIn(audioLabel));
+        }
+        else if (queue)
+        {
+            MusicQueue = new List<AudioLabel>
+            {
+                audioLabel
+            };
+            MusicSource.loop = false;
+        }
+        else
+        {
+            var audioClip = AudioClips.FirstOrDefault(e => e.Label == audioLabel).Clip;
+            MusicSource.clip = audioClip;
+            MusicSource.Play(); //loops
+            PlayMusicClipFinal(audioLabel);
+        }
+    }
+
+    private void PlayMusicClipFinal(AudioLabel audioLabel)
+    {
+        //add to unlocked songs from game or manu
+        var currentGameSettings = GameManager.Instance?.CurrentGameSettings ?? MenuManager.Instance?.CurrentGameSettings;
+        if (currentGameSettings != null && !currentGameSettings.UnlockedSongs.Contains(audioLabel))
+        {
+            CLogger.Log($"Adding {audioLabel} to UnlockedSongs");
+            currentGameSettings.UnlockedSongs.Add(audioLabel);
+            currentGameSettings.SaveFromMenu();
+        }
+    }
+
+    IEnumerator FadeMusicIn(AudioLabel audioLabel)
+    {
+        var currentGameSettings = GameManager.Instance?.CurrentGameSettings ?? MenuManager.Instance?.CurrentGameSettings;
+        var musicVolumeIndex = currentGameSettings.MusicVolumeIndex;
+        var maxVolumeIndex = (float) VolumeMaxIndex - musicVolumeIndex;
+        var volumeIndexPerFadeStep = maxVolumeIndex / MusicFadeSteps;
+        
+        //Fade out
+        for(int i = 0; i < MusicFadeSteps; i++)
+        {
+            var currentVolumeIndex = maxVolumeIndex - volumeIndexPerFadeStep * i;
+            var currentVolume = currentVolumeIndex / VolumeMaxIndex;
+            var currentDb = VolumeFunction(currentVolume);
+            MainMixer.SetFloat(MusicVolumeParameterName, currentDb);
+            yield return new WaitForSeconds(MusicFadeStepSeconds);
+        }
+
+        //Fade in
         var audioClip = AudioClips.FirstOrDefault(e => e.Label == audioLabel).Clip;
         MusicSource.clip = audioClip;
         MusicSource.Play(); //loops
+        for(int i = 0; i < MusicFadeSteps; i++)
+        {
+            var currentVolumeIndex = volumeIndexPerFadeStep * i;
+            var currentVolume = currentVolumeIndex / VolumeMaxIndex;
+            var currentDb = VolumeFunction(currentVolume);
+            MainMixer.SetFloat(MusicVolumeParameterName, currentDb);
+            yield return new WaitForSeconds(MusicFadeStepSeconds);
+        }
 
-        //add to unlocked songs from game or manu
-        var gameSettingsGame = GameManager.Instance?.CurrentGameSettings;
-        var gameSettignsMenu = MenuManager.Instance?.CurrentGameSettings;
-        if (gameSettingsGame != null && !gameSettingsGame.UnlockedSongs.Contains(audioLabel))
-        {
-            CLogger.Log($"Adding {audioLabel} to UnlockedSongs from game");
-            gameSettingsGame.UnlockedSongs.Add(audioLabel);
-            gameSettingsGame.SaveFromMenu();
-        }
-        if (gameSettignsMenu != null && !gameSettignsMenu.UnlockedSongs.Contains(audioLabel))
-        {
-            CLogger.Log($"Adding {audioLabel} to UnlockedSongs from menu");
-            gameSettignsMenu.UnlockedSongs.Add(audioLabel);
-            gameSettignsMenu.SaveFromMenu();
-        }
+        var musicVolume = musicVolumeIndex / (float) VolumeMaxIndex;
+        var musicFadeMaxVolumeDb = VolumeFunction(musicVolume);
+        MainMixer.SetFloat(MusicVolumeParameterName, musicFadeMaxVolumeDb);
+        PlayMusicClipFinal(audioLabel);
     }
 
     public void FixedUpdate()
@@ -136,5 +201,32 @@ public class AudioManager : MonoBehaviour
                 Destroy(gameObjectToDestroy);
             }
         }
+
+        if(MusicQueue.Count > 0)
+        {
+            if (!MusicSource.isPlaying)
+            {
+                var nextMusicLabel = MusicQueue[0];
+                var audioClip = AudioClips.FirstOrDefault(e => e.Label == nextMusicLabel).Clip;
+                MusicSource.clip = audioClip;
+                MusicSource.loop = true;
+                MusicSource.Play();
+                MusicQueue.RemoveAt(0);
+            }
+        }
+    }
+
+    //Assumes 0.0001 < x < 1
+    public static float VolumeFunction(float x)
+    {
+        if (x <= 0)
+        {
+            x = 0.0001f;
+        }
+        else if (x > 1)
+        {
+            x = 1;
+        }
+        return Mathf.Log10(x) * 20;
     }
 }

@@ -6,6 +6,8 @@ public class SoundEvent : EventBase
 {
     public AudioLabel AudioLabelToPlay;
     public bool IsMusic;
+    public bool FadeInMusic;
+    public bool QueueMusic;
     public bool DestroySFX;
 
     public override void Activate(bool activateNextEvent)
@@ -13,7 +15,7 @@ public class SoundEvent : EventBase
         CLogger.Log("SoundEvent activated!");
         if (IsMusic)
         {
-            AudioManager.Instance?.PlayMusicClip(AudioLabelToPlay);
+            AudioManager.Instance?.PlayMusicClip(AudioLabelToPlay, FadeInMusic, QueueMusic);
         }
         else
         {

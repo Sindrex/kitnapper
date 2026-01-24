@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 987960168292183221}
   - component: {fileID: 5392661145466779302}
   m_Layer: 0
-  m_Name: MusicMixer
+  m_Name: MusicSource
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -72,7 +72,7 @@ AudioSource:
   m_GameObject: {fileID: 7762043774959574894}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 1a51e3f3bf847c6458f54481009937e9,
+  OutputAudioMixerGroup: {fileID: -6268608200145482875, guid: 1a51e3f3bf847c6458f54481009937e9,
     type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
@@ -206,7 +206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c17fdf7908ac554bbe1b53180822acb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AudioMixer: {fileID: 24100000, guid: 1a51e3f3bf847c6458f54481009937e9, type: 2}
+  MainMixer: {fileID: 24100000, guid: 1a51e3f3bf847c6458f54481009937e9, type: 2}
   MusicSource: {fileID: 5392661145466779302}
   SFXSourceParent: {fileID: 2525023662480113844}
   SFXSourcePrefab: {fileID: 7187355613418221417, guid: dada78a972cd57e4ea75eb4c10f34e81,
@@ -255,3 +255,7 @@ MonoBehaviour:
     Clip: {fileID: 8300000, guid: 91331a854692b0b41bdb6012c36d6828, type: 3}
   - Label: 23
     Clip: {fileID: 8300000, guid: a66fabdfd1a215f4680419ee4d3523b4, type: 3}
+  MusicFadeStepSeconds: 0.2
+  MusicFadeSteps: 20
+  MusicFadeMinVolumeDb: -80
+  VolumeMaxIndex: 10
