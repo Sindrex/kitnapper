@@ -12,15 +12,6 @@ If I change name of events, or replace events with new ones, it will break exist
 * Max amplitude:-8.1Db
 
 # TODO:
-* Add sound effects
-  * Cat sounds florist
-  * Typing sounds office
-  * Forest leafs rustling?
-  * Writing sounds Mayor office?
-* Add steam achievements
-  * Finish the main story / the game: "Catch the Color Kitnapper"
-  * Talk to every character / Find all the names
-  * Have both ups and downs with catnip -> Catnip dealer
 * Add more cat puns to dialogue
 
 Other names that can be used:

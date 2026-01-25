@@ -9,6 +9,7 @@ public class SoundEvent : EventBase
     public bool FadeInMusic;
     public bool QueueMusic;
     public bool DestroySFX;
+    public bool LoopSFX;
 
     public override void Activate(bool activateNextEvent)
     {
@@ -25,7 +26,7 @@ public class SoundEvent : EventBase
             }
             else
             {
-                AudioManager.Instance?.PlaySFXClip(AudioLabelToPlay);
+                AudioManager.Instance?.PlaySFXClip(AudioLabelToPlay, LoopSFX);
             }
         }
     }

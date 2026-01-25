@@ -255,6 +255,12 @@ MonoBehaviour:
     Clip: {fileID: 8300000, guid: 91331a854692b0b41bdb6012c36d6828, type: 3}
   - Label: 23
     Clip: {fileID: 8300000, guid: a66fabdfd1a215f4680419ee4d3523b4, type: 3}
+  - Label: 24
+    Clip: {fileID: 8300000, guid: bbff2eaaa9f8dfb4898606856537e22b, type: 3}
+  - Label: 25
+    Clip: {fileID: 8300000, guid: 3c015e0bd712b2145af1ec5b5014a947, type: 3}
+  - Label: 26
+    Clip: {fileID: 8300000, guid: 643752352af65054a9d13d66b7d825c0, type: 3}
   MusicFadeStepSeconds: 0.2
   MusicFadeSteps: 20
   MusicFadeMinVolumeDb: -80

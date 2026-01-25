@@ -27,6 +27,9 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //Load Steam
+        SteamIntegration.Initialize();
+
         //load GameSettings
         CLogger.Log("Loading GameSettings.");
         if (!GameSettingsLoader.GameSettingsExist())
@@ -107,6 +110,8 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
+        SteamIntegration.OnUpdate();
+
         if (InputController.GetInput(InputPurpose.QUIT)) Quit();
         if (InputController.GetInput(InputPurpose.CLOSE_EXCEPTION)) GlobalExceptionManager.Instance.CloseWindow();
     }
@@ -138,6 +143,12 @@ public class GameManager : MonoBehaviour
 
         //save CurrentGameSettings
         CurrentGameSettings.Save();
+
+        if (FinaleMomentEvent.CheckIfAllNamesAreDiscovered())
+        {
+            //Achievement
+            SteamIntegration.UnlockAchievement(SteamAchievement.ACH_FIND_ALL_NAMES);
+        }
     }
 
     public void AddEvent(EventController eventController)

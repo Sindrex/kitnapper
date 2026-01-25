@@ -98,6 +98,9 @@ public class MenuManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //Load Steam
+        SteamIntegration.Initialize();
+
         AllTexts = new Dictionary<Text, Action>
         {
             { ContinueText, ContinueGame },
@@ -154,6 +157,8 @@ public class MenuManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        SteamIntegration.OnUpdate();
+
         if (MainButtons.activeSelf)
         {
             UpdateMainButtons();
@@ -413,6 +418,7 @@ public class MenuManager : MonoBehaviour
     public void Quit()
     {
         CLogger.Log("Quitting game!");
+        SteamIntegration.Shutdown();
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
 #else
@@ -607,13 +613,15 @@ public class MenuManager : MonoBehaviour
     {
         AudioManager.Instance.PlaySFXClip(AudioLabel.ClickSFX);
         CLogger.LogError("MusicCredits button not implemented!");
-        AudioManager.Instance.PlayMusicClip(AudioLabel.FloristMoment, false, true);
+        SteamIntegration.UnlockAchievement(SteamAchievement.ACH_TEST);
+        //AudioManager.Instance.PlaySFXClip(AudioLabel.SwapSelectSFX, true);
     }
 
     public void Version()
     {
         AudioManager.Instance.PlaySFXClip(AudioLabel.ClickSFX);
         CLogger.LogError("Version button not implemented!");
+        //AudioManager.Instance.DestroySFXClips(AudioLabel.SwapSelectSFX);
     }
 
     private void UpdateSelectedButton()

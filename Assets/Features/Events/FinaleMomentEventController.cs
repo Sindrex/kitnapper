@@ -78,6 +78,9 @@ public class FinaleMomentEventController : EventBase
         PlayerController.Instance.gameObject.transform.localPosition = PlayerStartPosition;
         CameraController.Instance.Player.SetActive(true);
 
+        //Achievement
+        SteamIntegration.UnlockAchievement(SteamAchievement.ACH_FINISH_GAME);
+
         //Activate next event
         var nextEvent = GameManager.Instance.FindEvent(NextEvent);
         if(nextEvent != null && nextEvent.CheckRequirements())
@@ -86,6 +89,28 @@ public class FinaleMomentEventController : EventBase
         }
     }
     
+    public bool CheckIfAllNamesAreDiscovered()
+    {
+        var gameSettings = GameManager.Instance.CurrentGameSettings;
+        var isOk = true;
+        foreach(var characterNameCombo in CharacterNames)
+        {
+            var gameFlag = characterNameCombo.CharacterFlag;
+            var currentFlag = gameSettings.GameFlags.FirstOrDefault(x => x.Flag == gameFlag);
+            //In case the flag does not exist in settings, check against default values
+            currentFlag ??= new GameFlagCombo()
+            {
+                Flag = gameFlag
+            };
+            
+            if (!currentFlag.BoolValue)
+            {
+                isOk = false;
+            }
+        }
+        return isOk;
+    }
+
 #if UNITY_EDITOR
     private void OnDrawGizmos()
     {

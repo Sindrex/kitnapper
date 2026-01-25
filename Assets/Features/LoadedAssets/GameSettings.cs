@@ -96,5 +96,6 @@ public enum GameFlag
     SindrexFeedbackYes,
     MilkcatNameKnown, KiraNameKnown, PusurNameKnown, PadagastNameKnown, SarumanNameKnown, MarriNameKnown, OnyxNameKnown, CatnipDealerNameKnown, CatsuneMikuNameKnown,
     ManekinekoNameKnown, MilkcatGuardNameKnown, Musician1NameKnown, Musician2NameKnown,
-    LongSFXIsPlaying
+    LongSFXIsPlaying,
+    CatnipUp, CatnipDown
 }

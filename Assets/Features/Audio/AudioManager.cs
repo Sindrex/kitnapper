@@ -22,7 +22,8 @@ public enum AudioLabel
     CatMeow1, CatMeow2, CatMeow3,
     CatPurr1, CatPurr2, CatPurr3,
     CattelatteMixPurrs,
-    Walk1, Walk2, Walk3
+    Walk1, Walk2, Walk3,
+    FloristMixPurrs, MayorOfficeMixPurrs, OfficeMixPurrs
     //music trond: Menu/Player House, Forest, Town, Cattelatte, (Shrine, University, Credits)
     //music cf: FloristMoment
 }
@@ -75,12 +76,13 @@ public class AudioManager : MonoBehaviour
         CLogger.Log($"AudioManager: Starting up!");
     }
 
-    public void PlaySFXClip(AudioLabel audioLabel)
+    public void PlaySFXClip(AudioLabel audioLabel, bool loop = false)
     {
         var sfxGameObject = Instantiate(SFXSourcePrefab, SFXSourceParent.transform);
         var sfxSource = sfxGameObject.GetComponent<AudioSource>();
         sfxSource.clip = AudioClips.FirstOrDefault(e => e.Label == audioLabel).Clip;
         sfxSource.Play();
+        sfxSource.loop = loop;
         SFXInPlay.Add(sfxSource);
     }
 
