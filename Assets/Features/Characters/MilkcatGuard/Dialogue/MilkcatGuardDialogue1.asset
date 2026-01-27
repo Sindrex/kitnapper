@@ -19,18 +19,6 @@ MonoBehaviour:
   MaxChoiceOptionPerNode: 8
   NodeLinkDatas:
   - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
-    TargetNodeGuid: cf257311-7fa9-4c48-a855-85cb9d555300
-  - BaseNodeGuid: cf257311-7fa9-4c48-a855-85cb9d555300
-    TargetNodeGuid: cdc1b14a-235e-4338-b578-91110baad130
-  - BaseNodeGuid: cdc1b14a-235e-4338-b578-91110baad130
-    TargetNodeGuid: 693cdb95-ab3f-467c-925f-101923b65cad
-  - BaseNodeGuid: 1de6e121-9770-4785-ab14-d7b8f9fd2bd1
-    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
-  - BaseNodeGuid: 1a0f9043-9955-4957-9e53-0fa16f11de69
-    TargetNodeGuid: 1de6e121-9770-4785-ab14-d7b8f9fd2bd1
-  - BaseNodeGuid: 693cdb95-ab3f-467c-925f-101923b65cad
-    TargetNodeGuid: 1a0f9043-9955-4957-9e53-0fa16f11de69
-  - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
     TargetNodeGuid: 4c2bbdeb-643d-4fae-8ea6-0b98c276dd30
   - BaseNodeGuid: 4c2bbdeb-643d-4fae-8ea6-0b98c276dd30
     TargetNodeGuid: cf257311-7fa9-4c48-a855-85cb9d555300
@@ -38,27 +26,6 @@ MonoBehaviour:
     TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
   DialogueChoiceNodeDatas: []
   DialogueNodeDatas:
-  - NodeGuid: 4c2bbdeb-643d-4fae-8ea6-0b98c276dd30
-    Position: {x: 576, y: 196}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: MilkcatGuardDialogueEvent
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: 'Guard: By orders from the Purrsident this road has been
-        shut down!'
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
   - NodeGuid: cf257311-7fa9-4c48-a855-85cb9d555300
     Position: {x: 867, y: 196}
     Character: {fileID: 0}
@@ -76,6 +43,27 @@ MonoBehaviour:
     TextType:
     - languageEnum: 0
       LanguageGenericType: Please step away from the fence!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 4c2bbdeb-643d-4fae-8ea6-0b98c276dd30
+    Position: {x: 576, y: 196}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: MilkcatGuardDialogueEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Guard: By orders from the Purresident this road has been
+        shut down!'
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10

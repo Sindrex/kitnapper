@@ -97,5 +97,8 @@ public enum GameFlag
     MilkcatNameKnown, KiraNameKnown, PusurNameKnown, PadagastNameKnown, SarumanNameKnown, MarriNameKnown, OnyxNameKnown, CatnipDealerNameKnown, CatsuneMikuNameKnown,
     ManekinekoNameKnown, MilkcatGuardNameKnown, Musician1NameKnown, Musician2NameKnown,
     LongSFXIsPlaying,
-    CatnipUp, CatnipDown
+    CatnipUp, CatnipDown,
+    GoldenBalls,
+    Grave1, Grave2, Grave3, Grave4, Grave5, Grave6, Grave7, Grave8, Grave9, Grave10, Grave11,
+    TurboBabaDialogue1, SleepyCatDialogue1
 }

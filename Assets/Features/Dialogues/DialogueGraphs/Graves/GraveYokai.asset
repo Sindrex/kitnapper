@@ -25,11 +25,11 @@ MonoBehaviour:
   DialogueChoiceNodeDatas: []
   DialogueNodeDatas:
   - NodeGuid: 890351a3-5b42-4f01-a09b-391e06ac02c5
-    Position: {x: 416, y: 220}
+    Position: {x: 415, y: 220}
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
-    Event: 
+    Event: Grave8DialogueEvent
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
@@ -42,7 +42,7 @@ MonoBehaviour:
     - languageEnum: 0
       LanguageGenericType: '~ Joshua and Kay ~
 
-        Taken away by the sins far
+        Succumbed to their sins far
         too early. You will be missed.'
     - languageEnum: 1
       LanguageGenericType: 

@@ -18,6 +18,8 @@ MonoBehaviour:
   LimitChoiceOptionPerNode: 0
   MaxChoiceOptionPerNode: 0
   NodeLinkDatas:
+  - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
+    TargetNodeGuid: 22294a8c-0eb2-446f-9829-495e67b5a8a7
   - BaseNodeGuid: 2fc2f56d-375d-4a2d-926a-fa8163a1d583
     TargetNodeGuid: 8f05f8ea-704c-4b21-9cad-ceec3f556e1a
   - BaseNodeGuid: 693cdb95-ab3f-467c-925f-101923b65cad
@@ -34,10 +36,16 @@ MonoBehaviour:
     TargetNodeGuid: cdc1b14a-235e-4338-b578-91110baad130
   - BaseNodeGuid: 49ae51f3-417b-497e-aa96-38a1ec91b121
     TargetNodeGuid: dfdb6f86-9419-4200-a790-511060dfc225
+  - BaseNodeGuid: 08a994b5-bd56-4f99-9387-45d43406c157
+    TargetNodeGuid: 9a4a56d3-b4ef-4155-8523-0d532fb9c727
   - BaseNodeGuid: 332bfb8d-9043-4f00-80aa-06d8acf1cfa8
     TargetNodeGuid: 7435f5be-4fd6-4c70-aa1b-a2ff9c5dce29
   - BaseNodeGuid: 7435f5be-4fd6-4c70-aa1b-a2ff9c5dce29
     TargetNodeGuid: d53fa7bb-6867-4bf8-ba8b-9b5ab3a6ebac
+  - BaseNodeGuid: 22f51342-4318-4877-93d0-bd695020e50a
+    TargetNodeGuid: 49ae51f3-417b-497e-aa96-38a1ec91b121
+  - BaseNodeGuid: 44f46695-f28c-49dc-b365-42b599e965f7
+    TargetNodeGuid: 49ae51f3-417b-497e-aa96-38a1ec91b121
   - BaseNodeGuid: 8f05f8ea-704c-4b21-9cad-ceec3f556e1a
     TargetNodeGuid: 7efaf9ba-97e4-4424-810f-c620df1c7368
   - BaseNodeGuid: 8f05f8ea-704c-4b21-9cad-ceec3f556e1a
@@ -46,6 +54,10 @@ MonoBehaviour:
     TargetNodeGuid: 2fc2f56d-375d-4a2d-926a-fa8163a1d583
   - BaseNodeGuid: 4fd61db1-a71e-4295-8ec8-fb495f167954
     TargetNodeGuid: 0c0d56e6-039a-4ca4-a36e-187bbd7e0e42
+  - BaseNodeGuid: 22294a8c-0eb2-446f-9829-495e67b5a8a7
+    TargetNodeGuid: 08a994b5-bd56-4f99-9387-45d43406c157
+  - BaseNodeGuid: 22294a8c-0eb2-446f-9829-495e67b5a8a7
+    TargetNodeGuid: 4fd61db1-a71e-4295-8ec8-fb495f167954
   - BaseNodeGuid: 7efaf9ba-97e4-4424-810f-c620df1c7368
     TargetNodeGuid: 49ae51f3-417b-497e-aa96-38a1ec91b121
   - BaseNodeGuid: 7efaf9ba-97e4-4424-810f-c620df1c7368
@@ -54,22 +66,10 @@ MonoBehaviour:
     TargetNodeGuid: 49ae51f3-417b-497e-aa96-38a1ec91b121
   - BaseNodeGuid: 889621fc-4b51-470f-a7cc-25216ec1e25c
     TargetNodeGuid: 332bfb8d-9043-4f00-80aa-06d8acf1cfa8
-  - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
-    TargetNodeGuid: 22294a8c-0eb2-446f-9829-495e67b5a8a7
-  - BaseNodeGuid: 22294a8c-0eb2-446f-9829-495e67b5a8a7
-    TargetNodeGuid: 08a994b5-bd56-4f99-9387-45d43406c157
-  - BaseNodeGuid: 08a994b5-bd56-4f99-9387-45d43406c157
-    TargetNodeGuid: 9a4a56d3-b4ef-4155-8523-0d532fb9c727
-  - BaseNodeGuid: 22294a8c-0eb2-446f-9829-495e67b5a8a7
-    TargetNodeGuid: 4fd61db1-a71e-4295-8ec8-fb495f167954
   - BaseNodeGuid: 889621fc-4b51-470f-a7cc-25216ec1e25c
     TargetNodeGuid: 22f51342-4318-4877-93d0-bd695020e50a
-  - BaseNodeGuid: 22f51342-4318-4877-93d0-bd695020e50a
-    TargetNodeGuid: 49ae51f3-417b-497e-aa96-38a1ec91b121
   - BaseNodeGuid: 889621fc-4b51-470f-a7cc-25216ec1e25c
     TargetNodeGuid: 44f46695-f28c-49dc-b365-42b599e965f7
-  - BaseNodeGuid: 44f46695-f28c-49dc-b365-42b599e965f7
-    TargetNodeGuid: 49ae51f3-417b-497e-aa96-38a1ec91b121
   DialogueChoiceNodeDatas:
   - NodeGuid: 7efaf9ba-97e4-4424-810f-c620df1c7368
     Position: {x: 1537, y: -136}
@@ -248,26 +248,6 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
-  - NodeGuid: 1a0f9043-9955-4957-9e53-0fa16f11de69
-    Position: {x: 2259, y: 196}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: TownHallMayorInitialDialogueEvent
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: That will be all, humr humr.
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
   - NodeGuid: cf257311-7fa9-4c48-a855-85cb9d555300
     Position: {x: 1537, y: 196}
     Character: {fileID: 0}
@@ -430,6 +410,27 @@ MonoBehaviour:
     - languageEnum: 0
       LanguageGenericType: Findus' toy is missing? He did bring it here on occasion,
         humr humr.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 1a0f9043-9955-4957-9e53-0fa16f11de69
+    Position: {x: 2259, y: 196}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: TownHallMayorInitialDialogueEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'That will be all... Now, I have to solve all this littering,
+        humr humr. '
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10

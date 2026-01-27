@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b80661980d05ba49b2fd68873ef6c9a, type: 3}
+  m_Name: TurboBabaSpawnReq
+  m_EditorClassIdentifier: 
+  ReqFlags:
+  - {fileID: 11400000, guid: f58d14faea6f66c44b1c46f409a8ff7f, type: 2}
+  - {fileID: 11400000, guid: 059e96722952aa14fba39606baf4b763, type: 2}
+  - {fileID: 11400000, guid: b3f8b617158df924b9b13c656412c2cf, type: 2}
+  - {fileID: 11400000, guid: 7973eac3b5f5bc34db86dd8f183a4154, type: 2}
+  - {fileID: 11400000, guid: 57b1853ff073c26419aab23a04de66e0, type: 2}
+  - {fileID: 11400000, guid: a7076fb53608e2942a32c8d3232f236c, type: 2}
+  - {fileID: 11400000, guid: 8ced4754399c22d43aef335d34e826b2, type: 2}
+  - {fileID: 11400000, guid: c1038d17621a9c94692c1def35ae8e49, type: 2}
+  - {fileID: 11400000, guid: b3c384f6aef713344b4c246b7a28eef5, type: 2}
+  - {fileID: 11400000, guid: 24dbf7c40936ebb4d88599b79e7e0a30, type: 2}
+  - {fileID: 11400000, guid: 109fd2f3ef071f74b9db8a042dc8c68b, type: 2}
