@@ -12,10 +12,8 @@ If I change name of events, or replace events with new ones, it will break exist
 * Max amplitude:-8.1Db
 
 # TODO:
-* Add more cat puns to dialogue
-* Turbo Baba from graveyard -> goes to player house
-* Hidden 3 gold balls
-* 
+* Add path /signs to Sleepy Cat
+* Add Forest Rave?
 
 Other names that can be used:
 * Kuro (Blue Exorcist) ->
@@ -42,5 +40,5 @@ Achivs / Easter eggs:
   * "Cat norris once cought a cold… with his own paws!"
 * Talk to SleepyCat (semi-long chain to break out of bounds)?
   * Do all previous easter eggs: Both ups and downs with catnip, All 3 pokeballs, Awaken Turbo Baba, Listen to all her jokes.
-  * Turbo baba tells you to find the wise Sleepy Cat. Beyond reality it knows all. Tells you to go to the rock, and moves the rock.
+  * Turbo baba tells you to find the wise Sleepy Cat. Beyond reality, it knows all. Tells you to go to the rock, and moves the rock.
   * You go and talk to sleepy cat.

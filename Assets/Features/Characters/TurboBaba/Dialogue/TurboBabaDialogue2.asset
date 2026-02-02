@@ -19,43 +19,275 @@ MonoBehaviour:
   MaxChoiceOptionPerNode: 8
   NodeLinkDatas:
   - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
-    TargetNodeGuid: 9a755bde-ef94-48d7-a86c-2e577b3d9c18
+    TargetNodeGuid: 48c3abd3-d0af-493b-a1ba-af8a538210a6
+  - BaseNodeGuid: d04b433e-246a-4bbe-9d26-8a2f95edba61
+    TargetNodeGuid: 03369b3b-7205-403d-8b91-bb350f287ed7
+  - BaseNodeGuid: 752b46a7-7bc9-457b-9b08-d254be7d74a8
+    TargetNodeGuid: a12f3c1d-5307-474a-a05c-4c8959b4bb37
   - BaseNodeGuid: 9a755bde-ef94-48d7-a86c-2e577b3d9c18
-    TargetNodeGuid: 004fa763-bd44-4bae-8c26-c7720311fb4b
-  - BaseNodeGuid: 004fa763-bd44-4bae-8c26-c7720311fb4b
-    TargetNodeGuid: 4dc86042-5ba1-472e-921a-d6bef568e550
-  - BaseNodeGuid: 4dc86042-5ba1-472e-921a-d6bef568e550
-    TargetNodeGuid: cb4d95e3-2759-46d4-8ce2-9821d52d3bfd
-  - BaseNodeGuid: cb4d95e3-2759-46d4-8ce2-9821d52d3bfd
-    TargetNodeGuid: 24dcde15-8fcf-449a-86cf-ea517d96e655
-  - BaseNodeGuid: 24dcde15-8fcf-449a-86cf-ea517d96e655
-    TargetNodeGuid: 4b76255d-530a-4fc8-bded-7cc70a089d86
-  - BaseNodeGuid: 4b76255d-530a-4fc8-bded-7cc70a089d86
+    TargetNodeGuid: bb2cbfd5-2c50-4bad-af54-1358095a562e
+  - BaseNodeGuid: bb2cbfd5-2c50-4bad-af54-1358095a562e
+    TargetNodeGuid: 03369b3b-7205-403d-8b91-bb350f287ed7
+  - BaseNodeGuid: 5cd87d8a-7031-4d7b-9b86-5fc6e06a5d7d
+    TargetNodeGuid: 9aab82a8-6943-4445-b5cc-eb5bbbe945aa
+  - BaseNodeGuid: fa1f558a-197f-4427-91d0-1d1375701790
+    TargetNodeGuid: 7ac3ef35-d89c-47ea-8351-4b1413f63c43
+  - BaseNodeGuid: 1ad47a0f-d332-4896-a6e2-1d18cd50e74d
+    TargetNodeGuid: 8a792b6b-927b-4310-a8c9-0bc4dc3370a5
+  - BaseNodeGuid: 492ae9dc-6df8-4ec9-b4bf-c1941bdb0505
+    TargetNodeGuid: fa1f558a-197f-4427-91d0-1d1375701790
+  - BaseNodeGuid: 8a792b6b-927b-4310-a8c9-0bc4dc3370a5
+    TargetNodeGuid: 7ac3ef35-d89c-47ea-8351-4b1413f63c43
+  - BaseNodeGuid: 9aab82a8-6943-4445-b5cc-eb5bbbe945aa
+    TargetNodeGuid: 7ac3ef35-d89c-47ea-8351-4b1413f63c43
+  - BaseNodeGuid: addc1582-c7ed-4a0d-9675-f798b81cbc73
+    TargetNodeGuid: df990dc8-b69c-4583-9a8a-efcc2d20c949
+  - BaseNodeGuid: b03eb580-e451-4cc8-87e5-1649c20a681e
+    TargetNodeGuid: df990dc8-b69c-4583-9a8a-efcc2d20c949
+  - BaseNodeGuid: 63b2b74a-72e1-4cf1-a4ed-d8570b4b3bf6
+    TargetNodeGuid: f93beb7d-b3d3-4c27-a159-ee038de4eb82
+  - BaseNodeGuid: f93beb7d-b3d3-4c27-a159-ee038de4eb82
+    TargetNodeGuid: 0badc680-13f9-476a-bdcd-424a2d4bc3c9
+  - BaseNodeGuid: ccfd680b-a57f-46ef-96fa-75d3cf790135
+    TargetNodeGuid: 2c218743-0194-4e35-9550-40140eb4301e
+  - BaseNodeGuid: 5458047a-3900-4272-a4a8-3ecb2accfab0
+    TargetNodeGuid: 1ddf4181-2cda-41cd-a79a-46ca46baca61
+  - BaseNodeGuid: db3698ae-1dbd-4641-8e4a-aa379f4eb3e0
+    TargetNodeGuid: ca2b43e7-ae36-4af9-b3cb-685bcad9caa7
+  - BaseNodeGuid: 62c85612-5530-4873-8093-5e102f561f6e
+    TargetNodeGuid: 8fd5e2e2-9dc0-426e-865e-21a63be4befa
+  - BaseNodeGuid: 2c218743-0194-4e35-9550-40140eb4301e
+    TargetNodeGuid: dc794822-4e5e-44bd-a6ba-991c7f6cf674
+  - BaseNodeGuid: 2401ea3e-bd2d-4714-bb97-e3dd3887f2ce
+    TargetNodeGuid: a5aa0d89-c108-42f3-b159-4ff3e12378c3
+  - BaseNodeGuid: 1ddf4181-2cda-41cd-a79a-46ca46baca61
+    TargetNodeGuid: 894ec6e4-f975-4b7c-a49a-5662eb1d206c
+  - BaseNodeGuid: ca2b43e7-ae36-4af9-b3cb-685bcad9caa7
+    TargetNodeGuid: a38dd0f1-9dc1-44a9-a07f-b750e0f024eb
+  - BaseNodeGuid: 43d8a41a-e421-402a-b051-ed7ce01ef9e4
+    TargetNodeGuid: dbb226d1-200e-48af-81a6-7a673f3272e2
+  - BaseNodeGuid: dbb226d1-200e-48af-81a6-7a673f3272e2
+    TargetNodeGuid: 76f4aa31-873e-4ab4-927d-c0cc71a0e0ca
+  - BaseNodeGuid: d193cbf0-3217-4c31-8b92-4a7bc9d4096b
+    TargetNodeGuid: c4b98c71-07ad-486c-8bf5-99aaa18cace6
+  - BaseNodeGuid: a5aa0d89-c108-42f3-b159-4ff3e12378c3
+    TargetNodeGuid: b5c2d371-5691-4a11-bb0c-339610ba83e0
+  - BaseNodeGuid: 8996bb76-98a8-423b-b7b5-c2ef1e503e53
+    TargetNodeGuid: 75613b1a-a171-4f0e-90c5-6994cb063b6d
+  - BaseNodeGuid: 75613b1a-a171-4f0e-90c5-6994cb063b6d
+    TargetNodeGuid: a90e6811-ffeb-4588-b321-5b6a7441fe68
+  - BaseNodeGuid: a90e6811-ffeb-4588-b321-5b6a7441fe68
+    TargetNodeGuid: 66ade3dc-a96b-44e7-baea-c26590a3f509
+  - BaseNodeGuid: 66ade3dc-a96b-44e7-baea-c26590a3f509
+    TargetNodeGuid: bc09fe23-53e9-43e8-b87c-82c097b4aed9
+  - BaseNodeGuid: bc09fe23-53e9-43e8-b87c-82c097b4aed9
+    TargetNodeGuid: 4dd077d6-5675-45e8-9702-5208509f1664
+  - BaseNodeGuid: 48c3abd3-d0af-493b-a1ba-af8a538210a6
+    TargetNodeGuid: d04b433e-246a-4bbe-9d26-8a2f95edba61
+  - BaseNodeGuid: 48c3abd3-d0af-493b-a1ba-af8a538210a6
+    TargetNodeGuid: 9a755bde-ef94-48d7-a86c-2e577b3d9c18
+  - BaseNodeGuid: a12f3c1d-5307-474a-a05c-4c8959b4bb37
+    TargetNodeGuid: 62c85612-5530-4873-8093-5e102f561f6e
+  - BaseNodeGuid: a12f3c1d-5307-474a-a05c-4c8959b4bb37
+    TargetNodeGuid: 63b2b74a-72e1-4cf1-a4ed-d8570b4b3bf6
+  - BaseNodeGuid: 723d09ef-5233-40eb-a5f9-1fa1313afdc8
+    TargetNodeGuid: addc1582-c7ed-4a0d-9675-f798b81cbc73
+  - BaseNodeGuid: 723d09ef-5233-40eb-a5f9-1fa1313afdc8
+    TargetNodeGuid: b03eb580-e451-4cc8-87e5-1649c20a681e
+  - BaseNodeGuid: 8f3ec7cb-41b7-4d95-a83e-a05b2cd0a9cc
+    TargetNodeGuid: 7d66b6c2-cc49-4504-a977-8bcb82a4ff79
+  - BaseNodeGuid: 8f3ec7cb-41b7-4d95-a83e-a05b2cd0a9cc
+    TargetNodeGuid: ccfd680b-a57f-46ef-96fa-75d3cf790135
+  - BaseNodeGuid: 7d66b6c2-cc49-4504-a977-8bcb82a4ff79
+    TargetNodeGuid: 81f5df70-e0c6-4c99-a7e5-729b43aa7837
+  - BaseNodeGuid: 7d66b6c2-cc49-4504-a977-8bcb82a4ff79
+    TargetNodeGuid: 5458047a-3900-4272-a4a8-3ecb2accfab0
+  - BaseNodeGuid: 81f5df70-e0c6-4c99-a7e5-729b43aa7837
+    TargetNodeGuid: 9521748f-1ceb-48c6-bf3b-4d376429c78d
+  - BaseNodeGuid: 81f5df70-e0c6-4c99-a7e5-729b43aa7837
+    TargetNodeGuid: db3698ae-1dbd-4641-8e4a-aa379f4eb3e0
+  - BaseNodeGuid: 9521748f-1ceb-48c6-bf3b-4d376429c78d
+    TargetNodeGuid: d193cbf0-3217-4c31-8b92-4a7bc9d4096b
+  - BaseNodeGuid: 9521748f-1ceb-48c6-bf3b-4d376429c78d
+    TargetNodeGuid: 2401ea3e-bd2d-4714-bb97-e3dd3887f2ce
+  - BaseNodeGuid: 8fd5e2e2-9dc0-426e-865e-21a63be4befa
+    TargetNodeGuid: 8f3ec7cb-41b7-4d95-a83e-a05b2cd0a9cc
+  - BaseNodeGuid: 8fd5e2e2-9dc0-426e-865e-21a63be4befa
+    TargetNodeGuid: 43d8a41a-e421-402a-b051-ed7ce01ef9e4
+  - BaseNodeGuid: ab8a9f5a-0819-4ad7-8842-87222352755e
+    TargetNodeGuid: 492ae9dc-6df8-4ec9-b4bf-c1941bdb0505
+  - BaseNodeGuid: ab8a9f5a-0819-4ad7-8842-87222352755e
+    TargetNodeGuid: 1ad47a0f-d332-4896-a6e2-1d18cd50e74d
+  - BaseNodeGuid: ab8a9f5a-0819-4ad7-8842-87222352755e
+    TargetNodeGuid: 5cd87d8a-7031-4d7b-9b86-5fc6e06a5d7d
+  - BaseNodeGuid: 03369b3b-7205-403d-8b91-bb350f287ed7
     TargetNodeGuid: 8b7c48b1-70f4-4fc3-a83a-04d14ba5894e
-  DialogueChoiceNodeDatas: []
+  - BaseNodeGuid: 03369b3b-7205-403d-8b91-bb350f287ed7
+    TargetNodeGuid: 752b46a7-7bc9-457b-9b08-d254be7d74a8
+  - BaseNodeGuid: 03369b3b-7205-403d-8b91-bb350f287ed7
+    TargetNodeGuid: ab8a9f5a-0819-4ad7-8842-87222352755e
+  - BaseNodeGuid: 03369b3b-7205-403d-8b91-bb350f287ed7
+    TargetNodeGuid: 723d09ef-5233-40eb-a5f9-1fa1313afdc8
+  - BaseNodeGuid: 03369b3b-7205-403d-8b91-bb350f287ed7
+    TargetNodeGuid: 8996bb76-98a8-423b-b7b5-c2ef1e503e53
+  DialogueChoiceNodeDatas:
+  - NodeGuid: ab8a9f5a-0819-4ad7-8842-87222352755e
+    Position: {x: 884, y: 598}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Rock-Papser-Scissors? Bring it on! 3... 2... 1...
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 5
+    DialogueNodePorts:
+    - PortGuid: 7ccc6f44-ec2c-4379-8764-d1b17611f351
+      InputGuid: 492ae9dc-6df8-4ec9-b4bf-c1941bdb0505
+      OutputGuid: ab8a9f5a-0819-4ad7-8842-87222352755e
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Rock
+      - languageEnum: 1
+        LanguageGenericType: Choice 01
+      RequiredFlag: {fileID: 0}
+    - PortGuid: d59d3849-9e89-4241-bf7b-f9809e861b29
+      InputGuid: 1ad47a0f-d332-4896-a6e2-1d18cd50e74d
+      OutputGuid: ab8a9f5a-0819-4ad7-8842-87222352755e
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Paper
+      - languageEnum: 1
+        LanguageGenericType: Choice 02
+      RequiredFlag: {fileID: 0}
+    - PortGuid: b40c6bd4-577a-4626-9023-9c0e1931bb04
+      InputGuid: 5cd87d8a-7031-4d7b-9b86-5fc6e06a5d7d
+      OutputGuid: ab8a9f5a-0819-4ad7-8842-87222352755e
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Scissors
+      - languageEnum: 1
+        LanguageGenericType: Choice 03
+      RequiredFlag: {fileID: 0}
+  - NodeGuid: 03369b3b-7205-403d-8b91-bb350f287ed7
+    Position: {x: 497, y: 172}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Come on! Come on! Come on!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 5
+    DialogueNodePorts:
+    - PortGuid: 69bae790-1ed1-4dda-8515-57fe3ab416ba
+      InputGuid: 8b7c48b1-70f4-4fc3-a83a-04d14ba5894e
+      OutputGuid: 03369b3b-7205-403d-8b91-bb350f287ed7
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Goodbye
+      - languageEnum: 1
+        LanguageGenericType: Choice 01
+      RequiredFlag: {fileID: 0}
+    - PortGuid: c98e9f2d-8524-4558-bf38-dc662918faae
+      InputGuid: 752b46a7-7bc9-457b-9b08-d254be7d74a8
+      OutputGuid: 03369b3b-7205-403d-8b91-bb350f287ed7
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Tell me a joke
+      - languageEnum: 1
+        LanguageGenericType: Choice 02
+      RequiredFlag: {fileID: 11400000, guid: 4e34c74e63a06174fbfc47960719c7fe, type: 2}
+    - PortGuid: 8f3f0810-0b2d-485c-8884-389b8401844b
+      InputGuid: ab8a9f5a-0819-4ad7-8842-87222352755e
+      OutputGuid: 03369b3b-7205-403d-8b91-bb350f287ed7
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Rock-Paper-Scissors
+      - languageEnum: 1
+        LanguageGenericType: Choice 03
+      RequiredFlag: {fileID: 0}
+    - PortGuid: bf176c42-d1f6-4952-955c-01e087f68899
+      InputGuid: 723d09ef-5233-40eb-a5f9-1fa1313afdc8
+      OutputGuid: 03369b3b-7205-403d-8b91-bb350f287ed7
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Golden Balls
+      - languageEnum: 1
+        LanguageGenericType: Choice 04
+      RequiredFlag: {fileID: 11400000, guid: b7d8eede12ef39e47b5543722fa0ebbe, type: 2}
+    - PortGuid: 281b3863-55eb-4457-b00d-ec80d52767c9
+      InputGuid: 8996bb76-98a8-423b-b7b5-c2ef1e503e53
+      OutputGuid: 03369b3b-7205-403d-8b91-bb350f287ed7
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Interesting topic
+      - languageEnum: 1
+        LanguageGenericType: Choice 05
+      RequiredFlag: {fileID: 11400000, guid: 63d4605a53210974a9527c58df2768b2, type: 2}
   DialogueNodeDatas:
+  - NodeGuid: d04b433e-246a-4bbe-9d26-8a2f95edba61
+    Position: {x: 232, y: 28}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Turbo Baba: There you are! Entertain me or I''ll tickle
+        your toebeans as you sleep!'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 752b46a7-7bc9-457b-9b08-d254be7d74a8
+    Position: {x: 884, y: 197}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: You want to hear one of Turbo Baba's famous jokes? I'll
+        consider it...
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
   - NodeGuid: 9a755bde-ef94-48d7-a86c-2e577b3d9c18
-    Position: {x: 234, y: 196}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: SarumanDialogueEvent
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: '???: Gaaaaah!'
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
-  - NodeGuid: 004fa763-bd44-4bae-8c26-c7720311fb4b
-    Position: {x: 499, y: 196}
+    Position: {x: 66, y: 389}
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
@@ -70,13 +302,33 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: '???: You tiny weeny little kitten woke me up from the
-        dead! You woke THE Turbo Baba up!'
+      LanguageGenericType: 'Turbo Baba: There you are pipsqueak! I''m gonna move
+        in here, so deal with it.'
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
-  - NodeGuid: 4dc86042-5ba1-472e-921a-d6bef568e550
-    Position: {x: 742, y: 196}
+  - NodeGuid: bb2cbfd5-2c50-4bad-af54-1358095a562e
+    Position: {x: 277, y: 389}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: TurboBabaDialogue2Event1
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Now, entertain me, will ya?
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 5cd87d8a-7031-4d7b-9b86-5fc6e06a5d7d
+    Position: {x: 1289, y: 1086}
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
@@ -91,13 +343,12 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: 'Turbo Baba: What''d you do that for eh? Want to fight?
-        Come at me!'
+      LanguageGenericType: I picked...
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
-  - NodeGuid: cb4d95e3-2759-46d4-8ce2-9821d52d3bfd
-    Position: {x: 992, y: 196}
+  - NodeGuid: fa1f558a-197f-4427-91d0-1d1375701790
+    Position: {x: 1521, y: 534}
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
@@ -112,34 +363,12 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: Heh, that's what I thought. Don't underestimate your elders
-        sonny boy!
+      LanguageGenericType: Paper! Ha! I win!!
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
-  - NodeGuid: 24dcde15-8fcf-449a-86cf-ea517d96e655
-    Position: {x: 1242, y: 196}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: TurboBaba1DialogueEvent
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: You won't get away with this. I will haunt you for the
-        rest of your days!
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
-  - NodeGuid: 4b76255d-530a-4fc8-bded-7cc70a089d86
-    Position: {x: 1497, y: 196}
+  - NodeGuid: 1ad47a0f-d332-4896-a6e2-1d18cd50e74d
+    Position: {x: 1289, y: 822}
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
@@ -154,23 +383,592 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: But for now, this meowvelus cat is taking off. I will
-        be back.
+      LanguageGenericType: I picked...
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
-  ConditionalNodeDatas: []
+  - NodeGuid: 492ae9dc-6df8-4ec9-b4bf-c1941bdb0505
+    Position: {x: 1289, y: 534}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: I picked...
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 8a792b6b-927b-4310-a8c9-0bc4dc3370a5
+    Position: {x: 1521, y: 822}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Scissors! I am the wiiiiinner, my friends!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 9aab82a8-6943-4445-b5cc-eb5bbbe945aa
+    Position: {x: 1521, y: 1114}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Rock! I win, I win, I win!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: addc1582-c7ed-4a0d-9675-f798b81cbc73
+    Position: {x: 984, y: 1059}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: TurboBabaDialogue2GoldenBallsEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: You found them all? Nice, give them to me! I'll put one
+        right... here. And like this. Oh, this is good.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: b03eb580-e451-4cc8-87e5-1649c20a681e
+    Position: {x: 984, y: 1427}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: I'm pretty sure there's more Golden Balls out there!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 63b2b74a-72e1-4cf1-a4ed-d8570b4b3bf6
+    Position: {x: 1116, y: 197}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: I'll tell you what, minimeat. If you find all the Golden
+        Balls, I'll bestow my jokes upon you.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: f93beb7d-b3d3-4c27-a159-ee038de4eb82
+    Position: {x: 1321, y: 197}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: TurboBabaDialogue2Flag2Event
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Now go, they ain't gonna find 'em self!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: ccfd680b-a57f-46ef-96fa-75d3cf790135
+    Position: {x: 1940, y: -24}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Why is the cat so grouchy?
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 5458047a-3900-4272-a4a8-3ecb2accfab0
+    Position: {x: 2174, y: -24}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: What does a cat like to eat on a hot day?
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: db3698ae-1dbd-4641-8e4a-aa379f4eb3e0
+    Position: {x: 2403, y: -24}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: What's the difference between a cat and a complex sentence?
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 62c85612-5530-4873-8093-5e102f561f6e
+    Position: {x: 1221, y: -163}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Alright, I guess you earned it. Pawpere yourself!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 2c218743-0194-4e35-9550-40140eb4301e
+    Position: {x: 2174, y: 279}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: TurboBabaDialogue2JokesAdd1Event
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Because he's in a bad mewd!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 2401ea3e-bd2d-4714-bb97-e3dd3887f2ce
+    Position: {x: 2631, y: -24}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: "Cat Norris once cought a cold\u2026"
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 1ddf4181-2cda-41cd-a79a-46ca46baca61
+    Position: {x: 2403, y: 279}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: TurboBabaDialogue2JokesAdd1Event
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: A mice cream cone!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: ca2b43e7-ae36-4af9-b3cb-685bcad9caa7
+    Position: {x: 2631, y: 239}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: TurboBabaDialogue2JokesAdd1Event
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'One has claws at the end of its paws, and the other has
+        a pause at the end of its clause. '
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 43d8a41a-e421-402a-b051-ed7ce01ef9e4
+    Position: {x: 1701, y: -18}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: What joke should we start with? Hmm...
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: dbb226d1-200e-48af-81a6-7a673f3272e2
+    Position: {x: 1940, y: 279}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: TurboBabaDialogue2JokesAdd1Event
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: You! Gah hahahaha!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: a5aa0d89-c108-42f3-b159-4ff3e12378c3
+    Position: {x: 2875, y: -24}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: TurboBabaDialogue2JokesAdd1Event
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: With his own paws!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 8996bb76-98a8-423b-b7b5-c2ef1e503e53
+    Position: {x: 66, y: 941}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: You see, mysterybee, there's a whole world outside these
+        four walls... Outside of what you perceive!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 75613b1a-a171-4f0e-90c5-6994cb063b6d
+    Position: {x: 312, y: 941}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: I can show you the way. There, you must find the one known
+        as 'The Sleepy Cat'.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: a90e6811-ffeb-4588-b321-5b6a7441fe68
+    Position: {x: 66, y: 1321}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: An ancient being, it was here when this world was born.
+        Wise beyond even my comprehension!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 66ade3dc-a96b-44e7-baea-c26590a3f509
+    Position: {x: 312, y: 1321}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: It will know the answer you seek.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: bc09fe23-53e9-43e8-b87c-82c097b4aed9
+    Position: {x: 559, y: 1321}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: TurboBabaDialogue2Flag3Event
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Now, to go beyond, find the rock behind the house. That's
+        where it begins.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: d193cbf0-3217-4c31-8b92-4a7bc9d4096b
+    Position: {x: 2631, y: -425}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: TurboBabaDialogue2JokesAdd1Event
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Well Bambi, I'm all out of jokes! But if you want, I can
+        tell you something interesting. Speak to me when you are ready.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  ConditionalNodeDatas:
+  - NodeGuid: 48c3abd3-d0af-493b-a1ba-af8a538210a6
+    Position: {x: -32, y: 196}
+    RequiredGameFlagCombo: {fileID: 11400000, guid: 8bdcae49b5f07184d8662082cf288d25,
+      type: 2}
+  - NodeGuid: a12f3c1d-5307-474a-a05c-4c8959b4bb37
+    Position: {x: 985, y: -18}
+    RequiredGameFlagCombo: {fileID: 11400000, guid: 8d74b9bb143d5504bacba54e39ef73a8,
+      type: 2}
+  - NodeGuid: 723d09ef-5233-40eb-a5f9-1fa1313afdc8
+    Position: {x: 733, y: 1122}
+    RequiredGameFlagCombo: {fileID: 11400000, guid: 90d6f732cfe93904db9518c7bcaa4cc2,
+      type: 2}
+  - NodeGuid: 8f3ec7cb-41b7-4d95-a83e-a05b2cd0a9cc
+    Position: {x: 1703, y: -158}
+    RequiredGameFlagCombo: {fileID: 11400000, guid: 470b635a7ca30fd40b9b77059e7182ea,
+      type: 2}
+  - NodeGuid: 7d66b6c2-cc49-4504-a977-8bcb82a4ff79
+    Position: {x: 1942, y: -158}
+    RequiredGameFlagCombo: {fileID: 11400000, guid: de6302198396f0e4995ea93646dc4aab,
+      type: 2}
+  - NodeGuid: 81f5df70-e0c6-4c99-a7e5-729b43aa7837
+    Position: {x: 2176, y: -158}
+    RequiredGameFlagCombo: {fileID: 11400000, guid: 932d73f4ab0749a448d69b79e8300a99,
+      type: 2}
+  - NodeGuid: 9521748f-1ceb-48c6-bf3b-4d376429c78d
+    Position: {x: 2405, y: -158}
+    RequiredGameFlagCombo: {fileID: 11400000, guid: bceca2ec2f7c4be48bd323fe48f4cc49,
+      type: 2}
+  - NodeGuid: 8fd5e2e2-9dc0-426e-865e-21a63be4befa
+    Position: {x: 1438, y: -158}
+    RequiredGameFlagCombo: {fileID: 11400000, guid: 60a5625a45594f146a20bb687d34b902,
+      type: 2}
   TimerChoiceNodeDatas: []
   EndNodeDatas:
   - NodeGuid: 8b7c48b1-70f4-4fc3-a83a-04d14ba5894e
-    Position: {x: 1739, y: 196}
+    Position: {x: 835, y: -147}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: 7ac3ef35-d89c-47ea-8351-4b1413f63c43
+    Position: {x: 1801, y: 822}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: df990dc8-b69c-4583-9a8a-efcc2d20c949
+    Position: {x: 1289, y: 1364}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: 0badc680-13f9-476a-bdcd-424a2d4bc3c9
+    Position: {x: 1553, y: 298}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: a38dd0f1-9dc1-44a9-a07f-b750e0f024eb
+    Position: {x: 2944, y: 423}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: b5c2d371-5691-4a11-bb0c-339610ba83e0
+    Position: {x: 3115, y: -24}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: dc794822-4e5e-44bd-a6ba-991c7f6cf674
+    Position: {x: 2403, y: 575}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: 76f4aa31-873e-4ab4-927d-c0cc71a0e0ca
+    Position: {x: 2174, y: 575}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: 894ec6e4-f975-4b7c-a49a-5662eb1d206c
+    Position: {x: 2631, y: 575}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: c4b98c71-07ad-486c-8bf5-99aaa18cace6
+    Position: {x: 2886, y: -425}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: 4dd077d6-5675-45e8-9702-5208509f1664
+    Position: {x: 781, y: 1321}
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 
   EventNodeDatas: []
   StartNodeDatas:
   - NodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
-    Position: {x: 3, y: 196}
+    Position: {x: -220, y: 196}
     startID: 
   RandomNodeDatas: []
   CommandNodeDatas: []
