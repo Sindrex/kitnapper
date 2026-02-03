@@ -23,7 +23,8 @@ public enum AudioLabel
     CatPurr1, CatPurr2, CatPurr3,
     CattelatteMixPurrs,
     Walk1, Walk2, Walk3,
-    FloristMixPurrs, MayorOfficeMixPurrs, OfficeMixPurrs
+    FloristMixPurrs, MayorOfficeMixPurrs, OfficeMixPurrs,
+    RaveMusic
     //music trond: Menu/Player House, Forest, Town, Cattelatte, (Shrine, University, Credits)
     //music cf: FloristMoment
 }

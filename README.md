@@ -12,8 +12,7 @@ If I change name of events, or replace events with new ones, it will break exist
 * Max amplitude:-8.1Db
 
 # TODO:
-* Add path /signs to Sleepy Cat
-* Add Forest Rave?
+* Add music, music events etc.
 
 Other names that can be used:
 * Kuro (Blue Exorcist) ->
