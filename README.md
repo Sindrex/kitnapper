@@ -12,7 +12,8 @@ If I change name of events, or replace events with new ones, it will break exist
 * Max amplitude:-8.1Db
 
 # TODO:
-* Add music, music events etc.
+* Add music, when done
+* Playtest
 
 Other names that can be used:
 * Kuro (Blue Exorcist) ->

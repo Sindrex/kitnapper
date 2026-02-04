@@ -24,7 +24,10 @@ public enum AudioLabel
     CattelatteMixPurrs,
     Walk1, Walk2, Walk3,
     FloristMixPurrs, MayorOfficeMixPurrs, OfficeMixPurrs,
-    RaveMusic
+    RaveMusic,
+    PlayerHouseMusic, ForestMusic, TownMusic, CattelatteMusic, ShrineMusic, 
+    UniversityMusic, CreditsMusic, OuterRealityMusic,
+    FindusSinbadMusic, MayorMomentMusic, FinaleMomentMusic
     //music trond: Menu/Player House, Forest, Town, Cattelatte, (Shrine, University, Credits)
     //music cf: FloristMoment
 }
@@ -109,6 +112,13 @@ public class AudioManager : MonoBehaviour
 
     public void PlayMusicClip(AudioLabel audioLabel, bool fadeIn, bool queue)
     {
+        var audioClip = AudioClips.FirstOrDefault(e => e.Label == audioLabel).Clip;
+        if(MusicSource.clip == audioClip && (fadeIn || queue))
+        {
+            CLogger.LogWarning("Music is already playing.");
+            return;
+        }
+
         if(fadeIn && queue)
         {
             CLogger.LogWarning("Both fadeIn and queue is true. This is not supported. Defaults to fadeIn only.");
@@ -128,7 +138,6 @@ public class AudioManager : MonoBehaviour
         }
         else
         {
-            var audioClip = AudioClips.FirstOrDefault(e => e.Label == audioLabel).Clip;
             MusicSource.clip = audioClip;
             MusicSource.Play(); //loops
             PlayMusicClipFinal(audioLabel);
