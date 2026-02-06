@@ -101,5 +101,6 @@ public enum GameFlag
     GoldenBalls,
     Grave1, Grave2, Grave3, Grave4, Grave5, Grave6, Grave7, Grave8, Grave9, Grave10, Grave11,
     TurboBabaDialogue1, TurboBabaDialogue2, TurboBabaJokes, TurboBabaDialogue2Flag2, TurboBabaDialogue2Flag3,
-    SleepyCatDialogue1
+    SleepyCatDialogue1,
+    GoldenBall1, GoldenBall2, GoldenBall3
 }

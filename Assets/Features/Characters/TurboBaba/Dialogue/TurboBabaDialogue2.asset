@@ -18,6 +18,10 @@ MonoBehaviour:
   LimitChoiceOptionPerNode: 0
   MaxChoiceOptionPerNode: 8
   NodeLinkDatas:
+  - BaseNodeGuid: 12611948-860f-44ca-83ec-c39c7282715d
+    TargetNodeGuid: 446d886d-272d-48f7-8412-37361369da11
+  - BaseNodeGuid: 446d886d-272d-48f7-8412-37361369da11
+    TargetNodeGuid: da49e726-778e-4d7d-b479-ca0ac80b554f
   - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
     TargetNodeGuid: 48c3abd3-d0af-493b-a1ba-af8a538210a6
   - BaseNodeGuid: d04b433e-246a-4bbe-9d26-8a2f95edba61
@@ -68,8 +72,6 @@ MonoBehaviour:
     TargetNodeGuid: dbb226d1-200e-48af-81a6-7a673f3272e2
   - BaseNodeGuid: dbb226d1-200e-48af-81a6-7a673f3272e2
     TargetNodeGuid: 76f4aa31-873e-4ab4-927d-c0cc71a0e0ca
-  - BaseNodeGuid: d193cbf0-3217-4c31-8b92-4a7bc9d4096b
-    TargetNodeGuid: c4b98c71-07ad-486c-8bf5-99aaa18cace6
   - BaseNodeGuid: a5aa0d89-c108-42f3-b159-4ff3e12378c3
     TargetNodeGuid: b5c2d371-5691-4a11-bb0c-339610ba83e0
   - BaseNodeGuid: 8996bb76-98a8-423b-b7b5-c2ef1e503e53
@@ -82,6 +84,8 @@ MonoBehaviour:
     TargetNodeGuid: bc09fe23-53e9-43e8-b87c-82c097b4aed9
   - BaseNodeGuid: bc09fe23-53e9-43e8-b87c-82c097b4aed9
     TargetNodeGuid: 4dd077d6-5675-45e8-9702-5208509f1664
+  - BaseNodeGuid: d193cbf0-3217-4c31-8b92-4a7bc9d4096b
+    TargetNodeGuid: c4b98c71-07ad-486c-8bf5-99aaa18cace6
   - BaseNodeGuid: 48c3abd3-d0af-493b-a1ba-af8a538210a6
     TargetNodeGuid: d04b433e-246a-4bbe-9d26-8a2f95edba61
   - BaseNodeGuid: 48c3abd3-d0af-493b-a1ba-af8a538210a6
@@ -886,7 +890,7 @@ MonoBehaviour:
       type: 2}
   - NodeGuid: 723d09ef-5233-40eb-a5f9-1fa1313afdc8
     Position: {x: 733, y: 1122}
-    RequiredGameFlagCombo: {fileID: 11400000, guid: 90d6f732cfe93904db9518c7bcaa4cc2,
+    RequiredGameFlagCombo: {fileID: 11400000, guid: 00974f677f3c5c54eb07bea41980420d,
       type: 2}
   - NodeGuid: 8f3ec7cb-41b7-4d95-a83e-a05b2cd0a9cc
     Position: {x: 1703, y: -158}

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: AllGoldenBallsDone
   m_EditorClassIdentifier: 
   Flag: 42
-  BoolValue: 0
+  BoolValue: 1
   StringValue: 
-  IntValue: 10
+  IntValue: 0
   LessThanIntValue: 0
   LessThanOrEqualIntValue: 0
   MoreThanIntValue: 0

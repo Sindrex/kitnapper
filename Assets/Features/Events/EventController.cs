@@ -11,6 +11,7 @@ public class EventController : EventBase
 
     public bool RequireInteract;
     public bool NotInteractable;
+    public bool InvisibleRepeatable;
     public List<ReqFlagBase> RequiredFlags = new List<ReqFlagBase>();
 
     public List<GameObject> TargetObjects;
@@ -66,6 +67,10 @@ public class EventController : EventBase
         {
             IsFinished = true;
             PlayerController.Instance.StopShowInteractHint();
+            IsActive = false;
+        }
+        else if (InvisibleRepeatable)
+        {
             IsActive = false;
         }
 
@@ -125,7 +130,10 @@ public class EventController : EventBase
 
         if (CheckRequirements())
         {
-            PlayerController.Instance.ShowInteractHint();
+            if (!InvisibleRepeatable)
+            {
+                PlayerController.Instance.ShowInteractHint();
+            }
             IsActive = true;
         }
     }
@@ -135,7 +143,10 @@ public class EventController : EventBase
         if (IsFinished || NotInteractable) return;
         if (!other.gameObject.CompareTag("Player")) return;
 
-        PlayerController.Instance.StopShowInteractHint();
+        if(!InvisibleRepeatable)
+        {
+            PlayerController.Instance.StopShowInteractHint();
+        }
         IsActive = false;
     }
     
