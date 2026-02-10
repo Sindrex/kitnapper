@@ -148,6 +148,11 @@ public class GameManager : MonoBehaviour
         {
             //Achievement
             SteamIntegration.UnlockAchievement(SteamAchievement.ACH_FIND_ALL_NAMES);
+            CurrentGameSettings.GameFlags.Add(new GameFlagCombo
+            {
+                Flag = GameFlag.AllNamesKnown,
+                BoolValue = true
+            });
         }
     }
 

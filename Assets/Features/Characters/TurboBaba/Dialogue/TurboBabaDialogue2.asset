@@ -18,10 +18,6 @@ MonoBehaviour:
   LimitChoiceOptionPerNode: 0
   MaxChoiceOptionPerNode: 8
   NodeLinkDatas:
-  - BaseNodeGuid: 12611948-860f-44ca-83ec-c39c7282715d
-    TargetNodeGuid: 446d886d-272d-48f7-8412-37361369da11
-  - BaseNodeGuid: 446d886d-272d-48f7-8412-37361369da11
-    TargetNodeGuid: da49e726-778e-4d7d-b479-ca0ac80b554f
   - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
     TargetNodeGuid: 48c3abd3-d0af-493b-a1ba-af8a538210a6
   - BaseNodeGuid: d04b433e-246a-4bbe-9d26-8a2f95edba61
@@ -110,10 +106,6 @@ MonoBehaviour:
     TargetNodeGuid: 9521748f-1ceb-48c6-bf3b-4d376429c78d
   - BaseNodeGuid: 81f5df70-e0c6-4c99-a7e5-729b43aa7837
     TargetNodeGuid: db3698ae-1dbd-4641-8e4a-aa379f4eb3e0
-  - BaseNodeGuid: 9521748f-1ceb-48c6-bf3b-4d376429c78d
-    TargetNodeGuid: d193cbf0-3217-4c31-8b92-4a7bc9d4096b
-  - BaseNodeGuid: 9521748f-1ceb-48c6-bf3b-4d376429c78d
-    TargetNodeGuid: 2401ea3e-bd2d-4714-bb97-e3dd3887f2ce
   - BaseNodeGuid: 8fd5e2e2-9dc0-426e-865e-21a63be4befa
     TargetNodeGuid: 8f3ec7cb-41b7-4d95-a83e-a05b2cd0a9cc
   - BaseNodeGuid: 8fd5e2e2-9dc0-426e-865e-21a63be4befa
@@ -133,7 +125,23 @@ MonoBehaviour:
   - BaseNodeGuid: 03369b3b-7205-403d-8b91-bb350f287ed7
     TargetNodeGuid: 723d09ef-5233-40eb-a5f9-1fa1313afdc8
   - BaseNodeGuid: 03369b3b-7205-403d-8b91-bb350f287ed7
+    TargetNodeGuid: 4ebba3ec-dd24-427f-9c92-623eb3c9c185
+  - BaseNodeGuid: 4ebba3ec-dd24-427f-9c92-623eb3c9c185
     TargetNodeGuid: 8996bb76-98a8-423b-b7b5-c2ef1e503e53
+  - BaseNodeGuid: 4ebba3ec-dd24-427f-9c92-623eb3c9c185
+    TargetNodeGuid: 8c5ae422-c5f4-407e-9687-15b91b7ee986
+  - BaseNodeGuid: 8c5ae422-c5f4-407e-9687-15b91b7ee986
+    TargetNodeGuid: f32fc396-d121-488b-977b-715d9cf5e539
+  - BaseNodeGuid: 9521748f-1ceb-48c6-bf3b-4d376429c78d
+    TargetNodeGuid: fe02a7cd-c3da-4b74-adae-e44fdd33803e
+  - BaseNodeGuid: 9521748f-1ceb-48c6-bf3b-4d376429c78d
+    TargetNodeGuid: 2401ea3e-bd2d-4714-bb97-e3dd3887f2ce
+  - BaseNodeGuid: fe02a7cd-c3da-4b74-adae-e44fdd33803e
+    TargetNodeGuid: 41c5bfff-478f-4af2-b470-df18b669d70e
+  - BaseNodeGuid: fe02a7cd-c3da-4b74-adae-e44fdd33803e
+    TargetNodeGuid: d193cbf0-3217-4c31-8b92-4a7bc9d4096b
+  - BaseNodeGuid: 41c5bfff-478f-4af2-b470-df18b669d70e
+    TargetNodeGuid: 534ce2c0-5b6f-412e-8fe0-5a274e119c95
   DialogueChoiceNodeDatas:
   - NodeGuid: ab8a9f5a-0819-4ad7-8842-87222352755e
     Position: {x: 884, y: 598}
@@ -239,7 +247,7 @@ MonoBehaviour:
         LanguageGenericType: Choice 04
       RequiredFlag: {fileID: 11400000, guid: b7d8eede12ef39e47b5543722fa0ebbe, type: 2}
     - PortGuid: 281b3863-55eb-4457-b00d-ec80d52767c9
-      InputGuid: 8996bb76-98a8-423b-b7b5-c2ef1e503e53
+      InputGuid: 4ebba3ec-dd24-427f-9c92-623eb3c9c185
       OutputGuid: 03369b3b-7205-403d-8b91-bb350f287ed7
       TextLanguage:
       - languageEnum: 0
@@ -488,7 +496,8 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: I'm pretty sure there's more Golden Balls out there!
+      LanguageGenericType: I'm pretty sure there's more Golden Balls out there! Keep
+        on searching boyo~
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
@@ -770,8 +779,8 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: You see, mysterybee, there's a whole world outside these
-        four walls... Outside of what you perceive!
+      LanguageGenericType: Alright, you are ready. You see, mysterybee, there's a
+        whole world outside these four walls... Outside of what you perceive!
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
@@ -858,8 +867,29 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
+  - NodeGuid: 8c5ae422-c5f4-407e-9687-15b91b7ee986
+    Position: {x: -194, y: 1116}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: You know what, I don't think you are ready actually. Make
+        sure to finish any business in this dimension first, little cat.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
   - NodeGuid: d193cbf0-3217-4c31-8b92-4a7bc9d4096b
-    Position: {x: 2631, y: -425}
+    Position: {x: 2975, y: -425}
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
@@ -874,8 +904,29 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: Well Bambi, I'm all out of jokes! But if you want, I can
-        tell you something interesting. Speak to me when you are ready.
+      LanguageGenericType: Well Bambi, I'm all out of jokes! But if you feel ready
+        to depart from this world, I can tell you something interesting. Speak to
+        me when you are ready.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 41c5bfff-478f-4af2-b470-df18b669d70e
+    Position: {x: 2633, y: -590}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: I don't feel like telling any more jokes, puh!
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
@@ -911,6 +962,14 @@ MonoBehaviour:
   - NodeGuid: 8fd5e2e2-9dc0-426e-865e-21a63be4befa
     Position: {x: 1438, y: -158}
     RequiredGameFlagCombo: {fileID: 11400000, guid: 60a5625a45594f146a20bb687d34b902,
+      type: 2}
+  - NodeGuid: 4ebba3ec-dd24-427f-9c92-623eb3c9c185
+    Position: {x: -220, y: 941}
+    RequiredGameFlagCombo: {fileID: 11400000, guid: 7e8871e1091861e479cecccf48dac801,
+      type: 2}
+  - NodeGuid: fe02a7cd-c3da-4b74-adae-e44fdd33803e
+    Position: {x: 2633, y: -158}
+    RequiredGameFlagCombo: {fileID: 11400000, guid: 63d4605a53210974a9527c58df2768b2,
       type: 2}
   TimerChoiceNodeDatas: []
   EndNodeDatas:
@@ -959,13 +1018,23 @@ MonoBehaviour:
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 
-  - NodeGuid: c4b98c71-07ad-486c-8bf5-99aaa18cace6
-    Position: {x: 2886, y: -425}
+  - NodeGuid: 4dd077d6-5675-45e8-9702-5208509f1664
+    Position: {x: 781, y: 1321}
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 
-  - NodeGuid: 4dd077d6-5675-45e8-9702-5208509f1664
-    Position: {x: 781, y: 1321}
+  - NodeGuid: f32fc396-d121-488b-977b-715d9cf5e539
+    Position: {x: -198, y: 1537}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: c4b98c71-07ad-486c-8bf5-99aaa18cace6
+    Position: {x: 3190, y: -425}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: 534ce2c0-5b6f-412e-8fe0-5a274e119c95
+    Position: {x: 2875, y: -590}
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 

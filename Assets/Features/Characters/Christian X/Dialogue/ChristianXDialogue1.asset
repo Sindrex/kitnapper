@@ -14,38 +14,38 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AllowDialogueSave: 0
   BlockingReopeningDialogue: 0
-  ResetSavedNodeOnChoice: 1
+  ResetSavedNodeOnChoice: 0
   LimitChoiceOptionPerNode: 0
-  MaxChoiceOptionPerNode: 8
+  MaxChoiceOptionPerNode: 0
   NodeLinkDatas:
   - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
     TargetNodeGuid: 3f95f4d3-f6e8-495f-b05a-8e686443e691
-  - BaseNodeGuid: a271c2bc-26a9-4bd1-9c7a-7f4a180ece72
-    TargetNodeGuid: f39fea85-bb90-4356-96d5-6bc9ef608c9d
-  - BaseNodeGuid: 67e0ad07-466d-452a-be5c-fab3c566187f
-    TargetNodeGuid: 2d1e40dc-f103-4d24-8e57-b9a6cd847f0d
-  - BaseNodeGuid: dada1321-21e8-4a91-927f-92111fa6b47d
-    TargetNodeGuid: 4a556b64-221f-4517-b45b-b1178e1e5cf2
-  - BaseNodeGuid: 2673d62b-675d-4f00-bcf7-99066b1701af
-    TargetNodeGuid: 1269b788-c779-42ad-b337-bd76a65bb1c5
-  - BaseNodeGuid: 59458af2-6646-47e4-8819-b9c273fd08b5
-    TargetNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
   - BaseNodeGuid: 3f95f4d3-f6e8-495f-b05a-8e686443e691
     TargetNodeGuid: a271c2bc-26a9-4bd1-9c7a-7f4a180ece72
   - BaseNodeGuid: 3f95f4d3-f6e8-495f-b05a-8e686443e691
     TargetNodeGuid: 59458af2-6646-47e4-8819-b9c273fd08b5
-  - BaseNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
-    TargetNodeGuid: ed70343b-5ec7-4e6e-90cf-ace8d9339ce0
-  - BaseNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
-    TargetNodeGuid: 67e0ad07-466d-452a-be5c-fab3c566187f
-  - BaseNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
-    TargetNodeGuid: dada1321-21e8-4a91-927f-92111fa6b47d
-  - BaseNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
-    TargetNodeGuid: 2673d62b-675d-4f00-bcf7-99066b1701af
+  - BaseNodeGuid: a271c2bc-26a9-4bd1-9c7a-7f4a180ece72
+    TargetNodeGuid: f39fea85-bb90-4356-96d5-6bc9ef608c9d
+  - BaseNodeGuid: 59458af2-6646-47e4-8819-b9c273fd08b5
+    TargetNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
   - BaseNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
     TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
   - BaseNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
     TargetNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
+  - BaseNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
+    TargetNodeGuid: ed70343b-5ec7-4e6e-90cf-ace8d9339ce0
+  - BaseNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
+    TargetNodeGuid: 67e0ad07-466d-452a-be5c-fab3c566187f
+  - BaseNodeGuid: 67e0ad07-466d-452a-be5c-fab3c566187f
+    TargetNodeGuid: 2d1e40dc-f103-4d24-8e57-b9a6cd847f0d
+  - BaseNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
+    TargetNodeGuid: dada1321-21e8-4a91-927f-92111fa6b47d
+  - BaseNodeGuid: dada1321-21e8-4a91-927f-92111fa6b47d
+    TargetNodeGuid: 4a556b64-221f-4517-b45b-b1178e1e5cf2
+  - BaseNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
+    TargetNodeGuid: 2673d62b-675d-4f00-bcf7-99066b1701af
+  - BaseNodeGuid: 2673d62b-675d-4f00-bcf7-99066b1701af
+    TargetNodeGuid: 1269b788-c779-42ad-b337-bd76a65bb1c5
   DialogueChoiceNodeDatas:
   - NodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
     Position: {x: 1128, y: -143}
@@ -239,8 +239,7 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: 'Christian X: Hello there! I was just working on my music
-        score.'
+      LanguageGenericType: 'Christian X: Hello there! I was just working on my meowsic.'
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
@@ -277,7 +276,7 @@ MonoBehaviour:
     Dialogue: {fileID: 0}
     startID: 
   - NodeGuid: 1269b788-c779-42ad-b337-bd76a65bb1c5
-    Position: {x: 1763, y: 447}
+    Position: {x: 1763, y: 451}
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 

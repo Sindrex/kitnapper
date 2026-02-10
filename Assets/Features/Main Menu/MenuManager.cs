@@ -613,15 +613,12 @@ public class MenuManager : MonoBehaviour
     {
         AudioManager.Instance.PlaySFXClip(AudioLabel.ClickSFX);
         CLogger.LogError("MusicCredits button not implemented!");
-        SteamIntegration.UnlockAchievement(SteamAchievement.ACH_TEST);
-        //AudioManager.Instance.PlaySFXClip(AudioLabel.SwapSelectSFX, true);
     }
 
     public void Version()
     {
         AudioManager.Instance.PlaySFXClip(AudioLabel.ClickSFX);
         CLogger.LogError("Version button not implemented!");
-        //AudioManager.Instance.DestroySFXClips(AudioLabel.SwapSelectSFX);
     }
 
     private void UpdateSelectedButton()

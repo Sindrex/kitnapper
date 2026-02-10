@@ -18,38 +18,34 @@ MonoBehaviour:
   LimitChoiceOptionPerNode: 0
   MaxChoiceOptionPerNode: 0
   NodeLinkDatas:
-  - BaseNodeGuid: 12611948-860f-44ca-83ec-c39c7282715d
-    TargetNodeGuid: 890351a3-5b42-4f01-a09b-391e06ac02c5
-  - BaseNodeGuid: 890351a3-5b42-4f01-a09b-391e06ac02c5
-    TargetNodeGuid: 5ed7471e-f3ac-44f9-8480-5adac9871560
-  - BaseNodeGuid: 5ed7471e-f3ac-44f9-8480-5adac9871560
-    TargetNodeGuid: da49e726-778e-4d7d-b479-ca0ac80b554f
   - BaseNodeGuid: 1410bff5-b8e4-4395-b019-f9646230b9b3
     TargetNodeGuid: 0e1c19b6-2f49-4a3b-bf8a-ed3fcec9e909
-  - BaseNodeGuid: d4580fce-01ba-46a0-b953-6136536cbfdf
-    TargetNodeGuid: 0ace4256-c57c-4d8c-aff6-920bae3779da
   - BaseNodeGuid: 0e1c19b6-2f49-4a3b-bf8a-ed3fcec9e909
     TargetNodeGuid: cdd5ba12-3a48-43f5-9c79-3a3efb3da95f
-  - BaseNodeGuid: cdd5ba12-3a48-43f5-9c79-3a3efb3da95f
-    TargetNodeGuid: c42c090c-ca9b-4087-ab91-2622d661f5b4
-  - BaseNodeGuid: cdd5ba12-3a48-43f5-9c79-3a3efb3da95f
-    TargetNodeGuid: 4468d082-fed7-491f-8bd2-64516f1baccd
   - BaseNodeGuid: 4468d082-fed7-491f-8bd2-64516f1baccd
     TargetNodeGuid: 568938d4-5d61-4d8f-8341-82fa2330ed58
+  - BaseNodeGuid: 0ace4256-c57c-4d8c-aff6-920bae3779da
+    TargetNodeGuid: 872ea136-bfba-4a0d-bab4-12dfd5079129
   - BaseNodeGuid: a79ff333-8ac8-49aa-9501-4175167df796
     TargetNodeGuid: d64855da-203e-4053-bddd-05173835f12c
   - BaseNodeGuid: d64855da-203e-4053-bddd-05173835f12c
     TargetNodeGuid: 51fc55e1-3765-4f60-9f69-2a45f60ad3bf
   - BaseNodeGuid: 51fc55e1-3765-4f60-9f69-2a45f60ad3bf
     TargetNodeGuid: 13e7a087-3e27-4467-a46a-1f45fec5856e
-  - BaseNodeGuid: 13e7a087-3e27-4467-a46a-1f45fec5856e
-    TargetNodeGuid: e1462e4a-0484-4db6-81ca-98622ba15481
   - BaseNodeGuid: e1462e4a-0484-4db6-81ca-98622ba15481
     TargetNodeGuid: f2cf0140-361a-4f49-84ad-27148da1636a
-  - BaseNodeGuid: 0ace4256-c57c-4d8c-aff6-920bae3779da
-    TargetNodeGuid: 872ea136-bfba-4a0d-bab4-12dfd5079129
+  - BaseNodeGuid: 13e7a087-3e27-4467-a46a-1f45fec5856e
+    TargetNodeGuid: e1462e4a-0484-4db6-81ca-98622ba15481
   - BaseNodeGuid: 872ea136-bfba-4a0d-bab4-12dfd5079129
     TargetNodeGuid: a79ff333-8ac8-49aa-9501-4175167df796
+  - BaseNodeGuid: cdd5ba12-3a48-43f5-9c79-3a3efb3da95f
+    TargetNodeGuid: c42c090c-ca9b-4087-ab91-2622d661f5b4
+  - BaseNodeGuid: cdd5ba12-3a48-43f5-9c79-3a3efb3da95f
+    TargetNodeGuid: 4468d082-fed7-491f-8bd2-64516f1baccd
+  - BaseNodeGuid: d4580fce-01ba-46a0-b953-6136536cbfdf
+    TargetNodeGuid: 0ace4256-c57c-4d8c-aff6-920bae3779da
+  - BaseNodeGuid: c42c090c-ca9b-4087-ab91-2622d661f5b4
+    TargetNodeGuid: d4580fce-01ba-46a0-b953-6136536cbfdf
   DialogueChoiceNodeDatas:
   - NodeGuid: d4580fce-01ba-46a0-b953-6136536cbfdf
     Position: {x: 562, y: 206}
@@ -162,26 +158,6 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
-  - NodeGuid: a79ff333-8ac8-49aa-9501-4175167df796
-    Position: {x: 1140, y: 205}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: Forty-two.
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
   - NodeGuid: d64855da-203e-4053-bddd-05173835f12c
     Position: {x: 1377, y: 206}
     Character: {fileID: 0}
@@ -281,6 +257,26 @@ MonoBehaviour:
     TextType:
     - languageEnum: 0
       LanguageGenericType: Hmm...
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: a79ff333-8ac8-49aa-9501-4175167df796
+    Position: {x: 1140, y: 205}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Forty-two?
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
