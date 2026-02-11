@@ -14,6 +14,10 @@ If I change name of events, or replace events with new ones, it will break exist
 # TODO:
 * Add music, when done
 * Playtest
+* Text fixes:
+  * Findus: The jig* is up. Different dialogue after DNA test. Who are you? On new node.
+  * Sinbad: dont loop move animations. "Maybe ask People" -> ask towncats.
+* Manekineko should have different writing on chest
 
 Other names that can be used:
 * Kuro (Blue Exorcist) ->

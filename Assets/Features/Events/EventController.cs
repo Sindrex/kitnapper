@@ -12,6 +12,7 @@ public class EventController : EventBase
     public bool RequireInteract;
     public bool NotInteractable;
     public bool InvisibleRepeatable;
+    public bool DoNotRunOnSetup;
     public List<ReqFlagBase> RequiredFlags = new List<ReqFlagBase>();
 
     public List<GameObject> TargetObjects;
@@ -49,6 +50,12 @@ public class EventController : EventBase
 
     public override void Activate(bool activateNextEvent)
     {
+        if(!activateNextEvent && DoNotRunOnSetup)
+        {
+            CLogger.Log($"Event \"{Id}\" not activated at setup!");
+            return;
+        }
+
         CLogger.Log($"Event \"{Id}\" activated!");
 
         //turn on or off TargetObjects

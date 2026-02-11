@@ -409,8 +409,8 @@ public class MenuManager : MonoBehaviour
         //load game animation
         foreach(var text in TitleAnimTexts)
         {
-            TitleText.text = text;
             yield return new WaitForSeconds(TitleAnimWaitSeconds);
+            TitleText.text = text;
         }
         SceneManager.LoadScene(1); //Game
     }

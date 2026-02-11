@@ -864,7 +864,7 @@ MonoBehaviour:
     Myster<color=Yellow>y</color>
   - ------------------- |The COLOR Kitnapper| -------------------  A Purrplexing
     Mystery
-  TitleAnimWaitSeconds: 0.15
+  TitleAnimWaitSeconds: 0.1
 --- !u!1 &452439794
 GameObject:
   m_ObjectHideFlags: 0

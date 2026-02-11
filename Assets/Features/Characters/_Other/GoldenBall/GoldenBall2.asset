@@ -22,10 +22,6 @@ MonoBehaviour:
     TargetNodeGuid: 446d886d-272d-48f7-8412-37361369da11
   - BaseNodeGuid: 446d886d-272d-48f7-8412-37361369da11
     TargetNodeGuid: da49e726-778e-4d7d-b479-ca0ac80b554f
-  - BaseNodeGuid: 12611948-860f-44ca-83ec-c39c7282715d
-    TargetNodeGuid: 446d886d-272d-48f7-8412-37361369da11
-  - BaseNodeGuid: 446d886d-272d-48f7-8412-37361369da11
-    TargetNodeGuid: da49e726-778e-4d7d-b479-ca0ac80b554f
   DialogueChoiceNodeDatas: []
   DialogueNodeDatas:
   - NodeGuid: 446d886d-272d-48f7-8412-37361369da11
@@ -44,7 +40,7 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: You picked up a Golden Ball.
+      LanguageGenericType: You picked up a possibly Golden Ball.
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10

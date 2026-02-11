@@ -40,7 +40,7 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: You picked up a Golden Ball.
+      LanguageGenericType: You picked up a Golden Ball, most likely.
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10

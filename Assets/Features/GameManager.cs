@@ -144,7 +144,8 @@ public class GameManager : MonoBehaviour
         //save CurrentGameSettings
         CurrentGameSettings.Save();
 
-        if (FinaleMomentEvent.CheckIfAllNamesAreDiscovered())
+        var allNamesKnownFlag = CurrentGameSettings.GameFlags.FirstOrDefault(x => x.Flag == GameFlag.AllNamesKnown);
+        if (FinaleMomentEvent.CheckIfAllNamesAreDiscovered() && allNamesKnownFlag == null)
         {
             //Achievement
             SteamIntegration.UnlockAchievement(SteamAchievement.ACH_FIND_ALL_NAMES);

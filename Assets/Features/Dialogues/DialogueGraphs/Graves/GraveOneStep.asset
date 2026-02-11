@@ -21,6 +21,12 @@ MonoBehaviour:
   - BaseNodeGuid: 12611948-860f-44ca-83ec-c39c7282715d
     TargetNodeGuid: 890351a3-5b42-4f01-a09b-391e06ac02c5
   - BaseNodeGuid: 890351a3-5b42-4f01-a09b-391e06ac02c5
+    TargetNodeGuid: 3c410c5e-00e6-4fc3-b4f4-4a7ac40d4e62
+  - BaseNodeGuid: 3c410c5e-00e6-4fc3-b4f4-4a7ac40d4e62
+    TargetNodeGuid: a80920d1-fe82-423c-952b-153fe36c3092
+  - BaseNodeGuid: 3c410c5e-00e6-4fc3-b4f4-4a7ac40d4e62
+    TargetNodeGuid: da49e726-778e-4d7d-b479-ca0ac80b554f
+  - BaseNodeGuid: a80920d1-fe82-423c-952b-153fe36c3092
     TargetNodeGuid: da49e726-778e-4d7d-b479-ca0ac80b554f
   DialogueChoiceNodeDatas: []
   DialogueNodeDatas:
@@ -47,11 +53,35 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
-  ConditionalNodeDatas: []
+  - NodeGuid: a80920d1-fe82-423c-952b-153fe36c3092
+    Position: {x: 906, y: -48}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: You hear a loud groan.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  ConditionalNodeDatas:
+  - NodeGuid: 3c410c5e-00e6-4fc3-b4f4-4a7ac40d4e62
+    Position: {x: 649, y: 220}
+    RequiredGameFlagCombo: {fileID: 11400000, guid: 42c55dd177733e747a0c904e2ffe43cd,
+      type: 2}
   TimerChoiceNodeDatas: []
   EndNodeDatas:
   - NodeGuid: da49e726-778e-4d7d-b479-ca0ac80b554f
-    Position: {x: 718, y: 220}
+    Position: {x: 906, y: 247}
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 

@@ -73,7 +73,7 @@ public static class SteamIntegration
         }
         else
         {
-            CLogger.Log($"Unable to unlock steam achievement: {achievement}");
+            CLogger.LogError($"Unable to unlock steam achievement: {achievement}");
         }
     }
 }

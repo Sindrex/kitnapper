@@ -26,35 +26,22 @@ MonoBehaviour:
     TargetNodeGuid: 4dc86042-5ba1-472e-921a-d6bef568e550
   - BaseNodeGuid: 4dc86042-5ba1-472e-921a-d6bef568e550
     TargetNodeGuid: 8b7c48b1-70f4-4fc3-a83a-04d14ba5894e
+  - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
+    TargetNodeGuid: 9a755bde-ef94-48d7-a86c-2e577b3d9c18
+  - BaseNodeGuid: 9a755bde-ef94-48d7-a86c-2e577b3d9c18
+    TargetNodeGuid: 004fa763-bd44-4bae-8c26-c7720311fb4b
+  - BaseNodeGuid: 004fa763-bd44-4bae-8c26-c7720311fb4b
+    TargetNodeGuid: 4dc86042-5ba1-472e-921a-d6bef568e550
+  - BaseNodeGuid: 4dc86042-5ba1-472e-921a-d6bef568e550
+    TargetNodeGuid: 8b7c48b1-70f4-4fc3-a83a-04d14ba5894e
   DialogueChoiceNodeDatas: []
   DialogueNodeDatas:
-  - NodeGuid: 9a755bde-ef94-48d7-a86c-2e577b3d9c18
-    Position: {x: 234, y: 196}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: SarumanDialogueEvent
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: 'Turbo Baba: Just give this old babushka a few seconds
-        to tear a rift to the other side!'
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
   - NodeGuid: 004fa763-bd44-4bae-8c26-c7720311fb4b
     Position: {x: 499, y: 196}
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
-    Event: 
+    Event: BoulderMoveEvent
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
@@ -87,6 +74,27 @@ MonoBehaviour:
     - languageEnum: 0
       LanguageGenericType: Now, go little mouser! Go beyond! Plus- whatever, I've
         done my part.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 9a755bde-ef94-48d7-a86c-2e577b3d9c18
+    Position: {x: 234, y: 196}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Turbo Baba: Just give this old babushka a few seconds
+        to tear a rift to the other side!'
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
