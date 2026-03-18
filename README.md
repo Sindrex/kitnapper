@@ -1,6 +1,9 @@
 # kitnapper
 Repository for the game project The Color Kitnapper
 
+Started feb 2025.
+First commit july 2025.
+
 # Event notes
 If I change name of events, or replace events with new ones, it will break existing save files.
 
@@ -15,9 +18,9 @@ If I change name of events, or replace events with new ones, it will break exist
 * Add music, when done
 * Playtest
 * Text fixes:
-  * Findus: The jig* is up. Different dialogue after DNA test. Who are you? On new node.
-  * Sinbad: dont loop move animations. "Maybe ask People" -> ask towncats.
-* Manekineko should have different writing on chest
+  * Findus: Different dialogue after DNA test. Who are you? On new node.
+  * Turbo Baba: Interesing topic should go away after moving rock/talking to sleepy cat.
+* Add "this game only uses a keyboard." and "please press these keys" to intro start. Also 
 
 Other names that can be used:
 * Kuro (Blue Exorcist) ->

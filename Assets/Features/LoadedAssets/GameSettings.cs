@@ -11,6 +11,7 @@ public class GameSettings
     public int MusicVolumeIndex { get; set; }
     public int SFXVolumeIndex { get; set; }
     public bool FirstTimeBoot { get; set; } = true;
+    public bool HasContinueGame { get; set; } = false;
     public GamePosition PlayerPosition { get; set; } = new GamePosition();
     public List<GameFlagCombo> GameFlags { get; set; } = new List<GameFlagCombo>();
     public List<EventState> EventStates { get; set; } = new List<EventState>();

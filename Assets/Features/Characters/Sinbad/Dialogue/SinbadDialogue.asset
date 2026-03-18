@@ -18,6 +18,8 @@ MonoBehaviour:
   LimitChoiceOptionPerNode: 0
   MaxChoiceOptionPerNode: 8
   NodeLinkDatas:
+  - BaseNodeGuid: 7296a665-fc20-41ab-bd53-1dedba9fdd32
+    TargetNodeGuid: 9f6f05d3-0f42-4038-a4d9-660f7a8f96ec
   - BaseNodeGuid: 8392f854-d495-45cb-b7e0-26550dea3efc
     TargetNodeGuid: 972f7792-bab5-4888-a929-56a4a72f0c9a
   - BaseNodeGuid: 6a292970-2633-4c96-a1ce-7bdfcc3853cb
@@ -32,6 +34,8 @@ MonoBehaviour:
     TargetNodeGuid: 5219e840-1c49-460f-b77c-006ad2b6f3ec
   - BaseNodeGuid: bae9baee-8c09-4e68-a814-204339e011f7
     TargetNodeGuid: 707ffdbb-3be0-40c6-b8b6-84be7faac9c0
+  - BaseNodeGuid: c91e403a-8a80-42cc-b702-efdcc416abc0
+    TargetNodeGuid: 895fd863-1b0b-4550-83e0-538a566e070a
   - BaseNodeGuid: 674e888a-f637-45e7-9ba5-3f02f1f027b3
     TargetNodeGuid: c03585cc-9875-4b69-b035-ab0bbd12357c
   - BaseNodeGuid: 674e888a-f637-45e7-9ba5-3f02f1f027b3
@@ -40,6 +44,10 @@ MonoBehaviour:
     TargetNodeGuid: bae9baee-8c09-4e68-a814-204339e011f7
   - BaseNodeGuid: a6fb76de-e97f-44ec-b860-c843d0103035
     TargetNodeGuid: 5219e840-1c49-460f-b77c-006ad2b6f3ec
+  - BaseNodeGuid: 9f6f05d3-0f42-4038-a4d9-660f7a8f96ec
+    TargetNodeGuid: c91e403a-8a80-42cc-b702-efdcc416abc0
+  - BaseNodeGuid: 9f6f05d3-0f42-4038-a4d9-660f7a8f96ec
+    TargetNodeGuid: a6fb76de-e97f-44ec-b860-c843d0103035
   - BaseNodeGuid: 06b3c5d4-bfa3-4701-8e2b-a0a480d63836
     TargetNodeGuid: b0aeeb87-9f1f-4be8-9849-b2f09f449ac5
   - BaseNodeGuid: 06b3c5d4-bfa3-4701-8e2b-a0a480d63836
@@ -50,14 +58,6 @@ MonoBehaviour:
     TargetNodeGuid: cd2c5f6e-de40-41ed-b82e-2274af1d3ddd
   - BaseNodeGuid: 5219e840-1c49-460f-b77c-006ad2b6f3ec
     TargetNodeGuid: 06b3c5d4-bfa3-4701-8e2b-a0a480d63836
-  - BaseNodeGuid: 7296a665-fc20-41ab-bd53-1dedba9fdd32
-    TargetNodeGuid: 9f6f05d3-0f42-4038-a4d9-660f7a8f96ec
-  - BaseNodeGuid: c91e403a-8a80-42cc-b702-efdcc416abc0
-    TargetNodeGuid: 895fd863-1b0b-4550-83e0-538a566e070a
-  - BaseNodeGuid: 9f6f05d3-0f42-4038-a4d9-660f7a8f96ec
-    TargetNodeGuid: c91e403a-8a80-42cc-b702-efdcc416abc0
-  - BaseNodeGuid: 9f6f05d3-0f42-4038-a4d9-660f7a8f96ec
-    TargetNodeGuid: a6fb76de-e97f-44ec-b860-c843d0103035
   DialogueChoiceNodeDatas:
   - NodeGuid: 06b3c5d4-bfa3-4701-8e2b-a0a480d63836
     Position: {x: 504, y: 75}
@@ -204,7 +204,7 @@ MonoBehaviour:
     TextType:
     - languageEnum: 0
       LanguageGenericType: 'I SEARCH HERE. YOU KNOW TOWN BETTER. GO OTHER PLACES.
-        MAYBE ASK PEOPLE. YOU POLICECAT NO? '
+        MAYBE ASK CATS. YOU POLICECAT NO? '
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10

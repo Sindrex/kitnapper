@@ -129,19 +129,32 @@ public class MenuManager : MonoBehaviour
         CLogger.Log("Loading GameSettings.");
         if (!GameSettingsLoader.GameSettingsExist())
         {
-            CLogger.Log("Found no GameSettings file!");
+            CLogger.Log("Found no GameSettings file! Making new");
             ContinueText.color = Color.black;
             SelectedRowButton = 1;
+            CurrentGameSettings = new GameSettings();
+            CurrentGameSettings.SaveFromMenu();
+            Screen.fullScreenMode = FullScreenMode.FullScreenWindow;
+            FullScreenModeText.text = GetFullScreenModeName(Screen.fullScreenMode);
         }
         else
         {
             CurrentGameSettings = GameSettingsLoader.Load();
-            Screen.fullScreenMode = CurrentGameSettings.FullScreenMode;
-            FullScreenModeText.text = GetFullScreenModeName(Screen.fullScreenMode);
-            MusicCurrentIndex = CurrentGameSettings.MusicVolumeIndex;
-            SFXCurrentIndex = CurrentGameSettings.MusicVolumeIndex;
-            SetMusicVolumeSlider(false);
-            SetSFXVolumeSlider(false);
+            if (!CurrentGameSettings.HasContinueGame)
+            {
+                CLogger.Log("Found no Continue game!");
+                ContinueText.color = Color.black;
+                SelectedRowButton = 1;
+            }
+            else
+            {
+                Screen.fullScreenMode = CurrentGameSettings.FullScreenMode;
+                FullScreenModeText.text = GetFullScreenModeName(Screen.fullScreenMode);
+                MusicCurrentIndex = CurrentGameSettings.MusicVolumeIndex;
+                SFXCurrentIndex = CurrentGameSettings.MusicVolumeIndex;
+                SetMusicVolumeSlider(false);
+                SetSFXVolumeSlider(false);
+            }
         }
 
         InputController.InputEnabled = true;
@@ -309,7 +322,7 @@ public class MenuManager : MonoBehaviour
         {
             SelectedRowButton--;
             SelectedColumnButton = 0;
-            if (CurrentGameSettings == null && SelectedRowButton < 1)
+            if (!CurrentGameSettings.HasContinueGame && SelectedRowButton < 1)
             {
                 SelectedRowButton = 1;
             }
@@ -371,13 +384,13 @@ public class MenuManager : MonoBehaviour
 
         AudioManager.Instance.PlaySFXClip(AudioLabel.ClickSFX);
         CLogger.Log("Continuing game!");
-        if (CurrentGameSettings != null)
+        if (CurrentGameSettings.HasContinueGame)
         {
             StartCoroutine(StartGame());
         }
         else
         {
-            CLogger.LogError("Player requested to Continue game, but there is no GameSettings!");
+            CLogger.LogError("Player requested to Continue game, but it has no continue game!");
         }
     }
 
@@ -389,7 +402,7 @@ public class MenuManager : MonoBehaviour
 
         AudioManager.Instance.PlaySFXClip(AudioLabel.ClickSFX);
         CLogger.Log("Starting new game!");
-        if (CurrentGameSettings != null)
+        if (CurrentGameSettings.HasContinueGame)
         {
             //open overwrite pane
             NewGameOverwrite.SetActive(true);
@@ -412,6 +425,8 @@ public class MenuManager : MonoBehaviour
             yield return new WaitForSeconds(TitleAnimWaitSeconds);
             TitleText.text = text;
         }
+        CurrentGameSettings.HasContinueGame = true;
+        CurrentGameSettings.SaveFromMenu();
         SceneManager.LoadScene(1); //Game
     }
 
