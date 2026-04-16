@@ -77,6 +77,10 @@ public class MenuManager : MonoBehaviour
     //paw
     public GameObject Paw;
     public Vector3 PawPosition;
+    public GameObject PawW;
+    public GameObject PawS;
+    public GameObject PawA;
+    public GameObject PawD;
 
     //Load game anim
     public Text TitleText;
@@ -117,6 +121,10 @@ public class MenuManager : MonoBehaviour
         NewGameOverwrite.SetActive(false);
         MainButtons.SetActive(false);
         MainView.SetActive(false);
+        PawW.SetActive(false);
+        PawS.SetActive(true);
+        PawA.SetActive(false);
+        PawD.SetActive(false);
         Paw.SetActive(false);
         IntroKeys.SetActive(true);
         MusicSliderParent.SetActive(false);
@@ -132,10 +140,12 @@ public class MenuManager : MonoBehaviour
             CLogger.Log("Found no GameSettings file! Making new");
             ContinueText.color = Color.black;
             SelectedRowButton = 1;
-            CurrentGameSettings = new GameSettings();
+            CurrentGameSettings = new GameSettings()
+            {
+                MusicVolumeIndex = 5,
+                SFXVolumeIndex = 5
+            };
             CurrentGameSettings.SaveFromMenu();
-            Screen.fullScreenMode = FullScreenMode.FullScreenWindow;
-            FullScreenModeText.text = GetFullScreenModeName(Screen.fullScreenMode);
         }
         else
         {
@@ -146,16 +156,14 @@ public class MenuManager : MonoBehaviour
                 ContinueText.color = Color.black;
                 SelectedRowButton = 1;
             }
-            else
-            {
-                Screen.fullScreenMode = CurrentGameSettings.FullScreenMode;
-                FullScreenModeText.text = GetFullScreenModeName(Screen.fullScreenMode);
-                MusicCurrentIndex = CurrentGameSettings.MusicVolumeIndex;
-                SFXCurrentIndex = CurrentGameSettings.MusicVolumeIndex;
-                SetMusicVolumeSlider(false);
-                SetSFXVolumeSlider(false);
-            }
         }
+
+        Screen.fullScreenMode = CurrentGameSettings.FullScreenMode;
+        FullScreenModeText.text = GetFullScreenModeName(Screen.fullScreenMode);
+        MusicCurrentIndex = CurrentGameSettings.MusicVolumeIndex;
+        SFXCurrentIndex = CurrentGameSettings.MusicVolumeIndex;
+        SetMusicVolumeSlider(false);
+        SetSFXVolumeSlider(false);
 
         InputController.InputEnabled = true;
 
@@ -290,6 +298,8 @@ public class MenuManager : MonoBehaviour
         {
             NewGameOverwrite.SetActive(false);
             MainButtons.SetActive(true);
+            PawW.SetActive(true);
+            PawS.SetActive(true);
         }
 
         if (InputController.GetInput(InputPurpose.MENU_CHOICE_UP))
@@ -299,6 +309,8 @@ public class MenuManager : MonoBehaviour
             NoText.fontStyle = FontStyle.Normal;
             Paw.transform.localPosition = YesText.transform.localPosition + PawPosition;
             AudioManager.Instance.PlaySFXClip(AudioLabel.SwapSelectSFX);
+            PawW.SetActive(false);
+            PawS.SetActive(true);
         }
         else if (InputController.GetInput(InputPurpose.MENU_CHOICE_DOWN))
         {
@@ -307,6 +319,8 @@ public class MenuManager : MonoBehaviour
             NoText.fontStyle = FontStyle.Bold;
             Paw.transform.localPosition = NoText.transform.localPosition + PawPosition;
             AudioManager.Instance.PlaySFXClip(AudioLabel.SwapSelectSFX);
+            PawW.SetActive(true);
+            PawS.SetActive(false);
         }
     }
 
@@ -331,6 +345,15 @@ public class MenuManager : MonoBehaviour
                 SelectedRowButton = MinSelectedRowButton;
             }
             AudioManager.Instance.PlaySFXClip(AudioLabel.SwapSelectSFX);
+
+            PawW.SetActive(true);
+            PawS.SetActive(true);
+            PawA.SetActive(false);
+            PawD.SetActive(false);
+            if(SelectedRowButton == 0 || (!CurrentGameSettings.HasContinueGame && SelectedRowButton == 1))
+            {
+                PawW.SetActive(false);
+            }
         }
         else if (InputController.GetInput(InputPurpose.MENU_CHOICE_DOWN))
         {
@@ -341,6 +364,17 @@ public class MenuManager : MonoBehaviour
                 SelectedRowButton = MaxSelectedRowButton;
             }
             AudioManager.Instance.PlaySFXClip(AudioLabel.SwapSelectSFX);
+
+            PawW.SetActive(true);
+            PawS.SetActive(true);
+            PawA.SetActive(false);
+            PawD.SetActive(false);
+            if(SelectedRowButton == MaxSelectedRowButton)
+            {
+                PawS.SetActive(false);
+                PawA.SetActive(true);
+                PawD.SetActive(true);
+            }
         }
         else if (InputController.GetInput(InputPurpose.MENU_CHOICE_LEFT))
         {
@@ -352,6 +386,15 @@ public class MenuManager : MonoBehaviour
                     SelectedColumnButton = MinSelectedColumnButton;
                 }
                 AudioManager.Instance.PlaySFXClip(AudioLabel.SwapSelectSFX);
+
+                PawW.SetActive(true);
+                PawS.SetActive(false);
+                PawA.SetActive(true);
+                PawD.SetActive(true);
+                if(SelectedColumnButton == MinSelectedColumnButton)
+                {
+                    PawA.SetActive(false);
+                }
             }
         }
         else if (InputController.GetInput(InputPurpose.MENU_CHOICE_RIGHT))
@@ -364,6 +407,15 @@ public class MenuManager : MonoBehaviour
                     SelectedColumnButton = MaxSelectedColumnButton;
                 }
                 AudioManager.Instance.PlaySFXClip(AudioLabel.SwapSelectSFX);
+
+                PawW.SetActive(true);
+                PawS.SetActive(false);
+                PawA.SetActive(true);
+                PawD.SetActive(true);
+                if(SelectedColumnButton == MaxSelectedColumnButton)
+                {
+                    PawD.SetActive(false);
+                }
             }
         }
         else if (InputController.GetInput(InputPurpose.INTERACT))
@@ -401,6 +453,11 @@ public class MenuManager : MonoBehaviour
         //else start game
 
         AudioManager.Instance.PlaySFXClip(AudioLabel.ClickSFX);
+        PawW.SetActive(true);
+        PawS.SetActive(false);
+        PawA.SetActive(false);
+        PawD.SetActive(false);
+
         CLogger.Log("Starting new game!");
         if (CurrentGameSettings.HasContinueGame)
         {
@@ -489,6 +546,11 @@ public class MenuManager : MonoBehaviour
         MusicSliderLabel.fontStyle = FontStyle.Bold;
         SFXSliderText.fontStyle = FontStyle.Normal;
         SFXSliderLabel.fontStyle = FontStyle.Normal;
+
+        PawW.SetActive(true);
+        PawS.SetActive(false);
+        PawA.SetActive(true);
+        PawD.SetActive(true);
     }
 
     public void SetSoundSetting()
@@ -524,6 +586,8 @@ public class MenuManager : MonoBehaviour
                 SFXSliderText.fontStyle = FontStyle.Bold;
                 SFXSliderLabel.fontStyle = FontStyle.Bold;
                 AudioManager.Instance.PlaySFXClip(AudioLabel.SwapSelectSFX);
+                PawW.SetActive(false);
+                PawS.SetActive(true);
             }
         }
         else if (!MusicSelected)
@@ -557,6 +621,8 @@ public class MenuManager : MonoBehaviour
                 SFXSliderText.fontStyle = FontStyle.Normal;
                 SFXSliderLabel.fontStyle = FontStyle.Normal;
                 AudioManager.Instance.PlaySFXClip(AudioLabel.SwapSelectSFX);
+                PawW.SetActive(true);
+                PawS.SetActive(false);
             }
         }
         
@@ -565,6 +631,10 @@ public class MenuManager : MonoBehaviour
             MusicSliderParent.SetActive(false);
             SFXSliderParent.SetActive(false);
             AudioManager.Instance.PlaySFXClip(AudioLabel.ClickSFX);
+            PawW.SetActive(true);
+            PawS.SetActive(false);
+            PawA.SetActive(false);
+            PawD.SetActive(true);
         }
     }
 

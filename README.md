@@ -1,8 +1,10 @@
 # kitnapper
-Repository for the game project The Color Kitnapper
+Repository for the game project The Color Kitnapper.
+https://store.steampowered.com/app/4154720/The_Color_Kitnapper/
 
 Started feb 2025.
 First commit july 2025.
+Released XXXX 2026.
 
 # Event notes
 If I change name of events, or replace events with new ones, it will break existing save files.
@@ -20,7 +22,13 @@ If I change name of events, or replace events with new ones, it will break exist
 * Text fixes:
   * Findus: Different dialogue after DNA test. Who are you? On new node.
   * Turbo Baba: Interesing topic should go away after moving rock/talking to sleepy cat.
-* Add "this game only uses a keyboard." and "please press these keys" to intro start. Also 
+* Add stuff to house when getting achivs:
+  * Add balls to player house after finding
+  * Add catnip plant to player house after achievement
+  * Add a router/antenna after getting Catworking.
+  * Add new 42 pillow to bedroom after sleepy cat.
+* Add ESC quit and Dialogue log R to top left
+* Add Achievement images to Steam
 
 Other names that can be used:
 * Kuro (Blue Exorcist) ->

@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class DialogueChoiceController : MonoBehaviour
 {
     public Text BorderText;
-    public Text ChoiceText; //max 2 linjes of 10 characters
+    public Text ChoiceText; //max 2 lines of 10 characters
     public bool IsActive = false;
 
     //Spawn letters one by one
@@ -15,6 +15,15 @@ public class DialogueChoiceController : MonoBehaviour
     public float TimeBetweenEachLetterSpawn;
     public float CurrentLetterSpawnTime;
     public List<char> CurrentTextList; //reversed
+
+    //Controls hint paw
+    public int Index; //index of this choice among the choices spawned
+    public int MaxIndex;
+    public bool IsFirstChoice => Index == 0;
+    public bool IsLastChoice => Index == MaxIndex;
+    public GameObject Paw;
+    public GameObject PawW;
+    public GameObject PawS;
 
     void FixedUpdate()
     {
@@ -48,17 +57,23 @@ public class DialogueChoiceController : MonoBehaviour
         CurrentTextList = text.ToCharArray().Reverse().ToList();
         IsBusySpawningLetters = true;
         CurrentLetterSpawnTime = 0;
+
+        Paw.SetActive(false);
     }
 
     public void SetAsActiveChoice()
     {
         IsActive = true;
         ChoiceText.fontStyle = FontStyle.Bold;
+        Paw.SetActive(true);
+        PawW.SetActive(!IsFirstChoice);
+        PawS.SetActive(!IsLastChoice);
     }
 
     public void SetAsNotActiveChoice()
     {
         IsActive = false;
         ChoiceText.fontStyle = FontStyle.Normal;
+        Paw.SetActive(false);
     }
 }

@@ -204,6 +204,12 @@ public class MyDialogueManager : MonoBehaviour
             }
         }
 
+        var maxIndex = ChoiceControllers.Count - 1;
+        for (int i = 0; i < ChoiceControllers.Count; i++)
+        {
+            ChoiceControllers[i].Index = i;
+            ChoiceControllers[i].MaxIndex = maxIndex;
+        }
         ChoiceControllers[0].SetAsActiveChoice();
     }
 
