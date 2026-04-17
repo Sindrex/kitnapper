@@ -76,4 +76,19 @@ public static class SteamIntegration
             CLogger.LogError($"Unable to unlock steam achievement: {achievement}");
         }
     }
+
+    public static bool IsAchievementUnlocked(SteamAchievement achievement)
+    {
+        try
+        {
+            var ach = new Achievement(achievement.ToString());
+            return ach.State;
+        }
+        catch(Exception e)
+        {
+            CLogger.LogError($"Unable to check state of steam achievement: {achievement}");
+            CLogger.LogError(e);
+            return false;
+        }
+    }
 }

@@ -9,6 +9,7 @@ public class CatnipEvent : EventBase
     public float NewSpeedSlow = 200;
     public float WaitForSeconds = 15;
     private float OldSpeed;
+    public string FlowerSpawnEventId;
 
     public override void Activate(bool activateNextEvent)
     {
@@ -57,10 +58,11 @@ public class CatnipEvent : EventBase
         {
             Flag = GameFlag.CatnipDown
         };
-        if(catnipUpFlag.BoolValue && catnipDownFlag.BoolValue)
+        if(catnipUpFlag.BoolValue && catnipDownFlag.BoolValue && !SteamIntegration.IsAchievementUnlocked(SteamAchievement.ACH_CATNIP_UP_DOWN))
         {
             //Achievement
             SteamIntegration.UnlockAchievement(SteamAchievement.ACH_CATNIP_UP_DOWN);
+            GameManager.Instance.FindEvent(FlowerSpawnEventId)?.Activate(true);
         }
     }
 }

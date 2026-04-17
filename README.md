@@ -24,11 +24,7 @@ If I change name of events, or replace events with new ones, it will break exist
   * Turbo Baba: Interesing topic should go away after moving rock/talking to sleepy cat.
 * Add stuff to house when getting achivs:
   * Add balls to player house after finding
-  * Add catnip plant to player house after achievement
-  * Add a router/antenna after getting Catworking.
-  * Add new 42 pillow to bedroom after sleepy cat.
-* Add ESC quit and Dialogue log R to top left
-* Add Achievement images to Steam
+  * Add new death pillow to bedroom after sleepy cat.
 
 Other names that can be used:
 * Kuro (Blue Exorcist) ->
