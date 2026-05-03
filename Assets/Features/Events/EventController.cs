@@ -103,8 +103,8 @@ public class EventController : EventBase
             {
                 if (nextEventBase.CheckRequirements())
                 {
-                    CLogger.Log("Activating NextEventBase");
-                    NextEventBase.Activate(true);
+                    CLogger.Log("Activating NextEventBase from NextEventBases");
+                    nextEventBase.Activate(true);
                 }
             }
         }

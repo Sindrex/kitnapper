@@ -8,7 +8,8 @@ public enum Reaction
     Question,
     Happy,
     Sad,
-    Angry
+    Angry,
+    Love
 }
 
 public class ReactionController : MonoBehaviour
@@ -20,12 +21,14 @@ public class ReactionController : MonoBehaviour
     public string HappyAnimation;
     public string SadAnimation;
     public string AngryAnimation;
+    public string LoveAnimation;
 
     public GameObject ExclamationGameObject;
     public GameObject QuestionGameObject;
     public GameObject HappyGameObject;
     public GameObject SadGameObject;
     public GameObject AngryGameObject;
+    public GameObject LoveGameObject;
 
     public AudioLabel ReactionSFX;
 
@@ -39,6 +42,7 @@ public class ReactionController : MonoBehaviour
         HappyGameObject.SetActive(false);
         SadGameObject.SetActive(false);
         AngryGameObject.SetActive(false);
+        LoveGameObject.SetActive(false);
     }
 
     public void StartReaction(Reaction reaction)
@@ -67,6 +71,10 @@ public class ReactionController : MonoBehaviour
                 AngryGameObject.SetActive(true);
                 ReactionAnimator.Play(AngryAnimation);
                 break;
+            case Reaction.Love:
+                LoveGameObject.SetActive(true);
+                ReactionAnimator.Play(LoveAnimation);
+                break;
         }
 
         StartCoroutine(StopReaction());
@@ -80,6 +88,7 @@ public class ReactionController : MonoBehaviour
         HappyGameObject.SetActive(false);
         SadGameObject.SetActive(false);
         AngryGameObject.SetActive(false);
+        LoveGameObject.SetActive(false);
         ReactionAnimator.Play(IdleAnim);
     }
 }

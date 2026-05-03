@@ -93,7 +93,7 @@ MonoBehaviour:
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
-    Event: 
+    Event: FindusRichardMomentFindusSadEvent
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
@@ -171,26 +171,6 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
-  - NodeGuid: cd3a1386-9eb0-448f-9dde-947117b2878b
-    Position: {x: 1788, y: 308}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: 'Findus: Win-win, as they say?'
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
   - NodeGuid: 5e523523-d6a7-40fa-84b0-392f1bba6f08
     Position: {x: 2020, y: 308}
     Character: {fileID: 0}
@@ -250,6 +230,26 @@ MonoBehaviour:
     - languageEnum: 0
       LanguageGenericType: 'Richard: Yes. Detective, you should go check on the Mayor.
         I heard he is interested in hearing how you are progressing on the case.'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: cd3a1386-9eb0-448f-9dde-947117b2878b
+    Position: {x: 1788, y: 308}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: FindusRichardMomentFindusHappyEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Findus: Win-win, as they say?'
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10

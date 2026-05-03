@@ -20,10 +20,8 @@ MonoBehaviour:
   NodeLinkDatas:
   - BaseNodeGuid: ab8109d7-526d-427b-8fc5-432554261caf
     TargetNodeGuid: 5a09c406-ebed-4fa7-abb0-a07bfe1dce79
-  - BaseNodeGuid: 5a09c406-ebed-4fa7-abb0-a07bfe1dce79
-    TargetNodeGuid: 7d804a35-839a-4bf6-8c47-97c247beec44
-  - BaseNodeGuid: 5a09c406-ebed-4fa7-abb0-a07bfe1dce79
-    TargetNodeGuid: 68583a04-5f47-4a2d-a939-7325bd397e63
+  - BaseNodeGuid: 68583a04-5f47-4a2d-a939-7325bd397e63
+    TargetNodeGuid: b8bbda71-045b-434e-944f-deaa5ad3a240
   - BaseNodeGuid: 7d804a35-839a-4bf6-8c47-97c247beec44
     TargetNodeGuid: 527a583c-b9fc-4cb6-9bf3-83c1bee2c00c
   - BaseNodeGuid: 527a583c-b9fc-4cb6-9bf3-83c1bee2c00c
@@ -32,16 +30,18 @@ MonoBehaviour:
     TargetNodeGuid: ddb8042e-448d-4712-8e6b-10e14263bee8
   - BaseNodeGuid: ddb8042e-448d-4712-8e6b-10e14263bee8
     TargetNodeGuid: 12441980-46db-471f-b394-d9ed8ebf9a30
-  - BaseNodeGuid: 12441980-46db-471f-b394-d9ed8ebf9a30
-    TargetNodeGuid: bd68af0e-26ee-4343-bd54-4f8fa4aab1eb
-  - BaseNodeGuid: 68583a04-5f47-4a2d-a939-7325bd397e63
-    TargetNodeGuid: b8bbda71-045b-434e-944f-deaa5ad3a240
   - BaseNodeGuid: bd68af0e-26ee-4343-bd54-4f8fa4aab1eb
     TargetNodeGuid: aa1a1ff7-001c-4104-99d7-861b6794179a
-  - BaseNodeGuid: aa1a1ff7-001c-4104-99d7-861b6794179a
-    TargetNodeGuid: ec522457-a47d-4527-96db-0d0a10a57fc2
+  - BaseNodeGuid: 12441980-46db-471f-b394-d9ed8ebf9a30
+    TargetNodeGuid: bd68af0e-26ee-4343-bd54-4f8fa4aab1eb
   - BaseNodeGuid: ec522457-a47d-4527-96db-0d0a10a57fc2
     TargetNodeGuid: 390ea3cc-4886-46ab-b890-3ad9f3dfd532
+  - BaseNodeGuid: 5a09c406-ebed-4fa7-abb0-a07bfe1dce79
+    TargetNodeGuid: 7d804a35-839a-4bf6-8c47-97c247beec44
+  - BaseNodeGuid: 5a09c406-ebed-4fa7-abb0-a07bfe1dce79
+    TargetNodeGuid: 68583a04-5f47-4a2d-a939-7325bd397e63
+  - BaseNodeGuid: aa1a1ff7-001c-4104-99d7-861b6794179a
+    TargetNodeGuid: ec522457-a47d-4527-96db-0d0a10a57fc2
   DialogueChoiceNodeDatas:
   - NodeGuid: aa1a1ff7-001c-4104-99d7-861b6794179a
     Position: {x: 4566, y: 573}
@@ -98,7 +98,7 @@ MonoBehaviour:
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
-    Event: 
+    Event: ShrineMayorExclamationEvent
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
@@ -182,7 +182,7 @@ MonoBehaviour:
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
-    Event: 
+    Event: ShrineMayorSadEvent
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 

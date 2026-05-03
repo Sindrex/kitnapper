@@ -270,7 +270,7 @@ MonoBehaviour:
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
-    Event: 
+    Event: FindusMiloMomentMiloExclamationEvent
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
@@ -351,7 +351,7 @@ MonoBehaviour:
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
-    Event: 
+    Event: FindusMiloMomentFindusAngryEvent
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
@@ -372,7 +372,7 @@ MonoBehaviour:
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
-    Event: 
+    Event: FindusMiloMomentFindusSadEvent
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
@@ -385,27 +385,6 @@ MonoBehaviour:
     - languageEnum: 0
       LanguageGenericType: ... Sorry for the yapping Detective. I just want things
         to go back to how it was...
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
-  - NodeGuid: 02e72912-89ec-4314-9a25-ffd8f0a483a8
-    Position: {x: 1911, y: 1308}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: And you want to know the worst part? My toy ball was STOLEN
-        the other day! I'm sure it was Richard or whatever his name was...
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
@@ -549,6 +528,27 @@ MonoBehaviour:
     TextType:
     - languageEnum: 0
       LanguageGenericType: 'Dr. Milo: Oh Findus, you old fool...'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 02e72912-89ec-4314-9a25-ffd8f0a483a8
+    Position: {x: 1911, y: 1308}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: FindusMiloMomentFindusAngryEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: And you want to know the worst part? My toy ball was STOLEN
+        the other day! I'm sure it was Riclard or whatever his name was...
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10

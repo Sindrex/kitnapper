@@ -13,7 +13,7 @@ public class SoundEvent : EventBase
 
     public override void Activate(bool activateNextEvent)
     {
-        CLogger.Log("SoundEvent activated!");
+        CLogger.Log($"SoundEvent activated: {AudioLabelToPlay}");
         if (IsMusic)
         {
             AudioManager.Instance?.PlayMusicClip(AudioLabelToPlay, FadeInMusic, QueueMusic);
