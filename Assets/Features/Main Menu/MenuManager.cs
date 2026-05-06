@@ -477,6 +477,7 @@ public class MenuManager : MonoBehaviour
     IEnumerator StartGame()
     {
         //load game animation
+        AudioManager.Instance.PlayMusicClip(AudioLabel.MenuMusic2, false, false, true);
         foreach(var text in TitleAnimTexts)
         {
             yield return new WaitForSeconds(TitleAnimWaitSeconds);
@@ -509,14 +510,14 @@ public class MenuManager : MonoBehaviour
         AudioManager.Instance.PlaySFXClip(AudioLabel.ClickSFX);
         if (CurrentGameSettings.FullScreenMode == FullScreenMode.FullScreenWindow)
         {
-            Screen.fullScreenMode = FullScreenMode.Windowed;
+            Screen.SetResolution(1280, 720, FullScreenMode.Windowed);
             CurrentGameSettings.FullScreenMode = FullScreenMode.Windowed;
             CurrentGameSettings.SaveFromMenu();
             FullScreenModeText.text = GetFullScreenModeName(FullScreenMode.Windowed);
         }
         else if (CurrentGameSettings.FullScreenMode == FullScreenMode.Windowed)
         {
-            Screen.fullScreenMode = FullScreenMode.FullScreenWindow;
+            Screen.SetResolution(1920, 1080, FullScreenMode.FullScreenWindow);
             CurrentGameSettings.FullScreenMode = FullScreenMode.FullScreenWindow;
             CurrentGameSettings.SaveFromMenu();
             FullScreenModeText.text = GetFullScreenModeName(FullScreenMode.FullScreenWindow);
@@ -528,7 +529,7 @@ public class MenuManager : MonoBehaviour
         switch (mode)
         {
             case FullScreenMode.FullScreenWindow:
-                return "FullScreen Window";
+                return "Full\r\nScreen";
             case FullScreenMode.Windowed:
                 return "Windowed";
         }

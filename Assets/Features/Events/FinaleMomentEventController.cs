@@ -78,7 +78,7 @@ public class FinaleMomentEventController : EventBase
         PlayerController.Instance.CanMove = true;
         PlayerController.Instance.gameObject.transform.localPosition = PlayerStartPosition;
         CameraController.Instance.Player.SetActive(true);
-        AudioManager.Instance.PlayMusicClip(AudioLabel.MenuMusic, false, true);
+        AudioManager.Instance.PlayMusicClip(AudioLabel.MenuMusic2, false, true);
 
         //Achievement
         SteamIntegration.UnlockAchievement(SteamAchievement.ACH_FINISH_GAME);

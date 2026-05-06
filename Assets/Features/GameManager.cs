@@ -281,6 +281,7 @@ public class GameManager : MonoBehaviour
             return;
         }
 
+        AudioManager.Instance.PlayMusicClip(AudioLabel.MenuMusic, false, false);
         CurrentGameSettings.Save();
         SceneManager.LoadScene(0); //Menu
     }

@@ -94,6 +94,7 @@ public class DialogueController : MonoBehaviour
         else if (currentNode is DialogueChoiceNodeData choiceNodeData)
         {
             MyDialogueManager.Instance.LoadChoiceDialogue(choiceNodeData);
+            GameManager.Instance.FindEvent(choiceNodeData.Event)?.Activate(true);
         }
         else if (currentNode is ConditionalNodeData conditionalNodeData)
         {

@@ -18,46 +18,22 @@ MonoBehaviour:
   LimitChoiceOptionPerNode: 0
   MaxChoiceOptionPerNode: 8
   NodeLinkDatas:
-  - BaseNodeGuid: 12611948-860f-44ca-83ec-c39c7282715d
-    TargetNodeGuid: 890351a3-5b42-4f01-a09b-391e06ac02c5
-  - BaseNodeGuid: 890351a3-5b42-4f01-a09b-391e06ac02c5
-    TargetNodeGuid: da49e726-778e-4d7d-b479-ca0ac80b554f
   - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
     TargetNodeGuid: 9a755bde-ef94-48d7-a86c-2e577b3d9c18
   - BaseNodeGuid: 9a755bde-ef94-48d7-a86c-2e577b3d9c18
     TargetNodeGuid: 004fa763-bd44-4bae-8c26-c7720311fb4b
   - BaseNodeGuid: 004fa763-bd44-4bae-8c26-c7720311fb4b
     TargetNodeGuid: 4dc86042-5ba1-472e-921a-d6bef568e550
-  - BaseNodeGuid: cb4d95e3-2759-46d4-8ce2-9821d52d3bfd
-    TargetNodeGuid: 24dcde15-8fcf-449a-86cf-ea517d96e655
   - BaseNodeGuid: 4dc86042-5ba1-472e-921a-d6bef568e550
     TargetNodeGuid: cb4d95e3-2759-46d4-8ce2-9821d52d3bfd
+  - BaseNodeGuid: cb4d95e3-2759-46d4-8ce2-9821d52d3bfd
+    TargetNodeGuid: 24dcde15-8fcf-449a-86cf-ea517d96e655
   - BaseNodeGuid: 24dcde15-8fcf-449a-86cf-ea517d96e655
     TargetNodeGuid: 4b76255d-530a-4fc8-bded-7cc70a089d86
   - BaseNodeGuid: 4b76255d-530a-4fc8-bded-7cc70a089d86
     TargetNodeGuid: 8b7c48b1-70f4-4fc3-a83a-04d14ba5894e
   DialogueChoiceNodeDatas: []
   DialogueNodeDatas:
-  - NodeGuid: 9a755bde-ef94-48d7-a86c-2e577b3d9c18
-    Position: {x: 234, y: 196}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: SarumanDialogueEvent
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: '???: Gaaaaah!'
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
   - NodeGuid: 004fa763-bd44-4bae-8c26-c7720311fb4b
     Position: {x: 499, y: 196}
     Character: {fileID: 0}
@@ -84,7 +60,7 @@ MonoBehaviour:
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
-    Event: 
+    Event: TurboBabaGraveAngryEvent
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
@@ -158,8 +134,28 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: But for now, this meowvelus cat is taking off. I will
-        be back.
+      LanguageGenericType: But for now, this meowvelus cat is taking off. Mark my
+        name, TURBO BABA will be back!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 9a755bde-ef94-48d7-a86c-2e577b3d9c18
+    Position: {x: 234, y: 196}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: TurboBabaGraveExclamationEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: '???: Gaaaaah!'
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10

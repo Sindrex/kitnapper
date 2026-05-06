@@ -100,6 +100,9 @@ namespace MeetAndTalk
         public PortraitPosition SecoundPortraitPosition;
         public string SecoundEmotion;
 
+        //Event
+        public string Event;
+
         // Dialogue Content
         public List<LanguageGeneric<AudioClip>> AudioClips;
         public List<LanguageGeneric<string>> TextType;

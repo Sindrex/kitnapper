@@ -54,14 +54,14 @@ MonoBehaviour:
     TargetNodeGuid: b786d6d8-053e-47c6-91bd-7d55189bc7b8
   - BaseNodeGuid: 1f614805-624f-4e85-a599-cd7f041c6250
     TargetNodeGuid: 316fb9c9-db01-46a3-884f-32e0de2856bd
-  - BaseNodeGuid: 316fb9c9-db01-46a3-884f-32e0de2856bd
-    TargetNodeGuid: 58c228fb-3476-4802-95b8-92c1ff480128
   - BaseNodeGuid: be2d7c4a-3521-4be9-8744-b8ea54e1c2f4
     TargetNodeGuid: b260ccd2-e8a7-4ebf-b930-46077a7c802c
   - BaseNodeGuid: b786d6d8-053e-47c6-91bd-7d55189bc7b8
     TargetNodeGuid: 7bb69529-249a-4d71-9e2f-cc33b939d1cf
   - BaseNodeGuid: 7bb69529-249a-4d71-9e2f-cc33b939d1cf
     TargetNodeGuid: 9a071f9e-7812-4a7c-a6e7-c9721266a226
+  - BaseNodeGuid: 316fb9c9-db01-46a3-884f-32e0de2856bd
+    TargetNodeGuid: 58c228fb-3476-4802-95b8-92c1ff480128
   - BaseNodeGuid: feb6638d-ba99-4fe9-96c1-7042493b1c74
     TargetNodeGuid: f0493546-043c-484c-8707-c3e8fa894f29
   - BaseNodeGuid: feb6638d-ba99-4fe9-96c1-7042493b1c74
@@ -91,6 +91,7 @@ MonoBehaviour:
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
+    Event: 
     AudioClips:
     - languageEnum: 0
       LanguageGenericType: {fileID: 0}
@@ -147,6 +148,7 @@ MonoBehaviour:
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
+    Event: 
     AudioClips:
     - languageEnum: 0
       LanguageGenericType: {fileID: 0}
@@ -176,6 +178,7 @@ MonoBehaviour:
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
+    Event: 
     AudioClips:
     - languageEnum: 0
       LanguageGenericType: {fileID: 0}
@@ -205,6 +208,7 @@ MonoBehaviour:
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
+    Event: FinaleMomentAllReactionExclamationEvent
     AudioClips:
     - languageEnum: 0
       LanguageGenericType: {fileID: 0}
@@ -234,6 +238,7 @@ MonoBehaviour:
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
+    Event: FinaleMomentMayorExclamationEvent
     AudioClips:
     - languageEnum: 0
       LanguageGenericType: {fileID: 0}
@@ -263,6 +268,7 @@ MonoBehaviour:
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
+    Event: 
     AudioClips:
     - languageEnum: 0
       LanguageGenericType: {fileID: 0}
@@ -292,6 +298,7 @@ MonoBehaviour:
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
+    Event: 
     AudioClips:
     - languageEnum: 0
       LanguageGenericType: {fileID: 0}
@@ -360,7 +367,7 @@ MonoBehaviour:
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
-    Event: 
+    Event: FinaleMomentMayorQuestionEvent
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
@@ -380,7 +387,7 @@ MonoBehaviour:
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
-    Event: 
+    Event: FinaleMomentFindusHappyEvent
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
@@ -401,7 +408,7 @@ MonoBehaviour:
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
-    Event: 
+    Event: FinaleMomentRichardHappyEvent
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
@@ -442,7 +449,7 @@ MonoBehaviour:
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
-    Event: 
+    Event: FinaleMomentMayorSadEvent
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
@@ -500,58 +507,12 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
-  - NodeGuid: da467f11-0197-406f-9ab6-053cb7aeda19
-    Position: {x: 6654, y: 999}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: 'Milkcat: Of course we can Mayor! It''s all milk under
-        the bridge now.'
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
-  - NodeGuid: 439f4f6e-1f47-485e-9964-aa54e35d45d4
-    Position: {x: 6874, y: 999}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: 'Poppy: Yeah!
-
-        Luna: We all make mistakes, darling.
-
-        SINBAD:
-        YES!'
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
   - NodeGuid: c0f5e7a6-a1e9-400a-8fe7-db582534ea0a
     Position: {x: 7108, y: 999}
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
-    Event: 
+    Event: FinaleMomentMayorLoveEvent
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
@@ -592,7 +553,7 @@ MonoBehaviour:
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
-    Event: 
+    Event: PlayerExclamationEvent
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
@@ -612,7 +573,7 @@ MonoBehaviour:
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
-    Event: 
+    Event: FinaleMomentScientistExclamationEvent
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
@@ -649,27 +610,6 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
-  - NodeGuid: 1f614805-624f-4e85-a599-cd7f041c6250
-    Position: {x: 5467, y: 999}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: 'Poppy: I certainly learned a thing or two as well! It''s
-        not just the colors of plants or cats that are pretty.'
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
   - NodeGuid: be2d7c4a-3521-4be9-8744-b8ea54e1c2f4
     Position: {x: 5958, y: 1366}
     Character: {fileID: 0}
@@ -695,7 +635,7 @@ MonoBehaviour:
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
-    Event: 
+    Event: FinaleMomentMayorExclamationEvent
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
@@ -736,7 +676,7 @@ MonoBehaviour:
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
-    Event: 
+    Event: FinaleMomentFloristLoveEvent
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
@@ -748,6 +688,73 @@ MonoBehaviour:
     TextType:
     - languageEnum: 0
       LanguageGenericType: So many things combine to make us all beautiful!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: da467f11-0197-406f-9ab6-053cb7aeda19
+    Position: {x: 6654, y: 999}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: FinaleMomentMilkcatLoveEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Milkcat: Of course we can Mayor! It''s all milk under
+        the bridge now.'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 439f4f6e-1f47-485e-9964-aa54e35d45d4
+    Position: {x: 6874, y: 999}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: FinaleMomentFloristLoveEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Poppy: Yeah!
+
+        Luna: We all make mistakes, darling.
+
+        SINBAD:
+        YES!'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 1f614805-624f-4e85-a599-cd7f041c6250
+    Position: {x: 5467, y: 999}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Poppy: I certainly learned a thing or two as well! It''s
+        not just the colors of plants or cats that are pretty.'
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10

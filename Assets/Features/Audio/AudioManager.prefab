@@ -31,6 +31,135 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2252609501921027639}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2589260747944909078
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3176350570829222294}
+  - component: {fileID: 3814481688785054592}
+  m_Layer: 0
+  m_Name: MusicSource2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3176350570829222294
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2589260747944909078}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2252609501921027639}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &3814481688785054592
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2589260747944909078}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: -6268608200145482875, guid: 1a51e3f3bf847c6458f54481009937e9,
+    type: 2}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 0.4
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &7762043774959574894
 GameObject:
   m_ObjectHideFlags: 0
@@ -191,6 +320,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 987960168292183221}
+  - {fileID: 3176350570829222294}
   - {fileID: 7861135434850269700}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -208,17 +338,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MainMixer: {fileID: 24100000, guid: 1a51e3f3bf847c6458f54481009937e9, type: 2}
   MusicSource: {fileID: 5392661145466779302}
+  MusicSource2: {fileID: 3814481688785054592}
   SFXSourceParent: {fileID: 2525023662480113844}
   SFXSourcePrefab: {fileID: 7187355613418221417, guid: dada78a972cd57e4ea75eb4c10f34e81,
     type: 3}
   SFXInPlay: []
   AudioClips:
   - Label: 0
-    Clip: {fileID: 8300000, guid: 2305825ca4df2e940a0e8efbd501dec4, type: 3}
+    Clip: {fileID: 8300000, guid: ff7196e5646392b4387d0f25c7ba7422, type: 3}
   - Label: 1
     Clip: {fileID: 8300000, guid: 71792766f1ab39d49951c9c6960e7a0c, type: 3}
   - Label: 2
-    Clip: {fileID: 8300000, guid: 818cc2c9523c5744eac68be8ea590990, type: 3}
+    Clip: {fileID: 8300000, guid: 262cb8459ccdcb8468f2985fce9abd20, type: 3}
   - Label: 3
     Clip: {fileID: 8300000, guid: ac47f58f94cd13d4e982de7d2f17435d, type: 3}
   - Label: 4
@@ -264,26 +395,29 @@ MonoBehaviour:
   - Label: 27
     Clip: {fileID: 8300000, guid: de75acde53427b4468503498c4b7f340, type: 3}
   - Label: 29
-    Clip: {fileID: 8300000, guid: de75acde53427b4468503498c4b7f340, type: 3}
+    Clip: {fileID: 8300000, guid: a73fc8add3bc70b4b9248f9837517d23, type: 3}
   - Label: 30
-    Clip: {fileID: 8300000, guid: de75acde53427b4468503498c4b7f340, type: 3}
+    Clip: {fileID: 8300000, guid: 73185a9cafe239e428c8566fbc711cc0, type: 3}
   - Label: 31
-    Clip: {fileID: 8300000, guid: de75acde53427b4468503498c4b7f340, type: 3}
+    Clip: {fileID: 8300000, guid: 28b4c7c0146c38e4995653bf14f55134, type: 3}
   - Label: 32
     Clip: {fileID: 8300000, guid: 90115064bc7fb8842b803e86fabd0d40, type: 3}
   - Label: 33
-    Clip: {fileID: 8300000, guid: de75acde53427b4468503498c4b7f340, type: 3}
+    Clip: {fileID: 8300000, guid: 73185a9cafe239e428c8566fbc711cc0, type: 3}
   - Label: 34
-    Clip: {fileID: 8300000, guid: f41b08858913bd5498e1852f1afacecc, type: 3}
+    Clip: {fileID: 8300000, guid: e01e0f0f1afe3754f81f9fa47af0b78b, type: 3}
   - Label: 35
-    Clip: {fileID: 8300000, guid: de75acde53427b4468503498c4b7f340, type: 3}
+    Clip: {fileID: 8300000, guid: 2305825ca4df2e940a0e8efbd501dec4, type: 3}
   - Label: 36
     Clip: {fileID: 8300000, guid: de75acde53427b4468503498c4b7f340, type: 3}
   - Label: 37
     Clip: {fileID: 8300000, guid: de75acde53427b4468503498c4b7f340, type: 3}
   - Label: 38
-    Clip: {fileID: 8300000, guid: 7f727920712ab0d4389cdd292b97e3bb, type: 3}
+    Clip: {fileID: 8300000, guid: 9a1ff7fa92fefb5408908e343e8ccddc, type: 3}
+  - Label: 39
+    Clip: {fileID: 8300000, guid: fe98a3fcb66624e47a482724e4f79e13, type: 3}
   MusicFadeStepSeconds: 0.2
   MusicFadeSteps: 20
   MusicFadeMinVolumeDb: -80
   VolumeMaxIndex: 10
+  MusicQueue: 

@@ -27,7 +27,8 @@ public enum AudioLabel
     RaveMusic,
     PlayerHouseMusic, ForestMusic, TownMusic, CattelatteMusic, ShrineMusic, 
     UniversityMusic, CreditsMusic, OuterRealityMusic,
-    FindusSinbadMusic, MayorMomentMusic, FinaleMomentMusic
+    FindusSinbadMusic, MayorMomentMusic, FinaleMomentMusic,
+    MenuMusic2
     //music trond: Menu/Player House, Forest, Town, Cattelatte, (Shrine, University, Credits)
     //music cf: FloristMoment
 }
@@ -42,7 +43,9 @@ public class AudioClipMapping
 public class AudioManager : MonoBehaviour
 {
     public AudioMixer MainMixer;
+    private AudioSource MainMusicSource;
     public AudioSource MusicSource;
+    public AudioSource MusicSource2; //used for crossfade
     public GameObject SFXSourceParent;
     public GameObject SFXSourcePrefab;
     public List<AudioSource> SFXInPlay = new List<AudioSource>();
@@ -62,6 +65,7 @@ public class AudioManager : MonoBehaviour
     private const string SFXVolumeParameterName = "SFXVolume";
 
     //Queue
+    [SerializeField]
     private List<AudioLabel> MusicQueue = new List<AudioLabel>();
 
     private async void Awake()
@@ -69,6 +73,7 @@ public class AudioManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
+            MainMusicSource = MusicSource;
             DontDestroyOnLoad(this.gameObject); //keep this between scenes. NB! GameObject must be placed on root level on hierarchy!
             return;
         }
@@ -110,10 +115,10 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    public void PlayMusicClip(AudioLabel audioLabel, bool fadeIn, bool queue)
+    public void PlayMusicClip(AudioLabel audioLabel, bool fadeIn, bool queue, bool sameTiming = false)
     {
         var audioClip = AudioClips.FirstOrDefault(e => e.Label == audioLabel).Clip;
-        if(MusicSource.clip == audioClip && (fadeIn || queue))
+        if(MainMusicSource.clip == audioClip && (fadeIn || queue))
         {
             CLogger.LogWarning("Music is already playing.");
             return;
@@ -134,12 +139,22 @@ public class AudioManager : MonoBehaviour
             {
                 audioLabel
             };
-            MusicSource.loop = false;
+            MainMusicSource.loop = false;
+        }
+        else if (sameTiming && MainMusicSource.isPlaying)
+        {
+            float startAt = 0;
+            if (sameTiming && MainMusicSource.isPlaying)
+            {
+                startAt = MainMusicSource.time;
+                StartCoroutine(FadeMusicInto(audioLabel, startAt));
+            }
         }
         else
         {
-            MusicSource.clip = audioClip;
-            MusicSource.Play(); //loops
+            MusicQueue = new List<AudioLabel>();
+            MainMusicSource.clip = audioClip;
+            MainMusicSource.Play(); //loops
             PlayMusicClipFinal(audioLabel);
         }
     }
@@ -175,8 +190,8 @@ public class AudioManager : MonoBehaviour
 
         //Fade in
         var audioClip = AudioClips.FirstOrDefault(e => e.Label == audioLabel).Clip;
-        MusicSource.clip = audioClip;
-        MusicSource.Play(); //loops
+        MainMusicSource.clip = audioClip;
+        MainMusicSource.Play(); //loops
         for(int i = 0; i < MusicFadeSteps; i++)
         {
             var currentVolumeIndex = volumeIndexPerFadeStep * i;
@@ -189,6 +204,42 @@ public class AudioManager : MonoBehaviour
         var musicVolume = musicVolumeIndex / (float) VolumeMaxIndex;
         var musicFadeMaxVolumeDb = VolumeFunction(musicVolume);
         MainMixer.SetFloat(MusicVolumeParameterName, musicFadeMaxVolumeDb);
+        PlayMusicClipFinal(audioLabel);
+    }
+
+    IEnumerator FadeMusicInto(AudioLabel audioLabel, float startAt)
+    {
+        var maxVolume = 0.4f;
+        var volumeIndexPerFadeStep = maxVolume / MusicFadeSteps;
+        
+        var audioClip = AudioClips.FirstOrDefault(e => e.Label == audioLabel).Clip;
+        
+        var primaryMusicSource = MusicSource;
+        var secondaryMusicSource = MusicSource2;
+        if(MainMusicSource.Equals(MusicSource2))
+        {
+            primaryMusicSource = MusicSource2;
+            secondaryMusicSource = MusicSource;
+        }
+
+        secondaryMusicSource.clip = audioClip;
+        secondaryMusicSource.volume = 0;
+        secondaryMusicSource.Play();
+        secondaryMusicSource.time = primaryMusicSource.time;
+
+        //Fade primaryMusicSource out, and secondaryMusicSource in
+        for(int i = 0; i <= MusicFadeSteps; i++)
+        {
+            var currentVolume = maxVolume - volumeIndexPerFadeStep * i;
+            var currentVolumeUp = volumeIndexPerFadeStep * i;
+            primaryMusicSource.volume = currentVolume;
+            secondaryMusicSource.volume = currentVolumeUp;
+            yield return new WaitForSeconds(MusicFadeStepSeconds);
+        }
+
+        primaryMusicSource.Stop();
+        primaryMusicSource.volume = 0;
+        MainMusicSource = secondaryMusicSource;
         PlayMusicClipFinal(audioLabel);
     }
 
@@ -216,14 +267,15 @@ public class AudioManager : MonoBehaviour
 
         if(MusicQueue.Count > 0)
         {
-            if (!MusicSource.isPlaying)
+            if (!MainMusicSource.isPlaying)
             {
                 var nextMusicLabel = MusicQueue[0];
                 var audioClip = AudioClips.FirstOrDefault(e => e.Label == nextMusicLabel).Clip;
-                MusicSource.clip = audioClip;
-                MusicSource.loop = true;
-                MusicSource.Play();
+                MainMusicSource.clip = audioClip;
+                MainMusicSource.loop = true;
+                MainMusicSource.Play();
                 MusicQueue.RemoveAt(0);
+                PlayMusicClipFinal(nextMusicLabel);
             }
         }
     }

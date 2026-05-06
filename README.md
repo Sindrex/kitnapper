@@ -17,9 +17,15 @@ If I change name of events, or replace events with new ones, it will break exist
 * Max amplitude:-8.1Db
 
 # TODO:
-* Add music, when done
-* Playtest
-* Text fixes:
+* Playtest!!!
+* Upload build to steam for screening
+* Make new trailer
+* Make tiktoks / insta reels
+* Make reddit posts
+  * Ascii art
+  * Indie games
+* Music menu button -> link to Youtube playlist (after uploaded)
+* Test fixes:
   * 
 
 Other names that can be used:

@@ -15,16 +15,19 @@ namespace MeetAndTalk.Nodes
         private List<LanguageGeneric<string>> texts = new List<LanguageGeneric<string>>();
         private List<LanguageGeneric<AudioClip>> audioClip = new List<LanguageGeneric<AudioClip>>();
         private float durationShow = 5;
+        private string eventId;
 
         public List<DialogueNodePort> dialogueNodePorts = new List<DialogueNodePort>();
 
         public List<LanguageGeneric<string>> Texts { get => texts; set => texts = value; }
         public List<LanguageGeneric<AudioClip>> AudioClip { get => audioClip; set => audioClip = value; }
         public float DurationShow { get => durationShow; set => durationShow = value; }
+        public string EventId { get => eventId; set => eventId = value; }
 
         private TextField texts_Field;
         private ObjectField audioClips_Field;
         private FloatField duration_Field;
+        private TextField event_Field;
 
         // New Emotion System
         public DialogueCharacterSO character = ScriptableObject.CreateInstance<DialogueCharacterSO>();
@@ -98,6 +101,17 @@ namespace MeetAndTalk.Nodes
             });
             character_Field.SetValueWithoutNotify(character);
             mainContainer.Add(character_Field);
+
+            // EventIdField
+            event_Field = new TextField("Event Id");
+            event_Field.RegisterValueChangedCallback(value =>
+            {
+                eventId = value.newValue;
+            });
+            event_Field.SetValueWithoutNotify(eventId);
+
+            event_Field.AddToClassList("TextDuration");
+            mainContainer.Add(event_Field);
 
             // PORTRAIT ENUM FIELD
             PortrainPositionField = new EnumField("Portrait Pos.") { value = PortraitPosition };
@@ -269,6 +283,7 @@ namespace MeetAndTalk.Nodes
             character_Field.SetValueWithoutNotify(character);
             PortrainPositionField.SetValueWithoutNotify(PortraitPosition);
             EmotionField.SetValueWithoutNotify(Emotion);
+            event_Field.SetValueWithoutNotify(eventId);
 
             secoundCharacter_Field.SetValueWithoutNotify(secoundCharacter);
             secoundPortrainPositionField.SetValueWithoutNotify(secoundPortraitPosition);
@@ -444,6 +459,9 @@ namespace MeetAndTalk.Nodes
 
             tempNode.DurationShow = data.Duration;
 
+            //event
+            tempNode.EventId = data.Event;
+
             tempNode.LoadValueInToField();
 
             return tempNode; // Return the generated node.
@@ -461,6 +479,9 @@ namespace MeetAndTalk.Nodes
                 Character = character,
                 PortraitPosition = PortraitPosition,
                 Emotion = Emotion,
+
+                //event
+                Event = eventId,
 
                 // Secound Character
                 SecoundCharacter = secoundCharacter,
