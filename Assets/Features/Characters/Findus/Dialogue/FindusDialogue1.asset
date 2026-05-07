@@ -108,10 +108,6 @@ MonoBehaviour:
     TargetNodeGuid: 8b0c0cbc-078a-46ad-ab26-c9e9447fc49d
   - BaseNodeGuid: 361e3b57-d398-49e2-b883-f128f3a31f06
     TargetNodeGuid: b471fcdc-e10b-4f88-8889-2b71d34184d6
-  - BaseNodeGuid: d50bb04e-5951-45ed-b7a6-495664e7a630
-    TargetNodeGuid: 6efc1a03-016a-44af-84aa-30bb646b8e22
-  - BaseNodeGuid: d50bb04e-5951-45ed-b7a6-495664e7a630
-    TargetNodeGuid: 002951e7-8302-4ef3-81ad-029b93c7b694
   - BaseNodeGuid: 081f99f7-e4f9-44b2-bda2-6c6b0c3dd158
     TargetNodeGuid: dc500d0f-c5bd-4ddd-8995-9d49d66c850d
   - BaseNodeGuid: 081f99f7-e4f9-44b2-bda2-6c6b0c3dd158
@@ -120,8 +116,6 @@ MonoBehaviour:
     TargetNodeGuid: 68719722-3239-4b9f-b568-f85d00c15154
   - BaseNodeGuid: f609914e-cfce-45c1-afd9-5476fc837d69
     TargetNodeGuid: ddc99ea3-8ef6-41f3-8158-d8b1752e3ac0
-  - BaseNodeGuid: 9e39dd12-dc74-4845-829b-3bb3fe91f8ec
-    TargetNodeGuid: e3ca37dd-bbd2-464d-852f-54e97e64c3e6
   - BaseNodeGuid: 6efc1a03-016a-44af-84aa-30bb646b8e22
     TargetNodeGuid: c4c5eb1b-6fa8-4118-b681-4babbcadabf7
   - BaseNodeGuid: 6efc1a03-016a-44af-84aa-30bb646b8e22
@@ -132,6 +126,12 @@ MonoBehaviour:
     TargetNodeGuid: c4c5eb1b-6fa8-4118-b681-4babbcadabf7
   - BaseNodeGuid: 002951e7-8302-4ef3-81ad-029b93c7b694
     TargetNodeGuid: 00a51208-7701-4825-b8f3-3015eb09ff3a
+  - BaseNodeGuid: 9e39dd12-dc74-4845-829b-3bb3fe91f8ec
+    TargetNodeGuid: e3ca37dd-bbd2-464d-852f-54e97e64c3e6
+  - BaseNodeGuid: d50bb04e-5951-45ed-b7a6-495664e7a630
+    TargetNodeGuid: 002951e7-8302-4ef3-81ad-029b93c7b694
+  - BaseNodeGuid: d50bb04e-5951-45ed-b7a6-495664e7a630
+    TargetNodeGuid: 6efc1a03-016a-44af-84aa-30bb646b8e22
   DialogueChoiceNodeDatas:
   - NodeGuid: 081f99f7-e4f9-44b2-bda2-6c6b0c3dd158
     Position: {x: 912, y: -134}
@@ -141,6 +141,7 @@ MonoBehaviour:
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
+    Event: 
     AudioClips:
     - languageEnum: 0
       LanguageGenericType: {fileID: 0}
@@ -188,6 +189,7 @@ MonoBehaviour:
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
+    Event: 
     AudioClips:
     - languageEnum: 0
       LanguageGenericType: {fileID: 0}
@@ -218,6 +220,7 @@ MonoBehaviour:
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
+    Event: 
     AudioClips:
     - languageEnum: 0
       LanguageGenericType: {fileID: 0}
@@ -256,6 +259,7 @@ MonoBehaviour:
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
+    Event: 
     AudioClips:
     - languageEnum: 0
       LanguageGenericType: {fileID: 0}
@@ -286,6 +290,7 @@ MonoBehaviour:
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
+    Event: 
     AudioClips:
     - languageEnum: 0
       LanguageGenericType: {fileID: 0}
@@ -324,6 +329,7 @@ MonoBehaviour:
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
+    Event: 
     AudioClips:
     - languageEnum: 0
       LanguageGenericType: {fileID: 0}
