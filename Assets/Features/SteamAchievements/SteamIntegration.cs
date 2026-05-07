@@ -65,15 +65,23 @@ public static class SteamIntegration
 
     public static void UnlockAchievement(SteamAchievement achievement)
     {
-        CLogger.Log($"Unlocking steam achievement: {achievement}");
-        var ach = new Achievement(achievement.ToString());
-        if (ach.Trigger())
+        try
         {
-            CLogger.Log($"Successfully unlocked steam achievement: {achievement}");
+            CLogger.Log($"Unlocking steam achievement: {achievement}");
+            var ach = new Achievement(achievement.ToString());
+            if (ach.Trigger())
+            {
+                CLogger.Log($"Successfully unlocked steam achievement: {achievement}");
+            }
+            else
+            {
+                CLogger.LogError($"Unable to unlock steam achievement: {achievement}");
+            }
         }
-        else
+        catch (Exception e)
         {
-            CLogger.LogError($"Unable to unlock steam achievement: {achievement}");
+            CLogger.LogError($"Error occurred while unlocking steam achievement: {achievement}");
+            CLogger.LogError(e);
         }
     }
 

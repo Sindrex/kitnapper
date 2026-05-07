@@ -18,15 +18,46 @@ If I change name of events, or replace events with new ones, it will break exist
 
 # TODO:
 * Playtest!!!
-* Upload build to steam for screening
 * Make new trailer
-* Make tiktoks / insta reels
+* Make tiktoks / insta / facebook reels / Youtube shorts
 * Make reddit posts
   * Ascii art
   * Indie games
+* Upload music tracks to youtube.
 * Music menu button -> link to Youtube playlist (after uploaded)
+* Nerdelandslaget
 * Test fixes:
-  * 
+  * Telephone: we sgiykd disable dialogue after talking once
+  * Bottom of some roads are gone, same with CIT sign, a table in Cattelatte
+  * weird gap between road tiles
+  * Mayor "solve littering" but no littering to be found
+  * Dialogue Log Catender text too long / big for size. Maybe decrease text size.
+  * Add blink to player walk anim
+  * Richard last night "all my coworkers have taken vacation" but Sindrex is still there
+  * Richard "make sure to invite you" double space
+  * Richard give player gray fur
+  * Sindrex "keep the information close" remove "the"
+  * Add "game saves automatically" to startup text.
+  * FindusMilo findus move teleported back at the end
+  * Milo Butterfly option should be taken away after talking to Poppy
+  * Richard reactions a little low (also in finaleMoment)
+  * Pickup sfx a little low
+  * Mayor "call all the townscats to my office" to the town hall. Also "I will meet you back at my office" -> town hall
+  * reactions should maybe have a black background? Sometimes hard to see
+  * FinaleMoment "turn on the machine" -> device
+  * Credits should run slower. Credits music should start immediately. Credits turn off ESC / DIALOGUE LOG. Also make sure player cannot exit during. Player not turned on after Credits?
+  * Milkcat reaction too low
+  * Sindrex dialogue ends randomly?
+  * Kudos ball does not blink after reload
+  * Turbo baba spawn should have sound, and also player reaction
+  * Turbo baba reactions are too low
+  * Turbo baba despawn after replay credits?
+  * Turbo baba golden balls "you found them all..." should not mention moving golden balls
+  * House music stopped playing/no loop?
+  * FinaleMoment did not use special music?
+  * Add outer reality music (remember to change after Rave too)
+  * More arrows outer reality
+  * Guard from outer reality should say, "how'd you get behind here!?" and throw you to the other side?
 
 Other names that can be used:
 * Kuro (Blue Exorcist) ->
