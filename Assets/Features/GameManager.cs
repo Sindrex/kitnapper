@@ -12,6 +12,10 @@ public class GameManager : MonoBehaviour
     private List<EventController> Events = new List<EventController>();
     private List<MoveEventController> MoveEvents = new List<MoveEventController>();
 
+    //hideUI
+    public bool UIHidden;
+    public bool CanInteract;
+
     //singleton
     public static GameManager Instance { get; private set; }
     void Awake()
@@ -106,14 +110,28 @@ public class GameManager : MonoBehaviour
 
         //Start fade in
         CameraController.Instance.FadeIn();
+
+        //HideUI
+        UIHidden = false;
+        CanInteract = true;
     }
 
     void Update()
     {
         SteamIntegration.OnUpdate();
 
-        if (InputController.GetInput(InputPurpose.QUIT)) Quit();
+        if (InputController.GetInput(InputPurpose.QUIT) && CanInteract) Quit();
         if (InputController.GetInput(InputPurpose.CLOSE_EXCEPTION)) GlobalExceptionManager.Instance.CloseWindow();
+        if (InputController.GetInput(InputPurpose.HIDEUI) && CanInteract)
+        {
+            HideUI(!UIHidden);
+        }
+    }
+
+    public void HideUI(bool state)
+    {
+        DialogueLogManager.Instance.IsHidden = state;
+        UIHidden = state;
     }
 
     public void SetFlags(SetGameFlagCombo flagCombo)

@@ -12,7 +12,7 @@ public enum InputPurpose
     COMMAND_OPEN, COMMAND_ENTER,
     CLOSE_EXCEPTION,
     MENU_CHOICE_UP, MENU_CHOICE_DOWN, MENU_CHOICE_LEFT, MENU_CHOICE_RIGHT,
-    DIALOGUE_LOG_OPEN
+    DIALOGUE_LOG_OPEN, HIDEUI
 }
 
 public static class InputController
@@ -64,6 +64,8 @@ public static class InputController
                 return Input.GetKeyDown(KeyCode.D);
             case InputPurpose.DIALOGUE_LOG_OPEN:
                 return Input.GetKeyDown(KeyCode.R);
+            case InputPurpose.HIDEUI:
+                return Input.GetKeyDown(KeyCode.I) && Input.GetKey(KeyCode.LeftShift);
         }
         return false;
     }

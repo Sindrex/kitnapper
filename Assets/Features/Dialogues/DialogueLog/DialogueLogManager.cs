@@ -13,6 +13,8 @@ public class DialogueLogManager : MonoBehaviour
     public int Offset;
     public int Max = 9;
     public bool IsOpen;
+    public bool IsHidden;
+    public GameObject TopButtons;
 
     //singleton
     public static DialogueLogManager Instance { get; private set; }
@@ -31,6 +33,7 @@ public class DialogueLogManager : MonoBehaviour
     {
         Parent.SetActive(false);
         IsOpen = false;
+        IsHidden = false;
     }
 
     // Update is called once per frame
@@ -72,6 +75,15 @@ public class DialogueLogManager : MonoBehaviour
                 }
                 LoadDialogueLog();
             }
+        }
+
+        if (IsHidden && TopButtons.activeSelf)
+        {
+            TopButtons.SetActive(false);
+        }
+        else if (!IsHidden && !TopButtons.activeSelf)
+        {
+            TopButtons.SetActive(true);
         }
     }
 
