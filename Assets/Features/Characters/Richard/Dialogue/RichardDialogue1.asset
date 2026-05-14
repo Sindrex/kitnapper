@@ -19,6 +19,64 @@ MonoBehaviour:
   MaxChoiceOptionPerNode: 8
   NodeLinkDatas:
   - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
+    TargetNodeGuid: 22294a8c-0eb2-446f-9829-495e67b5a8a7
+  - BaseNodeGuid: 2fc2f56d-375d-4a2d-926a-fa8163a1d583
+    TargetNodeGuid: 8f05f8ea-704c-4b21-9cad-ceec3f556e1a
+  - BaseNodeGuid: 0c0d56e6-039a-4ca4-a36e-187bbd7e0e42
+    TargetNodeGuid: 8f05f8ea-704c-4b21-9cad-ceec3f556e1a
+  - BaseNodeGuid: cf257311-7fa9-4c48-a855-85cb9d555300
+    TargetNodeGuid: 138b667b-51b1-4ff3-90d1-4a2a0205e3c3
+  - BaseNodeGuid: 49ae51f3-417b-497e-aa96-38a1ec91b121
+    TargetNodeGuid: dfdb6f86-9419-4200-a790-511060dfc225
+  - BaseNodeGuid: 08a994b5-bd56-4f99-9387-45d43406c157
+    TargetNodeGuid: 9a4a56d3-b4ef-4155-8523-0d532fb9c727
+  - BaseNodeGuid: 332bfb8d-9043-4f00-80aa-06d8acf1cfa8
+    TargetNodeGuid: 7435f5be-4fd6-4c70-aa1b-a2ff9c5dce29
+  - BaseNodeGuid: 7435f5be-4fd6-4c70-aa1b-a2ff9c5dce29
+    TargetNodeGuid: d53fa7bb-6867-4bf8-ba8b-9b5ab3a6ebac
+  - BaseNodeGuid: 22f51342-4318-4877-93d0-bd695020e50a
+    TargetNodeGuid: 49ae51f3-417b-497e-aa96-38a1ec91b121
+  - BaseNodeGuid: 44f46695-f28c-49dc-b365-42b599e965f7
+    TargetNodeGuid: 49ae51f3-417b-497e-aa96-38a1ec91b121
+  - BaseNodeGuid: 71b1e627-fd38-47c5-8dc0-fefd5aca7a4f
+    TargetNodeGuid: bd6af605-65fd-4b98-994f-fb40347dd574
+  - BaseNodeGuid: 693cdb95-ab3f-467c-925f-101923b65cad
+    TargetNodeGuid: 1a0f9043-9955-4957-9e53-0fa16f11de69
+  - BaseNodeGuid: cdc1b14a-235e-4338-b578-91110baad130
+    TargetNodeGuid: 693cdb95-ab3f-467c-925f-101923b65cad
+  - BaseNodeGuid: 138b667b-51b1-4ff3-90d1-4a2a0205e3c3
+    TargetNodeGuid: cdc1b14a-235e-4338-b578-91110baad130
+  - BaseNodeGuid: 8d30ec4b-22b1-4501-8539-0910f17f158f
+    TargetNodeGuid: cf257311-7fa9-4c48-a855-85cb9d555300
+  - BaseNodeGuid: bd6af605-65fd-4b98-994f-fb40347dd574
+    TargetNodeGuid: 8d30ec4b-22b1-4501-8539-0910f17f158f
+  - BaseNodeGuid: 1a0f9043-9955-4957-9e53-0fa16f11de69
+    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
+  - BaseNodeGuid: 8f05f8ea-704c-4b21-9cad-ceec3f556e1a
+    TargetNodeGuid: 7efaf9ba-97e4-4424-810f-c620df1c7368
+  - BaseNodeGuid: 8f05f8ea-704c-4b21-9cad-ceec3f556e1a
+    TargetNodeGuid: 71b1e627-fd38-47c5-8dc0-fefd5aca7a4f
+  - BaseNodeGuid: 4fd61db1-a71e-4295-8ec8-fb495f167954
+    TargetNodeGuid: 2fc2f56d-375d-4a2d-926a-fa8163a1d583
+  - BaseNodeGuid: 4fd61db1-a71e-4295-8ec8-fb495f167954
+    TargetNodeGuid: 0c0d56e6-039a-4ca4-a36e-187bbd7e0e42
+  - BaseNodeGuid: 22294a8c-0eb2-446f-9829-495e67b5a8a7
+    TargetNodeGuid: 08a994b5-bd56-4f99-9387-45d43406c157
+  - BaseNodeGuid: 22294a8c-0eb2-446f-9829-495e67b5a8a7
+    TargetNodeGuid: 4fd61db1-a71e-4295-8ec8-fb495f167954
+  - BaseNodeGuid: 7efaf9ba-97e4-4424-810f-c620df1c7368
+    TargetNodeGuid: 49ae51f3-417b-497e-aa96-38a1ec91b121
+  - BaseNodeGuid: 7efaf9ba-97e4-4424-810f-c620df1c7368
+    TargetNodeGuid: 889621fc-4b51-470f-a7cc-25216ec1e25c
+  - BaseNodeGuid: 889621fc-4b51-470f-a7cc-25216ec1e25c
+    TargetNodeGuid: 49ae51f3-417b-497e-aa96-38a1ec91b121
+  - BaseNodeGuid: 889621fc-4b51-470f-a7cc-25216ec1e25c
+    TargetNodeGuid: 332bfb8d-9043-4f00-80aa-06d8acf1cfa8
+  - BaseNodeGuid: 889621fc-4b51-470f-a7cc-25216ec1e25c
+    TargetNodeGuid: 22f51342-4318-4877-93d0-bd695020e50a
+  - BaseNodeGuid: 889621fc-4b51-470f-a7cc-25216ec1e25c
+    TargetNodeGuid: 44f46695-f28c-49dc-b365-42b599e965f7
+  - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
     TargetNodeGuid: bf8cbeb5-2ae9-4417-8b89-66987df0ae79
   - BaseNodeGuid: 300ad88f-4b3e-4d84-b1ac-bed255b02acf
     TargetNodeGuid: 3bc8a010-d4c5-4e58-8393-b0208119683e
@@ -28,8 +86,6 @@ MonoBehaviour:
     TargetNodeGuid: 1fd00fdd-1ea4-470a-95c1-1dc095a6a412
   - BaseNodeGuid: 1fd00fdd-1ea4-470a-95c1-1dc095a6a412
     TargetNodeGuid: c2734396-3245-4da4-a5c7-f6649dc8804f
-  - BaseNodeGuid: c6ac20db-28c4-4c59-9208-956485c6039d
-    TargetNodeGuid: fecf48a2-bf24-480d-ad0c-469905f2adc0
   - BaseNodeGuid: fe6767e8-424f-4f59-a34c-1426f30ad6ff
     TargetNodeGuid: 6002bf60-9f00-4d05-817c-474c1f8c8c54
   - BaseNodeGuid: 6002bf60-9f00-4d05-817c-474c1f8c8c54
@@ -84,6 +140,10 @@ MonoBehaviour:
     TargetNodeGuid: b85e8ffa-f857-4aea-834e-803ea01ccebf
   - BaseNodeGuid: 9dbc9f59-7f3d-4bb4-81c0-1a716492122b
     TargetNodeGuid: 5bb69ed3-28eb-4aef-aa51-25b5cf940284
+  - BaseNodeGuid: c6ac20db-28c4-4c59-9208-956485c6039d
+    TargetNodeGuid: 83ed02b8-79a5-4cb8-8885-0e3136f55c6b
+  - BaseNodeGuid: 83ed02b8-79a5-4cb8-8885-0e3136f55c6b
+    TargetNodeGuid: fecf48a2-bf24-480d-ad0c-469905f2adc0
   DialogueChoiceNodeDatas:
   - NodeGuid: 9a178bc8-2dbf-46e1-a47c-3bd248a2fd85
     Position: {x: 1019, y: 40}
@@ -93,6 +153,7 @@ MonoBehaviour:
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
+    Event: 
     AudioClips:
     - languageEnum: 0
       LanguageGenericType: {fileID: 0}
@@ -131,6 +192,7 @@ MonoBehaviour:
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
+    Event: 
     AudioClips:
     - languageEnum: 0
       LanguageGenericType: {fileID: 0}
@@ -187,6 +249,7 @@ MonoBehaviour:
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
+    Event: 
     AudioClips:
     - languageEnum: 0
       LanguageGenericType: {fileID: 0}
@@ -477,7 +540,7 @@ MonoBehaviour:
     TextType:
     - languageEnum: 0
       LanguageGenericType: The Midnight Rose? Yes, I bought one recently for an office
-        party. Great party by the way! I will make sure to  invite you next time!
+        party. Great party by the way! I will make sure to invite you next time!
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
@@ -499,27 +562,6 @@ MonoBehaviour:
     - languageEnum: 0
       LanguageGenericType: Is that one of the orange cats? I don't think I've seen
         the toy before. Now, if you'll excuse me, Detective.
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
-  - NodeGuid: 94cfc014-32ce-459f-8087-a0e3141a17fe
-    Position: {x: 1856, y: 217}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: I was working all night. Sadly all my coworkers have taken
-        vacation, so it was only me!
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
@@ -604,6 +646,48 @@ MonoBehaviour:
     - languageEnum: 0
       LanguageGenericType: Oh, listen to me! You will have to excuse me Detective.
         When I start the corporate talk, it all comes spilling out of me.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 94cfc014-32ce-459f-8087-a0e3141a17fe
+    Position: {x: 1856, y: 216}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: I was working all night. Sadly all my coworkers are either
+        on vacation or had gone home for the night, so it was only me!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 83ed02b8-79a5-4cb8-8885-0e3136f55c6b
+    Position: {x: 2427, y: -196}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Here, take the fur as evidence. I'm pawsitive it will
+        come in handy!
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10

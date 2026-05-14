@@ -64,8 +64,9 @@ public class FinaleMomentEventController : EventBase
         CameraController.Instance.FadeOut();
         PlayerController.Instance.CanMove = false;
         GameManager.Instance.CanInteract = false;
+        GameManager.Instance.HideUI(true);
         yield return new WaitForSeconds(FadeWaitSeconds);
-        AudioManager.Instance.PlayMusicClip(AudioLabel.CreditsMusic, true, false);
+        AudioManager.Instance.PlayMusicClip(AudioLabel.CreditsMusic, false, false);
         CameraController.Instance.FadeIn();
         var newPos = PlayerTeleportPosition.transform.position;
         CameraController.Instance.SetPosition(newPos);
@@ -78,6 +79,7 @@ public class FinaleMomentEventController : EventBase
         CameraController.Instance.FollowPlayer = true;
         PlayerController.Instance.CanMove = true;
         GameManager.Instance.CanInteract = true;
+        GameManager.Instance.HideUI(false);
         PlayerController.Instance.gameObject.transform.localPosition = PlayerStartPosition;
         CameraController.Instance.Player.SetActive(true);
         AudioManager.Instance.PlayMusicClip(AudioLabel.MenuMusic2, false, true);

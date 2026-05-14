@@ -18,63 +18,15 @@ MonoBehaviour:
   LimitChoiceOptionPerNode: 0
   MaxChoiceOptionPerNode: 8
   NodeLinkDatas:
-  - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
-    TargetNodeGuid: 6efc1a03-016a-44af-84aa-30bb646b8e22
-  - BaseNodeGuid: c60b8bee-fa21-4f10-9cf0-5a85d88462da
-    TargetNodeGuid: f609914e-cfce-45c1-afd9-5476fc837d69
-  - BaseNodeGuid: ddc99ea3-8ef6-41f3-8158-d8b1752e3ac0
-    TargetNodeGuid: 9e39dd12-dc74-4845-829b-3bb3fe91f8ec
-  - BaseNodeGuid: e3ca37dd-bbd2-464d-852f-54e97e64c3e6
-    TargetNodeGuid: 75c07bf1-543e-413e-91d5-081a0b8e2c71
-  - BaseNodeGuid: 75c07bf1-543e-413e-91d5-081a0b8e2c71
-    TargetNodeGuid: 7d44017b-4954-4f6c-b63e-cf698ab909a2
-  - BaseNodeGuid: 7d44017b-4954-4f6c-b63e-cf698ab909a2
-    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
-  - BaseNodeGuid: eee1aa95-82da-4fa6-9dc3-5490a423d9f6
-    TargetNodeGuid: 74a51ffa-fbe9-4e06-9a0a-356d367412a4
-  - BaseNodeGuid: 20d89102-4239-401f-bf5b-1dab305343fd
-    TargetNodeGuid: b300b8c4-7ac8-42a1-b583-275fea08e3fb
-  - BaseNodeGuid: 9f7a8ca9-2b49-4741-83eb-b363fed70311
-    TargetNodeGuid: 20d89102-4239-401f-bf5b-1dab305343fd
-  - BaseNodeGuid: 85d97171-32b6-43ae-87f6-befd946cd55c
-    TargetNodeGuid: 81809372-2788-4396-bce1-647bc035fb32
-  - BaseNodeGuid: 9508a601-3f86-48b9-871e-b9a6911d8247
-    TargetNodeGuid: 85d97171-32b6-43ae-87f6-befd946cd55c
-  - BaseNodeGuid: 81809372-2788-4396-bce1-647bc035fb32
-    TargetNodeGuid: 49073fdf-0007-462c-917e-656145b39a98
-  - BaseNodeGuid: 49073fdf-0007-462c-917e-656145b39a98
-    TargetNodeGuid: 9ba852c1-2ff6-455e-8ce6-6022d7661da2
-  - BaseNodeGuid: 9ba852c1-2ff6-455e-8ce6-6022d7661da2
-    TargetNodeGuid: 8f88fe8c-4587-45e8-b71d-325d26c368c5
-  - BaseNodeGuid: 3aa5d2db-f611-40fc-b72b-35cd55a7a5fa
-    TargetNodeGuid: d6f4e8ca-f68c-4cfc-b0d9-16923b585907
-  - BaseNodeGuid: d6f4e8ca-f68c-4cfc-b0d9-16923b585907
-    TargetNodeGuid: 89d06e6a-e4eb-43d2-a9eb-af2249b995da
-  - BaseNodeGuid: 89d06e6a-e4eb-43d2-a9eb-af2249b995da
-    TargetNodeGuid: 0afa1f32-c070-4dff-9caf-1dc1844a3f3d
-  - BaseNodeGuid: b300b8c4-7ac8-42a1-b583-275fea08e3fb
-    TargetNodeGuid: 9508a601-3f86-48b9-871e-b9a6911d8247
-  - BaseNodeGuid: 8f88fe8c-4587-45e8-b71d-325d26c368c5
-    TargetNodeGuid: 3aa5d2db-f611-40fc-b72b-35cd55a7a5fa
-  - BaseNodeGuid: cc7e19ee-c3ef-4fe3-9f8e-5b692de4e85b
-    TargetNodeGuid: c60b8bee-fa21-4f10-9cf0-5a85d88462da
-  - BaseNodeGuid: cc7e19ee-c3ef-4fe3-9f8e-5b692de4e85b
-    TargetNodeGuid: eee1aa95-82da-4fa6-9dc3-5490a423d9f6
-  - BaseNodeGuid: 081f99f7-e4f9-44b2-bda2-6c6b0c3dd158
-    TargetNodeGuid: dc500d0f-c5bd-4ddd-8995-9d49d66c850d
-  - BaseNodeGuid: 081f99f7-e4f9-44b2-bda2-6c6b0c3dd158
-    TargetNodeGuid: cc7e19ee-c3ef-4fe3-9f8e-5b692de4e85b
-  - BaseNodeGuid: 081f99f7-e4f9-44b2-bda2-6c6b0c3dd158
-    TargetNodeGuid: 9f7a8ca9-2b49-4741-83eb-b363fed70311
-  - BaseNodeGuid: f609914e-cfce-45c1-afd9-5476fc837d69
-    TargetNodeGuid: ddc99ea3-8ef6-41f3-8158-d8b1752e3ac0
-  - BaseNodeGuid: 9e39dd12-dc74-4845-829b-3bb3fe91f8ec
-    TargetNodeGuid: e3ca37dd-bbd2-464d-852f-54e97e64c3e6
-  - BaseNodeGuid: 6efc1a03-016a-44af-84aa-30bb646b8e22
-    TargetNodeGuid: c4c5eb1b-6fa8-4118-b681-4babbcadabf7
-  - BaseNodeGuid: 6efc1a03-016a-44af-84aa-30bb646b8e22
-    TargetNodeGuid: 081f99f7-e4f9-44b2-bda2-6c6b0c3dd158
   - BaseNodeGuid: ab0aa676-b45c-43f5-a96a-65000b10b195
+    TargetNodeGuid: f405ea15-fdc9-486f-ab19-307299997c03
+  - BaseNodeGuid: 6862f9c6-3985-43d4-b699-c4b6c7ea5ad3
+    TargetNodeGuid: 0214acae-e1bc-4bda-b82a-d960bcc9b88d
+  - BaseNodeGuid: 0214acae-e1bc-4bda-b82a-d960bcc9b88d
+    TargetNodeGuid: a3b589b0-564b-4498-9d05-ada89afe0f07
+  - BaseNodeGuid: f405ea15-fdc9-486f-ab19-307299997c03
+    TargetNodeGuid: 6862f9c6-3985-43d4-b699-c4b6c7ea5ad3
+  - BaseNodeGuid: f405ea15-fdc9-486f-ab19-307299997c03
     TargetNodeGuid: 487914fd-380a-4b32-b0dd-01b94482ddb5
   - BaseNodeGuid: 487914fd-380a-4b32-b0dd-01b94482ddb5
     TargetNodeGuid: 565e2251-7d30-4ad9-85e8-c4373cea4600
@@ -91,6 +43,7 @@ MonoBehaviour:
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
+    Event: 
     AudioClips:
     - languageEnum: 0
       LanguageGenericType: {fileID: 0}
@@ -130,6 +83,7 @@ MonoBehaviour:
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
+    Event: 
     AudioClips:
     - languageEnum: 0
       LanguageGenericType: {fileID: 0}
@@ -151,8 +105,52 @@ MonoBehaviour:
       - languageEnum: 1
         LanguageGenericType: Choice 01
       RequiredFlag: {fileID: 0}
-  DialogueNodeDatas: []
-  ConditionalNodeDatas: []
+  DialogueNodeDatas:
+  - NodeGuid: 6862f9c6-3985-43d4-b699-c4b6c7ea5ad3
+    Position: {x: 432, y: -317}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'SINBAD: ITS POLICECAT! YOU-'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 0214acae-e1bc-4bda-b82a-d960bcc9b88d
+    Position: {x: 693, y: -317}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: YOU VERY FURMIDABLE! I KEEP IN LINE DONT WORRY HAHA!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  ConditionalNodeDatas:
+  - NodeGuid: f405ea15-fdc9-486f-ab19-307299997c03
+    Position: {x: 152, y: -4}
+    RequiredGameFlagCombo: {fileID: 11400000, guid: d280d0c262e2fca41b46ae301e91ac3f,
+      type: 2}
   TimerChoiceNodeDatas: []
   EndNodeDatas:
   - NodeGuid: 565e2251-7d30-4ad9-85e8-c4373cea4600
@@ -165,10 +163,15 @@ MonoBehaviour:
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 
+  - NodeGuid: a3b589b0-564b-4498-9d05-ada89afe0f07
+    Position: {x: 943, y: -317}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
   EventNodeDatas: []
   StartNodeDatas:
   - NodeGuid: ab0aa676-b45c-43f5-a96a-65000b10b195
-    Position: {x: 202, y: 2}
+    Position: {x: -164, y: -4}
     startID: 
   RandomNodeDatas: []
   CommandNodeDatas: []

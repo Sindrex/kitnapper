@@ -1334,7 +1334,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &569902435
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2914,7 +2914,22 @@ MonoBehaviour:
 
 
     Please press the buttons displayed
-    on the left.'
+    on the left.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    The game saves automatically.'
 --- !u!222 &1651954216
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3308,7 +3323,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2068903567
 RectTransform:
   m_ObjectHideFlags: 0

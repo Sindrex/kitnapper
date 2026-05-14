@@ -161,7 +161,7 @@ public class MenuManager : MonoBehaviour
         Screen.fullScreenMode = CurrentGameSettings.FullScreenMode;
         FullScreenModeText.text = GetFullScreenModeName(Screen.fullScreenMode);
         MusicCurrentIndex = CurrentGameSettings.MusicVolumeIndex;
-        SFXCurrentIndex = CurrentGameSettings.MusicVolumeIndex;
+        SFXCurrentIndex = CurrentGameSettings.SFXVolumeIndex;
         SetMusicVolumeSlider(false);
         SetSFXVolumeSlider(false);
 

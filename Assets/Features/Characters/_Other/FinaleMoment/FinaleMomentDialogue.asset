@@ -38,10 +38,6 @@ MonoBehaviour:
     TargetNodeGuid: 18330393-37ef-46cd-b433-040ca6b927be
   - BaseNodeGuid: 18330393-37ef-46cd-b433-040ca6b927be
     TargetNodeGuid: da467f11-0197-406f-9ab6-053cb7aeda19
-  - BaseNodeGuid: da467f11-0197-406f-9ab6-053cb7aeda19
-    TargetNodeGuid: 439f4f6e-1f47-485e-9964-aa54e35d45d4
-  - BaseNodeGuid: 439f4f6e-1f47-485e-9964-aa54e35d45d4
-    TargetNodeGuid: c0f5e7a6-a1e9-400a-8fe7-db582534ea0a
   - BaseNodeGuid: c0f5e7a6-a1e9-400a-8fe7-db582534ea0a
     TargetNodeGuid: 2dfc0a24-b4a2-4466-8589-dd1cf5f97e72
   - BaseNodeGuid: 2dfc0a24-b4a2-4466-8589-dd1cf5f97e72
@@ -52,8 +48,6 @@ MonoBehaviour:
     TargetNodeGuid: f026e697-df90-413f-9675-66457df5c29f
   - BaseNodeGuid: f026e697-df90-413f-9675-66457df5c29f
     TargetNodeGuid: b786d6d8-053e-47c6-91bd-7d55189bc7b8
-  - BaseNodeGuid: 1f614805-624f-4e85-a599-cd7f041c6250
-    TargetNodeGuid: 316fb9c9-db01-46a3-884f-32e0de2856bd
   - BaseNodeGuid: be2d7c4a-3521-4be9-8744-b8ea54e1c2f4
     TargetNodeGuid: b260ccd2-e8a7-4ebf-b930-46077a7c802c
   - BaseNodeGuid: b786d6d8-053e-47c6-91bd-7d55189bc7b8
@@ -62,6 +56,12 @@ MonoBehaviour:
     TargetNodeGuid: 9a071f9e-7812-4a7c-a6e7-c9721266a226
   - BaseNodeGuid: 316fb9c9-db01-46a3-884f-32e0de2856bd
     TargetNodeGuid: 58c228fb-3476-4802-95b8-92c1ff480128
+  - BaseNodeGuid: da467f11-0197-406f-9ab6-053cb7aeda19
+    TargetNodeGuid: 439f4f6e-1f47-485e-9964-aa54e35d45d4
+  - BaseNodeGuid: 439f4f6e-1f47-485e-9964-aa54e35d45d4
+    TargetNodeGuid: c0f5e7a6-a1e9-400a-8fe7-db582534ea0a
+  - BaseNodeGuid: 1f614805-624f-4e85-a599-cd7f041c6250
+    TargetNodeGuid: 316fb9c9-db01-46a3-884f-32e0de2856bd
   - BaseNodeGuid: feb6638d-ba99-4fe9-96c1-7042493b1c74
     TargetNodeGuid: f0493546-043c-484c-8707-c3e8fa894f29
   - BaseNodeGuid: feb6638d-ba99-4fe9-96c1-7042493b1c74
@@ -286,7 +286,7 @@ MonoBehaviour:
       OutputGuid: e821cad2-c7d4-4b8c-af98-1373ed8a1383
       TextLanguage:
       - languageEnum: 0
-        LanguageGenericType: Turn on the machine
+        LanguageGenericType: Turn on the device
       - languageEnum: 1
         LanguageGenericType: Choice 01
       RequiredFlag: {fileID: 0}
@@ -585,7 +585,7 @@ MonoBehaviour:
     TextType:
     - languageEnum: 0
       LanguageGenericType: 'Dr. Milo: You see Mayor, I never got to complete the
-        invention. The reversal feature is still a work-in-progress.'
+        device. The reversal feature is still a work-in-progress.'
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10

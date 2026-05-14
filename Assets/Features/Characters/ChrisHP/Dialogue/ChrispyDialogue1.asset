@@ -144,26 +144,6 @@ MonoBehaviour:
         LanguageGenericType: Choice 02
       RequiredFlag: {fileID: 0}
   DialogueNodeDatas:
-  - NodeGuid: a271c2bc-26a9-4bd1-9c7a-7f4a180ece72
-    Position: {x: 712, y: -155}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: ChristianXDialogueEvent
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: 'Chrispy: You had us in the first half, haha!'
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
   - NodeGuid: 67e0ad07-466d-452a-be5c-fab3c566187f
     Position: {x: 1472, y: -143}
     Character: {fileID: 0}
@@ -242,6 +222,26 @@ MonoBehaviour:
     TextType:
     - languageEnum: 0
       LanguageGenericType: 'Chrispy: Hello there! I was just working on my meowsic.'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: a271c2bc-26a9-4bd1-9c7a-7f4a180ece72
+    Position: {x: 712, y: -155}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: ChrispyDialogueEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Chrispy: You had us in the first half, haha!'
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10

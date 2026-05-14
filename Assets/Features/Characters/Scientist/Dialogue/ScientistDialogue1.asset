@@ -62,10 +62,10 @@ MonoBehaviour:
     TargetNodeGuid: 36e5585f-26b3-4f86-9381-52bed6e531f9
   - BaseNodeGuid: 6653c225-65fa-4982-979c-936bfd14e80b
     TargetNodeGuid: 150be6be-4ba0-478b-8a0b-2753f8c4dc20
-  - BaseNodeGuid: 42f5448e-7977-4972-ada7-79ead76f61d7
-    TargetNodeGuid: 817f0f85-2d9b-4e31-a934-426cd0c05775
   - BaseNodeGuid: 6653c225-65fa-4982-979c-936bfd14e80b
     TargetNodeGuid: 28862d3b-26b1-4d63-a7dc-14a5ca3edd62
+  - BaseNodeGuid: 42f5448e-7977-4972-ada7-79ead76f61d7
+    TargetNodeGuid: 817f0f85-2d9b-4e31-a934-426cd0c05775
   DialogueChoiceNodeDatas:
   - NodeGuid: c6c3837b-2101-484d-bd1d-3c2c9ded6e96
     Position: {x: 570, y: 227}
@@ -75,6 +75,7 @@ MonoBehaviour:
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
+    Event: 
     AudioClips:
     - languageEnum: 0
       LanguageGenericType: {fileID: 0}
@@ -114,6 +115,7 @@ MonoBehaviour:
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
+    Event: 
     AudioClips:
     - languageEnum: 0
       LanguageGenericType: {fileID: 0}
@@ -161,7 +163,7 @@ MonoBehaviour:
         LanguageGenericType: Butterfly
       - languageEnum: 1
         LanguageGenericType: Choice 04
-      RequiredFlag: {fileID: 11400000, guid: 85f95c9dbd55c2a40abf34b43bf2bb8c, type: 2}
+      RequiredFlag: {fileID: 11400000, guid: 3ad4677f3fda9114082f0ba306316e78, type: 2}
   - NodeGuid: 42f5448e-7977-4972-ada7-79ead76f61d7
     Position: {x: 704, y: -440}
     Character: {fileID: 0}
@@ -170,6 +172,7 @@ MonoBehaviour:
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
+    Event: 
     AudioClips:
     - languageEnum: 0
       LanguageGenericType: {fileID: 0}
@@ -177,7 +180,8 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: 
+      LanguageGenericType: How did you sneak here anyways? I was sure I locked the
+        doors...
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 5
@@ -456,8 +460,7 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: 'Dr. Milo: You had me baffled Mr. Detective! How did you
-        sneak here anyways? I was sure I locked the doors...'
+      LanguageGenericType: 'Dr. Milo: You had me baffled Mr. Detective!'
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10

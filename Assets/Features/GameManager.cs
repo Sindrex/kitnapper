@@ -299,7 +299,7 @@ public class GameManager : MonoBehaviour
             return;
         }
 
-        AudioManager.Instance.PlayMusicClip(AudioLabel.MenuMusic, false, false);
+        AudioManager.Instance.DestroyAllSFXClips();
         CurrentGameSettings.Save();
         SceneManager.LoadScene(0); //Menu
     }

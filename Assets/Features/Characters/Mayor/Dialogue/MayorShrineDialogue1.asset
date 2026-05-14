@@ -51,6 +51,7 @@ MonoBehaviour:
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
+    Event: 
     AudioClips:
     - languageEnum: 0
       LanguageGenericType: {fileID: 0}
@@ -89,7 +90,7 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: 'Mayor: I will meet you back at my office, humr humr.'
+      LanguageGenericType: 'Mayor: I will meet you back at the town hall, humr humr.'
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
@@ -234,8 +235,8 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: Good. I will call all the townscats to my office. Meet
-        me there, humr humr.
+      LanguageGenericType: Good. I will call all the townscats to the town hall.
+        Meet me there, humr humr.
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10

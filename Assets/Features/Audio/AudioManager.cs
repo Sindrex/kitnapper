@@ -28,9 +28,7 @@ public enum AudioLabel
     PlayerHouseMusic, ForestMusic, TownMusic, CattelatteMusic, ShrineMusic, 
     UniversityMusic, CreditsMusic, OuterRealityMusic,
     FindusSinbadMusic, MayorMomentMusic, FinaleMomentMusic,
-    MenuMusic2
-    //music trond: Menu/Player House, Forest, Town, Cattelatte, (Shrine, University, Credits)
-    //music cf: FloristMoment
+    MenuMusic2, FartSFX
 }
 
 [Serializable]
@@ -111,6 +109,16 @@ public class AudioManager : MonoBehaviour
             SFXInPlay.Remove(sfxToDestroy[i]);
             var gameObjectToDestroy = sfxToDestroy[i].gameObject;
             sfxToDestroy.RemoveAt(i);
+            Destroy(gameObjectToDestroy);
+        }
+    }
+
+    public void DestroyAllSFXClips()
+    {
+        for (int i = SFXInPlay.Count - 1; i >= 0; i--)
+        {
+            var gameObjectToDestroy = SFXInPlay[i].gameObject;
+            SFXInPlay.RemoveAt(i);
             Destroy(gameObjectToDestroy);
         }
     }
