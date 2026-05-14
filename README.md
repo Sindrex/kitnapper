@@ -17,23 +17,28 @@ If I change name of events, or replace events with new ones, it will break exist
 * Max amplitude:-8.1Db
 
 # TODO:
-* Legge inn finished musikk!!!
-* Share trailer:
-  * Facebook: Privat, Spillindustri
-  * Linkedin
-* Make tiktoks / insta / facebook reels / Youtube shorts
 * Make reddit posts
-  * Ascii art
-    * https://www.reddit.com/r/asciiart/
-    * https://www.reddit.com/r/ASCII/
-  * IndieGaming
-    * Trailer
+  * IndieGaming https://www.reddit.com/r/IndieGaming/
     * Parody face reveal with Kira "I just released my game!" (trend) (oversees worker hooman)
-* Upload music tracks to youtube.
+* Upload music tracks to youtube:
+  * Menu and Starter House before release (saturday?)
+  * Other songs after release
+* Make tiktoks / insta / facebook reels / Youtube shorts
 * Music menu button -> link to Youtube playlist (after uploaded)
-* Version button should send to steam announce for that version!
-* Nerdelandslaget nerdelandslaget@gmail.com (med trailer, steam page og steam game code)
+* Version button should send to steam announce for that version? (or steam page initially)
+* Make 'Authentic' version Brother's Duet
+  * Wait for ChrisHP to record piano -> make Live versjon
+* Add more reference cats
+  * Charlie (maso, black, white, mustache)
+  * Onyxia (Calico, PC lover)
+  * Harra (mixie, white, death stare)
+  * Narg (gray, Just fluff)
+* Other references if time
+  * CREW
+  * AOT (Attack on Hooman?)
+  * Fuusengumi
 * Playtest after fixing all bugs!!!
+* Speedrun the game (~1 month after release)
 * Test fixes:
   * Telephone: we should disable dialogue after talking once
   * Bottom of some roads are gone, same with CIT sign, a table in Cattelatte
@@ -64,7 +69,7 @@ If I change name of events, or replace events with new ones, it will break exist
   * House music stopped playing/no loop?
   * Something weird about music transitions I think
   * FinaleMoment did not use special music?
-  * Add outer reality music (remember to change after Rave too)
+  * Add outer reality music (remember to change back after Rave too)
   * More arrows outer reality
   * Guard from outer reality should say, "how'd you get behind here!?" and throw you to the other side?
   * SFX turned to 0 after exiting the game, when music is at 0
@@ -80,28 +85,9 @@ If I change name of events, or replace events with new ones, it will break exist
   * Dialogue Log outside
 
 Other names that can be used:
-* Kuro (Blue Exorcist) ->
-* Turbo Baba (Dandadan) -> ghost in graveyard? After talking to all graves? She moves into your house. She tells jokes, complains and you can do rock paper scissors but she always wins.
+* Kuro (Blue Exorcist)
 * Junji ito cats
 * Bakko (kaiju 8)
 * Kuraha (Noragami)
 * Jiji (Kiki)
 * Kyo (Fruit basket)
-
-Other references to include:
-* Kagurabachi: Swords in Shrine?
-* Ichi the Witchi
-  * Majik?
-
-Achivs / Easter eggs:
-* Finish the main story / the game: "Catch the Color Kitnapper"
-* Talk to every character / Find all the names
-* Have both ups and downs with catnip -> Catnip dealer
-* Find all 3 pokeballs (hidden around) -> Behind florist, inside University, behind house
-* Find Turbo Baba -> talk to all graves
-* Listen to all jokes by Turbo Baba (5? picked randomly)
-  * "Cat norris once cought a cold… with his own paws!"
-* Talk to SleepyCat (semi-long chain to break out of bounds)?
-  * Do all previous easter eggs: Both ups and downs with catnip, All 3 pokeballs, Awaken Turbo Baba, Listen to all her jokes.
-  * Turbo baba tells you to find the wise Sleepy Cat. Beyond reality, it knows all. Tells you to go to the rock, and moves the rock.
-  * You go and talk to sleepy cat.
