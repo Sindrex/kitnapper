@@ -18,16 +18,32 @@ MonoBehaviour:
   LimitChoiceOptionPerNode: 0
   MaxChoiceOptionPerNode: 8
   NodeLinkDatas:
+  - BaseNodeGuid: ab0aa676-b45c-43f5-a96a-65000b10b195
+    TargetNodeGuid: f405ea15-fdc9-486f-ab19-307299997c03
+  - BaseNodeGuid: 6862f9c6-3985-43d4-b699-c4b6c7ea5ad3
+    TargetNodeGuid: 0214acae-e1bc-4bda-b82a-d960bcc9b88d
+  - BaseNodeGuid: 0214acae-e1bc-4bda-b82a-d960bcc9b88d
+    TargetNodeGuid: a3b589b0-564b-4498-9d05-ada89afe0f07
+  - BaseNodeGuid: f405ea15-fdc9-486f-ab19-307299997c03
+    TargetNodeGuid: 6862f9c6-3985-43d4-b699-c4b6c7ea5ad3
+  - BaseNodeGuid: f405ea15-fdc9-486f-ab19-307299997c03
+    TargetNodeGuid: 487914fd-380a-4b32-b0dd-01b94482ddb5
+  - BaseNodeGuid: 487914fd-380a-4b32-b0dd-01b94482ddb5
+    TargetNodeGuid: 565e2251-7d30-4ad9-85e8-c4373cea4600
+  - BaseNodeGuid: 487914fd-380a-4b32-b0dd-01b94482ddb5
+    TargetNodeGuid: 6fa558a8-f6cb-4585-adde-b3d4b035c1a7
+  - BaseNodeGuid: 6fa558a8-f6cb-4585-adde-b3d4b035c1a7
+    TargetNodeGuid: 77f6fc81-9e25-498e-88bc-066ca1e4eb35
   - BaseNodeGuid: 12611948-860f-44ca-83ec-c39c7282715d
     TargetNodeGuid: 890351a3-5b42-4f01-a09b-391e06ac02c5
+  - BaseNodeGuid: 890351a3-5b42-4f01-a09b-391e06ac02c5
+    TargetNodeGuid: a9afae14-5562-4c68-b564-86da971b7a1e
+  - BaseNodeGuid: 23ba4066-38c3-4c65-a3ed-1d70f1ba5d08
+    TargetNodeGuid: da49e726-778e-4d7d-b479-ca0ac80b554f
   - BaseNodeGuid: a9afae14-5562-4c68-b564-86da971b7a1e
     TargetNodeGuid: 23ba4066-38c3-4c65-a3ed-1d70f1ba5d08
   - BaseNodeGuid: a9afae14-5562-4c68-b564-86da971b7a1e
     TargetNodeGuid: da49e726-778e-4d7d-b479-ca0ac80b554f
-  - BaseNodeGuid: 23ba4066-38c3-4c65-a3ed-1d70f1ba5d08
-    TargetNodeGuid: da49e726-778e-4d7d-b479-ca0ac80b554f
-  - BaseNodeGuid: 890351a3-5b42-4f01-a09b-391e06ac02c5
-    TargetNodeGuid: a9afae14-5562-4c68-b564-86da971b7a1e
   DialogueChoiceNodeDatas: []
   DialogueNodeDatas:
   - NodeGuid: 890351a3-5b42-4f01-a09b-391e06ac02c5
@@ -58,7 +74,7 @@ MonoBehaviour:
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
-    Event: 
+    Event: TurboBaba1PlaySoundEvent1
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 

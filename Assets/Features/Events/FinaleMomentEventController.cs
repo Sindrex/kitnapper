@@ -72,6 +72,7 @@ public class FinaleMomentEventController : EventBase
         CameraController.Instance.SetPosition(newPos);
         CameraController.Instance.Player.SetActive(false);
         CreditsAnimator.Play(CreditsAnimation);
+        AudioManager.Instance.PlayMusicClip(AudioLabel.MenuMusic2, false, true);
         yield return new WaitForSeconds(CreditsSeconds);
         CameraController.Instance.FadeOut();
         yield return new WaitForSeconds(FadeWaitSeconds);
@@ -82,7 +83,6 @@ public class FinaleMomentEventController : EventBase
         GameManager.Instance.HideUI(false);
         PlayerController.Instance.gameObject.transform.localPosition = PlayerStartPosition;
         CameraController.Instance.Player.SetActive(true);
-        AudioManager.Instance.PlayMusicClip(AudioLabel.MenuMusic2, false, true);
 
         //Achievement
         SteamIntegration.UnlockAchievement(SteamAchievement.ACH_FINISH_GAME);

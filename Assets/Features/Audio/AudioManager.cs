@@ -245,6 +245,9 @@ public class AudioManager : MonoBehaviour
             yield return new WaitForSeconds(MusicFadeStepSeconds);
         }
 
+        primaryMusicSource.gameObject.name = $"{primaryMusicSource.gameObject.name} (inactive)";
+        secondaryMusicSource.gameObject.name = $"{secondaryMusicSource.gameObject.name} (active)";
+
         primaryMusicSource.Stop();
         primaryMusicSource.volume = 0;
         MainMusicSource = secondaryMusicSource;

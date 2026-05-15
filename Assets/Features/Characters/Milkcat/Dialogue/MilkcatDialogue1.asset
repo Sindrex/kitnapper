@@ -59,6 +59,7 @@ MonoBehaviour:
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
+    Event: 
     AudioClips:
     - languageEnum: 0
       LanguageGenericType: {fileID: 0}
@@ -107,6 +108,7 @@ MonoBehaviour:
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
+    Event: 
     AudioClips:
     - languageEnum: 0
       LanguageGenericType: {fileID: 0}
@@ -192,7 +194,7 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: 'Catender:  How are you feline, Chief? Fancy a glass of
+      LanguageGenericType: 'Milkcat:  How are you feline, Chief? Fancy a glass of
         milk? Guess it''ll be hard to know if it really is, with what''s going on.
         Heh heh.'
     - languageEnum: 1
@@ -214,8 +216,8 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: 'Catender: So it was you all along huh, chief! Really
-        had us scratching our heads haha!'
+      LanguageGenericType: 'Milkcat: So it was you all along huh, chief! Really had
+        us scratching our heads haha!'
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10

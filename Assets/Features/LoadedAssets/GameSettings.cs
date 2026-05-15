@@ -105,5 +105,5 @@ public enum GameFlag
     SleepyCatDialogue1,
     GoldenBall1, GoldenBall2, GoldenBall3,
     AllNamesKnown, TurboBabaSpawned, TurboBabaJokesDone, TurboBabaDialogue2Flag4,
-    LunaColorsDialogue
+    LunaColorsDialogue, TelephoneSFXIsPlaying, TurboBabaSpawnedHouse
 }

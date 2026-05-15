@@ -20,13 +20,13 @@ MonoBehaviour:
   NodeLinkDatas:
   - BaseNodeGuid: 12611948-860f-44ca-83ec-c39c7282715d
     TargetNodeGuid: 890351a3-5b42-4f01-a09b-391e06ac02c5
-  - BaseNodeGuid: 03989a56-7da7-468c-a047-ffcb4cbbfeea
-    TargetNodeGuid: 7bc5f3b1-e547-4f32-ab17-a8449d35e36f
   - BaseNodeGuid: 890351a3-5b42-4f01-a09b-391e06ac02c5
     TargetNodeGuid: 03989a56-7da7-468c-a047-ffcb4cbbfeea
-  - BaseNodeGuid: 03989a56-7da7-468c-a047-ffcb4cbbfeea
-    TargetNodeGuid: da49e726-778e-4d7d-b479-ca0ac80b554f
   - BaseNodeGuid: 7bc5f3b1-e547-4f32-ab17-a8449d35e36f
+    TargetNodeGuid: da49e726-778e-4d7d-b479-ca0ac80b554f
+  - BaseNodeGuid: 03989a56-7da7-468c-a047-ffcb4cbbfeea
+    TargetNodeGuid: 7bc5f3b1-e547-4f32-ab17-a8449d35e36f
+  - BaseNodeGuid: 03989a56-7da7-468c-a047-ffcb4cbbfeea
     TargetNodeGuid: da49e726-778e-4d7d-b479-ca0ac80b554f
   DialogueChoiceNodeDatas: []
   DialogueNodeDatas:
@@ -57,7 +57,7 @@ MonoBehaviour:
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
-    Event: 
+    Event: TurboBaba1PlaySoundEvent1
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 

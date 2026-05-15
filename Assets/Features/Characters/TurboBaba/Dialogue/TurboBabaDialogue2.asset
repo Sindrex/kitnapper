@@ -18,46 +18,20 @@ MonoBehaviour:
   LimitChoiceOptionPerNode: 0
   MaxChoiceOptionPerNode: 0
   NodeLinkDatas:
-  - BaseNodeGuid: 7296a665-fc20-41ab-bd53-1dedba9fdd32
-    TargetNodeGuid: 9f6f05d3-0f42-4038-a4d9-660f7a8f96ec
-  - BaseNodeGuid: 8392f854-d495-45cb-b7e0-26550dea3efc
-    TargetNodeGuid: 972f7792-bab5-4888-a929-56a4a72f0c9a
-  - BaseNodeGuid: 6a292970-2633-4c96-a1ce-7bdfcc3853cb
-    TargetNodeGuid: 342611f3-f33d-446f-9f60-813418011077
-  - BaseNodeGuid: 972f7792-bab5-4888-a929-56a4a72f0c9a
-    TargetNodeGuid: ade34491-e228-444e-b30b-a9e195b70063
-  - BaseNodeGuid: c03585cc-9875-4b69-b035-ab0bbd12357c
-    TargetNodeGuid: adf4f629-c7c3-46ec-bbdd-f3e5a4f6464d
-  - BaseNodeGuid: 342611f3-f33d-446f-9f60-813418011077
-    TargetNodeGuid: 3e194af8-c1fb-42a9-b789-f65d9b5a07de
-  - BaseNodeGuid: 707ffdbb-3be0-40c6-b8b6-84be7faac9c0
-    TargetNodeGuid: 5219e840-1c49-460f-b77c-006ad2b6f3ec
-  - BaseNodeGuid: bae9baee-8c09-4e68-a814-204339e011f7
-    TargetNodeGuid: 707ffdbb-3be0-40c6-b8b6-84be7faac9c0
-  - BaseNodeGuid: c91e403a-8a80-42cc-b702-efdcc416abc0
-    TargetNodeGuid: 895fd863-1b0b-4550-83e0-538a566e070a
-  - BaseNodeGuid: 674e888a-f637-45e7-9ba5-3f02f1f027b3
-    TargetNodeGuid: c03585cc-9875-4b69-b035-ab0bbd12357c
-  - BaseNodeGuid: 674e888a-f637-45e7-9ba5-3f02f1f027b3
-    TargetNodeGuid: 8392f854-d495-45cb-b7e0-26550dea3efc
-  - BaseNodeGuid: a6fb76de-e97f-44ec-b860-c843d0103035
-    TargetNodeGuid: bae9baee-8c09-4e68-a814-204339e011f7
-  - BaseNodeGuid: a6fb76de-e97f-44ec-b860-c843d0103035
-    TargetNodeGuid: 5219e840-1c49-460f-b77c-006ad2b6f3ec
-  - BaseNodeGuid: 9f6f05d3-0f42-4038-a4d9-660f7a8f96ec
-    TargetNodeGuid: c91e403a-8a80-42cc-b702-efdcc416abc0
-  - BaseNodeGuid: 9f6f05d3-0f42-4038-a4d9-660f7a8f96ec
-    TargetNodeGuid: a6fb76de-e97f-44ec-b860-c843d0103035
-  - BaseNodeGuid: 06b3c5d4-bfa3-4701-8e2b-a0a480d63836
-    TargetNodeGuid: b0aeeb87-9f1f-4be8-9849-b2f09f449ac5
-  - BaseNodeGuid: 06b3c5d4-bfa3-4701-8e2b-a0a480d63836
-    TargetNodeGuid: 6a292970-2633-4c96-a1ce-7bdfcc3853cb
-  - BaseNodeGuid: 06b3c5d4-bfa3-4701-8e2b-a0a480d63836
-    TargetNodeGuid: 674e888a-f637-45e7-9ba5-3f02f1f027b3
-  - BaseNodeGuid: 5219e840-1c49-460f-b77c-006ad2b6f3ec
-    TargetNodeGuid: cd2c5f6e-de40-41ed-b82e-2274af1d3ddd
-  - BaseNodeGuid: 5219e840-1c49-460f-b77c-006ad2b6f3ec
-    TargetNodeGuid: 06b3c5d4-bfa3-4701-8e2b-a0a480d63836
+  - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
+    TargetNodeGuid: 9a755bde-ef94-48d7-a86c-2e577b3d9c18
+  - BaseNodeGuid: 004fa763-bd44-4bae-8c26-c7720311fb4b
+    TargetNodeGuid: 4dc86042-5ba1-472e-921a-d6bef568e550
+  - BaseNodeGuid: 4dc86042-5ba1-472e-921a-d6bef568e550
+    TargetNodeGuid: cb4d95e3-2759-46d4-8ce2-9821d52d3bfd
+  - BaseNodeGuid: cb4d95e3-2759-46d4-8ce2-9821d52d3bfd
+    TargetNodeGuid: 24dcde15-8fcf-449a-86cf-ea517d96e655
+  - BaseNodeGuid: 24dcde15-8fcf-449a-86cf-ea517d96e655
+    TargetNodeGuid: 4b76255d-530a-4fc8-bded-7cc70a089d86
+  - BaseNodeGuid: 4b76255d-530a-4fc8-bded-7cc70a089d86
+    TargetNodeGuid: 8b7c48b1-70f4-4fc3-a83a-04d14ba5894e
+  - BaseNodeGuid: 9a755bde-ef94-48d7-a86c-2e577b3d9c18
+    TargetNodeGuid: 004fa763-bd44-4bae-8c26-c7720311fb4b
   - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
     TargetNodeGuid: 48c3abd3-d0af-493b-a1ba-af8a538210a6
   - BaseNodeGuid: d04b433e-246a-4bbe-9d26-8a2f95edba61
@@ -193,6 +167,7 @@ MonoBehaviour:
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
+    Event: 
     AudioClips:
     - languageEnum: 0
       LanguageGenericType: {fileID: 0}
@@ -240,6 +215,7 @@ MonoBehaviour:
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
+    Event: 
     AudioClips:
     - languageEnum: 0
       LanguageGenericType: {fileID: 0}
@@ -478,27 +454,6 @@ MonoBehaviour:
     TextType:
     - languageEnum: 0
       LanguageGenericType: Rock! I win, I win, I win!
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
-  - NodeGuid: addc1582-c7ed-4a0d-9675-f798b81cbc73
-    Position: {x: 984, y: 1059}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: TurboBabaDialogue2GoldenBallsEvent
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: You found them all? Nice, give them to me! I'll put one
-        right... here. And like this. Oh, this is good.
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
@@ -988,6 +943,27 @@ MonoBehaviour:
     - languageEnum: 0
       LanguageGenericType: Now, to go beyond, find the rock behind the house. That's
         where it begins.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: addc1582-c7ed-4a0d-9675-f798b81cbc73
+    Position: {x: 984, y: 1059}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: TurboBabaDialogue2GoldenBallsEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: You found them all? Nice! I will have to get a good look
+        at them later...
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10

@@ -9,9 +9,9 @@ public class GameCharacterController : MonoBehaviour
     public void MoveEventFinished(string moveEventId)
     {
         var moveEvent = MoveEvents.FirstOrDefault(x => x.Id == moveEventId);
-        CLogger.Log($"Found moveEvent: {moveEvent.Id}");
         if(moveEvent != null && !moveEvent.IsFinished)
         {
+            CLogger.Log($"Found moveEvent: {moveEvent.Id}");
             moveEvent.AnimationFinished = true;
         }
     }

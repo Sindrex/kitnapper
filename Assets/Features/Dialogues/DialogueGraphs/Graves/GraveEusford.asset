@@ -57,7 +57,7 @@ MonoBehaviour:
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
-    Event: 
+    Event: TurboBaba1PlaySoundEvent1
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 

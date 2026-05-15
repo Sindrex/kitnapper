@@ -114,6 +114,12 @@ public class GameManager : MonoBehaviour
         //HideUI
         UIHidden = false;
         CanInteract = true;
+
+        //Reset perpetual SFX
+        var longSfxFlag = CurrentGameSettings.GameFlags.FirstOrDefault(x => x.Flag == GameFlag.LongSFXIsPlaying);
+        var telephoneSfxFlag = CurrentGameSettings.GameFlags.FirstOrDefault(x => x.Flag == GameFlag.TelephoneSFXIsPlaying);
+        if (longSfxFlag != null) longSfxFlag.BoolValue = false;
+        if (telephoneSfxFlag != null) telephoneSfxFlag.BoolValue = false;
     }
 
     void Update()
