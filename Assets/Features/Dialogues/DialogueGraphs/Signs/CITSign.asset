@@ -40,7 +40,7 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: CIT Offices
+      LanguageGenericType: C.I.T. Offices
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10

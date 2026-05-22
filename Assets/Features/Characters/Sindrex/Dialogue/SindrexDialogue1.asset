@@ -26,20 +26,16 @@ MonoBehaviour:
     TargetNodeGuid: 80722d2f-a329-4faa-956a-d9747a91d154
   - BaseNodeGuid: e5b3a978-b5f8-4810-a74c-7c961dbbbda6
     TargetNodeGuid: 538911d7-1563-4046-bf0b-8be6d73d6d1b
-  - BaseNodeGuid: a8b5e475-58fa-484c-8070-4ec735204553
-    TargetNodeGuid: 8915872f-c73f-40bb-bf08-ba1fed0720fa
   - BaseNodeGuid: daf9f604-1305-4b35-8f42-66ab2f960cf3
     TargetNodeGuid: 6902789f-02ca-49d7-bb57-dd9b3ed4166a
-  - BaseNodeGuid: 2edf9b08-5e52-4feb-9fdf-6ec62dc364b2
-    TargetNodeGuid: 53ce36b4-e3cd-41fe-8b72-e1ffe5c4c845
-  - BaseNodeGuid: 8915872f-c73f-40bb-bf08-ba1fed0720fa
-    TargetNodeGuid: 5373b8c2-45db-4209-8f51-93a3667e4891
   - BaseNodeGuid: 254d0d1b-d6c9-4175-b6ff-cdf289fc7b6a
     TargetNodeGuid: 3d446f93-3318-407d-a17c-ec092961248a
   - BaseNodeGuid: f6087c84-07c7-4a10-bc94-304b522e401f
     TargetNodeGuid: 2e84c589-2aa8-4c3f-b8bf-4603c61392f4
   - BaseNodeGuid: 2e84c589-2aa8-4c3f-b8bf-4603c61392f4
     TargetNodeGuid: 5cf75908-dc72-4df7-be09-b6cc33f65051
+  - BaseNodeGuid: 2edf9b08-5e52-4feb-9fdf-6ec62dc364b2
+    TargetNodeGuid: 53ce36b4-e3cd-41fe-8b72-e1ffe5c4c845
   - BaseNodeGuid: c229490e-ee7a-44ee-82e0-8857bbc80c6f
     TargetNodeGuid: f5e7667f-2556-4a0d-8912-eaa25d1a14ee
   - BaseNodeGuid: c229490e-ee7a-44ee-82e0-8857bbc80c6f
@@ -68,6 +64,18 @@ MonoBehaviour:
     TargetNodeGuid: 75079989-0afc-4b0e-865b-62c72588f23a
   - BaseNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
     TargetNodeGuid: e5b3a978-b5f8-4810-a74c-7c961dbbbda6
+  - BaseNodeGuid: a8b5e475-58fa-484c-8070-4ec735204553
+    TargetNodeGuid: c4ca8580-b4e8-4b52-a521-5bd110b906d7
+  - BaseNodeGuid: c4ca8580-b4e8-4b52-a521-5bd110b906d7
+    TargetNodeGuid: 8915872f-c73f-40bb-bf08-ba1fed0720fa
+  - BaseNodeGuid: 8915872f-c73f-40bb-bf08-ba1fed0720fa
+    TargetNodeGuid: 8df0665f-18a7-4621-ac72-0d3d55e294e1
+  - BaseNodeGuid: 8df0665f-18a7-4621-ac72-0d3d55e294e1
+    TargetNodeGuid: 3baf5880-e424-41b9-b5cb-f765801e22ea
+  - BaseNodeGuid: 3baf5880-e424-41b9-b5cb-f765801e22ea
+    TargetNodeGuid: 8974d1c1-82bb-4579-8517-1d9f73d08058
+  - BaseNodeGuid: 8974d1c1-82bb-4579-8517-1d9f73d08058
+    TargetNodeGuid: 5373b8c2-45db-4209-8f51-93a3667e4891
   DialogueChoiceNodeDatas:
   - NodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
     Position: {x: 800, y: 196}
@@ -125,7 +133,7 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: 'Sindrex: So, did you like the game?'
+      LanguageGenericType: 'Sindrex: Did you like the game?'
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 5
@@ -244,7 +252,7 @@ MonoBehaviour:
     TextType:
     - languageEnum: 0
       LanguageGenericType: Poppy? At this stage, maybe around- Wait a minute! You
-        have to find out for yourself!
+        have to find that out for yourself!
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
@@ -266,88 +274,6 @@ MonoBehaviour:
     - languageEnum: 0
       LanguageGenericType: Ah, the good old ball toy. My muzzle is sealed this time.
         Good luck, Detective.
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
-  - NodeGuid: a8b5e475-58fa-484c-8070-4ec735204553
-    Position: {x: 1047, y: -214}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: '???: So for the big reveal. Drumrolls please!'
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
-  - NodeGuid: daf9f604-1305-4b35-8f42-66ab2f960cf3
-    Position: {x: 1677, y: -737}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: Hey! No takebacks!
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
-  - NodeGuid: 8915872f-c73f-40bb-bf08-ba1fed0720fa
-    Position: {x: 1297, y: -214}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: SindrexNameChangeDialogueEvent
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: '???: It''s me! Sindrex! The developer of the game! I
-        bet you never would have guessed that or what?'
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
-  - NodeGuid: 254d0d1b-d6c9-4175-b6ff-cdf289fc7b6a
-    Position: {x: 1677, y: -479}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: 'Sad to hear. But purrhaps my next invention will  entice
-        you! I look forward to the challenge! '
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
@@ -412,17 +338,182 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
+  - NodeGuid: 8915872f-c73f-40bb-bf08-ba1fed0720fa
+    Position: {x: 1347, y: -189}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: SindrexNameChangeDialogueEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: '???: It''s me! Sindrex! The developer of the game! I
+        bet you never would have guessed that or what?'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: c4ca8580-b4e8-4b52-a521-5bd110b906d7
+    Position: {x: 1100, y: -189}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: '???: Drrrr...'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: a8b5e475-58fa-484c-8070-4ec735204553
+    Position: {x: 847, y: -189}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: '???: So for the big reveal. Drumrolls please!'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 8df0665f-18a7-4621-ac72-0d3d55e294e1
+    Position: {x: 1596, y: -189}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Sindrex: So, have you gotten all the achievements, found
+        all the easter eggs and references?'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: daf9f604-1305-4b35-8f42-66ab2f960cf3
+    Position: {x: 1677, y: -789}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Hey! No takebacks!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 254d0d1b-d6c9-4175-b6ff-cdf289fc7b6a
+    Position: {x: 1677, y: -519}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Sad to hear. But purrhaps my next invention will  entice
+        you! I look forward to the challenge! '
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 3baf5880-e424-41b9-b5cb-f765801e22ea
+    Position: {x: 1849, y: -189}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: I tried to pack as much as possible into the game! Feel
+        free to send me a list of references you found.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 8974d1c1-82bb-4579-8517-1d9f73d08058
+    Position: {x: 2077, y: -189}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: A Stella Star for the all who complete the task to a satisfactory
+        degree.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
   ConditionalNodeDatas:
   - NodeGuid: c229490e-ee7a-44ee-82e0-8857bbc80c6f
     Position: {x: 511, y: 196}
     RequiredGameFlagCombo: {fileID: 11400000, guid: d280d0c262e2fca41b46ae301e91ac3f,
       type: 2}
   - NodeGuid: f5e7667f-2556-4a0d-8912-eaa25d1a14ee
-    Position: {x: 748, y: -108}
+    Position: {x: 511, y: -89}
     RequiredGameFlagCombo: {fileID: 11400000, guid: 1f9de555e001b8f4bb7087b442fff47a,
       type: 2}
   - NodeGuid: 942e9cce-7b8f-44dc-b0d7-80bd0bc58a77
-    Position: {x: 1422, y: -479}
+    Position: {x: 1420, y: -519}
     RequiredGameFlagCombo: {fileID: 11400000, guid: 9c5e8b41d53795141b64f9a9da80c2bb,
       type: 2}
   TimerChoiceNodeDatas: []
@@ -463,7 +554,7 @@ MonoBehaviour:
     Dialogue: {fileID: 0}
     startID: 
   - NodeGuid: 8deb0860-cfc7-42f0-a8cc-11151584e680
-    Position: {x: 1497, y: 76}
+    Position: {x: 1319, y: 165}
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 

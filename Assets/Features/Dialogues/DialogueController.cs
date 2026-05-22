@@ -90,6 +90,11 @@ public class DialogueController : MonoBehaviour
         {
             MyDialogueManager.Instance.CloseDialogue();
             currentNode = dialogueContainer.StartNodeDatas.FirstOrDefault();
+            IsActive = false;
+            if (RequireInteract)
+            {
+                CheckAndSetActive();
+            }
         }
         else if (currentNode is DialogueChoiceNodeData choiceNodeData)
         {
@@ -149,6 +154,11 @@ public class DialogueController : MonoBehaviour
     {
         //open for interact -> start dialogue
         if (!other.gameObject.CompareTag("Player")) return;
+        CheckAndSetActive();
+    }
+
+    private void CheckAndSetActive()
+    {
         if (CheckRequirements())
         {
             CLogger.Log("Setting Dialogue to Active");

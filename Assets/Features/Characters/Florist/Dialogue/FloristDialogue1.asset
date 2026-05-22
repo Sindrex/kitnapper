@@ -38,14 +38,16 @@ MonoBehaviour:
     TargetNodeGuid: 97e9dce1-b6ec-420a-bfcf-8a2ac7b582ff
   - BaseNodeGuid: 57d79352-3fe4-4018-a7f7-33da7eb00fd0
     TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
-  - BaseNodeGuid: f9369be4-9522-4660-9151-707050186286
-    TargetNodeGuid: 57d79352-3fe4-4018-a7f7-33da7eb00fd0
   - BaseNodeGuid: b39268b8-e9f0-4e82-9d56-ea60fc2daaeb
     TargetNodeGuid: 9ac96b63-97a9-488c-91b4-ffaae85304f1
   - BaseNodeGuid: 56266d62-c1e6-416b-8d8b-6574ecc3385c
     TargetNodeGuid: 9ac96b63-97a9-488c-91b4-ffaae85304f1
   - BaseNodeGuid: 09002230-bfd2-434d-b4b4-e66de7695229
     TargetNodeGuid: 9a0b6cb0-8b2e-4eb6-82aa-cbed049059e5
+  - BaseNodeGuid: f9369be4-9522-4660-9151-707050186286
+    TargetNodeGuid: 5d8a4a39-d157-4dbf-8673-b0a34fa6ac7c
+  - BaseNodeGuid: 5d8a4a39-d157-4dbf-8673-b0a34fa6ac7c
+    TargetNodeGuid: 57d79352-3fe4-4018-a7f7-33da7eb00fd0
   - BaseNodeGuid: b2401b4b-3e4d-4453-a639-353c81eb6899
     TargetNodeGuid: 09002230-bfd2-434d-b4b4-e66de7695229
   - BaseNodeGuid: b2401b4b-3e4d-4453-a639-353c81eb6899
@@ -87,6 +89,7 @@ MonoBehaviour:
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
+    Event: 
     AudioClips:
     - languageEnum: 0
       LanguageGenericType: {fileID: 0}
@@ -126,6 +129,7 @@ MonoBehaviour:
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
+    Event: 
     AudioClips:
     - languageEnum: 0
       LanguageGenericType: {fileID: 0}
@@ -182,6 +186,7 @@ MonoBehaviour:
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
+    Event: 
     AudioClips:
     - languageEnum: 0
       LanguageGenericType: {fileID: 0}
@@ -238,6 +243,7 @@ MonoBehaviour:
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
+    Event: 
     AudioClips:
     - languageEnum: 0
       LanguageGenericType: {fileID: 0}
@@ -455,27 +461,6 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
-  - NodeGuid: f9369be4-9522-4660-9151-707050186286
-    Position: {x: 1782, y: 719}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: As I said, it is a Midnight Butterfly. I sold it to Luna
-        and Richard recently.
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
   - NodeGuid: b39268b8-e9f0-4e82-9d56-ea60fc2daaeb
     Position: {x: 900, y: 799}
     Character: {fileID: 0}
@@ -536,6 +521,47 @@ MonoBehaviour:
     - languageEnum: 0
       LanguageGenericType: 'Poppy: Good prank you pulled on us Detective! I will
         be savouring this colorless moment while it lasts!'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: f9369be4-9522-4660-9151-707050186286
+    Position: {x: 1639, y: 714}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: As I said, it is a Midnight Butterfly. They only drink
+        nectar from the Midnight Rose.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 5d8a4a39-d157-4dbf-8673-b0a34fa6ac7c
+    Position: {x: 1918, y: 714}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: I sold that flower to Luna and Richard recently.
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10

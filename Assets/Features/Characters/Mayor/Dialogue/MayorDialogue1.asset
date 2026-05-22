@@ -18,20 +18,18 @@ MonoBehaviour:
   LimitChoiceOptionPerNode: 0
   MaxChoiceOptionPerNode: 0
   NodeLinkDatas:
+  - BaseNodeGuid: 12611948-860f-44ca-83ec-c39c7282715d
+    TargetNodeGuid: 890351a3-5b42-4f01-a09b-391e06ac02c5
+  - BaseNodeGuid: 890351a3-5b42-4f01-a09b-391e06ac02c5
+    TargetNodeGuid: da49e726-778e-4d7d-b479-ca0ac80b554f
   - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
     TargetNodeGuid: 22294a8c-0eb2-446f-9829-495e67b5a8a7
   - BaseNodeGuid: 2fc2f56d-375d-4a2d-926a-fa8163a1d583
     TargetNodeGuid: 8f05f8ea-704c-4b21-9cad-ceec3f556e1a
-  - BaseNodeGuid: 693cdb95-ab3f-467c-925f-101923b65cad
-    TargetNodeGuid: 1a0f9043-9955-4957-9e53-0fa16f11de69
-  - BaseNodeGuid: cdc1b14a-235e-4338-b578-91110baad130
-    TargetNodeGuid: 693cdb95-ab3f-467c-925f-101923b65cad
   - BaseNodeGuid: 0c0d56e6-039a-4ca4-a36e-187bbd7e0e42
     TargetNodeGuid: 8f05f8ea-704c-4b21-9cad-ceec3f556e1a
   - BaseNodeGuid: cf257311-7fa9-4c48-a855-85cb9d555300
     TargetNodeGuid: 138b667b-51b1-4ff3-90d1-4a2a0205e3c3
-  - BaseNodeGuid: 138b667b-51b1-4ff3-90d1-4a2a0205e3c3
-    TargetNodeGuid: cdc1b14a-235e-4338-b578-91110baad130
   - BaseNodeGuid: 49ae51f3-417b-497e-aa96-38a1ec91b121
     TargetNodeGuid: dfdb6f86-9419-4200-a790-511060dfc225
   - BaseNodeGuid: 08a994b5-bd56-4f99-9387-45d43406c157
@@ -44,10 +42,22 @@ MonoBehaviour:
     TargetNodeGuid: 49ae51f3-417b-497e-aa96-38a1ec91b121
   - BaseNodeGuid: 44f46695-f28c-49dc-b365-42b599e965f7
     TargetNodeGuid: 49ae51f3-417b-497e-aa96-38a1ec91b121
+  - BaseNodeGuid: 71b1e627-fd38-47c5-8dc0-fefd5aca7a4f
+    TargetNodeGuid: bd6af605-65fd-4b98-994f-fb40347dd574
+  - BaseNodeGuid: 693cdb95-ab3f-467c-925f-101923b65cad
+    TargetNodeGuid: 1a0f9043-9955-4957-9e53-0fa16f11de69
+  - BaseNodeGuid: cdc1b14a-235e-4338-b578-91110baad130
+    TargetNodeGuid: 693cdb95-ab3f-467c-925f-101923b65cad
+  - BaseNodeGuid: 138b667b-51b1-4ff3-90d1-4a2a0205e3c3
+    TargetNodeGuid: cdc1b14a-235e-4338-b578-91110baad130
+  - BaseNodeGuid: 8d30ec4b-22b1-4501-8539-0910f17f158f
+    TargetNodeGuid: cf257311-7fa9-4c48-a855-85cb9d555300
   - BaseNodeGuid: 1a0f9043-9955-4957-9e53-0fa16f11de69
     TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
   - BaseNodeGuid: 8f05f8ea-704c-4b21-9cad-ceec3f556e1a
     TargetNodeGuid: 7efaf9ba-97e4-4424-810f-c620df1c7368
+  - BaseNodeGuid: 8f05f8ea-704c-4b21-9cad-ceec3f556e1a
+    TargetNodeGuid: 71b1e627-fd38-47c5-8dc0-fefd5aca7a4f
   - BaseNodeGuid: 4fd61db1-a71e-4295-8ec8-fb495f167954
     TargetNodeGuid: 2fc2f56d-375d-4a2d-926a-fa8163a1d583
   - BaseNodeGuid: 4fd61db1-a71e-4295-8ec8-fb495f167954
@@ -68,14 +78,10 @@ MonoBehaviour:
     TargetNodeGuid: 22f51342-4318-4877-93d0-bd695020e50a
   - BaseNodeGuid: 889621fc-4b51-470f-a7cc-25216ec1e25c
     TargetNodeGuid: 44f46695-f28c-49dc-b365-42b599e965f7
-  - BaseNodeGuid: 8f05f8ea-704c-4b21-9cad-ceec3f556e1a
-    TargetNodeGuid: 71b1e627-fd38-47c5-8dc0-fefd5aca7a4f
-  - BaseNodeGuid: 71b1e627-fd38-47c5-8dc0-fefd5aca7a4f
-    TargetNodeGuid: bd6af605-65fd-4b98-994f-fb40347dd574
   - BaseNodeGuid: bd6af605-65fd-4b98-994f-fb40347dd574
+    TargetNodeGuid: a289f0cd-9259-4f82-923c-924e339293b6
+  - BaseNodeGuid: a289f0cd-9259-4f82-923c-924e339293b6
     TargetNodeGuid: 8d30ec4b-22b1-4501-8539-0910f17f158f
-  - BaseNodeGuid: 8d30ec4b-22b1-4501-8539-0910f17f158f
-    TargetNodeGuid: cf257311-7fa9-4c48-a855-85cb9d555300
   DialogueChoiceNodeDatas:
   - NodeGuid: 7efaf9ba-97e4-4424-810f-c620df1c7368
     Position: {x: 1537, y: -136}
@@ -441,26 +447,6 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
-  - NodeGuid: 8d30ec4b-22b1-4501-8539-0910f17f158f
-    Position: {x: 1557, y: 635}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: As I was saying, humr humr.
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
   - NodeGuid: bd6af605-65fd-4b98-994f-fb40347dd574
     Position: {x: 1322, y: 635}
     Character: {fileID: 0}
@@ -499,6 +485,46 @@ MonoBehaviour:
     - languageEnum: 0
       LanguageGenericType: 'That will be all... Now back to work. Where did I put
         that biscuit recipe, humr humr? '
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 8d30ec4b-22b1-4501-8539-0910f17f158f
+    Position: {x: 1761, y: 635}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: As I was saying, humr humr.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: a289f0cd-9259-4f82-923c-924e339293b6
+    Position: {x: 1537, y: 635}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Must have been the wind, humr humr.
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10

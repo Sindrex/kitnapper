@@ -46,8 +46,6 @@ MonoBehaviour:
     TargetNodeGuid: 1ec5d9d6-2122-4d97-a9a3-7f457fc4c961
   - BaseNodeGuid: f7269a0e-a126-4f38-a14f-ac983946e736
     TargetNodeGuid: 6d228e2b-2248-439d-b8cf-ad07f87c43ed
-  - BaseNodeGuid: 02e72912-89ec-4314-9a25-ffd8f0a483a8
-    TargetNodeGuid: f7269a0e-a126-4f38-a14f-ac983946e736
   - BaseNodeGuid: 1ec5d9d6-2122-4d97-a9a3-7f457fc4c961
     TargetNodeGuid: 2d32b667-db15-4a1c-8264-c741ebf205b7
   - BaseNodeGuid: 2d32b667-db15-4a1c-8264-c741ebf205b7
@@ -60,6 +58,8 @@ MonoBehaviour:
     TargetNodeGuid: 08fc895c-4b8b-4836-b922-0df3a4967121
   - BaseNodeGuid: 08fc895c-4b8b-4836-b922-0df3a4967121
     TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
+  - BaseNodeGuid: 02e72912-89ec-4314-9a25-ffd8f0a483a8
+    TargetNodeGuid: f7269a0e-a126-4f38-a14f-ac983946e736
   - BaseNodeGuid: 6efc1a03-016a-44af-84aa-30bb646b8e22
     TargetNodeGuid: c60b8bee-fa21-4f10-9cf0-5a85d88462da
   - BaseNodeGuid: 6d228e2b-2248-439d-b8cf-ad07f87c43ed
@@ -73,6 +73,7 @@ MonoBehaviour:
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
+    Event: 
     AudioClips:
     - languageEnum: 0
       LanguageGenericType: {fileID: 0}
@@ -102,6 +103,7 @@ MonoBehaviour:
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
+    Event: 
     AudioClips:
     - languageEnum: 0
       LanguageGenericType: {fileID: 0}
@@ -487,7 +489,7 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: If you want to talk, meet me back at the Cafelatte.
+      LanguageGenericType: If you want to talk, meet me back at the Cattelatte.
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10

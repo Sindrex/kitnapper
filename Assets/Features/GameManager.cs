@@ -62,6 +62,12 @@ public class GameManager : MonoBehaviour
             }
 
             var gameObject = GameObject.Find(eventState.Id);
+            if(gameObject == null)
+            {
+                CLogger.LogError($"Could not find GameObject with name {eventState.Id} for EventState!");
+                continue;
+            }
+
             var eventController = gameObject.GetComponent<EventController>();
             if (eventController != null)
             {

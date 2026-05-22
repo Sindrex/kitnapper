@@ -28,7 +28,7 @@ public enum AudioLabel
     PlayerHouseMusic, ForestMusic, TownMusic, CattelatteMusic, ShrineMusic, 
     UniversityMusic, CreditsMusic, OuterRealityMusic,
     FindusSinbadMusic, MayorMomentMusic, FinaleMomentMusic,
-    MenuMusic2, FartSFX
+    MenuMusic2, FartSFX, DrinkSFX
 }
 
 [Serializable]
@@ -128,13 +128,13 @@ public class AudioManager : MonoBehaviour
         var audioClip = AudioClips.FirstOrDefault(e => e.Label == audioLabel).Clip;
         if(MainMusicSource.clip == audioClip && (fadeIn || queue))
         {
-            CLogger.LogWarning("Music is already playing.");
+            CLogger.LogWarning($"Music {audioLabel} is already playing.");
             return;
         }
 
         if(fadeIn && queue)
         {
-            CLogger.LogWarning("Both fadeIn and queue is true. This is not supported. Defaults to fadeIn only.");
+            CLogger.LogWarning($"Both fadeIn and queue are true for music {audioLabel}. This is not supported. Defaults to fadeIn only.");
         }
 
         if (fadeIn)

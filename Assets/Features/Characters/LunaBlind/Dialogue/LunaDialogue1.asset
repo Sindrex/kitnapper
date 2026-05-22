@@ -50,10 +50,18 @@ MonoBehaviour:
     TargetNodeGuid: ed38842d-5801-4d33-a912-3cdb8cc22c81
   - BaseNodeGuid: fd8a58c2-d5b8-40a6-bb0c-e1c4d639783d
     TargetNodeGuid: 90a3ed62-c327-4eb8-88e5-56d86f1e2a4f
+  - BaseNodeGuid: fd8a58c2-d5b8-40a6-bb0c-e1c4d639783d
+    TargetNodeGuid: 1ecb9f1a-31f4-4df0-9a73-326b2111de44
   - BaseNodeGuid: 25917b06-a018-4050-b9bf-a96a1563bc19
     TargetNodeGuid: 50b5b237-035e-4ed4-8040-69b1c907eb64
-  - BaseNodeGuid: 25917b06-a018-4050-b9bf-a96a1563bc19
-    TargetNodeGuid: fd8a58c2-d5b8-40a6-bb0c-e1c4d639783d
+  - BaseNodeGuid: 1ecb9f1a-31f4-4df0-9a73-326b2111de44
+    TargetNodeGuid: a65b4bed-3292-4edf-b8d7-c376139b2fee
+  - BaseNodeGuid: 1ecb9f1a-31f4-4df0-9a73-326b2111de44
+    TargetNodeGuid: e47643a5-3fc7-4907-a3cb-37edc2a443a5
+  - BaseNodeGuid: e47643a5-3fc7-4907-a3cb-37edc2a443a5
+    TargetNodeGuid: 0fb8e009-758b-4302-ad61-4c516ffc1003
+  - BaseNodeGuid: e47643a5-3fc7-4907-a3cb-37edc2a443a5
+    TargetNodeGuid: 494cfc21-0740-4401-a1f2-aa3e90b20a82
   - BaseNodeGuid: dcd8d6f3-4bcf-4ce1-926e-1f153f04d853
     TargetNodeGuid: f54103a2-0822-4f0b-b378-f40ff488464c
   - BaseNodeGuid: dcd8d6f3-4bcf-4ce1-926e-1f153f04d853
@@ -66,16 +74,6 @@ MonoBehaviour:
     TargetNodeGuid: bcbb99da-e3f9-4ffb-a3a9-d2b4923d23bc
   - BaseNodeGuid: 0fb8e009-758b-4302-ad61-4c516ffc1003
     TargetNodeGuid: dcd8d6f3-4bcf-4ce1-926e-1f153f04d853
-  - BaseNodeGuid: fd8a58c2-d5b8-40a6-bb0c-e1c4d639783d
-    TargetNodeGuid: 1ecb9f1a-31f4-4df0-9a73-326b2111de44
-  - BaseNodeGuid: 1ecb9f1a-31f4-4df0-9a73-326b2111de44
-    TargetNodeGuid: a65b4bed-3292-4edf-b8d7-c376139b2fee
-  - BaseNodeGuid: 1ecb9f1a-31f4-4df0-9a73-326b2111de44
-    TargetNodeGuid: e47643a5-3fc7-4907-a3cb-37edc2a443a5
-  - BaseNodeGuid: e47643a5-3fc7-4907-a3cb-37edc2a443a5
-    TargetNodeGuid: 0fb8e009-758b-4302-ad61-4c516ffc1003
-  - BaseNodeGuid: e47643a5-3fc7-4907-a3cb-37edc2a443a5
-    TargetNodeGuid: 494cfc21-0740-4401-a1f2-aa3e90b20a82
   - BaseNodeGuid: a65b4bed-3292-4edf-b8d7-c376139b2fee
     TargetNodeGuid: bcbb99da-e3f9-4ffb-a3a9-d2b4923d23bc
   - BaseNodeGuid: a65b4bed-3292-4edf-b8d7-c376139b2fee
@@ -84,6 +82,14 @@ MonoBehaviour:
     TargetNodeGuid: bcbb99da-e3f9-4ffb-a3a9-d2b4923d23bc
   - BaseNodeGuid: 494cfc21-0740-4401-a1f2-aa3e90b20a82
     TargetNodeGuid: dcd8d6f3-4bcf-4ce1-926e-1f153f04d853
+  - BaseNodeGuid: 25917b06-a018-4050-b9bf-a96a1563bc19
+    TargetNodeGuid: ca6a62fd-c28f-44d5-8de8-5772a7ad9adf
+  - BaseNodeGuid: ca6a62fd-c28f-44d5-8de8-5772a7ad9adf
+    TargetNodeGuid: 2c1c129b-fa69-48ab-a854-cd16a34bfea8
+  - BaseNodeGuid: ca6a62fd-c28f-44d5-8de8-5772a7ad9adf
+    TargetNodeGuid: fd8a58c2-d5b8-40a6-bb0c-e1c4d639783d
+  - BaseNodeGuid: 2c1c129b-fa69-48ab-a854-cd16a34bfea8
+    TargetNodeGuid: 15da3b98-edb8-450b-9dbc-85e6d40cae48
   DialogueChoiceNodeDatas:
   - NodeGuid: dcd8d6f3-4bcf-4ce1-926e-1f153f04d853
     Position: {x: 840, y: -112}
@@ -550,6 +556,27 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
+  - NodeGuid: 2c1c129b-fa69-48ab-a854-cd16a34bfea8
+    Position: {x: -180, y: 660}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Luna: What? Poppy is missing? We need to find her right
+        away!'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
   ConditionalNodeDatas:
   - NodeGuid: fd8a58c2-d5b8-40a6-bb0c-e1c4d639783d
     Position: {x: 141, y: 306}
@@ -566,6 +593,10 @@ MonoBehaviour:
   - NodeGuid: e47643a5-3fc7-4907-a3cb-37edc2a443a5
     Position: {x: 143, y: 721}
     RequiredGameFlagCombo: {fileID: 11400000, guid: 049b94d8a57f23049bba653c5b46ffae,
+      type: 2}
+  - NodeGuid: ca6a62fd-c28f-44d5-8de8-5772a7ad9adf
+    Position: {x: -180, y: 492}
+    RequiredGameFlagCombo: {fileID: 11400000, guid: 279d3628befa270478f2f3b09c593d44,
       type: 2}
   TimerChoiceNodeDatas: []
   EndNodeDatas:
@@ -601,6 +632,11 @@ MonoBehaviour:
     startID: 
   - NodeGuid: dfb4d9a0-65a8-449d-a9e3-0fda2530effc
     Position: {x: 2054, y: 812}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: 15da3b98-edb8-450b-9dbc-85e6d40cae48
+    Position: {x: 53, y: 846}
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 

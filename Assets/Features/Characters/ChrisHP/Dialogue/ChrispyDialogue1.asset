@@ -20,8 +20,6 @@ MonoBehaviour:
   NodeLinkDatas:
   - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
     TargetNodeGuid: 3f95f4d3-f6e8-495f-b05a-8e686443e691
-  - BaseNodeGuid: a271c2bc-26a9-4bd1-9c7a-7f4a180ece72
-    TargetNodeGuid: f39fea85-bb90-4356-96d5-6bc9ef608c9d
   - BaseNodeGuid: 67e0ad07-466d-452a-be5c-fab3c566187f
     TargetNodeGuid: 2d1e40dc-f103-4d24-8e57-b9a6cd847f0d
   - BaseNodeGuid: dada1321-21e8-4a91-927f-92111fa6b47d
@@ -30,6 +28,8 @@ MonoBehaviour:
     TargetNodeGuid: 1269b788-c779-42ad-b337-bd76a65bb1c5
   - BaseNodeGuid: 59458af2-6646-47e4-8819-b9c273fd08b5
     TargetNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
+  - BaseNodeGuid: a271c2bc-26a9-4bd1-9c7a-7f4a180ece72
+    TargetNodeGuid: f39fea85-bb90-4356-96d5-6bc9ef608c9d
   - BaseNodeGuid: 3f95f4d3-f6e8-495f-b05a-8e686443e691
     TargetNodeGuid: a271c2bc-26a9-4bd1-9c7a-7f4a180ece72
   - BaseNodeGuid: 3f95f4d3-f6e8-495f-b05a-8e686443e691
@@ -91,7 +91,7 @@ MonoBehaviour:
       OutputGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
       TextLanguage:
       - languageEnum: 0
-        LanguageGenericType: Seen Poppy
+        LanguageGenericType: Seen Poppy?
       - languageEnum: 1
         LanguageGenericType: Choice 03
       RequiredFlag: {fileID: 11400000, guid: ca3d3e8f1504ee446bcee357a7fd2a34, type: 2}

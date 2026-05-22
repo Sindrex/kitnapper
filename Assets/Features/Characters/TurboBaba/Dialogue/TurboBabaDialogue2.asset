@@ -14,24 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AllowDialogueSave: 0
   BlockingReopeningDialogue: 0
-  ResetSavedNodeOnChoice: 0
+  ResetSavedNodeOnChoice: 1
   LimitChoiceOptionPerNode: 0
-  MaxChoiceOptionPerNode: 0
+  MaxChoiceOptionPerNode: 8
   NodeLinkDatas:
-  - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
-    TargetNodeGuid: 9a755bde-ef94-48d7-a86c-2e577b3d9c18
-  - BaseNodeGuid: 004fa763-bd44-4bae-8c26-c7720311fb4b
-    TargetNodeGuid: 4dc86042-5ba1-472e-921a-d6bef568e550
-  - BaseNodeGuid: 4dc86042-5ba1-472e-921a-d6bef568e550
-    TargetNodeGuid: cb4d95e3-2759-46d4-8ce2-9821d52d3bfd
-  - BaseNodeGuid: cb4d95e3-2759-46d4-8ce2-9821d52d3bfd
-    TargetNodeGuid: 24dcde15-8fcf-449a-86cf-ea517d96e655
-  - BaseNodeGuid: 24dcde15-8fcf-449a-86cf-ea517d96e655
-    TargetNodeGuid: 4b76255d-530a-4fc8-bded-7cc70a089d86
-  - BaseNodeGuid: 4b76255d-530a-4fc8-bded-7cc70a089d86
-    TargetNodeGuid: 8b7c48b1-70f4-4fc3-a83a-04d14ba5894e
-  - BaseNodeGuid: 9a755bde-ef94-48d7-a86c-2e577b3d9c18
-    TargetNodeGuid: 004fa763-bd44-4bae-8c26-c7720311fb4b
   - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
     TargetNodeGuid: 48c3abd3-d0af-493b-a1ba-af8a538210a6
   - BaseNodeGuid: d04b433e-246a-4bbe-9d26-8a2f95edba61
@@ -52,8 +38,6 @@ MonoBehaviour:
     TargetNodeGuid: 7ac3ef35-d89c-47ea-8351-4b1413f63c43
   - BaseNodeGuid: 9aab82a8-6943-4445-b5cc-eb5bbbe945aa
     TargetNodeGuid: 7ac3ef35-d89c-47ea-8351-4b1413f63c43
-  - BaseNodeGuid: addc1582-c7ed-4a0d-9675-f798b81cbc73
-    TargetNodeGuid: df990dc8-b69c-4583-9a8a-efcc2d20c949
   - BaseNodeGuid: b03eb580-e451-4cc8-87e5-1649c20a681e
     TargetNodeGuid: df990dc8-b69c-4583-9a8a-efcc2d20c949
   - BaseNodeGuid: 63b2b74a-72e1-4cf1-a4ed-d8570b4b3bf6
@@ -100,10 +84,8 @@ MonoBehaviour:
     TargetNodeGuid: 8fd5e2e2-9dc0-426e-865e-21a63be4befa
   - BaseNodeGuid: 66ade3dc-a96b-44e7-baea-c26590a3f509
     TargetNodeGuid: bc09fe23-53e9-43e8-b87c-82c097b4aed9
-  - BaseNodeGuid: bc09fe23-53e9-43e8-b87c-82c097b4aed9
-    TargetNodeGuid: 4dd077d6-5675-45e8-9702-5208509f1664
-  - BaseNodeGuid: 48c3abd3-d0af-493b-a1ba-af8a538210a6
-    TargetNodeGuid: d04b433e-246a-4bbe-9d26-8a2f95edba61
+  - BaseNodeGuid: addc1582-c7ed-4a0d-9675-f798b81cbc73
+    TargetNodeGuid: df990dc8-b69c-4583-9a8a-efcc2d20c949
   - BaseNodeGuid: 48c3abd3-d0af-493b-a1ba-af8a538210a6
     TargetNodeGuid: 9a755bde-ef94-48d7-a86c-2e577b3d9c18
   - BaseNodeGuid: a12f3c1d-5307-474a-a05c-4c8959b4bb37
@@ -158,6 +140,20 @@ MonoBehaviour:
     TargetNodeGuid: 723d09ef-5233-40eb-a5f9-1fa1313afdc8
   - BaseNodeGuid: 03369b3b-7205-403d-8b91-bb350f287ed7
     TargetNodeGuid: 4ebba3ec-dd24-427f-9c92-623eb3c9c185
+  - BaseNodeGuid: 48c3abd3-d0af-493b-a1ba-af8a538210a6
+    TargetNodeGuid: 6b4cda56-9c3c-4c63-bcad-a10f290901ea
+  - BaseNodeGuid: 6b4cda56-9c3c-4c63-bcad-a10f290901ea
+    TargetNodeGuid: bbb92816-bc15-4ed9-9990-201333d390f0
+  - BaseNodeGuid: 6b4cda56-9c3c-4c63-bcad-a10f290901ea
+    TargetNodeGuid: d04b433e-246a-4bbe-9d26-8a2f95edba61
+  - BaseNodeGuid: bbb92816-bc15-4ed9-9990-201333d390f0
+    TargetNodeGuid: 3a66d178-483b-4b60-a3b2-40920e541515
+  - BaseNodeGuid: 3a66d178-483b-4b60-a3b2-40920e541515
+    TargetNodeGuid: a5567b9e-dfd1-4f31-9411-a5fad5a0086d
+  - BaseNodeGuid: bc09fe23-53e9-43e8-b87c-82c097b4aed9
+    TargetNodeGuid: ab8f0e61-0ddd-4424-9843-d607dffb445f
+  - BaseNodeGuid: ab8f0e61-0ddd-4424-9843-d607dffb445f
+    TargetNodeGuid: 4dd077d6-5675-45e8-9702-5208509f1664
   DialogueChoiceNodeDatas:
   - NodeGuid: ab8a9f5a-0819-4ad7-8842-87222352755e
     Position: {x: 884, y: 598}
@@ -579,26 +575,6 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
-  - NodeGuid: 2c218743-0194-4e35-9550-40140eb4301e
-    Position: {x: 2174, y: 279}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: TurboBabaDialogue2JokesAdd1Event
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: Because he's in a bad mewd!
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
   - NodeGuid: 1ddf4181-2cda-41cd-a79a-46ca46baca61
     Position: {x: 2403, y: 279}
     Character: {fileID: 0}
@@ -615,7 +591,7 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: A mice cream cone!
+      LanguageGenericType: A mice cream cone!!
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
@@ -636,7 +612,7 @@ MonoBehaviour:
     TextType:
     - languageEnum: 0
       LanguageGenericType: 'One has claws at the end of its paws, and the other has
-        a pause at the end of its clause. '
+        a pause at the end of its clause!!! '
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
@@ -696,7 +672,7 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: ...With his own paws!
+      LanguageGenericType: ...With his own paws!!!!
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
@@ -967,6 +943,87 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
+  - NodeGuid: 2c218743-0194-4e35-9550-40140eb4301e
+    Position: {x: 2174, y: 279}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: TurboBabaDialogue2JokesAdd1Event
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Because he's in a bad mewd!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: bbb92816-bc15-4ed9-9990-201333d390f0
+    Position: {x: 232, y: -290}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: As I said, to go beyond, find the rock behind the house.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 3a66d178-483b-4b60-a3b2-40920e541515
+    Position: {x: 447, y: -290}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Gah, you really are useless, aren't you? Come on, get
+        on with it, beansprout!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: ab8f0e61-0ddd-4424-9843-d607dffb445f
+    Position: {x: 764, y: 1564}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Shrimp.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
   ConditionalNodeDatas:
   - NodeGuid: 48c3abd3-d0af-493b-a1ba-af8a538210a6
     Position: {x: -32, y: 196}
@@ -1007,6 +1064,10 @@ MonoBehaviour:
   - NodeGuid: 723d09ef-5233-40eb-a5f9-1fa1313afdc8
     Position: {x: 733, y: 1059}
     RequiredGameFlagCombo: {fileID: 11400000, guid: 00974f677f3c5c54eb07bea41980420d,
+      type: 2}
+  - NodeGuid: 6b4cda56-9c3c-4c63-bcad-a10f290901ea
+    Position: {x: -32, y: 38}
+    RequiredGameFlagCombo: {fileID: 11400000, guid: 7c865b41059a86e4591661bf1467e7e0,
       type: 2}
   TimerChoiceNodeDatas: []
   EndNodeDatas:
@@ -1072,6 +1133,11 @@ MonoBehaviour:
     startID: 
   - NodeGuid: c4b98c71-07ad-486c-8bf5-99aaa18cace6
     Position: {x: 3440, y: -425}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: a5567b9e-dfd1-4f31-9411-a5fad5a0086d
+    Position: {x: 687, y: -290}
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 

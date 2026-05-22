@@ -144,7 +144,7 @@ MonoBehaviour:
       OutputGuid: 57ffcc94-18b5-497a-806b-19abdbb21b5e
       TextLanguage:
       - languageEnum: 0
-        LanguageGenericType: Poppy
+        LanguageGenericType: Seen Poppy?
       - languageEnum: 1
         LanguageGenericType: Choice 03
       RequiredFlag: {fileID: 11400000, guid: ca3d3e8f1504ee446bcee357a7fd2a34, type: 2}
@@ -163,7 +163,7 @@ MonoBehaviour:
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
-    Event: 
+    Event: MilkcatPlayDrinkSoundEvent
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
@@ -259,7 +259,7 @@ MonoBehaviour:
     TextType:
     - languageEnum: 0
       LanguageGenericType: Well, last night I was talking to my brother over the
-        phone. He works for law-enforcement out of town.
+        phone. He works for paw-enforcement out of town.
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10

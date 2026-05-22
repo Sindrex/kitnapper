@@ -159,6 +159,10 @@ public class MenuManager : MonoBehaviour
         }
 
         Screen.fullScreenMode = CurrentGameSettings.FullScreenMode;
+        if (CurrentGameSettings.FullScreenMode == FullScreenMode.Windowed)
+        {
+            Screen.SetResolution(1280, 720, FullScreenMode.Windowed);
+        }
         FullScreenModeText.text = GetFullScreenModeName(Screen.fullScreenMode);
         MusicCurrentIndex = CurrentGameSettings.MusicVolumeIndex;
         SFXCurrentIndex = CurrentGameSettings.SFXVolumeIndex;
@@ -698,13 +702,13 @@ public class MenuManager : MonoBehaviour
     public void MusicCredits()
     {
         AudioManager.Instance.PlaySFXClip(AudioLabel.ClickSFX);
-        CLogger.LogError("MusicCredits button not implemented!");
+        Application.OpenURL("https://www.youtube.com/playlist?list=PLy52Uv6TC9d4Y2MO6gZWNBjU___vyK5-Q");
     }
 
     public void Version()
     {
         AudioManager.Instance.PlaySFXClip(AudioLabel.ClickSFX);
-        CLogger.LogError("Version button not implemented!");
+        Application.OpenURL("https://store.steampowered.com/app/4154720/The_Color_Kitnapper/");
     }
 
     private void UpdateSelectedButton()

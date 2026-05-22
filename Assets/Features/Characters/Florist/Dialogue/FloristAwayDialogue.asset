@@ -18,10 +18,6 @@ MonoBehaviour:
   LimitChoiceOptionPerNode: 0
   MaxChoiceOptionPerNode: 8
   NodeLinkDatas:
-  - BaseNodeGuid: 1410bff5-b8e4-4395-b019-f9646230b9b3
-    TargetNodeGuid: f13b47f7-40c8-49c0-b193-53c7bf739495
-  - BaseNodeGuid: f13b47f7-40c8-49c0-b193-53c7bf739495
-    TargetNodeGuid: f2cf0140-361a-4f49-84ad-27148da1636a
   - BaseNodeGuid: 28d75577-e3c2-4ad6-9edc-c942982b7477
     TargetNodeGuid: 757d940b-037d-4ad4-a777-701fcc130746
   - BaseNodeGuid: 757d940b-037d-4ad4-a777-701fcc130746
@@ -44,7 +40,7 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: The door is locked. Poppy must be out. I should look around.
+      LanguageGenericType: The door is locked. Poppy must be out. I should ask around.
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10

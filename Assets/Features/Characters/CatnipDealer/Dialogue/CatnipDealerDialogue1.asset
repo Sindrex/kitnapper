@@ -43,7 +43,19 @@ MonoBehaviour:
   - BaseNodeGuid: ab6c800a-4101-4ecc-8ccd-b6657ac28d40
     TargetNodeGuid: cd710cbb-11ee-4488-bd05-3e446eae55c6
   - BaseNodeGuid: ab6c800a-4101-4ecc-8ccd-b6657ac28d40
+    TargetNodeGuid: f5a0f2d4-9809-4f42-a7f8-f8e5cc6f1d6b
+  - BaseNodeGuid: f5a0f2d4-9809-4f42-a7f8-f8e5cc6f1d6b
+    TargetNodeGuid: f79f4242-d29d-4090-b3de-41ea18dc0b11
+  - BaseNodeGuid: f5a0f2d4-9809-4f42-a7f8-f8e5cc6f1d6b
     TargetNodeGuid: 0849757c-49d3-4bd0-8983-4cd50af6415f
+  - BaseNodeGuid: f79f4242-d29d-4090-b3de-41ea18dc0b11
+    TargetNodeGuid: c98209a7-63b1-4d88-8f35-a501d5efced4
+  - BaseNodeGuid: f79f4242-d29d-4090-b3de-41ea18dc0b11
+    TargetNodeGuid: a48c41d4-4409-4a5f-ab66-f5908d1a34eb
+  - BaseNodeGuid: c98209a7-63b1-4d88-8f35-a501d5efced4
+    TargetNodeGuid: 0917e2ad-7462-4d6b-a307-c74a741acf5c
+  - BaseNodeGuid: a48c41d4-4409-4a5f-ab66-f5908d1a34eb
+    TargetNodeGuid: 0917e2ad-7462-4d6b-a307-c74a741acf5c
   DialogueChoiceNodeDatas:
   - NodeGuid: cd710cbb-11ee-4488-bd05-3e446eae55c6
     Position: {x: 746, y: -163}
@@ -53,6 +65,7 @@ MonoBehaviour:
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
+    Event: 
     AudioClips:
     - languageEnum: 0
       LanguageGenericType: {fileID: 0}
@@ -109,6 +122,7 @@ MonoBehaviour:
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
+    Event: 
     AudioClips:
     - languageEnum: 0
       LanguageGenericType: {fileID: 0}
@@ -140,7 +154,7 @@ MonoBehaviour:
         LanguageGenericType: Choice 02
       RequiredFlag: {fileID: 11400000, guid: 7ef7f2573d7d8f0428a21be5828e4f8b, type: 2}
     - PortGuid: 7c21e790-1df7-48ac-913e-bb28ecd74496
-      InputGuid: 0849757c-49d3-4bd0-8983-4cd50af6415f
+      InputGuid: f5a0f2d4-9809-4f42-a7f8-f8e5cc6f1d6b
       OutputGuid: ab6c800a-4101-4ecc-8ccd-b6657ac28d40
       TextLanguage:
       - languageEnum: 0
@@ -148,16 +162,15 @@ MonoBehaviour:
       - languageEnum: 1
         LanguageGenericType: Choice 03
       RequiredFlag: {fileID: 0}
-  DialogueNodeDatas:
-  - NodeGuid: 0849757c-49d3-4bd0-8983-4cd50af6415f
-    Position: {x: 722, y: 359}
+  - NodeGuid: f79f4242-d29d-4090-b3de-41ea18dc0b11
+    Position: {x: 367, y: 629}
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
-    Event: CatnipDealerDialogueEvent
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
+    Event: 
     AudioClips:
     - languageEnum: 0
       LanguageGenericType: {fileID: 0}
@@ -165,11 +178,30 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: Here you go sir, the finest catnip this side of town!
-        If you need any more, you know where to find me.
+      LanguageGenericType: I recently got two new leafs, which one do you want?
     - languageEnum: 1
       LanguageGenericType: 
-    Duration: 10
+    Duration: 5
+    DialogueNodePorts:
+    - PortGuid: 3e51ce92-980c-41f3-a248-281ccfe736c0
+      InputGuid: c98209a7-63b1-4d88-8f35-a501d5efced4
+      OutputGuid: f79f4242-d29d-4090-b3de-41ea18dc0b11
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Red leaf
+      - languageEnum: 1
+        LanguageGenericType: Choice 01
+      RequiredFlag: {fileID: 0}
+    - PortGuid: ba5f15a3-5909-4098-a754-9919adbee9dd
+      InputGuid: a48c41d4-4409-4a5f-ab66-f5908d1a34eb
+      OutputGuid: f79f4242-d29d-4090-b3de-41ea18dc0b11
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Blue leaf
+      - languageEnum: 1
+        LanguageGenericType: Choice 02
+      RequiredFlag: {fileID: 0}
+  DialogueNodeDatas:
   - NodeGuid: 5a2830f4-9dec-4250-9cd3-6df9ca145746
     Position: {x: 1148, y: -334}
     Character: {fileID: 0}
@@ -253,14 +285,76 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
-  ConditionalNodeDatas: []
+  - NodeGuid: 0849757c-49d3-4bd0-8983-4cd50af6415f
+    Position: {x: 1270, y: 786}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: CatnipDealerDialogueEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Here you go sir, the finest catnip this side of town!
+        If you need any more, you know where to find me.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: c98209a7-63b1-4d88-8f35-a501d5efced4
+    Position: {x: 796, y: 547}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: CatnipDealerForceUpDialogueEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Good choice sir, here you go! If you need any more, I'll
+        be right here sir.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: a48c41d4-4409-4a5f-ab66-f5908d1a34eb
+    Position: {x: 796, y: 892}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: CatnipDealerForceDownDialogueEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Right away! Here you go sir, the blue leaf. If you need
+        any more, just say the word.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  ConditionalNodeDatas:
+  - NodeGuid: f5a0f2d4-9809-4f42-a7f8-f8e5cc6f1d6b
+    Position: {x: 698, y: 355}
+    RequiredGameFlagCombo: {fileID: 11400000, guid: d280d0c262e2fca41b46ae301e91ac3f,
+      type: 2}
   TimerChoiceNodeDatas: []
   EndNodeDatas:
-  - NodeGuid: 7838e825-39c1-416f-8753-1589000d7155
-    Position: {x: 972, y: 359}
-    EndNodeType: 0
-    Dialogue: {fileID: 0}
-    startID: 
   - NodeGuid: 8359068e-0140-45c0-aa80-7dd2403e87bc
     Position: {x: 746, y: 196}
     EndNodeType: 0
@@ -283,6 +377,16 @@ MonoBehaviour:
     startID: 
   - NodeGuid: 08b1ebfe-ea03-4f0b-b26a-713029c05942
     Position: {x: 1470, y: 375}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: 7838e825-39c1-416f-8753-1589000d7155
+    Position: {x: 1489, y: 786}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: 0917e2ad-7462-4d6b-a307-c74a741acf5c
+    Position: {x: 1046, y: 847}
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 

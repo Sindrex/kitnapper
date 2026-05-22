@@ -42,26 +42,6 @@ MonoBehaviour:
     TargetNodeGuid: 029c4ab9-4e03-44e2-a1dc-2a616821c337
   DialogueChoiceNodeDatas: []
   DialogueNodeDatas:
-  - NodeGuid: a567e4dd-14f8-4294-8b4d-98e1ba8007f6
-    Position: {x: 642, y: 200}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: SinbadFindusMomentMoveEvent
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: 'Findus: How''s it going pal? Found any clues yet?'
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
   - NodeGuid: d5bd5831-5e42-4150-a9de-ee3a535fd9f7
     Position: {x: 909, y: 200}
     Character: {fileID: 0}
@@ -243,6 +223,26 @@ MonoBehaviour:
     - languageEnum: 0
       LanguageGenericType: I will show you the way to C.I.T. Sinbad. Detective, meet
         us there.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: a567e4dd-14f8-4294-8b4d-98e1ba8007f6
+    Position: {x: 642, y: 200}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: SinbadFindusMomentDialogueEvent2
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Findus: How''s it going pal? Found any clues yet?'
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10

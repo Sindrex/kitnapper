@@ -62,14 +62,20 @@ MonoBehaviour:
     TargetNodeGuid: c0f5e7a6-a1e9-400a-8fe7-db582534ea0a
   - BaseNodeGuid: 1f614805-624f-4e85-a599-cd7f041c6250
     TargetNodeGuid: 316fb9c9-db01-46a3-884f-32e0de2856bd
+  - BaseNodeGuid: c40ff8d4-9f59-42f0-bc9b-7706bba52033
+    TargetNodeGuid: 3c2d70a4-cae0-4369-8d01-7c7e11997593
+  - BaseNodeGuid: 64cea3a9-f5a9-4e36-a2bd-a38a4c49dd9f
+    TargetNodeGuid: 3c2d70a4-cae0-4369-8d01-7c7e11997593
+  - BaseNodeGuid: 23f561fc-7556-4eba-9656-086941df78f0
+    TargetNodeGuid: 3c2d70a4-cae0-4369-8d01-7c7e11997593
   - BaseNodeGuid: feb6638d-ba99-4fe9-96c1-7042493b1c74
     TargetNodeGuid: f0493546-043c-484c-8707-c3e8fa894f29
   - BaseNodeGuid: feb6638d-ba99-4fe9-96c1-7042493b1c74
-    TargetNodeGuid: 3c2d70a4-cae0-4369-8d01-7c7e11997593
+    TargetNodeGuid: 23f561fc-7556-4eba-9656-086941df78f0
   - BaseNodeGuid: feb6638d-ba99-4fe9-96c1-7042493b1c74
-    TargetNodeGuid: 3c2d70a4-cae0-4369-8d01-7c7e11997593
+    TargetNodeGuid: c40ff8d4-9f59-42f0-bc9b-7706bba52033
   - BaseNodeGuid: feb6638d-ba99-4fe9-96c1-7042493b1c74
-    TargetNodeGuid: 3c2d70a4-cae0-4369-8d01-7c7e11997593
+    TargetNodeGuid: 64cea3a9-f5a9-4e36-a2bd-a38a4c49dd9f
   - BaseNodeGuid: 3c2d70a4-cae0-4369-8d01-7c7e11997593
     TargetNodeGuid: 595c5530-8b92-4103-9af8-64d2f87d5bf0
   - BaseNodeGuid: 595c5530-8b92-4103-9af8-64d2f87d5bf0
@@ -114,7 +120,7 @@ MonoBehaviour:
         LanguageGenericType: Choice 01
       RequiredFlag: {fileID: 0}
     - PortGuid: 74ef61b8-2adb-4f1f-b6f9-1a712b275457
-      InputGuid: 3c2d70a4-cae0-4369-8d01-7c7e11997593
+      InputGuid: 23f561fc-7556-4eba-9656-086941df78f0
       OutputGuid: feb6638d-ba99-4fe9-96c1-7042493b1c74
       TextLanguage:
       - languageEnum: 0
@@ -123,7 +129,7 @@ MonoBehaviour:
         LanguageGenericType: Choice 03
       RequiredFlag: {fileID: 0}
     - PortGuid: b939efa5-094b-4b32-a88d-397a4a10cbfd
-      InputGuid: 3c2d70a4-cae0-4369-8d01-7c7e11997593
+      InputGuid: c40ff8d4-9f59-42f0-bc9b-7706bba52033
       OutputGuid: feb6638d-ba99-4fe9-96c1-7042493b1c74
       TextLanguage:
       - languageEnum: 0
@@ -132,7 +138,7 @@ MonoBehaviour:
         LanguageGenericType: Choice 04
       RequiredFlag: {fileID: 0}
     - PortGuid: e12f98d6-0dad-417d-859b-50863fb0e4fd
-      InputGuid: 3c2d70a4-cae0-4369-8d01-7c7e11997593
+      InputGuid: 64cea3a9-f5a9-4e36-a2bd-a38a4c49dd9f
       OutputGuid: feb6638d-ba99-4fe9-96c1-7042493b1c74
       TextLanguage:
       - languageEnum: 0
@@ -156,7 +162,7 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: Are you sure, humr humr?
+      LanguageGenericType: 'Mayor: Are you sure, humr humr?'
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 5
@@ -630,27 +636,6 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
-  - NodeGuid: b786d6d8-053e-47c6-91bd-7d55189bc7b8
-    Position: {x: 9021, y: 999}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: FinaleMomentMayorExclamationEvent
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: With our colors all taken by The Color Kitnapper, humr
-        humr!
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
   - NodeGuid: 7bb69529-249a-4d71-9e2f-cc33b939d1cf
     Position: {x: 9235, y: 999}
     Character: {fileID: 0}
@@ -755,6 +740,88 @@ MonoBehaviour:
     - languageEnum: 0
       LanguageGenericType: 'Poppy: I certainly learned a thing or two as well! It''s
         not just the colors of plants or cats that are pretty.'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: c40ff8d4-9f59-42f0-bc9b-7706bba52033
+    Position: {x: 3718, y: 1575}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: FinaleMomentFindusAngryEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Findus: Hey! That''s not true!'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 64cea3a9-f5a9-4e36-a2bd-a38a4c49dd9f
+    Position: {x: 3718, y: 1843}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: FinaleMomentRichardQuestionEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Richard: I beg your pardon?'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 23f561fc-7556-4eba-9656-086941df78f0
+    Position: {x: 3718, y: 1279}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: FinaleMomentLunaExclamationEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Luna: What are you saying, darling?'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: b786d6d8-053e-47c6-91bd-7d55189bc7b8
+    Position: {x: 9021, y: 999}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: FinaleMomentMayorExclamationEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: With our colors all taken by <color=Orange>The</color>
+        <color=Red>C</color><color=Purple>O</color><color=Green>L</color><color=Yellow>O</color><color=Blue>R</color>
+        <color=Orange>Kitnapper</color>, humr humr!
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10

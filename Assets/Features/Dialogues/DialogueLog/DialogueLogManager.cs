@@ -33,7 +33,8 @@ public class DialogueLogManager : MonoBehaviour
     {
         Parent.SetActive(false);
         IsOpen = false;
-        IsHidden = false;
+        IsHidden = true;
+        TopButtons.SetActive(false);
     }
 
     // Update is called once per frame

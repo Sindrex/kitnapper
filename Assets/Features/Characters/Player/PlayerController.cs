@@ -15,12 +15,19 @@ public class PlayerController : MonoBehaviour
     //movement
     public bool CanMove = true;
     public Rigidbody2D PlayerRigidbody;
-    public float Speed = 300f;
+    public const float Speed = 15000f;
+    public float CurrentSpeed;
     public Animator PlayerAnimator;
     public string IdleAnimatorState;
     public string MoveAnimatorState;
     public bool IsMoving;
     public bool MoveAnimPlaying;
+
+    //Catnip anim
+    public GameObject CatnipAnimatorObject;
+    public Animator CatnipAnimator;
+    public string CatnipFastAnimatorState;
+    public string CatnipSlowAnimatorState;
 
     //SFX
     public List<AudioLabel> WalkSFX = new List<AudioLabel> 
@@ -35,6 +42,7 @@ public class PlayerController : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
+            CurrentSpeed = Speed;
             return;
         }
         Destroy(this.gameObject);
@@ -58,7 +66,7 @@ public class PlayerController : MonoBehaviour
             IsMoving = false;
             MoveAnimPlaying = false;
         }
-        PlayerRigidbody.velocity = movementVector * Speed * Time.deltaTime;
+        PlayerRigidbody.velocity = movementVector * CurrentSpeed * Time.deltaTime;
     }
 
     public static Vector2 GetMovementVector(bool canMove)
@@ -127,5 +135,23 @@ public class PlayerController : MonoBehaviour
         frame1.SetActive(false);
         frame2.SetActive(false);
         frame3.SetActive(true);
+    }
+
+    public void SetCatnipAnim(bool fast)
+    {
+        CatnipAnimatorObject.SetActive(true);
+        if (fast)
+        {
+            CatnipAnimator.Play(CatnipFastAnimatorState);
+        }
+        else
+        {
+            CatnipAnimator.Play(CatnipSlowAnimatorState);
+        }
+    }
+
+    public void StopCatnipAnim()
+    {
+        CatnipAnimatorObject.SetActive(false);
     }
 }

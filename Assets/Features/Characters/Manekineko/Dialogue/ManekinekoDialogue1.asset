@@ -35,6 +35,7 @@ MonoBehaviour:
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
+    Event: 
     AudioClips:
     - languageEnum: 0
       LanguageGenericType: {fileID: 0}
@@ -42,7 +43,7 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: "\u63A2\u5075\u3055\u3093?"
+      LanguageGenericType: "\u3042\u306E\u3002\u3002\u3002\u3000\u3069\u3046\u304B\u306A\u3055\u3044\u307E\u3057\u305F\u304B\u3002"
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 5
@@ -57,26 +58,6 @@ MonoBehaviour:
         LanguageGenericType: Choice 01
       RequiredFlag: {fileID: 0}
   DialogueNodeDatas:
-  - NodeGuid: 4c2bbdeb-643d-4fae-8ea6-0b98c276dd30
-    Position: {x: 582, y: 196}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: ManekinekoDialogueEvent
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: "\u307E\u306D\u304D\u306D\u3053: \u3044\u3089\u3063\u3057\u3083\u3044\u307E\u305B\uFF01\u795E\u69D8\u3092\u4FE1\u3058\u3066\u3044\u307E\u3059\u3002\u3055\u3066\u3001\u3054\u7528\u4EF6\u306F\u4F55\u3067\u3057\u3087\u3046\u304B\u3002"
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
   - NodeGuid: 0849757c-49d3-4bd0-8983-4cd50af6415f
     Position: {x: 1129, y: 196}
     Character: {fileID: 0}
@@ -93,7 +74,27 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: "\u3059\u307F\u307E\u305B\u3093\u3002\u82F1\u8A9E\u306F\u3067\u304D\u307E\u305B\u3093\u3002\u3002\u3002"
+      LanguageGenericType: "\u7533\u3057\u8A33\u3042\u308A\u307E\u305B\u3093\u3001\u82F1\u8A9E\u306F\u5206\u304B\u308A\u307E\u305B\u3093\u3002"
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 4c2bbdeb-643d-4fae-8ea6-0b98c276dd30
+    Position: {x: 582, y: 196}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: ManekinekoDialogueEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: "\u307E\u306D\u304D\u306D\u3053: \u3088\u3046\u3053\u305D\u304A\u53C2\u308A\u304F\u3060\u3055\u3044\u307E\u3057\u305F\u3002\u3055\u3066\u3001\u3054\u7528\u4EF6\u306F\u4F55\u3067\u3057\u3087\u3046\u304B\u3002"
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
