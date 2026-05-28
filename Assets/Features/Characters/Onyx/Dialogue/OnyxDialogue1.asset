@@ -14,18 +14,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AllowDialogueSave: 0
   BlockingReopeningDialogue: 0
-  ResetSavedNodeOnChoice: 1
+  ResetSavedNodeOnChoice: 0
   LimitChoiceOptionPerNode: 0
-  MaxChoiceOptionPerNode: 8
+  MaxChoiceOptionPerNode: 0
   NodeLinkDatas:
+  - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
+    TargetNodeGuid: cf412acb-35e2-4834-88e5-a0717cf23a35
   - BaseNodeGuid: ba1a1de0-4260-48f0-a4f4-cec4c34162bf
+    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
+  - BaseNodeGuid: 121280a4-72e3-4290-99fb-aba4d30bc0fd
     TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
   - BaseNodeGuid: cf412acb-35e2-4834-88e5-a0717cf23a35
     TargetNodeGuid: ba1a1de0-4260-48f0-a4f4-cec4c34162bf
-  - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
-    TargetNodeGuid: cf412acb-35e2-4834-88e5-a0717cf23a35
   - BaseNodeGuid: cf412acb-35e2-4834-88e5-a0717cf23a35
+    TargetNodeGuid: fa2ab573-6b70-43f8-8119-02db0edaf570
+  - BaseNodeGuid: fa2ab573-6b70-43f8-8119-02db0edaf570
     TargetNodeGuid: 649b7e3b-5844-4d06-b321-367c47f191d6
+  - BaseNodeGuid: fa2ab573-6b70-43f8-8119-02db0edaf570
+    TargetNodeGuid: 121280a4-72e3-4290-99fb-aba4d30bc0fd
   - BaseNodeGuid: 649b7e3b-5844-4d06-b321-367c47f191d6
     TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
   DialogueChoiceNodeDatas: []
@@ -70,10 +76,34 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
+  - NodeGuid: 121280a4-72e3-4290-99fb-aba4d30bc0fd
+    Position: {x: 832, y: 531}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: There's nothing there.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
   ConditionalNodeDatas:
   - NodeGuid: cf412acb-35e2-4834-88e5-a0717cf23a35
     Position: {x: 519, y: 196}
     RequiredGameFlagCombo: {fileID: 11400000, guid: d280d0c262e2fca41b46ae301e91ac3f,
+      type: 2}
+  - NodeGuid: fa2ab573-6b70-43f8-8119-02db0edaf570
+    Position: {x: 519, y: 331}
+    RequiredGameFlagCombo: {fileID: 11400000, guid: f8c68633ebc2f564984c2c744bfcc023,
       type: 2}
   TimerChoiceNodeDatas: []
   EndNodeDatas:

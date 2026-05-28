@@ -14,40 +14,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AllowDialogueSave: 0
   BlockingReopeningDialogue: 0
-  ResetSavedNodeOnChoice: 1
+  ResetSavedNodeOnChoice: 0
   LimitChoiceOptionPerNode: 0
-  MaxChoiceOptionPerNode: 8
+  MaxChoiceOptionPerNode: 0
   NodeLinkDatas:
   - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
     TargetNodeGuid: 7d2e1021-304d-4b8d-b89a-1af5296a1605
-  - BaseNodeGuid: 0849757c-49d3-4bd0-8983-4cd50af6415f
-    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
-  - BaseNodeGuid: 5a2830f4-9dec-4250-9cd3-6df9ca145746
-    TargetNodeGuid: e8f2f618-2cb8-4411-86d6-d614d394ea5a
-  - BaseNodeGuid: 58d6cc84-2ad2-42e2-a267-845c7f0c641c
-    TargetNodeGuid: 052dafb8-7650-4b42-a383-6cc677b69dfe
-  - BaseNodeGuid: bda9f068-e5fb-4e20-a000-044b02d54764
-    TargetNodeGuid: 08b1ebfe-ea03-4f0b-b26a-713029c05942
   - BaseNodeGuid: 7d2e1021-304d-4b8d-b89a-1af5296a1605
     TargetNodeGuid: ab6c800a-4101-4ecc-8ccd-b6657ac28d40
-  - BaseNodeGuid: cd710cbb-11ee-4488-bd05-3e446eae55c6
-    TargetNodeGuid: e33fe215-6264-45a8-9f6d-85cd28cb6a05
-  - BaseNodeGuid: cd710cbb-11ee-4488-bd05-3e446eae55c6
-    TargetNodeGuid: 5a2830f4-9dec-4250-9cd3-6df9ca145746
-  - BaseNodeGuid: cd710cbb-11ee-4488-bd05-3e446eae55c6
-    TargetNodeGuid: 58d6cc84-2ad2-42e2-a267-845c7f0c641c
-  - BaseNodeGuid: cd710cbb-11ee-4488-bd05-3e446eae55c6
-    TargetNodeGuid: bda9f068-e5fb-4e20-a000-044b02d54764
   - BaseNodeGuid: ab6c800a-4101-4ecc-8ccd-b6657ac28d40
     TargetNodeGuid: 8359068e-0140-45c0-aa80-7dd2403e87bc
   - BaseNodeGuid: ab6c800a-4101-4ecc-8ccd-b6657ac28d40
     TargetNodeGuid: cd710cbb-11ee-4488-bd05-3e446eae55c6
   - BaseNodeGuid: ab6c800a-4101-4ecc-8ccd-b6657ac28d40
     TargetNodeGuid: f5a0f2d4-9809-4f42-a7f8-f8e5cc6f1d6b
+  - BaseNodeGuid: cd710cbb-11ee-4488-bd05-3e446eae55c6
+    TargetNodeGuid: e33fe215-6264-45a8-9f6d-85cd28cb6a05
+  - BaseNodeGuid: cd710cbb-11ee-4488-bd05-3e446eae55c6
+    TargetNodeGuid: 5a2830f4-9dec-4250-9cd3-6df9ca145746
+  - BaseNodeGuid: 5a2830f4-9dec-4250-9cd3-6df9ca145746
+    TargetNodeGuid: e8f2f618-2cb8-4411-86d6-d614d394ea5a
+  - BaseNodeGuid: cd710cbb-11ee-4488-bd05-3e446eae55c6
+    TargetNodeGuid: 58d6cc84-2ad2-42e2-a267-845c7f0c641c
+  - BaseNodeGuid: 58d6cc84-2ad2-42e2-a267-845c7f0c641c
+    TargetNodeGuid: 052dafb8-7650-4b42-a383-6cc677b69dfe
+  - BaseNodeGuid: cd710cbb-11ee-4488-bd05-3e446eae55c6
+    TargetNodeGuid: bda9f068-e5fb-4e20-a000-044b02d54764
+  - BaseNodeGuid: bda9f068-e5fb-4e20-a000-044b02d54764
+    TargetNodeGuid: 08b1ebfe-ea03-4f0b-b26a-713029c05942
   - BaseNodeGuid: f5a0f2d4-9809-4f42-a7f8-f8e5cc6f1d6b
     TargetNodeGuid: f79f4242-d29d-4090-b3de-41ea18dc0b11
-  - BaseNodeGuid: f5a0f2d4-9809-4f42-a7f8-f8e5cc6f1d6b
-    TargetNodeGuid: 0849757c-49d3-4bd0-8983-4cd50af6415f
   - BaseNodeGuid: f79f4242-d29d-4090-b3de-41ea18dc0b11
     TargetNodeGuid: c98209a7-63b1-4d88-8f35-a501d5efced4
   - BaseNodeGuid: f79f4242-d29d-4090-b3de-41ea18dc0b11
@@ -56,6 +52,10 @@ MonoBehaviour:
     TargetNodeGuid: 0917e2ad-7462-4d6b-a307-c74a741acf5c
   - BaseNodeGuid: a48c41d4-4409-4a5f-ab66-f5908d1a34eb
     TargetNodeGuid: 0917e2ad-7462-4d6b-a307-c74a741acf5c
+  - BaseNodeGuid: f5a0f2d4-9809-4f42-a7f8-f8e5cc6f1d6b
+    TargetNodeGuid: 0849757c-49d3-4bd0-8983-4cd50af6415f
+  - BaseNodeGuid: 0849757c-49d3-4bd0-8983-4cd50af6415f
+    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
   DialogueChoiceNodeDatas:
   - NodeGuid: cd710cbb-11ee-4488-bd05-3e446eae55c6
     Position: {x: 746, y: -163}
@@ -114,8 +114,47 @@ MonoBehaviour:
       - languageEnum: 1
         LanguageGenericType: Choice 04
       RequiredFlag: {fileID: 11400000, guid: 929c64ba1c19bb14382fcc3fd5781a99, type: 2}
+  - NodeGuid: f79f4242-d29d-4090-b3de-41ea18dc0b11
+    Position: {x: 367, y: 629}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    Event: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: I recently got two new leafs, which one do you want?
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 5
+    DialogueNodePorts:
+    - PortGuid: 3e51ce92-980c-41f3-a248-281ccfe736c0
+      InputGuid: c98209a7-63b1-4d88-8f35-a501d5efced4
+      OutputGuid: f79f4242-d29d-4090-b3de-41ea18dc0b11
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Red leaf
+      - languageEnum: 1
+        LanguageGenericType: Choice 01
+      RequiredFlag: {fileID: 0}
+    - PortGuid: ba5f15a3-5909-4098-a754-9919adbee9dd
+      InputGuid: a48c41d4-4409-4a5f-ab66-f5908d1a34eb
+      OutputGuid: f79f4242-d29d-4090-b3de-41ea18dc0b11
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Blue leaf
+      - languageEnum: 1
+        LanguageGenericType: Choice 02
+      RequiredFlag: {fileID: 0}
   - NodeGuid: ab6c800a-4101-4ecc-8ccd-b6657ac28d40
-    Position: {x: 367, y: 196}
+    Position: {x: 365, y: 196}
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
@@ -162,88 +201,7 @@ MonoBehaviour:
       - languageEnum: 1
         LanguageGenericType: Choice 03
       RequiredFlag: {fileID: 0}
-  - NodeGuid: f79f4242-d29d-4090-b3de-41ea18dc0b11
-    Position: {x: 367, y: 629}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    Event: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: I recently got two new leafs, which one do you want?
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 5
-    DialogueNodePorts:
-    - PortGuid: 3e51ce92-980c-41f3-a248-281ccfe736c0
-      InputGuid: c98209a7-63b1-4d88-8f35-a501d5efced4
-      OutputGuid: f79f4242-d29d-4090-b3de-41ea18dc0b11
-      TextLanguage:
-      - languageEnum: 0
-        LanguageGenericType: Red leaf
-      - languageEnum: 1
-        LanguageGenericType: Choice 01
-      RequiredFlag: {fileID: 0}
-    - PortGuid: ba5f15a3-5909-4098-a754-9919adbee9dd
-      InputGuid: a48c41d4-4409-4a5f-ab66-f5908d1a34eb
-      OutputGuid: f79f4242-d29d-4090-b3de-41ea18dc0b11
-      TextLanguage:
-      - languageEnum: 0
-        LanguageGenericType: Blue leaf
-      - languageEnum: 1
-        LanguageGenericType: Choice 02
-      RequiredFlag: {fileID: 0}
   DialogueNodeDatas:
-  - NodeGuid: 5a2830f4-9dec-4250-9cd3-6df9ca145746
-    Position: {x: 1148, y: -334}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: Last night I was sleeping out in the woods, as usual.
-        Nothing to report there sir!
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
-  - NodeGuid: 58d6cc84-2ad2-42e2-a267-845c7f0c641c
-    Position: {x: 1148, y: 10}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: Poppy? I have not sir. But I am sure Poppy would prefer
-        being surrounded by nature if distressed.
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
   - NodeGuid: bda9f068-e5fb-4e20-a000-044b02d54764
     Position: {x: 1148, y: 375}
     Character: {fileID: 0}
@@ -345,6 +303,48 @@ MonoBehaviour:
     - languageEnum: 0
       LanguageGenericType: Right away! Here you go sir, the blue leaf. If you need
         any more, just say the word.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 5a2830f4-9dec-4250-9cd3-6df9ca145746
+    Position: {x: 1148, y: -334}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Last night I was out at me and my friends' secret hideout
+        in the forest sir! You should pay them a visit. It is close to the university.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 58d6cc84-2ad2-42e2-a267-845c7f0c641c
+    Position: {x: 1148, y: 45}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Poppy? I have not sir. But I am sure Poppy would prefer
+        being surrounded by nature if distressed.
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10

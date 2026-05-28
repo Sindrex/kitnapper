@@ -1,0 +1,122 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1946feaec865d344dabf0419b1c94973, type: 3}
+  m_Name: BlackcurrantDialogue
+  m_EditorClassIdentifier: 
+  AllowDialogueSave: 0
+  BlockingReopeningDialogue: 0
+  ResetSavedNodeOnChoice: 1
+  LimitChoiceOptionPerNode: 0
+  MaxChoiceOptionPerNode: 8
+  NodeLinkDatas:
+  - BaseNodeGuid: 12611948-860f-44ca-83ec-c39c7282715d
+    TargetNodeGuid: 890351a3-5b42-4f01-a09b-391e06ac02c5
+  - BaseNodeGuid: 890351a3-5b42-4f01-a09b-391e06ac02c5
+    TargetNodeGuid: bd848e76-780e-411b-8823-ab209fd69aea
+  - BaseNodeGuid: 3a6dea48-2f92-49b8-b826-0a477a1f0a2b
+    TargetNodeGuid: da49e726-778e-4d7d-b479-ca0ac80b554f
+  - BaseNodeGuid: bd848e76-780e-411b-8823-ab209fd69aea
+    TargetNodeGuid: 3a6dea48-2f92-49b8-b826-0a477a1f0a2b
+  DialogueChoiceNodeDatas:
+  - NodeGuid: bd848e76-780e-411b-8823-ab209fd69aea
+    Position: {x: 740, y: 220}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    Event: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: You don't happen to have any snacks on you, do you?
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 5
+    DialogueNodePorts:
+    - PortGuid: 2ad951cd-5e3e-4910-a8ac-c4dfb1216630
+      InputGuid: 3a6dea48-2f92-49b8-b826-0a477a1f0a2b
+      OutputGuid: bd848e76-780e-411b-8823-ab209fd69aea
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: No
+      - languageEnum: 1
+        LanguageGenericType: Choice 01
+      RequiredFlag: {fileID: 0}
+  DialogueNodeDatas:
+  - NodeGuid: 890351a3-5b42-4f01-a09b-391e06ac02c5
+    Position: {x: 415, y: 220}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: BlackcurrantDialogueEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Blackcurrant: Ugh, I want to go inside, but my brother
+        dragged me out today.'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 3a6dea48-2f92-49b8-b826-0a477a1f0a2b
+    Position: {x: 1070, y: 220}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Figures.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  ConditionalNodeDatas: []
+  TimerChoiceNodeDatas: []
+  EndNodeDatas:
+  - NodeGuid: da49e726-778e-4d7d-b479-ca0ac80b554f
+    Position: {x: 1305, y: 220}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  EventNodeDatas: []
+  StartNodeDatas:
+  - NodeGuid: 12611948-860f-44ca-83ec-c39c7282715d
+    Position: {x: 177, y: 220}
+    startID: 
+  RandomNodeDatas: []
+  CommandNodeDatas: []
+  IfNodeDatas: []
+  AdvancedIFNodeDatas: []
+  AdvancedChoiceNodeDatas: []
+  AdvancedTimeChoiceNodeDatas: []
+  ResetSavedNodeDatas: []
+  MusicNodeDatas: []

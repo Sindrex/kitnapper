@@ -130,9 +130,6 @@ public class MenuManager : MonoBehaviour
         MusicSliderParent.SetActive(false);
         SFXSliderParent.SetActive(false);
 
-        Screen.SetResolution(1920, 1080, FullScreenMode.FullScreenWindow);
-        FullScreenModeText.text = "FullScreenWindow";
-
         //load GameSettings
         CLogger.Log("Loading GameSettings.");
         if (!GameSettingsLoader.GameSettingsExist())
@@ -158,12 +155,14 @@ public class MenuManager : MonoBehaviour
             }
         }
 
+        Screen.SetResolution(1920, 1080, FullScreenMode.FullScreenWindow);
         Screen.fullScreenMode = CurrentGameSettings.FullScreenMode;
         if (CurrentGameSettings.FullScreenMode == FullScreenMode.Windowed)
         {
             Screen.SetResolution(1280, 720, FullScreenMode.Windowed);
         }
-        FullScreenModeText.text = GetFullScreenModeName(Screen.fullScreenMode);
+        FullScreenModeText.text = GetFullScreenModeName(CurrentGameSettings.FullScreenMode);
+
         MusicCurrentIndex = CurrentGameSettings.MusicVolumeIndex;
         SFXCurrentIndex = CurrentGameSettings.SFXVolumeIndex;
         SetMusicVolumeSlider(false);

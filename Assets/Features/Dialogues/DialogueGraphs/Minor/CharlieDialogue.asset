@@ -1,0 +1,170 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1946feaec865d344dabf0419b1c94973, type: 3}
+  m_Name: CharlieDialogue
+  m_EditorClassIdentifier: 
+  AllowDialogueSave: 0
+  BlockingReopeningDialogue: 0
+  ResetSavedNodeOnChoice: 1
+  LimitChoiceOptionPerNode: 0
+  MaxChoiceOptionPerNode: 8
+  NodeLinkDatas:
+  - BaseNodeGuid: 30b7343b-ba17-4218-be20-cdf183ce5bbc
+    TargetNodeGuid: 2a4a9b38-d0c8-439f-8050-95d350bb2c6d
+  - BaseNodeGuid: 2a4a9b38-d0c8-439f-8050-95d350bb2c6d
+    TargetNodeGuid: da49e726-778e-4d7d-b479-ca0ac80b554f
+  - BaseNodeGuid: 12611948-860f-44ca-83ec-c39c7282715d
+    TargetNodeGuid: 666790f0-b372-4938-8f57-f48c9bff48a8
+  - BaseNodeGuid: 666790f0-b372-4938-8f57-f48c9bff48a8
+    TargetNodeGuid: 0ec45ad3-277b-413d-9691-081cbc5dcd76
+  - BaseNodeGuid: 666790f0-b372-4938-8f57-f48c9bff48a8
+    TargetNodeGuid: 890351a3-5b42-4f01-a09b-391e06ac02c5
+  - BaseNodeGuid: 890351a3-5b42-4f01-a09b-391e06ac02c5
+    TargetNodeGuid: 5def0107-53c6-472e-9a52-566e8140303a
+  - BaseNodeGuid: 5def0107-53c6-472e-9a52-566e8140303a
+    TargetNodeGuid: 30b7343b-ba17-4218-be20-cdf183ce5bbc
+  - BaseNodeGuid: 0ec45ad3-277b-413d-9691-081cbc5dcd76
+    TargetNodeGuid: b23f8416-05cf-4451-8d06-75e2fb293d7e
+  DialogueChoiceNodeDatas: []
+  DialogueNodeDatas:
+  - NodeGuid: 0ec45ad3-277b-413d-9691-081cbc5dcd76
+    Position: {x: 319, y: -79}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Charlie: Taken the picture yet?'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 890351a3-5b42-4f01-a09b-391e06ac02c5
+    Position: {x: 319, y: 220}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: CharlieDialogueEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Charlie: Ey, I''m napping here! Woah, the world''s all
+        black and white! Wicked!'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 2a4a9b38-d0c8-439f-8050-95d350bb2c6d
+    Position: {x: 1066, y: 220}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Take it from my good side at least!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 30b7343b-ba17-4218-be20-cdf183ce5bbc
+    Position: {x: 829, y: 220}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Waking a cat up from their nap, it's rude you know? What's
+        next, gonna take my picture too?
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 5def0107-53c6-472e-9a52-566e8140303a
+    Position: {x: 583, y: 220}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: But you know...
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  ConditionalNodeDatas:
+  - NodeGuid: 666790f0-b372-4938-8f57-f48c9bff48a8
+    Position: {x: 67, y: 220}
+    RequiredGameFlagCombo: {fileID: 11400000, guid: e7f36c23ab74f3d4294ae4b07ada824a,
+      type: 2}
+  TimerChoiceNodeDatas: []
+  EndNodeDatas:
+  - NodeGuid: da49e726-778e-4d7d-b479-ca0ac80b554f
+    Position: {x: 1281, y: 220}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: b23f8416-05cf-4451-8d06-75e2fb293d7e
+    Position: {x: 548, y: -79}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  EventNodeDatas: []
+  StartNodeDatas:
+  - NodeGuid: 12611948-860f-44ca-83ec-c39c7282715d
+    Position: {x: -127, y: 220}
+    startID: 
+  RandomNodeDatas: []
+  CommandNodeDatas: []
+  IfNodeDatas: []
+  AdvancedIFNodeDatas: []
+  AdvancedChoiceNodeDatas: []
+  AdvancedTimeChoiceNodeDatas: []
+  ResetSavedNodeDatas: []
+  MusicNodeDatas: []

@@ -1,0 +1,143 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1946feaec865d344dabf0419b1c94973, type: 3}
+  m_Name: OnyxiaDialogue
+  m_EditorClassIdentifier: 
+  AllowDialogueSave: 0
+  BlockingReopeningDialogue: 0
+  ResetSavedNodeOnChoice: 1
+  LimitChoiceOptionPerNode: 0
+  MaxChoiceOptionPerNode: 8
+  NodeLinkDatas:
+  - BaseNodeGuid: 12611948-860f-44ca-83ec-c39c7282715d
+    TargetNodeGuid: 890351a3-5b42-4f01-a09b-391e06ac02c5
+  - BaseNodeGuid: 890351a3-5b42-4f01-a09b-391e06ac02c5
+    TargetNodeGuid: dee79739-208f-42b6-b0cc-02d17c0c9fd0
+  - BaseNodeGuid: 32a84914-1c7c-46c2-b0ba-120ff9ac0251
+    TargetNodeGuid: da49e726-778e-4d7d-b479-ca0ac80b554f
+  - BaseNodeGuid: dee79739-208f-42b6-b0cc-02d17c0c9fd0
+    TargetNodeGuid: 01e3e745-ac8a-48e8-acb4-8157c30349eb
+  - BaseNodeGuid: 01e3e745-ac8a-48e8-acb4-8157c30349eb
+    TargetNodeGuid: 86628c68-5e71-46f5-969b-2845a42e161b
+  - BaseNodeGuid: 01e3e745-ac8a-48e8-acb4-8157c30349eb
+    TargetNodeGuid: 32a84914-1c7c-46c2-b0ba-120ff9ac0251
+  - BaseNodeGuid: 86628c68-5e71-46f5-969b-2845a42e161b
+    TargetNodeGuid: da49e726-778e-4d7d-b479-ca0ac80b554f
+  DialogueChoiceNodeDatas: []
+  DialogueNodeDatas:
+  - NodeGuid: 890351a3-5b42-4f01-a09b-391e06ac02c5
+    Position: {x: 415, y: 220}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: OnyxiaDialogueEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Onyxia: Welcome to our secret spot Detective! You don''t
+        have a laptop I can sleep on?'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: dee79739-208f-42b6-b0cc-02d17c0c9fd0
+    Position: {x: 656, y: 220}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: My stinky brother here hid mine mine, grr...
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 86628c68-5e71-46f5-969b-2845a42e161b
+    Position: {x: 1128, y: -108}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Good thing you gave him a good nudge and woke him up!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 32a84914-1c7c-46c2-b0ba-120ff9ac0251
+    Position: {x: 1128, y: 220}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: And now he's sleeping so nonchalantly! Give him a nudge
+        will you?
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  ConditionalNodeDatas:
+  - NodeGuid: 01e3e745-ac8a-48e8-acb4-8157c30349eb
+    Position: {x: 888, y: 220}
+    RequiredGameFlagCombo: {fileID: 11400000, guid: e7f36c23ab74f3d4294ae4b07ada824a,
+      type: 2}
+  TimerChoiceNodeDatas: []
+  EndNodeDatas:
+  - NodeGuid: da49e726-778e-4d7d-b479-ca0ac80b554f
+    Position: {x: 1397, y: 220}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  EventNodeDatas: []
+  StartNodeDatas:
+  - NodeGuid: 12611948-860f-44ca-83ec-c39c7282715d
+    Position: {x: 177, y: 220}
+    startID: 
+  RandomNodeDatas: []
+  CommandNodeDatas: []
+  IfNodeDatas: []
+  AdvancedIFNodeDatas: []
+  AdvancedChoiceNodeDatas: []
+  AdvancedTimeChoiceNodeDatas: []
+  ResetSavedNodeDatas: []
+  MusicNodeDatas: []

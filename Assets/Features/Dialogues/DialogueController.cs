@@ -91,6 +91,8 @@ public class DialogueController : MonoBehaviour
             MyDialogueManager.Instance.CloseDialogue();
             currentNode = dialogueContainer.StartNodeDatas.FirstOrDefault();
             IsActive = false;
+
+            //Reset dialogue, so you can open it again
             if (RequireInteract)
             {
                 CheckAndSetActive();
@@ -182,6 +184,7 @@ public class DialogueController : MonoBehaviour
 
         if (IsActive)
         {
+            CLogger.Log("Setting Dialogue to inactive");
             PlayerController.Instance.StopShowInteractHint();
             IsActive = false;
         }

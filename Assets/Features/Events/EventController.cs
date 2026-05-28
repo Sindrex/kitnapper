@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -16,6 +17,7 @@ public class EventController : EventBase
     public List<ReqFlagBase> RequiredFlags = new List<ReqFlagBase>();
 
     public List<GameObject> TargetObjects;
+    public List<TargetObjectWrapper> TargetObjectWithState;
     public List<SetGameFlagCombo> SetFlags;
     public string NextEvent;
     public EventBase NextEventBase; //activate ad-hoc events (without state)
@@ -59,9 +61,14 @@ public class EventController : EventBase
         CLogger.Log($"Event \"{Id}\" activated!");
 
         //turn on or off TargetObjects
-        foreach (GameObject target in TargetObjects)
+        foreach (var target in TargetObjects)
         {
             target.SetActive(!target.activeSelf);
+        }
+
+        foreach (var wrapper in TargetObjectWithState)
+        {
+            wrapper.TargetObject.SetActive(wrapper.SetActive);
         }
 
         //set flags
@@ -164,4 +171,11 @@ public class EventController : EventBase
         Gizmos.DrawIcon(transform.position, customName, true);
     }
 #endif
+}
+
+[Serializable]
+public class TargetObjectWrapper
+{
+    public GameObject TargetObject;
+    public bool SetActive;
 }
