@@ -85,7 +85,10 @@ public class FinaleMomentEventController : EventBase
         CameraController.Instance.Player.SetActive(true);
 
         //Achievement
-        SteamIntegration.UnlockAchievement(SteamAchievement.ACH_FINISH_GAME);
+        if(!SteamIntegration.IsAchievementUnlocked(SteamAchievement.ACH_FINISH_GAME))
+        {
+            SteamIntegration.UnlockAchievement(SteamAchievement.ACH_FINISH_GAME);
+        }
 
         //Activate next event
         var nextEvent = GameManager.Instance.FindEvent(NextEvent);

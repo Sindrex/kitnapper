@@ -182,14 +182,13 @@ public class AudioManager : MonoBehaviour
     IEnumerator FadeMusicIn(AudioLabel audioLabel)
     {
         var currentGameSettings = GameManager.Instance?.CurrentGameSettings ?? MenuManager.Instance?.CurrentGameSettings;
-        var musicVolumeIndex = currentGameSettings.MusicVolumeIndex;
-        var maxVolumeIndex = (float) VolumeMaxIndex - musicVolumeIndex;
-        var volumeIndexPerFadeStep = maxVolumeIndex / MusicFadeSteps;
+        var playerMusicVolumeIndex = (float) currentGameSettings.MusicVolumeIndex;
+        var volumeIndexPerFadeStep = playerMusicVolumeIndex / MusicFadeSteps;
         
         //Fade out
         for(int i = 0; i < MusicFadeSteps; i++)
         {
-            var currentVolumeIndex = maxVolumeIndex - volumeIndexPerFadeStep * i;
+            var currentVolumeIndex = playerMusicVolumeIndex - volumeIndexPerFadeStep * i;
             var currentVolume = currentVolumeIndex / VolumeMaxIndex;
             var currentDb = VolumeFunction(currentVolume);
             MainMixer.SetFloat(MusicVolumeParameterName, currentDb);
@@ -209,7 +208,7 @@ public class AudioManager : MonoBehaviour
             yield return new WaitForSeconds(MusicFadeStepSeconds);
         }
 
-        var musicVolume = musicVolumeIndex / (float) VolumeMaxIndex;
+        var musicVolume = playerMusicVolumeIndex / (float) VolumeMaxIndex;
         var musicFadeMaxVolumeDb = VolumeFunction(musicVolume);
         MainMixer.SetFloat(MusicVolumeParameterName, musicFadeMaxVolumeDb);
         PlayMusicClipFinal(audioLabel);
