@@ -44,6 +44,8 @@ MonoBehaviour:
     TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
   - BaseNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
     TargetNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
+  - BaseNodeGuid: 161a45b1-d5c5-466c-bfd8-feb8ca9ce6a2
+    TargetNodeGuid: 0908c817-e4cb-488d-8e64-601af78434ec
   DialogueChoiceNodeDatas:
   - NodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
     Position: {x: 1128, y: -143}
@@ -53,6 +55,7 @@ MonoBehaviour:
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
+    Event: 
     AudioClips:
     - languageEnum: 0
       LanguageGenericType: {fileID: 0}
@@ -110,6 +113,7 @@ MonoBehaviour:
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
+    Event: 
     AudioClips:
     - languageEnum: 0
       LanguageGenericType: {fileID: 0}
@@ -275,6 +279,11 @@ MonoBehaviour:
     startID: 
   - NodeGuid: 8b7c48b1-70f4-4fc3-a83a-04d14ba5894e
     Position: {x: 916, y: -182}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: 0908c817-e4cb-488d-8e64-601af78434ec
+    Position: {x: 1745, y: 441}
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 

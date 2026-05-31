@@ -42,8 +42,6 @@ MonoBehaviour:
     TargetNodeGuid: ed8e838d-b20d-4037-8bdd-9e72bfe20b2e
   - BaseNodeGuid: ed8e838d-b20d-4037-8bdd-9e72bfe20b2e
     TargetNodeGuid: e15c0f1f-ca52-4565-b0fc-6e5fb21203b3
-  - BaseNodeGuid: e15c0f1f-ca52-4565-b0fc-6e5fb21203b3
-    TargetNodeGuid: 1437f839-3556-4cb9-91d9-dc0e8aaa6e0d
   - BaseNodeGuid: e11b356d-ad74-46ce-9a94-146619b18147
     TargetNodeGuid: 1fd3d7f6-501d-42fb-977e-66104ecd2e81
   - BaseNodeGuid: 1ffda9d4-b3c5-42a8-a417-35c05a40c2eb
@@ -56,6 +54,8 @@ MonoBehaviour:
     TargetNodeGuid: 9065b488-e6ad-4e97-b892-7b4b159bf037
   - BaseNodeGuid: b952acbf-c301-4c7d-a86e-6833f43ef895
     TargetNodeGuid: d79a95d4-fe48-4c17-9e4c-73378ebb6152
+  - BaseNodeGuid: e15c0f1f-ca52-4565-b0fc-6e5fb21203b3
+    TargetNodeGuid: 1437f839-3556-4cb9-91d9-dc0e8aaa6e0d
   DialogueChoiceNodeDatas: []
   DialogueNodeDatas:
   - NodeGuid: d79a95d4-fe48-4c17-9e4c-73378ebb6152
@@ -359,7 +359,7 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: If not for their color, then why? I will tell you.
+      LanguageGenericType: If not for their colors, then why? I will tell you.
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10

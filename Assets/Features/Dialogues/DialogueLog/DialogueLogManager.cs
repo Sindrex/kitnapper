@@ -1,9 +1,6 @@
-using System;
 using System.Linq;
 using ASCII.Util;
 using UnityEngine;
-using UnityEngine.EventSystems;
-using UnityEngine.UI;
 
 public class DialogueLogManager : MonoBehaviour
 {
@@ -35,6 +32,7 @@ public class DialogueLogManager : MonoBehaviour
         IsOpen = false;
         IsHidden = true;
         TopButtons.SetActive(false);
+        ItemParent.DestroyMyChildren();
     }
 
     // Update is called once per frame
@@ -64,6 +62,10 @@ public class DialogueLogManager : MonoBehaviour
                 if(Offset >= dialogueLog.Count - Max)
                 {
                     Offset = dialogueLog.Count - Max;
+                }
+                if(Offset < 0)
+                {
+                    Offset = 0;
                 }
                 LoadDialogueLog();
             }

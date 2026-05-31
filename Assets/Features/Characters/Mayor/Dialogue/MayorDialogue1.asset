@@ -18,10 +18,6 @@ MonoBehaviour:
   LimitChoiceOptionPerNode: 0
   MaxChoiceOptionPerNode: 0
   NodeLinkDatas:
-  - BaseNodeGuid: 12611948-860f-44ca-83ec-c39c7282715d
-    TargetNodeGuid: 890351a3-5b42-4f01-a09b-391e06ac02c5
-  - BaseNodeGuid: 890351a3-5b42-4f01-a09b-391e06ac02c5
-    TargetNodeGuid: da49e726-778e-4d7d-b479-ca0ac80b554f
   - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
     TargetNodeGuid: 22294a8c-0eb2-446f-9829-495e67b5a8a7
   - BaseNodeGuid: 2fc2f56d-375d-4a2d-926a-fa8163a1d583
@@ -30,10 +26,8 @@ MonoBehaviour:
     TargetNodeGuid: 8f05f8ea-704c-4b21-9cad-ceec3f556e1a
   - BaseNodeGuid: cf257311-7fa9-4c48-a855-85cb9d555300
     TargetNodeGuid: 138b667b-51b1-4ff3-90d1-4a2a0205e3c3
-  - BaseNodeGuid: 49ae51f3-417b-497e-aa96-38a1ec91b121
-    TargetNodeGuid: dfdb6f86-9419-4200-a790-511060dfc225
   - BaseNodeGuid: 08a994b5-bd56-4f99-9387-45d43406c157
-    TargetNodeGuid: 9a4a56d3-b4ef-4155-8523-0d532fb9c727
+    TargetNodeGuid: f8f81066-f5a6-41c8-8e14-6cf87619a7af
   - BaseNodeGuid: 332bfb8d-9043-4f00-80aa-06d8acf1cfa8
     TargetNodeGuid: 7435f5be-4fd6-4c70-aa1b-a2ff9c5dce29
   - BaseNodeGuid: 7435f5be-4fd6-4c70-aa1b-a2ff9c5dce29
@@ -44,16 +38,24 @@ MonoBehaviour:
     TargetNodeGuid: 49ae51f3-417b-497e-aa96-38a1ec91b121
   - BaseNodeGuid: 71b1e627-fd38-47c5-8dc0-fefd5aca7a4f
     TargetNodeGuid: bd6af605-65fd-4b98-994f-fb40347dd574
-  - BaseNodeGuid: 693cdb95-ab3f-467c-925f-101923b65cad
-    TargetNodeGuid: 1a0f9043-9955-4957-9e53-0fa16f11de69
   - BaseNodeGuid: cdc1b14a-235e-4338-b578-91110baad130
     TargetNodeGuid: 693cdb95-ab3f-467c-925f-101923b65cad
   - BaseNodeGuid: 138b667b-51b1-4ff3-90d1-4a2a0205e3c3
     TargetNodeGuid: cdc1b14a-235e-4338-b578-91110baad130
+  - BaseNodeGuid: bd6af605-65fd-4b98-994f-fb40347dd574
+    TargetNodeGuid: a289f0cd-9259-4f82-923c-924e339293b6
   - BaseNodeGuid: 8d30ec4b-22b1-4501-8539-0910f17f158f
     TargetNodeGuid: cf257311-7fa9-4c48-a855-85cb9d555300
+  - BaseNodeGuid: a289f0cd-9259-4f82-923c-924e339293b6
+    TargetNodeGuid: 8d30ec4b-22b1-4501-8539-0910f17f158f
+  - BaseNodeGuid: 49ae51f3-417b-497e-aa96-38a1ec91b121
+    TargetNodeGuid: a547e8d1-b986-44cf-8b0c-39e2caaf50b1
   - BaseNodeGuid: 1a0f9043-9955-4957-9e53-0fa16f11de69
     TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
+  - BaseNodeGuid: a547e8d1-b986-44cf-8b0c-39e2caaf50b1
+    TargetNodeGuid: dfdb6f86-9419-4200-a790-511060dfc225
+  - BaseNodeGuid: d8ae4ca7-0e7d-48ae-8697-934ae38e9fc3
+    TargetNodeGuid: 40cdaf6f-332f-4b23-9f8c-39d83b69fa04
   - BaseNodeGuid: 8f05f8ea-704c-4b21-9cad-ceec3f556e1a
     TargetNodeGuid: 7efaf9ba-97e4-4424-810f-c620df1c7368
   - BaseNodeGuid: 8f05f8ea-704c-4b21-9cad-ceec3f556e1a
@@ -66,10 +68,16 @@ MonoBehaviour:
     TargetNodeGuid: 08a994b5-bd56-4f99-9387-45d43406c157
   - BaseNodeGuid: 22294a8c-0eb2-446f-9829-495e67b5a8a7
     TargetNodeGuid: 4fd61db1-a71e-4295-8ec8-fb495f167954
+  - BaseNodeGuid: f8f81066-f5a6-41c8-8e14-6cf87619a7af
+    TargetNodeGuid: f2045841-b754-475c-858a-d67791794c3c
+  - BaseNodeGuid: f8f81066-f5a6-41c8-8e14-6cf87619a7af
+    TargetNodeGuid: 9a4a56d3-b4ef-4155-8523-0d532fb9c727
   - BaseNodeGuid: 7efaf9ba-97e4-4424-810f-c620df1c7368
     TargetNodeGuid: 49ae51f3-417b-497e-aa96-38a1ec91b121
   - BaseNodeGuid: 7efaf9ba-97e4-4424-810f-c620df1c7368
     TargetNodeGuid: 889621fc-4b51-470f-a7cc-25216ec1e25c
+  - BaseNodeGuid: f2045841-b754-475c-858a-d67791794c3c
+    TargetNodeGuid: d8ae4ca7-0e7d-48ae-8697-934ae38e9fc3
   - BaseNodeGuid: 889621fc-4b51-470f-a7cc-25216ec1e25c
     TargetNodeGuid: 49ae51f3-417b-497e-aa96-38a1ec91b121
   - BaseNodeGuid: 889621fc-4b51-470f-a7cc-25216ec1e25c
@@ -78,10 +86,12 @@ MonoBehaviour:
     TargetNodeGuid: 22f51342-4318-4877-93d0-bd695020e50a
   - BaseNodeGuid: 889621fc-4b51-470f-a7cc-25216ec1e25c
     TargetNodeGuid: 44f46695-f28c-49dc-b365-42b599e965f7
-  - BaseNodeGuid: bd6af605-65fd-4b98-994f-fb40347dd574
-    TargetNodeGuid: a289f0cd-9259-4f82-923c-924e339293b6
-  - BaseNodeGuid: a289f0cd-9259-4f82-923c-924e339293b6
-    TargetNodeGuid: 8d30ec4b-22b1-4501-8539-0910f17f158f
+  - BaseNodeGuid: 889621fc-4b51-470f-a7cc-25216ec1e25c
+    TargetNodeGuid: d8ae4ca7-0e7d-48ae-8697-934ae38e9fc3
+  - BaseNodeGuid: 693cdb95-ab3f-467c-925f-101923b65cad
+    TargetNodeGuid: d0526ad5-c7f2-4565-ad47-8bed7f870ff7
+  - BaseNodeGuid: d0526ad5-c7f2-4565-ad47-8bed7f870ff7
+    TargetNodeGuid: 1a0f9043-9955-4957-9e53-0fa16f11de69
   DialogueChoiceNodeDatas:
   - NodeGuid: 7efaf9ba-97e4-4424-810f-c620df1c7368
     Position: {x: 1537, y: -136}
@@ -122,6 +132,36 @@ MonoBehaviour:
       - languageEnum: 1
         LanguageGenericType: Choice 02
       RequiredFlag: {fileID: 0}
+  - NodeGuid: f2045841-b754-475c-858a-d67791794c3c
+    Position: {x: 1271, y: -420}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    Event: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: What is it, humr humr?
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 5
+    DialogueNodePorts:
+    - PortGuid: ca89d271-751a-4722-8f30-0ff540d434c6
+      InputGuid: d8ae4ca7-0e7d-48ae-8697-934ae38e9fc3
+      OutputGuid: f2045841-b754-475c-858a-d67791794c3c
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Biscuit recipe
+      - languageEnum: 1
+        LanguageGenericType: Choice 01
+      RequiredFlag: {fileID: 0}
   - NodeGuid: 889621fc-4b51-470f-a7cc-25216ec1e25c
     Position: {x: 1918, y: -503}
     Character: {fileID: 0}
@@ -160,7 +200,7 @@ MonoBehaviour:
         LanguageGenericType: Luna
       - languageEnum: 1
         LanguageGenericType: Choice 02
-      RequiredFlag: {fileID: 11400000, guid: 1967063c06ae88a4aa987bcee92cc5ab, type: 2}
+      RequiredFlag: {fileID: 11400000, guid: 96eaac6713e1dc14e8bfe4cb54ca9872, type: 2}
     - PortGuid: 1df23809-4d68-4f48-8a09-a50222069d31
       InputGuid: 22f51342-4318-4877-93d0-bd695020e50a
       OutputGuid: 889621fc-4b51-470f-a7cc-25216ec1e25c
@@ -179,6 +219,15 @@ MonoBehaviour:
       - languageEnum: 1
         LanguageGenericType: Choice 04
       RequiredFlag: {fileID: 11400000, guid: 929c64ba1c19bb14382fcc3fd5781a99, type: 2}
+    - PortGuid: 4bbc8fef-384f-4522-b04a-6c776e6c1f4b
+      InputGuid: d8ae4ca7-0e7d-48ae-8697-934ae38e9fc3
+      OutputGuid: 889621fc-4b51-470f-a7cc-25216ec1e25c
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Biscuit recipe
+      - languageEnum: 1
+        LanguageGenericType: Choice 05
+      RequiredFlag: {fileID: 11400000, guid: 13c07502f281084459db33f5ae71193b, type: 2}
   DialogueNodeDatas:
   - NodeGuid: 2fc2f56d-375d-4a2d-926a-fa8163a1d583
     Position: {x: 1023, y: -149}
@@ -242,26 +291,6 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
-  - NodeGuid: 49ae51f3-417b-497e-aa96-38a1ec91b121
-    Position: {x: 2259, y: -122}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: Return to me when you have found the culprit, humr humr.
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
   - NodeGuid: 08a994b5-bd56-4f99-9387-45d43406c157
     Position: {x: 555, y: -149}
     Character: {fileID: 0}
@@ -308,7 +337,7 @@ MonoBehaviour:
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
-    Event: 
+    Event: TownHallMayorLunaDialogueEvent
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
@@ -467,27 +496,6 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
-  - NodeGuid: 1a0f9043-9955-4957-9e53-0fa16f11de69
-    Position: {x: 2508, y: 196}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: TownHallMayorInitialDialogueEvent
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: 'That will be all... Now back to work. Where did I put
-        that biscuit recipe, humr humr? '
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
   - NodeGuid: 8d30ec4b-22b1-4501-8539-0910f17f158f
     Position: {x: 1761, y: 635}
     Character: {fileID: 0}
@@ -528,6 +536,109 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
+  - NodeGuid: 49ae51f3-417b-497e-aa96-38a1ec91b121
+    Position: {x: 2359, y: -136}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Return to me when you have found the culprit, humr humr.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: a547e8d1-b986-44cf-8b0c-39e2caaf50b1
+    Position: {x: 2586, y: -136}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Now, where did I put that biscuit recipe, humr humr?
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: d8ae4ca7-0e7d-48ae-8697-934ae38e9fc3
+    Position: {x: 2908, y: -418}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: TownHallMayorBiscuitDialogueEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Oh! You found my recipe! Thanks a lot Detective, humr
+        humr.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 1a0f9043-9955-4957-9e53-0fa16f11de69
+    Position: {x: 2737, y: 196}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: TownHallMayorInitialDialogueEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'That will be all... Now back to work. Where did I put
+        that biscuit recipe, humr humr? '
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: d0526ad5-c7f2-4565-ad47-8bed7f870ff7
+    Position: {x: 2486, y: 196}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: By the way, did you see the new signs we sat up around
+        town? Quite helpful, humr humr.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
   ConditionalNodeDatas:
   - NodeGuid: 8f05f8ea-704c-4b21-9cad-ceec3f556e1a
     Position: {x: 1172, y: 196}
@@ -541,25 +652,34 @@ MonoBehaviour:
     Position: {x: 522, y: 196}
     RequiredGameFlagCombo: {fileID: 11400000, guid: d280d0c262e2fca41b46ae301e91ac3f,
       type: 2}
+  - NodeGuid: f8f81066-f5a6-41c8-8e14-6cf87619a7af
+    Position: {x: 804, y: -292}
+    RequiredGameFlagCombo: {fileID: 11400000, guid: 13c07502f281084459db33f5ae71193b,
+      type: 2}
   TimerChoiceNodeDatas: []
   EndNodeDatas:
-  - NodeGuid: dfdb6f86-9419-4200-a790-511060dfc225
-    Position: {x: 2508, y: -122}
-    EndNodeType: 0
-    Dialogue: {fileID: 0}
-    startID: 
-  - NodeGuid: 9a4a56d3-b4ef-4155-8523-0d532fb9c727
-    Position: {x: 804, y: -149}
-    EndNodeType: 0
-    Dialogue: {fileID: 0}
-    startID: 
   - NodeGuid: d53fa7bb-6867-4bf8-ba8b-9b5ab3a6ebac
     Position: {x: 2853, y: -897}
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 
+  - NodeGuid: dfdb6f86-9419-4200-a790-511060dfc225
+    Position: {x: 2816, y: -11}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: 40cdaf6f-332f-4b23-9f8c-39d83b69fa04
+    Position: {x: 3140, y: -418}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: 9a4a56d3-b4ef-4155-8523-0d532fb9c727
+    Position: {x: 1073, y: -292}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
   - NodeGuid: 7838e825-39c1-416f-8753-1589000d7155
-    Position: {x: 2756, y: 196}
+    Position: {x: 2958, y: 196}
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 

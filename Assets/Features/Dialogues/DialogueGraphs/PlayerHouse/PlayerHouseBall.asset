@@ -20,18 +20,24 @@ MonoBehaviour:
   NodeLinkDatas:
   - BaseNodeGuid: 12611948-860f-44ca-83ec-c39c7282715d
     TargetNodeGuid: f85aface-b71d-465d-bff6-9edb08fd4f7d
-  - BaseNodeGuid: 27a3695a-24c2-485b-82a7-9e004e120f4f
-    TargetNodeGuid: b8a0953e-9182-4595-8319-0c2ee7ce208b
   - BaseNodeGuid: 446d886d-272d-48f7-8412-37361369da11
     TargetNodeGuid: da49e726-778e-4d7d-b479-ca0ac80b554f
+  - BaseNodeGuid: 27a3695a-24c2-485b-82a7-9e004e120f4f
+    TargetNodeGuid: b8a0953e-9182-4595-8319-0c2ee7ce208b
+  - BaseNodeGuid: 6b32e2b6-692c-48e1-9c24-0017afccb125
+    TargetNodeGuid: 2483e255-8316-4b43-a051-88e74f8fbd6f
   - BaseNodeGuid: 1d83695b-e349-4637-93f4-1f5e39dea683
-    TargetNodeGuid: 27a3695a-24c2-485b-82a7-9e004e120f4f
+    TargetNodeGuid: 6b32e2b6-692c-48e1-9c24-0017afccb125
   - BaseNodeGuid: 1d83695b-e349-4637-93f4-1f5e39dea683
     TargetNodeGuid: 446d886d-272d-48f7-8412-37361369da11
   - BaseNodeGuid: f85aface-b71d-465d-bff6-9edb08fd4f7d
     TargetNodeGuid: 1d83695b-e349-4637-93f4-1f5e39dea683
   - BaseNodeGuid: f85aface-b71d-465d-bff6-9edb08fd4f7d
     TargetNodeGuid: 744071b9-b49c-4200-864d-52c132a4f238
+  - BaseNodeGuid: 2483e255-8316-4b43-a051-88e74f8fbd6f
+    TargetNodeGuid: 27a3695a-24c2-485b-82a7-9e004e120f4f
+  - BaseNodeGuid: 2483e255-8316-4b43-a051-88e74f8fbd6f
+    TargetNodeGuid: da49e726-778e-4d7d-b479-ca0ac80b554f
   DialogueChoiceNodeDatas:
   - NodeGuid: f85aface-b71d-465d-bff6-9edb08fd4f7d
     Position: {x: 375, y: 220}
@@ -41,6 +47,7 @@ MonoBehaviour:
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
+    Event: 
     AudioClips:
     - languageEnum: 0
       LanguageGenericType: {fileID: 0}
@@ -71,6 +78,45 @@ MonoBehaviour:
       - languageEnum: 1
         LanguageGenericType: Choice 02
       RequiredFlag: {fileID: 0}
+  - NodeGuid: 2483e255-8316-4b43-a051-88e74f8fbd6f
+    Position: {x: 949, y: -160}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    Event: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Still jiggle the Kudos Ball?
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 5
+    DialogueNodePorts:
+    - PortGuid: b7f1c667-8a06-4238-b266-8ede2a4763ce
+      InputGuid: 27a3695a-24c2-485b-82a7-9e004e120f4f
+      OutputGuid: 2483e255-8316-4b43-a051-88e74f8fbd6f
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Yes
+      - languageEnum: 1
+        LanguageGenericType: Choice 01
+      RequiredFlag: {fileID: 0}
+    - PortGuid: aabc6d95-6aca-4531-b078-34cb782685c7
+      InputGuid: da49e726-778e-4d7d-b479-ca0ac80b554f
+      OutputGuid: 2483e255-8316-4b43-a051-88e74f8fbd6f
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: No
+      - languageEnum: 1
+        LanguageGenericType: Choice 02
+      RequiredFlag: {fileID: 0}
   DialogueNodeDatas:
   - NodeGuid: 446d886d-272d-48f7-8412-37361369da11
     Position: {x: 1049, y: 234}
@@ -93,7 +139,7 @@ MonoBehaviour:
       LanguageGenericType: 
     Duration: 10
   - NodeGuid: 27a3695a-24c2-485b-82a7-9e004e120f4f
-    Position: {x: 1049, y: -48}
+    Position: {x: 1307, y: -160}
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
@@ -112,6 +158,27 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
+  - NodeGuid: 6b32e2b6-692c-48e1-9c24-0017afccb125
+    Position: {x: 722, y: -160}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: (This will run the game credits, and check your progress
+        towards knowing all the townscats.)
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
   ConditionalNodeDatas:
   - NodeGuid: 1d83695b-e349-4637-93f4-1f5e39dea683
     Position: {x: 724, y: 220}
@@ -119,11 +186,6 @@ MonoBehaviour:
       type: 2}
   TimerChoiceNodeDatas: []
   EndNodeDatas:
-  - NodeGuid: b8a0953e-9182-4595-8319-0c2ee7ce208b
-    Position: {x: 1307, y: -48}
-    EndNodeType: 0
-    Dialogue: {fileID: 0}
-    startID: 
   - NodeGuid: 744071b9-b49c-4200-864d-52c132a4f238
     Position: {x: 724, y: 347}
     EndNodeType: 0
@@ -131,6 +193,11 @@ MonoBehaviour:
     startID: 
   - NodeGuid: da49e726-778e-4d7d-b479-ca0ac80b554f
     Position: {x: 1307, y: 234}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: b8a0953e-9182-4595-8319-0c2ee7ce208b
+    Position: {x: 1637, y: -116}
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 

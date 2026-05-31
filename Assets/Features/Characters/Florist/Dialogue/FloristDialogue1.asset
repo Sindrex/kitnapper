@@ -159,7 +159,7 @@ MonoBehaviour:
         LanguageGenericType: How are you doing?
       - languageEnum: 1
         LanguageGenericType: Choice 02
-      RequiredFlag: {fileID: 11400000, guid: 8716209e1c5d81846af001fe38ccae67, type: 2}
+      RequiredFlag: {fileID: 11400000, guid: 286546f6408888243b019dba54ac7f3b, type: 2}
     - PortGuid: 7e8681c3-500e-4099-ba8a-669a3bec169a
       InputGuid: 56266d62-c1e6-416b-8d8b-6574ecc3385c
       OutputGuid: 21173506-086c-4142-8210-e16f594555a8
@@ -225,7 +225,7 @@ MonoBehaviour:
         LanguageGenericType: Butterfly
       - languageEnum: 1
         LanguageGenericType: Choice 03
-      RequiredFlag: {fileID: 11400000, guid: fb3630378891f194fa7749c02b26b18c, type: 2}
+      RequiredFlag: {fileID: 11400000, guid: aa350b794b318094db4b592d8a6dc344, type: 2}
     - PortGuid: a96c9cc2-0ca9-4101-a43c-f3e751f363eb
       InputGuid: b39268b8-e9f0-4e82-9d56-ea60fc2daaeb
       OutputGuid: 37c39146-60d0-43bd-b525-ce6fe87025ca
@@ -302,7 +302,7 @@ MonoBehaviour:
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
-    Event: 
+    Event: FloristHowDoingDialogueEvent
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 

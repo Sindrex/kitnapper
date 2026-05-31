@@ -18,44 +18,6 @@ MonoBehaviour:
   LimitChoiceOptionPerNode: 0
   MaxChoiceOptionPerNode: 0
   NodeLinkDatas:
-  - BaseNodeGuid: 6487d12b-7b97-443b-90db-96f1953b8035
-    TargetNodeGuid: b952acbf-c301-4c7d-a86e-6833f43ef895
-  - BaseNodeGuid: d79a95d4-fe48-4c17-9e4c-73378ebb6152
-    TargetNodeGuid: e11b356d-ad74-46ce-9a94-146619b18147
-  - BaseNodeGuid: 1fd3d7f6-501d-42fb-977e-66104ecd2e81
-    TargetNodeGuid: a7af81e4-3d98-4a5e-95c4-3d7650ddbd75
-  - BaseNodeGuid: a7af81e4-3d98-4a5e-95c4-3d7650ddbd75
-    TargetNodeGuid: 1ffda9d4-b3c5-42a8-a417-35c05a40c2eb
-  - BaseNodeGuid: a3b31be8-cbc1-43d8-8adb-ee34b3096385
-    TargetNodeGuid: 435226c3-b094-43ca-98e2-9e3be49be921
-  - BaseNodeGuid: 435226c3-b094-43ca-98e2-9e3be49be921
-    TargetNodeGuid: 5a3d5602-0572-486d-a5a3-73a44e04e6f4
-  - BaseNodeGuid: 5a3d5602-0572-486d-a5a3-73a44e04e6f4
-    TargetNodeGuid: 265bbd44-e859-4c2b-b39d-a30b925e6f57
-  - BaseNodeGuid: 265bbd44-e859-4c2b-b39d-a30b925e6f57
-    TargetNodeGuid: 1fe8df59-8293-49e6-b705-b7f4431b0945
-  - BaseNodeGuid: 1fe8df59-8293-49e6-b705-b7f4431b0945
-    TargetNodeGuid: ae097847-51ff-45e6-a710-0a3d7f60c45d
-  - BaseNodeGuid: ae097847-51ff-45e6-a710-0a3d7f60c45d
-    TargetNodeGuid: a088c052-37ff-411f-b11e-018fc3168447
-  - BaseNodeGuid: a088c052-37ff-411f-b11e-018fc3168447
-    TargetNodeGuid: ed8e838d-b20d-4037-8bdd-9e72bfe20b2e
-  - BaseNodeGuid: ed8e838d-b20d-4037-8bdd-9e72bfe20b2e
-    TargetNodeGuid: e15c0f1f-ca52-4565-b0fc-6e5fb21203b3
-  - BaseNodeGuid: e11b356d-ad74-46ce-9a94-146619b18147
-    TargetNodeGuid: 1fd3d7f6-501d-42fb-977e-66104ecd2e81
-  - BaseNodeGuid: 1ffda9d4-b3c5-42a8-a417-35c05a40c2eb
-    TargetNodeGuid: 3ce8cf6a-b9da-4229-b539-e6b0e020f4a8
-  - BaseNodeGuid: 9065b488-e6ad-4e97-b892-7b4b159bf037
-    TargetNodeGuid: 996f52a6-4c7c-4b58-bc58-430fe7772b10
-  - BaseNodeGuid: 996f52a6-4c7c-4b58-bc58-430fe7772b10
-    TargetNodeGuid: a3b31be8-cbc1-43d8-8adb-ee34b3096385
-  - BaseNodeGuid: 3ce8cf6a-b9da-4229-b539-e6b0e020f4a8
-    TargetNodeGuid: 9065b488-e6ad-4e97-b892-7b4b159bf037
-  - BaseNodeGuid: b952acbf-c301-4c7d-a86e-6833f43ef895
-    TargetNodeGuid: d79a95d4-fe48-4c17-9e4c-73378ebb6152
-  - BaseNodeGuid: e15c0f1f-ca52-4565-b0fc-6e5fb21203b3
-    TargetNodeGuid: 1437f839-3556-4cb9-91d9-dc0e8aaa6e0d
   - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
     TargetNodeGuid: 361e3b57-d398-49e2-b883-f128f3a31f06
   - BaseNodeGuid: c60b8bee-fa21-4f10-9cf0-5a85d88462da
@@ -108,6 +70,10 @@ MonoBehaviour:
     TargetNodeGuid: 8b0c0cbc-078a-46ad-ab26-c9e9447fc49d
   - BaseNodeGuid: 361e3b57-d398-49e2-b883-f128f3a31f06
     TargetNodeGuid: b471fcdc-e10b-4f88-8889-2b71d34184d6
+  - BaseNodeGuid: d50bb04e-5951-45ed-b7a6-495664e7a630
+    TargetNodeGuid: 002951e7-8302-4ef3-81ad-029b93c7b694
+  - BaseNodeGuid: d50bb04e-5951-45ed-b7a6-495664e7a630
+    TargetNodeGuid: 6efc1a03-016a-44af-84aa-30bb646b8e22
   - BaseNodeGuid: 081f99f7-e4f9-44b2-bda2-6c6b0c3dd158
     TargetNodeGuid: dc500d0f-c5bd-4ddd-8995-9d49d66c850d
   - BaseNodeGuid: 081f99f7-e4f9-44b2-bda2-6c6b0c3dd158
@@ -128,10 +94,6 @@ MonoBehaviour:
     TargetNodeGuid: 00a51208-7701-4825-b8f3-3015eb09ff3a
   - BaseNodeGuid: 9e39dd12-dc74-4845-829b-3bb3fe91f8ec
     TargetNodeGuid: e3ca37dd-bbd2-464d-852f-54e97e64c3e6
-  - BaseNodeGuid: d50bb04e-5951-45ed-b7a6-495664e7a630
-    TargetNodeGuid: 002951e7-8302-4ef3-81ad-029b93c7b694
-  - BaseNodeGuid: d50bb04e-5951-45ed-b7a6-495664e7a630
-    TargetNodeGuid: 6efc1a03-016a-44af-84aa-30bb646b8e22
   DialogueChoiceNodeDatas:
   - NodeGuid: 081f99f7-e4f9-44b2-bda2-6c6b0c3dd158
     Position: {x: 912, y: -134}
@@ -429,7 +391,7 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: You want to do a DNA test down at the University?
+      LanguageGenericType: You want to do a DNA test down at the university?
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10

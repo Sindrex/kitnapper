@@ -32,14 +32,14 @@ MonoBehaviour:
     TargetNodeGuid: 8b307dca-950d-4338-b292-09f85b8a1587
   - BaseNodeGuid: 8b307dca-950d-4338-b292-09f85b8a1587
     TargetNodeGuid: cd3a1386-9eb0-448f-9dde-947117b2878b
-  - BaseNodeGuid: cd3a1386-9eb0-448f-9dde-947117b2878b
-    TargetNodeGuid: 5e523523-d6a7-40fa-84b0-392f1bba6f08
   - BaseNodeGuid: 5e523523-d6a7-40fa-84b0-392f1bba6f08
     TargetNodeGuid: b1fd77fc-3098-41ea-99bf-9ddc6c03543d
   - BaseNodeGuid: b1fd77fc-3098-41ea-99bf-9ddc6c03543d
     TargetNodeGuid: a3a77130-602d-48f6-b071-10b1df237a03
   - BaseNodeGuid: a3a77130-602d-48f6-b071-10b1df237a03
     TargetNodeGuid: e851f17f-2efb-4dfe-8212-97396ba0de3e
+  - BaseNodeGuid: cd3a1386-9eb0-448f-9dde-947117b2878b
+    TargetNodeGuid: 5e523523-d6a7-40fa-84b0-392f1bba6f08
   - BaseNodeGuid: 8966de77-5a76-4407-859c-66a12fd6d87d
     TargetNodeGuid: b1fd77fc-3098-41ea-99bf-9ddc6c03543d
   - BaseNodeGuid: 8966de77-5a76-4407-859c-66a12fd6d87d
@@ -83,8 +83,8 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: Sinbad, a new cat in town, made me realise you orange
-        cats are just like us after all.
+      LanguageGenericType: Sinbad, a new cat in town, showed me you orange cats are
+        just like us after all!
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10

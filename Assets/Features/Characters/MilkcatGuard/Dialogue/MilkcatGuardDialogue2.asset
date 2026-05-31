@@ -14,18 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AllowDialogueSave: 0
   BlockingReopeningDialogue: 0
-  ResetSavedNodeOnChoice: 1
+  ResetSavedNodeOnChoice: 0
   LimitChoiceOptionPerNode: 0
-  MaxChoiceOptionPerNode: 8
+  MaxChoiceOptionPerNode: 0
   NodeLinkDatas:
   - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
-    TargetNodeGuid: 9a755bde-ef94-48d7-a86c-2e577b3d9c18
-  - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
     TargetNodeGuid: 4c2bbdeb-643d-4fae-8ea6-0b98c276dd30
-  - BaseNodeGuid: 4c2bbdeb-643d-4fae-8ea6-0b98c276dd30
-    TargetNodeGuid: cf257311-7fa9-4c48-a855-85cb9d555300
   - BaseNodeGuid: cf257311-7fa9-4c48-a855-85cb9d555300
     TargetNodeGuid: 78993320-80ce-43fd-b7ce-c45899238b7e
+  - BaseNodeGuid: 4c2bbdeb-643d-4fae-8ea6-0b98c276dd30
+    TargetNodeGuid: cf257311-7fa9-4c48-a855-85cb9d555300
   - BaseNodeGuid: 78993320-80ce-43fd-b7ce-c45899238b7e
     TargetNodeGuid: ec79fa67-c782-4228-9f5e-661ec025b7d2
   - BaseNodeGuid: ec79fa67-c782-4228-9f5e-661ec025b7d2

@@ -18,22 +18,28 @@ MonoBehaviour:
   LimitChoiceOptionPerNode: 0
   MaxChoiceOptionPerNode: 8
   NodeLinkDatas:
-  - BaseNodeGuid: 30b7343b-ba17-4218-be20-cdf183ce5bbc
-    TargetNodeGuid: 2a4a9b38-d0c8-439f-8050-95d350bb2c6d
+  - BaseNodeGuid: 0ec45ad3-277b-413d-9691-081cbc5dcd76
+    TargetNodeGuid: b23f8416-05cf-4451-8d06-75e2fb293d7e
   - BaseNodeGuid: 2a4a9b38-d0c8-439f-8050-95d350bb2c6d
     TargetNodeGuid: da49e726-778e-4d7d-b479-ca0ac80b554f
-  - BaseNodeGuid: 12611948-860f-44ca-83ec-c39c7282715d
-    TargetNodeGuid: 666790f0-b372-4938-8f57-f48c9bff48a8
+  - BaseNodeGuid: 30b7343b-ba17-4218-be20-cdf183ce5bbc
+    TargetNodeGuid: 2a4a9b38-d0c8-439f-8050-95d350bb2c6d
+  - BaseNodeGuid: 5def0107-53c6-472e-9a52-566e8140303a
+    TargetNodeGuid: 30b7343b-ba17-4218-be20-cdf183ce5bbc
   - BaseNodeGuid: 666790f0-b372-4938-8f57-f48c9bff48a8
     TargetNodeGuid: 0ec45ad3-277b-413d-9691-081cbc5dcd76
   - BaseNodeGuid: 666790f0-b372-4938-8f57-f48c9bff48a8
     TargetNodeGuid: 890351a3-5b42-4f01-a09b-391e06ac02c5
+  - BaseNodeGuid: 12611948-860f-44ca-83ec-c39c7282715d
+    TargetNodeGuid: 666790f0-b372-4938-8f57-f48c9bff48a8
   - BaseNodeGuid: 890351a3-5b42-4f01-a09b-391e06ac02c5
+    TargetNodeGuid: 99a485ee-bdb7-4f0f-8e83-94d2b364888e
+  - BaseNodeGuid: 99a485ee-bdb7-4f0f-8e83-94d2b364888e
+    TargetNodeGuid: 2aafb2ea-6138-4abd-9663-660b31d41fe9
+  - BaseNodeGuid: 99a485ee-bdb7-4f0f-8e83-94d2b364888e
     TargetNodeGuid: 5def0107-53c6-472e-9a52-566e8140303a
-  - BaseNodeGuid: 5def0107-53c6-472e-9a52-566e8140303a
-    TargetNodeGuid: 30b7343b-ba17-4218-be20-cdf183ce5bbc
-  - BaseNodeGuid: 0ec45ad3-277b-413d-9691-081cbc5dcd76
-    TargetNodeGuid: b23f8416-05cf-4451-8d06-75e2fb293d7e
+  - BaseNodeGuid: 2aafb2ea-6138-4abd-9663-660b31d41fe9
+    TargetNodeGuid: 031e4712-1060-4552-9c0a-f35dc9d70e4a
   DialogueChoiceNodeDatas: []
   DialogueNodeDatas:
   - NodeGuid: 0ec45ad3-277b-413d-9691-081cbc5dcd76
@@ -138,10 +144,35 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
+  - NodeGuid: 2aafb2ea-6138-4abd-9663-660b31d41fe9
+    Position: {x: 829, y: -106}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Wait, you kitnapped the colors? Rad man! Can I get a picture
+        with you?
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
   ConditionalNodeDatas:
   - NodeGuid: 666790f0-b372-4938-8f57-f48c9bff48a8
     Position: {x: 67, y: 220}
     RequiredGameFlagCombo: {fileID: 11400000, guid: e7f36c23ab74f3d4294ae4b07ada824a,
+      type: 2}
+  - NodeGuid: 99a485ee-bdb7-4f0f-8e83-94d2b364888e
+    Position: {x: 585, y: 85}
+    RequiredGameFlagCombo: {fileID: 11400000, guid: d280d0c262e2fca41b46ae301e91ac3f,
       type: 2}
   TimerChoiceNodeDatas: []
   EndNodeDatas:
@@ -155,10 +186,15 @@ MonoBehaviour:
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 
+  - NodeGuid: 031e4712-1060-4552-9c0a-f35dc9d70e4a
+    Position: {x: 1066, y: -106}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
   EventNodeDatas: []
   StartNodeDatas:
   - NodeGuid: 12611948-860f-44ca-83ec-c39c7282715d
-    Position: {x: -127, y: 220}
+    Position: {x: -146, y: 220}
     startID: 
   RandomNodeDatas: []
   CommandNodeDatas: []

@@ -19,21 +19,27 @@ MonoBehaviour:
   MaxChoiceOptionPerNode: 8
   NodeLinkDatas:
   - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
-    TargetNodeGuid: 4c2bbdeb-643d-4fae-8ea6-0b98c276dd30
-  - BaseNodeGuid: d36bd55c-49a2-40cb-863b-cc9b1fafa93e
-    TargetNodeGuid: 0849757c-49d3-4bd0-8983-4cd50af6415f
-  - BaseNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
-    TargetNodeGuid: 93c9aafd-cf3b-4204-b23a-6e53c3f05c42
+    TargetNodeGuid: 34f44fec-e5ae-40ba-9eee-82faa3d81a73
   - BaseNodeGuid: 93c9aafd-cf3b-4204-b23a-6e53c3f05c42
     TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
   - BaseNodeGuid: 4c2bbdeb-643d-4fae-8ea6-0b98c276dd30
     TargetNodeGuid: 1c638922-bf16-4bec-bb91-ed51b676c60e
   - BaseNodeGuid: 1c638922-bf16-4bec-bb91-ed51b676c60e
     TargetNodeGuid: d36bd55c-49a2-40cb-863b-cc9b1fafa93e
-  - BaseNodeGuid: 0849757c-49d3-4bd0-8983-4cd50af6415f
-    TargetNodeGuid: 66e287ec-cb01-4f10-9694-b66064b6011e
   - BaseNodeGuid: 66e287ec-cb01-4f10-9694-b66064b6011e
     TargetNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
+  - BaseNodeGuid: d36bd55c-49a2-40cb-863b-cc9b1fafa93e
+    TargetNodeGuid: 0849757c-49d3-4bd0-8983-4cd50af6415f
+  - BaseNodeGuid: 0849757c-49d3-4bd0-8983-4cd50af6415f
+    TargetNodeGuid: 66e287ec-cb01-4f10-9694-b66064b6011e
+  - BaseNodeGuid: 34f44fec-e5ae-40ba-9eee-82faa3d81a73
+    TargetNodeGuid: 06ffede0-bd39-4baa-b518-d9d8bc44b3b5
+  - BaseNodeGuid: 34f44fec-e5ae-40ba-9eee-82faa3d81a73
+    TargetNodeGuid: 4c2bbdeb-643d-4fae-8ea6-0b98c276dd30
+  - BaseNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
+    TargetNodeGuid: 93c9aafd-cf3b-4204-b23a-6e53c3f05c42
+  - BaseNodeGuid: 06ffede0-bd39-4baa-b518-d9d8bc44b3b5
+    TargetNodeGuid: 3b92bd5f-a14b-4697-ae22-216edf36a64c
   DialogueChoiceNodeDatas:
   - NodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
     Position: {x: 1353, y: 196}
@@ -82,27 +88,7 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: "\u306D\u3001\u5E30\u308A\u306A\u3055\u3044\u3002"
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
-  - NodeGuid: d36bd55c-49a2-40cb-863b-cc9b1fafa93e
-    Position: {x: 854, y: 196}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: "???: \u5BFF\u9650\u7121\u3000\u5BFF\u9650\u7121\u3001\u4E94\u52AB\u306E\u3059\u308A\u304D\u308C\u3001\u6D77\u7802\u5229\u6C34\u9B5A\u306E\u3001\u6C34\u884C\u672B\u30FB\u96F2\u6765\u672B\u30FB\u98A8\u6765\u672B\u3001\u98DF\u3046\u5BDD\u308B\u3068\u3053\u308D\u306B\u4F4F\u3080\u3068\u3053\u308D\u3001\u3084\u3076\u3089\u3053\u3046\u3058\u306E\u3076\u3089\u3053\u3046\u3058\u3001\u30D1\u30A4\u30DD\u30FB\u30D1\u30A4\u30DD\u30FB\u30D1\u30A4\u30DD\u306E\u30B7\u30E5\u30FC\u30EA\u30F3\u30AC\u30F3\u3001\u30B7\u30E5\u30FC\u30EA\u30F3\u30AC\u30F3\u306E\u30B0\u30FC\u30EA\u30F3\u30C0\u30A4\u30FC"
+      LanguageGenericType: "\u306D\u3001 \u5E30\u308A\u306A\u3055\u3044\u3002"
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
@@ -146,26 +132,6 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
-  - NodeGuid: 0849757c-49d3-4bd0-8983-4cd50af6415f
-    Position: {x: 1129, y: 196}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: "???: \u30B0\u30FC\u30EA\u30F3\u30C0\u30A4\u306E\u30DD\u30F3\u30DD\u30B3\u30D4\u30FC\u306E\u30DD\u30F3\u30DD\u30B3\u30CA\u306E\u3001\u9577\u4E45\u547D\u306E\u9577\u52A9\u3002\u3002\u3002"
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
   - NodeGuid: 66e287ec-cb01-4f10-9694-b66064b6011e
     Position: {x: 1329, y: 493}
     Character: {fileID: 0}
@@ -182,15 +148,91 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: "\uFF1D\u3060\u3002"
+      LanguageGenericType: "\u30FC\u3060\u3002"
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
-  ConditionalNodeDatas: []
+  - NodeGuid: d36bd55c-49a2-40cb-863b-cc9b1fafa93e
+    Position: {x: 854, y: 196}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: "???: \u5BFF\u9650\u7121\u3000\u5BFF\u9650\u7121\u3001
+        \u4E94\u52AB\u306E\u3059\u308A\u304D\u308C\u3001 \u6D77\u7802\u5229\u6C34\u9B5A\u306E\u3001
+        \u6C34\u884C\u672B\u30FB\u96F2\u6765\u672B\u30FB\u98A8\u6765\u672B\u3001
+        \u98DF\u3046\u5BDD\u308B\u3068\u3053\u308D\u306B\u4F4F\u3080\u3068\u3053\u308D\u3001
+        \u3084\u3076\u3089\u3053\u3046\u3058\u306E\u3076\u3089\u3053\u3046\u3058\u3001
+        \u30D1\u30A4\u30DD\u30FB\u30D1\u30A4\u30DD\u30FB\u30D1\u30A4\u30DD\u306E\u30B7\u30E5\u30FC\u30EA\u30F3\u30AC\u30F3\u3001
+        \u30B7\u30E5\u30FC\u30EA\u30F3\u30AC\u30F3\u306E\u30B0\u30FC\u30EA\u30F3\u30C0\u30A4\u30FC"
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 0849757c-49d3-4bd0-8983-4cd50af6415f
+    Position: {x: 1129, y: 196}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: "???: \u30B0\u30FC\u30EA\u30F3\u30C0\u30A4\u306E\u30DD\u30F3\u30DD\u30B3\u30D4\u30FC\u306E\u30DD\u30F3\u30DD\u30B3\u30CA\u306E\u3001
+        \u9577\u4E45\u547D\u306E\u9577\u52A9\u3002\u3002\u3002"
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 06ffede0-bd39-4baa-b518-d9d8bc44b3b5
+    Position: {x: 603, y: -165}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: "\u304A\u3063\u3055\u3093: \u3044\u3063\u305F\u3093\u3060\u3088\uFF01\u5E30\u308A\u306A\u3055\u3044\uFF01"
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  ConditionalNodeDatas:
+  - NodeGuid: 34f44fec-e5ae-40ba-9eee-82faa3d81a73
+    Position: {x: 374, y: -39}
+    RequiredGameFlagCombo: {fileID: 11400000, guid: 1dfab7554e843be409b343f9c2e22cd1,
+      type: 2}
   TimerChoiceNodeDatas: []
   EndNodeDatas:
   - NodeGuid: 7838e825-39c1-416f-8753-1589000d7155
     Position: {x: 1893, y: 196}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: 3b92bd5f-a14b-4697-ae22-216edf36a64c
+    Position: {x: 854, y: -165}
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 

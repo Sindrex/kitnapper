@@ -40,20 +40,22 @@ MonoBehaviour:
     TargetNodeGuid: 8d0cae8d-9955-47cf-b917-3245bf1fe72c
   - BaseNodeGuid: c8dc9352-e132-4608-b9d6-252744a60cb3
     TargetNodeGuid: 387c6883-214b-4792-9fb7-a702668501be
-  - BaseNodeGuid: 25f936bd-798f-4c3d-9d5c-65cb7e771398
-    TargetNodeGuid: ae8a2701-2e80-4873-ba39-079ac4d8c439
   - BaseNodeGuid: 5757ab72-f78b-45f8-aadd-e6227dd0051c
     TargetNodeGuid: dfb4d9a0-65a8-449d-a9e3-0fda2530effc
   - BaseNodeGuid: ed38842d-5801-4d33-a912-3cdb8cc22c81
     TargetNodeGuid: 5757ab72-f78b-45f8-aadd-e6227dd0051c
   - BaseNodeGuid: e56d670a-166a-458b-bcea-972ad496a64c
     TargetNodeGuid: ed38842d-5801-4d33-a912-3cdb8cc22c81
+  - BaseNodeGuid: 2c1c129b-fa69-48ab-a854-cd16a34bfea8
+    TargetNodeGuid: 15da3b98-edb8-450b-9dbc-85e6d40cae48
   - BaseNodeGuid: fd8a58c2-d5b8-40a6-bb0c-e1c4d639783d
     TargetNodeGuid: 90a3ed62-c327-4eb8-88e5-56d86f1e2a4f
   - BaseNodeGuid: fd8a58c2-d5b8-40a6-bb0c-e1c4d639783d
     TargetNodeGuid: 1ecb9f1a-31f4-4df0-9a73-326b2111de44
   - BaseNodeGuid: 25917b06-a018-4050-b9bf-a96a1563bc19
     TargetNodeGuid: 50b5b237-035e-4ed4-8040-69b1c907eb64
+  - BaseNodeGuid: 25917b06-a018-4050-b9bf-a96a1563bc19
+    TargetNodeGuid: ca6a62fd-c28f-44d5-8de8-5772a7ad9adf
   - BaseNodeGuid: 1ecb9f1a-31f4-4df0-9a73-326b2111de44
     TargetNodeGuid: a65b4bed-3292-4edf-b8d7-c376139b2fee
   - BaseNodeGuid: 1ecb9f1a-31f4-4df0-9a73-326b2111de44
@@ -62,34 +64,32 @@ MonoBehaviour:
     TargetNodeGuid: 0fb8e009-758b-4302-ad61-4c516ffc1003
   - BaseNodeGuid: e47643a5-3fc7-4907-a3cb-37edc2a443a5
     TargetNodeGuid: 494cfc21-0740-4401-a1f2-aa3e90b20a82
+  - BaseNodeGuid: ca6a62fd-c28f-44d5-8de8-5772a7ad9adf
+    TargetNodeGuid: 2c1c129b-fa69-48ab-a854-cd16a34bfea8
+  - BaseNodeGuid: ca6a62fd-c28f-44d5-8de8-5772a7ad9adf
+    TargetNodeGuid: fd8a58c2-d5b8-40a6-bb0c-e1c4d639783d
   - BaseNodeGuid: dcd8d6f3-4bcf-4ce1-926e-1f153f04d853
     TargetNodeGuid: f54103a2-0822-4f0b-b378-f40ff488464c
   - BaseNodeGuid: dcd8d6f3-4bcf-4ce1-926e-1f153f04d853
     TargetNodeGuid: c8dc9352-e132-4608-b9d6-252744a60cb3
   - BaseNodeGuid: dcd8d6f3-4bcf-4ce1-926e-1f153f04d853
     TargetNodeGuid: 293bfb13-3e46-475b-93d3-0e1dfd011d74
+  - BaseNodeGuid: 0fb8e009-758b-4302-ad61-4c516ffc1003
+    TargetNodeGuid: bcbb99da-e3f9-4ffb-a3a9-d2b4923d23bc
+  - BaseNodeGuid: 0fb8e009-758b-4302-ad61-4c516ffc1003
+    TargetNodeGuid: dcd8d6f3-4bcf-4ce1-926e-1f153f04d853
+  - BaseNodeGuid: a65b4bed-3292-4edf-b8d7-c376139b2fee
+    TargetNodeGuid: bcbb99da-e3f9-4ffb-a3a9-d2b4923d23bc
+  - BaseNodeGuid: a65b4bed-3292-4edf-b8d7-c376139b2fee
+    TargetNodeGuid: dcd8d6f3-4bcf-4ce1-926e-1f153f04d853
+  - BaseNodeGuid: 494cfc21-0740-4401-a1f2-aa3e90b20a82
+    TargetNodeGuid: bcbb99da-e3f9-4ffb-a3a9-d2b4923d23bc
+  - BaseNodeGuid: 494cfc21-0740-4401-a1f2-aa3e90b20a82
+    TargetNodeGuid: dcd8d6f3-4bcf-4ce1-926e-1f153f04d853
+  - BaseNodeGuid: 90586687-f960-46eb-9f72-06f613412f25
+    TargetNodeGuid: ae8a2701-2e80-4873-ba39-079ac4d8c439
   - BaseNodeGuid: dcd8d6f3-4bcf-4ce1-926e-1f153f04d853
-    TargetNodeGuid: 25f936bd-798f-4c3d-9d5c-65cb7e771398
-  - BaseNodeGuid: 0fb8e009-758b-4302-ad61-4c516ffc1003
-    TargetNodeGuid: bcbb99da-e3f9-4ffb-a3a9-d2b4923d23bc
-  - BaseNodeGuid: 0fb8e009-758b-4302-ad61-4c516ffc1003
-    TargetNodeGuid: dcd8d6f3-4bcf-4ce1-926e-1f153f04d853
-  - BaseNodeGuid: a65b4bed-3292-4edf-b8d7-c376139b2fee
-    TargetNodeGuid: bcbb99da-e3f9-4ffb-a3a9-d2b4923d23bc
-  - BaseNodeGuid: a65b4bed-3292-4edf-b8d7-c376139b2fee
-    TargetNodeGuid: dcd8d6f3-4bcf-4ce1-926e-1f153f04d853
-  - BaseNodeGuid: 494cfc21-0740-4401-a1f2-aa3e90b20a82
-    TargetNodeGuid: bcbb99da-e3f9-4ffb-a3a9-d2b4923d23bc
-  - BaseNodeGuid: 494cfc21-0740-4401-a1f2-aa3e90b20a82
-    TargetNodeGuid: dcd8d6f3-4bcf-4ce1-926e-1f153f04d853
-  - BaseNodeGuid: 25917b06-a018-4050-b9bf-a96a1563bc19
-    TargetNodeGuid: ca6a62fd-c28f-44d5-8de8-5772a7ad9adf
-  - BaseNodeGuid: ca6a62fd-c28f-44d5-8de8-5772a7ad9adf
-    TargetNodeGuid: 2c1c129b-fa69-48ab-a854-cd16a34bfea8
-  - BaseNodeGuid: ca6a62fd-c28f-44d5-8de8-5772a7ad9adf
-    TargetNodeGuid: fd8a58c2-d5b8-40a6-bb0c-e1c4d639783d
-  - BaseNodeGuid: 2c1c129b-fa69-48ab-a854-cd16a34bfea8
-    TargetNodeGuid: 15da3b98-edb8-450b-9dbc-85e6d40cae48
+    TargetNodeGuid: 90586687-f960-46eb-9f72-06f613412f25
   DialogueChoiceNodeDatas:
   - NodeGuid: dcd8d6f3-4bcf-4ce1-926e-1f153f04d853
     Position: {x: 840, y: -112}
@@ -140,7 +140,7 @@ MonoBehaviour:
         LanguageGenericType: Choice 04
       RequiredFlag: {fileID: 11400000, guid: 929c64ba1c19bb14382fcc3fd5781a99, type: 2}
     - PortGuid: 2e3efdb2-5032-4258-afb8-c8cb9851fdba
-      InputGuid: 25f936bd-798f-4c3d-9d5c-65cb7e771398
+      InputGuid: 90586687-f960-46eb-9f72-06f613412f25
       OutputGuid: dcd8d6f3-4bcf-4ce1-926e-1f153f04d853
       TextLanguage:
       - languageEnum: 0
@@ -267,16 +267,15 @@ MonoBehaviour:
       - languageEnum: 1
         LanguageGenericType: Choice 02
       RequiredFlag: {fileID: 0}
-  DialogueNodeDatas:
-  - NodeGuid: ae8a2701-2e80-4873-ba39-079ac4d8c439
-    Position: {x: 1105, y: 812}
+  - NodeGuid: 90586687-f960-46eb-9f72-06f613412f25
+    Position: {x: 819, y: 812}
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
-    Event: 
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
+    Event: 
     AudioClips:
     - languageEnum: 0
       LanguageGenericType: {fileID: 0}
@@ -284,11 +283,22 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: Where was I last night? Oh, hihi. I think the Mayor can
-        vouch for me.
+      LanguageGenericType: 'A Midnight Rose? Yes, I bought one just this week from
+        sweet, sweet Poppy. It is the most beautiful flower, darling. '
     - languageEnum: 1
       LanguageGenericType: 
-    Duration: 10
+    Duration: 5
+    DialogueNodePorts:
+    - PortGuid: b5aab78b-b7ce-4e53-a4ab-760ea4afcdc8
+      InputGuid: ae8a2701-2e80-4873-ba39-079ac4d8c439
+      OutputGuid: 90586687-f960-46eb-9f72-06f613412f25
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Last night
+      - languageEnum: 1
+        LanguageGenericType: Choice 01
+      RequiredFlag: {fileID: 0}
+  DialogueNodeDatas:
   - NodeGuid: 50b5b237-035e-4ed4-8040-69b1c907eb64
     Position: {x: -135, y: -75}
     Character: {fileID: 0}
@@ -473,27 +483,6 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
-  - NodeGuid: 25f936bd-798f-4c3d-9d5c-65cb7e771398
-    Position: {x: 840, y: 812}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: 'The Midnight Rose? Yes, I bought one just this week from
-        sweet, sweet Poppy. It is the most beautiful flower, darling. '
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
   - NodeGuid: 5757ab72-f78b-45f8-aadd-e6227dd0051c
     Position: {x: 1834, y: 812}
     Character: {fileID: 0}
@@ -574,6 +563,27 @@ MonoBehaviour:
     - languageEnum: 0
       LanguageGenericType: 'Luna: What? Poppy is missing? We need to find her right
         away!'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: ae8a2701-2e80-4873-ba39-079ac4d8c439
+    Position: {x: 1140, y: 812}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Where was I last night? Oh, hihi. I think the Mayor can
+        vouch for me.
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10

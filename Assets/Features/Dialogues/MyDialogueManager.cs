@@ -21,6 +21,10 @@ public class MyDialogueManager : MonoBehaviour
     public string CurrentText;
     public List<char> CurrentTextList; //reversed
 
+    //html tags
+    public int CurrentTextOffset;
+    public int CurrentTextOffsetForCharacters;
+
     //Dialogue choice
     public GameObject DialogueChoiceContentParent;
     public GameObject DialogueChoicePrefab;
@@ -29,6 +33,7 @@ public class MyDialogueManager : MonoBehaviour
     public bool IsDialogueChoice;
     public List<string> DialogueChoiceTexts;
     public List<ReqFlagBase> DialogueChoiceRequiredFlags;
+    
 
     //SFX
     private readonly List<AudioLabel> DialogueSFX = new List<AudioLabel>()
@@ -99,9 +104,69 @@ public class MyDialogueManager : MonoBehaviour
                 if (CurrentTextList.Count != 0)
                 {
                     var currentLetter = CurrentTextList.Last();
-                    CurrentTextList.RemoveAt(CurrentTextList.Count - 1);
-                    DialogueText.text += currentLetter;
-                    CurrentLetterSpawnTime = 0;
+                    //check if letter is html
+                    if(currentLetter == '<')
+                    {
+                        var startIndex = CurrentTextList.Count - 1;
+                        //remember list is reveresed
+                        var index = startIndex - 1;
+                        while (CurrentTextList[index] != '>' && index >= 0)
+                        {
+                            index--;
+                        }
+
+                        var lastIndex = index;
+                        for (int i = startIndex; i >= lastIndex; i--)
+                        {
+                            var currentLetterHtml = CurrentTextList.Last();
+                            DialogueText.text += currentLetterHtml;
+                            CurrentTextList.RemoveAt(CurrentTextList.Count - 1);
+                        }
+
+                        //find end tag
+                        var startIndexEndTag = CurrentTextList.Count - 1;
+                        while (CurrentTextList[startIndexEndTag] != '<' && CurrentTextList[startIndexEndTag] != '/' && startIndexEndTag >= 0)
+                        {
+                            startIndexEndTag--;
+                        }
+
+                        var lastIndexEndTag = startIndexEndTag;
+                        while (CurrentTextList[lastIndexEndTag] != '>' && lastIndexEndTag >= 0)
+                        {
+                            lastIndexEndTag--;
+                        }
+
+                        //Set offsets and amounts so html tag covers all intended text
+                        CurrentTextOffset = startIndexEndTag - lastIndexEndTag + 1;
+                        CurrentTextOffsetForCharacters = lastIndex - startIndexEndTag - 1; //remove 1 since startIndexEndTag is for <
+
+                        for (int i = startIndexEndTag; i >= lastIndexEndTag; i--)
+                        {
+                            var currentLetterHtml = CurrentTextList[i];
+                            DialogueText.text += currentLetterHtml;
+                            CurrentTextList.RemoveAt(i);
+                        }
+
+                        currentLetter = CurrentTextList.Last();
+                    }
+
+                    if(CurrentTextOffsetForCharacters > 0)
+                    {
+                        CurrentTextOffsetForCharacters--;
+                        CurrentTextList.RemoveAt(CurrentTextList.Count - 1);
+                        var insertIndex = DialogueText.text.Length - CurrentTextOffset;
+                        var currentLetterString = currentLetter.ToString();
+                        var newText = DialogueText.text.Insert(insertIndex, currentLetterString);
+                        DialogueText.text = newText;
+                        CurrentLetterSpawnTime = 0;
+                    }
+                    else
+                    {
+                        CurrentTextList.RemoveAt(CurrentTextList.Count - 1);
+                        DialogueText.text += currentLetter;
+                        CurrentLetterSpawnTime = 0;
+                    }
+
 
                     //Dialogue SFX
                     var randomNumber = new System.Random().Next(0, DialogueSFX.Count - 1);

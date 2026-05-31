@@ -66,6 +66,9 @@ public class GameFlagCombo
     public string StringValue;
 }
 
+/// <summary>
+/// Must add new flags at the bottom. Don't change the order of existing flags, that will mess up old save files and events in Unity.
+/// </summary>
 [Serializable]
 public enum GameFlag
 {
@@ -106,5 +109,6 @@ public enum GameFlag
     GoldenBall1, GoldenBall2, GoldenBall3,
     AllNamesKnown, TurboBabaSpawned, TurboBabaJokesDone, TurboBabaDialogue2Flag4,
     LunaColorsDialogue, TelephoneSFXIsPlaying, TurboBabaSpawnedHouse, SinbadFindusMomentStarted, FloristAway, TelephoneTaken,
-    CharlieNameKnown, OnyxiaNameKnown, MixieNameKnown, ColaNameKnown, BlackcurrantNameKnown, OrangeNameKnown
+    CharlieNameKnown, OnyxiaNameKnown, MixieNameKnown, ColaNameKnown, BlackcurrantNameKnown, OrangeNameKnown, 
+    ScientistButterflyDialogue, FloristHowDoingDialogue, MayorLunaDialogue, MidnightRoseDialoguesDone, KiraBiscuitRecipe, MayorBiscuitRecipe
 }

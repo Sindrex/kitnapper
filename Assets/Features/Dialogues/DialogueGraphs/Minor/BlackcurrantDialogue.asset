@@ -19,44 +19,18 @@ MonoBehaviour:
   MaxChoiceOptionPerNode: 8
   NodeLinkDatas:
   - BaseNodeGuid: 12611948-860f-44ca-83ec-c39c7282715d
-    TargetNodeGuid: 890351a3-5b42-4f01-a09b-391e06ac02c5
+    TargetNodeGuid: b8cc64c9-048d-46df-ba6a-fbcce2cdc097
   - BaseNodeGuid: 890351a3-5b42-4f01-a09b-391e06ac02c5
-    TargetNodeGuid: bd848e76-780e-411b-8823-ab209fd69aea
+    TargetNodeGuid: 3a6dea48-2f92-49b8-b826-0a477a1f0a2b
+  - BaseNodeGuid: 9ca749ae-439f-4f5f-95cf-66e408d20431
+    TargetNodeGuid: c7c15ac3-d57c-4c76-8a68-4b71956585d5
   - BaseNodeGuid: 3a6dea48-2f92-49b8-b826-0a477a1f0a2b
     TargetNodeGuid: da49e726-778e-4d7d-b479-ca0ac80b554f
-  - BaseNodeGuid: bd848e76-780e-411b-8823-ab209fd69aea
-    TargetNodeGuid: 3a6dea48-2f92-49b8-b826-0a477a1f0a2b
-  DialogueChoiceNodeDatas:
-  - NodeGuid: bd848e76-780e-411b-8823-ab209fd69aea
-    Position: {x: 740, y: 220}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    Event: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: You don't happen to have any snacks on you, do you?
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 5
-    DialogueNodePorts:
-    - PortGuid: 2ad951cd-5e3e-4910-a8ac-c4dfb1216630
-      InputGuid: 3a6dea48-2f92-49b8-b826-0a477a1f0a2b
-      OutputGuid: bd848e76-780e-411b-8823-ab209fd69aea
-      TextLanguage:
-      - languageEnum: 0
-        LanguageGenericType: No
-      - languageEnum: 1
-        LanguageGenericType: Choice 01
-      RequiredFlag: {fileID: 0}
+  - BaseNodeGuid: b8cc64c9-048d-46df-ba6a-fbcce2cdc097
+    TargetNodeGuid: 9ca749ae-439f-4f5f-95cf-66e408d20431
+  - BaseNodeGuid: b8cc64c9-048d-46df-ba6a-fbcce2cdc097
+    TargetNodeGuid: 890351a3-5b42-4f01-a09b-391e06ac02c5
+  DialogueChoiceNodeDatas: []
   DialogueNodeDatas:
   - NodeGuid: 890351a3-5b42-4f01-a09b-391e06ac02c5
     Position: {x: 415, y: 220}
@@ -74,13 +48,34 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: 'Blackcurrant: Ugh, I want to go inside, but my brother
+      LanguageGenericType: 'Blackcurrant: Ugh, I wanted to stay inside, but my brother
         dragged me out today.'
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
+  - NodeGuid: 9ca749ae-439f-4f5f-95cf-66e408d20431
+    Position: {x: 415, y: -148}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: BlackcurrantDialogueEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Blackcurrant: You did this? Well, gee, turn it back will
+        ya?'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
   - NodeGuid: 3a6dea48-2f92-49b8-b826-0a477a1f0a2b
-    Position: {x: 1070, y: 220}
+    Position: {x: 686, y: 220}
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
@@ -95,22 +90,32 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: Figures.
+      LanguageGenericType: And I'm sooo hungry! But, I'm on a diet. I need to stay
+        strong!
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
-  ConditionalNodeDatas: []
+  ConditionalNodeDatas:
+  - NodeGuid: b8cc64c9-048d-46df-ba6a-fbcce2cdc097
+    Position: {x: 149, y: 220}
+    RequiredGameFlagCombo: {fileID: 11400000, guid: d280d0c262e2fca41b46ae301e91ac3f,
+      type: 2}
   TimerChoiceNodeDatas: []
   EndNodeDatas:
+  - NodeGuid: c7c15ac3-d57c-4c76-8a68-4b71956585d5
+    Position: {x: 686, y: -148}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
   - NodeGuid: da49e726-778e-4d7d-b479-ca0ac80b554f
-    Position: {x: 1305, y: 220}
+    Position: {x: 939, y: 220}
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 
   EventNodeDatas: []
   StartNodeDatas:
   - NodeGuid: 12611948-860f-44ca-83ec-c39c7282715d
-    Position: {x: 177, y: 220}
+    Position: {x: -57, y: 220}
     startID: 
   RandomNodeDatas: []
   CommandNodeDatas: []

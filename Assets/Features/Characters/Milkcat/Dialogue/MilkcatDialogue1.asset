@@ -194,7 +194,7 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: 'Milkcat:  How are you feline, Chief? Fancy a glass of
+      LanguageGenericType: 'Milkcat: How are you feline, Chief? Fancy a glass of
         milk? Guess it''ll be hard to know if it really is, with what''s going on.
         Heh heh.'
     - languageEnum: 1

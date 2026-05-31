@@ -62,10 +62,14 @@ MonoBehaviour:
     TargetNodeGuid: 36e5585f-26b3-4f86-9381-52bed6e531f9
   - BaseNodeGuid: 6653c225-65fa-4982-979c-936bfd14e80b
     TargetNodeGuid: 150be6be-4ba0-478b-8a0b-2753f8c4dc20
-  - BaseNodeGuid: 6653c225-65fa-4982-979c-936bfd14e80b
-    TargetNodeGuid: 28862d3b-26b1-4d63-a7dc-14a5ca3edd62
   - BaseNodeGuid: 42f5448e-7977-4972-ada7-79ead76f61d7
     TargetNodeGuid: 817f0f85-2d9b-4e31-a934-426cd0c05775
+  - BaseNodeGuid: 6653c225-65fa-4982-979c-936bfd14e80b
+    TargetNodeGuid: be4eaac7-4f36-492b-be2c-8fbf6cbe0936
+  - BaseNodeGuid: be4eaac7-4f36-492b-be2c-8fbf6cbe0936
+    TargetNodeGuid: cd16ef0d-5c14-4865-95bd-b7dd5a838aec
+  - BaseNodeGuid: be4eaac7-4f36-492b-be2c-8fbf6cbe0936
+    TargetNodeGuid: 28862d3b-26b1-4d63-a7dc-14a5ca3edd62
   DialogueChoiceNodeDatas:
   - NodeGuid: c6c3837b-2101-484d-bd1d-3c2c9ded6e96
     Position: {x: 570, y: 227}
@@ -156,7 +160,7 @@ MonoBehaviour:
         LanguageGenericType: Choice 03
       RequiredFlag: {fileID: 11400000, guid: f169c9261349aad4d883f6afceb45b21, type: 2}
     - PortGuid: d2c20d1a-0a3a-412e-a772-ec3545c931a5
-      InputGuid: 28862d3b-26b1-4d63-a7dc-14a5ca3edd62
+      InputGuid: be4eaac7-4f36-492b-be2c-8fbf6cbe0936
       OutputGuid: 6653c225-65fa-4982-979c-936bfd14e80b
       TextLanguage:
       - languageEnum: 0
@@ -299,88 +303,6 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
-  - NodeGuid: 28862d3b-26b1-4d63-a7dc-14a5ca3edd62
-    Position: {x: 969, y: -65}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: What is this? A butterfly? Wait a minute...
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
-  - NodeGuid: cd16ef0d-5c14-4865-95bd-b7dd5a838aec
-    Position: {x: 1590, y: -65}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: You should speak to Poppy, you know, at the Nepeta Florist.
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
-  - NodeGuid: f81eb944-b2d4-4354-b300-3f8bd1aa2669
-    Position: {x: 1884, y: -65}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: If there's anything I can help you with, don't hesistate
-        to ask!
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
-  - NodeGuid: 93fa5800-b33a-47b7-84fd-a4e46038b6d9
-    Position: {x: 1275, y: -65}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: This is no cat-of-the-mill butterfly. No, this rare type
-        is only attracted to a single flower species!
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
   - NodeGuid: 150be6be-4ba0-478b-8a0b-2753f8c4dc20
     Position: {x: 949, y: 812}
     Character: {fileID: 0}
@@ -485,18 +407,99 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
+  - NodeGuid: 28862d3b-26b1-4d63-a7dc-14a5ca3edd62
+    Position: {x: 949, y: 1342}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: What is this? A butterfly? Wait a minute...
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 93fa5800-b33a-47b7-84fd-a4e46038b6d9
+    Position: {x: 1214, y: 1342}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: This is no cat-of-the-mill butterfly. No, this rare type
+        is only attracted to a single flower species!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: cd16ef0d-5c14-4865-95bd-b7dd5a838aec
+    Position: {x: 1507, y: 1342}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: You should speak to Poppy, you know, at the Nepeta Florist.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: f81eb944-b2d4-4354-b300-3f8bd1aa2669
+    Position: {x: 1757, y: 1342}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: ScientistButterflyDialogueEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: If there's anything I can help you with, don't hesistate
+        to ask!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
   ConditionalNodeDatas:
   - NodeGuid: fa8378b2-5d44-4fc4-9895-b35e1cd5044d
     Position: {x: 243, y: 227}
     RequiredGameFlagCombo: {fileID: 11400000, guid: d280d0c262e2fca41b46ae301e91ac3f,
       type: 2}
+  - NodeGuid: be4eaac7-4f36-492b-be2c-8fbf6cbe0936
+    Position: {x: 707, y: 1212}
+    RequiredGameFlagCombo: {fileID: 11400000, guid: a2f31cd699b3631408cbbf063de279ff,
+      type: 2}
   TimerChoiceNodeDatas: []
   EndNodeDatas:
-  - NodeGuid: d2adfdd5-8370-49aa-ab32-b577971ce5d5
-    Position: {x: 2180, y: -65}
-    EndNodeType: 0
-    Dialogue: {fileID: 0}
-    startID: 
   - NodeGuid: 7838e825-39c1-416f-8753-1589000d7155
     Position: {x: 2191, y: 334}
     EndNodeType: 0
@@ -519,6 +522,11 @@ MonoBehaviour:
     startID: 
   - NodeGuid: 52e3ee85-ce88-4cf4-8d5e-c6dc7c20448e
     Position: {x: 1305, y: -440}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: d2adfdd5-8370-49aa-ab32-b577971ce5d5
+    Position: {x: 1998, y: 1342}
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 

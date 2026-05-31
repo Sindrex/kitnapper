@@ -20,21 +20,29 @@ MonoBehaviour:
   NodeLinkDatas:
   - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
     TargetNodeGuid: 2c3ddbbb-e9e4-4158-bcfd-b1b9430c708f
-  - BaseNodeGuid: 97cec329-1837-403a-9c57-82df0b7ba8e6
-    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
   - BaseNodeGuid: 2c3ddbbb-e9e4-4158-bcfd-b1b9430c708f
     TargetNodeGuid: b47d7949-b168-481d-8549-99ac074b7299
-  - BaseNodeGuid: b47d7949-b168-481d-8549-99ac074b7299
-    TargetNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
-  - BaseNodeGuid: b47d7949-b168-481d-8549-99ac074b7299
-    TargetNodeGuid: 97cec329-1837-403a-9c57-82df0b7ba8e6
+  - BaseNodeGuid: 97cec329-1837-403a-9c57-82df0b7ba8e6
+    TargetNodeGuid: 516729f7-7e5d-4c39-8e1d-d5248b264f4a
+  - BaseNodeGuid: 52fd0ed6-c407-45e5-894b-2fc122f165b2
+    TargetNodeGuid: 3d914a64-6529-473d-9724-9c01a3bcfea7
+  - BaseNodeGuid: b9edc9e8-f159-46d4-a33c-2089b51386cb
+    TargetNodeGuid: b05f9d51-3edc-427d-8544-aaa9aae7cb5d
+  - BaseNodeGuid: 516729f7-7e5d-4c39-8e1d-d5248b264f4a
+    TargetNodeGuid: b9edc9e8-f159-46d4-a33c-2089b51386cb
   - BaseNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
     TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
   - BaseNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
     TargetNodeGuid: 97cec329-1837-403a-9c57-82df0b7ba8e6
+  - BaseNodeGuid: 516729f7-7e5d-4c39-8e1d-d5248b264f4a
+    TargetNodeGuid: 52fd0ed6-c407-45e5-894b-2fc122f165b2
+  - BaseNodeGuid: b47d7949-b168-481d-8549-99ac074b7299
+    TargetNodeGuid: 516729f7-7e5d-4c39-8e1d-d5248b264f4a
+  - BaseNodeGuid: b47d7949-b168-481d-8549-99ac074b7299
+    TargetNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
   DialogueChoiceNodeDatas:
   - NodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
-    Position: {x: 800, y: 302}
+    Position: {x: 1103, y: 319}
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
@@ -73,26 +81,6 @@ MonoBehaviour:
         LanguageGenericType: Choice 02
       RequiredFlag: {fileID: 0}
   DialogueNodeDatas:
-  - NodeGuid: 97cec329-1837-403a-9c57-82df0b7ba8e6
-    Position: {x: 1168, y: 302}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: I don't have time for this. Leave me pawsant!
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
   - NodeGuid: 2c3ddbbb-e9e4-4158-bcfd-b1b9430c708f
     Position: {x: 564, y: 196}
     Character: {fileID: 0}
@@ -113,15 +101,91 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
+  - NodeGuid: 97cec329-1837-403a-9c57-82df0b7ba8e6
+    Position: {x: 1470, y: 319}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: I don't have time for this. I just ate biscuits and need
+        my dinner nap.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: b9edc9e8-f159-46d4-a33c-2089b51386cb
+    Position: {x: 1971, y: 319}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: KiraBiscuitDialogueEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: You know what? Pawsant, throw away this biscuit recipe
+        for me. I don't want it anymore!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 52fd0ed6-c407-45e5-894b-2fc122f165b2
+    Position: {x: 1971, y: 704}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Leave me be pawsant!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
   ConditionalNodeDatas:
   - NodeGuid: b47d7949-b168-481d-8549-99ac074b7299
-    Position: {x: 800, y: 66}
+    Position: {x: 803, y: 196}
     RequiredGameFlagCombo: {fileID: 11400000, guid: d280d0c262e2fca41b46ae301e91ac3f,
+      type: 2}
+  - NodeGuid: 516729f7-7e5d-4c39-8e1d-d5248b264f4a
+    Position: {x: 1700, y: 319}
+    RequiredGameFlagCombo: {fileID: 11400000, guid: 2c0d96d25ccbe3c4fa9d4555a414f78b,
       type: 2}
   TimerChoiceNodeDatas: []
   EndNodeDatas:
   - NodeGuid: 7838e825-39c1-416f-8753-1589000d7155
-    Position: {x: 1446, y: 196}
+    Position: {x: 1470, y: 196}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: b05f9d51-3edc-427d-8544-aaa9aae7cb5d
+    Position: {x: 2211, y: 319}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: 3d914a64-6529-473d-9724-9c01a3bcfea7
+    Position: {x: 2211, y: 704}
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 

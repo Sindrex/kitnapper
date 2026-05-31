@@ -80,7 +80,7 @@ public class FinaleMomentEventController : EventBase
         CameraController.Instance.FollowPlayer = true;
         PlayerController.Instance.CanMove = true;
         GameManager.Instance.CanInteract = true;
-        GameManager.Instance.HideUI(false);
+        GameManager.Instance.HideUI(true);
         PlayerController.Instance.gameObject.transform.localPosition = PlayerStartPosition;
         CameraController.Instance.Player.SetActive(true);
 

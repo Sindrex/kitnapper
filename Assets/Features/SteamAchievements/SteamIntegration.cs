@@ -5,12 +5,15 @@ using Steamworks.Data;
 public enum SteamAchievement
 {
     ACH_FINISH_GAME, //finale moment class
-    ACH_FIND_ALL_NAMES, //flag, checks with finalemoment
+    ACH_FIND_ALL_NAMES, //flags, checks with finalemoment
     ACH_CATNIP_UP_DOWN, //catnipevent
     ACH_FIND_ALL_GOLDEN_BALLS, //AchivEvent
     ACH_FIND_TURBO_BABA, //AchivEvent
     ACH_LISTEN_TO_ALL_TURBO_BABA_JOKES, //AchivEvent
-    ACH_TALK_TO_SLEEPY_CAT //AchivEvent
+    ACH_TALK_TO_SLEEPY_CAT, //AchivEvent
+    ACH_LUNA_FLORIST_MOMENT, //AchivEvent
+    ACH_FINDUS_RICHARD_MOMENT, //AchivEvent
+    ACH_BISCUIT_RECIPE_FOUND, //AchivEvent
 }
 
 public static class SteamIntegration

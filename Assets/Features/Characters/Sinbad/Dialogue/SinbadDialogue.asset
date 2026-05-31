@@ -34,6 +34,8 @@ MonoBehaviour:
     TargetNodeGuid: 5219e840-1c49-460f-b77c-006ad2b6f3ec
   - BaseNodeGuid: bae9baee-8c09-4e68-a814-204339e011f7
     TargetNodeGuid: 707ffdbb-3be0-40c6-b8b6-84be7faac9c0
+  - BaseNodeGuid: c91e403a-8a80-42cc-b702-efdcc416abc0
+    TargetNodeGuid: 2488abf9-60e0-4655-82b4-3fcc33fde3a5
   - BaseNodeGuid: 674e888a-f637-45e7-9ba5-3f02f1f027b3
     TargetNodeGuid: c03585cc-9875-4b69-b035-ab0bbd12357c
   - BaseNodeGuid: 674e888a-f637-45e7-9ba5-3f02f1f027b3
@@ -56,9 +58,9 @@ MonoBehaviour:
     TargetNodeGuid: cd2c5f6e-de40-41ed-b82e-2274af1d3ddd
   - BaseNodeGuid: 5219e840-1c49-460f-b77c-006ad2b6f3ec
     TargetNodeGuid: 06b3c5d4-bfa3-4701-8e2b-a0a480d63836
-  - BaseNodeGuid: c91e403a-8a80-42cc-b702-efdcc416abc0
-    TargetNodeGuid: 2488abf9-60e0-4655-82b4-3fcc33fde3a5
   - BaseNodeGuid: 2488abf9-60e0-4655-82b4-3fcc33fde3a5
+    TargetNodeGuid: 40db7c51-d25d-46a3-b53e-f978f6ee48d9
+  - BaseNodeGuid: 40db7c51-d25d-46a3-b53e-f978f6ee48d9
     TargetNodeGuid: 895fd863-1b0b-4550-83e0-538a566e070a
   DialogueChoiceNodeDatas:
   - NodeGuid: 06b3c5d4-bfa3-4701-8e2b-a0a480d63836
@@ -335,6 +337,26 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
+  - NodeGuid: 40db7c51-d25d-46a3-b53e-f978f6ee48d9
+    Position: {x: -356, y: -495}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: DID POLICECAT KNOW? I GOT JOB HERE! YIPPEE!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
   ConditionalNodeDatas:
   - NodeGuid: 674e888a-f637-45e7-9ba5-3f02f1f027b3
     Position: {x: 882, y: 354}
@@ -376,7 +398,7 @@ MonoBehaviour:
     Dialogue: {fileID: 0}
     startID: 
   - NodeGuid: 895fd863-1b0b-4550-83e0-538a566e070a
-    Position: {x: -356, y: -325}
+    Position: {x: -56, y: -349}
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 

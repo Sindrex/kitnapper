@@ -22,16 +22,16 @@ MonoBehaviour:
     TargetNodeGuid: 890351a3-5b42-4f01-a09b-391e06ac02c5
   - BaseNodeGuid: 890351a3-5b42-4f01-a09b-391e06ac02c5
     TargetNodeGuid: dee79739-208f-42b6-b0cc-02d17c0c9fd0
-  - BaseNodeGuid: 32a84914-1c7c-46c2-b0ba-120ff9ac0251
-    TargetNodeGuid: da49e726-778e-4d7d-b479-ca0ac80b554f
   - BaseNodeGuid: dee79739-208f-42b6-b0cc-02d17c0c9fd0
     TargetNodeGuid: 01e3e745-ac8a-48e8-acb4-8157c30349eb
+  - BaseNodeGuid: 86628c68-5e71-46f5-969b-2845a42e161b
+    TargetNodeGuid: da49e726-778e-4d7d-b479-ca0ac80b554f
+  - BaseNodeGuid: 32a84914-1c7c-46c2-b0ba-120ff9ac0251
+    TargetNodeGuid: da49e726-778e-4d7d-b479-ca0ac80b554f
   - BaseNodeGuid: 01e3e745-ac8a-48e8-acb4-8157c30349eb
     TargetNodeGuid: 86628c68-5e71-46f5-969b-2845a42e161b
   - BaseNodeGuid: 01e3e745-ac8a-48e8-acb4-8157c30349eb
     TargetNodeGuid: 32a84914-1c7c-46c2-b0ba-120ff9ac0251
-  - BaseNodeGuid: 86628c68-5e71-46f5-969b-2845a42e161b
-    TargetNodeGuid: da49e726-778e-4d7d-b479-ca0ac80b554f
   DialogueChoiceNodeDatas: []
   DialogueNodeDatas:
   - NodeGuid: 890351a3-5b42-4f01-a09b-391e06ac02c5
@@ -50,7 +50,7 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: 'Onyxia: Welcome to our secret spot Detective! You don''t
+      LanguageGenericType: 'Ony: Welcome to our secret spot Detective! You don''t
         have a laptop I can sleep on?'
     - languageEnum: 1
       LanguageGenericType: 
@@ -71,7 +71,7 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: My stinky brother here hid mine mine, grr...
+      LanguageGenericType: My stinky sister here hid mine mine, grr...
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
@@ -91,7 +91,7 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: Good thing you gave him a good nudge and woke him up!
+      LanguageGenericType: Good thing you gave her a good nudge and woke her up!
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
@@ -111,7 +111,7 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: And now he's sleeping so nonchalantly! Give him a nudge
+      LanguageGenericType: And now she's sleeping so nonchalantly! Give her a nudge
         will you?
     - languageEnum: 1
       LanguageGenericType: 

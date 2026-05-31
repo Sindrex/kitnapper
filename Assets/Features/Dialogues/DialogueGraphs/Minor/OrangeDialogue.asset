@@ -19,11 +19,21 @@ MonoBehaviour:
   MaxChoiceOptionPerNode: 8
   NodeLinkDatas:
   - BaseNodeGuid: 12611948-860f-44ca-83ec-c39c7282715d
-    TargetNodeGuid: 890351a3-5b42-4f01-a09b-391e06ac02c5
-  - BaseNodeGuid: 890351a3-5b42-4f01-a09b-391e06ac02c5
-    TargetNodeGuid: 3a6dea48-2f92-49b8-b826-0a477a1f0a2b
+    TargetNodeGuid: 8cdd165c-f4e0-419c-8d9c-51cf7ca3150f
   - BaseNodeGuid: 3a6dea48-2f92-49b8-b826-0a477a1f0a2b
     TargetNodeGuid: da49e726-778e-4d7d-b479-ca0ac80b554f
+  - BaseNodeGuid: 890351a3-5b42-4f01-a09b-391e06ac02c5
+    TargetNodeGuid: 3a6dea48-2f92-49b8-b826-0a477a1f0a2b
+  - BaseNodeGuid: 31b6adc6-12bf-4c73-9042-51932102f16c
+    TargetNodeGuid: c0d99f2f-4a20-4152-b209-a0f4e241660d
+  - BaseNodeGuid: c0d99f2f-4a20-4152-b209-a0f4e241660d
+    TargetNodeGuid: 4f8a6595-48ab-4c84-96b2-2224a228f9ef
+  - BaseNodeGuid: 4f8a6595-48ab-4c84-96b2-2224a228f9ef
+    TargetNodeGuid: 0270e070-b22e-4fc4-8c4d-f62033c51de8
+  - BaseNodeGuid: 8cdd165c-f4e0-419c-8d9c-51cf7ca3150f
+    TargetNodeGuid: 890351a3-5b42-4f01-a09b-391e06ac02c5
+  - BaseNodeGuid: 8cdd165c-f4e0-419c-8d9c-51cf7ca3150f
+    TargetNodeGuid: 31b6adc6-12bf-4c73-9042-51932102f16c
   DialogueChoiceNodeDatas: []
   DialogueNodeDatas:
   - NodeGuid: 3a6dea48-2f92-49b8-b826-0a477a1f0a2b
@@ -68,7 +78,72 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
-  ConditionalNodeDatas: []
+  - NodeGuid: 31b6adc6-12bf-4c73-9042-51932102f16c
+    Position: {x: 415, y: -166}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: OrangeDialogueEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Orange: I must applaud your bravado Mr. Detective! It''s
+        no small feat to steal all the town''s colors under our very noses!'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: c0d99f2f-4a20-4152-b209-a0f4e241660d
+    Position: {x: 656, y: -166}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: You are getting them back right?
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 4f8a6595-48ab-4c84-96b2-2224a228f9ef
+    Position: {x: 879, y: -166}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Right?
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  ConditionalNodeDatas:
+  - NodeGuid: 8cdd165c-f4e0-419c-8d9c-51cf7ca3150f
+    Position: {x: 173, y: 220}
+    RequiredGameFlagCombo: {fileID: 11400000, guid: d280d0c262e2fca41b46ae301e91ac3f,
+      type: 2}
   TimerChoiceNodeDatas: []
   EndNodeDatas:
   - NodeGuid: da49e726-778e-4d7d-b479-ca0ac80b554f
@@ -76,10 +151,15 @@ MonoBehaviour:
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 
+  - NodeGuid: 0270e070-b22e-4fc4-8c4d-f62033c51de8
+    Position: {x: 1103, y: -166}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
   EventNodeDatas: []
   StartNodeDatas:
   - NodeGuid: 12611948-860f-44ca-83ec-c39c7282715d
-    Position: {x: 165, y: 220}
+    Position: {x: -66, y: 220}
     startID: 
   RandomNodeDatas: []
   CommandNodeDatas: []
