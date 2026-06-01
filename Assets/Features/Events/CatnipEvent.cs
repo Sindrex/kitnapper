@@ -11,10 +11,17 @@ public class CatnipEvent : EventBase
     public string FlowerSpawnEventId;
     public bool OverrideForceCatnipUp;
     public bool OverrideForceCatnipDown;
+    public bool IsActive;
 
     public override void Activate(bool activateNextEvent)
     {
         CLogger.Log($"CatnipEvent activated with OverrideForceCatnipUp: {OverrideForceCatnipUp}, OverrideForceCatnipDown: {OverrideForceCatnipDown}!");
+
+        if (IsActive)
+        {
+            CLogger.Log("CatnipEvent is already active, skipping activation.");
+            return;
+        }
 
         if (OverrideForceCatnipUp)
         {
@@ -62,6 +69,7 @@ public class CatnipEvent : EventBase
                 });
             }
         }
+        IsActive =  true;
         StartCoroutine(ReturnSpeed());
     }
 
@@ -71,6 +79,7 @@ public class CatnipEvent : EventBase
         yield return new WaitForSeconds(WaitForSeconds);
         PlayerController.Instance.CurrentSpeed = PlayerController.Speed;
         PlayerController.Instance.StopCatnipAnim();
+        IsActive = false;
         CLogger.Log("ReturnSpeed finished!");
 
         //check for achievement

@@ -39,7 +39,7 @@ MonoBehaviour:
   - BaseNodeGuid: 920aa638-5dd5-4594-b0a5-00c4f4dab7d2
     TargetNodeGuid: 2f69dc8d-6744-4fb8-9cd8-8d925e6d5ee3
   - BaseNodeGuid: c4324a8e-98b3-4f8a-8c51-cd5ec2d87c3b
-    TargetNodeGuid: 02e72912-89ec-4314-9a25-ffd8f0a483a8
+    TargetNodeGuid: efde47d2-e59f-4706-97fa-a139e754dd66
   - BaseNodeGuid: 7d44017b-4954-4f6c-b63e-cf698ab909a2
     TargetNodeGuid: a77bcccb-1486-4c3b-9bca-fb68d66fca5d
   - BaseNodeGuid: 2f69dc8d-6744-4fb8-9cd8-8d925e6d5ee3
@@ -60,6 +60,8 @@ MonoBehaviour:
     TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
   - BaseNodeGuid: 02e72912-89ec-4314-9a25-ffd8f0a483a8
     TargetNodeGuid: f7269a0e-a126-4f38-a14f-ac983946e736
+  - BaseNodeGuid: efde47d2-e59f-4706-97fa-a139e754dd66
+    TargetNodeGuid: 02e72912-89ec-4314-9a25-ffd8f0a483a8
   - BaseNodeGuid: 6efc1a03-016a-44af-84aa-30bb646b8e22
     TargetNodeGuid: c60b8bee-fa21-4f10-9cf0-5a85d88462da
   - BaseNodeGuid: 6d228e2b-2248-439d-b8cf-ad07f87c43ed
@@ -324,7 +326,7 @@ MonoBehaviour:
     TextType:
     - languageEnum: 0
       LanguageGenericType: Those orange cats, they are different. They are not from
-        here. They don't think like us. I say we kick them out for good!
+        here. They don't think like us.
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
@@ -549,8 +551,29 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: And you want to know the worst part? My toy ball was STOLEN
+      LanguageGenericType: And you want to know the worst part? My ball toy was STOLEN
         the other day! I'm sure it was Riclard or whatever his name was...
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: efde47d2-e59f-4706-97fa-a139e754dd66
+    Position: {x: 1685, y: 1308}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: It's like they share a single braincell or something!
+        I say we kick them out for good!
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10

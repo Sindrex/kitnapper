@@ -36,10 +36,12 @@ MonoBehaviour:
     TargetNodeGuid: 707ffdbb-3be0-40c6-b8b6-84be7faac9c0
   - BaseNodeGuid: c91e403a-8a80-42cc-b702-efdcc416abc0
     TargetNodeGuid: 2488abf9-60e0-4655-82b4-3fcc33fde3a5
+  - BaseNodeGuid: 2488abf9-60e0-4655-82b4-3fcc33fde3a5
+    TargetNodeGuid: 40db7c51-d25d-46a3-b53e-f978f6ee48d9
+  - BaseNodeGuid: 40db7c51-d25d-46a3-b53e-f978f6ee48d9
+    TargetNodeGuid: 895fd863-1b0b-4550-83e0-538a566e070a
   - BaseNodeGuid: 674e888a-f637-45e7-9ba5-3f02f1f027b3
     TargetNodeGuid: c03585cc-9875-4b69-b035-ab0bbd12357c
-  - BaseNodeGuid: 674e888a-f637-45e7-9ba5-3f02f1f027b3
-    TargetNodeGuid: 8392f854-d495-45cb-b7e0-26550dea3efc
   - BaseNodeGuid: a6fb76de-e97f-44ec-b860-c843d0103035
     TargetNodeGuid: bae9baee-8c09-4e68-a814-204339e011f7
   - BaseNodeGuid: a6fb76de-e97f-44ec-b860-c843d0103035
@@ -58,10 +60,12 @@ MonoBehaviour:
     TargetNodeGuid: cd2c5f6e-de40-41ed-b82e-2274af1d3ddd
   - BaseNodeGuid: 5219e840-1c49-460f-b77c-006ad2b6f3ec
     TargetNodeGuid: 06b3c5d4-bfa3-4701-8e2b-a0a480d63836
-  - BaseNodeGuid: 2488abf9-60e0-4655-82b4-3fcc33fde3a5
-    TargetNodeGuid: 40db7c51-d25d-46a3-b53e-f978f6ee48d9
-  - BaseNodeGuid: 40db7c51-d25d-46a3-b53e-f978f6ee48d9
-    TargetNodeGuid: 895fd863-1b0b-4550-83e0-538a566e070a
+  - BaseNodeGuid: 674e888a-f637-45e7-9ba5-3f02f1f027b3
+    TargetNodeGuid: f2ee9f84-2d9d-4069-87b0-3588594bb1fc
+  - BaseNodeGuid: f2ee9f84-2d9d-4069-87b0-3588594bb1fc
+    TargetNodeGuid: 8392f854-d495-45cb-b7e0-26550dea3efc
+  - BaseNodeGuid: f2ee9f84-2d9d-4069-87b0-3588594bb1fc
+    TargetNodeGuid: 972f7792-bab5-4888-a929-56a4a72f0c9a
   DialogueChoiceNodeDatas:
   - NodeGuid: 06b3c5d4-bfa3-4701-8e2b-a0a480d63836
     Position: {x: 504, y: 75}
@@ -156,7 +160,7 @@ MonoBehaviour:
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
-    Event: 
+    Event: SinbadToyDialogueEvent
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
@@ -369,6 +373,10 @@ MonoBehaviour:
   - NodeGuid: 9f6f05d3-0f42-4038-a4d9-660f7a8f96ec
     Position: {x: -893, y: 200}
     RequiredGameFlagCombo: {fileID: 11400000, guid: d280d0c262e2fca41b46ae301e91ac3f,
+      type: 2}
+  - NodeGuid: f2ee9f84-2d9d-4069-87b0-3588594bb1fc
+    Position: {x: 1144, y: 849}
+    RequiredGameFlagCombo: {fileID: 11400000, guid: 26be9c228388a6b408ee4559eaa9ce7b,
       type: 2}
   TimerChoiceNodeDatas: []
   EndNodeDatas:

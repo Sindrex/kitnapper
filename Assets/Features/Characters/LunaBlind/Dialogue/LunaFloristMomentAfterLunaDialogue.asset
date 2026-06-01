@@ -21,6 +21,12 @@ MonoBehaviour:
   - BaseNodeGuid: 368d0761-52c3-43e5-b334-09b019812615
     TargetNodeGuid: d1e73e03-4885-4d9f-82e9-30d36422fca0
   - BaseNodeGuid: d1e73e03-4885-4d9f-82e9-30d36422fca0
+    TargetNodeGuid: 758badae-6254-48a4-b2de-52098eccabfa
+  - BaseNodeGuid: 758badae-6254-48a4-b2de-52098eccabfa
+    TargetNodeGuid: 9f0fa8dc-2ef4-4362-8a9d-7f1781b99bf7
+  - BaseNodeGuid: 758badae-6254-48a4-b2de-52098eccabfa
+    TargetNodeGuid: 4044f891-d4c1-4ae2-be09-8a7c736da95a
+  - BaseNodeGuid: 9f0fa8dc-2ef4-4362-8a9d-7f1781b99bf7
     TargetNodeGuid: ea1cfc03-3adf-4590-a1c9-73f4eb161bc8
   DialogueChoiceNodeDatas: []
   DialogueNodeDatas:
@@ -45,11 +51,41 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
-  ConditionalNodeDatas: []
+  - NodeGuid: 9f0fa8dc-2ef4-4362-8a9d-7f1781b99bf7
+    Position: {x: 492, y: 4}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Yes, before I forget. I think the mayor wanted to see
+        you, darling.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  ConditionalNodeDatas:
+  - NodeGuid: 758badae-6254-48a4-b2de-52098eccabfa
+    Position: {x: 227, y: 4}
+    RequiredGameFlagCombo: {fileID: 11400000, guid: 83928ef9c45b36e44b16cdf66ad93b4b,
+      type: 2}
   TimerChoiceNodeDatas: []
   EndNodeDatas:
   - NodeGuid: ea1cfc03-3adf-4590-a1c9-73f4eb161bc8
-    Position: {x: 238, y: 4}
+    Position: {x: 737, y: 4}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: 4044f891-d4c1-4ae2-be09-8a7c736da95a
+    Position: {x: 492, y: 386}
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 

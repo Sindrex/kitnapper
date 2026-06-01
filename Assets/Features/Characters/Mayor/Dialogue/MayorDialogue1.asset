@@ -38,6 +38,8 @@ MonoBehaviour:
     TargetNodeGuid: 49ae51f3-417b-497e-aa96-38a1ec91b121
   - BaseNodeGuid: 71b1e627-fd38-47c5-8dc0-fefd5aca7a4f
     TargetNodeGuid: bd6af605-65fd-4b98-994f-fb40347dd574
+  - BaseNodeGuid: 693cdb95-ab3f-467c-925f-101923b65cad
+    TargetNodeGuid: d0526ad5-c7f2-4565-ad47-8bed7f870ff7
   - BaseNodeGuid: cdc1b14a-235e-4338-b578-91110baad130
     TargetNodeGuid: 693cdb95-ab3f-467c-925f-101923b65cad
   - BaseNodeGuid: 138b667b-51b1-4ff3-90d1-4a2a0205e3c3
@@ -48,14 +50,14 @@ MonoBehaviour:
     TargetNodeGuid: cf257311-7fa9-4c48-a855-85cb9d555300
   - BaseNodeGuid: a289f0cd-9259-4f82-923c-924e339293b6
     TargetNodeGuid: 8d30ec4b-22b1-4501-8539-0910f17f158f
-  - BaseNodeGuid: 49ae51f3-417b-497e-aa96-38a1ec91b121
-    TargetNodeGuid: a547e8d1-b986-44cf-8b0c-39e2caaf50b1
-  - BaseNodeGuid: 1a0f9043-9955-4957-9e53-0fa16f11de69
-    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
   - BaseNodeGuid: a547e8d1-b986-44cf-8b0c-39e2caaf50b1
     TargetNodeGuid: dfdb6f86-9419-4200-a790-511060dfc225
   - BaseNodeGuid: d8ae4ca7-0e7d-48ae-8697-934ae38e9fc3
     TargetNodeGuid: 40cdaf6f-332f-4b23-9f8c-39d83b69fa04
+  - BaseNodeGuid: 1a0f9043-9955-4957-9e53-0fa16f11de69
+    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
+  - BaseNodeGuid: d0526ad5-c7f2-4565-ad47-8bed7f870ff7
+    TargetNodeGuid: 1a0f9043-9955-4957-9e53-0fa16f11de69
   - BaseNodeGuid: 8f05f8ea-704c-4b21-9cad-ceec3f556e1a
     TargetNodeGuid: 7efaf9ba-97e4-4424-810f-c620df1c7368
   - BaseNodeGuid: 8f05f8ea-704c-4b21-9cad-ceec3f556e1a
@@ -88,10 +90,12 @@ MonoBehaviour:
     TargetNodeGuid: 44f46695-f28c-49dc-b365-42b599e965f7
   - BaseNodeGuid: 889621fc-4b51-470f-a7cc-25216ec1e25c
     TargetNodeGuid: d8ae4ca7-0e7d-48ae-8697-934ae38e9fc3
-  - BaseNodeGuid: 693cdb95-ab3f-467c-925f-101923b65cad
-    TargetNodeGuid: d0526ad5-c7f2-4565-ad47-8bed7f870ff7
-  - BaseNodeGuid: d0526ad5-c7f2-4565-ad47-8bed7f870ff7
-    TargetNodeGuid: 1a0f9043-9955-4957-9e53-0fa16f11de69
+  - BaseNodeGuid: 49ae51f3-417b-497e-aa96-38a1ec91b121
+    TargetNodeGuid: c2fb92f7-1c0f-412e-aca8-d2c2ef2a044a
+  - BaseNodeGuid: c2fb92f7-1c0f-412e-aca8-d2c2ef2a044a
+    TargetNodeGuid: a547e8d1-b986-44cf-8b0c-39e2caaf50b1
+  - BaseNodeGuid: c2fb92f7-1c0f-412e-aca8-d2c2ef2a044a
+    TargetNodeGuid: e32c26b8-366b-4274-a22c-7d2367caadb0
   DialogueChoiceNodeDatas:
   - NodeGuid: 7efaf9ba-97e4-4424-810f-c620df1c7368
     Position: {x: 1537, y: -136}
@@ -536,46 +540,6 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
-  - NodeGuid: 49ae51f3-417b-497e-aa96-38a1ec91b121
-    Position: {x: 2359, y: -136}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: Return to me when you have found the culprit, humr humr.
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
-  - NodeGuid: a547e8d1-b986-44cf-8b0c-39e2caaf50b1
-    Position: {x: 2586, y: -136}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: Now, where did I put that biscuit recipe, humr humr?
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
   - NodeGuid: d8ae4ca7-0e7d-48ae-8697-934ae38e9fc3
     Position: {x: 2908, y: -418}
     Character: {fileID: 0}
@@ -639,6 +603,46 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
+  - NodeGuid: a547e8d1-b986-44cf-8b0c-39e2caaf50b1
+    Position: {x: 2831, y: -95}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Now, where did I put that biscuit recipe, humr humr?
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 49ae51f3-417b-497e-aa96-38a1ec91b121
+    Position: {x: 2259, y: -115}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Return to me when you have found the culprit, humr humr.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
   ConditionalNodeDatas:
   - NodeGuid: 8f05f8ea-704c-4b21-9cad-ceec3f556e1a
     Position: {x: 1172, y: 196}
@@ -656,15 +660,14 @@ MonoBehaviour:
     Position: {x: 804, y: -292}
     RequiredGameFlagCombo: {fileID: 11400000, guid: 13c07502f281084459db33f5ae71193b,
       type: 2}
+  - NodeGuid: c2fb92f7-1c0f-412e-aca8-d2c2ef2a044a
+    Position: {x: 2486, y: -115}
+    RequiredGameFlagCombo: {fileID: 11400000, guid: 4db99294570b26045a6190de72f1bc48,
+      type: 2}
   TimerChoiceNodeDatas: []
   EndNodeDatas:
   - NodeGuid: d53fa7bb-6867-4bf8-ba8b-9b5ab3a6ebac
     Position: {x: 2853, y: -897}
-    EndNodeType: 0
-    Dialogue: {fileID: 0}
-    startID: 
-  - NodeGuid: dfdb6f86-9419-4200-a790-511060dfc225
-    Position: {x: 2816, y: -11}
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 
@@ -680,6 +683,16 @@ MonoBehaviour:
     startID: 
   - NodeGuid: 7838e825-39c1-416f-8753-1589000d7155
     Position: {x: 2958, y: 196}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: e32c26b8-366b-4274-a22c-7d2367caadb0
+    Position: {x: 2611, y: 56}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: dfdb6f86-9419-4200-a790-511060dfc225
+    Position: {x: 3077, y: -95}
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 

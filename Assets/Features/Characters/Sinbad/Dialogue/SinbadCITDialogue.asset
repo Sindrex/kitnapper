@@ -22,8 +22,6 @@ MonoBehaviour:
     TargetNodeGuid: f405ea15-fdc9-486f-ab19-307299997c03
   - BaseNodeGuid: 6862f9c6-3985-43d4-b699-c4b6c7ea5ad3
     TargetNodeGuid: 0214acae-e1bc-4bda-b82a-d960bcc9b88d
-  - BaseNodeGuid: 0214acae-e1bc-4bda-b82a-d960bcc9b88d
-    TargetNodeGuid: a3b589b0-564b-4498-9d05-ada89afe0f07
   - BaseNodeGuid: f405ea15-fdc9-486f-ab19-307299997c03
     TargetNodeGuid: 6862f9c6-3985-43d4-b699-c4b6c7ea5ad3
   - BaseNodeGuid: f405ea15-fdc9-486f-ab19-307299997c03
@@ -34,6 +32,10 @@ MonoBehaviour:
     TargetNodeGuid: 6fa558a8-f6cb-4585-adde-b3d4b035c1a7
   - BaseNodeGuid: 6fa558a8-f6cb-4585-adde-b3d4b035c1a7
     TargetNodeGuid: 77f6fc81-9e25-498e-88bc-066ca1e4eb35
+  - BaseNodeGuid: 0214acae-e1bc-4bda-b82a-d960bcc9b88d
+    TargetNodeGuid: f9e3ddbb-5af7-467a-b5e4-87de1a01a4c4
+  - BaseNodeGuid: f9e3ddbb-5af7-467a-b5e4-87de1a01a4c4
+    TargetNodeGuid: a3b589b0-564b-4498-9d05-ada89afe0f07
   DialogueChoiceNodeDatas:
   - NodeGuid: 487914fd-380a-4b32-b0dd-01b94482ddb5
     Position: {x: 432, y: 2}
@@ -146,6 +148,28 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
+  - NodeGuid: f9e3ddbb-5af7-467a-b5e4-87de1a01a4c4
+    Position: {x: 946, y: -317}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'OH DID YOU KNOW? I GOT JOB HERE!
+
+        YIPPIE!'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
   ConditionalNodeDatas:
   - NodeGuid: f405ea15-fdc9-486f-ab19-307299997c03
     Position: {x: 152, y: -4}
@@ -164,7 +188,7 @@ MonoBehaviour:
     Dialogue: {fileID: 0}
     startID: 
   - NodeGuid: a3b589b0-564b-4498-9d05-ada89afe0f07
-    Position: {x: 943, y: -317}
+    Position: {x: 1201, y: -317}
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 

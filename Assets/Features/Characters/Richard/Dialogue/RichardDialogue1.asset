@@ -48,6 +48,8 @@ MonoBehaviour:
     TargetNodeGuid: e15a994f-6e27-4a42-b576-770a845463a9
   - BaseNodeGuid: 23bff266-e6e3-491f-8f78-08ffd2ceaadb
     TargetNodeGuid: cc551a7a-1db3-4879-a30e-de568881f49c
+  - BaseNodeGuid: 47e41c03-211b-4f46-911c-ba2ee22c300c
+    TargetNodeGuid: 659ae33e-3388-4013-9fbe-166dcb80abaa
   - BaseNodeGuid: c2734396-3245-4da4-a5c7-f6649dc8804f
     TargetNodeGuid: 300ad88f-4b3e-4d84-b1ac-bed255b02acf
   - BaseNodeGuid: 3bc8a010-d4c5-4e58-8393-b0208119683e
@@ -56,6 +58,8 @@ MonoBehaviour:
     TargetNodeGuid: 23bff266-e6e3-491f-8f78-08ffd2ceaadb
   - BaseNodeGuid: 83ed02b8-79a5-4cb8-8885-0e3136f55c6b
     TargetNodeGuid: fecf48a2-bf24-480d-ad0c-469905f2adc0
+  - BaseNodeGuid: 659ae33e-3388-4013-9fbe-166dcb80abaa
+    TargetNodeGuid: f903400b-49c4-4292-95ae-f065440c4571
   - BaseNodeGuid: 8966de77-5a76-4407-859c-66a12fd6d87d
     TargetNodeGuid: 9a178bc8-2dbf-46e1-a47c-3bd248a2fd85
   - BaseNodeGuid: 8966de77-5a76-4407-859c-66a12fd6d87d
@@ -84,10 +88,6 @@ MonoBehaviour:
     TargetNodeGuid: b85e8ffa-f857-4aea-834e-803ea01ccebf
   - BaseNodeGuid: 9dbc9f59-7f3d-4bb4-81c0-1a716492122b
     TargetNodeGuid: 5bb69ed3-28eb-4aef-aa51-25b5cf940284
-  - BaseNodeGuid: 47e41c03-211b-4f46-911c-ba2ee22c300c
-    TargetNodeGuid: 659ae33e-3388-4013-9fbe-166dcb80abaa
-  - BaseNodeGuid: 659ae33e-3388-4013-9fbe-166dcb80abaa
-    TargetNodeGuid: f903400b-49c4-4292-95ae-f065440c4571
   DialogueChoiceNodeDatas:
   - NodeGuid: 9a178bc8-2dbf-46e1-a47c-3bd248a2fd85
     Position: {x: 1019, y: 40}
@@ -186,7 +186,7 @@ MonoBehaviour:
         LanguageGenericType: Choice 04
       RequiredFlag: {fileID: 0}
   - NodeGuid: 9dbc9f59-7f3d-4bb4-81c0-1a716492122b
-    Position: {x: 1378, y: -209}
+    Position: {x: 1378, y: 217}
     Character: {fileID: 0}
     PortraitPosition: 0
     Emotion: 
@@ -321,7 +321,7 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: I'm Richard, Regional Director of this office.
+      LanguageGenericType: '???: I''m Richard, Regional Director of this office.'
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
@@ -530,27 +530,6 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
-  - NodeGuid: 47e41c03-211b-4f46-911c-ba2ee22c300c
-    Position: {x: -99, y: -172}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: Detective! I was cattergasted that YOU stole all the colors!
-        But, I understand. I really learned a lesson.
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
   - NodeGuid: c2734396-3245-4da4-a5c7-f6649dc8804f
     Position: {x: 778, y: 308}
     Character: {fileID: 0}
@@ -567,8 +546,9 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: 'We are expanding into imports in this region, and I have
-        personally cultivated a good business relationship with the local government. '
+      LanguageGenericType: 'Richard: We are expanding into imports in this region,
+        and I have personally cultivated a good business relationship with the local
+        government. '
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
@@ -655,6 +635,27 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
+  - NodeGuid: 47e41c03-211b-4f46-911c-ba2ee22c300c
+    Position: {x: -99, y: -172}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Richard: Detective! I was cattergasted that YOU stole
+        all the colors! But, I understand. I really learned a lesson.'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
   ConditionalNodeDatas:
   - NodeGuid: 8966de77-5a76-4407-859c-66a12fd6d87d
     Position: {x: -99, y: 196}
@@ -686,13 +687,13 @@ MonoBehaviour:
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 
-  - NodeGuid: 383552af-c25c-4c61-b709-699d2cb3340f
-    Position: {x: 1378, y: 134}
+  - NodeGuid: f903400b-49c4-4292-95ae-f065440c4571
+    Position: {x: 329, y: -172}
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 
-  - NodeGuid: f903400b-49c4-4292-95ae-f065440c4571
-    Position: {x: 329, y: -172}
+  - NodeGuid: 383552af-c25c-4c61-b709-699d2cb3340f
+    Position: {x: 1378, y: -368}
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 

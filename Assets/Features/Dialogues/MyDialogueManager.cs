@@ -286,6 +286,6 @@ public class MyDialogueManager : MonoBehaviour
         DialogueChoiceContentParent.DestroyMyChildren();
         IsDialogueChoice = false;
         PlayerController.Instance.CanMove = true;
-        CameraController.Instance.FollowPlayer = true;
+        CameraController.Instance.SetFollowPlayer();
     }
 }

@@ -30,6 +30,7 @@ If I change name of events, or replace events with new ones, it will break exist
   * Brother's Duet (live)
 * Make 'Live' version Brother's Duet
   * Wait for ChrisHP to record piano -> make Live versjon
+  * Re-record with slower last part (se chrisHP notes)
 * Other references if time -> Outer reality
   * SRC 1/2 (3?) -> A computer prop with dialogue?
 * Playtest after fixing all bugs!!!
@@ -41,28 +42,11 @@ If I change name of events, or replace events with new ones, it will break exist
     * Hard to fix. Dialogue text shrinks at intervals, while border does seamlessly
   * Achieves dont pop up / seen ingame?
     * Can be steam issue / player issue since I think I have seen them before
-  * Possible issue with music when fading between, and fades triggered rapidly. Maybe queue music if so?
   * Does game always stutter at music swap?
   
-  * Milo re-ask butterfly should give shortened answer
-    * Needs testing
-  * Can't talk to Luna about colors at first?
-    * Needs testing
-  * Luna should have different dialogue when we know Poppy is out
-    * She does, but it comes AFTER luna florist moment
-    * Needs testing
-  * Maybe disallow Mayor Luna option after 1 talk
-    * Needs testing
   * Maybe disallow Butterfly dialogue with Florist after both archs are started
     * Needs testing
-  * Findus and sinbad are at the Cattelatte AND CIT?
-    * Needs testing
   * New kira mayor biscuit achiv
-
-Other names that can be used:
-* Kuro (Blue Exorcist)
-* Junji ito cats
-* Bakko (kaiju 8)
-* Kuraha (Noragami)
-* Jiji (Kiki)
-* Kyo (Fruit basket)
+    * Worked before finale, need to test after finale
+  * Orange's text is all wrong. Conditional sent me to text for after finale
+    * Needs testing

@@ -61,10 +61,14 @@ public class AudioManager : MonoBehaviour
     public int VolumeMaxIndex;
     private const string MusicVolumeParameterName = "MusicVolume";
     private const string SFXVolumeParameterName = "SFXVolume";
+    public bool IsFadingIn;
+    public AudioLabel IsFadingInAudioLabel;
 
     //Queue
     [SerializeField]
     private List<AudioLabel> MusicQueue = new List<AudioLabel>();
+    [SerializeField]
+    private List<AudioLabel> FadeQueue = new List<AudioLabel>();
 
     private async void Awake()
     {
@@ -129,17 +133,50 @@ public class AudioManager : MonoBehaviour
         if(MainMusicSource.clip == audioClip && (fadeIn || queue))
         {
             CLogger.LogWarning($"Music {audioLabel} is already playing.");
+
+            if(fadeIn && IsFadingIn && audioLabel != IsFadingInAudioLabel)
+            {
+                if(FadeQueue.Count == 0 || FadeQueue.Last() != audioLabel)
+                {
+                    CLogger.LogWarning($"Already fading in music. Cannot start another fadeIn for {audioLabel}. Adding to fade queue instead.");
+                    FadeQueue.Add(audioLabel);
+                    MainMusicSource.loop = false;
+                }
+                else
+                {
+                    CLogger.LogWarning($"Already fading in music, and {audioLabel} is already last in fade queue. Not adding again.");
+                }
+            }
+
             return;
         }
 
         if(fadeIn && queue)
         {
             CLogger.LogWarning($"Both fadeIn and queue are true for music {audioLabel}. This is not supported. Defaults to fadeIn only.");
+            queue = false;
         }
 
-        if (fadeIn)
+        if (fadeIn && !IsFadingIn)
         {
             StartCoroutine(FadeMusicIn(audioLabel));
+        }
+        else if(fadeIn && IsFadingIn)
+        {
+            if(audioLabel == IsFadingInAudioLabel)
+            {
+                CLogger.LogWarning($"Already fading in music, and {audioLabel} is already being faded into. Not adding again.");
+            }
+            else if(FadeQueue.Count == 0 || FadeQueue.Last() != audioLabel)
+            {
+                CLogger.LogWarning($"Already fading in music 2. Cannot start another fadeIn for {audioLabel}. Adding to fade queue instead.");
+                FadeQueue.Add(audioLabel);
+                MainMusicSource.loop = false;
+            }
+            else
+            {
+                CLogger.LogWarning($"Already fading in music, and {audioLabel} is already last in fade queue. Not adding again.");
+            }
         }
         else if (queue)
         {
@@ -181,6 +218,8 @@ public class AudioManager : MonoBehaviour
 
     IEnumerator FadeMusicIn(AudioLabel audioLabel)
     {
+        IsFadingIn = true;
+        IsFadingInAudioLabel = audioLabel;
         var currentGameSettings = GameManager.Instance?.CurrentGameSettings ?? MenuManager.Instance?.CurrentGameSettings;
         var playerMusicVolumeIndex = (float) currentGameSettings.MusicVolumeIndex;
         var volumeIndexPerFadeStep = playerMusicVolumeIndex / MusicFadeSteps;
@@ -212,6 +251,7 @@ public class AudioManager : MonoBehaviour
         var musicFadeMaxVolumeDb = VolumeFunction(musicVolume);
         MainMixer.SetFloat(MusicVolumeParameterName, musicFadeMaxVolumeDb);
         PlayMusicClipFinal(audioLabel);
+        IsFadingIn = false;
     }
 
     IEnumerator FadeMusicInto(AudioLabel audioLabel, float startAt)
@@ -275,7 +315,17 @@ public class AudioManager : MonoBehaviour
             }
         }
 
-        if(MusicQueue.Count > 0)
+        if(FadeQueue.Count > 0 && !IsFadingIn)
+        {
+            var nextAudioLabel = FadeQueue.First();
+            FadeQueue.RemoveAt(0);
+            StartCoroutine(FadeMusicIn(nextAudioLabel));
+            if(FadeQueue.Count == 0)
+            {
+                MainMusicSource.loop = true;
+            }
+        }
+        else if(MusicQueue.Count > 0)
         {
             if (!MainMusicSource.isPlaying)
             {

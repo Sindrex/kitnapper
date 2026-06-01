@@ -57,6 +57,7 @@ MonoBehaviour:
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
+    Event: 
     AudioClips:
     - languageEnum: 0
       LanguageGenericType: {fileID: 0}
@@ -113,6 +114,7 @@ MonoBehaviour:
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
+    Event: 
     AudioClips:
     - languageEnum: 0
       LanguageGenericType: {fileID: 0}
@@ -223,7 +225,7 @@ MonoBehaviour:
     TextType:
     - languageEnum: 0
       LanguageGenericType: Poor old Findus finally lost his ball bearings, huh? Oh,
-        you meant his Ball Toy? I have not seen it sadly :(
+        you meant his ball toy? I have not seen it sadly :(
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10

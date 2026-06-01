@@ -11,7 +11,8 @@ public class CameraController : MonoBehaviour
     public Animator FadeAnimator;
     public string FadeInAnimation;
     public string FadeOutAnimation;
-    public bool FollowPlayer = true;
+    [SerializeField]
+    private bool FollowPlayer = true;
 
     //smooth transition
     public bool SmoothTransition;
@@ -80,5 +81,11 @@ public class CameraController : MonoBehaviour
         {
             this.gameObject.transform.position = new Vector3(position.x, position.y, CAMERA_Z);
         }
+    }
+
+    public void SetFollowPlayer()
+    {
+        FollowPlayer = true;
+        SmoothTransition = false;
     }
 }

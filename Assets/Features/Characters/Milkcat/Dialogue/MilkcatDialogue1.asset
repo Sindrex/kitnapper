@@ -238,7 +238,7 @@ MonoBehaviour:
     TextType:
     - languageEnum: 0
       LanguageGenericType: Hmm... Findus often bring his toy to town, maybe he's
-        dropped it of somewhere?
+        dropped it off somewhere?
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10

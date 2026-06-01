@@ -77,7 +77,7 @@ public class FinaleMomentEventController : EventBase
         CameraController.Instance.FadeOut();
         yield return new WaitForSeconds(FadeWaitSeconds);
         CameraController.Instance.FadeIn();
-        CameraController.Instance.FollowPlayer = true;
+        CameraController.Instance.SetFollowPlayer();
         PlayerController.Instance.CanMove = true;
         GameManager.Instance.CanInteract = true;
         GameManager.Instance.HideUI(true);

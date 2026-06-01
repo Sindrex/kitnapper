@@ -174,8 +174,7 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: (This will run the game credits, and check your progress
-        towards knowing all the townscats.)
+      LanguageGenericType: (This will run the game credits.)
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10

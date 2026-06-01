@@ -492,7 +492,7 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: 'Findus: Meet me at the University then!'
+      LanguageGenericType: 'Findus: Meet me at the university then!'
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10

@@ -22,8 +22,6 @@ MonoBehaviour:
     TargetNodeGuid: 48c3abd3-d0af-493b-a1ba-af8a538210a6
   - BaseNodeGuid: d04b433e-246a-4bbe-9d26-8a2f95edba61
     TargetNodeGuid: 03369b3b-7205-403d-8b91-bb350f287ed7
-  - BaseNodeGuid: 752b46a7-7bc9-457b-9b08-d254be7d74a8
-    TargetNodeGuid: a12f3c1d-5307-474a-a05c-4c8959b4bb37
   - BaseNodeGuid: 9a755bde-ef94-48d7-a86c-2e577b3d9c18
     TargetNodeGuid: bb2cbfd5-2c50-4bad-af54-1358095a562e
   - BaseNodeGuid: bb2cbfd5-2c50-4bad-af54-1358095a562e
@@ -42,16 +40,12 @@ MonoBehaviour:
     TargetNodeGuid: df990dc8-b69c-4583-9a8a-efcc2d20c949
   - BaseNodeGuid: 63b2b74a-72e1-4cf1-a4ed-d8570b4b3bf6
     TargetNodeGuid: f93beb7d-b3d3-4c27-a159-ee038de4eb82
-  - BaseNodeGuid: f93beb7d-b3d3-4c27-a159-ee038de4eb82
-    TargetNodeGuid: 0badc680-13f9-476a-bdcd-424a2d4bc3c9
   - BaseNodeGuid: ccfd680b-a57f-46ef-96fa-75d3cf790135
     TargetNodeGuid: 2c218743-0194-4e35-9550-40140eb4301e
   - BaseNodeGuid: 5458047a-3900-4272-a4a8-3ecb2accfab0
     TargetNodeGuid: 1ddf4181-2cda-41cd-a79a-46ca46baca61
   - BaseNodeGuid: db3698ae-1dbd-4641-8e4a-aa379f4eb3e0
     TargetNodeGuid: ca2b43e7-ae36-4af9-b3cb-685bcad9caa7
-  - BaseNodeGuid: 2c218743-0194-4e35-9550-40140eb4301e
-    TargetNodeGuid: dc794822-4e5e-44bd-a6ba-991c7f6cf674
   - BaseNodeGuid: 1ddf4181-2cda-41cd-a79a-46ca46baca61
     TargetNodeGuid: 894ec6e4-f975-4b7c-a49a-5662eb1d206c
   - BaseNodeGuid: ca2b43e7-ae36-4af9-b3cb-685bcad9caa7
@@ -84,10 +78,20 @@ MonoBehaviour:
     TargetNodeGuid: 8fd5e2e2-9dc0-426e-865e-21a63be4befa
   - BaseNodeGuid: 66ade3dc-a96b-44e7-baea-c26590a3f509
     TargetNodeGuid: bc09fe23-53e9-43e8-b87c-82c097b4aed9
-  - BaseNodeGuid: addc1582-c7ed-4a0d-9675-f798b81cbc73
-    TargetNodeGuid: df990dc8-b69c-4583-9a8a-efcc2d20c949
+  - BaseNodeGuid: bc09fe23-53e9-43e8-b87c-82c097b4aed9
+    TargetNodeGuid: ab8f0e61-0ddd-4424-9843-d607dffb445f
+  - BaseNodeGuid: 2c218743-0194-4e35-9550-40140eb4301e
+    TargetNodeGuid: dc794822-4e5e-44bd-a6ba-991c7f6cf674
+  - BaseNodeGuid: bbb92816-bc15-4ed9-9990-201333d390f0
+    TargetNodeGuid: 3a66d178-483b-4b60-a3b2-40920e541515
+  - BaseNodeGuid: 3a66d178-483b-4b60-a3b2-40920e541515
+    TargetNodeGuid: a5567b9e-dfd1-4f31-9411-a5fad5a0086d
+  - BaseNodeGuid: ab8f0e61-0ddd-4424-9843-d607dffb445f
+    TargetNodeGuid: 4dd077d6-5675-45e8-9702-5208509f1664
   - BaseNodeGuid: 48c3abd3-d0af-493b-a1ba-af8a538210a6
     TargetNodeGuid: 9a755bde-ef94-48d7-a86c-2e577b3d9c18
+  - BaseNodeGuid: 48c3abd3-d0af-493b-a1ba-af8a538210a6
+    TargetNodeGuid: 6b4cda56-9c3c-4c63-bcad-a10f290901ea
   - BaseNodeGuid: a12f3c1d-5307-474a-a05c-4c8959b4bb37
     TargetNodeGuid: 62c85612-5530-4873-8093-5e102f561f6e
   - BaseNodeGuid: a12f3c1d-5307-474a-a05c-4c8959b4bb37
@@ -124,6 +128,10 @@ MonoBehaviour:
     TargetNodeGuid: addc1582-c7ed-4a0d-9675-f798b81cbc73
   - BaseNodeGuid: 723d09ef-5233-40eb-a5f9-1fa1313afdc8
     TargetNodeGuid: b03eb580-e451-4cc8-87e5-1649c20a681e
+  - BaseNodeGuid: 6b4cda56-9c3c-4c63-bcad-a10f290901ea
+    TargetNodeGuid: bbb92816-bc15-4ed9-9990-201333d390f0
+  - BaseNodeGuid: 6b4cda56-9c3c-4c63-bcad-a10f290901ea
+    TargetNodeGuid: d04b433e-246a-4bbe-9d26-8a2f95edba61
   - BaseNodeGuid: ab8a9f5a-0819-4ad7-8842-87222352755e
     TargetNodeGuid: 492ae9dc-6df8-4ec9-b4bf-c1941bdb0505
   - BaseNodeGuid: ab8a9f5a-0819-4ad7-8842-87222352755e
@@ -133,27 +141,25 @@ MonoBehaviour:
   - BaseNodeGuid: 03369b3b-7205-403d-8b91-bb350f287ed7
     TargetNodeGuid: 8b7c48b1-70f4-4fc3-a83a-04d14ba5894e
   - BaseNodeGuid: 03369b3b-7205-403d-8b91-bb350f287ed7
-    TargetNodeGuid: 752b46a7-7bc9-457b-9b08-d254be7d74a8
-  - BaseNodeGuid: 03369b3b-7205-403d-8b91-bb350f287ed7
     TargetNodeGuid: ab8a9f5a-0819-4ad7-8842-87222352755e
   - BaseNodeGuid: 03369b3b-7205-403d-8b91-bb350f287ed7
     TargetNodeGuid: 723d09ef-5233-40eb-a5f9-1fa1313afdc8
   - BaseNodeGuid: 03369b3b-7205-403d-8b91-bb350f287ed7
     TargetNodeGuid: 4ebba3ec-dd24-427f-9c92-623eb3c9c185
-  - BaseNodeGuid: 48c3abd3-d0af-493b-a1ba-af8a538210a6
-    TargetNodeGuid: 6b4cda56-9c3c-4c63-bcad-a10f290901ea
-  - BaseNodeGuid: 6b4cda56-9c3c-4c63-bcad-a10f290901ea
-    TargetNodeGuid: bbb92816-bc15-4ed9-9990-201333d390f0
-  - BaseNodeGuid: 6b4cda56-9c3c-4c63-bcad-a10f290901ea
-    TargetNodeGuid: d04b433e-246a-4bbe-9d26-8a2f95edba61
-  - BaseNodeGuid: bbb92816-bc15-4ed9-9990-201333d390f0
-    TargetNodeGuid: 3a66d178-483b-4b60-a3b2-40920e541515
-  - BaseNodeGuid: 3a66d178-483b-4b60-a3b2-40920e541515
-    TargetNodeGuid: a5567b9e-dfd1-4f31-9411-a5fad5a0086d
-  - BaseNodeGuid: bc09fe23-53e9-43e8-b87c-82c097b4aed9
-    TargetNodeGuid: ab8f0e61-0ddd-4424-9843-d607dffb445f
-  - BaseNodeGuid: ab8f0e61-0ddd-4424-9843-d607dffb445f
-    TargetNodeGuid: 4dd077d6-5675-45e8-9702-5208509f1664
+  - BaseNodeGuid: 03369b3b-7205-403d-8b91-bb350f287ed7
+    TargetNodeGuid: a12f3c1d-5307-474a-a05c-4c8959b4bb37
+  - BaseNodeGuid: f93beb7d-b3d3-4c27-a159-ee038de4eb82
+    TargetNodeGuid: 5ff5aff1-3b01-41b8-a3f8-b26e6419e354
+  - BaseNodeGuid: 5ff5aff1-3b01-41b8-a3f8-b26e6419e354
+    TargetNodeGuid: f9c13b51-762f-4a09-85ee-6552cdae6016
+  - BaseNodeGuid: 5ff5aff1-3b01-41b8-a3f8-b26e6419e354
+    TargetNodeGuid: e5fc85fd-673a-4a26-bc6e-4234c8333e7f
+  - BaseNodeGuid: e5fc85fd-673a-4a26-bc6e-4234c8333e7f
+    TargetNodeGuid: 4fdeb9de-3a65-4713-aa1a-1aa3e3088cc9
+  - BaseNodeGuid: 4fdeb9de-3a65-4713-aa1a-1aa3e3088cc9
+    TargetNodeGuid: 88098062-164a-4e97-9620-6bbfe39b143c
+  - BaseNodeGuid: addc1582-c7ed-4a0d-9675-f798b81cbc73
+    TargetNodeGuid: 4fdeb9de-3a65-4713-aa1a-1aa3e3088cc9
   DialogueChoiceNodeDatas:
   - NodeGuid: ab8a9f5a-0819-4ad7-8842-87222352755e
     Position: {x: 884, y: 598}
@@ -234,7 +240,7 @@ MonoBehaviour:
         LanguageGenericType: Choice 01
       RequiredFlag: {fileID: 0}
     - PortGuid: c98e9f2d-8524-4558-bf38-dc662918faae
-      InputGuid: 752b46a7-7bc9-457b-9b08-d254be7d74a8
+      InputGuid: a12f3c1d-5307-474a-a05c-4c8959b4bb37
       OutputGuid: 03369b3b-7205-403d-8b91-bb350f287ed7
       TextLanguage:
       - languageEnum: 0
@@ -265,7 +271,7 @@ MonoBehaviour:
       OutputGuid: 03369b3b-7205-403d-8b91-bb350f287ed7
       TextLanguage:
       - languageEnum: 0
-        LanguageGenericType: Interesting topic
+        LanguageGenericType: Enlighten me?
       - languageEnum: 1
         LanguageGenericType: Choice 05
       RequiredFlag: {fileID: 11400000, guid: 78d079c8f9cfb874b95caf3bc67ce297, type: 2}
@@ -288,27 +294,6 @@ MonoBehaviour:
     - languageEnum: 0
       LanguageGenericType: 'Turbo Baba: There you are! Entertain me or I''ll tickle
         your toebeans as you sleep!'
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
-  - NodeGuid: 752b46a7-7bc9-457b-9b08-d254be7d74a8
-    Position: {x: 884, y: 197}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: You want to hear one of Turbo Baba's famous jokes? I'll
-        consider it...
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
@@ -450,27 +435,6 @@ MonoBehaviour:
     TextType:
     - languageEnum: 0
       LanguageGenericType: Rock! I win, I win, I win!
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
-  - NodeGuid: b03eb580-e451-4cc8-87e5-1649c20a681e
-    Position: {x: 984, y: 1427}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: I'm pretty sure there's more Golden Balls out there! Keep
-        on searching boyo~
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
@@ -856,28 +820,8 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: Well Bambi, I'm all out of jokes! But if you feel ready
-        to depart from this world, I can tell you something interesting.
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
-  - NodeGuid: 62c85612-5530-4873-8093-5e102f561f6e
-    Position: {x: 1221, y: -158}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: Alright, I guess you earned it. Pawpere yourself!
+      LanguageGenericType: Actually Bambi, I'm all out of jokes! But if you feel
+        ready to depart from this world, I can enlighten you.
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
@@ -919,27 +863,6 @@ MonoBehaviour:
     - languageEnum: 0
       LanguageGenericType: Now, to go beyond, find the rock behind the house. That's
         where it begins.
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
-  - NodeGuid: addc1582-c7ed-4a0d-9675-f798b81cbc73
-    Position: {x: 984, y: 1059}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: TurboBabaDialogue2GoldenBallsEvent
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: You found them all? Nice! I will have to get a good look
-        at them later...
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
@@ -1024,14 +947,115 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
+  - NodeGuid: b03eb580-e451-4cc8-87e5-1649c20a681e
+    Position: {x: 984, y: 1427}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: I'm pretty sure there's more Golden Balls out there! Keep
+        on searching, boyo~
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 62c85612-5530-4873-8093-5e102f561f6e
+    Position: {x: 1221, y: -158}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: You want to hear one of Turbo Baba's famous jokes? ALRIGHT!
+        Pawpere yourself!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: addc1582-c7ed-4a0d-9675-f798b81cbc73
+    Position: {x: 984, y: 1059}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: TurboBabaDialogue2GoldenBallsEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: You found them all? Nice! I will have to get a good look
+        at them later...
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: e5fc85fd-673a-4a26-bc6e-4234c8333e7f
+    Position: {x: 1999, y: 732}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Wait, you already found them all? Nice! I will have to
+        get a good look at them later...
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 4fdeb9de-3a65-4713-aa1a-1aa3e3088cc9
+    Position: {x: 1751, y: 1427}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Give me a nudge when you want to hear my jokes. You've
+        earned it, junior!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
   ConditionalNodeDatas:
   - NodeGuid: 48c3abd3-d0af-493b-a1ba-af8a538210a6
     Position: {x: -32, y: 196}
     RequiredGameFlagCombo: {fileID: 11400000, guid: 8bdcae49b5f07184d8662082cf288d25,
-      type: 2}
-  - NodeGuid: a12f3c1d-5307-474a-a05c-4c8959b4bb37
-    Position: {x: 985, y: -18}
-    RequiredGameFlagCombo: {fileID: 11400000, guid: 8d74b9bb143d5504bacba54e39ef73a8,
       type: 2}
   - NodeGuid: 8f3ec7cb-41b7-4d95-a83e-a05b2cd0a9cc
     Position: {x: 1703, y: -158}
@@ -1069,20 +1093,18 @@ MonoBehaviour:
     Position: {x: -32, y: 38}
     RequiredGameFlagCombo: {fileID: 11400000, guid: 7c865b41059a86e4591661bf1467e7e0,
       type: 2}
+  - NodeGuid: a12f3c1d-5307-474a-a05c-4c8959b4bb37
+    Position: {x: 866, y: 172}
+    RequiredGameFlagCombo: {fileID: 11400000, guid: 8d74b9bb143d5504bacba54e39ef73a8,
+      type: 2}
+  - NodeGuid: 5ff5aff1-3b01-41b8-a3f8-b26e6419e354
+    Position: {x: 1554, y: 306}
+    RequiredGameFlagCombo: {fileID: 11400000, guid: 00974f677f3c5c54eb07bea41980420d,
+      type: 2}
   TimerChoiceNodeDatas: []
   EndNodeDatas:
   - NodeGuid: 7ac3ef35-d89c-47ea-8351-4b1413f63c43
     Position: {x: 1801, y: 822}
-    EndNodeType: 0
-    Dialogue: {fileID: 0}
-    startID: 
-  - NodeGuid: df990dc8-b69c-4583-9a8a-efcc2d20c949
-    Position: {x: 1289, y: 1364}
-    EndNodeType: 0
-    Dialogue: {fileID: 0}
-    startID: 
-  - NodeGuid: 0badc680-13f9-476a-bdcd-424a2d4bc3c9
-    Position: {x: 1553, y: 298}
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 
@@ -1126,11 +1148,6 @@ MonoBehaviour:
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 
-  - NodeGuid: 8b7c48b1-70f4-4fc3-a83a-04d14ba5894e
-    Position: {x: 809, y: -71}
-    EndNodeType: 0
-    Dialogue: {fileID: 0}
-    startID: 
   - NodeGuid: c4b98c71-07ad-486c-8bf5-99aaa18cace6
     Position: {x: 3440, y: -425}
     EndNodeType: 0
@@ -1138,6 +1155,26 @@ MonoBehaviour:
     startID: 
   - NodeGuid: a5567b9e-dfd1-4f31-9411-a5fad5a0086d
     Position: {x: 687, y: -290}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: 8b7c48b1-70f4-4fc3-a83a-04d14ba5894e
+    Position: {x: 647, y: 8}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: f9c13b51-762f-4a09-85ee-6552cdae6016
+    Position: {x: 1602, y: 428}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: 88098062-164a-4e97-9620-6bbfe39b143c
+    Position: {x: 1990, y: 1427}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: df990dc8-b69c-4583-9a8a-efcc2d20c949
+    Position: {x: 1214, y: 1427}
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 

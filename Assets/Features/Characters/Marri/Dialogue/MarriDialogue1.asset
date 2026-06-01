@@ -152,27 +152,6 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
-  - NodeGuid: e319848e-b068-4a4d-8de3-7c7c356d6cc0
-    Position: {x: 1570, y: 319}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: I think I saw him carrying it down towards the C.I.T.
-        offices.
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
   - NodeGuid: be49f061-b53c-43fa-9632-548272fd1711
     Position: {x: 1570, y: -30}
     Character: {fileID: 0}
@@ -212,6 +191,27 @@ MonoBehaviour:
     - languageEnum: 0
       LanguageGenericType: 'Marri: Hi Mr. Detective! I''m just sniffing the flowers
         today!'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: e319848e-b068-4a4d-8de3-7c7c356d6cc0
+    Position: {x: 1570, y: 319}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: I think I saw him carrying it down towards the C.I.T.
+        offices recently.
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10

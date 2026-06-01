@@ -174,6 +174,7 @@ public class GameManager : MonoBehaviour
         //save CurrentGameSettings
         CurrentGameSettings.Save();
 
+        //check if all catnames are discovered
         var allNamesKnownFlag = CurrentGameSettings.GameFlags.FirstOrDefault(x => x.Flag == GameFlag.AllNamesKnown);
         if (FinaleMomentEvent.CheckIfAllNamesAreDiscovered() && allNamesKnownFlag == null && !SteamIntegration.IsAchievementUnlocked(SteamAchievement.ACH_FIND_ALL_NAMES))
         {

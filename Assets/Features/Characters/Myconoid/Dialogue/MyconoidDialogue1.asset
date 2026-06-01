@@ -55,6 +55,7 @@ MonoBehaviour:
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
+    Event: 
     AudioClips:
     - languageEnum: 0
       LanguageGenericType: {fileID: 0}
@@ -111,6 +112,7 @@ MonoBehaviour:
     SecoundCharacter: {fileID: 0}
     SecoundPortraitPosition: 0
     SecoundEmotion: 
+    Event: 
     AudioClips:
     - languageEnum: 0
       LanguageGenericType: {fileID: 0}
@@ -220,8 +222,8 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: "Mr. Myconoid: So \u2019twas thee who didst conjure the
-        wondrous weather! But how, art thou a sorcerer?"
+      LanguageGenericType: 'Mr. Myconoid: So twas thee who didst conjure the wondrous
+        weather! But how, art thou a sorcerer?'
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
