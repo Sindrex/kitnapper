@@ -95,11 +95,15 @@ public class CatnipEvent : EventBase
         {
             Flag = GameFlag.CatnipDown
         };
-        if(catnipUpFlag.BoolValue && catnipDownFlag.BoolValue && !SteamIntegration.IsAchievementUnlocked(SteamAchievement.ACH_CATNIP_UP_DOWN))
+        if(catnipUpFlag.BoolValue && catnipDownFlag.BoolValue)
         {
-            //Achievement
-            SteamIntegration.UnlockAchievement(SteamAchievement.ACH_CATNIP_UP_DOWN);
             GameManager.Instance.FindEvent(FlowerSpawnEventId)?.Activate(true);
+
+            if (!SteamIntegration.IsAchievementUnlocked(SteamAchievement.ACH_CATNIP_UP_DOWN))
+            {
+                //Achievement
+                SteamIntegration.UnlockAchievement(SteamAchievement.ACH_CATNIP_UP_DOWN);
+            }
         }
     }
 }

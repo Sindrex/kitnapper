@@ -176,15 +176,19 @@ public class GameManager : MonoBehaviour
 
         //check if all catnames are discovered
         var allNamesKnownFlag = CurrentGameSettings.GameFlags.FirstOrDefault(x => x.Flag == GameFlag.AllNamesKnown);
-        if (FinaleMomentEvent.CheckIfAllNamesAreDiscovered() && allNamesKnownFlag == null && !SteamIntegration.IsAchievementUnlocked(SteamAchievement.ACH_FIND_ALL_NAMES))
+        if (FinaleMomentEvent.CheckIfAllNamesAreDiscovered() && allNamesKnownFlag == null)
         {
-            //Achievement
-            SteamIntegration.UnlockAchievement(SteamAchievement.ACH_FIND_ALL_NAMES);
             CurrentGameSettings.GameFlags.Add(new GameFlagCombo
             {
                 Flag = GameFlag.AllNamesKnown,
                 BoolValue = true
             });
+
+            if(!SteamIntegration.IsAchievementUnlocked(SteamAchievement.ACH_FIND_ALL_NAMES))
+            {
+                //Achievement
+                SteamIntegration.UnlockAchievement(SteamAchievement.ACH_FIND_ALL_NAMES);
+            }
         }
     }
 
