@@ -90,7 +90,7 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: 'Mayor: I will meet you back at the town hall, humr humr.'
+      LanguageGenericType: 'Mayor: I will meet you back at the Town Hall, humr humr.'
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
@@ -235,7 +235,7 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: Good. I will call all the townscats to the town hall.
+      LanguageGenericType: Good. I will call all the townscats to the Town Hall.
         Meet me there, humr humr.
     - languageEnum: 1
       LanguageGenericType: 

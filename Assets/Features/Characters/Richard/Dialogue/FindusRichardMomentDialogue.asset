@@ -34,16 +34,16 @@ MonoBehaviour:
     TargetNodeGuid: cd3a1386-9eb0-448f-9dde-947117b2878b
   - BaseNodeGuid: 5e523523-d6a7-40fa-84b0-392f1bba6f08
     TargetNodeGuid: b1fd77fc-3098-41ea-99bf-9ddc6c03543d
-  - BaseNodeGuid: a3a77130-602d-48f6-b071-10b1df237a03
-    TargetNodeGuid: e851f17f-2efb-4dfe-8212-97396ba0de3e
+  - BaseNodeGuid: b1fd77fc-3098-41ea-99bf-9ddc6c03543d
+    TargetNodeGuid: 30b9564a-5967-4b9b-835d-dce4b4455491
   - BaseNodeGuid: cd3a1386-9eb0-448f-9dde-947117b2878b
     TargetNodeGuid: 5e523523-d6a7-40fa-84b0-392f1bba6f08
+  - BaseNodeGuid: a3a77130-602d-48f6-b071-10b1df237a03
+    TargetNodeGuid: e851f17f-2efb-4dfe-8212-97396ba0de3e
   - BaseNodeGuid: 8966de77-5a76-4407-859c-66a12fd6d87d
     TargetNodeGuid: b1fd77fc-3098-41ea-99bf-9ddc6c03543d
   - BaseNodeGuid: 8966de77-5a76-4407-859c-66a12fd6d87d
     TargetNodeGuid: 50fa173f-59ad-48bd-b437-3412bb9de720
-  - BaseNodeGuid: b1fd77fc-3098-41ea-99bf-9ddc6c03543d
-    TargetNodeGuid: 30b9564a-5967-4b9b-835d-dce4b4455491
   - BaseNodeGuid: 30b9564a-5967-4b9b-835d-dce4b4455491
     TargetNodeGuid: a3a77130-602d-48f6-b071-10b1df237a03
   - BaseNodeGuid: 30b9564a-5967-4b9b-835d-dce4b4455491
@@ -211,7 +211,7 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: 'Findus: Sunshine, I need to speak to my new friend here
+      LanguageGenericType: 'Findus: Detective, I need to speak to my new friend here
         a little more. We need to discuss business.'
     - languageEnum: 1
       LanguageGenericType: 
@@ -263,18 +263,18 @@ MonoBehaviour:
     RequiredGameFlagCombo: {fileID: 11400000, guid: 69e08a7b5f74d20478a7676013ea8e57,
       type: 2}
   - NodeGuid: 30b9564a-5967-4b9b-835d-dce4b4455491
-    Position: {x: 471, y: -68}
-    RequiredGameFlagCombo: {fileID: 11400000, guid: 83928ef9c45b36e44b16cdf66ad93b4b,
+    Position: {x: 490, y: -68}
+    RequiredGameFlagCombo: {fileID: 11400000, guid: 1eee3e6ff7ed85f4b9a0402f39737ba8,
       type: 2}
   TimerChoiceNodeDatas: []
   EndNodeDatas:
-  - NodeGuid: 283f7ee6-bfd5-4dec-b346-6251bdd45c04
-    Position: {x: 519, y: 143}
+  - NodeGuid: e851f17f-2efb-4dfe-8212-97396ba0de3e
+    Position: {x: 1012, y: -68}
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 
-  - NodeGuid: e851f17f-2efb-4dfe-8212-97396ba0de3e
-    Position: {x: 1012, y: -68}
+  - NodeGuid: 283f7ee6-bfd5-4dec-b346-6251bdd45c04
+    Position: {x: 521, y: 174}
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 

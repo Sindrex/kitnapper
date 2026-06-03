@@ -18,80 +18,8 @@ MonoBehaviour:
   LimitChoiceOptionPerNode: 0
   MaxChoiceOptionPerNode: 8
   NodeLinkDatas:
-  - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
-    TargetNodeGuid: bf8cbeb5-2ae9-4417-8b89-66987df0ae79
-  - BaseNodeGuid: 300ad88f-4b3e-4d84-b1ac-bed255b02acf
-    TargetNodeGuid: 3bc8a010-d4c5-4e58-8393-b0208119683e
-  - BaseNodeGuid: 37513e69-06ff-4ca0-bae5-3d4f20ba0cde
-    TargetNodeGuid: 9a178bc8-2dbf-46e1-a47c-3bd248a2fd85
-  - BaseNodeGuid: 4c2bbdeb-643d-4fae-8ea6-0b98c276dd30
-    TargetNodeGuid: 1fd00fdd-1ea4-470a-95c1-1dc095a6a412
-  - BaseNodeGuid: 1fd00fdd-1ea4-470a-95c1-1dc095a6a412
-    TargetNodeGuid: c2734396-3245-4da4-a5c7-f6649dc8804f
-  - BaseNodeGuid: c6ac20db-28c4-4c59-9208-956485c6039d
-    TargetNodeGuid: fecf48a2-bf24-480d-ad0c-469905f2adc0
-  - BaseNodeGuid: fe6767e8-424f-4f59-a34c-1426f30ad6ff
-    TargetNodeGuid: 6002bf60-9f00-4d05-817c-474c1f8c8c54
-  - BaseNodeGuid: 6002bf60-9f00-4d05-817c-474c1f8c8c54
-    TargetNodeGuid: 38cafc9e-a802-4f30-bb28-f35ef2debc2c
-  - BaseNodeGuid: aae6a4d1-77e3-44de-a01a-7485bb16d0bd
-    TargetNodeGuid: fd348aba-4d56-4759-8f25-de02afac8d0e
-  - BaseNodeGuid: fd348aba-4d56-4759-8f25-de02afac8d0e
-    TargetNodeGuid: 38cafc9e-a802-4f30-bb28-f35ef2debc2c
-  - BaseNodeGuid: 30a00c0b-5934-4472-8f30-5df2f112fe3a
-    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
-  - BaseNodeGuid: 38cafc9e-a802-4f30-bb28-f35ef2debc2c
-    TargetNodeGuid: 30a00c0b-5934-4472-8f30-5df2f112fe3a
-  - BaseNodeGuid: 5bb69ed3-28eb-4aef-aa51-25b5cf940284
-    TargetNodeGuid: c6ac20db-28c4-4c59-9208-956485c6039d
-  - BaseNodeGuid: b85e8ffa-f857-4aea-834e-803ea01ccebf
-    TargetNodeGuid: e15a994f-6e27-4a42-b576-770a845463a9
-  - BaseNodeGuid: 94cfc014-32ce-459f-8087-a0e3141a17fe
-    TargetNodeGuid: 23bff266-e6e3-491f-8f78-08ffd2ceaadb
-  - BaseNodeGuid: 23bff266-e6e3-491f-8f78-08ffd2ceaadb
-    TargetNodeGuid: cc551a7a-1db3-4879-a30e-de568881f49c
-  - BaseNodeGuid: 47e41c03-211b-4f46-911c-ba2ee22c300c
-    TargetNodeGuid: f903400b-49c4-4292-95ae-f065440c4571
-  - BaseNodeGuid: c2734396-3245-4da4-a5c7-f6649dc8804f
-    TargetNodeGuid: 300ad88f-4b3e-4d84-b1ac-bed255b02acf
-  - BaseNodeGuid: 3bc8a010-d4c5-4e58-8393-b0208119683e
-    TargetNodeGuid: 37513e69-06ff-4ca0-bae5-3d4f20ba0cde
-  - BaseNodeGuid: 8966de77-5a76-4407-859c-66a12fd6d87d
-    TargetNodeGuid: 9a178bc8-2dbf-46e1-a47c-3bd248a2fd85
-  - BaseNodeGuid: 8966de77-5a76-4407-859c-66a12fd6d87d
-    TargetNodeGuid: 4c2bbdeb-643d-4fae-8ea6-0b98c276dd30
-  - BaseNodeGuid: bf8cbeb5-2ae9-4417-8b89-66987df0ae79
-    TargetNodeGuid: 47e41c03-211b-4f46-911c-ba2ee22c300c
-  - BaseNodeGuid: bf8cbeb5-2ae9-4417-8b89-66987df0ae79
-    TargetNodeGuid: 8966de77-5a76-4407-859c-66a12fd6d87d
-  - BaseNodeGuid: 9a178bc8-2dbf-46e1-a47c-3bd248a2fd85
-    TargetNodeGuid: 383552af-c25c-4c61-b709-699d2cb3340f
-  - BaseNodeGuid: 9a178bc8-2dbf-46e1-a47c-3bd248a2fd85
-    TargetNodeGuid: 9dbc9f59-7f3d-4bb4-81c0-1a716492122b
-  - BaseNodeGuid: fecf48a2-bf24-480d-ad0c-469905f2adc0
-    TargetNodeGuid: aae6a4d1-77e3-44de-a01a-7485bb16d0bd
-  - BaseNodeGuid: fecf48a2-bf24-480d-ad0c-469905f2adc0
-    TargetNodeGuid: fe6767e8-424f-4f59-a34c-1426f30ad6ff
-  - BaseNodeGuid: fecf48a2-bf24-480d-ad0c-469905f2adc0
-    TargetNodeGuid: aae6a4d1-77e3-44de-a01a-7485bb16d0bd
-  - BaseNodeGuid: fecf48a2-bf24-480d-ad0c-469905f2adc0
-    TargetNodeGuid: aae6a4d1-77e3-44de-a01a-7485bb16d0bd
-  - BaseNodeGuid: 9dbc9f59-7f3d-4bb4-81c0-1a716492122b
-    TargetNodeGuid: 402c0e4f-3589-4cdf-9015-de8d18613da2
-  - BaseNodeGuid: 9dbc9f59-7f3d-4bb4-81c0-1a716492122b
-    TargetNodeGuid: 94cfc014-32ce-459f-8087-a0e3141a17fe
-  - BaseNodeGuid: 9dbc9f59-7f3d-4bb4-81c0-1a716492122b
-    TargetNodeGuid: b85e8ffa-f857-4aea-834e-803ea01ccebf
-  - BaseNodeGuid: 9dbc9f59-7f3d-4bb4-81c0-1a716492122b
-    TargetNodeGuid: 5bb69ed3-28eb-4aef-aa51-25b5cf940284
   - BaseNodeGuid: 12611948-860f-44ca-83ec-c39c7282715d
     TargetNodeGuid: 890351a3-5b42-4f01-a09b-391e06ac02c5
-  - BaseNodeGuid: d92e6f1d-7c81-4293-adfa-86d5a2ac3e64
-    TargetNodeGuid: 411a5285-f6fb-4a03-a8f8-3f65f9748932
-  - BaseNodeGuid: 411a5285-f6fb-4a03-a8f8-3f65f9748932
-    TargetNodeGuid: da49e726-778e-4d7d-b479-ca0ac80b554f
-  - BaseNodeGuid: 932338f3-85ae-4445-8cb0-9261877f9df9
-    TargetNodeGuid: d92e6f1d-7c81-4293-adfa-86d5a2ac3e64
   - BaseNodeGuid: 890351a3-5b42-4f01-a09b-391e06ac02c5
     TargetNodeGuid: da49e726-778e-4d7d-b479-ca0ac80b554f
   DialogueChoiceNodeDatas: []
@@ -116,77 +44,11 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
-  - NodeGuid: d92e6f1d-7c81-4293-adfa-86d5a2ac3e64
-    Position: {x: 929, y: 220}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: "\rI need a way to detect if animation's clip finished
-        playing and then execute a certain code. Here's some script, that I wrote
-        (called in Update):"
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
-  - NodeGuid: 411a5285-f6fb-4a03-a8f8-3f65f9748932
-    Position: {x: 1194, y: 220}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: "\rI need a way to detect if animation's clip finished
-        playing and then execute a certain code. Here's some script, that I wrote
-        (called in Update):"
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
-  - NodeGuid: 932338f3-85ae-4445-8cb0-9261877f9df9
-    Position: {x: 660, y: 260}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: "\rI need a way to detect if animation's clip finished
-        playing and then execute a certain code. Here's some script, that I wrote
-        (called in Update):"
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
   ConditionalNodeDatas: []
   TimerChoiceNodeDatas: []
   EndNodeDatas:
   - NodeGuid: da49e726-778e-4d7d-b479-ca0ac80b554f
-    Position: {x: 660, y: 50}
+    Position: {x: 660, y: 220}
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 

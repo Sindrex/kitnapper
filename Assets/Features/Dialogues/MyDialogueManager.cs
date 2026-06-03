@@ -104,8 +104,8 @@ public class MyDialogueManager : MonoBehaviour
                 if (CurrentTextList.Count != 0)
                 {
                     var currentLetter = CurrentTextList.Last();
-                    //check if letter is html
-                    if(currentLetter == '<')
+                    //check if letter is html and not just arrow
+                    if(currentLetter == '<' && CurrentTextList[CurrentTextList.Count - 2] != '-')
                     {
                         var startIndex = CurrentTextList.Count - 1;
                         //remember list is reveresed
@@ -167,7 +167,6 @@ public class MyDialogueManager : MonoBehaviour
                         CurrentLetterSpawnTime = 0;
                     }
 
-
                     //Dialogue SFX
                     var randomNumber = new System.Random().Next(0, DialogueSFX.Count - 1);
                     var sfxClip = DialogueSFX[randomNumber];
@@ -210,6 +209,9 @@ public class MyDialogueManager : MonoBehaviour
         CurrentTextList = text.ToCharArray().Reverse().ToList();
         IsBusySpawningLetters = true;
         CurrentLetterSpawnTime = 0;
+
+        CurrentTextOffset = 0;
+        CurrentTextOffsetForCharacters = 0;
 
         //save in GameSettings
         GameManager.Instance.CurrentGameSettings.DialogueLog.Add(text);

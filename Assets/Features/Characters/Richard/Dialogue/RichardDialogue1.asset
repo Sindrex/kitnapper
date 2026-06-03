@@ -48,8 +48,6 @@ MonoBehaviour:
     TargetNodeGuid: e15a994f-6e27-4a42-b576-770a845463a9
   - BaseNodeGuid: 23bff266-e6e3-491f-8f78-08ffd2ceaadb
     TargetNodeGuid: cc551a7a-1db3-4879-a30e-de568881f49c
-  - BaseNodeGuid: 47e41c03-211b-4f46-911c-ba2ee22c300c
-    TargetNodeGuid: 659ae33e-3388-4013-9fbe-166dcb80abaa
   - BaseNodeGuid: c2734396-3245-4da4-a5c7-f6649dc8804f
     TargetNodeGuid: 300ad88f-4b3e-4d84-b1ac-bed255b02acf
   - BaseNodeGuid: 3bc8a010-d4c5-4e58-8393-b0208119683e
@@ -60,18 +58,16 @@ MonoBehaviour:
     TargetNodeGuid: fecf48a2-bf24-480d-ad0c-469905f2adc0
   - BaseNodeGuid: 659ae33e-3388-4013-9fbe-166dcb80abaa
     TargetNodeGuid: f903400b-49c4-4292-95ae-f065440c4571
-  - BaseNodeGuid: 8966de77-5a76-4407-859c-66a12fd6d87d
-    TargetNodeGuid: 9a178bc8-2dbf-46e1-a47c-3bd248a2fd85
-  - BaseNodeGuid: 8966de77-5a76-4407-859c-66a12fd6d87d
-    TargetNodeGuid: 4c2bbdeb-643d-4fae-8ea6-0b98c276dd30
+  - BaseNodeGuid: 47e41c03-211b-4f46-911c-ba2ee22c300c
+    TargetNodeGuid: 659ae33e-3388-4013-9fbe-166dcb80abaa
   - BaseNodeGuid: bf8cbeb5-2ae9-4417-8b89-66987df0ae79
     TargetNodeGuid: 47e41c03-211b-4f46-911c-ba2ee22c300c
   - BaseNodeGuid: bf8cbeb5-2ae9-4417-8b89-66987df0ae79
     TargetNodeGuid: 8966de77-5a76-4407-859c-66a12fd6d87d
-  - BaseNodeGuid: 9a178bc8-2dbf-46e1-a47c-3bd248a2fd85
-    TargetNodeGuid: 383552af-c25c-4c61-b709-699d2cb3340f
-  - BaseNodeGuid: 9a178bc8-2dbf-46e1-a47c-3bd248a2fd85
-    TargetNodeGuid: 9dbc9f59-7f3d-4bb4-81c0-1a716492122b
+  - BaseNodeGuid: 706f2217-a095-4318-8efd-c2b6b57cf8cc
+    TargetNodeGuid: c3c2be50-fbf2-4ce5-b508-62d7b26e1501
+  - BaseNodeGuid: 706f2217-a095-4318-8efd-c2b6b57cf8cc
+    TargetNodeGuid: 9a178bc8-2dbf-46e1-a47c-3bd248a2fd85
   - BaseNodeGuid: fecf48a2-bf24-480d-ad0c-469905f2adc0
     TargetNodeGuid: aae6a4d1-77e3-44de-a01a-7485bb16d0bd
   - BaseNodeGuid: fecf48a2-bf24-480d-ad0c-469905f2adc0
@@ -88,46 +84,19 @@ MonoBehaviour:
     TargetNodeGuid: b85e8ffa-f857-4aea-834e-803ea01ccebf
   - BaseNodeGuid: 9dbc9f59-7f3d-4bb4-81c0-1a716492122b
     TargetNodeGuid: 5bb69ed3-28eb-4aef-aa51-25b5cf940284
+  - BaseNodeGuid: 9a178bc8-2dbf-46e1-a47c-3bd248a2fd85
+    TargetNodeGuid: 383552af-c25c-4c61-b709-699d2cb3340f
+  - BaseNodeGuid: 9a178bc8-2dbf-46e1-a47c-3bd248a2fd85
+    TargetNodeGuid: 9dbc9f59-7f3d-4bb4-81c0-1a716492122b
+  - BaseNodeGuid: c3c2be50-fbf2-4ce5-b508-62d7b26e1501
+    TargetNodeGuid: 80a3fb88-cc56-459d-8d08-ee5ed21511ee
+  - BaseNodeGuid: c3c2be50-fbf2-4ce5-b508-62d7b26e1501
+    TargetNodeGuid: 9dbc9f59-7f3d-4bb4-81c0-1a716492122b
+  - BaseNodeGuid: 8966de77-5a76-4407-859c-66a12fd6d87d
+    TargetNodeGuid: 706f2217-a095-4318-8efd-c2b6b57cf8cc
+  - BaseNodeGuid: 8966de77-5a76-4407-859c-66a12fd6d87d
+    TargetNodeGuid: 4c2bbdeb-643d-4fae-8ea6-0b98c276dd30
   DialogueChoiceNodeDatas:
-  - NodeGuid: 9a178bc8-2dbf-46e1-a47c-3bd248a2fd85
-    Position: {x: 1019, y: 40}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    Event: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: 'Richard: Speak quickly will you? I am a busy cat.'
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 5
-    DialogueNodePorts:
-    - PortGuid: 30d5acc7-ec28-4570-acee-12eda5492f78
-      InputGuid: 383552af-c25c-4c61-b709-699d2cb3340f
-      OutputGuid: 9a178bc8-2dbf-46e1-a47c-3bd248a2fd85
-      TextLanguage:
-      - languageEnum: 0
-        LanguageGenericType: Goodbye
-      - languageEnum: 1
-        LanguageGenericType: Choice 01
-      RequiredFlag: {fileID: 0}
-    - PortGuid: 6b186530-e15a-4448-9323-9b42c9e3319a
-      InputGuid: 9dbc9f59-7f3d-4bb4-81c0-1a716492122b
-      OutputGuid: 9a178bc8-2dbf-46e1-a47c-3bd248a2fd85
-      TextLanguage:
-      - languageEnum: 0
-        LanguageGenericType: Question
-      - languageEnum: 1
-        LanguageGenericType: Choice 02
-      RequiredFlag: {fileID: 0}
   - NodeGuid: fecf48a2-bf24-480d-ad0c-469905f2adc0
     Position: {x: 2706, y: -196}
     Character: {fileID: 0}
@@ -242,6 +211,85 @@ MonoBehaviour:
       - languageEnum: 1
         LanguageGenericType: Choice 04
       RequiredFlag: {fileID: 11400000, guid: e377a04b1a0c77d419b0eeed0af99c38, type: 2}
+  - NodeGuid: 9a178bc8-2dbf-46e1-a47c-3bd248a2fd85
+    Position: {x: 1019, y: 40}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    Event: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Richard: Speak quickly will you? I am a busy cat.'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 5
+    DialogueNodePorts:
+    - PortGuid: 30d5acc7-ec28-4570-acee-12eda5492f78
+      InputGuid: 383552af-c25c-4c61-b709-699d2cb3340f
+      OutputGuid: 9a178bc8-2dbf-46e1-a47c-3bd248a2fd85
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Goodbye
+      - languageEnum: 1
+        LanguageGenericType: Choice 01
+      RequiredFlag: {fileID: 0}
+    - PortGuid: 6b186530-e15a-4448-9323-9b42c9e3319a
+      InputGuid: 9dbc9f59-7f3d-4bb4-81c0-1a716492122b
+      OutputGuid: 9a178bc8-2dbf-46e1-a47c-3bd248a2fd85
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Question
+      - languageEnum: 1
+        LanguageGenericType: Choice 02
+      RequiredFlag: {fileID: 0}
+  - NodeGuid: c3c2be50-fbf2-4ce5-b508-62d7b26e1501
+    Position: {x: 1019, y: -340}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    Event: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Richard: Hey, thanks for the help clearing up things
+        between me and Findus! How may I be of service?'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 5
+    DialogueNodePorts:
+    - PortGuid: 703b384e-457b-4868-8b01-a51fa44cf488
+      InputGuid: 80a3fb88-cc56-459d-8d08-ee5ed21511ee
+      OutputGuid: c3c2be50-fbf2-4ce5-b508-62d7b26e1501
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Goodbye
+      - languageEnum: 1
+        LanguageGenericType: Choice 01
+      RequiredFlag: {fileID: 0}
+    - PortGuid: 2f81b211-c8f3-4678-b346-5ad7d5e8f1d3
+      InputGuid: 9dbc9f59-7f3d-4bb4-81c0-1a716492122b
+      OutputGuid: c3c2be50-fbf2-4ce5-b508-62d7b26e1501
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Question
+      - languageEnum: 1
+        LanguageGenericType: Choice 02
+      RequiredFlag: {fileID: 0}
   DialogueNodeDatas:
   - NodeGuid: 300ad88f-4b3e-4d84-b1ac-bed255b02acf
     Position: {x: 214, y: 789}
@@ -462,7 +510,7 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: Since I arrived I have been harassed by a bunch of gray
+      LanguageGenericType: Since I arrived, I have been harassed by a bunch of gray
         bumpkin cats! One of them is a  regular over at the Cattelatte.
     - languageEnum: 1
       LanguageGenericType: 
@@ -589,7 +637,7 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: I was working all night. Sadly all my coworkers are either
+      LanguageGenericType: I was working overtime. Sadly all my coworkers are either
         on vacation or had gone home for the night, so it was only me!
     - languageEnum: 1
       LanguageGenericType: 
@@ -665,6 +713,10 @@ MonoBehaviour:
     Position: {x: -372, y: 196}
     RequiredGameFlagCombo: {fileID: 11400000, guid: d280d0c262e2fca41b46ae301e91ac3f,
       type: 2}
+  - NodeGuid: 706f2217-a095-4318-8efd-c2b6b57cf8cc
+    Position: {x: 698, y: 40}
+    RequiredGameFlagCombo: {fileID: 11400000, guid: 69e08a7b5f74d20478a7676013ea8e57,
+      type: 2}
   TimerChoiceNodeDatas: []
   EndNodeDatas:
   - NodeGuid: 7838e825-39c1-416f-8753-1589000d7155
@@ -693,7 +745,12 @@ MonoBehaviour:
     Dialogue: {fileID: 0}
     startID: 
   - NodeGuid: 383552af-c25c-4c61-b709-699d2cb3340f
-    Position: {x: 1378, y: -368}
+    Position: {x: 1378, y: 28}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: 80a3fb88-cc56-459d-8d08-ee5ed21511ee
+    Position: {x: 1378, y: -262}
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 

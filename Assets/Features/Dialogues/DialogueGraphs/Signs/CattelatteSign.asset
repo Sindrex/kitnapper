@@ -48,7 +48,7 @@ MonoBehaviour:
   TimerChoiceNodeDatas: []
   EndNodeDatas:
   - NodeGuid: da49e726-778e-4d7d-b479-ca0ac80b554f
-    Position: {x: 715, y: 208}
+    Position: {x: 697, y: 220}
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 

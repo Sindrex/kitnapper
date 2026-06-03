@@ -19,11 +19,17 @@ MonoBehaviour:
   MaxChoiceOptionPerNode: 8
   NodeLinkDatas:
   - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
-    TargetNodeGuid: 4c2bbdeb-643d-4fae-8ea6-0b98c276dd30
-  - BaseNodeGuid: 4c2bbdeb-643d-4fae-8ea6-0b98c276dd30
-    TargetNodeGuid: cf257311-7fa9-4c48-a855-85cb9d555300
+    TargetNodeGuid: 828abaa3-fef7-464c-8404-76b3def95ae9
   - BaseNodeGuid: cf257311-7fa9-4c48-a855-85cb9d555300
     TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
+  - BaseNodeGuid: 4c2bbdeb-643d-4fae-8ea6-0b98c276dd30
+    TargetNodeGuid: cf257311-7fa9-4c48-a855-85cb9d555300
+  - BaseNodeGuid: 8906a05b-8a4f-43a4-87cc-80bd67fe6059
+    TargetNodeGuid: cf257311-7fa9-4c48-a855-85cb9d555300
+  - BaseNodeGuid: 828abaa3-fef7-464c-8404-76b3def95ae9
+    TargetNodeGuid: 4c2bbdeb-643d-4fae-8ea6-0b98c276dd30
+  - BaseNodeGuid: 828abaa3-fef7-464c-8404-76b3def95ae9
+    TargetNodeGuid: 8906a05b-8a4f-43a4-87cc-80bd67fe6059
   DialogueChoiceNodeDatas: []
   DialogueNodeDatas:
   - NodeGuid: cf257311-7fa9-4c48-a855-85cb9d555300
@@ -67,7 +73,31 @@ MonoBehaviour:
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
-  ConditionalNodeDatas: []
+  - NodeGuid: 8906a05b-8a4f-43a4-87cc-80bd67fe6059
+    Position: {x: 576, y: 549}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Guard: D-D-Did I stutter!?'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  ConditionalNodeDatas:
+  - NodeGuid: 828abaa3-fef7-464c-8404-76b3def95ae9
+    Position: {x: 297, y: 196}
+    RequiredGameFlagCombo: {fileID: 11400000, guid: 2dec666badc236b48a082be0ad1833e3,
+      type: 2}
   TimerChoiceNodeDatas: []
   EndNodeDatas:
   - NodeGuid: 7838e825-39c1-416f-8753-1589000d7155
@@ -78,7 +108,7 @@ MonoBehaviour:
   EventNodeDatas: []
   StartNodeDatas:
   - NodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
-    Position: {x: 321, y: 196}
+    Position: {x: -14, y: 196}
     startID: 
   RandomNodeDatas: []
   CommandNodeDatas: []

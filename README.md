@@ -30,12 +30,12 @@ If I change name of events, or replace events with new ones, it will break exist
   * Brother's Duet (live)
 * Make 'Live' version Brother's Duet
   * Wait for ChrisHP to record piano -> make Live versjon
-  * Re-record with slower last part (se chrisHP notes)
+    * Re-record with slower last part (se chrisHP notes)
 * Other references if time -> Outer reality
   * SRC 1/2 (3?) -> A computer prop with dialogue?
-* Playtest after fixing all bugs!!!
 * Speedrun the game (~1 month after release)
 * Add one or two gifs to Steam description.
+* Update website with actual release trailer
 
 * Test fixes:
   * When in windowed, text is underflowing border
@@ -43,10 +43,3 @@ If I change name of events, or replace events with new ones, it will break exist
   * Achieves dont pop up / seen ingame?
     * Can be steam issue / player issue since I think I have seen them before
   * Does game always stutter at music swap?
-  
-  * Maybe disallow Butterfly dialogue with Florist after both archs are started
-    * Needs testing
-  * New kira mayor biscuit achiv
-    * Worked before finale, need to test after finale
-  * Orange's text is all wrong. Conditional sent me to text for after finale
-    * Needs testing

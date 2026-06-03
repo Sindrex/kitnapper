@@ -26,8 +26,6 @@ MonoBehaviour:
     TargetNodeGuid: feb6638d-ba99-4fe9-96c1-7042493b1c74
   - BaseNodeGuid: c99e5fff-d34e-453f-ae59-5d7838aca3cb
     TargetNodeGuid: 61a10ca1-9256-4cea-8e11-ad4d3b0a6b4d
-  - BaseNodeGuid: 61a10ca1-9256-4cea-8e11-ad4d3b0a6b4d
-    TargetNodeGuid: de03f9fa-be4a-476e-bf2f-271301c05d25
   - BaseNodeGuid: de03f9fa-be4a-476e-bf2f-271301c05d25
     TargetNodeGuid: 1f614805-624f-4e85-a599-cd7f041c6250
   - BaseNodeGuid: 58c228fb-3476-4802-95b8-92c1ff480128
@@ -68,6 +66,8 @@ MonoBehaviour:
     TargetNodeGuid: 3c2d70a4-cae0-4369-8d01-7c7e11997593
   - BaseNodeGuid: b786d6d8-053e-47c6-91bd-7d55189bc7b8
     TargetNodeGuid: 7bb69529-249a-4d71-9e2f-cc33b939d1cf
+  - BaseNodeGuid: 61a10ca1-9256-4cea-8e11-ad4d3b0a6b4d
+    TargetNodeGuid: de03f9fa-be4a-476e-bf2f-271301c05d25
   - BaseNodeGuid: feb6638d-ba99-4fe9-96c1-7042493b1c74
     TargetNodeGuid: f0493546-043c-484c-8707-c3e8fa894f29
   - BaseNodeGuid: feb6638d-ba99-4fe9-96c1-7042493b1c74
@@ -528,7 +528,7 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: But, maybe it's time for us to get back our colors, humr
+      LanguageGenericType: But, maybe it's time for us to get our colors back, humr
         humr.
     - languageEnum: 1
       LanguageGenericType: 

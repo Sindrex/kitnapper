@@ -24,6 +24,8 @@ MonoBehaviour:
     TargetNodeGuid: f570dd04-052b-4193-9736-701c18b7e5cd
   - BaseNodeGuid: ae4ca718-c309-442a-8c44-6a299b93df48
     TargetNodeGuid: 54b3ad19-cc85-4f61-b733-b6762fa5234e
+  - BaseNodeGuid: 161a45b1-d5c5-466c-bfd8-feb8ca9ce6a2
+    TargetNodeGuid: 0908c817-e4cb-488d-8e64-601af78434ec
   - BaseNodeGuid: 0a4949c4-2c43-433d-9167-fec8b7f84deb
     TargetNodeGuid: 8b7c48b1-70f4-4fc3-a83a-04d14ba5894e
   - BaseNodeGuid: 9a755bde-ef94-48d7-a86c-2e577b3d9c18
@@ -44,8 +46,6 @@ MonoBehaviour:
     TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
   - BaseNodeGuid: b00df384-57c1-40ad-aea3-c9c7f4af4cd5
     TargetNodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
-  - BaseNodeGuid: 161a45b1-d5c5-466c-bfd8-feb8ca9ce6a2
-    TargetNodeGuid: 0908c817-e4cb-488d-8e64-601af78434ec
   DialogueChoiceNodeDatas:
   - NodeGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0
     Position: {x: 1128, y: -143}
@@ -95,7 +95,7 @@ MonoBehaviour:
         LanguageGenericType: Seen Poppy?
       - languageEnum: 1
         LanguageGenericType: Choice 03
-      RequiredFlag: {fileID: 11400000, guid: ca3d3e8f1504ee446bcee357a7fd2a34, type: 2}
+      RequiredFlag: {fileID: 11400000, guid: 279d3628befa270478f2f3b09c593d44, type: 2}
     - PortGuid: 9525ec5d-e796-4b01-9f58-06fca640a728
       InputGuid: 161a45b1-d5c5-466c-bfd8-feb8ca9ce6a2
       OutputGuid: 0b47ac25-367c-4791-8a39-5eac670de6b0

@@ -22,12 +22,12 @@ MonoBehaviour:
     TargetNodeGuid: d1e73e03-4885-4d9f-82e9-30d36422fca0
   - BaseNodeGuid: d1e73e03-4885-4d9f-82e9-30d36422fca0
     TargetNodeGuid: 758badae-6254-48a4-b2de-52098eccabfa
+  - BaseNodeGuid: 9f0fa8dc-2ef4-4362-8a9d-7f1781b99bf7
+    TargetNodeGuid: ea1cfc03-3adf-4590-a1c9-73f4eb161bc8
   - BaseNodeGuid: 758badae-6254-48a4-b2de-52098eccabfa
     TargetNodeGuid: 9f0fa8dc-2ef4-4362-8a9d-7f1781b99bf7
   - BaseNodeGuid: 758badae-6254-48a4-b2de-52098eccabfa
     TargetNodeGuid: 4044f891-d4c1-4ae2-be09-8a7c736da95a
-  - BaseNodeGuid: 9f0fa8dc-2ef4-4362-8a9d-7f1781b99bf7
-    TargetNodeGuid: ea1cfc03-3adf-4590-a1c9-73f4eb161bc8
   DialogueChoiceNodeDatas: []
   DialogueNodeDatas:
   - NodeGuid: d1e73e03-4885-4d9f-82e9-30d36422fca0
@@ -75,7 +75,7 @@ MonoBehaviour:
   ConditionalNodeDatas:
   - NodeGuid: 758badae-6254-48a4-b2de-52098eccabfa
     Position: {x: 227, y: 4}
-    RequiredGameFlagCombo: {fileID: 11400000, guid: 83928ef9c45b36e44b16cdf66ad93b4b,
+    RequiredGameFlagCombo: {fileID: 11400000, guid: 1eee3e6ff7ed85f4b9a0402f39737ba8,
       type: 2}
   TimerChoiceNodeDatas: []
   EndNodeDatas:

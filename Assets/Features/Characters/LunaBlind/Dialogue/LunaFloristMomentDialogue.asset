@@ -134,8 +134,8 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: It is the curves, the shapes, the texture and, god, the
-        smell, darling! Flowers are amazing, with or without their colors!
+      LanguageGenericType: It is their curves, their shapes, their texture and, god,
+        their smell, darling! Flowers are amazing, with or without their colors!
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
@@ -155,7 +155,7 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: 'Poppy: I understand what you are saying. And I appreciate
+      LanguageGenericType: 'Poppy: I understand what you are saying, and I appreciate
         the sentiment Luna, I really do, but...'
     - languageEnum: 1
       LanguageGenericType: 
@@ -258,7 +258,7 @@ MonoBehaviour:
     TextType:
     - languageEnum: 0
       LanguageGenericType: To appreciate the whole flower, darling. And do not worry
-        about your shop. I am sure it will be all right.
+        about your shop. I am sure it will be okay.
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
@@ -339,7 +339,7 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: 'I still bought your flowers, did I not? '
+      LanguageGenericType: 'I still buy your flowers, don''t I? '
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
@@ -359,28 +359,7 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: If not for their colors, then why? I will tell you.
-    - languageEnum: 1
-      LanguageGenericType: 
-    Duration: 10
-  - NodeGuid: 3ce8cf6a-b9da-4229-b539-e6b0e020f4a8
-    Position: {x: 213, y: 630}
-    Character: {fileID: 0}
-    PortraitPosition: 0
-    Emotion: 
-    Event: 
-    SecoundCharacter: {fileID: 0}
-    SecoundPortraitPosition: 0
-    SecoundEmotion: 
-    AudioClips:
-    - languageEnum: 0
-      LanguageGenericType: {fileID: 0}
-    - languageEnum: 1
-      LanguageGenericType: {fileID: 0}
-    TextType:
-    - languageEnum: 0
-      LanguageGenericType: No. And neither does it for the flowers, darling. To me
-        the flowers look all the same. But even so-
+      LanguageGenericType: If not for their colors, then why?
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10
@@ -421,6 +400,27 @@ MonoBehaviour:
     TextType:
     - languageEnum: 0
       LanguageGenericType: Thanks Luna.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 3ce8cf6a-b9da-4229-b539-e6b0e020f4a8
+    Position: {x: 213, y: 630}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: No. And neither does it for the flowers, darling. To me
+        the flowers look all the same. But even so-
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 10

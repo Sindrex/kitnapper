@@ -72,8 +72,6 @@ MonoBehaviour:
     TargetNodeGuid: b471fcdc-e10b-4f88-8889-2b71d34184d6
   - BaseNodeGuid: d50bb04e-5951-45ed-b7a6-495664e7a630
     TargetNodeGuid: 002951e7-8302-4ef3-81ad-029b93c7b694
-  - BaseNodeGuid: d50bb04e-5951-45ed-b7a6-495664e7a630
-    TargetNodeGuid: 6efc1a03-016a-44af-84aa-30bb646b8e22
   - BaseNodeGuid: 081f99f7-e4f9-44b2-bda2-6c6b0c3dd158
     TargetNodeGuid: dc500d0f-c5bd-4ddd-8995-9d49d66c850d
   - BaseNodeGuid: 081f99f7-e4f9-44b2-bda2-6c6b0c3dd158
@@ -94,6 +92,16 @@ MonoBehaviour:
     TargetNodeGuid: 00a51208-7701-4825-b8f3-3015eb09ff3a
   - BaseNodeGuid: 9e39dd12-dc74-4845-829b-3bb3fe91f8ec
     TargetNodeGuid: e3ca37dd-bbd2-464d-852f-54e97e64c3e6
+  - BaseNodeGuid: 844d91ab-f76f-4c2f-b148-fa0ec6129894
+    TargetNodeGuid: 6882822d-ac49-4846-9123-7b4a1f668ff8
+  - BaseNodeGuid: 844d91ab-f76f-4c2f-b148-fa0ec6129894
+    TargetNodeGuid: 081f99f7-e4f9-44b2-bda2-6c6b0c3dd158
+  - BaseNodeGuid: d50bb04e-5951-45ed-b7a6-495664e7a630
+    TargetNodeGuid: 11c2e80f-22c9-4446-b074-ac0b86ea728b
+  - BaseNodeGuid: 11c2e80f-22c9-4446-b074-ac0b86ea728b
+    TargetNodeGuid: 844d91ab-f76f-4c2f-b148-fa0ec6129894
+  - BaseNodeGuid: 11c2e80f-22c9-4446-b074-ac0b86ea728b
+    TargetNodeGuid: 6efc1a03-016a-44af-84aa-30bb646b8e22
   DialogueChoiceNodeDatas:
   - NodeGuid: 081f99f7-e4f9-44b2-bda2-6c6b0c3dd158
     Position: {x: 912, y: -134}
@@ -142,7 +150,7 @@ MonoBehaviour:
         LanguageGenericType: Seen Poppy?
       - languageEnum: 1
         LanguageGenericType: Choice 04
-      RequiredFlag: {fileID: 11400000, guid: ca3d3e8f1504ee446bcee357a7fd2a34, type: 2}
+      RequiredFlag: {fileID: 11400000, guid: 279d3628befa270478f2f3b09c593d44, type: 2}
   - NodeGuid: f609914e-cfce-45c1-afd9-5476fc837d69
     Position: {x: 1603, y: -134}
     Character: {fileID: 0}
@@ -190,7 +198,7 @@ MonoBehaviour:
       LanguageGenericType: {fileID: 0}
     TextType:
     - languageEnum: 0
-      LanguageGenericType: 'Findus: Howdy Detective! How are you doing? '
+      LanguageGenericType: 'Findus: Howdy Detective! How are you doing?'
     - languageEnum: 1
       LanguageGenericType: 
     Duration: 5
@@ -313,6 +321,46 @@ MonoBehaviour:
         LanguageGenericType: Let's find out
       - languageEnum: 1
         LanguageGenericType: Choice 01
+      RequiredFlag: {fileID: 0}
+  - NodeGuid: 844d91ab-f76f-4c2f-b148-fa0ec6129894
+    Position: {x: 546, y: 889}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    Event: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Findus: Howdy Detective! I appreciate the push I got
+        from you and Sinbad. Thanks.'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 5
+    DialogueNodePorts:
+    - PortGuid: 1b7ca149-cf38-49fd-8eb0-05f3b06c7afa
+      InputGuid: 6882822d-ac49-4846-9123-7b4a1f668ff8
+      OutputGuid: 844d91ab-f76f-4c2f-b148-fa0ec6129894
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Goodbye
+      - languageEnum: 1
+        LanguageGenericType: Choice 01
+      RequiredFlag: {fileID: 0}
+    - PortGuid: cbbd82c2-d6c0-466f-b0b8-5e8303c9a267
+      InputGuid: 081f99f7-e4f9-44b2-bda2-6c6b0c3dd158
+      OutputGuid: 844d91ab-f76f-4c2f-b148-fa0ec6129894
+      TextLanguage:
+      - languageEnum: 0
+        LanguageGenericType: Question
+      - languageEnum: 1
+        LanguageGenericType: Choice 02
       RequiredFlag: {fileID: 0}
   DialogueNodeDatas:
   - NodeGuid: c60b8bee-fa21-4f10-9cf0-5a85d88462da
@@ -755,6 +803,10 @@ MonoBehaviour:
     Position: {x: 270, y: 434}
     RequiredGameFlagCombo: {fileID: 11400000, guid: ab207b786cea78348bd73d3524f2b019,
       type: 2}
+  - NodeGuid: 11c2e80f-22c9-4446-b074-ac0b86ea728b
+    Position: {x: 270, y: 601}
+    RequiredGameFlagCombo: {fileID: 11400000, guid: 69e08a7b5f74d20478a7676013ea8e57,
+      type: 2}
   TimerChoiceNodeDatas: []
   EndNodeDatas:
   - NodeGuid: 7838e825-39c1-416f-8753-1589000d7155
@@ -789,6 +841,11 @@ MonoBehaviour:
     startID: 
   - NodeGuid: c4c5eb1b-6fa8-4118-b681-4babbcadabf7
     Position: {x: 912, y: 230}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: 6882822d-ac49-4846-9123-7b4a1f668ff8
+    Position: {x: 912, y: 889}
     EndNodeType: 0
     Dialogue: {fileID: 0}
     startID: 

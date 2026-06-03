@@ -20,42 +20,42 @@ MonoBehaviour:
   NodeLinkDatas:
   - BaseNodeGuid: 66c0cbd6-29ea-411f-b3cf-93a98df89bd7
     TargetNodeGuid: 7d2e1021-304d-4b8d-b89a-1af5296a1605
+  - BaseNodeGuid: bda9f068-e5fb-4e20-a000-044b02d54764
+    TargetNodeGuid: 08b1ebfe-ea03-4f0b-b26a-713029c05942
   - BaseNodeGuid: 7d2e1021-304d-4b8d-b89a-1af5296a1605
     TargetNodeGuid: ab6c800a-4101-4ecc-8ccd-b6657ac28d40
+  - BaseNodeGuid: 0849757c-49d3-4bd0-8983-4cd50af6415f
+    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
+  - BaseNodeGuid: c98209a7-63b1-4d88-8f35-a501d5efced4
+    TargetNodeGuid: 0917e2ad-7462-4d6b-a307-c74a741acf5c
+  - BaseNodeGuid: a48c41d4-4409-4a5f-ab66-f5908d1a34eb
+    TargetNodeGuid: 0917e2ad-7462-4d6b-a307-c74a741acf5c
+  - BaseNodeGuid: 5a2830f4-9dec-4250-9cd3-6df9ca145746
+    TargetNodeGuid: e8f2f618-2cb8-4411-86d6-d614d394ea5a
+  - BaseNodeGuid: 58d6cc84-2ad2-42e2-a267-845c7f0c641c
+    TargetNodeGuid: 052dafb8-7650-4b42-a383-6cc677b69dfe
+  - BaseNodeGuid: f5a0f2d4-9809-4f42-a7f8-f8e5cc6f1d6b
+    TargetNodeGuid: f79f4242-d29d-4090-b3de-41ea18dc0b11
+  - BaseNodeGuid: f5a0f2d4-9809-4f42-a7f8-f8e5cc6f1d6b
+    TargetNodeGuid: 0849757c-49d3-4bd0-8983-4cd50af6415f
+  - BaseNodeGuid: cd710cbb-11ee-4488-bd05-3e446eae55c6
+    TargetNodeGuid: e33fe215-6264-45a8-9f6d-85cd28cb6a05
+  - BaseNodeGuid: cd710cbb-11ee-4488-bd05-3e446eae55c6
+    TargetNodeGuid: 5a2830f4-9dec-4250-9cd3-6df9ca145746
+  - BaseNodeGuid: cd710cbb-11ee-4488-bd05-3e446eae55c6
+    TargetNodeGuid: 58d6cc84-2ad2-42e2-a267-845c7f0c641c
+  - BaseNodeGuid: cd710cbb-11ee-4488-bd05-3e446eae55c6
+    TargetNodeGuid: bda9f068-e5fb-4e20-a000-044b02d54764
+  - BaseNodeGuid: f79f4242-d29d-4090-b3de-41ea18dc0b11
+    TargetNodeGuid: c98209a7-63b1-4d88-8f35-a501d5efced4
+  - BaseNodeGuid: f79f4242-d29d-4090-b3de-41ea18dc0b11
+    TargetNodeGuid: a48c41d4-4409-4a5f-ab66-f5908d1a34eb
   - BaseNodeGuid: ab6c800a-4101-4ecc-8ccd-b6657ac28d40
     TargetNodeGuid: 8359068e-0140-45c0-aa80-7dd2403e87bc
   - BaseNodeGuid: ab6c800a-4101-4ecc-8ccd-b6657ac28d40
     TargetNodeGuid: cd710cbb-11ee-4488-bd05-3e446eae55c6
   - BaseNodeGuid: ab6c800a-4101-4ecc-8ccd-b6657ac28d40
     TargetNodeGuid: f5a0f2d4-9809-4f42-a7f8-f8e5cc6f1d6b
-  - BaseNodeGuid: cd710cbb-11ee-4488-bd05-3e446eae55c6
-    TargetNodeGuid: e33fe215-6264-45a8-9f6d-85cd28cb6a05
-  - BaseNodeGuid: cd710cbb-11ee-4488-bd05-3e446eae55c6
-    TargetNodeGuid: 5a2830f4-9dec-4250-9cd3-6df9ca145746
-  - BaseNodeGuid: 5a2830f4-9dec-4250-9cd3-6df9ca145746
-    TargetNodeGuid: e8f2f618-2cb8-4411-86d6-d614d394ea5a
-  - BaseNodeGuid: cd710cbb-11ee-4488-bd05-3e446eae55c6
-    TargetNodeGuid: 58d6cc84-2ad2-42e2-a267-845c7f0c641c
-  - BaseNodeGuid: 58d6cc84-2ad2-42e2-a267-845c7f0c641c
-    TargetNodeGuid: 052dafb8-7650-4b42-a383-6cc677b69dfe
-  - BaseNodeGuid: cd710cbb-11ee-4488-bd05-3e446eae55c6
-    TargetNodeGuid: bda9f068-e5fb-4e20-a000-044b02d54764
-  - BaseNodeGuid: bda9f068-e5fb-4e20-a000-044b02d54764
-    TargetNodeGuid: 08b1ebfe-ea03-4f0b-b26a-713029c05942
-  - BaseNodeGuid: f5a0f2d4-9809-4f42-a7f8-f8e5cc6f1d6b
-    TargetNodeGuid: f79f4242-d29d-4090-b3de-41ea18dc0b11
-  - BaseNodeGuid: f79f4242-d29d-4090-b3de-41ea18dc0b11
-    TargetNodeGuid: c98209a7-63b1-4d88-8f35-a501d5efced4
-  - BaseNodeGuid: f79f4242-d29d-4090-b3de-41ea18dc0b11
-    TargetNodeGuid: a48c41d4-4409-4a5f-ab66-f5908d1a34eb
-  - BaseNodeGuid: c98209a7-63b1-4d88-8f35-a501d5efced4
-    TargetNodeGuid: 0917e2ad-7462-4d6b-a307-c74a741acf5c
-  - BaseNodeGuid: a48c41d4-4409-4a5f-ab66-f5908d1a34eb
-    TargetNodeGuid: 0917e2ad-7462-4d6b-a307-c74a741acf5c
-  - BaseNodeGuid: f5a0f2d4-9809-4f42-a7f8-f8e5cc6f1d6b
-    TargetNodeGuid: 0849757c-49d3-4bd0-8983-4cd50af6415f
-  - BaseNodeGuid: 0849757c-49d3-4bd0-8983-4cd50af6415f
-    TargetNodeGuid: 7838e825-39c1-416f-8753-1589000d7155
   DialogueChoiceNodeDatas:
   - NodeGuid: cd710cbb-11ee-4488-bd05-3e446eae55c6
     Position: {x: 746, y: -163}
@@ -104,7 +104,7 @@ MonoBehaviour:
         LanguageGenericType: Seen Poppy?
       - languageEnum: 1
         LanguageGenericType: Choice 03
-      RequiredFlag: {fileID: 11400000, guid: ca3d3e8f1504ee446bcee357a7fd2a34, type: 2}
+      RequiredFlag: {fileID: 11400000, guid: 279d3628befa270478f2f3b09c593d44, type: 2}
     - PortGuid: c6c9f873-15fe-4e90-89ca-a9c7f2851e7f
       InputGuid: bda9f068-e5fb-4e20-a000-044b02d54764
       OutputGuid: cd710cbb-11ee-4488-bd05-3e446eae55c6
