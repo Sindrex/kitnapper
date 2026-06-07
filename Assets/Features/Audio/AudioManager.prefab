@@ -405,7 +405,7 @@ MonoBehaviour:
   - Label: 33
     Clip: {fileID: 8300000, guid: e8ad75340357a7746aff4ef042b34c06, type: 3}
   - Label: 34
-    Clip: {fileID: 8300000, guid: e01e0f0f1afe3754f81f9fa47af0b78b, type: 3}
+    Clip: {fileID: 8300000, guid: 7100e78559c813c4cbeeb9d2659720a9, type: 3}
   - Label: 35
     Clip: {fileID: 8300000, guid: 6101b7ca6e04eeb4c9389b7349a25c46, type: 3}
   - Label: 36
@@ -424,4 +424,7 @@ MonoBehaviour:
   MusicFadeSteps: 20
   MusicFadeMinVolumeDb: -80
   VolumeMaxIndex: 10
+  IsFadingIn: 0
+  IsFadingInAudioLabel: 0
   MusicQueue: 
+  FadeQueue: 

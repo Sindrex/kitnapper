@@ -110,5 +110,6 @@ public enum GameFlag
     AllNamesKnown, TurboBabaSpawned, TurboBabaJokesDone, TurboBabaDialogue2Flag4,
     LunaColorsDialogue, TelephoneSFXIsPlaying, TurboBabaSpawnedHouse, SinbadFindusMomentStarted, FloristAway, TelephoneTaken,
     CharlieNameKnown, OnyxiaNameKnown, MixieNameKnown, ColaNameKnown, BlackcurrantNameKnown, OrangeNameKnown, 
-    ScientistButterflyDialogue, FloristHowDoingDialogue, MayorLunaDialogue, MidnightRoseDialoguesDone, KiraBiscuitRecipe, MayorBiscuitRecipe, SinbadToyDialogue
+    ScientistButterflyDialogue, FloristHowDoingDialogue, MayorLunaDialogue, MidnightRoseDialoguesDone, KiraBiscuitRecipe, MayorBiscuitRecipe, SinbadToyDialogue,
+    TeeteeNameKnown, SamsonNameKnown
 }

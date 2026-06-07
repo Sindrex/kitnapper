@@ -1,0 +1,148 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1946feaec865d344dabf0419b1c94973, type: 3}
+  m_Name: TeeteeDialogue
+  m_EditorClassIdentifier: 
+  AllowDialogueSave: 0
+  BlockingReopeningDialogue: 0
+  ResetSavedNodeOnChoice: 0
+  LimitChoiceOptionPerNode: 0
+  MaxChoiceOptionPerNode: 0
+  NodeLinkDatas:
+  - BaseNodeGuid: c6071f98-2aca-475c-b368-69e8735f8bbd
+    TargetNodeGuid: da49e726-778e-4d7d-b479-ca0ac80b554f
+  - BaseNodeGuid: 890351a3-5b42-4f01-a09b-391e06ac02c5
+    TargetNodeGuid: c6071f98-2aca-475c-b368-69e8735f8bbd
+  - BaseNodeGuid: 12611948-860f-44ca-83ec-c39c7282715d
+    TargetNodeGuid: e6f117fa-af3c-4b83-bca9-568948db80c9
+  - BaseNodeGuid: e6f117fa-af3c-4b83-bca9-568948db80c9
+    TargetNodeGuid: 3fd9139c-5b4d-4c84-848e-ccd23bd0ef87
+  - BaseNodeGuid: e6f117fa-af3c-4b83-bca9-568948db80c9
+    TargetNodeGuid: 890351a3-5b42-4f01-a09b-391e06ac02c5
+  - BaseNodeGuid: 3fd9139c-5b4d-4c84-848e-ccd23bd0ef87
+    TargetNodeGuid: 215aebd9-fa42-4f17-a3eb-ee77fed70a87
+  - BaseNodeGuid: 215aebd9-fa42-4f17-a3eb-ee77fed70a87
+    TargetNodeGuid: 7b09d474-9d5b-49ca-b641-ff1c835db8df
+  DialogueChoiceNodeDatas: []
+  DialogueNodeDatas:
+  - NodeGuid: c6071f98-2aca-475c-b368-69e8735f8bbd
+    Position: {x: 650, y: 220}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: ... And I'm all out of treats!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 890351a3-5b42-4f01-a09b-391e06ac02c5
+    Position: {x: 415, y: 220}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: TeeteeDialogueEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Teetee: I''m here to eat treats and pull pranks...'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 215aebd9-fa42-4f17-a3eb-ee77fed70a87
+    Position: {x: 650, y: -165}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: Anyhow, you are from now on, my HERO! I want to be just
+        like you when I grow up!
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 3fd9139c-5b4d-4c84-848e-ccd23bd0ef87
+    Position: {x: 415, y: -165}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: TeeteeDialogueEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Teetee: Oh, oh! You were the Color Whiskerer! No-, the
+        Color Catnapper! No-, the Cat Colornapper!'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  ConditionalNodeDatas:
+  - NodeGuid: e6f117fa-af3c-4b83-bca9-568948db80c9
+    Position: {x: 178, y: 220}
+    RequiredGameFlagCombo: {fileID: 11400000, guid: d280d0c262e2fca41b46ae301e91ac3f,
+      type: 2}
+  TimerChoiceNodeDatas: []
+  EndNodeDatas:
+  - NodeGuid: da49e726-778e-4d7d-b479-ca0ac80b554f
+    Position: {x: 934, y: 220}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: 7b09d474-9d5b-49ca-b641-ff1c835db8df
+    Position: {x: 915, y: -165}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  EventNodeDatas: []
+  StartNodeDatas:
+  - NodeGuid: 12611948-860f-44ca-83ec-c39c7282715d
+    Position: {x: -40, y: 220}
+    startID: 
+  RandomNodeDatas: []
+  CommandNodeDatas: []
+  IfNodeDatas: []
+  AdvancedIFNodeDatas: []
+  AdvancedChoiceNodeDatas: []
+  AdvancedTimeChoiceNodeDatas: []
+  ResetSavedNodeDatas: []
+  MusicNodeDatas: []

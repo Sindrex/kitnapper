@@ -1,0 +1,126 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1946feaec865d344dabf0419b1c94973, type: 3}
+  m_Name: SamsonDialogue
+  m_EditorClassIdentifier: 
+  AllowDialogueSave: 0
+  BlockingReopeningDialogue: 0
+  ResetSavedNodeOnChoice: 0
+  LimitChoiceOptionPerNode: 0
+  MaxChoiceOptionPerNode: 0
+  NodeLinkDatas:
+  - BaseNodeGuid: c6071f98-2aca-475c-b368-69e8735f8bbd
+    TargetNodeGuid: da49e726-778e-4d7d-b479-ca0ac80b554f
+  - BaseNodeGuid: 890351a3-5b42-4f01-a09b-391e06ac02c5
+    TargetNodeGuid: c6071f98-2aca-475c-b368-69e8735f8bbd
+  - BaseNodeGuid: 12611948-860f-44ca-83ec-c39c7282715d
+    TargetNodeGuid: 561b7c41-b652-499b-8d88-5ecc691261eb
+  - BaseNodeGuid: 561b7c41-b652-499b-8d88-5ecc691261eb
+    TargetNodeGuid: 763cd45a-fce9-4a05-88a3-74706d9b8f4e
+  - BaseNodeGuid: 763cd45a-fce9-4a05-88a3-74706d9b8f4e
+    TargetNodeGuid: 8d51ee8a-1dc3-4d21-8159-a5527ffcefc1
+  - BaseNodeGuid: 561b7c41-b652-499b-8d88-5ecc691261eb
+    TargetNodeGuid: 890351a3-5b42-4f01-a09b-391e06ac02c5
+  DialogueChoiceNodeDatas: []
+  DialogueNodeDatas:
+  - NodeGuid: c6071f98-2aca-475c-b368-69e8735f8bbd
+    Position: {x: 650, y: 220}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: 
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: I'll let it go on for a little while longer. Looks like
+        Shorty is having fun.
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 890351a3-5b42-4f01-a09b-391e06ac02c5
+    Position: {x: 381, y: 220}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: SamsonDialogueEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Samson: I''m just trying to chill, but shorty here keeps
+        pulling my ears!'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  - NodeGuid: 763cd45a-fce9-4a05-88a3-74706d9b8f4e
+    Position: {x: 381, y: -81}
+    Character: {fileID: 0}
+    PortraitPosition: 0
+    Emotion: 
+    Event: SamsonDialogueEvent
+    SecoundCharacter: {fileID: 0}
+    SecoundPortraitPosition: 0
+    SecoundEmotion: 
+    AudioClips:
+    - languageEnum: 0
+      LanguageGenericType: {fileID: 0}
+    - languageEnum: 1
+      LanguageGenericType: {fileID: 0}
+    TextType:
+    - languageEnum: 0
+      LanguageGenericType: 'Samson: Shorty is your responsibility now, Mr. Colornapper!'
+    - languageEnum: 1
+      LanguageGenericType: 
+    Duration: 10
+  ConditionalNodeDatas:
+  - NodeGuid: 561b7c41-b652-499b-8d88-5ecc691261eb
+    Position: {x: 158, y: 220}
+    RequiredGameFlagCombo: {fileID: 11400000, guid: d280d0c262e2fca41b46ae301e91ac3f,
+      type: 2}
+  TimerChoiceNodeDatas: []
+  EndNodeDatas:
+  - NodeGuid: da49e726-778e-4d7d-b479-ca0ac80b554f
+    Position: {x: 934, y: 220}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  - NodeGuid: 8d51ee8a-1dc3-4d21-8159-a5527ffcefc1
+    Position: {x: 650, y: -81}
+    EndNodeType: 0
+    Dialogue: {fileID: 0}
+    startID: 
+  EventNodeDatas: []
+  StartNodeDatas:
+  - NodeGuid: 12611948-860f-44ca-83ec-c39c7282715d
+    Position: {x: -11, y: 220}
+    startID: 
+  RandomNodeDatas: []
+  CommandNodeDatas: []
+  IfNodeDatas: []
+  AdvancedIFNodeDatas: []
+  AdvancedChoiceNodeDatas: []
+  AdvancedTimeChoiceNodeDatas: []
+  ResetSavedNodeDatas: []
+  MusicNodeDatas: []
